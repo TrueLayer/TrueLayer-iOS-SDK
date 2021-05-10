@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB705E6626493D4B00831557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB705E6526493D4B00831557 /* AppDelegate.swift */; };
+		AB705E6826493D4B00831557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB705E6726493D4B00831557 /* SceneDelegate.swift */; };
+		AB705E6A26493D4B00831557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB705E6926493D4B00831557 /* ViewController.swift */; };
+		AB705E6D26493D4B00831557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB705E6B26493D4B00831557 /* Main.storyboard */; };
+		AB705E6F26493D4C00831557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB705E6E26493D4C00831557 /* Assets.xcassets */; };
+		AB705E7226493D4C00831557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB705E7026493D4C00831557 /* LaunchScreen.storyboard */; };
+		AB705E7D26493D4C00831557 /* truelayer_payments_sdk_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB705E7C26493D4C00831557 /* truelayer_payments_sdk_demoTests.swift */; };
+		AB705E8826493D4C00831557 /* truelayer_payments_sdk_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB705E8726493D4C00831557 /* truelayer_payments_sdk_demoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB705E7926493D4C00831557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB705E5A26493D4B00831557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB705E6126493D4B00831557;
+			remoteInfo = "truelayer-payments-sdk-demo";
+		};
+		AB705E8426493D4C00831557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB705E5A26493D4B00831557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB705E6126493D4B00831557;
+			remoteInfo = "truelayer-payments-sdk-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB58E49D26495E5600F1C668 /* TruelayerPaymentsUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TruelayerPaymentsUI.xcframework; path = "truelayer-payments-sdk-demo/Frameworks/TruelayerPaymentsUI.xcframework"; sourceTree = "<group>"; };
+		AB58E4A626495EC900F1C668 /* TruelayerPaymentsUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TruelayerPaymentsUI.xcframework; path = "../../truelayer-ios-demo/build/TruelayerPaymentsUI.xcframework"; sourceTree = "<group>"; };
+		AB705E6226493D4B00831557 /* truelayer-payments-sdk-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "truelayer-payments-sdk-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB705E6526493D4B00831557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB705E6726493D4B00831557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB705E6926493D4B00831557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB705E6C26493D4B00831557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB705E6E26493D4C00831557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB705E7126493D4C00831557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB705E7326493D4C00831557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB705E7826493D4C00831557 /* truelayer-payments-sdk-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "truelayer-payments-sdk-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB705E7C26493D4C00831557 /* truelayer_payments_sdk_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = truelayer_payments_sdk_demoTests.swift; sourceTree = "<group>"; };
+		AB705E7E26493D4C00831557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB705E8326493D4C00831557 /* truelayer-payments-sdk-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "truelayer-payments-sdk-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB705E8726493D4C00831557 /* truelayer_payments_sdk_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = truelayer_payments_sdk_demoUITests.swift; sourceTree = "<group>"; };
+		AB705E8926493D4C00831557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB705E5F26493D4B00831557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB705E7526493D4C00831557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB705E8026493D4C00831557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB58E49C26495E5500F1C668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB58E4A626495EC900F1C668 /* TruelayerPaymentsUI.xcframework */,
+				AB58E49D26495E5600F1C668 /* TruelayerPaymentsUI.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB705E5926493D4B00831557 = {
+			isa = PBXGroup;
+			children = (
+				AB705E6426493D4B00831557 /* truelayer-payments-sdk-demo */,
+				AB705E7B26493D4C00831557 /* truelayer-payments-sdk-demoTests */,
+				AB705E8626493D4C00831557 /* truelayer-payments-sdk-demoUITests */,
+				AB705E6326493D4B00831557 /* Products */,
+				AB58E49C26495E5500F1C668 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB705E6326493D4B00831557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB705E6226493D4B00831557 /* truelayer-payments-sdk-demo.app */,
+				AB705E7826493D4C00831557 /* truelayer-payments-sdk-demoTests.xctest */,
+				AB705E8326493D4C00831557 /* truelayer-payments-sdk-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB705E6426493D4B00831557 /* truelayer-payments-sdk-demo */ = {
+			isa = PBXGroup;
+			children = (
+				AB705E6526493D4B00831557 /* AppDelegate.swift */,
+				AB705E6726493D4B00831557 /* SceneDelegate.swift */,
+				AB705E6926493D4B00831557 /* ViewController.swift */,
+				AB705E6B26493D4B00831557 /* Main.storyboard */,
+				AB705E6E26493D4C00831557 /* Assets.xcassets */,
+				AB705E7026493D4C00831557 /* LaunchScreen.storyboard */,
+				AB705E7326493D4C00831557 /* Info.plist */,
+			);
+			path = "truelayer-payments-sdk-demo";
+			sourceTree = "<group>";
+		};
+		AB705E7B26493D4C00831557 /* truelayer-payments-sdk-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB705E7C26493D4C00831557 /* truelayer_payments_sdk_demoTests.swift */,
+				AB705E7E26493D4C00831557 /* Info.plist */,
+			);
+			path = "truelayer-payments-sdk-demoTests";
+			sourceTree = "<group>";
+		};
+		AB705E8626493D4C00831557 /* truelayer-payments-sdk-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB705E8726493D4C00831557 /* truelayer_payments_sdk_demoUITests.swift */,
+				AB705E8926493D4C00831557 /* Info.plist */,
+			);
+			path = "truelayer-payments-sdk-demoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB705E6126493D4B00831557 /* truelayer-payments-sdk-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB705E8C26493D4C00831557 /* Build configuration list for PBXNativeTarget "truelayer-payments-sdk-demo" */;
+			buildPhases = (
+				AB705E5E26493D4B00831557 /* Sources */,
+				AB705E5F26493D4B00831557 /* Frameworks */,
+				AB705E6026493D4B00831557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "truelayer-payments-sdk-demo";
+			productName = "truelayer-payments-sdk-demo";
+			productReference = AB705E6226493D4B00831557 /* truelayer-payments-sdk-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB705E7726493D4C00831557 /* truelayer-payments-sdk-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB705E8F26493D4C00831557 /* Build configuration list for PBXNativeTarget "truelayer-payments-sdk-demoTests" */;
+			buildPhases = (
+				AB705E7426493D4C00831557 /* Sources */,
+				AB705E7526493D4C00831557 /* Frameworks */,
+				AB705E7626493D4C00831557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB705E7A26493D4C00831557 /* PBXTargetDependency */,
+			);
+			name = "truelayer-payments-sdk-demoTests";
+			productName = "truelayer-payments-sdk-demoTests";
+			productReference = AB705E7826493D4C00831557 /* truelayer-payments-sdk-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB705E8226493D4C00831557 /* truelayer-payments-sdk-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB705E9226493D4C00831557 /* Build configuration list for PBXNativeTarget "truelayer-payments-sdk-demoUITests" */;
+			buildPhases = (
+				AB705E7F26493D4C00831557 /* Sources */,
+				AB705E8026493D4C00831557 /* Frameworks */,
+				AB705E8126493D4C00831557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB705E8526493D4C00831557 /* PBXTargetDependency */,
+			);
+			name = "truelayer-payments-sdk-demoUITests";
+			productName = "truelayer-payments-sdk-demoUITests";
+			productReference = AB705E8326493D4C00831557 /* truelayer-payments-sdk-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB705E5A26493D4B00831557 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AB705E6126493D4B00831557 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AB705E7726493D4C00831557 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AB705E6126493D4B00831557;
+					};
+					AB705E8226493D4C00831557 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AB705E6126493D4B00831557;
+					};
+				};
+			};
+			buildConfigurationList = AB705E5D26493D4B00831557 /* Build configuration list for PBXProject "truelayer-payments-sdk-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB705E5926493D4B00831557;
+			productRefGroup = AB705E6326493D4B00831557 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB705E6126493D4B00831557 /* truelayer-payments-sdk-demo */,
+				AB705E7726493D4C00831557 /* truelayer-payments-sdk-demoTests */,
+				AB705E8226493D4C00831557 /* truelayer-payments-sdk-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB705E6026493D4B00831557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB705E7226493D4C00831557 /* LaunchScreen.storyboard in Resources */,
+				AB705E6F26493D4C00831557 /* Assets.xcassets in Resources */,
+				AB705E6D26493D4B00831557 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB705E7626493D4C00831557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB705E8126493D4C00831557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB705E5E26493D4B00831557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB705E6A26493D4B00831557 /* ViewController.swift in Sources */,
+				AB705E6626493D4B00831557 /* AppDelegate.swift in Sources */,
+				AB705E6826493D4B00831557 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB705E7426493D4C00831557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB705E7D26493D4C00831557 /* truelayer_payments_sdk_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB705E7F26493D4C00831557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB705E8826493D4C00831557 /* truelayer_payments_sdk_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB705E7A26493D4C00831557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB705E6126493D4B00831557 /* truelayer-payments-sdk-demo */;
+			targetProxy = AB705E7926493D4C00831557 /* PBXContainerItemProxy */;
+		};
+		AB705E8526493D4C00831557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB705E6126493D4B00831557 /* truelayer-payments-sdk-demo */;
+			targetProxy = AB705E8426493D4C00831557 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB705E6B26493D4B00831557 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB705E6C26493D4B00831557 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB705E7026493D4C00831557 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB705E7126493D4C00831557 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB705E8A26493D4C00831557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB705E8B26493D4C00831557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB705E8D26493D4C00831557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "truelayer-payments-sdk-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.truelayer.truelayer-payments-sdk-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB705E8E26493D4C00831557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "truelayer-payments-sdk-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.truelayer.truelayer-payments-sdk-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB705E9026493D4C00831557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "truelayer-payments-sdk-demoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.truelayer.truelayer-payments-sdk-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/truelayer-payments-sdk-demo.app/truelayer-payments-sdk-demo";
+			};
+			name = Debug;
+		};
+		AB705E9126493D4C00831557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "truelayer-payments-sdk-demoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.truelayer.truelayer-payments-sdk-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/truelayer-payments-sdk-demo.app/truelayer-payments-sdk-demo";
+			};
+			name = Release;
+		};
+		AB705E9326493D4C00831557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "truelayer-payments-sdk-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.truelayer.truelayer-payments-sdk-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "truelayer-payments-sdk-demo";
+			};
+			name = Debug;
+		};
+		AB705E9426493D4C00831557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "truelayer-payments-sdk-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.truelayer.truelayer-payments-sdk-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "truelayer-payments-sdk-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB705E5D26493D4B00831557 /* Build configuration list for PBXProject "truelayer-payments-sdk-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB705E8A26493D4C00831557 /* Debug */,
+				AB705E8B26493D4C00831557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB705E8C26493D4C00831557 /* Build configuration list for PBXNativeTarget "truelayer-payments-sdk-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB705E8D26493D4C00831557 /* Debug */,
+				AB705E8E26493D4C00831557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB705E8F26493D4C00831557 /* Build configuration list for PBXNativeTarget "truelayer-payments-sdk-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB705E9026493D4C00831557 /* Debug */,
+				AB705E9126493D4C00831557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB705E9226493D4C00831557 /* Build configuration list for PBXNativeTarget "truelayer-payments-sdk-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB705E9326493D4C00831557 /* Debug */,
+				AB705E9426493D4C00831557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB705E5A26493D4B00831557 /* Project object */;
+}

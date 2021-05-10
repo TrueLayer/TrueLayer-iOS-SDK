@@ -1,0 +1,20 @@
+# More info available at -> https://circleci.com/docs/2.0/hello-world-macos/#example-configuration-file
+
+version: 2.1
+jobs: 
+  test:
+    macos: 
+      xcode: 12.4.0
+    steps: 
+      - checkout  
+      - run:
+          name: Run Unit Tests -scheme truelayer-payments-sdk-demo
+          command: xcodebuild test -project 'truelayer-payments-sdk-demo/truelayer-payments-sdk-demo.xcodeproj' -scheme truelayer-payments-sdk-demo -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.4'
+
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - test
+

@@ -126,17 +126,17 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
+# ### Xcode Patch ###
+# *.xcodeproj/*
+# !*.xcodeproj/project.pbxproj
+# !*.xcodeproj/xcshareddata/
+# !*.xcworkspace/contents.xcworkspacedata
+# /*.gcno
 
-### Projects ###
-*.xcodeproj
-*.xcworkspace
-*.pbxproj
+# ### Projects ###
+# *.xcodeproj
+# *.xcworkspace
+# *.pbxproj
 
 ### Tuist derived files ###
 graph.dot
