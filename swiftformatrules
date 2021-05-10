@@ -1,0 +1,8 @@
+--exclude Pods, Frameworks, Products
+# FORMAT RULES
+--header "\nCopyright © {year} TrueLayer Limited. All rights reserved.\n"
+--extensionacl on-declarations
+--guardelse same-line
+--elseposition same-line
+--patternlet inline
+--disable unusedarguments, trailingClosures, andOperator, braces, wrapMultilineStatementBraces, redundantReturn, redundantRawValues
