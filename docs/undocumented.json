@@ -1,0 +1,124 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/Derived/Sources/Bundle+TruelayerPayments.swift",
+      "line": 20,
+      "symbol": "TruelayerPaymentsResources",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/Derived/Sources/Bundle+TruelayerPayments.swift",
+      "line": 21,
+      "symbol": "TruelayerPaymentsResources.bundle",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/Providers/Models/TLPSingleImmediateProvider.swift",
+      "line": 30,
+      "symbol": "TLPSingleImmediateProvider.init(id:displayName:country:iconUrl:logoUrl:releaseStage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/Providers/ProvidersManager.swift",
+      "line": 98,
+      "symbol": "ProvidersManager.getProviders(paymentRequest:response:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/Providers/ProvidersManager.swift",
+      "line": 102,
+      "symbol": "ProvidersManager.getProviders(searchString:paymentRequest:response:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/PublicInterface/TLPAccountType.swift",
+      "line": 10,
+      "symbol": "TLPAccountType.sortCodeAccountNumber",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/PublicInterface/TLPAuthFlowType.swift",
+      "line": 11,
+      "symbol": "TLPAuthFlowType.redirect",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/PublicInterface/TLPCountry.swift",
+      "line": 10,
+      "symbol": "TLPCountry.gb",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/PublicInterface/TLPCurrency.swift",
+      "line": 9,
+      "symbol": "TLPCurrency.gbp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/PublicInterface/TLPReleaseChannel.swift",
+      "line": 10,
+      "symbol": "TLPReleaseChannel.alpha",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsCore/Sources/PublicInterface/TLPReleaseChannel.swift",
+      "line": 10,
+      "symbol": "TLPReleaseChannel.live",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsUI/Sources/PublicInterface/TLPEnvironment.swift",
+      "line": 9,
+      "symbol": "TLPEnvironment.sandbox",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsUI/Sources/PublicInterface/TLPEnvironment.swift",
+      "line": 10,
+      "symbol": "TLPEnvironment.production",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsUI/Sources/PublicInterface/TLPUICoordinatorType.swift",
+      "line": 7,
+      "symbol": "TLPUICoordinatorType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsUI/Sources/PublicInterface/TLPUIStyle.swift",
+      "line": 58,
+      "symbol": "TLPUIColors.init(primary:primaryAction:primaryForeground:secondaryForeground:primaryBackground:secondaryBackground:divider:border:alert:search:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsUI/Sources/PublicInterface/TLPUIStyle.swift",
+      "line": 115,
+      "symbol": "TLPUISearchColors.init(primary:secondary:cursorTint:background:clearTint:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sebastien/Documents/truelayer-ios-demo/TruelayerPayments/TruelayerPaymentsUI/Sources/PublicInterface/TLPUIStyle.swift",
+      "line": 144,
+      "symbol": "TLPUIAlertColors.init(background:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/sebastien/Documents/truelayer-ios-demo"
+}

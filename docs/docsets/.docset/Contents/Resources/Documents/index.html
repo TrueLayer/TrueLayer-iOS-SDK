@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (0% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+<img height="100px" src="./truelayer_logo.svg" />
+</p>
+
+<p><br>
+<br></p>
+<h1 id='ios-sample-payments-app' class='heading'>IOS Sample Payments App</h1>
+
+<p>A sample app integrated with TrueLayers <a href="https://truelayer.com/payments-api">payments-api</a>.</p>
+
+<p>Intended for example purposes only, to give an idea of the integration flow for TrueLayers Payments API V2.</p>
+
+<p>For more information about Payments API integration you can browse our <a href="https://docs.truelayer.com/#payments-api-v2">📖 documentation</a>.</p>
+
+<p><br>
+<br></p>
+<h1 id='prerequisites' class='heading'>Prerequisites</h1>
+<h2 id='a-href-https-console-truelayer-sandbox-com-settings-redirect-uri-a' class='heading'><a href="https://console.truelayer-sandbox.com/settings">Redirect URI</a></h2>
+
+<p>You&rsquo;ll need to add the <a href="https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app">deep link</a> below to your <a href="https://console.truelayer-sandbox.com/settings"><strong>Allowed redirect URIs</strong></a> TrueLayer settings.</p>
+
+<ul>
+<li>com.tl-iospaymentsdemo://</li>
+</ul>
+<h2 id='a-href-https-github-com-truelayer-example-mobile-backend-sample-backend-api-a' class='heading'><a href="https://github.com/TrueLayer/example-mobile-backend">Sample Backend API</a></h2>
+
+<p>For best practices we&rsquo;ve setup an sample backend api extracting logic that should be done on your backend. For example
+<br>
+handling authentication with the payments-api.</p>
+
+<p>Get this up &amp; running via providing your <code>client_id</code>, <code>client_secret</code> and your test bank details.
+And you&rsquo;ve got a backend ready for testing. ✨</p>
+
+<p><br></p>
+<h1 id='project-setup' class='heading'>Project Setup 🚀</h1>
+
+<p>Developed with Xcode 12.4</p>
+
+<ul>
+<li>Clone the project onto your local machine.</li>
+</ul>
+<h2 id='dependencies-setup' class='heading'>Dependencies setup</h2>
+
+<ul>
+<li>Once cloned navigate to the project directory.</li>
+<li>Run setup-developer script. This will install all of the necessary development tools - git pre hook, swiftlint, swiftformat.
+<code>
+./bin/setup-developer
+</code></li>
+</ul>
+
+<p><br></p>
+<h2 id='configuration' class='heading'>Configuration</h2>
+
+<ul>
+<li><p>Update your projects <a href="">Configuration file</a> <code>Sample Backend uri</code> provided from the prerequisites steps.</p></li>
+<li><p>Open <em>tl-ios-demo.xcworkspace</em></p></li>
+<li><p>▶️ Run the project</p></li>
+</ul>
+<h2 id='tools' class='heading'>Tools</h2>
+<h4 id='swiftlint' class='heading'>SwiftLint</h4>
+
+<p>SwiftLint is a tool to enforce Swift style and conventions. SwiftLint enforces the style guide rules that are generally accepted by the Swift community. SwiftLint is installed as part of the development setup. Currently used rules are specified in .swiftlint.yml file.
+To see lint report while developing you can run or build the project while swift-lint-tl-ios-demo scheme is selected - this will output all of the errors and warnings.
+We also run SwiftLint &amp; SwiftLint autocorrect (&ndash;fix) on git pre-commit (see GitHooks below).</p>
+<h4 id='swiftformat' class='heading'>SwiftFormat</h4>
+
+<p>In addition to SwiftLint, we use SwiftFormat to further structure the app code.
+SwiftFormat goes above and beyond what you might expect from a code formatter. In addition to adjusting white space it can insert or remove implicit <code>self</code>, remove redundant parentheses, and correct many other deviations from the standard Swift idioms.
+SwiftFormat is installed as part of the development setup script. Currently used rules are specified in swiftformatrules file.</p>
+<h4 id='tuist' class='heading'>Tuist</h4>
+
+<p>Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.</p>
+
+<p>Useful Tuist Commands
+<code>tuist generate</code> - To generate your project files. This is ran automatically on git checkout hook. Make sure your Xcode is closed when switching the branches as Xcode does not handle branch switching well.</p>
+
+<p><code>tuist edit</code> - To edit project configuration - Things like adding libraries, packages, setting dependencies etc.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://truelayer.com" target="_blank" rel="external">TrueLayer</a>. All rights reserved. (Last updated: 2021-05-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
