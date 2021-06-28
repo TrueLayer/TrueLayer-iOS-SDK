@@ -7,9 +7,9 @@ html, body, div, span, h1, h3, h4, p, a, code, em, img, ul, li, table, tbody, tr
   vertical-align: baseline; }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #093553;
   font-family: Helvetica, freesans, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-font-smoothing: subpixel-antialiased;
   word-wrap: break-word; }
 
@@ -17,13 +17,14 @@ h1, h2, h3 {
   margin-top: 0.8em;
   margin-bottom: 0.3em;
   font-weight: 100;
-  color: black; }
+  color: #333333; }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.2em;
+  font-weight: 400; }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   border-bottom: 1px solid #e2e2e2; }
 
 h4 {
@@ -36,7 +37,7 @@ h5 {
 
 h6 {
   font-size: 1.1em;
-  color: #777; }
+  color: #333333; }
 
 .section-name {
   color: gray;
@@ -48,11 +49,11 @@ h6 {
 
 pre, code {
   font: 0.95em Menlo, monospace;
-  color: #777;
+  color: #333333;
   word-wrap: normal; }
 
 p code, li code {
-  background-color: #eee;
+  background-color: #ffe5b6;
   padding: 2px 4px;
   border-radius: 4px; }
 
@@ -60,11 +61,11 @@ pre > code {
   padding: 0; }
 
 a {
-  color: #0088cc;
+  color: #058ed8;
   text-decoration: none; }
   a code {
     color: inherit; }
-
+    
 ul {
   padding-left: 15px; }
 
@@ -97,8 +98,8 @@ hr {
 
 header {
   font-size: 0.85em;
-  line-height: 32px;
-  background-color: #414141;
+  line-height: 42px;
+  background-color: #052a42;
   position: fixed;
   width: 100%;
   z-index: 3; }
@@ -107,20 +108,21 @@ header {
     vertical-align: -4px;
     height: 16px; }
   header a {
-    color: #fff; }
+    color: #058ed8; }
   header p {
     float: left;
-    color: #999; }
+    color: #ffffff6c; }
   header .header-right {
     float: right;
     margin-left: 16px; }
 
 #breadcrumbs {
-  background-color: #f2f2f2;
-  height: 21px;
-  padding-top: 17px;
+  background-color: #093553;
+  color: white;
+  height: auto;
+  padding: 30px 20px 20px 0px;
   position: fixed;
-  width: 100%;
+  width: 948px;
   z-index: 2;
   margin-top: 32px; }
   #breadcrumbs #carat {
@@ -128,12 +130,12 @@ header {
     margin: 0 5px; }
 
 .sidebar {
-  background-color: #f9f9f9;
+  background-color: #F4F7F9;
   border: 1px solid #e2e2e2;
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
-  top: 70px;
+  top: 100px;
   bottom: 0;
   width: 230px;
   word-wrap: normal; }
@@ -141,35 +143,38 @@ header {
 .nav-groups {
   list-style-type: none;
   background: #fff;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-bottom: 100px }
 
 .nav-group-name {
   border-bottom: 1px solid #e2e2e2;
   font-size: 1.1em;
   font-weight: 100;
   padding: 15px 0 15px 20px; }
-  .nav-group-name > a {
-    color: #333; }
+  
+.nav-group-name > a {
+    color: #333;
+  font-weight: 400; }
 
 .nav-group-tasks {
   margin-top: 5px; }
 
 .nav-group-task {
-  font-size: 0.9em;
+  font-size: 0.8em;
   list-style-type: none;
   white-space: nowrap; }
   .nav-group-task a {
-    color: #888; }
+    color: #333333; }
 
 .main-content {
   background-color: #fff;
   border: 1px solid #e2e2e2;
-  margin-left: 246px;
+  margin-left: 242px;
   position: absolute;
   overflow: hidden;
-  padding-bottom: 20px;
-  top: 70px;
-  width: 734px; }
+  padding-bottom: 100px;
+  top: 100px;
+  width: 720px; }
   .main-content p, .main-content a, .main-content code, .main-content em, .main-content ul, .main-content table, .main-content blockquote {
     margin-bottom: 1em; }
   .main-content p {
@@ -213,7 +218,9 @@ header {
 
 .section-name {
   margin: 0;
-  margin-left: 18px; }
+  margin-left: 18px;
+  color: #333333;
+  font-weight: 400; }
 
 .task-group-section {
   margin-top: 10px;
@@ -263,7 +270,6 @@ header {
     text-indent: -20px;
     padding-left: 3px;
     margin-left: 35px;
-    font-size: 11.9px;
     transition: all 300ms; }
   .item .token-open {
     margin-left: 20px; }
@@ -395,9 +401,9 @@ form[role=search] {
   float: right; }
   form[role=search] input {
     font: Helvetica, freesans, Arial, sans-serif;
-    margin-top: 6px;
-    font-size: 13px;
-    line-height: 20px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 24px;
     padding: 0px 10px;
     border: none;
     border-radius: 1em; }
