@@ -1,0 +1,133 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios14.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TruelayerPayments
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+@_inheritsConvenienceInitializers @objc public class TruelayerPaymentsResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension TruelayerPayments {
+  public enum Environment {
+    case production
+    case sandbox
+    public static func == (a: TruelayerPayments.TruelayerPayments.Environment, b: TruelayerPayments.TruelayerPayments.Environment) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+}
+extension TruelayerPayments.Models {
+  public enum Currency {
+    case gbp
+    case eur
+    public static func == (a: TruelayerPayments.TruelayerPayments.Models.Currency, b: TruelayerPayments.TruelayerPayments.Models.Currency) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+}
+extension TruelayerPayments.Models {
+  public struct PaymentId : Swift.RawRepresentable, Swift.Hashable, Swift.ExpressibleByStringLiteral {
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String
+    public init?(rawValue: Swift.String)
+    public init(stringLiteral value: Swift.StringLiteralType)
+    public typealias StringLiteralType = Swift.StringLiteralType
+    public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+    public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+  }
+  public struct ClientId : Swift.RawRepresentable, Swift.Hashable, Swift.ExpressibleByStringLiteral {
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String
+    public init?(rawValue: Swift.String)
+    public init(stringLiteral value: Swift.StringLiteralType)
+    public typealias StringLiteralType = Swift.StringLiteralType
+    public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+    public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+  }
+  public struct PaymentToken : Swift.RawRepresentable, Swift.Hashable, Swift.ExpressibleByStringLiteral {
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String
+    public init?(rawValue: Swift.String)
+    public init(stringLiteral value: Swift.StringLiteralType)
+    public typealias StringLiteralType = Swift.StringLiteralType
+    public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+    public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+  }
+  public struct ProviderId : Swift.RawRepresentable, Swift.Hashable, Swift.ExpressibleByStringLiteral {
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String
+    public init?(rawValue: Swift.String)
+    public init(stringLiteral value: Swift.StringLiteralType)
+    public typealias StringLiteralType = Swift.StringLiteralType
+    public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+    public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+  }
+}
+extension TruelayerPayments.Models {
+  public struct PaymentContext : Swift.Equatable {
+    public init(paymentId: TruelayerPayments.TruelayerPayments.Models.PaymentId, token: TruelayerPayments.TruelayerPayments.Models.PaymentToken, clientId: TruelayerPayments.TruelayerPayments.Models.ClientId, amountInMinor: Swift.Float, currency: TruelayerPayments.TruelayerPayments.Models.Currency, presentationStyle: TruelayerPayments.TruelayerPayments.Models.PresentationStyle)
+    public static func == (a: TruelayerPayments.TruelayerPayments.Models.PaymentContext, b: TruelayerPayments.TruelayerPayments.Models.PaymentContext) -> Swift.Bool
+  }
+}
+extension TruelayerPayments.Models {
+  public enum PresentationStyle : Swift.Equatable {
+    case present(on: UIKit.UIViewController, modalPresentationStyle: UIKit.UIModalPresentationStyle = .automatic)
+    case push(on: UIKit.UINavigationController)
+    public static func == (a: TruelayerPayments.TruelayerPayments.Models.PresentationStyle, b: TruelayerPayments.TruelayerPayments.Models.PresentationStyle) -> Swift.Bool
+  }
+}
+extension TruelayerPayments {
+  public enum Error : Swift.Error, Swift.Equatable {
+    case failedToStartSDK
+    case sdkAlreadyStarted
+    case sdkNotStartedYet
+    case unknown
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TruelayerPayments.TruelayerPayments.Error, b: TruelayerPayments.TruelayerPayments.Error) -> Swift.Bool
+  }
+}
+public struct UIStyle : Swift.Equatable {
+  public init(primary: UIKit.UIColor = .systemBlue, primaryActionLabel: UIKit.UIColor = .white, primaryForeground: UIKit.UIColor = .label, secondaryForeground: UIKit.UIColor = .systemGray, primaryBackground: UIKit.UIColor = .systemBackground, secondaryBackground: UIKit.UIColor = .secondarySystemBackground, divider: UIKit.UIColor = .separator, border: UIKit.UIColor = .separator, errorColor: UIKit.UIColor = .systemRed, alertBackgroundColor: UIKit.UIColor? = nil, searchPrimaryColor: UIKit.UIColor = .label, searchSecondaryColor: UIKit.UIColor = .systemGray, searchCursorTint: UIKit.UIColor = .systemBlue, searchBackground: UIKit.UIColor = .secondarySystemBackground, searchClearTint: UIKit.UIColor = .systemGray, textPlaceholderColor: UIKit.UIColor = .placeholderText)
+  public static func == (a: TruelayerPayments.UIStyle, b: TruelayerPayments.UIStyle) -> Swift.Bool
+}
+public protocol TruelayerPaymentsManager {
+  func start(environment: TruelayerPayments.TruelayerPayments.Environment, style: TruelayerPayments.UIStyle) throws
+  func processPayments(context: TruelayerPayments.TruelayerPayments.Models.PaymentContext, callback: TruelayerPayments.TruelayerPayments.ProviderSelectedCallback?) throws
+}
+extension TruelayerPayments {
+  public typealias ProviderSelectedCallback = (TruelayerPayments.TruelayerPayments.Models.ProviderId) -> Swift.Void
+  @_hasMissingDesignatedInitializers public class Manager : TruelayerPayments.TruelayerPaymentsManager {
+    public static let shared: TruelayerPayments.TruelayerPayments.Manager
+    public func start(environment: TruelayerPayments.TruelayerPayments.Environment, style: TruelayerPayments.UIStyle = .init()) throws
+    public func processPayments(context: TruelayerPayments.TruelayerPayments.Models.PaymentContext, callback: TruelayerPayments.TruelayerPayments.ProviderSelectedCallback? = nil) throws
+    @objc deinit
+  }
+}
+public enum TruelayerPayments {
+}
+extension TruelayerPayments {
+  public enum Models {
+  }
+}
+extension UIColor {
+  convenience public init(lightAppearance: UIKit.UIColor, darkAppearance: UIKit.UIColor)
+}
+extension TruelayerPayments.TruelayerPayments.Environment : Swift.Equatable {}
+extension TruelayerPayments.TruelayerPayments.Environment : Swift.Hashable {}
+extension TruelayerPayments.TruelayerPayments.Models.Currency : Swift.Equatable {}
+extension TruelayerPayments.TruelayerPayments.Models.Currency : Swift.Hashable {}
+extension TruelayerPayments.TruelayerPayments.Error : Swift.Hashable {}
