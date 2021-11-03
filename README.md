@@ -98,7 +98,7 @@ The first step that is required to use the SDK is to invoke its `start()`() meth
 We strongly suggests to initialize the SDK as soon as possible, within you `AppDelegate`, `SceneDelegate` or any container for your dependencies. The following example shows how this can be done using the `SceneDelegate`:
 
 ```swift
-import TruelayerPayments
+import TruelayerPaymentsSdk
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -132,7 +132,7 @@ Finally, the `processPayment` method can receive a callback that the SDK uses to
 An exmple on how to process a payment is the following:
 
 ```swift
-import TruelayerPayments
+import TruelayerPaymentsSdk
 
 class ProductViewController: UIViewController {
 
