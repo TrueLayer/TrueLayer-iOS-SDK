@@ -30,7 +30,7 @@ There are three way in which it can be installed: manually, using Swift Package 
 
 To install the SDK manually, follow these steps:
 
-1. Download the XCFramework at [this link]()
+1. Download the XCFramework at [this link](https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/v1.0.0-private-beta/TruelayerPaymentsSdk.xcframework.zip)
 1. Unzip the archive
 1. Open your app in Xcode
 1. Select your project file
