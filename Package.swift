@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "TruelayerPaymentsSdk",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "TruelayerPaymentsSdk",
