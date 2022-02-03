@@ -1,21 +1,23 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
 let package = Package(
-    name: "TruelayerPaymentsSdk",
-    platforms: [.iOS(.v13)],
-    products: [
-        .library(
-            name: "TruelayerPaymentsSdk",
-            targets: ["TruelayerPaymentsSdk"]
-        ),
-    ],
-    targets: [
-        .binaryTarget(
-            name: "TruelayerPaymentsSdk",
-            url: "https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/v1.0.1-private-beta/TruelayerPaymentsSdk.xcframework.zip",
-            checksum: "28b0618a00a5b8492a6ea753b55ec840c4f8e38d8c5164a3a0858baf4d3c9105"
-        ),
-    ]
+  name: "TrueLayerPaymentsSDK",
+  platforms: [
+    .iOS(.v10)
+  ],
+  products: [
+    .library(
+      name: "TrueLayerPaymentsSDK",
+      targets: ["TrueLayerPaymentsSDK"]
+    ),
+  ],
+  targets: [
+    .binaryTarget(
+      name: "TrueLayerPaymentsSDK",
+      url: "https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/1.0.0-beta.1/TrueLayerPaymentsSDK.xcframework.zip",
+      checksum: "3e68884aed04780a2be06b26d136cb62220ed3034b0a7312fdc0b48fca42af0c"
+    ),
+  ]
 )
