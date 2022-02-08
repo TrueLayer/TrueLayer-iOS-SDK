@@ -1,8 +1,8 @@
 # Truelayer Payments SDK
 Welcome to the **Truelayer Payments SDK**.
 
-This is the iOS version of the SDK that allows the integration of iOS apps with the Truelayer Payment System.  
-Thanks to the **Truelayer Payment SDK** it's possible to process a payment using the latest [Open Banking technology](https://truelayer.com/openbanking), choose which bank to use to carry out the payment, and pay. Everything with the utmost security and following the latest Open Banking standards. 
+This is the iOS version of the SDK that allows the integration of iOS apps with the Truelayer Payments System.  
+Thanks to the **Truelayer Payments SDK** it's possible to process a payment using the latest [Open Banking technology](https://truelayer.com/openbanking), choose which bank to use to carry out the payment, and pay. Everything with the utmost security and following the latest Open Banking standards. 
 
 The Android version of the SDK can be found [here]().
 
@@ -24,13 +24,13 @@ The Android version of the SDK can be found [here]().
 
 The SDK is released as a compiled binary in the form of an `XCFramework` artifact.
 
-There are three way in which it can be installed: manually, using Swift Package Manager (SwiftPM) or using Cocoapods
+The SDK can be either included manually in the project or using SwiftPM.
 
 ### Manual Installation
 
 To install the SDK manually, follow these steps:
 
-1. Download the XCFramework at [this link](https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/v1.0.0-private-beta/TruelayerPaymentsSdk.xcframework.zip)
+1. Download the XCFramework at [this link](https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/1.0.0-beta.1/TruelayerPaymentsSDK.xcframework.zip)
 1. Unzip the archive
 1. Open your app in Xcode
 1. Select your project file
@@ -43,13 +43,6 @@ To install the SDK manually, follow these steps:
 
 To install the SDK using the SwiftPM, follow these steps:
 
-#### Xcode 12
-
-1. Open your app in Xcode
-1. Click on **File > Swift Packages > Add Package Dependencies...**
-1. Insert the `https://github.com/Truelayer/truelayer-ios-sdk` url in the search bar and press **Enter**
-1. Follow the Xcode's dialog to install the SDK
-
 #### Xcode 13
 
 1. Open your app in Xcode
@@ -61,18 +54,14 @@ To install the SDK using the SwiftPM, follow these steps:
 1. Click on the `Add Package` button
 1. Follow the Xcode's dialog to install the SDK
 
-### Cocoapods
-
-1. Open your Podfile
-1. Add the line `pod 'TruelayerPayments', '~> 1.0.0'` with all your other pods
-
 
 ## Setup
-The first step to start using the SDK, is to create an account in the [Truelayer console](https://console.truelayer.com/).
-Follow [this guide]() to set it up correctly.
+
+- create an account in the [Truelayer console](https://console.truelayer.com/). 
+Follow [this guide](https://docs.truelayer.com/docs/get-started-with-truelayer) to set it up correctly.
 
 Secondly, you need a backend which is able to retrieve an access token and actually create a payment on behalf of the client. This step has been though like this to enforce security on the client, avoiding completely the need to store static secrets in your app.
-If you need help or inspiration, you can check our [mobile example backend](https://github.com/TrueLayer/example-mobile-backend). The API documentation can be found [here](https://docs.truelayer.com/#payments-api-v2).
+If you need help or inspiration, you can check our [mobile example backend](https://github.com/TrueLayer/example-mobile-backend). The API documentation can be found [here](https://docs.truelayer.com/).
 
 Finally, your app should setup a payment. Once the payment has been setup, its possible to delegate all the remaining parts of the process to the SDK. To setup a payment, the backend should:
 
@@ -101,8 +90,6 @@ We strongly suggests to initialize the SDK as soon as possible, within you `AppD
 import TruelayerPaymentsSdk
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
 
@@ -112,7 +99,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // Handle the TruelayerPayments.Error
         }
     }
-
     // Other UIWindowSceneDelegate method implementation
 }
 ```
