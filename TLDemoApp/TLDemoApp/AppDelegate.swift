@@ -1,4 +1,5 @@
 import UIKit
+import TrueLayerPaymentsSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,8 +9,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     
     window = window ?? UIWindow(frame: UIScreen.main.bounds)
-        
+    
     setRootViewController()
+    
+    do {
+      try TrueLayerPayments.Manager.shared.start(environment: .sandbox)
+    } catch {
+      // Handle the TruelayerPayments.Error
+    }
     
     return true
   }

@@ -11,7 +11,6 @@ The Android version of the SDK can be found [here]().
 1. [How to install the SDK](#how-to-install-the-sdk)
 	1. [Manual Installation](#manual-installation)
 	1. [SwiftPM](#swiftpm)
-		1. [Xcode 12](#xcode-12)
 		1. [Xcode 13](#xcode-13)
 	1. [Cocoapods](#cocoapods)
 1. [Setup](#setup)
@@ -71,7 +70,7 @@ Finally, your app should setup a payment. Once the payment has been setup, its p
 
 ## How To Use The SDK
 
-The SDK has a very slim interface, with only two methods: `start()` and `processPayments()`. 
+The SDK has a very slim interface, with only two methods: `start()` and `processPayment()`. 
 
 The complete documentation can be found [here](https://truelayer.github.io/truelayer-ios-sdk).
 
@@ -87,7 +86,7 @@ The first step that is required to use the SDK is to invoke its `start()`() meth
 We strongly suggests to initialize the SDK as soon as possible, within you `AppDelegate`, `SceneDelegate` or any container for your dependencies. The following example shows how this can be done using the `SceneDelegate`:
 
 ```swift
-import TruelayerPaymentsSdk
+import TruelayerPaymentsSDK
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
