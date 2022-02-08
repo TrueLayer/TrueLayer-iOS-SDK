@@ -1,3 +1,0 @@
-
-repo_root=$( cd "$(dirname "${BASH_SOURCE[0]}")/" ; pwd -P ) 
-swiftformat --config $repo_root/../swiftformatrules $repo_root/../truelayer-payments-sdk-demo/
