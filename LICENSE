@@ -40,7 +40,7 @@ A.
 2.         License
 
 
-   1. Subject to terms and conditions of this Agreement, Licensor hereby 
+   2.1. Subject to terms and conditions of this Agreement, Licensor hereby
 grants Licensee a non-exclusive, non-sublicensable, and non-transferable 
 (except in compliance with Section 10.7 license during the Term to: (i) 
 use the SDK solely for Licensee's internal business purposes; and (ii) use 
@@ -53,7 +53,7 @@ must include all copyright or other proprietary rights notices contained
 in the original.
 
 
-   2. Licensee shall not use the SDK or Documentation for any purposes 
+   2.2. Licensee shall not use the SDK or Documentation for any purposes
 beyond the scope of the license granted in this Agreement. Without 
 limiting the foregoing and except as otherwise expressly set forth in this 
 Agreement, Licensee shall not at any time, directly or indirectly: (i) 
@@ -69,7 +69,7 @@ intellectual property right or other right of any person, or that violates
 any applicable law.
 
 
-   3. Licensor reserves all rights not expressly granted to Licensee in 
+   2.3. Licensor reserves all rights not expressly granted to Licensee in
 this Agreement. Except for the limited rights and licenses expressly 
 granted under this Agreement, nothing in this Agreement grants, by 
 implication, waiver, estoppel, or otherwise, to Licensee or any third 
@@ -77,7 +77,7 @@ party any intellectual property rights or other right, title, or interest
 in or to the SDK.
 
 
-   4. Delivery. Licensor has delivered the SDK electronically, on tangible 
+   2.4. Delivery. Licensor has delivered the SDK electronically, on tangible
 media. The date on which the Licensee downloads the SDK will be considered 
 the Effective Date.
 
@@ -85,7 +85,7 @@ the Effective Date.
 3.         Licensee Responsibilities
 
 
-   5. Licensee is responsible and liable for all uses of the SDK and 
+   3.1. Licensee is responsible and liable for all uses of the SDK and
 Documentation resulting from access provided by Licensee, directly or 
 indirectly, whether such access or use is permitted by or in violation of 
 this Agreement.
@@ -94,18 +94,18 @@ this Agreement.
 4.         Support 
 
 
-   6. This Agreement does not entitle Licensee to any support for the SDK.
+   4.1. This Agreement does not entitle Licensee to any support for the SDK.
 
 
 5.         Intellectual Property Ownership
 
 
-   7. Licensee acknowledges that, as between Licensee and Licensor, 
+   5.1. Licensee acknowledges that, as between Licensee and Licensor,
 Licensor owns all right, title, and interest, including all intellectual 
 property rights, in and to the SDK and Documentation. 
 
 
-   8. If Licensee or any of its employees or contractors sends or 
+   5.2. If Licensee or any of its employees or contractors sends or
 transmits any communications or materials to Licensor by mail, email, 
 telephone, or otherwise, suggesting or recommending changes to the SDK or 
 Documentation, including without limitation, new features or functionality 
@@ -123,11 +123,11 @@ purpose whatsoever, although Licensor is not required to use any Feedback.
 6.         Limited Warranties and Warranty Disclaimer 
 
 
-   9. Licensor warrants that at the time of delivery the SDK does not 
+   6.1. Licensor warrants that at the time of delivery the SDK does not
 contain any virus or other malicious code. 
 
 
-   10. The warranties set forth in Section 6.1 do not apply and become 
+   6.2. The warranties set forth in Section 6.1 do not apply and become
 null and void if Licensee breaches any provision of this Agreement, or if 
 Licensee ,or any other person provided access to the SDK by Licensee 
 whether or not in violation of this Agreement: (i) installs or uses the 
@@ -136,7 +136,7 @@ Documentation;(ii) modifies or damages the SDK; or (iii) misuses the SDK,
 including any use of the SDK other than as specified in the Documentation.
 
 
-   11. If, during the period specified in Section 6(a), any SDK fails to 
+   6.3. If, during the period specified in Section 6(a), any SDK fails to
 comply with the warranty in Section 6.1, and such failure is not excluded 
 from warranty pursuant to Section 6.2, Licensor shall, subject to 
 Licensee's promptly notifying Licensor in writing of such failure,  will 
@@ -150,7 +150,7 @@ Licensee's sole remedies and Licensor's sole liability under the limited
 warranty set forth in Section 6.1.
 
 
-   12. Except for the limited warranty set forth in Section 6.1 the SDK 
+   6.4. Except for the limited warranty set forth in Section 6.1 the SDK
 and documentation are provided "as is" and licensor hereby disclaims all 
 warranties, whether express, implied, statutory, or otherwise. licensor 
 specifically disclaims all implied warranties of merchantability, fitness 
@@ -167,7 +167,7 @@ complete, free of harmful code, or error free.
 7.         Indemnification 
 
 
-   13. Licensor shall indemnify, defend, and hold harmless Licensee from 
+   7.1. Licensor shall indemnify, defend, and hold harmless Licensee from
 and against any and all losses, damages, liabilities, and costs ("Losses") 
 incurred by Licensee resulting from any third-party claim, suit, action, 
 or proceeding ("Third-Party Claim") that the SDK or Documentation, or any 
@@ -178,7 +178,7 @@ in writing of the claim, cooperates with Licensor, and allows Licensor
 sole authority to control the defence and settlement of such claim. 
 
 
-   14. If such a claim is made or appears possible, Licensee agrees to 
+   7.2. If such a claim is made or appears possible, Licensee agrees to
 permit Licensor, at Licensor's sole discretion, to (A) modify or replace 
 the SDK or Documentation, or component or part thereof, to make it 
 non-infringing, or (B) obtain the right for Licensee to continue use. If 
@@ -188,7 +188,7 @@ respect to the affected component or part, effective immediately on
 written notice to Licensee. 
 
 
-   15. Section 7.1, 7.2 and 7.3 will not apply to the extent that the 
+   7.3. Section 7.1, 7.2 and 7.3 will not apply to the extent that the
 alleged infringement arises from: (A) use of the SDK in combination with 
 data, SDK, hardware, equipment, or technology not provided by Licensor or 
 authorised by Licensor in writing; (B) modifications to the SDK not made 
@@ -196,7 +196,7 @@ by Licensor; or (C) use of any version other than the most current version
 of the SDK or Documentation delivered to Licensee. 
 
 
-   16. Licensee shall indemnify, hold harmless, and, at Licensor's option, 
+   7.4. Licensee shall indemnify, hold harmless, and, at Licensor's option,
 defend Licensor from and against any Losses resulting from any Third-Party 
 Claim based on Licensee's (i) negligence or willful misconduct;  (ii) use 
 of the SDK or Documentation in a manner not authorised or contemplated by 
@@ -213,7 +213,7 @@ defend itself against any such Third-Party Claim or to participate in the
 defence thereof by counsel of its own choice.  
 
 
-   17. This Section 7 sets forth licensee's sole remedies and licensor's 
+   7.5. This Section 7 sets forth licensee's sole remedies and licensor's
 sole liability and obligation for any actual, threatened, or alleged 
 claims that the SDK or documentation infringes, misappropriates, or 
 otherwise violates any intellectual property rights of any third party. in 
@@ -223,18 +223,18 @@ no event will Licensor's liability under this Section 7 exceed £250,000.
 8.         Limitations of Liability.
 
 
-   18. Nothing in this Agreement shall limit or exclude either party's 
+   8.1. Nothing in this Agreement shall limit or exclude either party's
 liability in respect of any claims:
 
 
-      1. for death or personal injury caused by the negligence of such 
+      8.1.1. for death or personal injury caused by the negligence of such
 party;
-      2. resulting from the deliberate misconduct of such party; or
-      3. to the extent that such liability may not otherwise be limited or 
+      8.1.2. resulting from the deliberate misconduct of such party; or
+      8.1.3. to the extent that such liability may not otherwise be limited or
 excluded by Applicable Law. 
 
 
-   19. The Licensor shall not be liable to the Licensee (whether in 
+   8.2. The Licensor shall not be liable to the Licensee (whether in
 contract, tort (including negligence), misrepresentation, breach of 
 statutory duty (including strict liability) or otherwise arising out of, 
 or in relation to, this SDK License Agreement) for any reason except for 
@@ -245,7 +245,7 @@ of a third party’s intellectual property.
 9.         Term and Termination
 
 
-   20. The term of this Agreement begins on the Effective Date and, unless 
+   9.1. The term of this Agreement begins on the Effective Date and, unless
 terminated earlier pursuant to any of the Agreement's express provisions, 
 will continue in effect until the commencement date of a master services 
 agreement between the Licensor and Licensee  (“MSA”) at which point the 
@@ -253,18 +253,18 @@ license contained within such MSA will supersede and replace this SDK
 License Agreement (the "Term"). 
 
 
-   21. In addition to any other express termination right set forth in 
+   9.2. In addition to any other express termination right set forth in
 this Agreement, Licensor may terminate this Agreement, effective on 
 written notice to Licensee, if:
 
 
-      4. Licensee breaches any of its obligations under Section 2.2;
-      5. either Party may terminate this Agreement, effective on written 
+      9.2.1. Licensee breaches any of its obligations under Section 2.2;
+      9.2.2. either Party may terminate this Agreement, effective on written
 notice to the other Party, if the other Party materially breaches this 
 Agreement, and such breach: (A) is incapable of cure; or (B) being capable 
 of cure, remains uncured thirty (30) days after the non-breaching Party 
 provides the breaching Party with written notice of such breach; or
-      6. either Party may terminate this Agreement, effective immediately 
+      9.2.3. either Party may terminate this Agreement, effective immediately
 upon written notice to the other Party, if the other Party: (A) files or 
 has filed against it, a petition for voluntary or involuntary bankruptcy 
 or otherwise becomes subject, voluntarily or involuntarily, to any 
@@ -276,7 +276,7 @@ jurisdiction to take charge of or sell any material portion of its
 property or business.
 
 
-   22. Upon expiration or earlier termination of this Agreement, the 
+   9.3. Upon expiration or earlier termination of this Agreement, the
 license granted hereunder will also terminate Licensee shall cease using 
 and delete, destroy, or return all copies of the SDK and Documentation and 
 certify in writing to the Licensor that the SDK and Documentation has been 
@@ -285,7 +285,7 @@ obligation to pay all Fees that may have become due before such expiration
 or termination, or entitle Licensee to any refund.
 
 
-   23. This Section 9.4 and Sections 1, 5, 6.4, 7,8 and 10 survive any 
+   9.4. This Section 9.4 and Sections 1, 5, 6.4, 7,8 and 10 survive any
 termination or expiration of this Agreement. No other provisions of this 
 Agreement survive the expiration or earlier termination of this Agreement.
 
@@ -293,7 +293,7 @@ Agreement survive the expiration or earlier termination of this Agreement.
 10.         Miscellaneous
 
 
-   24. This Agreement, together with any other documents incorporated 
+   10.1. This Agreement, together with any other documents incorporated
 herein by reference and all related Exhibits, constitutes the sole and 
 entire agreement of the Parties with respect to the subject matter of this 
 Agreement and supersedes all prior and contemporaneous understandings, 
@@ -307,7 +307,7 @@ the Effective Date; and (c) third, any other documents incorporated herein
 by reference.
 
 
-   25. All notices, requests, consents, claims, demands, waivers, and 
+   10.2. All notices, requests, consents, claims, demands, waivers, and
 other communications hereunder (each, a "Notice") must be in writing and 
 addressed to the Parties at the addresses set forth on the first page of 
 this Agreement (or to such other address that may be designated by the 
@@ -317,7 +317,7 @@ receiving Party, and (ii) if the Party giving the Notice has complied with
 the requirements of this Section.
 
 
-   26. In no event shall Licensor be liable to Licensee, or be deemed to 
+   10.3. In no event shall Licensor be liable to Licensee, or be deemed to
 have breached this Agreement, for any failure or delay in performing its 
 obligations under this Agreement, if and to the extent such failure or 
 delay is caused by any circumstances beyond Licensor's reasonable control, 
@@ -331,7 +331,7 @@ industrial disturbances; and (viii) shortage of adequate power or
 transportation facilities.
 
 
-   27. No amendment to or modification of this Agreement is effective 
+   10.4. No amendment to or modification of this Agreement is effective
 unless it is in writing and signed by an authorised representative of each 
 Party. No waiver by any Party of any of the provisions hereof will be 
 effective unless explicitly set forth in writing and signed by the Party 
@@ -344,7 +344,7 @@ exercise thereof or the exercise of any other right, remedy, power, or
 privilege.
 
 
-   28. If any provision of this Agreement is invalid, illegal, or 
+   10.5. If any provision of this Agreement is invalid, illegal, or
 unenforceable in any jurisdiction, such invalidity, illegality, or 
 unenforceability will not affect any other term or provision of this 
 Agreement or invalidate or render unenforceable such term or provision in 
@@ -356,7 +356,7 @@ acceptable manner in order that the transactions contemplated hereby be
 consummated as originally contemplated to the greatest extent possible.
 
 
-   29. Any dispute or claim arising out of or in connection with this SDK 
+   10.6. Any dispute or claim arising out of or in connection with this SDK
 License Agreement or its subject matter or formation (including 
 non-contractual disputes or claims) shall be governed by and construed in 
 accordance with the laws of England and Wales and the courts of England 
@@ -366,7 +366,7 @@ subject matter or formation (including non-contractual disputes or
 claims). 
 
 
-   30. Licensee may not assign or transfer any of its rights or delegate 
+   10.7. Licensee may not assign or transfer any of its rights or delegate
 any of its obligations hereunder, in each case whether voluntarily, 
 involuntarily, by operation of law or otherwise, without the prior written 
 consent of Licensor. Any purported assignment, transfer, or delegation in 
@@ -377,7 +377,7 @@ benefit of the Parties hereto and their respective permitted successors
 and assigns. 
 
 
-   31. The Licensor may from time to time make updates, modifications, add 
+   10.8. The Licensor may from time to time make updates, modifications, add
 features, conduct bug fixes, patches or error corrections to the SDK at 
 its discretion without notice to the Licensee. 
 
