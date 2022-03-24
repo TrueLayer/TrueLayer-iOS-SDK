@@ -8,7 +8,7 @@ let package = Package(
   products: [
     .library(
       name: "TrueLayerPaymentsSDK",
-      targets: ["TrueLayerPaymentsSDK"]
+      targets: ["TrueLayerPaymentsSDKWrapper", "TrueLayerPaymentsSDK"]
     ),
   ],
   targets: [
@@ -19,9 +19,8 @@ let package = Package(
     ),
     .target(
       name: "TrueLayerPaymentsSDKWrapper",
-      path: "",
       exclude: [
-        "README.md",
+        "README.md"
       ]
     )
   ]
