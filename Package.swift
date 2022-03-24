@@ -19,6 +19,7 @@ let package = Package(
     ),
     .target(
       name: "TrueLayerPaymentsSDKWrapper",
+      path: "",
       exclude: [
         "README.md",
       ]
