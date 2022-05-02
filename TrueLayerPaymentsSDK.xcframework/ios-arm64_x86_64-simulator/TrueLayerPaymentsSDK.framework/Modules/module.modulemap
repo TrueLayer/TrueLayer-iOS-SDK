@@ -1,0 +1,4 @@
+framework module TrueLayerPaymentsSDK {
+  header "TrueLayerPaymentsSDK-Swift.h"
+  requires objc
+}

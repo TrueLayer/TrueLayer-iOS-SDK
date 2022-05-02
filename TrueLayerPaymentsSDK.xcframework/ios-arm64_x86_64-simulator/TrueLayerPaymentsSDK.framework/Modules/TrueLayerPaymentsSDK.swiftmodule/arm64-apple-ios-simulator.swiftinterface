@@ -1,0 +1,339 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerPaymentsSDK
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class TrueLayerPaymentsSDKResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum Core {
+}
+extension TrueLayerPaymentsSDK.Core {
+  public enum Models {
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models {
+  public enum AdditionalInput {
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput {
+  public struct Localization : Swift.Equatable {
+    public let key: Swift.String
+    public let value: Swift.String
+    public init(key: Swift.String, value: Swift.String)
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Localization, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Localization) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField {
+  public struct DisplayText : Swift.Equatable {
+    public let key: Swift.String
+    public let `default`: Swift.String
+    public init(key: Swift.String, default: Swift.String)
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.DisplayText, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.DisplayText) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput {
+  public struct Form : Swift.Equatable {
+    public let inputFields: [TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField]
+    public init(inputFields: [TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField])
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text {
+  public enum Format : Swift.Equatable {
+    case any
+    case sortCode
+    case accountNumber
+    case iban
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Format, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Format) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form {
+  public enum InputField : Swift.Equatable {
+    case text(_: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text)
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text {
+  public struct Regex : Swift.Equatable {
+    public let regex: Swift.String
+    public let message: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.DisplayText
+    public init(regex: Swift.String, message: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.DisplayText)
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Regex, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Regex) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField {
+  public struct Text : Swift.Equatable {
+    public let id: Swift.String
+    public let mandatory: Swift.Bool
+    public let displayText: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.DisplayText
+    public let type: Swift.String
+    public let format: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Format
+    public let sensitive: Swift.Bool
+    public let minLength: Swift.Int
+    public let maxLength: Swift.Int
+    public let regexes: [TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Regex]
+    public init(id: Swift.String, mandatory: Swift.Bool, displayText: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.DisplayText, type: Swift.String, format: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Format, sensitive: Swift.Bool, minLength: Swift.Int, maxLength: Swift.Int, regexes: [TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Regex])
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput {
+  public struct Info : Swift.Equatable {
+    public let key: Swift.String
+    public let element: Swift.String
+    public let type: Swift.String
+    public let text: Swift.String
+    public let links: [TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info.Link]
+    public init(key: Swift.String, element: Swift.String, type: Swift.String, text: Swift.String, links: [TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info.Link])
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info {
+  public struct Link : Swift.Equatable {
+    public let tag: Swift.String
+    public let link: Foundation.URL
+    public init(tag: Swift.String, link: Foundation.URL)
+    public static func == (a: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info.Link, b: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Info.Link) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment {
+  public struct Context {
+    public let paymentId: Swift.String
+    public let resourceToken: Swift.String
+    public let endOfFlowRedirectURI: Swift.String
+    public let preferences: TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment.Preferences
+    public let presentationStyle: TrueLayerPaymentsSDK.TrueLayer.PresentationStyle
+    public init(paymentId: Swift.String, resourceToken: Swift.String, endOfFlowRedirectURI: Swift.String, preferences: TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment.Preferences = Preferences(), presentationStyle: TrueLayerPaymentsSDK.TrueLayer.PresentationStyle)
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment {
+  public struct Preferences {
+    public init(preferredCountryCode: Swift.String? = nil)
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayer.Payments {
+  public class Manager {
+    
+    #if compiler(>=5.3) && $EffectfulProp
+    public static var sandbox: TrueLayerPaymentsSDK.TrueLayer.Payments.Manager {
+      get throws
+    }
+    #endif
+
+    
+    #if compiler(>=5.3) && $EffectfulProp
+    public static var production: TrueLayerPaymentsSDK.TrueLayer.Payments.Manager {
+      get throws
+    }
+    #endif
+
+    public init(using configuration: TrueLayerPaymentsSDK.TrueLayerPaymentsManagerConfigurationProvider) throws
+    #warning("Temporary here, will be extracted from dependencies in next PR")
+    @objc deinit
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayer {
+  public enum PresentationStyle {
+    public typealias UINavigationControllerProvider = () -> UIKit.UINavigationController
+    case present(on: UIKit.UIViewController, modalPresentationStyle: UIKit.UIModalPresentationStyle = .automatic)
+    case push(on: TrueLayerPaymentsSDK.TrueLayer.PresentationStyle.UINavigationControllerProvider)
+  }
+}
+public protocol TrueLayerPaymentsManagerConfigurationProvider {
+  var environment: TrueLayerPaymentsSDK.TrueLayer.Environment { get }
+  var visualSettings: TrueLayerPaymentsSDK.TrueLayerVisualSettings { get }
+}
+public struct TrueLayerPaymentsManagerConfiguration : TrueLayerPaymentsSDK.TrueLayerPaymentsManagerConfigurationProvider {
+  public let environment: TrueLayerPaymentsSDK.TrueLayer.Environment
+  public let visualSettings: TrueLayerPaymentsSDK.TrueLayerVisualSettings
+  public init(environment: TrueLayerPaymentsSDK.TrueLayer.Environment, visualSettings: TrueLayerPaymentsSDK.TrueLayerVisualSettings = UIStyle())
+}
+extension TrueLayerPaymentsSDK.TrueLayer {
+  public enum Environment {
+    case production
+    case sandbox
+    public static func == (a: TrueLayerPaymentsSDK.TrueLayer.Environment, b: TrueLayerPaymentsSDK.TrueLayer.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum TrueLayer {
+}
+extension TrueLayerPaymentsSDK.TrueLayer {
+  public enum Payments {
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayer.Payments {
+  public enum Models {
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayer.Payments.Models {
+  public enum Payment {
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayerPayments {
+  public enum Environment {
+    case production
+    case sandbox
+    public static func == (a: TrueLayerPaymentsSDK.TrueLayerPayments.Environment, b: TrueLayerPaymentsSDK.TrueLayerPayments.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayerPayments.Models {
+  public enum PaymentProcessingStep {
+    case providerSelected(provider: TrueLayerPaymentsSDK.TrueLayerPayments.Models.Provider, paymentContext: TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment.Context)
+    case paymentCompleted
+    case authorized
+    case redirectedToBank(provider: TrueLayerPaymentsSDK.TrueLayerPayments.Models.Provider, paymentContext: TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment.Context, redirectURI: Foundation.URL)
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayerPayments.Models {
+  public struct Provider : Swift.Equatable {
+    public let id: Swift.String
+    public let name: Swift.String
+    public let logo: Swift.String
+    public let icon: Swift.String
+    public static func == (a: TrueLayerPaymentsSDK.TrueLayerPayments.Models.Provider, b: TrueLayerPaymentsSDK.TrueLayerPayments.Models.Provider) -> Swift.Bool
+  }
+}
+extension TrueLayerPaymentsSDK.TrueLayerPayments {
+  public enum Error : Swift.Error, Swift.Equatable {
+    case failedToStartSDK
+    case sdkAlreadyStarted
+    case sdkNotStartedYet
+    case unknown
+    case userAborted
+    case noInternet
+    case communicationIssue
+    case authorizationFailed
+    case paymentFailed
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TrueLayerPaymentsSDK.TrueLayerPayments.Error, b: TrueLayerPaymentsSDK.TrueLayerPayments.Error) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct UIStyle : TrueLayerPaymentsSDK.TrueLayerVisualSettings {
+  public let primary: UIKit.UIColor
+  public let primaryActionLabel: UIKit.UIColor
+  public let primaryForeground: UIKit.UIColor
+  public let secondaryForeground: UIKit.UIColor
+  public let primaryBackground: UIKit.UIColor
+  public let secondaryBackground: UIKit.UIColor
+  public let divider: UIKit.UIColor
+  public let border: UIKit.UIColor
+  public let errorColor: UIKit.UIColor
+  public let alertController: TrueLayerPaymentsSDK.TrueLayerUIAlertColors
+  public let searchController: TrueLayerPaymentsSDK.TrueLayerUISearchColors
+  public let textFieldController: TrueLayerPaymentsSDK.TrueLayerUITextFieldColors
+  public init()
+}
+public struct AppliedUISearchColors : TrueLayerPaymentsSDK.TrueLayerUISearchColors {
+  public let primary: UIKit.UIColor
+  public let secondary: UIKit.UIColor
+  public let cursorTint: UIKit.UIColor
+  public let background: UIKit.UIColor
+  public let clearTint: UIKit.UIColor
+}
+public struct AppliedUIAlertColors : TrueLayerPaymentsSDK.TrueLayerUIAlertColors {
+  public let background: UIKit.UIColor?
+}
+public struct AppliedUITextFieldColors : TrueLayerPaymentsSDK.TrueLayerUITextFieldColors {
+  public let placeholder: UIKit.UIColor
+}
+public protocol TrueLayerPaymentsManager {
+  func start(environment: TrueLayerPaymentsSDK.TrueLayerPayments.Environment, style: TrueLayerPaymentsSDK.UIStyle) throws
+  func processPayment(context: TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment.Context, callback: TrueLayerPaymentsSDK.TrueLayerPayments.SDKCallback?) throws
+}
+extension TrueLayerPaymentsSDK.TrueLayerPayments {
+  public typealias SDKCallback = (_ result: Swift.Result<TrueLayerPaymentsSDK.TrueLayerPayments.Models.PaymentProcessingStep, TrueLayerPaymentsSDK.TrueLayerPayments.Error>) -> Swift.Void
+  @_hasMissingDesignatedInitializers public class Manager : TrueLayerPaymentsSDK.TrueLayerPaymentsManager {
+    public static let shared: TrueLayerPaymentsSDK.TrueLayerPayments.Manager
+    public func start(environment: TrueLayerPaymentsSDK.TrueLayerPayments.Environment, style: TrueLayerPaymentsSDK.UIStyle = UIStyle()) throws
+    public func processPayment(context: TrueLayerPaymentsSDK.TrueLayer.Payments.Models.Payment.Context, callback: TrueLayerPaymentsSDK.TrueLayerPayments.SDKCallback? = nil) throws
+    @objc deinit
+  }
+}
+public enum TrueLayerPayments {
+}
+extension TrueLayerPaymentsSDK.TrueLayerPayments {
+  public enum Models {
+  }
+}
+extension TrueLayerPaymentsSDK.PaymentsAPI.Models {
+  public enum AdditionalInputs {
+  }
+}
+extension TrueLayerPaymentsSDK.PaymentsAPI.Models {
+  public struct Form : Swift.Decodable, Swift.Equatable {
+    public static func == (a: TrueLayerPaymentsSDK.PaymentsAPI.Models.Form, b: TrueLayerPaymentsSDK.PaymentsAPI.Models.Form) -> Swift.Bool
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension TrueLayerPaymentsSDK.PaymentsAPI.Models.Form {
+  public var toCore: TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form {
+    get
+  }
+}
+public enum PaymentsAPI {
+}
+extension TrueLayerPaymentsSDK.PaymentsAPI {
+  public enum Models {
+  }
+}
+#warning("Revisit to clean up, and namespace this code.")
+public protocol TrueLayerVisualSettings {
+  var primary: UIKit.UIColor { get }
+  var primaryActionLabel: UIKit.UIColor { get }
+  var primaryForeground: UIKit.UIColor { get }
+  var secondaryForeground: UIKit.UIColor { get }
+  var primaryBackground: UIKit.UIColor { get }
+  var secondaryBackground: UIKit.UIColor { get }
+  var divider: UIKit.UIColor { get }
+  var border: UIKit.UIColor { get }
+  var errorColor: UIKit.UIColor { get }
+  var alertController: TrueLayerPaymentsSDK.TrueLayerUIAlertColors { get }
+  var searchController: TrueLayerPaymentsSDK.TrueLayerUISearchColors { get }
+  var textFieldController: TrueLayerPaymentsSDK.TrueLayerUITextFieldColors { get }
+}
+public protocol TrueLayerUISearchColors {
+  var primary: UIKit.UIColor { get }
+  var secondary: UIKit.UIColor { get }
+  var cursorTint: UIKit.UIColor { get }
+  var background: UIKit.UIColor { get }
+  var clearTint: UIKit.UIColor { get }
+}
+public protocol TrueLayerUIAlertColors {
+  var background: UIKit.UIColor? { get }
+}
+public protocol TrueLayerUITextFieldColors {
+  var placeholder: UIKit.UIColor { get }
+}
+extension UIKit.UIColor {
+  convenience public init(lightAppearance: UIKit.UIColor, darkAppearance: UIKit.UIColor)
+}
+extension TrueLayerPaymentsSDK.Core.Models.AdditionalInput.Form.InputField.Text.Format : Swift.Hashable {}
+extension TrueLayerPaymentsSDK.TrueLayer.Environment : Swift.Equatable {}
+extension TrueLayerPaymentsSDK.TrueLayer.Environment : Swift.Hashable {}
+extension TrueLayerPaymentsSDK.TrueLayerPayments.Environment : Swift.Equatable {}
+extension TrueLayerPaymentsSDK.TrueLayerPayments.Environment : Swift.Hashable {}
+extension TrueLayerPaymentsSDK.TrueLayerPayments.Error : Swift.Hashable {}
