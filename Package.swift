@@ -15,7 +15,7 @@ let package = Package(
         .binaryTarget(
             name: "TrueLayerPaymentsSDK",
             url: "https://github.com/TrueLayer/TrueLayer-iOS-SDK/releases/download/1.0.0-beta.5/TrueLayerPaymentsSDK.xcframework.zip",
-            checksum: "14d6c25276f421917ef75e826ac27ef8677fbc7512b1bf13bd1b09469d3777fa"
+            checksum: "327fb58bd3e8c73ebfa60e5de6d21b3a91103ee396ca04997443d2017d0ce5db"
         ),
     ]
 )
