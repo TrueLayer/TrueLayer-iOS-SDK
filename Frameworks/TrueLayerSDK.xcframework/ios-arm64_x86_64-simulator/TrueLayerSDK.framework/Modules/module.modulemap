@@ -1,0 +1,4 @@
+framework module TrueLayerSDK {
+  header "TrueLayerSDK-Swift.h"
+  requires objc
+}

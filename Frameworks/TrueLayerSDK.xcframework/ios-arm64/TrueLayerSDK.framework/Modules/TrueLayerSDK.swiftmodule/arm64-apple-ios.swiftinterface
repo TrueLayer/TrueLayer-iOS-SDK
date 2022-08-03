@@ -1,0 +1,88 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerSDK
+import Foundation
+import Swift
+import TrueLayerAPI
+import TrueLayerCore
+import TrueLayerNetwork
+import TrueLayerUI
+import TrueLayerUtils
+import UIKit
+import _Concurrency
+extension TrueLayerSDK.TrueLayer {
+  public enum Environment {
+    case production
+    case sandbox
+    public static func == (a: TrueLayerSDK.TrueLayer.Environment, b: TrueLayerSDK.TrueLayer.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
+  public struct Context {
+    public let paymentIdentifier: Swift.String
+    public let resourceToken: Swift.String
+    public let redirectURL: Foundation.URL
+    public let preferences: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Preferences
+    public let presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle
+    public init(paymentIdentifier: Swift.String, resourceToken: Swift.String, redirectURL: Foundation.URL, preferences: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Preferences = Preferences(), presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle)
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
+  public struct Preferences {
+    public init(preferredCountryCode: Swift.String? = nil)
+  }
+}
+public enum TrueLayer {
+}
+extension TrueLayerSDK.TrueLayer {
+  public enum Payments {
+    public static let manager: TrueLayerSDK.TrueLayer.Payments.Manager
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments {
+  public enum Models {
+    public enum Payment {
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments {
+  public typealias TrueLayerError = TrueLayerUI.TrueLayerError
+  public typealias PaymentState = TrueLayerCore.Core.Payments.Models.Payment.State
+  public typealias AuthorizationFlowResult = TrueLayerUI.AuthorizationFlowResult
+  @_hasMissingDesignatedInitializers final public class Manager {
+    final public func configure(visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), environment: TrueLayerSDK.TrueLayer.Environment)
+    final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.AuthorizationFlowResult) -> Swift.Void)?)
+    @objc deinit
+  }
+}
+extension TrueLayerSDK.TrueLayer {
+  public enum PresentationStyle : Swift.Equatable {
+    case present(on: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle = .automatic)
+    case push(on: UIKit.UINavigationController)
+    public static func == (lhs: TrueLayerSDK.TrueLayer.PresentationStyle, rhs: TrueLayerSDK.TrueLayer.PresentationStyle) -> Swift.Bool
+  }
+}
+extension UIKit.UIColor {
+  convenience public init(lightAppearance: UIKit.UIColor, darkAppearance: UIKit.UIColor)
+}
+public protocol VisualSettingsProvider {
+  var colors: TrueLayerSDK.ColorProvider { get }
+}
+public protocol ColorProvider : TrueLayerUI.Makeup {
+}
+extension TrueLayerSDK.VisualSettingsProvider {
+  public var colors: TrueLayerSDK.ColorProvider {
+    get
+  }
+}
+extension TrueLayerUI.UI.DefaultColors : TrueLayerSDK.ColorProvider {
+}
+public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
+  public init()
+}
+extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Environment : Swift.Hashable {}

@@ -1,0 +1,11 @@
+{
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "redirect",
+        "uri": "https://truelayer.com/mockredirect"
+      }
+    }
+  },
+  "status": "authorizing"
+}

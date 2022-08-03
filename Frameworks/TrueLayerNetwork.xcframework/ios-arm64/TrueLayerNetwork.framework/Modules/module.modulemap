@@ -1,0 +1,4 @@
+framework module TrueLayerNetwork {
+  header "TrueLayerNetwork-Swift.h"
+  requires objc
+}

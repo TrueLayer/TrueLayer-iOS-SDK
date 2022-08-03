@@ -1,158 +1,147 @@
-# Truelayer Payments SDK
-Welcome to the **Truelayer Payments SDK**.
+# TrueLayer Payments SDK
+TrueLayer's iOS SDK allows you to quickly add open banking payments to your app. The SDK integrates with TrueLayer's Payments API, making it simple to get up and running.
 
-This is the iOS version of the SDK that allows the integration of iOS apps with the Truelayer Payments System.  
-Thanks to the **Truelayer Payments SDK** it's possible to process a payment using the latest [Open Banking technology](https://truelayer.com/openbanking), choose which bank to use to carry out the payment, and pay. Everything with the utmost security and following the latest Open Banking standards. 
+The SDK presents native screens that allow your users to select their bank and consent to the payment. The user is then redirected to their banking app or website to authorise the payment. It also handles the network requests and errors, and gives you options to customise the user interface.
 
-The Android version of the SDK can be found [here]().
+The Android version of the SDK can be found [here](https://docs.truelayer.com/docs/android-sdk-for-payments-v3).
+
+**Note: If you are migrating from the beta version of the iOS SDK, checkout this [Migration Guide](docs/Migration%20Guide.md).**
 
 ## Table of Contents
 
-1. [How to install the SDK](#how-to-install-the-sdk)
-	1. [Manual Installation](#manual-installation)
+1. [How to Install the SDK](#how-to-install-the-sdk)
 	1. [SwiftPM](#swiftpm)
-		1. [Xcode 13](#xcode-13)
-	1. [Cocoapods](#cocoapods)
-1. [Setup](#setup)
-1. [How To Use The SDK](#how-to-use-the-sdk)
+2. [Setup](#setup)
+	1. [Prerequisites](#prerequisites)
+		1. [Setting Up Your Backend](#setting-up-your-backend) 
+		2. [Minimum Xcode and iOS Versions](#minimum-xcode-and-ios-versions)
+3. [How to Use the SDK](#how-to-use-the-sdk)
 	1. [Starting the SDK](#starting-the-sdk)
-	1. [Processing the payments](#processing-the-payments)
+	2. [Processing a Payment](#processing-a-payment)
+	3. [Preferences](#preferences)
+	4. [Styling](#styling)
 1. [How to Report Issues](#how-to-report-issues)
 
-## How to install the SDK
-
-The SDK is released as a compiled binary in the form of an `XCFramework` artifact.
-
-The SDK can be either included manually in the project or using SwiftPM.
-
-### Manual Installation
-
-To install the SDK manually, follow these steps:
-
-1. Download the XCFramework at [this link](https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/1.0.0-beta.1/TruelayerPaymentsSDK.xcframework.zip)
-1. Unzip the archive
-1. Open your app in Xcode
-1. Select your project file
-1. In the Target Pane select your app
-1. In the General tab, scroll down until you find the **Frameworks, Libraries, and Embedded Content** section
-1. Drag and drop the TruelayerPayments framework
-1. Make sure that the **Embed** option is set to **Embed and Sign**
+## How to Install the SDK
 
 ### SwiftPM
 
-To install the SDK using the SwiftPM, follow these steps:
+To install the SDK using Swift Package Manager:
 
-#### Xcode 13
-
-1. Open your app in Xcode
-1. In the **Project Navigator**, click on the project
-1. in the Project panel, click on the project
-1. Go to the **Package Dependencies** tab
-1. Click on the `+` button
-1. Insert the `https://github.com/Truelayer/truelayer-ios-sdk` url in the search bar and press **Enter**
-1. Click on the `Add Package` button
-1. Follow the Xcode's dialog to install the SDK
-
+1. Open your app in Xcode.
+2. In the **Project Navigator**, click on the project.
+3. Click **File > Add Packages...**
+4. Insert the `https://github.com/truelayer/truelayer-ios-sdk` URL in the search bar and click **Enter**.
+5. Click on the **Add Package** button.
+6. Follow the dialog to install the SDK.
 
 ## Setup
 
-- create an account in the [Truelayer console](https://console.truelayer.com/). 
+### Prerequisites
+
+#### Setting Up Your Backend
+
+- Create an account in the [TrueLayer console](https://console.truelayer.com/). 
 Follow [this guide](https://docs.truelayer.com/docs/get-started-with-truelayer) to set it up correctly.
 
-Secondly, you need a backend which is able to retrieve an access token and actually create a payment on behalf of the client. This step has been though like this to enforce security on the client, avoiding completely the need to store static secrets in your app.
-If you need help or inspiration, you can check our [mobile example backend](https://github.com/TrueLayer/example-mobile-backend). The API documentation can be found [here](https://docs.truelayer.com/).
+- You need a backend which is able to retrieve an access token and create a payment on behalf of the user. This is to enforce security on the client, avoiding the need to store static secrets in your app. The API documentation can be found [here](https://docs.truelayer.com/).
 
-Finally, your app should setup a payment. Once the payment has been setup, its possible to delegate all the remaining parts of the process to the SDK. To setup a payment, the backend should:
+Finally, your app should setup a payment. Once the payment has been setup, it is possible to delegate all the remaining parts of the process to the SDK. To set up a payment, the backend should:
 
-1. Authenticate with Truelayer, following [this documentation](https://docs.truelayer.com/#authentication113)
-2. Create a Payment using [this documentation](https://docs.truelayer.com/#single-immediate-payment114)
-3. Return the payment identifier and the resource token to the app 
+1. [Authenticate with TrueLayer](https://docs.truelayer.com/docs/retrieve-a-token-in-your-server-for-payments-v3).
+2. [Create a Payment](https://docs.truelayer.com/docs/single-payments-for-payments-v3).
+3. Return the payment identifier and the resource token to the app.
 
-## How To Use The SDK
+#### Minimum Xcode and iOS Versions
 
-The SDK has a very slim interface, with only two methods: `start()` and `processPayment()`. 
+The iOS SDK has the following requirements:
 
-The complete documentation can be found [here](https://truelayer.github.io/truelayer-ios-sdk).
+- Xcode 13.4
+- Swift 5.6
+- iOS 13.0
+
+## How to Use the SDK
 
 ### Starting the SDK
+1. Import the SDK:
 
-The interface that exposes all the functions is the `TruelayerPaymentsManager` protocol. You can obtain a reference to an instance that implements the protocol by using the `TruelayerPayments.Manager.shared` instance.
+        import TrueLayerSDK
 
-The first step that is required to use the SDK is to invoke its `start()`() method. The method accepts two parameters:
+2. Configure the SDK with the given environment:
 
-* an environment, which can be `.production` or `.sandbox`. The environment determines which Truelayer backends your app will use to process the payment.
-* [Optional] a `UIStyle` object. This can be used to give a unique look at the payment experience in your app, matching your app main colours, for example. If not provided, the app will use system colours. More information about styling the app can be found [here](https://truelayer.github.io/truelayer-ios-sdk/Protocols/TLPUICoordinatorType.html#/s:17TruelayerPayments20TLPUICoordinatorTypeP9viewStyleAA10TLPUIStyleCvp)
+        TrueLayer.Payments.manager.configure(environment: .sandbox)
 
-We strongly suggests to initialize the SDK as soon as possible, within you `AppDelegate`, `SceneDelegate` or any container for your dependencies. The following example shows how this can be done using the `SceneDelegate`:
+### Processing a Payment
 
-```swift
-import TruelayerPaymentsSDK
+Once your app has obtained the payment identifier and resource token from the backend (see [Setup](#setup)), you can use the iOS SDK to process the payment.
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = scene as? UIWindowScene else { return }
+```
+TrueLayer.Payments.manager.processPayment(
+  context: TrueLayer.Payments.Models.Payment.Context(
+    paymentIdentifier: // Your payment ID,
+    resourceToken: // Your resource token,
+    redirectURL: // Your redirect URL,
+    presentationStyle: .present(on: yourViewController, style: .automatic)
+  )) { result in
+    switch result {
+      case .success(let authorizationFlowResult):
+        // Handle `AuthorizationFlowResult`. See below for the new handling logic.
 
-        do {
-            try TruelayerPayments.Manager.shared.start(environment: .production)
-        } catch {
-            // Handle the TruelayerPayments.Error
-        }
+      case .failure(let error):
+        // Handle error. See below for the new handling logic.
     }
-    // Other UIWindowSceneDelegate method implementation
 }
 ```
 
-As you can see, the `start()` method may throw a [TruelayerPayments.Error]() if something goes wrong with the initialization.
+The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained below:
 
-### Processing the payments 
+- `paymentIdentifier`: this is the payment identifier retrieved from your backend.
+- `resourceToken`: this is the payment token retrieved from your backend.
+- `redirectURL`: the destination where the user should be redirected once the authorization flow is done outside of the app (bank website, HPP). This is usually your app's redirect URI.
+- `presentationStyle`: determines how the SDK should present the authorization flow. This can be either:
+    - `present(on: UIViewController, style: UIModalPresentationStyle)` - modally presents the SDK in a new window.
+    - `push(on: UINavigationController)` - pushes the SDK onto your `UINavigationController`.
 
-Once your app has obtained the payment id and the resource token from the backend (see the [setup](#setup) section of the README to learn how), it can use the **TruelayerPayments SDK** to process the payment.
+#### Handling the Result
+ 
+#### Success
 
-This is as simple as invoking the [`processPayment`]() passing a properly populated [`PaymentContext`]() object.
+| `Payment.State` | Description |
+| ------------- | ------------- 
+| `.executed` | The bank confirmed the payment.
+| `.authorized` | The user authorized the payment with the bank.
+| `.redirect` | The user has been redirected to the bank to authorize the payment.
+| `.settled` | The funds have reached the destination.
 
-The SDK requires both the `paymentId` and the `resourceToken` to process the payment. Furthermore, you can specify how the SDK should presents its `ViewControllers`, using the [`presentationStyle`]() property.
+#### Error
 
-Finally, the `processPayment` method can receive a callback that the SDK uses to return a success, if everything went well, or a failure, in case something went wrong.
+| `TrueLayerError` | Description |
+| ------------- | -------------
+| `.sdkNotConfigured`| The SDK `configure` method has not been called before using it.
+| `.unexpectedBehaviour`| The `SDK` encountered an unexpected behavior.
+| `.userCanceled` | The user canceled the payment.
+| `.connectionIssues` | There was an issue while connecting to the internet. Either the user is offline, or the request timed out.
+| `.authorizationFailed` | The authorization process failed on the user <-> bank side.
+| `.generic(reason: String)` | A unexpected error, the error will be passed as a string parameter.
+| `.invalidToken` | The token used to make the payment is not authorized to undergo such operation.
+| `.paymentExpired` | The user took too long to complete the payment, and therefore it expired.
+| `.paymentNotFound` | The requested payment was not found.
+| `.paymentRejected` | The payment was rejected by the bank.
+| `.serverError` | The server encountered an error while processing the answer.
 
-An exmple on how to process a payment is the following:
+### Preferences
 
-```swift
-import TruelayerPaymentsSdk
+The `Context` object also takes a `preferences` parameter to allow you to customize the authentication flow. 
 
-class ProductViewController: UIViewController {
+Currently, you can pass:
 
-	func processPayment() {
-		// this function will invoke the backend to authenticate the app and create the payment in the truelayer backend
-		createPayment(for: product) { [weak self] payment in
+- `preferredCountryCode` - the preferred country to use when displaying the providers. If the country is invalid, or does not include any providers, the value will fallback to the user's locale.
 
-			let paymentId = payment.id
-			let resourceToken = payment.resourceToken
+### Styling
 
-			do {
-				try TruelayerPayments.Manager.shared.processPayment(
-					context: .init(
-						paymentId: paymentId,
-						resourceToken: resourceToken,
-						presentationStyle: .present(on: self)
-					),
-					callback: self?.handlePayment
-				)
-			} catch {
-				// Handle processPayment errors
-			}
-		}
-	}
-
-	func handlePayment(result: Result<TruelayerPayments.Model.PaymentProcessingStep, TruelayerPayments.Error>) {
-		// handle the result
-	}
-}
-
-```
+You can style the SDK to match your app's UI. See [Styling](docs/Styling.md).
 
 ## How to Report Issues
 
-Are you using the TruelayerPayments SDK and you found a bug?
-
-Please, [open an issue](https://github.com/TrueLayer/truelayer-ios-sdk/issues/new) in this repository, filling the provided template.
+Please [open an issue](https://github.com/TrueLayer/truelayer-ios-sdk/issues/new) in this repository, filling the provided template. The SDK is worked on a private repository in tandem, and issues will be resolved there.
 
