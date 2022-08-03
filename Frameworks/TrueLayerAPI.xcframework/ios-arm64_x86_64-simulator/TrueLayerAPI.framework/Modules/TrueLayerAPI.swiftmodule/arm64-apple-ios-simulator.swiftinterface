@@ -1,0 +1,163 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerAPI
+import Foundation
+import Swift
+import TrueLayerCore
+import TrueLayerMockable
+import TrueLayerNetwork
+import TrueLayerUtils
+import _Concurrency
+public enum AuthorizationFlow {
+}
+public protocol AuthorizationFlowManagerConfigurationProvider {
+  var networkManager: TrueLayerNetwork.Network.Manager { get }
+  var paymentID: Swift.String { get }
+  var paymentToken: TrueLayerAPI.API.PaymentToken { get }
+  var environment: TrueLayerAPI.API.Environment { get }
+  var redirectURL: Foundation.URL { get }
+}
+public struct AuthorizationFlowManagerConfiguration : TrueLayerAPI.AuthorizationFlowManagerConfigurationProvider {
+  public let networkManager: TrueLayerNetwork.Network.Manager
+  public let paymentID: Swift.String
+  public let paymentToken: TrueLayerAPI.API.PaymentToken
+  public let environment: TrueLayerAPI.API.Environment
+  public let redirectURL: Foundation.URL
+  public init(networkManager: TrueLayerNetwork.Network.Manager, paymentID: Swift.String, paymentToken: TrueLayerAPI.API.PaymentToken, environment: TrueLayerAPI.API.Environment, redirectURL: Foundation.URL)
+}
+extension TrueLayerAPI.AuthorizationFlow {
+  public struct Manager {
+    public init(using configuration: TrueLayerAPI.AuthorizationFlowManagerConfigurationProvider)
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func getStatus() async throws -> TrueLayerCore.Core.Payments.Models.Payment.Information
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Status
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func submitProviderSelection(_ identifier: TrueLayerCore.Core.Payments.Models.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Status
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func submitConsent() async throws -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Status
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.ActionableCopy
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Merchant
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Provider
+    #endif
+
+  }
+}
+extension TrueLayerAPI.API {
+  public enum Environment {
+    case development
+    case production
+    case sandbox
+    public static func == (a: TrueLayerAPI.API.Environment, b: TrueLayerAPI.API.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum API {
+  public typealias PaymentToken = Swift.String
+  public static let mockedRequests: Swift.Set<TrueLayerNetwork.Network.Mock.Exchange>
+}
+extension TrueLayerAPI.API {
+  public enum Payments {
+  }
+}
+extension TrueLayerAPI.API.Payments {
+  public enum Models {
+  }
+  public enum Requests {
+  }
+}
+extension TrueLayerAPI.API.Payments.Models {
+  public enum Response {
+  }
+  public enum Request {
+  }
+}
+extension TrueLayerAPI.API.Payments.Models.Response {
+  public enum Payment {
+    public typealias ID = Swift.String
+  }
+}
+extension TrueLayerAPI.API.Payments.Models.Request {
+  public enum AuthorizationFlow {
+  }
+}
+extension TrueLayerAPI.API.Payments.Requests {
+  public enum Payment {
+  }
+}
+public protocol Normalizable : Swift.Decodable {
+  associatedtype Output
+  func normalized() -> Self.Output
+}
+extension TrueLayerAPI.API.Payments.Models.Response.Payment {
+  public struct Get : Swift.Decodable {
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension TrueLayerAPI.API.Payments.Models.Response.Payment.Get : TrueLayerAPI.Normalizable {
+  public func normalized() -> TrueLayerCore.Core.Payments.Models.Payment.Information
+  public typealias Output = TrueLayerCore.Core.Payments.Models.Payment.Information
+}
+extension TrueLayerAPI.API.Payments.Requests.Payment {
+  public struct Get {
+    public typealias ResponseModel = TrueLayerAPI.API.Payments.Models.Response.Payment.Get
+    public let authorizationType: TrueLayerNetwork.Network.AuthorizationType
+    public let path: TrueLayerNetwork.Network.URL.Path
+    public init(paymentID: Swift.String, paymentToken: TrueLayerAPI.API.PaymentToken, environment: TrueLayerAPI.API.Environment)
+    public typealias Decoder = Foundation.JSONDecoder
+    public typealias Encoder = Foundation.JSONEncoder
+    public typealias HTTPBody = TrueLayerNetwork.Empty
+  }
+}
+extension TrueLayerAPI.API.Payments.Requests.Payment.Get : TrueLayerMockable.Mockable {
+  public static var _authorizationRequired: TrueLayerNetwork.Network.Mock.Exchange {
+    get
+  }
+}
+extension TrueLayerAPI.API {
+  public enum URL {
+    public static func host(environment: TrueLayerAPI.API.Environment, subdomain: TrueLayerAPI.API.URL.Subdomain) -> Swift.String
+  }
+}
+extension TrueLayerAPI.API.URL {
+  public enum Subdomain : Swift.String {
+    case api
+    case paymentExperience
+    case www
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension TrueLayerAPI.API.Environment : Swift.Equatable {}
+extension TrueLayerAPI.API.Environment : Swift.Hashable {}
+extension TrueLayerAPI.API.URL.Subdomain : Swift.Equatable {}
+extension TrueLayerAPI.API.URL.Subdomain : Swift.Hashable {}
+extension TrueLayerAPI.API.URL.Subdomain : Swift.RawRepresentable {}

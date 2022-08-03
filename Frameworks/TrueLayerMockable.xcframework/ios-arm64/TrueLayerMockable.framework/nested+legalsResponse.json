@@ -1,0 +1,7 @@
+{
+    "text": "You agree to our <linkOne>End User Terms of Service</linkOne> and <linkTwo>Privacy Policy</linkTwo>.",
+    "links": {
+        "linkOne": "https://truelayer.com/enduser_tos",
+        "linkTwo": "https://truelayer.com/privacy"
+    }
+}

@@ -1,21 +1,61 @@
-// swift-tools-version:5.6
+// swift-tools-version: 5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
 
 let package = Package(
-    name: "TrueLayerPaymentsSDK",
-    platforms: [.iOS(.v13)],
+    name: "TrueLayerSDK",
     products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "TrueLayerPaymentsSDK",
-            targets: ["TrueLayerPaymentsSDK"]
+            name: "TrueLayerSDK",
+            targets: [
+              "TrueLayerSDK",
+              "TrueLayerAPI",
+              "TrueLayerCore",
+              "TrueLayerUI",
+              "TrueLayerMockable",
+              "TrueLayerNetwork",
+              "TrueLayerLogger",
+              "TrueLayerUtils"
+            ]
         ),
     ],
+    dependencies: [
+      
+    ],
     targets: [
-        .binaryTarget(
-            name: "TrueLayerPaymentsSDK",
-            url: "https://github.com/TrueLayer/truelayer-ios-sdk/releases/download/1.0.0-beta.5/TrueLayerPaymentsSDK.xcframework.zip",
-            checksum: "d2ae77ca0f1830030643192f692bf97133727a343109e7a2b44d137791b48ac0"
-        ),
+      .binaryTarget(
+        name: "TrueLayerSDK",
+        path: "Frameworks/TrueLayerSDK.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerUI",
+        path: "Frameworks/TrueLayerUI.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerAPI",
+        path: "Frameworks/TrueLayerAPI.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerMockable",
+        path: "Frameworks/TrueLayerMockable.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerNetwork",
+        path: "Frameworks/TrueLayerNetwork.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerCore",
+        path: "Frameworks/TrueLayerCore.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerLogger",
+        path: "Frameworks/TrueLayerLogger.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerUtils",
+        path: "Frameworks/TrueLayerUtils.xcframework"
+      ),
     ]
 )

@@ -1,0 +1,80 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerMockable
+import Foundation
+import Swift
+import TrueLayerNetwork
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class TrueLayerMockableResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum File {
+  public enum AuthorizationFlowResponse : Swift.String {
+    case consentThenRedirect
+    case providerSelection
+    case redirect
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum GetPaymentResponse : Swift.String {
+    case authorizationRequired
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum PaymentProviderResponse : Swift.String {
+    case information
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum Legals : Swift.String {
+    case topLevel
+    case nested
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum Miscellaneous : Swift.String {
+    case merchantConfiguration
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
+public protocol Mockable : TrueLayerNetwork.DecodableRequest {
+  static func mocked<File>(url: Foundation.URL, method: TrueLayerNetwork.Network.HTTP.Method, statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode, headers: [Swift.String : Swift.String], file: File?) -> TrueLayerNetwork.Network.Mock.Exchange where File : Swift.RawRepresentable, File.RawValue == Swift.String
+}
+extension TrueLayerMockable.Mockable {
+  public static func mocked<F>(url: Foundation.URL, method: TrueLayerNetwork.Network.HTTP.Method, statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode = .code200, headers: [Swift.String : Swift.String] = ["Content-Type": "application/json"], file: F?) -> TrueLayerNetwork.Network.Mock.Exchange where F : Swift.RawRepresentable, F.RawValue == Swift.String
+}
+extension TrueLayerMockable.File.AuthorizationFlowResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.AuthorizationFlowResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.AuthorizationFlowResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.GetPaymentResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.GetPaymentResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.GetPaymentResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.PaymentProviderResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.PaymentProviderResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.PaymentProviderResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Legals : Swift.Equatable {}
+extension TrueLayerMockable.File.Legals : Swift.Hashable {}
+extension TrueLayerMockable.File.Legals : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Miscellaneous : Swift.Equatable {}
+extension TrueLayerMockable.File.Miscellaneous : Swift.Hashable {}
+extension TrueLayerMockable.File.Miscellaneous : Swift.RawRepresentable {}

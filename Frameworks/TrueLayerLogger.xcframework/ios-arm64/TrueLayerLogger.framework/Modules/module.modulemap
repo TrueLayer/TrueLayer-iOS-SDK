@@ -1,0 +1,4 @@
+framework module TrueLayerLogger {
+  header "TrueLayerLogger-Swift.h"
+  requires objc
+}

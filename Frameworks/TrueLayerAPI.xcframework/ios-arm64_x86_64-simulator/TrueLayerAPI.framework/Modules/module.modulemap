@@ -1,0 +1,4 @@
+framework module TrueLayerAPI {
+  header "TrueLayerAPI-Swift.h"
+  requires objc
+}

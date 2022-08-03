@@ -1,0 +1,8 @@
+{
+  "country_code" : "GB",
+  "id" : "ob-barclays",
+  "display_name" : "Barclays",
+  "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+  "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+  "bg_color" : "#007EB6"
+}
