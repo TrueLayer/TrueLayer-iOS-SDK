@@ -1,0 +1,68 @@
+{
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "provider_selection",
+        "providers": [
+          {
+            "id": "ob-bank-name",
+            "display_name": "Bank Name",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-2",
+            "display_name": "Bank Name 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-3",
+            "display_name": "Bank Name 3",
+            "icon_uri": "",
+            "logo_uri": "",
+            "bg_color": "",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-4",
+            "display_name": "Bank Name 4",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-5",
+            "display_name": "Bank Name 5",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-6",
+            "display_name": "Bank Name 6",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-7",
+            "display_name": "Bank Name 7",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+        ]
+      }
+    }
+  },
+  "status": "authorizing"
+}
