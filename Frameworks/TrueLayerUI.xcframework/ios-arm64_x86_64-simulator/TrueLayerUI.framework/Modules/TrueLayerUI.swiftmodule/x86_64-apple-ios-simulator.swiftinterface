@@ -1,10 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerUI
-import Combine
+import CoreGraphics
 import Foundation
 import Swift
-import SwiftUI
 import TrueLayerAPI
 import TrueLayerCore
 import TrueLayerLogger
@@ -86,7 +85,7 @@ extension TrueLayerUI.UI.Consent {
 }
 extension TrueLayerUI.UI.Consent {
   final public class ViewModel : TrueLayerUI.SomeViewModel {
-    public init(paymentInformation: TrueLayerCore.Core.Payments.Models.Payment.Information, beneficiaryName: Swift.String, legalCopy: TrueLayerCore.Core.Payments.Models.ActionableCopy, subsequentAction: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint, merchantIconURL: Foundation.URL?, provider: TrueLayerCore.Core.Payments.Models.Provider)
+    public init(paymentInformation: TrueLayerCore.Core.Payments.Models.Payment.Information, beneficiaryName: Swift.String, legalCopy: TrueLayerCore.Core.Payments.Models.ActionableCopy, subsequentAction: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint, merchantIconURL: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
     @objc deinit
   }
 }
@@ -287,6 +286,7 @@ extension TrueLayerUI.UI {
     case activityIndicator
     case consent
     case countrySelection
+    case additionalInputs
     case providerSelection
     case sdkRoot
     public init?(rawValue: Swift.String)

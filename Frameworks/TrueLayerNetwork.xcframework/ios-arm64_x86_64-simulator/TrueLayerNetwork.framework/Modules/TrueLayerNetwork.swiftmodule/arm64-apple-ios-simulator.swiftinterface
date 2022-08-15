@@ -13,7 +13,7 @@ extension TrueLayerNetwork.Network {
     public static func == (a: TrueLayerNetwork.Network.AuthorizationType, b: TrueLayerNetwork.Network.AuthorizationType) -> Swift.Bool
   }
 }
-public protocol DataRequest : Swift.CustomStringConvertible, TrueLayerNetwork.URLRequestConvertible {
+public protocol DataRequest : Swift.CustomStringConvertible, TrueLayerNetwork.DecodableErrorBody, TrueLayerNetwork.URLRequestConvertible {
   var url: Foundation.URL { get }
   var timeout: Foundation.TimeInterval { get }
 }
@@ -30,6 +30,9 @@ extension TrueLayerNetwork.DataRequest {
 extension TrueLayerNetwork.DataRequest {
   public func urlRequest() throws -> Foundation.URLRequest
 }
+public protocol DecodableErrorBody {
+  associatedtype ErrorModel : Swift.Decodable = TrueLayerNetwork.Empty
+}
 public protocol DataDecoder {
   func decode<T>(_ type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
 }
@@ -40,7 +43,7 @@ public protocol DataEncoder {
 }
 extension Foundation.JSONEncoder : TrueLayerNetwork.DataEncoder {
 }
-public protocol DecodableRequest : Swift.CustomStringConvertible, TrueLayerNetwork.HTTPRequest {
+public protocol DecodableRequest : Swift.CustomStringConvertible, TrueLayerNetwork.DecodableErrorBody, TrueLayerNetwork.HTTPRequest {
   associatedtype ResponseModel : Swift.Decodable
   associatedtype HTTPBody : Swift.Encodable = TrueLayerNetwork.Empty
   associatedtype Encoder : TrueLayerNetwork.DataEncoder = Foundation.JSONEncoder
@@ -275,8 +278,9 @@ public protocol URLRequestConvertible {
   func urlRequest() throws -> Foundation.URLRequest
 }
 extension TrueLayerNetwork.Network {
-  public enum Error : Swift.Error, Swift.Equatable {
+  public enum Error : Swift.Error {
     case clientError(_: Swift.Int)
+    case validation(_: Swift.Decodable)
     case failedToEncode
     case failedToDecode(_: Swift.String)
     case forbidden
@@ -289,9 +293,6 @@ extension TrueLayerNetwork.Network {
     case unauthorized
     case unexpectedEmptyResponse
   }
-}
-extension TrueLayerNetwork.Network.Error {
-  public static func == (lhs: TrueLayerNetwork.Network.Error, rhs: TrueLayerNetwork.Network.Error) -> Swift.Bool
 }
 extension Foundation.URLSession {
   public static var mock: Foundation.URLSession {
@@ -350,6 +351,7 @@ extension TrueLayerNetwork.Network.Mock {
 extension TrueLayerNetwork.Network.Mock {
   public enum HTTPStatusCode : Swift.Int {
     case code200
+    case code400
     case code401
     case code450
     case code403

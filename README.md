@@ -84,8 +84,8 @@ TrueLayer.Payments.manager.processPayment(
     presentationStyle: .present(on: yourViewController, style: .automatic)
   )) { result in
     switch result {
-      case .success(let authorizationFlowResult):
-        // Handle `AuthorizationFlowResult`. See below for the new handling logic.
+      case .success(let result):
+        // Handle `TrueLayer.Payments.Result`. See below for the new handling logic.
 
       case .failure(let error):
         // Handle error. See below for the new handling logic.
@@ -106,7 +106,7 @@ The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained
  
 #### Success
 
-| `Payment.State` | Description |
+| `TrueLayer.Payments.PaymentState` | Description |
 | ------------- | ------------- 
 | `.executed` | The bank confirmed the payment.
 | `.authorized` | The user authorized the payment with the bank.
@@ -115,7 +115,7 @@ The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained
 
 #### Error
 
-| `TrueLayerError` | Description |
+| `TrueLayer.Payments.Error` | Description |
 | ------------- | -------------
 | `.sdkNotConfigured`| The SDK `configure` method has not been called before using it.
 | `.unexpectedBehaviour`| The `SDK` encountered an unexpected behavior.

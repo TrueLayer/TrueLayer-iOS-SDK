@@ -28,6 +28,76 @@ extension TrueLayerCore.Core.Payments.Models {
     public static func == (a: TrueLayerCore.Core.Payments.Models.ActionableCopy, b: TrueLayerCore.Core.Payments.Models.ActionableCopy) -> Swift.Bool
   }
 }
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow {
+  public enum AdditionalInputs {
+    public enum `Type` : Swift.Equatable {
+      case text(_: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text)
+      public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`) -> Swift.Bool
+    }
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
+  public struct Text : Swift.Equatable {
+    public let id: Swift.String
+    public let mandatory: Swift.Bool
+    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
+    public let type: Swift.String
+    public let format: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format
+    public let sensitive: Swift.Bool
+    public let minLength: Swift.Int
+    public let maxLength: Swift.Int
+    public let regexes: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex]
+    public init(id: Swift.String, mandatory: Swift.Bool, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, type: Swift.String, format: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format, sensitive: Swift.Bool, minLength: Swift.Int, maxLength: Swift.Int, regexes: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex])
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text) -> Swift.Bool
+  }
+  public struct HelpText : Swift.Equatable {
+    public let key: Swift.String
+    public let element: Swift.String
+    public let type: Swift.String
+    public let actionableCopy: TrueLayerCore.Core.Payments.Models.ActionableCopy
+    public init(key: Swift.String, element: Swift.String, type: Swift.String, actionableCopy: TrueLayerCore.Core.Payments.Models.ActionableCopy)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.HelpText, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.HelpText) -> Swift.Bool
+  }
+  public struct Localization : Swift.Equatable {
+    public let key: Swift.String
+    public let value: Swift.String
+    public init(key: Swift.String, value: Swift.String)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Localization, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Localization) -> Swift.Bool
+  }
+  public struct KeyedText : Swift.Equatable {
+    public let key: Swift.String
+    public let `default`: Swift.String
+    public init(key: Swift.String, default: Swift.String)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text {
+  public enum Format : Swift.Equatable {
+    case any
+    case accountNumber
+    case iban
+    case sortCode
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct Regex : Swift.Equatable {
+    public let regex: Swift.String
+    public let message: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
+    public init(regex: Swift.String, message: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
+  public struct BadRequest : Swift.Equatable {
+    public typealias KeyedErrors = [Swift.String : [Swift.String]]
+    public let inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors
+    public init(inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest) -> Swift.Bool
+  }
+}
 extension TrueLayerCore.Core.Payments.Models.Payment {
   public enum AuthorizationFlow {
   }
@@ -40,12 +110,13 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow {
   }
   public enum Step : Swift.Equatable {
     case consent(subsequentAction: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint)
+    case additionalInputs(inputs: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`])
     case providerSelection(providers: [TrueLayerCore.Core.Payments.Models.Provider])
     case redirect(url: Foundation.URL)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Step, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Step) -> Swift.Bool
   }
   public enum SubsequentActionHint : Swift.Decodable {
-    case form
+    case additionalInputs
     case redirect
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -238,6 +309,7 @@ public enum UserDefaultsKey : Swift.String, TrueLayerCore.PersistenceKey {
 }
 public typealias DateProvider = () -> Foundation.Date
 public typealias UUIDProvider = () -> Foundation.UUID
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint : Swift.Equatable {}
 extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.Payment.State : Swift.Equatable {}

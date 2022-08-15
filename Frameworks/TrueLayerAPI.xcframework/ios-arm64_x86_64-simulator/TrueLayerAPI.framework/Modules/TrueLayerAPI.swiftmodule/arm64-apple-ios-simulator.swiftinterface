@@ -63,6 +63,26 @@ extension TrueLayerAPI.AuthorizationFlow {
     public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Provider
     #endif
 
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func cancelPayment() async throws
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func getAdditionalInputsHelpText(with providerCountryCode: Swift.String) async throws -> [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.HelpText]
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func getAdditionalInputsLocalizations() async throws -> [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Localization]
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func submitForm(inputs: [Swift.String : Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Status
+    #endif
+
   }
 }
 extension TrueLayerAPI.API {
@@ -105,14 +125,35 @@ extension TrueLayerAPI.API.Payments.Models.Response {
 extension TrueLayerAPI.API.Payments.Models.Request {
   public enum AuthorizationFlow {
   }
+  public enum Payment {
+  }
 }
 extension TrueLayerAPI.API.Payments.Requests {
   public enum Payment {
   }
 }
+extension TrueLayerAPI.API.Payments.Requests.Payment {
+  public enum AdditionalInputs {
+  }
+}
 public protocol Normalizable : Swift.Decodable {
   associatedtype Output
   func normalized() -> Self.Output
+}
+extension TrueLayerAPI.API.Payments.Models.Response.Payment {
+  public enum AdditionalInputs {
+  }
+}
+extension TrueLayerAPI.API.Payments.Models.Response.Payment.AdditionalInputs {
+  public struct BadRequest : Swift.Decodable, Swift.Equatable {
+    public let errors: [Swift.String : [Swift.String]]
+    public static func == (a: TrueLayerAPI.API.Payments.Models.Response.Payment.AdditionalInputs.BadRequest, b: TrueLayerAPI.API.Payments.Models.Response.Payment.AdditionalInputs.BadRequest) -> Swift.Bool
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension TrueLayerAPI.API.Payments.Models.Response.Payment.AdditionalInputs.BadRequest : TrueLayerAPI.Normalizable {
+  public func normalized() -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest
+  public typealias Output = TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest
 }
 extension TrueLayerAPI.API.Payments.Models.Response.Payment {
   public struct Get : Swift.Decodable {
@@ -122,22 +163,6 @@ extension TrueLayerAPI.API.Payments.Models.Response.Payment {
 extension TrueLayerAPI.API.Payments.Models.Response.Payment.Get : TrueLayerAPI.Normalizable {
   public func normalized() -> TrueLayerCore.Core.Payments.Models.Payment.Information
   public typealias Output = TrueLayerCore.Core.Payments.Models.Payment.Information
-}
-extension TrueLayerAPI.API.Payments.Requests.Payment {
-  public struct Get {
-    public typealias ResponseModel = TrueLayerAPI.API.Payments.Models.Response.Payment.Get
-    public let authorizationType: TrueLayerNetwork.Network.AuthorizationType
-    public let path: TrueLayerNetwork.Network.URL.Path
-    public init(paymentID: Swift.String, paymentToken: TrueLayerAPI.API.PaymentToken, environment: TrueLayerAPI.API.Environment)
-    public typealias Decoder = Foundation.JSONDecoder
-    public typealias Encoder = Foundation.JSONEncoder
-    public typealias HTTPBody = TrueLayerNetwork.Empty
-  }
-}
-extension TrueLayerAPI.API.Payments.Requests.Payment.Get : TrueLayerMockable.Mockable {
-  public static var _authorizationRequired: TrueLayerNetwork.Network.Mock.Exchange {
-    get
-  }
 }
 extension TrueLayerAPI.API {
   public enum URL {

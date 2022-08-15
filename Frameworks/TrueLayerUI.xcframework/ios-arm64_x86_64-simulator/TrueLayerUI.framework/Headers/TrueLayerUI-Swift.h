@@ -267,7 +267,6 @@ SWIFT_CLASS("_TtCOO11TrueLayerUI2UI16CountrySelection4View")
 
 
 
-
 @interface View (SWIFT_EXTENSION(TrueLayerUI)) <UISearchControllerDelegate>
 - (void)willPresentSearchController:(UISearchController * _Nonnull)searchController;
 - (void)willDismissSearchController:(UISearchController * _Nonnull)searchController;
@@ -545,7 +544,6 @@ SWIFT_CLASS("_TtCOO11TrueLayerUI2UI16CountrySelection4View")
 @interface View (SWIFT_EXTENSION(TrueLayerUI)) <UITableViewDelegate>
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
-
 
 
 

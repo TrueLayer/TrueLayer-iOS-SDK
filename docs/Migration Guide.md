@@ -100,7 +100,7 @@ TrueLayer.Payments.Models.Payment.Preferences(preferredCountryCode: "GB")
 ### Handling the Result
 #### Success
 
-| Previously (`PaymentProcessingStep`) | Now (`Payment.State`) | Description |
+| Previously (`PaymentProcessingStep`) | Now (`TrueLayer.Payments.PaymentState`) | Description |
 | ------------- | ------------- | ------------- 
 | `.paymentCompleted` | `.executed` | The bank confirmed the payment.
 | `.authorized` | `.authorized` | The user authorized the payment with the bank.
@@ -111,7 +111,7 @@ TrueLayer.Payments.Models.Payment.Preferences(preferredCountryCode: "GB")
 
 #### Error
 
-| Previously (`TrueLayerPayments.Error`) | Now (`TrueLayerError`) | Description |
+| Previously (`TrueLayerPayments.Error`) | Now (`TrueLayer.Payments.Error`) | Description |
 | ------------- | ------------- | ------------- 
 | `.failedToStartSDK` | `.sdkNotConfigured`| The SDK `configure` method has not been called before using it.
 | `.sdkAlreadyStarted` |  | When the app tries to initialize the SDK more than once. This error is no longer thrown.

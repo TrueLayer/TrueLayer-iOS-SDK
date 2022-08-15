@@ -75,6 +75,7 @@ extension Swift.String {
   public mutating func trimWhitespaceAndDuplicateSpaces()
   public func normalized() -> Swift.String
   public mutating func normalize()
+  public func matches(_ regex: Swift.String) -> Swift.Bool
 }
 public func mainThread(_ closure: () -> Swift.Void)
 extension Foundation.Thread {

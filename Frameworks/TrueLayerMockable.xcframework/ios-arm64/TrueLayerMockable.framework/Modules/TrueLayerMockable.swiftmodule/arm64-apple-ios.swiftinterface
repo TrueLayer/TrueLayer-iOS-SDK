@@ -15,6 +15,7 @@ import _Concurrency
 public enum File {
   public enum AuthorizationFlowResponse : Swift.String {
     case consentThenRedirect
+    case additionalInputs
     case providerSelection
     case redirect
     public var rawValue: Swift.String {
@@ -48,6 +49,16 @@ public enum File {
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
   }
+  public enum AdditionalInputs : Swift.String {
+    case helpText
+    case localizations
+    case submitFormError
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
   public enum Miscellaneous : Swift.String {
     case merchantConfiguration
     public var rawValue: Swift.String {
@@ -75,6 +86,9 @@ extension TrueLayerMockable.File.PaymentProviderResponse : Swift.RawRepresentabl
 extension TrueLayerMockable.File.Legals : Swift.Equatable {}
 extension TrueLayerMockable.File.Legals : Swift.Hashable {}
 extension TrueLayerMockable.File.Legals : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.AdditionalInputs : Swift.Equatable {}
+extension TrueLayerMockable.File.AdditionalInputs : Swift.Hashable {}
+extension TrueLayerMockable.File.AdditionalInputs : Swift.RawRepresentable {}
 extension TrueLayerMockable.File.Miscellaneous : Swift.Equatable {}
 extension TrueLayerMockable.File.Miscellaneous : Swift.Hashable {}
 extension TrueLayerMockable.File.Miscellaneous : Swift.RawRepresentable {}

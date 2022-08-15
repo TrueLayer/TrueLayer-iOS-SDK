@@ -1,0 +1,12 @@
+{
+  "errors": {
+    "inputs.remitter-iban" : [
+      "Value is required."
+    ]
+  },
+  "status": 400,
+  "title": "Invalid Parameters",
+  "detail": "The request was invalid.",
+  "type": "https://docs.truelayer.com/docs/error-types#invalid-parameters",
+  "trace_id": "67431e0654c114fa7dd303e5c72a1f9f"
+}
