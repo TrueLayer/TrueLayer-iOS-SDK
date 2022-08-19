@@ -14,9 +14,11 @@ import _Concurrency
 }
 public enum File {
   public enum AuthorizationFlowResponse : Swift.String {
-    case consentThenRedirect
-    case additionalInputs
     case providerSelection
+    case consentThenRedirect
+    case consentThenAdditionalInputs
+    case textAdditionalInputs
+    case optionalOnlyTextAdditionalInputs
     case redirect
     public var rawValue: Swift.String {
       get

@@ -1,12 +1,14 @@
-{
-  "errors": {
-    "inputs.remitter-iban" : [
-      "Value is required."
-    ]
-  },
-  "status": 400,
-  "title": "Invalid Parameters",
-  "detail": "The request was invalid.",
-  "type": "https://docs.truelayer.com/docs/error-types#invalid-parameters",
-  "trace_id": "67431e0654c114fa7dd303e5c72a1f9f"
-}
+[
+  {
+    "links" : [
+      {
+        "tag" : "Link",
+        "link" : "https:\/\/truelayer.zendesk.com\/hc\/en-us\/articles\/4666002227345"
+      }
+    ],
+    "key" : "remitter-iban",
+    "element" : "banner",
+    "type" : "info",
+    "text" : "This bank requires your IBAN to complete this payment. You can usually find it on your bank statement or on your bank's app. <Link>Learn more<\/Link>"
+  }
+]

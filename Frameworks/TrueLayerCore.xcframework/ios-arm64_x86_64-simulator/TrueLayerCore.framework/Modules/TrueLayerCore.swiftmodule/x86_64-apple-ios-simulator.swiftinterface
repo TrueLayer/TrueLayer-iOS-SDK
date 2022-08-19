@@ -75,7 +75,11 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Additiona
   public enum Format : Swift.Equatable {
     case any
     case accountNumber
+    case alphabetical
+    case alphanumerical
+    case email
     case iban
+    case numerical
     case sortCode
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format) -> Swift.Bool
@@ -207,13 +211,13 @@ extension TrueLayerCore.Core.Payments.Models.Payment {
     case failed(reason: TrueLayerCore.Core.Payments.Models.Payment.FailureReason)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.Status, b: TrueLayerCore.Core.Payments.Models.Payment.Status) -> Swift.Bool
   }
-  public enum FailureReason : Swift.Equatable {
+  public enum FailureReason : Swift.Equatable, Swift.Error {
     case authorizationFailed
     case canceled
     case expired
+    case other(reason: Swift.String)
     case providerRejected
     case unsupportedAction
-    case other(reason: Swift.String)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.FailureReason, b: TrueLayerCore.Core.Payments.Models.Payment.FailureReason) -> Swift.Bool
   }
   public enum State {

@@ -48,18 +48,22 @@ extension TrueLayerUI.Analytics {
 }
 extension TrueLayerUI.Analytics {
   public enum Event {
+    case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
+    case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Provider)
+    case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Provider?)
+    case additionalInputsServerValidationError(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
     case sdkStarted
-    case sdkDismissed(result: TrueLayerUI.AuthorizationFlowResult)
+    case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
     case providerSelectionLoaded
     case providerSelectionSearch(searchString: Swift.String)
     case providerSelected(provider: TrueLayerCore.Core.Payments.Models.Provider)
-    case redirectFlowCompleted
+    case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Provider?)
     case consentLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, amount: Swift.Double, currency: Swift.String)
     case consentGranted(provider: TrueLayerCore.Core.Payments.Models.Provider, amount: Swift.Double, currency: Swift.String)
     case countryFlagTapped
     case countrySelectionLoaded
     case countrySelected(countryCode: Swift.String)
-    case paymentCancelled
+    case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Provider?)
     case errorOccurred(error: TrueLayerUI.TrueLayerError)
   }
 }
