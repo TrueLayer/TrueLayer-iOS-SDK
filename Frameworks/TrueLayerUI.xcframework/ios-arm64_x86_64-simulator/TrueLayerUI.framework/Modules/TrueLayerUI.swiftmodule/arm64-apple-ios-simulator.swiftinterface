@@ -65,6 +65,7 @@ extension TrueLayerUI.Analytics {
     case countrySelected(countryCode: Swift.String)
     case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Provider?)
     case errorOccurred(error: TrueLayerUI.TrueLayerError)
+    case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
   }
 }
 extension TrueLayerUI.Analytics {
