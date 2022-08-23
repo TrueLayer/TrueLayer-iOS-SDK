@@ -21,6 +21,8 @@ ATTENTION: This minor update contains necessary breaking fixes. However, we opte
 - Fix tableviews displaying empty rows in prior to iOS 15.
 - [BREAKING] Fix the order of parameters in `configure` making `environment` first, followed by `visualSettings`.
 - [BREAKING] Fix the type of completion from `AuthorizationFlowResult` to `Result<PaymentState, Error>` since the former referenced `TrueLayerUI` which should not be used by the merchant.
+- Fix parsing of the `status: failed` response expected from authorization flow related network calls, and return the correct error to the merchant.
+- Fix recently used providers showing all providers regardless of the selected country.
 
 ## [1.0.0] - Rebirth
 
