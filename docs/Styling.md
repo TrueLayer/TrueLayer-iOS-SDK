@@ -6,8 +6,8 @@ When configuring the SDK, you can pass in an object conforming to `VisualSetting
 
 ```
 TrueLayer.Payments.manager.configure(
+  environment: .sandbox,
 	visualSettings: // Pass your object here
-	environment: .sandbox
 )
 ```
 

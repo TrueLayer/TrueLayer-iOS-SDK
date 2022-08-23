@@ -1,0 +1,14 @@
+[
+  {
+    "links" : [
+      {
+        "tag" : "Link",
+        "link" : "https:\/\/truelayer.zendesk.com\/hc\/en-us\/articles\/4666002227345"
+      }
+    ],
+    "key" : "remitter-iban",
+    "element" : "banner",
+    "type" : "info",
+    "text" : "This bank requires your IBAN to complete this payment. You can usually find it on your bank statement or on your bank's app. <Link>Learn more<\/Link>"
+  }
+]

@@ -50,13 +50,39 @@ extension TrueLayerSDK.TrueLayer.Payments {
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments {
-  public typealias TrueLayerError = TrueLayerUI.TrueLayerError
-  public typealias PaymentState = TrueLayerCore.Core.Payments.Models.Payment.State
-  public typealias AuthorizationFlowResult = TrueLayerUI.AuthorizationFlowResult
+  public enum Error : Swift.Error, Swift.Equatable {
+    case authorizationFailed
+    case invalidToken
+    case paymentNotFound
+    case paymentExpired
+    case paymentRejected
+    case userCanceled
+    case connectionIssues
+    case serverError
+    case unexpectedBehavior
+    case sdkNotConfigured
+    case generic(reason: Swift.String)
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Error, b: TrueLayerSDK.TrueLayer.Payments.Error) -> Swift.Bool
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers final public class Manager {
-    final public func configure(visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), environment: TrueLayerSDK.TrueLayer.Environment)
-    final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.AuthorizationFlowResult) -> Swift.Void)?)
+    final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings())
+    final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.PaymentState, TrueLayerSDK.TrueLayer.Payments.Error>) -> Swift.Void)?)
     @objc deinit
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments {
+  public enum PaymentState {
+    case authorized
+    case executed
+    case redirect
+    case settled
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.PaymentState, b: TrueLayerSDK.TrueLayer.Payments.PaymentState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
   }
 }
 extension TrueLayerSDK.TrueLayer {
@@ -86,3 +112,5 @@ public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
 }
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.PaymentState : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.PaymentState : Swift.Hashable {}
