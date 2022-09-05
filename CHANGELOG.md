@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [1.2.0] - Branches
+
+### Added
+
+- Added logic to make sure the `IBAN` additional input is displayed on its own screen.
+- Added auto-capitalization for the `IBAN` additional input.
+- Added support for additional inputs of `select` type. Example branch selection.
+
+### Fixed
+
+- Fix `continue` button being enabled on additional inputs even when text fields not valid. 
+- Fix behavior of textfields to automatically limit the character count of a textfield based on its type.
+- Fix keyboard type to match the type of the textfield.
+
 ## [1.1.0] - IBAN
 
 This new release focuses on polishing what was built with `1.0.0`, and fixing minor visual bugs specifically in the country selection. In addition it introduces support for 2 new features: cancel payment, and IBAN additional input.
