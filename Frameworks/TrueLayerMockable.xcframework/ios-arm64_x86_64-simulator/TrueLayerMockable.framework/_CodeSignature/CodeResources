@@ -14,27 +14,27 @@
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UGgsn6CCqY6jC8SGZaz6qy91Iqo=
+		qW3sF7Et0H93gmANhFRp82TpFTA=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pvECvCqI9yk3wC0sY++miRp3bw8=
+		H/Y5as7lYCqyGWJ3FQopxQUoKWE=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M+0Xu4E1IF0OljjZXDLCawLW44c=
+		r5igXvkAPC1OY0UmMonC6iq6oqQ=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		lTzP5cwhXOnc8Ph6oPsi4mzHlEQ=
+		RVOccT0mG7xkzzVGugbyyUW1Rto=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SaTgJyV7t9RrHIcG6g7WreQaBbM=
+		2nZWJFCbUThnw0c4gRPAX9SFu7Q=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m2Qg+f3VWrtY+0brnPh0YaanS+Y=
+		azxd3ffqAE91M3Qo0u1a+GUp6EQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -56,6 +56,10 @@
 		<data>
 		zGGmbQGqxSRCpN6wYStMbmNafsg=
 		</data>
+		<key>ibanAdditionalInputs+authorizationFlowResponse.json</key>
+		<data>
+		GWNLoTeJHzFhy+HGuxtSqDTa1mM=
+		</data>
 		<key>information+paymentProviderResponse.json</key>
 		<data>
 		lm+S9x2qUjAilagxuwrGNImFPQA=
@@ -71,6 +75,10 @@
 		<key>merchantConfiguration+miscellaneousResponse.json</key>
 		<data>
 		V+TzUVAvwISvrF5mU85G51OH+6I=
+		</data>
+		<key>multiTextAdditionalInputs+authorizationFlowResponse.json</key>
+		<data>
+		yOFmyz0b0wlO5/Nf+Pe+NL6pRaE=
 		</data>
 		<key>nested+legalsResponse.json</key>
 		<data>
@@ -88,13 +96,21 @@
 		<data>
 		/3/t9E+PPpiDh8iJTsrgOMMh2N4=
 		</data>
+		<key>selectOnlyAdditionalInputs+authorizationFlowResponse.json</key>
+		<data>
+		lCcOXDnfvsixOm2RmyqLgSbHs5Y=
+		</data>
 		<key>submitFormError+additionalInputsResponse.json</key>
 		<data>
 		IqkPwnM4QIICnOzCfxSnlxrcpyI=
 		</data>
-		<key>textAdditionalInputs+authorizationFlowResponse.json</key>
+		<key>submitFormErrorInSelect+additionalInputsResponse.json</key>
 		<data>
-		GWNLoTeJHzFhy+HGuxtSqDTa1mM=
+		YuVazQ4yRXdBnuR12bpPms2Kf/E=
+		</data>
+		<key>textAndSelectAdditionalInputs+authorizationFlowResponse.json</key>
+		<data>
+		9JljFYrJbwqifo7RL47Gd+2n5HA=
 		</data>
 		<key>topLevel+legalsResponse.json</key>
 		<data>
@@ -114,42 +130,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6xGZ/nLmdAXbL8/6VKg2DjaCz1x2HExA8AoqRvFiD0A=
+			P60MFJfEJDh/SbpD1aRfAuTlWLGURnEze/mqUVOw4KY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WTpuwzstSRFpb5yxvAY8WiXFucn9o5MnXQyYnJHuQYU=
+			2dFsQSEIn3AUKIZkHTNURmAa7BFDaJANynzHDz5aKQ0=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rC2mPBNpimJMoiU7dKpWeZn9yET9WX/pksDjG/7B2/U=
+			2CcC5RoLTdYuAQW9LN/lPwX9lFOHqD7eZYY3JavP7QQ=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wj1Qgz0VTdncDF+9JAkZu16Av8kLLbj630GXyLqcVR4=
+			B0ns91+XkPaKOkqxb/Wv7oP2dpggmkQ8jEPaXk/8xfk=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8eZwrkNhkn5DlYVJv1tNvXQs/AS1cBrha6zACLprhw=
+			2UyNGZ491m1BKrbovG+nJYwS41qqcHnO5uET3kUTJ2s=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z8OkUl5558IO0WYw0p89VJHY21uJaHDBD3LEqIepmlE=
+			WITehy5RlOMI4oCzvpnbx/z2xkRiSS4IwUDqI61SitE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -187,6 +203,13 @@
 			ttXGtkx172X80nTce3SvUqYnuDxcLmv7JvE0SfRWdKo=
 			</data>
 		</dict>
+		<key>ibanAdditionalInputs+authorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iYDdsWyJv8Ix/1Be7UHeXVnfZteccjFNPKu4px8Bu8U=
+			</data>
+		</dict>
 		<key>information+paymentProviderResponse.json</key>
 		<dict>
 			<key>hash2</key>
@@ -213,6 +236,13 @@
 			<key>hash2</key>
 			<data>
 			6osje95VdWGZW9AQuSyZ085Rt2yn/1geN5vWdkxn5Dg=
+			</data>
+		</dict>
+		<key>multiTextAdditionalInputs+authorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OqwUHDRDBCdg7gi2brMfF0w/ljeq+098QVPCbA6DROI=
 			</data>
 		</dict>
 		<key>nested+legalsResponse.json</key>
@@ -243,6 +273,13 @@
 			YMS+5fpsEfGwD/OzYzP1OjyWTwRHI+b9v+sm2dN5Ih4=
 			</data>
 		</dict>
+		<key>selectOnlyAdditionalInputs+authorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hKgNDSw6btCW55yAoziAh2NMgD1VGxZms4txAStVLYs=
+			</data>
+		</dict>
 		<key>submitFormError+additionalInputsResponse.json</key>
 		<dict>
 			<key>hash2</key>
@@ -250,11 +287,18 @@
 			ACxD7IInDYFVlsHmUJR+PQlmS962KfsUaE58m/CfRZY=
 			</data>
 		</dict>
-		<key>textAdditionalInputs+authorizationFlowResponse.json</key>
+		<key>submitFormErrorInSelect+additionalInputsResponse.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iYDdsWyJv8Ix/1Be7UHeXVnfZteccjFNPKu4px8Bu8U=
+			fifFVfK4IeuJYRCdoR/gXi848XawSQGVHfMwgs1ycXQ=
+			</data>
+		</dict>
+		<key>textAndSelectAdditionalInputs+authorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DDxsQ6ra5oLn0FfItENvVd8po9r7ED5A2mKIVv2qxPA=
 			</data>
 		</dict>
 		<key>topLevel+legalsResponse.json</key>

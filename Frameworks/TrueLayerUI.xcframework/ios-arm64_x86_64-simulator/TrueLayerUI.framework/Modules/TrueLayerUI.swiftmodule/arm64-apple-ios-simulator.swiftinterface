@@ -49,8 +49,8 @@ extension TrueLayerUI.Analytics {
 extension TrueLayerUI.Analytics {
   public enum Event {
     case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
-    case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Provider)
-    case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Provider?)
+    case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
+    case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Provider?, inputIDs: [Swift.String])
     case additionalInputsServerValidationError(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
     case sdkStarted
     case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
@@ -64,7 +64,7 @@ extension TrueLayerUI.Analytics {
     case countrySelectionLoaded
     case countrySelected(countryCode: Swift.String)
     case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Provider?)
-    case errorOccurred(error: TrueLayerUI.TrueLayerError)
+    case errorOccurred(error: Swift.Error)
     case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
   }
 }
@@ -231,15 +231,18 @@ extension TrueLayerUI.UI {
 }
 extension TrueLayerUI.Router {
   public func showLoader(dependencies: TrueLayerUI.SomeDependencies)
-  public func hideLoader()
+  public func hideLoader(completion: TrueLayerUI.Router.Completion? = nil)
 }
 public protocol NavigationProvider {
+  var topViewController: UIKit.UIViewController { get }
+  init(on rootViewController: UIKit.UIViewController)
   func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == TrueLayerUI.RouteIdentifier
   func show(alertController: UIKit.UIAlertController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   func popTo<R>(identifier: R, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, R.RawValue == TrueLayerUI.RouteIdentifier
+  func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   func hideTopViewController(animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   func showLoader(dependencies: TrueLayerUI.SomeDependencies)
-  func hideLoader()
+  func hideLoader(completion: TrueLayerUI.Router.Completion?)
   func dismissSDK(then closure: (() -> Swift.Void)?)
 }
 extension TrueLayerUI.UI {
@@ -254,6 +257,9 @@ public protocol Routable : UIKit.UIViewController {
 }
 public struct Router : TrueLayerUI.NavigationProvider {
   public typealias Completion = () -> Swift.Void
+  public var topViewController: UIKit.UIViewController {
+    get
+  }
   public init(on rootViewController: UIKit.UIViewController)
   @available(iOSApplicationExtension, unavailable)
   public func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == TrueLayerUI.RouteIdentifier
@@ -261,6 +267,7 @@ public struct Router : TrueLayerUI.NavigationProvider {
   public func show(alertController: UIKit.UIAlertController, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
   @available(iOSApplicationExtension, unavailable)
   public func popTo<R>(identifier: R, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, R.RawValue == TrueLayerUI.RouteIdentifier
+  public func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
   @available(iOSApplicationExtension, unavailable)
   public func hideTopViewController(animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
   public func dismissSDK(then closure: (() -> Swift.Void)?)
@@ -291,7 +298,8 @@ extension TrueLayerUI.UI {
     case activityIndicator
     case consent
     case countrySelection
-    case additionalInputs
+    case singleChoiceListAdditionalInputs
+    case textInputsAdditionalInputs
     case providerSelection
     case sdkRoot
     public init?(rawValue: Swift.String)

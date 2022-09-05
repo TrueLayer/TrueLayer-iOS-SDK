@@ -32,6 +32,7 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow {
   public enum AdditionalInputs {
     public enum `Type` : Swift.Equatable {
       case text(_: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text)
+      case singleChoiceList(_: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList)
       public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`) -> Swift.Bool
     }
   }
@@ -95,9 +96,32 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Additiona
   }
 }
 extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
+  public struct SingleChoiceList : Swift.Equatable {
+    public let id: Swift.String
+    public let mandatory: Swift.Bool
+    public let type: Swift.String
+    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
+    public let description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?
+    public let options: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option]
+    public init(id: Swift.String, mandatory: Swift.Bool, type: Swift.String, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?, options: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option])
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList {
+  public struct Option : Swift.Equatable {
+    public let id: Swift.String
+    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
+    public init(id: Swift.String, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
   public struct BadRequest : Swift.Equatable {
     public typealias KeyedErrors = [Swift.String : [Swift.String]]
     public let inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors
+    public var identifiers: [Swift.String] {
+      get
+    }
     public init(inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest) -> Swift.Bool
   }
