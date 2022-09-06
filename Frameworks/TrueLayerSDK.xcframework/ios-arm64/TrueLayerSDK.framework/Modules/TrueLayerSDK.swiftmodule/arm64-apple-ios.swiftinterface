@@ -10,6 +10,13 @@ import TrueLayerUI
 import TrueLayerUtils
 import UIKit
 import _Concurrency
+@_inheritsConvenienceInitializers @objc public class TrueLayerSDKResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension TrueLayerSDK.TrueLayer {
   public enum Environment {
     case production

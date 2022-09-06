@@ -17,8 +17,11 @@ public enum File {
     case providerSelection
     case consentThenRedirect
     case consentThenAdditionalInputs
-    case textAdditionalInputs
+    case ibanAdditionalInputs
+    case multiTextAdditionalInputs
     case optionalOnlyTextAdditionalInputs
+    case textAndSelectAdditionalInputs
+    case selectOnlyAdditionalInputs
     case redirect
     public var rawValue: Swift.String {
       get
@@ -55,6 +58,7 @@ public enum File {
     case helpText
     case localizations
     case submitFormError
+    case submitFormErrorInSelect
     public var rawValue: Swift.String {
       get
     }
