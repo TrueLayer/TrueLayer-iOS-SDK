@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file. To know bet
 - Fix behavior of textfields to automatically limit the character count of a textfield based on its type.
 - Fix keyboard type to match the type of the textfield.
 - Fix callback not being invoked when dismissing a modal SDK on a navigation controller.
+- Fix beneficiary name not showing on consent screen.
 
 ## [1.1.0] - IBAN
 
