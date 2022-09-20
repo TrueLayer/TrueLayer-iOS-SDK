@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [1.3.0] - Red light, green light
+
+### Added
+
+- Support for OTP validation via PhotoTan and SMS.
+- Added a padlock symbol on additional inputs Continue button when there is a sensitive text field.
+- Added new localized title and button text for the Review Payment screen, which changes depending if the next step are additional inputs or a redirect to bank.
+- [BREAKING] Support for `wait` action. The user will see a screen `wait` screen while the `SDK` polls for an updated payment status. If the polling takes too long, the SDK will now return a `wait` action in the success phase.
+
+### Fixed
+
+- Fix consent screen beneficiary text not word wrapping when using large accessibility text sizes.
+
 ## [1.2.0] - Branches
 
 ### Added
@@ -34,7 +47,7 @@ ATTENTION: This minor update contains necessary breaking fixes. However, we opte
 - Fix country picker not displaying which country is selected.
 - Fix countries not displayed in alphabetical order in country picker.
 - Fix remote image cropped out randomly on certain OS versions.
-- Fix tableviews displaying empty rows in prior to iOS 15.
+- Fix tableviews displaying empty rows in versions prior to iOS 15.
 - [BREAKING] Fix the order of parameters in `configure` making `environment` first, followed by `visualSettings`.
 - [BREAKING] Fix the type of completion from `AuthorizationFlowResult` to `Result<PaymentState, Error>` since the former referenced `TrueLayerUI` which should not be used by the merchant.
 - Fix parsing of the `status: failed` response expected from authorization flow related network calls, and return the correct error to the merchant.
