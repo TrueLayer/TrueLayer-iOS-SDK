@@ -1,0 +1,43 @@
+{
+  "status" : "authorizing",
+  "authorization_flow" : {
+    "actions" : {
+      "next" : {
+        "type" : "form",
+        "inputs" : [
+          {
+            "format" : "any",
+            "sensitive" : false,
+            "id" : "otp_authorization",
+            "regexes" : [
+              {
+                "regex" : "^.*$",
+                "message" : {
+                  "key" : "otp_authorization.regex",
+                  "default" : "Value is invalid."
+                }
+              }
+            ],
+            "mandatory" : true,
+            "max_length" : 50,
+            "display_text" : {
+              "key" : "otp_authorization.display-text",
+              "default" : "Smart-TAN photo"
+            },
+            "image" : {
+              "type" : "base64",
+              "data" : "iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAFtUlEQVR42u2dsXLqQAxF+RiKFBQuKClT5IMo6PhYCj6ADyCe5M08mInIvWhttM7RvCLPsdfOytdX0kra1RUpLyumACUhKAklISgJQUkoCamipMvlcjweN5vNCplM1uv14XAYp\/oZJY2X7XY7JnEeGYbhgZ5CJY0YYu7mlBFPtpL4ys3\/3bOVxKzNLygJJSEoCSV5Shrt8tPphIP5nJzP5\/f398mVhIbyeppcScxygzAPSkJJKSVtt+Ow12H4+vm6XV1Xw3V4dP7NOXc\/34wTjR\/9IrpvNH54r9txgpOia0srabz6+9\/Xjf\/972Fg8f85dz\/fjBONH\/0ium80fniv23GCk+LnBEkgCUbpmJPCt1hBVYCwEHnuzYQb3w0ZHFdQWFpJIR8o\/BRwVchh7s2EG98NGRxX+AwkgSQ46e\/6SYIpFr3FGctQeoTAerQRZgK7npIEpybig4yPJT1C4IfZXGXzMUgCSTBKb5yUeeOE18+16EIrMRpHCV2YkFGeeV4lZb7dwofc9Y1CfysaRwkCmuSjxfRAEkiCUTrjJCU6ECLMvVaJjpsRAcmqVBCpoOpVSlLibCFXudcq60xmbE3yzxRuU\/gJJIEkOOmvridJkQU3Ch4hVYgmKOiUVpMFY7Cb9SQpRueuJ0WcJ8TlFJ6T8jIkNwwkgSQYpTc\/SYkmCNEHycGPohuCteau\/CoIVqzQEhEHKS4nxPGkUFkUJxT8HjeHQuFCxZ8rEbsDSR0gCemMkxQrS7K+hIiyYklm3nR\/idd7tpdxkuKvSH6MsDaj+GQZznB9O\/vZQBJIgpN6jt25WZ+SpWRWK7hZse5AbiVIPevOzJ+WfA677sfLL3cHcmuqauQ4gKTOkIR0ELtr9Lba45tvsVvpZz+zMM7rYneNvvv2+C4fmDWz9jNLtb0gCSTBKB37SVL2aOJaNzs1U90unaNk71bLFpLysBPXunnemT4R0jlKHnyFvDuQ1BmSkB5id4IF5WbquJaVi9RU9USiAL6EkqR4ncthiSJVKX\/PrUNKtZIASSAJRuk4dhceb\/W2mhEKN0otWZVupWK12F14vNV334z1ues9kn\/m1vxWi92BpKJIQjr2kyQ0CJHjTBeUDHqUldlFWXd2XapSn+Q+g5v7J+Q4dO8ngST8JDiphXWnmDhu5Z4U4RYyZ1PttZTKDgHxNXLBhZPcGlhprUjIQU82qvu9RkpaPwNJIAlGWYqf1OiNngKptsVodnFR\/q4aSmrEDVNwnu17mf2QtL8LJIEkGKVjP8neNSXRgUvpupWpULdRblYwlssFd\/c6yvT4se+r9CZX+NKtBQZJIAlO6s5PUqrMlQp1sxtXq7deMRjd51Gsx9f1BXd7Lii+i8kH9vmC6+U+j7TfEkgCSXDSUtaTpCzUyKJL7LIiVRu26jppVouUW0+S8rkj3yixX5FUt9uqf6tZdwWSQBKctEw\/yY2Im9FrJUJhd1wxM4TczmL1\/CR3bclcB1JifXbvIjPXzu3RB5JAEpy0SE6SOhvPmDGaqmgXxpSiFdU4SeoRPmfudaY3hDCmFPcDSSAJTloKJ7VaIc1kGmV2ZbG7jCUs0pdxkrK+4q4JuTl7mf2N7H59Gd8OJIEkOKk7TlIsK3PV0s5AMne1zHQEk6LdPSLJX\/83c\/nM\/WEzvfWkdaNynASSloEkpANOsncQE1ZaM5Xo0i5pympsIgRST0nuXnwRrzTq6SDtN6jkNSSCiSAJJMFJ3XFSonm+vYuZ1IErMWYqS8k8Xq7fnctDmfWkzJipfD\/7OEgCSTDKEv0kBCWhpB\/kdDoxyxk5n8+TK2m32423Ya6f1tDHx8fkSkKmE5SEkhCUhJJ+ls1mw6zNKev12lbS8Xhk4uaUw+FgK+lyuWy3W+ZuHnl7exsn3FbSt55GPI3XM4mTfuX2+\/0DDf2iJKRKGIkpQEkISkJJCEpCUBJKQuaUT1NjSu906T1EAAAAAElFTkSuQmCC",
+              "media_type" : "image\/png"
+            },
+            "type" : "text_with_image",
+            "min_length" : 0,
+            "description" : {
+              "key" : "otp_authorization.description",
+              "default" : "1. Stecken Sie Ihre Chipkarte in den Sm@rt-TAN photo-Leser und drücken \"Scan\".\n2. Halten Sie den Sm@rt-TAN photo-Leser so vor die Farbcode-Grafik, dass der Farbcode in der Anzeige vollständig angezeigt wird.\n3. Prüfen Sie die Transaktionsdaten auf dem Display und bestätigen diese dann jeweils mit \"OK\".\n\n4. Bitte beachten: Überprüfen Sie die Anzeige des Sm@rt-TAN photo-Lesers immer anhand der Original-Transaktionsdaten - z.B. einer Rechnung."
+            }
+          }
+        ]
+      }
+    }
+  }
+}

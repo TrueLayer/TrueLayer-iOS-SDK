@@ -216,6 +216,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+
 @class NSBundle;
 
 SWIFT_CLASS("_TtC11TrueLayerUI20TrueLayerUIResources")
@@ -264,10 +265,13 @@ SWIFT_CLASS("_TtCOO11TrueLayerUI2UI16CountrySelection4View")
 
 
 
+
+
 @interface View (SWIFT_EXTENSION(TrueLayerUI)) <UISearchControllerDelegate>
 - (void)willPresentSearchController:(UISearchController * _Nonnull)searchController;
 - (void)willDismissSearchController:(UISearchController * _Nonnull)searchController;
 @end
+
 
 
 

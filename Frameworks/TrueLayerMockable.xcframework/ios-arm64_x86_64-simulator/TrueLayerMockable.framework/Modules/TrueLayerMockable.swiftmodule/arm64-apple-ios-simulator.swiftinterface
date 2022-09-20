@@ -18,11 +18,16 @@ public enum File {
     case consentThenRedirect
     case consentThenAdditionalInputs
     case ibanAdditionalInputs
+    case ibanThenUsernamePasswordAdditionalInputs
     case multiTextAdditionalInputs
     case optionalOnlyTextAdditionalInputs
     case textAndSelectAdditionalInputs
     case selectOnlyAdditionalInputs
+    case smallSelectOnlyAdditionalInputs
+    case textWithImageAdditionalInputs
     case redirect
+    case wait
+    case providerHasInternalServerError
     public var rawValue: Swift.String {
       get
     }
@@ -31,6 +36,7 @@ public enum File {
   }
   public enum GetPaymentResponse : Swift.String {
     case authorizationRequired
+    case wait
     public var rawValue: Swift.String {
       get
     }

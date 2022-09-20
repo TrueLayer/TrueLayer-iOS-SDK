@@ -85,6 +85,7 @@ extension TrueLayerSDK.TrueLayer.Payments {
     case executed
     case redirect
     case settled
+    case wait
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.PaymentState, b: TrueLayerSDK.TrueLayer.Payments.PaymentState) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

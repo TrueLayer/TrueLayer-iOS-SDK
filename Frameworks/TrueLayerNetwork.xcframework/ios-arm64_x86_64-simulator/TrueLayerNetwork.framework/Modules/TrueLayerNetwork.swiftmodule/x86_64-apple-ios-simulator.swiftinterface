@@ -263,6 +263,18 @@ extension TrueLayerNetwork.Network.HTTP {
     }
   }
 }
+public protocol PollableDecodableRequest : TrueLayerNetwork.DecodableRequest {
+  var maximumNumberOfTries: Swift.Int { get }
+  var pollingInterval: Swift.Double { get }
+}
+extension TrueLayerNetwork.PollableDecodableRequest {
+  public var maximumNumberOfTries: Swift.Int {
+    get
+  }
+  public var pollingInterval: Swift.Double {
+    get
+  }
+}
 extension TrueLayerNetwork.Network.URL {
   public enum Scheme : Swift.String {
     case http
@@ -314,6 +326,11 @@ extension TrueLayerNetwork.Network {
     
     #if compiler(>=5.3) && $AsyncAwait
     public func request<R>(_ request: R) async throws -> R.ResponseModel where R : TrueLayerNetwork.DecodableRequest
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    public func poll<R>(for request: R, shouldEndPollingPrematurely: (R.ResponseModel) -> Swift.Bool) async throws -> R.ResponseModel where R : TrueLayerNetwork.PollableDecodableRequest
     #endif
 
     
@@ -388,7 +405,7 @@ extension TrueLayerNetwork.Network.Mock {
   @objc @_inheritsConvenienceInitializers final public class URLProtocol : Foundation.URLProtocol {
     public static var mockRequests: Swift.Set<TrueLayerNetwork.Network.Mock.Exchange>
     public static var shouldCheckQueryParameters: Swift.Bool
-    public static var delay: Swift.Int
+    public static var delay: Swift.Double
     @objc override final public class func canInit(with request: Foundation.URLRequest) -> Swift.Bool
     @objc override final public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
     @objc override final public func startLoading()

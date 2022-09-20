@@ -1,0 +1,65 @@
+{
+  "status" : "authorizing",
+  "authorization_flow" : {
+    "actions" : {
+      "next" : {
+        "type" : "form",
+        "inputs" : [
+          {
+            "id" : "sca_method_selection",
+            "mandatory" : true,
+            "display_text" : {
+              "key" : "sca_method_selection.display-text",
+              "default" : "Authentication method"
+            },
+            "type" : "select",
+            "options" : [
+              {
+                "id" : "942",
+                "display_text" : {
+                  "key" : "sca_method_selection.942",
+                  "default" : "mobile TAN"
+                }
+              },
+              {
+                "id" : "944",
+                "display_text" : {
+                  "key" : "sca_method_selection.944",
+                  "default" : "SecureGo"
+                }
+              },
+              {
+                "id" : "946",
+                "display_text" : {
+                  "key" : "sca_method_selection.946",
+                  "default" : "SecureGo plus (Direktfreigabe)"
+                }
+              },
+              {
+                "id" : "962",
+                "display_text" : {
+                  "key" : "sca_method_selection.962",
+                  "default" : "SmartTAN plus HHD 1.4"
+                }
+              },
+              {
+                "id" : "972",
+                "display_text" : {
+                  "key" : "sca_method_selection.972",
+                  "default" : "SmartTAN optic\/USB HHD 1.4"
+                }
+              },
+              {
+                "id" : "982",
+                "display_text" : {
+                  "key" : "sca_method_selection.982",
+                  "default" : "Smart-TAN photo"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

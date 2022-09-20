@@ -47,7 +47,11 @@
               "default" : "IBAN"
             },
             "type" : "text",
-            "min_length" : 15
+            "min_length" : 15,
+            "description": {
+              "key" : "remitter-iban.description",
+              "default" : "Your IBAN can be found in your bank's app. It contains letters and numbers to identify your bank account. "
+            }
           },
           {
             "format" : "some_unknown_type",

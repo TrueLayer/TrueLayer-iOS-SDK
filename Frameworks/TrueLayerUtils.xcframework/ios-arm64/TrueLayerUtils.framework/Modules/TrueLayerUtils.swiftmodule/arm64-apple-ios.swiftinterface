@@ -92,9 +92,16 @@ extension UIKit.UIScreen {
   @_Concurrency.MainActor(unsafe) public static var relativeWidth: CoreGraphics.CGFloat {
     get
   }
+  @_Concurrency.MainActor(unsafe) public static var relativeHeight: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static var portraitWidth: CoreGraphics.CGFloat {
+    get
+  }
   @_Concurrency.MainActor(unsafe) public static var isShortScreen: Swift.Bool {
     get
   }
+  @_Concurrency.MainActor(unsafe) public func changeBrightness(to value: CoreGraphics.CGFloat)
 }
 extension Foundation.URL {
   public init(staticString string: Swift.StaticString)

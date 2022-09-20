@@ -35,6 +35,11 @@ extension TrueLayerAPI.AuthorizationFlow {
 
     
     #if compiler(>=5.3) && $AsyncAwait
+    public func pollPaymentStatus() async throws -> TrueLayerCore.Core.Payments.Models.Payment.Status
+    #endif
+
+    
+    #if compiler(>=5.3) && $AsyncAwait
     public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Status
     #endif
 
