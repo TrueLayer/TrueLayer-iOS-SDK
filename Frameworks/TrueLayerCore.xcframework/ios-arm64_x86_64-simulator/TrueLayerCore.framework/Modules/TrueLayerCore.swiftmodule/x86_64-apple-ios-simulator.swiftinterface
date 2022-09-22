@@ -33,6 +33,7 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow {
     public enum `Type` : Swift.Equatable {
       case text(_: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text)
       case singleChoiceList(_: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList)
+      case textWithImage(_: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage)
       public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`) -> Swift.Bool
     }
   }
@@ -42,13 +43,13 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Additiona
     public let id: Swift.String
     public let mandatory: Swift.Bool
     public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
-    public let type: Swift.String
+    public let description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?
     public let format: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format
     public let sensitive: Swift.Bool
     public let minLength: Swift.Int
     public let maxLength: Swift.Int
     public let regexes: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex]
-    public init(id: Swift.String, mandatory: Swift.Bool, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, type: Swift.String, format: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format, sensitive: Swift.Bool, minLength: Swift.Int, maxLength: Swift.Int, regexes: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex])
+    public init(id: Swift.String, mandatory: Swift.Bool, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?, format: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Format, sensitive: Swift.Bool, minLength: Swift.Int, maxLength: Swift.Int, regexes: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text.Regex])
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text) -> Swift.Bool
   }
   public struct HelpText : Swift.Equatable {
@@ -116,6 +117,22 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Additiona
   }
 }
 extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
+  public struct TextWithImage : Swift.Equatable {
+    public let id: Swift.String
+    public let textInput: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text
+    public let image: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage.Image
+    public init(id: Swift.String, textInput: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text, image: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage.Image)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage {
+  public enum Image : Swift.Equatable {
+    case uri(url: Foundation.URL)
+    case base64(data: Swift.String, mediaType: Swift.String)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage.Image, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage.Image) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
   public struct BadRequest : Swift.Equatable {
     public typealias KeyedErrors = [Swift.String : [Swift.String]]
     public let inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors
@@ -141,6 +158,7 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow {
     case additionalInputs(inputs: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.`Type`])
     case providerSelection(providers: [TrueLayerCore.Core.Payments.Models.Provider])
     case redirect(url: Foundation.URL)
+    case wait
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Step, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Step) -> Swift.Bool
   }
   public enum SubsequentActionHint : Swift.Decodable {
@@ -198,6 +216,12 @@ extension TrueLayerCore.Core.Payments.Models.Payment {
     public let currency: TrueLayerCore.Core.Payments.Models.Payment.Currency
     public let status: TrueLayerCore.Core.Payments.Models.Payment.Status
     public let method: TrueLayerCore.Core.Payments.Models.Payment.Method
+    public var providerID: TrueLayerCore.Core.Payments.Models.Provider.Identifier? {
+      get
+    }
+    public var beneficiary: TrueLayerCore.Core.Payments.Models.Payment.Method.BankTransfer.Beneficiary {
+      get
+    }
     public init(identifier: TrueLayerCore.Core.Payments.Models.Payment.Identifier, amount: Swift.Double, currency: TrueLayerCore.Core.Payments.Models.Payment.Currency, status: TrueLayerCore.Core.Payments.Models.Payment.Status, method: TrueLayerCore.Core.Payments.Models.Payment.Method)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.Information, b: TrueLayerCore.Core.Payments.Models.Payment.Information) -> Swift.Bool
   }
@@ -249,6 +273,7 @@ extension TrueLayerCore.Core.Payments.Models.Payment {
     case executed
     case redirect
     case settled
+    case wait
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.State, b: TrueLayerCore.Core.Payments.Models.Payment.State) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

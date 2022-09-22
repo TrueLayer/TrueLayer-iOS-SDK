@@ -112,6 +112,7 @@ The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained
 | `.authorized` | The user authorized the payment with the bank.
 | `.redirect` | The user has been redirected to the bank to authorize the payment.
 | `.settled` | The funds have reached the destination.
+| `.wait` | The user did everything needed to do, but the merchant has to wait for the output.
 
 #### Error
 

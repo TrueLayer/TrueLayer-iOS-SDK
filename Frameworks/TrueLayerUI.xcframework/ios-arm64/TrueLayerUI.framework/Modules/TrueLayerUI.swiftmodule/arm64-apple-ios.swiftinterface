@@ -19,11 +19,6 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
-extension TrueLayerUI.UI.ActivityIndicator {
-  public struct ViewModel : TrueLayerUI.SomeViewModel {
-    public init()
-  }
-}
 public protocol DeviceInformationProvider {
   var model: Swift.String { get }
   var systemVersion: Swift.String { get }
@@ -66,11 +61,14 @@ extension TrueLayerUI.Analytics {
     case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Provider?)
     case errorOccurred(error: Swift.Error)
     case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
+    case waitLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider)
+    case waitTimeOutDialogLoaded
+    case waitTimeOutDialogKeepWaitingTapped
   }
 }
 extension TrueLayerUI.Analytics {
   @_hasMissingDesignatedInitializers public class Manager {
-    convenience public init(in environment: TrueLayerUI.Analytics.Environment)
+    convenience public init(in environment: TrueLayerUI.Analytics.Environment, resourceToken: Swift.String, sdkVersion: Swift.String)
     @objc deinit
   }
 }
@@ -80,36 +78,6 @@ public protocol ScreenInformationProvider {
   var bounds: CoreGraphics.CGRect { get }
 }
 extension UIKit.UIScreen : TrueLayerUI.ScreenInformationProvider {
-}
-extension TrueLayerUI.UI.Consent {
-  @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class View : UIKit.UIView {
-    @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-    @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-    @objc deinit
-  }
-}
-extension TrueLayerUI.UI.Consent {
-  final public class ViewModel : TrueLayerUI.SomeViewModel {
-    public init(paymentInformation: TrueLayerCore.Core.Payments.Models.Payment.Information, beneficiaryName: Swift.String, legalCopy: TrueLayerCore.Core.Payments.Models.ActionableCopy, subsequentAction: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.SubsequentActionHint, merchantIconURL: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
-    @objc deinit
-  }
-}
-extension TrueLayerUI.UI.CountrySelection {
-  @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class View : UIKit.UIView {
-    @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
-    @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-    @objc deinit
-  }
-}
-extension TrueLayerUI.UI.CountrySelection.View : UIKit.UISearchResultsUpdating {
-  @_Concurrency.MainActor(unsafe) @objc final public func updateSearchResults(for searchController: UIKit.UISearchController)
-}
-extension TrueLayerUI.UI.CountrySelection.View : UIKit.UISearchControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func willPresentSearchController(_ searchController: UIKit.UISearchController)
-  @_Concurrency.MainActor(unsafe) @objc final public func willDismissSearchController(_ searchController: UIKit.UISearchController)
-}
-extension TrueLayerUI.UI.CountrySelection.View : UIKit.UITableViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 public protocol Makeup : TrueLayerUI.Accessory, TrueLayerUI.BackgroundColor, TrueLayerUI.ContentColor {
 }
@@ -220,14 +188,6 @@ public enum UI {
 extension TrueLayerUI.UI {
   public enum SDKRoot {
   }
-  public enum ActivityIndicator {
-  }
-  public enum ProviderSelection {
-  }
-  public enum CountrySelection {
-  }
-  public enum Consent {
-  }
 }
 extension TrueLayerUI.Router {
   public func showLoader(dependencies: TrueLayerUI.SomeDependencies)
@@ -277,10 +237,6 @@ public protocol RouterConfigurable {
 }
 public typealias RoutableViewController = UIKit.UIViewController & TrueLayerUI.Routable
 public typealias RouteIdentifier = Swift.String
-extension TrueLayerUI.UI.ProviderSelection {
-  public struct ViewModel : TrueLayerUI.SomeViewModel {
-  }
-}
 extension TrueLayerUI.UI.SDKRoot {
   @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class View : UIKit.UIView {
     @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
@@ -300,8 +256,11 @@ extension TrueLayerUI.UI {
     case countrySelection
     case singleChoiceListAdditionalInputs
     case textInputsAdditionalInputs
+    case textWithImageAdditionalInputs
     case providerSelection
+    case zoomedImage
     case sdkRoot
+    case wait
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
