@@ -55,22 +55,10 @@ public protocol DecodableRequest : Swift.CustomStringConvertible, TrueLayerNetwo
   var decoder: Self.Decoder { get }
 }
 extension TrueLayerNetwork.DecodableRequest {
-  public var method: TrueLayerNetwork.Network.HTTP.Method {
-    get
-  }
-  public var scheme: TrueLayerNetwork.Network.URL.Scheme {
-    get
-  }
-  public var port: Swift.Int? {
-    get
-  }
   public var queryItems: TrueLayerNetwork.Network.URL.QueryItems {
     get
   }
   public var httpBody: TrueLayerNetwork.Empty {
-    get
-  }
-  public var timeout: Foundation.TimeInterval {
     get
   }
 }
@@ -319,6 +307,20 @@ public protocol HTTPRequest : TrueLayerNetwork.URLRequestConvertible {
   var port: Swift.Int? { get }
   var path: TrueLayerNetwork.Network.URL.Path { get }
   var timeout: Foundation.TimeInterval { get }
+}
+extension TrueLayerNetwork.DecodableRequest {
+  public var method: TrueLayerNetwork.Network.HTTP.Method {
+    get
+  }
+  public var scheme: TrueLayerNetwork.Network.URL.Scheme {
+    get
+  }
+  public var port: Swift.Int? {
+    get
+  }
+  public var timeout: Foundation.TimeInterval {
+    get
+  }
 }
 extension TrueLayerNetwork.Network {
   public struct Manager {

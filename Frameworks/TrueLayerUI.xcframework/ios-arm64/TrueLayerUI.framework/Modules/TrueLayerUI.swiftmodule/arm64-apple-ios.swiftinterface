@@ -43,27 +43,28 @@ extension TrueLayerUI.Analytics {
 }
 extension TrueLayerUI.Analytics {
   public enum Event {
-    case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
-    case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
+    case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String], listSize: Swift.Int? = nil)
+    case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String], listSize: Swift.Int? = nil)
     case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Provider?, inputIDs: [Swift.String])
     case additionalInputsServerValidationError(provider: TrueLayerCore.Core.Payments.Models.Provider, inputIDs: [Swift.String])
-    case sdkStarted
-    case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
+    case consentGranted(provider: TrueLayerCore.Core.Payments.Models.Provider, amount: Swift.Double, currency: Swift.String)
+    case consentLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, amount: Swift.Double, currency: Swift.String)
+    case countryFlagTapped
+    case countrySelected(countryCode: Swift.String)
+    case countrySelectionLoaded
+    case errorOccurred(error: Swift.Error)
+    case legalsOpened(link: Foundation.URL)
+    case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
+    case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Provider?)
+    case providerSelected(provider: TrueLayerCore.Core.Payments.Models.Provider, isFromPreviouslyUsedSection: Swift.Bool)
     case providerSelectionLoaded
     case providerSelectionSearch(searchString: Swift.String)
-    case providerSelected(provider: TrueLayerCore.Core.Payments.Models.Provider)
     case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Provider?)
-    case consentLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider, amount: Swift.Double, currency: Swift.String)
-    case consentGranted(provider: TrueLayerCore.Core.Payments.Models.Provider, amount: Swift.Double, currency: Swift.String)
-    case countryFlagTapped
-    case countrySelectionLoaded
-    case countrySelected(countryCode: Swift.String)
-    case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Provider?)
-    case errorOccurred(error: Swift.Error)
-    case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Provider)
+    case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
+    case sdkStarted
     case waitLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider)
-    case waitTimeOutDialogLoaded
     case waitTimeOutDialogKeepWaitingTapped
+    case waitTimeOutDialogLoaded
   }
 }
 extension TrueLayerUI.Analytics {
@@ -150,19 +151,20 @@ extension TrueLayerUI.UI {
 }
 extension TrueLayerUI.UI {
   public struct Dependencies : TrueLayerUI.SomeDependencies {
-    public let authorizationFlowManager: TrueLayerAPI.AuthorizationFlow.Manager
-    public let dataPersister: TrueLayerCore.CountryPersistable & TrueLayerCore.ProviderPersistable
+    public let singlePaymentRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.SinglePayment
+    public let dataPersister: TrueLayerUI.DataPersistable
     public let router: TrueLayerUI.NavigationProvider
     public let urlOpener: TrueLayerUI.URLOpener
     public let context: TrueLayerUI.MerchantContext
     public let networkManager: TrueLayerNetwork.Network.Manager
     public let analyticsManager: TrueLayerUI.Analytics.Manager
-    public init(authorizationFlowManager: TrueLayerAPI.AuthorizationFlow.Manager, dataPersister: TrueLayerCore.CountryPersistable & TrueLayerCore.ProviderPersistable, router: TrueLayerUI.NavigationProvider, urlOpener: TrueLayerUI.URLOpener, context: TrueLayerUI.MerchantContext, networkManager: TrueLayerNetwork.Network.Manager, analyticsManager: TrueLayerUI.Analytics.Manager)
+    public init(singlePaymentRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.SinglePayment, dataPersister: TrueLayerUI.DataPersistable, router: TrueLayerUI.NavigationProvider, urlOpener: TrueLayerUI.URLOpener, context: TrueLayerUI.MerchantContext, networkManager: TrueLayerNetwork.Network.Manager, analyticsManager: TrueLayerUI.Analytics.Manager)
   }
 }
+public typealias DataPersistable = TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable
 public protocol SomeDependencies {
-  var authorizationFlowManager: TrueLayerAPI.AuthorizationFlow.Manager { get }
-  var dataPersister: TrueLayerCore.CountryPersistable & TrueLayerCore.ProviderPersistable { get }
+  var singlePaymentRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.SinglePayment { get }
+  var dataPersister: TrueLayerUI.DataPersistable { get }
   var router: TrueLayerUI.NavigationProvider { get }
   var urlOpener: TrueLayerUI.URLOpener { get }
   var context: TrueLayerUI.MerchantContext { get }
