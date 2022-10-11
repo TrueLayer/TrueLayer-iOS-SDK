@@ -130,6 +130,25 @@ The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained
 | `.paymentRejected` | The payment was rejected by the bank.
 | `.serverError` | The server encountered an error while processing the answer.
 
+### Getting a payment status
+
+In order to get the status of a payment, the SDK offers the following method:
+
+`func paymentStatus(paymentIdentifier:, resourceToken:) async throws -> TrueLayer.Payments.Models.Payment.Status`
+
+This should be treated as the favorite source of truth for the status of the payment.
+
+### Status
+
+| `TrueLayer.Payments.Models.Payment.Status` | Description |
+| ------------- | ------------- 
+| `.authorizationRequired` | The payment requires authorisation.
+| `.authorizing` | The user is authorizing the payment.
+| `.authorized` | The payment has been authorized by the bank.
+| `.executed` | The payment has been executed.
+| `.settled` | The funds have reached the destination.
+| `.failed` | The payment failed. This can be due to various reasons..
+
 ### Preferences
 
 The `Context` object also takes a `preferences` parameter to allow you to customize the authentication flow. 

@@ -39,6 +39,21 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
+  public enum Status : Swift.Equatable {
+    case authorizationRequired
+    case authorizing
+    case authorized
+    case executed
+    case settled
+    case failed
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
   public struct Preferences {
     public init(preferredCountryCode: Swift.String? = nil)
   }
@@ -76,6 +91,11 @@ extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers final public class Manager {
     final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings())
     final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.PaymentState, TrueLayerSDK.TrueLayer.Payments.Error>) -> Swift.Void)?)
+    
+    #if compiler(>=5.3) && $AsyncAwait
+    final public func paymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status
+    #endif
+
     @objc deinit
   }
 }
@@ -120,5 +140,6 @@ public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
 }
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.PaymentState : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Payments.PaymentState : Swift.Hashable {}

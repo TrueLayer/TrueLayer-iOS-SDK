@@ -39,6 +39,51 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow {
   }
 }
 extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
+  public struct BadRequest : Swift.Equatable {
+    public typealias KeyedErrors = [Swift.String : [Swift.String]]
+    public let inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors
+    public var identifiers: [Swift.String] {
+      get
+    }
+    public init(inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
+  public struct SingleChoiceList : Swift.Equatable {
+    public let id: Swift.String
+    public let mandatory: Swift.Bool
+    public let type: Swift.String
+    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
+    public let description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?
+    public let options: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option]
+    public init(id: Swift.String, mandatory: Swift.Bool, type: Swift.String, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?, options: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option])
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList {
+  public struct Option : Swift.Equatable {
+    public typealias Identifier = Swift.String
+    public let id: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Identifier
+    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
+    public func addRecentlyUsedPrefix() -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Identifier
+    public func cleanID() -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Identifier
+    public func cleaned() -> TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option
+    public init(id: Swift.String, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option) -> Swift.Bool
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option {
+  public struct Stored : Swift.Codable, Swift.Equatable {
+    public let id: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Identifier
+    public let date: Foundation.TimeInterval
+    public init(id: TrueLayerCore.Core.Payments.Models.Provider.ID, date: Foundation.TimeInterval)
+    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Stored, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Stored) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
   public struct Text : Swift.Equatable {
     public let id: Swift.String
     public let mandatory: Swift.Bool
@@ -97,26 +142,6 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Additiona
   }
 }
 extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
-  public struct SingleChoiceList : Swift.Equatable {
-    public let id: Swift.String
-    public let mandatory: Swift.Bool
-    public let type: Swift.String
-    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
-    public let description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?
-    public let options: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option]
-    public init(id: Swift.String, mandatory: Swift.Bool, type: Swift.String, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText, description: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText?, options: [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option])
-    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList) -> Swift.Bool
-  }
-}
-extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList {
-  public struct Option : Swift.Equatable {
-    public let id: Swift.String
-    public let title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText
-    public init(id: Swift.String, title: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.KeyedText)
-    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option) -> Swift.Bool
-  }
-}
-extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
   public struct TextWithImage : Swift.Equatable {
     public let id: Swift.String
     public let textInput: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.Text
@@ -130,17 +155,6 @@ extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.Additiona
     case uri(url: Foundation.URL)
     case base64(data: Swift.String, mediaType: Swift.String)
     public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage.Image, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.TextWithImage.Image) -> Swift.Bool
-  }
-}
-extension TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs {
-  public struct BadRequest : Swift.Equatable {
-    public typealias KeyedErrors = [Swift.String : [Swift.String]]
-    public let inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors
-    public var identifiers: [Swift.String] {
-      get
-    }
-    public init(inputs: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest.KeyedErrors)
-    public static func == (a: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest, b: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.BadRequest) -> Swift.Bool
   }
 }
 extension TrueLayerCore.Core.Payments.Models.Payment {
@@ -290,7 +304,7 @@ extension TrueLayerCore.Core.Payments.Models {
     public let iconURL: Foundation.URL?
     public let logoURL: Foundation.URL?
     public init(id: Swift.String, displayName: Swift.String, country: TrueLayerCore.Core.Payments.Models.Country, iconURL: Foundation.URL?, logoURL: Foundation.URL?)
-    public func addLastUsedPrefix() -> TrueLayerCore.Core.Payments.Models.Provider.Identifier
+    public func addLastUsedPrefix() -> TrueLayerCore.Core.Payments.Models.Provider.ID
     public func cleanID() -> TrueLayerCore.Core.Payments.Models.Provider.ID
     public func cleaned() -> TrueLayerCore.Core.Payments.Models.Provider
     public func hash(into hasher: inout Swift.Hasher)
@@ -316,14 +330,18 @@ extension Swift.Array where Element == TrueLayerCore.Core.Payments.Models.Provid
     get
   }
 }
+public protocol CodablePersistable {
+  func get<Key, Value>(_ key: Key) throws -> Value? where Key : TrueLayerCore.PersistenceKey, Value : Swift.Decodable
+  func delete<Key>(_ key: Key) where Key : TrueLayerCore.PersistenceKey
+  func set<Value, Key>(_ value: Value, using key: Key) throws where Value : Swift.Encodable, Key : TrueLayerCore.PersistenceKey
+}
 public protocol CountryPersistable {
   func updateLastUsed(_ country: TrueLayerCore.Core.Payments.Models.Country) throws
   func getLastUsedCountry() throws -> TrueLayerCore.Core.Payments.Models.Country.Stored?
 }
-public protocol DataPersistable {
-  func get<Key, Value>(_ key: Key) throws -> Value? where Key : TrueLayerCore.PersistenceKey, Value : Swift.Decodable
-  func delete<Key>(_ key: Key) where Key : TrueLayerCore.PersistenceKey
-  func set<Value, Key>(_ value: Value, using key: Key) throws where Value : Swift.Encodable, Key : TrueLayerCore.PersistenceKey
+public protocol LongListOptionPersistable {
+  func updateLastUsed(optionIdentifier: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Identifier, listIdentifier: Swift.String, providerIdentifier: TrueLayerCore.Core.Payments.Models.Provider.Identifier, dateProvider: () -> Foundation.Date) throws
+  func getOptions(providerIdentifier: TrueLayerCore.Core.Payments.Models.Provider.Identifier, listIdentifier: Swift.String) -> [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Stored]
 }
 public protocol PersistenceKey : Swift.RawRepresentable where Self.RawValue == Swift.String {
 }
@@ -336,7 +354,7 @@ extension Foundation.UserDefaults : TrueLayerCore.CountryPersistable {
   public func updateLastUsed(_ country: TrueLayerCore.Core.Payments.Models.Country) throws
   public func getLastUsedCountry() throws -> TrueLayerCore.Core.Payments.Models.Country.Stored?
 }
-extension Foundation.UserDefaults : TrueLayerCore.DataPersistable {
+extension Foundation.UserDefaults : TrueLayerCore.CodablePersistable {
   public func get<Key, Value>(_ key: Key) throws -> Value? where Key : TrueLayerCore.PersistenceKey, Value : Swift.Decodable
   public func delete<Key>(_ key: Key) where Key : TrueLayerCore.PersistenceKey
   public func set<Value, Key>(_ value: Value, using key: Key) throws where Value : Swift.Encodable, Key : TrueLayerCore.PersistenceKey
@@ -346,16 +364,25 @@ extension Foundation.UserDefaults {
     get
   }
 }
+extension Foundation.UserDefaults : TrueLayerCore.LongListOptionPersistable {
+  public func updateLastUsed(optionIdentifier: TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Identifier, listIdentifier: Swift.String, providerIdentifier: TrueLayerCore.Core.Payments.Models.Provider.Identifier, dateProvider: () -> Foundation.Date) throws
+  public func getOptions(providerIdentifier: TrueLayerCore.Core.Payments.Models.Provider.Identifier, listIdentifier: Swift.String) -> [TrueLayerCore.Core.Payments.Models.Payment.AuthorizationFlow.AdditionalInputs.SingleChoiceList.Option.Stored]
+}
 extension Foundation.UserDefaults : TrueLayerCore.ProviderPersistable {
   public func updateLastUsed(with providerID: TrueLayerCore.Core.Payments.Models.Provider.ID, dateProvider: () -> Foundation.Date = Date.init) throws
   public func removeFromLastUsed(_ providerID: TrueLayerCore.Core.Payments.Models.Provider.ID) throws
   public func getLastUsedProviders() throws -> [TrueLayerCore.Core.Payments.Models.Provider.Stored]
 }
-public enum UserDefaultsKey : Swift.String, TrueLayerCore.PersistenceKey {
+public enum UserDefaultsKey : Swift.String, TrueLayerCore.PersistenceKey, Swift.CaseIterable {
   case lastUsedCountry
   case lastUsedProviders
+  case lastUsedLongListOptions
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [TrueLayerCore.UserDefaultsKey]
   public typealias RawValue = Swift.String
+  public static var allCases: [TrueLayerCore.UserDefaultsKey] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
