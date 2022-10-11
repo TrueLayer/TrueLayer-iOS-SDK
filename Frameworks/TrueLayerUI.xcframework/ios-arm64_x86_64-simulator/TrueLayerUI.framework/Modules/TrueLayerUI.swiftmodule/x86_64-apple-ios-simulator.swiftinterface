@@ -61,7 +61,7 @@ extension TrueLayerUI.Analytics {
     case providerSelectionSearch(searchString: Swift.String)
     case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Provider?)
     case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
-    case sdkStarted
+    case sdkStarted(presentationStyle: TrueLayerUI.UI.PresentationStyle)
     case waitLoaded(provider: TrueLayerCore.Core.Payments.Models.Provider)
     case waitTimeOutDialogKeepWaitingTapped
     case waitTimeOutDialogLoaded
@@ -198,6 +198,7 @@ extension TrueLayerUI.Router {
 public protocol NavigationProvider {
   var topViewController: UIKit.UIViewController { get }
   init(on rootViewController: UIKit.UIViewController)
+  func start(dependencies: TrueLayerUI.SomeDependencies)
   func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == TrueLayerUI.RouteIdentifier
   func show(alertController: UIKit.UIAlertController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   func popTo<R>(identifier: R, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, R.RawValue == TrueLayerUI.RouteIdentifier
@@ -223,6 +224,7 @@ public struct Router : TrueLayerUI.NavigationProvider {
     get
   }
   public init(on rootViewController: UIKit.UIViewController)
+  public func start(dependencies: TrueLayerUI.SomeDependencies)
   @available(iOSApplicationExtension, unavailable)
   public func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == TrueLayerUI.RouteIdentifier
   @available(iOSApplicationExtension, unavailable)
