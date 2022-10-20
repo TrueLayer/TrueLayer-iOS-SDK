@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [1.4.1] - Cricket
+
+### Fixed
+
+- Fixed the completion not invoked when the SDK is pushed.
+
 ## [1.4.0] - Sébastien
 
 ### Added
