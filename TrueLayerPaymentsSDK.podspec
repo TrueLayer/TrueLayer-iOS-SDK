@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name  = 'TrueLayerPaymentsSDK'
-  s.version = '1.4.1'
-  s.summary = 'The official iOS SDK for TrueLayer's open banking.'
+  s.name  = "TrueLayerPaymentsSDK"
+  s.version = "1.4.1"
+  s.summary = "The official iOS SDK for TrueLayer's open banking."
   s.description = "This SDK provide a complete experience to consume TrueLayer's open banking APIs in a fast, safe and optimized manner."
   s.homepage = "https://github.com/TrueLayer/truelayer-ios-sdk"
   s.license = "git@github.com:TrueLayer/truelayer-ios-sdk/licence"
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.swift_version = "5"
   s.ios.deployment_target = '13.0'
-  s.vendored_frameworks = "TrueLayerAPI.xcframework", "TrueLayerCore.xcframework", "TrueLayerLogger.xcframework", "TrueLayerMockable.xcframework", "TrueLayerNetwork.xcframework", "TrueLayerSDK.xcframework", "TrueLayerUI.xcframework", "TrueLayerUtils.xcframework"
+  s.vendored_frameworks = "Frameworks/TrueLayerAPI.xcframework", "Frameworks/TrueLayerCore.xcframework", "Frameworks/TrueLayerLogger.xcframework", "Frameworks/TrueLayerMockable.xcframework", "Frameworks/TrueLayerNetwork.xcframework", "Frameworks/TrueLayerSDK.xcframework", "Frameworks/TrueLayerUI.xcframework", "Frameworks/TrueLayerUtils.xcframework"
 end
