@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [1.4.2] - Mantis
+
+### Fixed
+
+- Fixed a crash when selecting a country on iOS 15.0
+- Fixed a bug where the search result would not dismiss after selecting a country.
+
 ## [1.4.1] - Cricket
 
 ### Fixed

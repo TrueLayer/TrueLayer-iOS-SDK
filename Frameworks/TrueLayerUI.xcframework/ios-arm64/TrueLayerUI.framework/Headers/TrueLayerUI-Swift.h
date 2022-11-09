@@ -256,11 +256,8 @@ SWIFT_CLASS("_TtCOO11TrueLayerUI2UI16CountrySelection4View")
 - (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
 @end
 
-@class UITableView;
-@class NSIndexPath;
 
 @interface View (SWIFT_EXTENSION(TrueLayerUI)) <UITableViewDelegate>
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
