@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MDTBNef4IUkwGlphuADxsGBfIdg=
+		JgDvFsgGPmic/v9DsuUtEakp4tw=
 		</data>
 		<key>Headers/TrueLayerUI-Swift.h</key>
 		<data>
-		AUSp3SLWQL7gv1K1m5vzRzRVzFU=
+		FcbyHf7yFFzGpnbk4q7dUvDczHs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OR6OPZmr2plI0cn75r5aWryY284=
+		EEdFH+FuzHNdSsdOaVvMb3STaaY=
 		</data>
 		<key>Modules/TrueLayerUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/TrueLayerUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		i8E149M5bxAyIWbb6IF77U+DkHw=
+		CDX1ALt4c+cS4/DdxYjN0SZdnwE=
 		</data>
 		<key>Modules/TrueLayerUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/TrueLayerUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T3e1Ue4rM0BL89IiLt6I+HPrRws=
+		7AloI6EQbxkSh8ZgtBrnG3X88T4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t5HOE+99nz0ZFkEXqENyFWp+3dX++MljYxU1SjS/eac=
+			vVU77EolBVYWAAzObBmRn7ysTX3GoU8W05vClNdGUwo=
 			</data>
 		</dict>
 		<key>Headers/TrueLayerUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKANks1Kj463gOucl3OSUkc/uhgNAOnzHa/7TJVk/wk=
+			Qy126G4p2wOMkLPFgfymlzaqcIWdA6By4Q0NUhEJBqg=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -169,7 +169,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bFxXeuRZKLya8AZ4zPa1VKx3k0Csn8l8uV5eyfPgaXI=
+			sTAlJxPn36/D4B6cL0aIPPagAGIH7O54n91HdIA6a08=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -190,7 +190,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xpm6WRF1kfHYEfiEGaU7I5Arelr9W2H1EYN0BBu83co=
+			9IHme3vNd0eF/dW5dBqaHK7gXnAY/bmV8vYkI1PmLXQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
