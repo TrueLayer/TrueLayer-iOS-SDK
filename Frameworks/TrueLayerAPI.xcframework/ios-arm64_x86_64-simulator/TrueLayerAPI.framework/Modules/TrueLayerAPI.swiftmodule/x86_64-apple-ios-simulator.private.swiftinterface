@@ -1,0 +1,182 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerAPI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_spi(TrueLayer) import TrueLayerCore
+@_spi(TrueLayer) import TrueLayerMockable
+@_spi(TrueLayer) import TrueLayerNetwork
+@_spi(TrueLayer) import TrueLayerUtils
+import _Concurrency
+import _StringProcessing
+@_spi(TrueLayer) extension TrueLayerAPI.API {
+  @_spi(TrueLayer) public enum Environment {
+    @_spi(TrueLayer) case development
+    @_spi(TrueLayer) case production
+    @_spi(TrueLayer) case sandbox
+    @_spi(TrueLayer) public static func == (a: TrueLayerAPI.API.Environment, b: TrueLayerAPI.API.Environment) -> Swift.Bool
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) public enum API {
+  @_spi(TrueLayer) public typealias PaymentToken = Swift.String
+  @_spi(TrueLayer) public static let mockedRequests: Swift.Set<TrueLayerNetwork.Network.Mock.Exchange>
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API {
+  @_spi(TrueLayer) public enum Payments {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments {
+  @_spi(TrueLayer) public enum Models {
+  }
+  @_spi(TrueLayer) public enum Requests {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models {
+  @_spi(TrueLayer) public enum Response {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response {
+  @_spi(TrueLayer) public enum SinglePayment {
+    @_spi(TrueLayer) public typealias ID = Swift.String
+  }
+  @_spi(TrueLayer) public enum Mandate {
+    @_spi(TrueLayer) public typealias ID = Swift.String
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests {
+  @_spi(TrueLayer) public enum Manager {
+  }
+}
+@_spi(TrueLayer) public protocol Normalizable : Swift.Decodable {
+  associatedtype Output
+  @_spi(TrueLayer) func normalized() -> Self.Output
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment {
+  @_spi(TrueLayer) public enum AdditionalInputs {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs {
+  @_spi(TrueLayer) public struct BadRequest : Swift.Decodable, Swift.Equatable {
+    @_spi(TrueLayer) public let errors: [Swift.String : [Swift.String]]
+    @_spi(TrueLayer) public static func == (a: TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs.BadRequest, b: TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs.BadRequest) -> Swift.Bool
+    @_spi(TrueLayer) public init(from decoder: Swift.Decoder) throws
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs.BadRequest : TrueLayerAPI.Normalizable {
+  @_spi(TrueLayer) public func normalized() -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.BadRequest
+  @_spi(TrueLayer) public typealias Output = TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.BadRequest
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
+  @_spi(TrueLayer) public struct Mandate : TrueLayerAPI.RequestsManager {
+    @_spi(TrueLayer) public init(using configuration: TrueLayerAPI.RequestsManagerConfigurationProvider)
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getMandate() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.Information
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitProviderSelection(_ providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitConsent() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func cancelMandate() async throws
+    #endif
+  }
+}
+@_spi(TrueLayer) public protocol RequestsManager {
+}
+@_spi(TrueLayer) public protocol RequestsManagerConfigurationProvider {
+  @_spi(TrueLayer) var networkManager: TrueLayerNetwork.Network.Manager { get }
+  @_spi(TrueLayer) var paymentID: Swift.String { get }
+  @_spi(TrueLayer) var paymentToken: TrueLayerAPI.API.PaymentToken { get }
+  @_spi(TrueLayer) var environment: TrueLayerAPI.API.Environment { get }
+  @_spi(TrueLayer) var redirectURL: Foundation.URL { get }
+}
+@_spi(TrueLayer) public struct RequestsManagerConfiguration : TrueLayerAPI.RequestsManagerConfigurationProvider {
+  @_spi(TrueLayer) public let networkManager: TrueLayerNetwork.Network.Manager
+  @_spi(TrueLayer) public let paymentID: Swift.String
+  @_spi(TrueLayer) public let paymentToken: TrueLayerAPI.API.PaymentToken
+  @_spi(TrueLayer) public let environment: TrueLayerAPI.API.Environment
+  @_spi(TrueLayer) public let redirectURL: Foundation.URL
+  @_spi(TrueLayer) public init(networkManager: TrueLayerNetwork.Network.Manager, paymentID: Swift.String, paymentToken: TrueLayerAPI.API.PaymentToken, environment: TrueLayerAPI.API.Environment, redirectURL: Foundation.URL)
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
+  @_spi(TrueLayer) public struct SinglePayment : TrueLayerAPI.RequestsManager {
+    @_spi(TrueLayer) public init(using configuration: TrueLayerAPI.RequestsManagerConfigurationProvider)
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getStatus() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Information
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func pollPaymentStatus() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitProviderSelection(_ providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitConsent() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func cancelPayment() async throws
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getAdditionalInputsHelpText(with providerCountryCode: Swift.String) async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.HelpText]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getAdditionalInputsLocalizations() async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitForm(inputs: [Swift.String : Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API {
+  @_spi(TrueLayer) public enum URL {
+    @_spi(TrueLayer) public static func host(environment: TrueLayerAPI.API.Environment, subdomain: TrueLayerAPI.API.URL.Subdomain) -> Swift.String
+  }
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.URL {
+  @_spi(TrueLayer) public enum Subdomain : Swift.String {
+    @_spi(TrueLayer) case api
+    @_spi(TrueLayer) case paymentExperience
+    @_spi(TrueLayer) case www
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+extension TrueLayerAPI.API.Environment : Swift.Equatable {}
+extension TrueLayerAPI.API.Environment : Swift.Hashable {}
+extension TrueLayerAPI.API.URL.Subdomain : Swift.Equatable {}
+extension TrueLayerAPI.API.URL.Subdomain : Swift.Hashable {}
+extension TrueLayerAPI.API.URL.Subdomain : Swift.RawRepresentable {}

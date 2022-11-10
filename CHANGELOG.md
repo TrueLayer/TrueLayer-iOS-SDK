@@ -1,11 +1,29 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.0.0] - 
+
+### Added
+
+- Added `processMandate(context:then:)` to process a Variable Recurring Payment via mandate in the United Kingdom.
+- Added `mandateStatus(mandateIdentifier:resourceToken:)` to retrieve the status of a Variable Recurring Payment via mandate.
+
+### Changed
+
+- All public APIs in frameworks other than TrueLayerSDK are now @_spi protected as they should not be used and can change without prior notice.
+- Renamed `processPayment(context:then:)` to `processSinglePayment(context:then:)`.
+- Renamed `paymentStatus(paymentIdentifier:resourceToken:)` to `singlePaymentStatus(paymentIdentifier:resourceToken:)`.
+- Renamed `Context(paymentIdentifier:resourceToken:redirectURL:presentationStyle:)` to `Context(identifier:token:redirectURL:preferences:)`.
+- Moved `presentationStyle` under the `Preferences` object.
+- Changed `TrueLayer.Payments.Models.Payment.Context`, `TrueLayer.Payments.Models.Payment.Preferences`, and `TrueLayer.Payments.Models.Payment.Status` to  `SinglePayment` namespace.
+- Changed `TrueLayer.Payments.PaymentState` to `TrueLayer.Payments.Models.SinglePayment.State`.
+- Changed `TrueLayer.Payments.Error` to `TrueLayer.Payments.Models.SinglePayment.Error`.
+
 ## [1.4.2] - Mantis
 
 ### Fixed
 
-- Fixed a crash when selecting a country affecting only iOS 15.0
+- Fixed a crash when selecting a country on iOS 15.0
 - Fixed a bug where the search result would not dismiss after selecting a country.
 
 ## [1.4.1] - Cricket

@@ -76,7 +76,7 @@ The iOS SDK has the following requirements:
 Once your app has obtained the payment identifier and resource token from the backend (see [Setup](#setup)), you can use the iOS SDK to process the payment.
 
 ```
-TrueLayer.Payments.manager.processPayment(
+TrueLayer.Payments.manager.processSinglePayment(
   context: TrueLayer.Payments.Models.Payment.Context(
     paymentIdentifier: // Your payment ID,
     resourceToken: // Your resource token,
@@ -106,7 +106,7 @@ The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained
  
 #### Success
 
-| `TrueLayer.Payments.PaymentState` | Description |
+| `TrueLayer.Payments.Models.SinglePayment.State` | Description |
 | ------------- | ------------- 
 | `.executed` | The bank confirmed the payment.
 | `.authorized` | The user authorized the payment with the bank.
@@ -116,7 +116,7 @@ The parameters used in `TrueLayer.Payments.Models.Payment.Context` are explained
 
 #### Error
 
-| `TrueLayer.Payments.Error` | Description |
+| `TrueLayer.Payments.Models.SinglePayment.Error` | Description |
 | ------------- | -------------
 | `.sdkNotConfigured`| The SDK `configure` method has not been called before using it.
 | `.unexpectedBehaviour`| The `SDK` encountered an unexpected behavior.

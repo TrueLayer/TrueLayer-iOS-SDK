@@ -1,0 +1,169 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerMockable
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_spi(TrueLayer) import TrueLayerNetwork
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc public class TrueLayerMockableResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension TrueLayerMockable.File.Mandate {
+  public enum Get : Swift.String {
+    case authorizationRequired
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum AuthorizationFlowResponse : Swift.String {
+    case providerSelection
+    case consentThenRedirect
+    case redirect
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum Legals : Swift.String {
+    case topLevel
+    case nested
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum Cancel : Swift.String {
+    case empty
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
+@_spi(TrueLayer) public protocol Mockable : TrueLayerNetwork.DecodableRequest {
+  @_spi(TrueLayer) static func mocked<File>(url: Foundation.URL, method: TrueLayerNetwork.Network.HTTP.Method, statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode, headers: [Swift.String : Swift.String], file: File?) -> TrueLayerNetwork.Network.Mock.Exchange where File : Swift.RawRepresentable, File.RawValue == Swift.String
+}
+@_spi(TrueLayer) extension TrueLayerMockable.Mockable {
+  @_spi(TrueLayer) public static func mocked<F>(url: Foundation.URL, method: TrueLayerNetwork.Network.HTTP.Method, statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode = .code200, headers: [Swift.String : Swift.String] = ["Content-Type": "application/json"], file: F?) -> TrueLayerNetwork.Network.Mock.Exchange where F : Swift.RawRepresentable, F.RawValue == Swift.String
+}
+public enum File {
+}
+extension TrueLayerMockable.File {
+  public enum SinglePayment {
+  }
+  public enum Mandate {
+  }
+  public enum Shared {
+  }
+}
+extension TrueLayerMockable.File.Shared {
+  public enum Miscellaneous : Swift.String {
+    case merchantConfiguration
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
+extension TrueLayerMockable.File.SinglePayment {
+  public enum AuthorizationFlowResponse : Swift.String {
+    case providerSelection
+    case consentThenRedirect
+    case consentThenAdditionalInputs
+    case ibanAdditionalInputs
+    case ibanThenUsernamePasswordAdditionalInputs
+    case multiTextAdditionalInputs
+    case optionalOnlyTextAdditionalInputs
+    case textAndSelectAdditionalInputs
+    case selectOnlyAdditionalInputs
+    case smallSelectOnlyAdditionalInputs
+    case textWithImageAdditionalInputs
+    case redirect
+    case wait
+    case providerHasInternalServerError
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum GetPaymentResponse : Swift.String {
+    case authorizationRequired
+    case wait
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum PaymentProviderResponse : Swift.String {
+    case information
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum Legals : Swift.String {
+    case topLevel
+    case nested
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum AdditionalInputs : Swift.String {
+    case helpText
+    case localizations
+    case submitFormError
+    case submitFormErrorInSelect
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
+extension TrueLayerMockable.File.Mandate.Get : Swift.Equatable {}
+extension TrueLayerMockable.File.Mandate.Get : Swift.Hashable {}
+extension TrueLayerMockable.File.Mandate.Get : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Mandate.AuthorizationFlowResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.Mandate.AuthorizationFlowResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.Mandate.AuthorizationFlowResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Mandate.Legals : Swift.Equatable {}
+extension TrueLayerMockable.File.Mandate.Legals : Swift.Hashable {}
+extension TrueLayerMockable.File.Mandate.Legals : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Mandate.Cancel : Swift.Equatable {}
+extension TrueLayerMockable.File.Mandate.Cancel : Swift.Hashable {}
+extension TrueLayerMockable.File.Mandate.Cancel : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.Equatable {}
+extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.Hashable {}
+extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.SinglePayment.GetPaymentResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.SinglePayment.GetPaymentResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.SinglePayment.GetPaymentResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.SinglePayment.PaymentProviderResponse : Swift.Equatable {}
+extension TrueLayerMockable.File.SinglePayment.PaymentProviderResponse : Swift.Hashable {}
+extension TrueLayerMockable.File.SinglePayment.PaymentProviderResponse : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.SinglePayment.Legals : Swift.Equatable {}
+extension TrueLayerMockable.File.SinglePayment.Legals : Swift.Hashable {}
+extension TrueLayerMockable.File.SinglePayment.Legals : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.SinglePayment.AdditionalInputs : Swift.Equatable {}
+extension TrueLayerMockable.File.SinglePayment.AdditionalInputs : Swift.Hashable {}
+extension TrueLayerMockable.File.SinglePayment.AdditionalInputs : Swift.RawRepresentable {}

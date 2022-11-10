@@ -1,0 +1,409 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerLogger"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogType",
+        "printedName": "LogType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerLogger.LogType.Type) -> TrueLayerLogger.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "TrueLayerLogger.LogType",
+                    "usr": "s:15TrueLayerLogger7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerLogger.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "TrueLayerLogger.LogType",
+                        "usr": "s:15TrueLayerLogger7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15TrueLayerLogger7LogTypeO5debugyA2CmF",
+            "mangledName": "$s15TrueLayerLogger7LogTypeO5debugyA2CmF",
+            "moduleName": "TrueLayerLogger",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerLogger.LogType.Type) -> TrueLayerLogger.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "TrueLayerLogger.LogType",
+                    "usr": "s:15TrueLayerLogger7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerLogger.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "TrueLayerLogger.LogType",
+                        "usr": "s:15TrueLayerLogger7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15TrueLayerLogger7LogTypeO5erroryA2CmF",
+            "mangledName": "$s15TrueLayerLogger7LogTypeO5erroryA2CmF",
+            "moduleName": "TrueLayerLogger",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerLogger.LogType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "TrueLayerLogger.LogType",
+                    "usr": "s:15TrueLayerLogger7LogTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15TrueLayerLogger7LogTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s15TrueLayerLogger7LogTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "TrueLayerLogger",
+            "implicit": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15TrueLayerLogger7LogTypeO8rawValueSSvp",
+            "mangledName": "$s15TrueLayerLogger7LogTypeO8rawValueSSvp",
+            "moduleName": "TrueLayerLogger",
+            "implicit": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15TrueLayerLogger7LogTypeO8rawValueSSvg",
+                "mangledName": "$s15TrueLayerLogger7LogTypeO8rawValueSSvg",
+                "moduleName": "TrueLayerLogger",
+                "implicit": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15TrueLayerLogger7LogTypeO",
+        "mangledName": "$s15TrueLayerLogger7LogTypeO",
+        "moduleName": "TrueLayerLogger",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "TrueLayer"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerLogger"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Logger",
+        "printedName": "Logger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(type:message:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogType",
+                "printedName": "TrueLayerLogger.LogType",
+                "hasDefaultArg": true,
+                "usr": "s:15TrueLayerLogger7LogTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StaticString",
+                "printedName": "Swift.StaticString",
+                "hasDefaultArg": true,
+                "usr": "s:s12StaticStringV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15TrueLayerLogger0C0O3log4type7message4file4lineyAA7LogTypeO_ypSgs12StaticStringVSutFZ",
+            "mangledName": "$s15TrueLayerLogger0C0O3log4type7message4file4lineyAA7LogTypeO_ypSgs12StaticStringVSutFZ",
+            "moduleName": "TrueLayerLogger",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepareLog",
+            "printedName": "prepareLog(type:message:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogType",
+                "printedName": "TrueLayerLogger.LogType",
+                "hasDefaultArg": true,
+                "usr": "s:15TrueLayerLogger7LogTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StaticString",
+                "printedName": "Swift.StaticString",
+                "usr": "s:s12StaticStringV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15TrueLayerLogger0C0O10prepareLog4type7message4file4lineSSAA0E4TypeO_yps12StaticStringVSutFZ",
+            "mangledName": "$s15TrueLayerLogger0C0O10prepareLog4type7message4file4lineSSAA0E4TypeO_yps12StaticStringVSutFZ",
+            "moduleName": "TrueLayerLogger",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15TrueLayerLogger0C0O",
+        "mangledName": "$s15TrueLayerLogger0C0O",
+        "moduleName": "TrueLayerLogger",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "TrueLayer"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Logger\/LogType.swift",
+      "kind": "StringLiteral",
+      "offset": 156,
+      "length": 8,
+      "value": "\"ℹ️\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Logger\/LogType.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 5,
+      "value": "\"❌\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Logger\/LogType.swift",
+      "kind": "StringLiteral",
+      "offset": 156,
+      "length": 8,
+      "value": "\"ℹ️\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Logger\/LogType.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 5,
+      "value": "\"❌\""
+    }
+  ]
+}
