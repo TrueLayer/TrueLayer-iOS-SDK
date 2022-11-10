@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file. To know bet
 
 ### Fixed
 
-- Fixed a crash when selecting a country on iOS 15.0
+- Fixed a crash when selecting a country affecting only iOS 15.0
 - Fixed a bug where the search result would not dismiss after selecting a country.
 
 ## [1.4.1] - Cricket
