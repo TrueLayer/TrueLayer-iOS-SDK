@@ -207,12 +207,8 @@ public protocol VisualSettingsProvider {
 }
 public protocol ColorProvider : TrueLayerUI.Makeup {
 }
-extension TrueLayerSDK.VisualSettingsProvider {
-  public var colors: TrueLayerSDK.ColorProvider {
-    get
-  }
-}
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
+  public let colors: TrueLayerSDK.ColorProvider
   public init()
 }
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}

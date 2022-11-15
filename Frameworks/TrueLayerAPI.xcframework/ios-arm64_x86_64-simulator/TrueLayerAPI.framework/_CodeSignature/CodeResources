@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SjI/3CKdSSq2QnyVlUOCyaapq/k=
+		BDLwSGjaXxAXiM0IYIz7J0ysLDQ=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yirUBwxko9oDiPaL6mMposQITo4=
+		2BS/wM/0+Yb7cKAYTNx3NpapkIo=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4X+TILsptLTpMSmPDfX0vV52rA0=
+		MQwbKH+oiB66ctYAgLZBpz0iRKE=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yirUBwxko9oDiPaL6mMposQITo4=
+		2BS/wM/0+Yb7cKAYTNx3NpapkIo=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XkAkEWVBh70Qa31B26tf+Ed+5yU=
+		STdmY5CgDekps7/euYANUFRtLZ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgMmNIDU2qJk4+oaqfTeOCgaW4nHg7CuHQ+LbI13db4=
+			BD9jmqI394lcqvZavdQZMLIRtQcNYovFj9Ch691tvfk=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHGnpx6dCE6ewJLgoxSSy/2eV0B1PSFAdauVQQ5Q47Y=
+			6mataK8d/CtBk0df4aVqkOuH+/0xBTTjiFgydAbYjHA=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgMmNIDU2qJk4+oaqfTeOCgaW4nHg7CuHQ+LbI13db4=
+			BD9jmqI394lcqvZavdQZMLIRtQcNYovFj9Ch691tvfk=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+BYmfcGKAp6n67oFdWZJHYI4c2o6cXXczCdxp+VqIPs=
+			v7dXgJk+LonDBoH4oqwTAsZ22fyM0TvIW0Nz4889ep0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

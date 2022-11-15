@@ -89,6 +89,14 @@ public protocol TimezoneInformationProvider {
 }
 extension Foundation.TimeZone : TrueLayerUtils.TimezoneInformationProvider {
 }
+@_spi(TrueLayer) extension UIKit.UIColor {
+  @_spi(TrueLayer) public var rgbComponents: [Swift.Int] {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var hexValue: Swift.String {
+    @_spi(TrueLayer) get
+  }
+}
 @_spi(TrueLayer) extension UIKit.UIScreen {
   @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var relativeWidth: CoreFoundation.CGFloat {
     @_spi(TrueLayer) get

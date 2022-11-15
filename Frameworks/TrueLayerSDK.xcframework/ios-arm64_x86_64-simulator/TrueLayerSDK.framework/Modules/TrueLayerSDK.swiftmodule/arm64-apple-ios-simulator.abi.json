@@ -4181,50 +4181,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "colors",
-            "printedName": "colors",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ColorProvider",
-                "printedName": "TrueLayerSDK.ColorProvider",
-                "usr": "s:12TrueLayerSDK13ColorProviderP"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12TrueLayerSDK22VisualSettingsProviderPAAE6colorsAA05ColorF0_pvp",
-            "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderPAAE6colorsAA05ColorF0_pvp",
-            "moduleName": "TrueLayerSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ColorProvider",
-                    "printedName": "TrueLayerSDK.ColorProvider",
-                    "usr": "s:12TrueLayerSDK13ColorProviderP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12TrueLayerSDK22VisualSettingsProviderPAAE6colorsAA05ColorF0_pvg",
-                "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderPAAE6colorsAA05ColorF0_pvg",
-                "moduleName": "TrueLayerSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerSDK.VisualSettingsProvider>",
-                "sugared_genericSig": "<Self where Self : TrueLayerSDK.VisualSettingsProvider>",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Protocol",
@@ -4286,6 +4242,51 @@
         "name": "DefaultVisualSettings",
         "printedName": "DefaultVisualSettings",
         "children": [
+          {
+            "kind": "Var",
+            "name": "colors",
+            "printedName": "colors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ColorProvider",
+                "printedName": "TrueLayerSDK.ColorProvider",
+                "usr": "s:12TrueLayerSDK13ColorProviderP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12TrueLayerSDK21DefaultVisualSettingsV6colorsAA13ColorProvider_pvp",
+            "mangledName": "$s12TrueLayerSDK21DefaultVisualSettingsV6colorsAA13ColorProvider_pvp",
+            "moduleName": "TrueLayerSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ColorProvider",
+                    "printedName": "TrueLayerSDK.ColorProvider",
+                    "usr": "s:12TrueLayerSDK13ColorProviderP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12TrueLayerSDK21DefaultVisualSettingsV6colorsAA13ColorProvider_pvg",
+                "mangledName": "$s12TrueLayerSDK21DefaultVisualSettingsV6colorsAA13ColorProvider_pvg",
+                "moduleName": "TrueLayerSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -4510,7 +4511,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
       "offset": 1596,
       "length": 5,
