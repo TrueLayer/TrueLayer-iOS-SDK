@@ -195,7 +195,6 @@ extension TrueLayerSDK.TrueLayer.Payments {
 extension TrueLayerSDK.TrueLayer {
   public enum PresentationStyle : Swift.Equatable {
     case present(on: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle = .automatic)
-    case push(on: UIKit.UINavigationController)
     public static func == (lhs: TrueLayerSDK.TrueLayer.PresentationStyle, rhs: TrueLayerSDK.TrueLayer.PresentationStyle) -> Swift.Bool
   }
 }

@@ -3904,66 +3904,6 @@
                 ]
               },
               {
-                "kind": "Var",
-                "name": "push",
-                "printedName": "push",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(TrueLayerSDK.TrueLayer.PresentationStyle.Type) -> (UIKit.UINavigationController) -> TrueLayerSDK.TrueLayer.PresentationStyle",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(UIKit.UINavigationController) -> TrueLayerSDK.TrueLayer.PresentationStyle",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PresentationStyle",
-                            "printedName": "TrueLayerSDK.TrueLayer.PresentationStyle",
-                            "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Tuple",
-                            "printedName": "(on: UIKit.UINavigationController)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "UINavigationController",
-                                "printedName": "UIKit.UINavigationController",
-                                "usr": "c:objc(cs)UINavigationController"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "TrueLayerSDK.TrueLayer.PresentationStyle.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PresentationStyle",
-                            "printedName": "TrueLayerSDK.TrueLayer.PresentationStyle",
-                            "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO4pushyAESo22UINavigationControllerC_tcAEmF",
-                "mangledName": "$s12TrueLayerSDK0aB0O17PresentationStyleO4pushyAESo22UINavigationControllerC_tcAEmF",
-                "moduleName": "TrueLayerSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
