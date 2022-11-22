@@ -1,0 +1,294 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreGraphics
+import Foundation
+import Swift
+@_spi(TrueLayer) import TrueLayerAPI
+@_spi(TrueLayer) import TrueLayerCore
+@_spi(TrueLayer) import TrueLayerLogger
+@_spi(TrueLayer) import TrueLayerNetwork
+@_spi(TrueLayer) import TrueLayerUtils
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc public class TrueLayerUIResources : ObjectiveC.NSObject {
+  @objc public class var bundle: Foundation.Bundle {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_spi(TrueLayer) public protocol DeviceInformationProvider {
+  @_spi(TrueLayer) var model: Swift.String { get }
+  @_spi(TrueLayer) var systemVersion: Swift.String { get }
+  @_spi(TrueLayer) var deviceType: Swift.String? { get }
+}
+@_spi(TrueLayer) extension UIKit.UIDevice : TrueLayerUI.DeviceInformationProvider {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var deviceType: Swift.String? {
+    @_spi(TrueLayer) get
+  }
+}
+extension TrueLayerUI.Analytics {
+  public enum Environment {
+    case development
+    case sandbox
+    case production
+    public static func == (a: TrueLayerUI.Analytics.Environment, b: TrueLayerUI.Analytics.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerUI.Analytics {
+  @_spi(TrueLayer) public enum Event {
+    @_spi(TrueLayer) case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputIDs: [Swift.String], listSize: Swift.Int? = nil)
+    @_spi(TrueLayer) case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputIDs: [Swift.String], listSize: Swift.Int? = nil)
+    @_spi(TrueLayer) case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, inputIDs: [Swift.String])
+    @_spi(TrueLayer) case additionalInputsServerValidationError(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputIDs: [Swift.String])
+    @_spi(TrueLayer) case countryFlagTapped
+    @_spi(TrueLayer) case countrySelected(countryCode: Swift.String)
+    @_spi(TrueLayer) case countrySelectionLoaded
+    @_spi(TrueLayer) case consentGranted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, amount: Swift.Double?, currency: Swift.String)
+    @_spi(TrueLayer) case consentLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, amount: Swift.Double?, currency: Swift.String)
+    @_spi(TrueLayer) case errorOccurred(type: Swift.String, message: Swift.String)
+    @_spi(TrueLayer) case legalsOpened(link: Foundation.URL)
+    @_spi(TrueLayer) case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case infoSecureConnectionOpened(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case loaderScreenLoaded
+    @_spi(TrueLayer) case mandateDetailsOpened(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?)
+    @_spi(TrueLayer) case providerSelected(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, isFromPreviouslyUsedSection: Swift.Bool)
+    @_spi(TrueLayer) case providerSelectionLoaded(includesPreviouslySelectedProviders: Swift.Bool)
+    @_spi(TrueLayer) case providerSelectionSearch(searchString: Swift.String)
+    @_spi(TrueLayer) case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?)
+    @_spi(TrueLayer) case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
+    @_spi(TrueLayer) case sdkStarted(presentationStyle: TrueLayerUI.UI.PresentationStyle)
+    @_spi(TrueLayer) case sdkUICustomised(changes: [Swift.String : Swift.String])
+    @_spi(TrueLayer) case waitLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case waitTimeOutDialogKeepWaitingTapped
+    @_spi(TrueLayer) case waitTimeOutDialogLoaded
+  }
+}
+extension TrueLayerUI.Analytics {
+  @_hasMissingDesignatedInitializers public class Manager {
+    convenience public init(in environment: TrueLayerUI.Analytics.Environment, resourceToken: Swift.String, sdkVersion: Swift.String)
+    @objc deinit
+  }
+}
+public enum Analytics {
+}
+@_spi(TrueLayer) public protocol ScreenInformationProvider {
+  @_spi(TrueLayer) var bounds: CoreFoundation.CGRect { get }
+}
+@_spi(TrueLayer) extension UIKit.UIScreen : TrueLayerUI.ScreenInformationProvider {
+}
+public protocol Makeup : TrueLayerUI.Accessory, TrueLayerUI.BackgroundColor, TrueLayerUI.ContentColor {
+}
+public protocol BackgroundColor {
+  var backgroundPrimary: UIKit.UIColor { get }
+  var backgroundSecondary: UIKit.UIColor { get }
+  var backgroundActionPrimary: UIKit.UIColor { get }
+  var backgroundCell: UIKit.UIColor { get }
+}
+extension TrueLayerUI.BackgroundColor {
+  public var backgroundPrimary: UIKit.UIColor {
+    get
+  }
+  public var backgroundSecondary: UIKit.UIColor {
+    get
+  }
+  public var backgroundActionPrimary: UIKit.UIColor {
+    get
+  }
+  public var backgroundCell: UIKit.UIColor {
+    get
+  }
+}
+public protocol ContentColor {
+  var contentPrimary: UIKit.UIColor { get }
+  var contentSecondary: UIKit.UIColor { get }
+  var contentPrimaryInverted: UIKit.UIColor { get }
+  var contentAction: UIKit.UIColor { get }
+  var contentError: UIKit.UIColor { get }
+}
+extension TrueLayerUI.ContentColor {
+  public var contentPrimary: UIKit.UIColor {
+    get
+  }
+  public var contentSecondary: UIKit.UIColor {
+    get
+  }
+  public var contentPrimaryInverted: UIKit.UIColor {
+    get
+  }
+  public var contentAction: UIKit.UIColor {
+    get
+  }
+  public var contentError: UIKit.UIColor {
+    get
+  }
+}
+public protocol Accessory {
+  var separator: UIKit.UIColor { get }
+  var uiElementBorder: UIKit.UIColor { get }
+}
+extension TrueLayerUI.Accessory {
+  public var separator: UIKit.UIColor {
+    get
+  }
+  public var uiElementBorder: UIKit.UIColor {
+    get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public struct DefaultColors : TrueLayerUI.Makeup {
+    @_spi(TrueLayer) public init()
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public struct VisualSettings {
+    @_spi(TrueLayer) public let color: TrueLayerUI.Makeup
+    @_spi(TrueLayer) public init(color: TrueLayerUI.Makeup = DefaultColors())
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public struct Dependencies : TrueLayerUI.SomeDependencies {
+    @_spi(TrueLayer) public let dataPersister: TrueLayerUI.DataPersistable
+    @_spi(TrueLayer) public let router: TrueLayerUI.NavigationProvider
+    @_spi(TrueLayer) public let urlOpener: TrueLayerUI.URLOpener
+    @_spi(TrueLayer) public let context: TrueLayerUI.MerchantContext
+    @_spi(TrueLayer) public let networkManager: TrueLayerNetwork.Network.Manager
+    @_spi(TrueLayer) public let analyticsManager: TrueLayerUI.Analytics.Manager
+    #if compiler(>=5.3) && $EffectfulProp
+    @_spi(TrueLayer) public var singlePaymentRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.SinglePayment {
+      @_spi(TrueLayer) get throws
+    }
+    #endif
+    #if compiler(>=5.3) && $EffectfulProp
+    @_spi(TrueLayer) public var mandateRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.Mandate {
+      @_spi(TrueLayer) get throws
+    }
+    #endif
+    @_spi(TrueLayer) public init(requestsManager: TrueLayerAPI.RequestsManager, dataPersister: TrueLayerUI.DataPersistable, router: TrueLayerUI.NavigationProvider, urlOpener: TrueLayerUI.URLOpener, context: TrueLayerUI.MerchantContext, networkManager: TrueLayerNetwork.Network.Manager, analyticsManager: TrueLayerUI.Analytics.Manager)
+  }
+}
+@_spi(TrueLayer) public typealias DataPersistable = TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable
+@_spi(TrueLayer) public protocol SomeDependencies {
+  @_spi(TrueLayer) var dataPersister: TrueLayerUI.DataPersistable { get }
+  @_spi(TrueLayer) var router: TrueLayerUI.NavigationProvider { get }
+  @_spi(TrueLayer) var urlOpener: TrueLayerUI.URLOpener { get }
+  @_spi(TrueLayer) var context: TrueLayerUI.MerchantContext { get }
+  @_spi(TrueLayer) var networkManager: TrueLayerNetwork.Network.Manager { get }
+  @_spi(TrueLayer) var analyticsManager: TrueLayerUI.Analytics.Manager { get }
+  #if compiler(>=5.3) && $EffectfulProp
+  @_spi(TrueLayer) var singlePaymentRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.SinglePayment { get throws }
+  #endif
+  #if compiler(>=5.3) && $EffectfulProp
+  @_spi(TrueLayer) var mandateRequestsManager: TrueLayerAPI.API.Payments.Requests.Manager.Mandate { get throws }
+  #endif
+}
+@_spi(TrueLayer) public protocol MerchantContext {
+  @_spi(TrueLayer) var preferredCountryCode: Swift.String? { get }
+  @_spi(TrueLayer) var endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)? { get }
+  @_spi(TrueLayer) var presentationStyle: TrueLayerUI.UI.PresentationStyle { get }
+  @_spi(TrueLayer) var paymentType: TrueLayerCore.Core.Payments.Models.PaymentType { get }
+}
+@dynamicMemberLookup public protocol SomeViewModel {
+}
+@_spi(TrueLayer) extension TrueLayerUI.SomeViewModel {
+  @_spi(TrueLayer) public subscript(dynamicMember member: Swift.String) -> TrueLayerUI.UI.Dependencies {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) public enum UI {
+  @_spi(TrueLayer) public static var visualSettings: TrueLayerUI.UI.VisualSettings
+}
+@_spi(TrueLayer) extension TrueLayerUI.Router {
+  @_spi(TrueLayer) public func showLoader(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) public func hideLoader(completion: TrueLayerUI.Router.Completion? = nil)
+}
+@_spi(TrueLayer) public protocol NavigationProvider {
+  @_spi(TrueLayer) var topViewController: UIKit.UIViewController { get }
+  @_spi(TrueLayer) init(on rootViewController: UIKit.UIViewController)
+  @_spi(TrueLayer) func start(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
+  @_spi(TrueLayer) func show(alertController: UIKit.UIAlertController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
+  @_spi(TrueLayer) func popTo<R>(identifier: R, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, R.RawValue == Swift.String
+  @_spi(TrueLayer) func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
+  @_spi(TrueLayer) func hideTopViewController(animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
+  @_spi(TrueLayer) func showLoader(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) func hideLoader(completion: TrueLayerUI.Router.Completion?)
+  @_spi(TrueLayer) func dismissSDK(then closure: (() -> Swift.Void)?)
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public enum PresentationStyle {
+    @_spi(TrueLayer) case push
+    @_spi(TrueLayer) case present(presentationStyle: UIKit.UIModalPresentationStyle = .automatic, shouldWrapInUINavigationController: Swift.Bool = false)
+  }
+}
+@_spi(TrueLayer) public struct Router : TrueLayerUI.NavigationProvider {
+  @_spi(TrueLayer) public typealias Completion = () -> Swift.Void
+  @_spi(TrueLayer) public var topViewController: UIKit.UIViewController {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public init(on rootViewController: UIKit.UIViewController)
+  @_spi(TrueLayer) public func start(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
+  public func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
+  @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
+  public func show(alertController: UIKit.UIAlertController, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
+  @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
+  public func popTo<R>(identifier: R, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, R.RawValue == Swift.String
+  @_spi(TrueLayer) public func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
+  @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
+  public func hideTopViewController(animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
+  @_spi(TrueLayer) public func dismissSDK(then closure: (() -> Swift.Void)?)
+}
+@_spi(TrueLayer) public protocol RouterConfigurable {
+  @_spi(TrueLayer) var rootViewController: UIKit.UIViewController { get }
+}
+@_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public enum TrueLayerError : Swift.Error, Swift.Equatable {
+    @_spi(TrueLayer) case authorizationFailed
+    @_spi(TrueLayer) case invalidToken
+    @_spi(TrueLayer) case resourceNotFound
+    @_spi(TrueLayer) case rejected
+    @_spi(TrueLayer) case expired
+    @_spi(TrueLayer) case mandateRevoked
+    @_spi(TrueLayer) case userCanceled
+    @_spi(TrueLayer) case connectionIssues
+    @_spi(TrueLayer) case serverError
+    @_spi(TrueLayer) case unexpectedBehavior
+    @_spi(TrueLayer) case sdkNotConfigured
+    @_spi(TrueLayer) case generic(reason: Swift.String)
+    @_spi(TrueLayer) public static func == (a: TrueLayerUI.UI.TrueLayerError, b: TrueLayerUI.UI.TrueLayerError) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) public enum AuthorizationFlowResult {
+  @_spi(TrueLayer) public typealias SinglePayment = Swift.Result<TrueLayerCore.Core.Payments.Models.SinglePayment.State, TrueLayerUI.UI.TrueLayerError>
+  @_spi(TrueLayer) public typealias Mandate = Swift.Result<TrueLayerCore.Core.Payments.Models.Mandate.State, TrueLayerUI.UI.TrueLayerError>
+  @_spi(TrueLayer) case singlePayment(_: TrueLayerUI.AuthorizationFlowResult.SinglePayment)
+  @_spi(TrueLayer) case mandate(_: TrueLayerUI.AuthorizationFlowResult.Mandate)
+}
+@_spi(TrueLayer) public protocol URLOpener {
+  @_spi(TrueLayer) func open(_ url: Foundation.URL)
+}
+@_spi(TrueLayer) extension UIKit.UIApplication : TrueLayerUI.URLOpener {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func open(_ url: Foundation.URL)
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI.Dependencies {
+  @_spi(TrueLayer) public struct Context : TrueLayerUI.MerchantContext {
+    @_spi(TrueLayer) public let preferredCountryCode: Swift.String?
+    @_spi(TrueLayer) public let endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?
+    @_spi(TrueLayer) public let presentationStyle: TrueLayerUI.UI.PresentationStyle
+    @_spi(TrueLayer) public let paymentType: TrueLayerCore.Core.Payments.Models.PaymentType
+    @_spi(TrueLayer) public init(paymentType: TrueLayerCore.Core.Payments.Models.PaymentType, preferredCountryCode: Swift.String?, presentationStyle: TrueLayerUI.UI.PresentationStyle, endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?)
+  }
+}
+extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
+extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}

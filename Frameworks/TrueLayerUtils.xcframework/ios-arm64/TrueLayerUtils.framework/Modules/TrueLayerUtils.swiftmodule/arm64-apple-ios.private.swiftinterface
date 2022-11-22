@@ -1,0 +1,121 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerUtils
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_spi(TrueLayer) extension Swift.Array {
+  @_spi(TrueLayer) public func appending(_ newElement: Element) -> Swift.Array<Element>
+}
+@_spi(TrueLayer) extension Swift.Bool {
+  @_spi(TrueLayer) public var isFalse: Swift.Bool {
+    @_spi(TrueLayer) get
+  }
+}
+public protocol BundleInformationProvider {
+  var name: Swift.String { get }
+  var version: Swift.String { get }
+}
+extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
+  public var name: Swift.String {
+    get
+  }
+  public var version: Swift.String {
+    get
+  }
+}
+@_spi(TrueLayer) extension Swift.Collection {
+  @_spi(TrueLayer) public subscript(safe offset: Swift.Int) -> Self.Iterator.Element? {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var isNotEmpty: Swift.Bool {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension Swift.Int {
+  @_spi(TrueLayer) public func between(_ low: Swift.Int, and high: Swift.Int) -> Swift.Bool
+}
+@_spi(TrueLayer) public typealias CustomInteraction<T> = (T) -> Swift.Void
+#if compiler(>=5.3) && $AsyncAwait
+@_spi(TrueLayer) public typealias CustomAsyncInteraction<T> = (T) async -> Swift.Void
+#endif
+@_spi(TrueLayer) public typealias Interaction = () -> Swift.Void
+#if compiler(>=5.3) && $AsyncAwait
+@_spi(TrueLayer) public typealias AsyncInteraction = () async -> Swift.Void
+#endif
+public protocol LocaleInformationProvider {
+  static var preferredLanguages: [Swift.String] { get }
+  var preferredLanguages: [Swift.String] { get }
+  var languageCode: Swift.String? { get }
+}
+extension TrueLayerUtils.LocaleInformationProvider {
+  public var preferredLanguages: [Swift.String] {
+    get
+  }
+}
+extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
+}
+@_spi(TrueLayer) extension Foundation.NSAttributedString {
+  @_spi(TrueLayer) public func addingAttributes(_ attributes: [Foundation.NSAttributedString.Key : Any], to substring: Swift.String) -> Foundation.NSAttributedString
+  @_spi(TrueLayer) public func addingAttributes(_ attributes: [Foundation.NSAttributedString.Key : Any], to substrings: [Swift.String]) -> Foundation.NSAttributedString
+}
+@_spi(TrueLayer) extension Foundation.NSString {
+  @_spi(TrueLayer) convenience public init?(jsonData: Foundation.Data)
+}
+@_spi(TrueLayer) public enum Utils {
+}
+@_spi(TrueLayer) extension Foundation.NumberFormatter {
+  @_spi(TrueLayer) public static func formatted(centValue: Swift.Int, currency: Swift.String) -> Swift.String
+}
+@_spi(TrueLayer) extension Swift.String {
+  @_spi(TrueLayer) public func trimmedWhitespaceAndDuplicateSpaces() -> Swift.String
+  @_spi(TrueLayer) public mutating func trimWhitespaceAndDuplicateSpaces()
+  @_spi(TrueLayer) public func normalized() -> Swift.String
+  @_spi(TrueLayer) public mutating func normalize()
+  @_spi(TrueLayer) public func matches(_ regex: Swift.String) -> Swift.Bool
+}
+@_spi(TrueLayer) public func mainThread(_ closure: () -> Swift.Void)
+@_spi(TrueLayer) extension Foundation.Thread {
+  @_spi(TrueLayer) public var isRunningXCTest: Swift.Bool {
+    @_spi(TrueLayer) get
+  }
+}
+public protocol TimezoneInformationProvider {
+  var identifier: Swift.String { get }
+}
+extension Foundation.TimeZone : TrueLayerUtils.TimezoneInformationProvider {
+}
+@_spi(TrueLayer) extension UIKit.UIColor {
+  @_spi(TrueLayer) public var rgbComponents: [Swift.Int] {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var hexValue: Swift.String {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension UIKit.UIScreen {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var relativeWidth: CoreFoundation.CGFloat {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var relativeHeight: CoreFoundation.CGFloat {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var portraitWidth: CoreFoundation.CGFloat {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var isShortScreen: Swift.Bool {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func changeBrightness(to value: CoreFoundation.CGFloat)
+}
+@_spi(TrueLayer) extension Foundation.URL {
+  @_spi(TrueLayer) public init(staticString string: Swift.StaticString)
+}
+@_spi(TrueLayer) extension WebKit.WKWebView {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func load(svgURL: Foundation.URL)
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func loadEmptyPage()
+}

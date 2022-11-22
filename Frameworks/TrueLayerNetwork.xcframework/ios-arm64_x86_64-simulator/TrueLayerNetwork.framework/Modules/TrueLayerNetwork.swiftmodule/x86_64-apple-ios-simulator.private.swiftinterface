@@ -1,0 +1,443 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerNetwork
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_spi(TrueLayer) import TrueLayerLogger
+@_spi(TrueLayer) import TrueLayerUtils
+import _Concurrency
+import _StringProcessing
+@_spi(TrueLayer) extension TrueLayerNetwork.Network {
+  @_spi(TrueLayer) public enum AuthorizationType : Swift.Equatable {
+    @_spi(TrueLayer) case none
+    @_spi(TrueLayer) case paymentToken(_: Swift.String)
+    @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.AuthorizationType, b: TrueLayerNetwork.Network.AuthorizationType) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) public protocol DataRequest : Swift.CustomStringConvertible, TrueLayerNetwork.DecodableErrorBody, TrueLayerNetwork.URLRequestConvertible {
+  @_spi(TrueLayer) var url: Foundation.URL { get }
+  @_spi(TrueLayer) var timeout: Foundation.TimeInterval { get }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DataRequest {
+  @_spi(TrueLayer) public var timeout: Foundation.TimeInterval {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DataRequest {
+  @_spi(TrueLayer) public var description: Swift.String {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DataRequest {
+  @_spi(TrueLayer) public func urlRequest() throws -> Foundation.URLRequest
+}
+@_spi(TrueLayer) public protocol DecodableErrorBody {
+  associatedtype ErrorModel : Swift.Decodable = TrueLayerNetwork.Empty
+}
+@_spi(TrueLayer) public protocol DataDecoder {
+  @_spi(TrueLayer) func decode<T>(_ type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
+}
+@_spi(TrueLayer) extension Foundation.JSONDecoder : TrueLayerNetwork.DataDecoder {
+}
+@_spi(TrueLayer) public protocol DataEncoder {
+  @_spi(TrueLayer) func encode<T>(_ value: T) throws -> Foundation.Data where T : Swift.Encodable
+}
+@_spi(TrueLayer) extension Foundation.JSONEncoder : TrueLayerNetwork.DataEncoder {
+}
+@_spi(TrueLayer) public protocol DecodableRequest : Swift.CustomStringConvertible, TrueLayerNetwork.DecodableErrorBody, TrueLayerNetwork.HTTPRequest {
+  associatedtype ResponseModel : Swift.Decodable
+  associatedtype HTTPBody : Swift.Encodable = TrueLayerNetwork.Empty
+  associatedtype Encoder : TrueLayerNetwork.DataEncoder = Foundation.JSONEncoder
+  associatedtype Decoder : TrueLayerNetwork.DataDecoder = Foundation.JSONDecoder
+  @_spi(TrueLayer) var headers: TrueLayerNetwork.Network.HTTP.Headers { get }
+  @_spi(TrueLayer) var queryItems: TrueLayerNetwork.Network.URL.QueryItems { get }
+  @_spi(TrueLayer) var httpBody: Self.HTTPBody { get }
+  @_spi(TrueLayer) var encoder: Self.Encoder { get }
+  @_spi(TrueLayer) var decoder: Self.Decoder { get }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DecodableRequest {
+  @_spi(TrueLayer) public var queryItems: TrueLayerNetwork.Network.URL.QueryItems {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var httpBody: TrueLayerNetwork.Empty {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DecodableRequest {
+  @_spi(TrueLayer) public var headers: TrueLayerNetwork.Network.HTTP.Headers {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var description: Swift.String {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DecodableRequest {
+  @_spi(TrueLayer) public func urlRequest() throws -> Foundation.URLRequest
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DecodableRequest where Self.Encoder : Foundation.JSONEncoder {
+  @_spi(TrueLayer) public var encoder: Foundation.JSONEncoder {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DecodableRequest where Self.Decoder : Foundation.JSONDecoder {
+  @_spi(TrueLayer) public var decoder: Foundation.JSONDecoder {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) public struct Empty : Swift.Codable {
+  @_spi(TrueLayer) public static let value: TrueLayerNetwork.Empty
+  @_spi(TrueLayer) public func encode(to encoder: Swift.Encoder) throws
+  @_spi(TrueLayer) public init(from decoder: Swift.Decoder) throws
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP {
+  @_spi(TrueLayer) public struct Header : Swift.Equatable {
+    @_spi(TrueLayer) public let key: TrueLayerNetwork.Network.HTTP.Header.Key
+    @_spi(TrueLayer) public let value: Swift.String
+    @_spi(TrueLayer) public init(key: TrueLayerNetwork.Network.HTTP.Header.Key, value: Swift.String)
+    @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.HTTP.Header, b: TrueLayerNetwork.Network.HTTP.Header) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Header : Swift.CustomStringConvertible {
+  @_spi(TrueLayer) public var description: Swift.String {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Header {
+  @_spi(TrueLayer) public static let defaultAcceptEncoding: TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static let defaultAcceptLanguage: TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static let defaultUserAgent: TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func accept(mediaType: TrueLayerNetwork.Network.MediaType) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func accept(mediaType: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func accept(charset: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func accept(encoding: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func accept(language: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func authorization(key: TrueLayerNetwork.Network.HTTP.Header.Key = .authorization(key: "Authorization"), username: Swift.String, password: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func authorization(key: TrueLayerNetwork.Network.HTTP.Header.Key = .authorization(key: "Authorization"), token: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public static func contentType(_ value: Swift.String) -> TrueLayerNetwork.Network.HTTP.Header
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP {
+  @_spi(TrueLayer) public struct Headers {
+    @_spi(TrueLayer) public static let standard: [TrueLayerNetwork.Network.HTTP.Header]
+    @_spi(TrueLayer) public var keys: [TrueLayerNetwork.Network.HTTP.Header.Key] {
+      @_spi(TrueLayer) get
+    }
+    @_spi(TrueLayer) public init()
+    @_spi(TrueLayer) public init(_ headers: [TrueLayerNetwork.Network.HTTP.Header])
+    @_spi(TrueLayer) public init(_ dictionary: [TrueLayerNetwork.Network.HTTP.Header.Key : Swift.String])
+    @_spi(TrueLayer) public mutating func add(key: TrueLayerNetwork.Network.HTTP.Header.Key, value: Swift.String)
+    @_spi(TrueLayer) public mutating func add(_ header: TrueLayerNetwork.Network.HTTP.Header)
+    @_spi(TrueLayer) public mutating func remove(name: TrueLayerNetwork.Network.HTTP.Header.Key)
+    @_spi(TrueLayer) public mutating func sort()
+    @_spi(TrueLayer) public func sorted() -> TrueLayerNetwork.Network.HTTP.Headers
+    @_spi(TrueLayer) public func value(for key: TrueLayerNetwork.Network.HTTP.Header.Key) -> Swift.String?
+    @_spi(TrueLayer) public subscript(name: TrueLayerNetwork.Network.HTTP.Header.Key) -> Swift.String? {
+      @_spi(TrueLayer) get
+      @_spi(TrueLayer) set
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Headers : Swift.CustomStringConvertible {
+  @_spi(TrueLayer) public var description: Swift.String {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Headers : Swift.Collection {
+  @_spi(TrueLayer) public var httpHeaderFields: [Swift.String : Swift.String] {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var startIndex: Swift.Int {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var endIndex: Swift.Int {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public subscript(position: Swift.Int) -> TrueLayerNetwork.Network.HTTP.Header {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public func index(after position: Swift.Int) -> Swift.Int
+  @_spi(TrueLayer) public typealias Element = TrueLayerNetwork.Network.HTTP.Header
+  @_spi(TrueLayer) public typealias Index = Swift.Int
+  @_spi(TrueLayer) public typealias Indices = Swift.DefaultIndices<TrueLayerNetwork.Network.HTTP.Headers>
+  @_spi(TrueLayer) public typealias Iterator = Swift.IndexingIterator<TrueLayerNetwork.Network.HTTP.Headers>
+  @_spi(TrueLayer) public typealias SubSequence = Swift.Slice<TrueLayerNetwork.Network.HTTP.Headers>
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Header {
+  @_spi(TrueLayer) public enum Key : Swift.Hashable {
+    @_spi(TrueLayer) case aIM
+    @_spi(TrueLayer) case accept
+    @_spi(TrueLayer) case acceptCharset
+    @_spi(TrueLayer) case acceptDateTime
+    @_spi(TrueLayer) case acceptEncoding
+    @_spi(TrueLayer) case acceptLanguage
+    @_spi(TrueLayer) case accessControlRequestMethod
+    @_spi(TrueLayer) case accessControlRequestHeaders
+    @_spi(TrueLayer) case authorization(key: Swift.String = "Authorization")
+    @_spi(TrueLayer) case apiKey(key: Swift.String = "Token")
+    @_spi(TrueLayer) case cacheControl
+    @_spi(TrueLayer) case connection
+    @_spi(TrueLayer) case contentEncoding
+    @_spi(TrueLayer) case contentLength
+    @_spi(TrueLayer) case contentMD5
+    @_spi(TrueLayer) case contentType
+    @_spi(TrueLayer) case cookie
+    @_spi(TrueLayer) case date
+    @_spi(TrueLayer) case expect
+    @_spi(TrueLayer) case forwarded
+    @_spi(TrueLayer) case from
+    @_spi(TrueLayer) case host
+    @_spi(TrueLayer) case http2Settings
+    @_spi(TrueLayer) case ifMatch
+    @_spi(TrueLayer) case ifModifiedSince
+    @_spi(TrueLayer) case ifNoneMatch
+    @_spi(TrueLayer) case ifRange
+    @_spi(TrueLayer) case ifUnmodifiedSince
+    @_spi(TrueLayer) case maxForwards
+    @_spi(TrueLayer) case origin
+    @_spi(TrueLayer) case pragma
+    @_spi(TrueLayer) case prefer
+    @_spi(TrueLayer) case proxyAuthorization
+    @_spi(TrueLayer) case range
+    @_spi(TrueLayer) case referer
+    @_spi(TrueLayer) case te
+    @_spi(TrueLayer) case trailer
+    @_spi(TrueLayer) case transferEncoding
+    @_spi(TrueLayer) case userAgent
+    @_spi(TrueLayer) case upgrade
+    @_spi(TrueLayer) case via
+    @_spi(TrueLayer) case warning
+    @_spi(TrueLayer) case custom(key: Swift.String)
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.HTTP.Header.Key, b: TrueLayerNetwork.Network.HTTP.Header.Key) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network {
+  @_spi(TrueLayer) public enum MediaType : Swift.String {
+    @_spi(TrueLayer) case applicationJS
+    @_spi(TrueLayer) case applicationJSON
+    @_spi(TrueLayer) case applicationPDF
+    @_spi(TrueLayer) case applicationSQL
+    @_spi(TrueLayer) case applicationJSONAPI
+    @_spi(TrueLayer) case applicationURLEncoded
+    @_spi(TrueLayer) case applicationXML
+    @_spi(TrueLayer) case applicationZIP
+    @_spi(TrueLayer) case audioMPEG
+    @_spi(TrueLayer) case audioOGG
+    @_spi(TrueLayer) case imageAVIF
+    @_spi(TrueLayer) case imageJPEG
+    @_spi(TrueLayer) case imagePNG
+    @_spi(TrueLayer) case imageSVG
+    @_spi(TrueLayer) case multipart
+    @_spi(TrueLayer) case textCSS
+    @_spi(TrueLayer) case textCSV
+    @_spi(TrueLayer) case textHTML
+    @_spi(TrueLayer) case textXML
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP {
+  @_spi(TrueLayer) public enum Method : Swift.String {
+    @_spi(TrueLayer) case get
+    @_spi(TrueLayer) case post
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) public protocol PollableDecodableRequest : TrueLayerNetwork.DecodableRequest {
+  @_spi(TrueLayer) var maximumNumberOfTries: Swift.Int { get }
+  @_spi(TrueLayer) var pollingInterval: Swift.Double { get }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.PollableDecodableRequest {
+  @_spi(TrueLayer) public var maximumNumberOfTries: Swift.Int {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var pollingInterval: Swift.Double {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.URL {
+  @_spi(TrueLayer) public enum Scheme : Swift.String {
+    @_spi(TrueLayer) case http
+    @_spi(TrueLayer) case https
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) public protocol URLRequestConvertible {
+  @_spi(TrueLayer) func urlRequest() throws -> Foundation.URLRequest
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network {
+  @_spi(TrueLayer) public enum Error : Swift.Error {
+    @_spi(TrueLayer) case clientError(_: Swift.Int)
+    @_spi(TrueLayer) case validation(_: Swift.Decodable)
+    @_spi(TrueLayer) case failedToEncode
+    @_spi(TrueLayer) case failedToDecode(_: Swift.String)
+    @_spi(TrueLayer) case forbidden
+    @_spi(TrueLayer) case generic(_: Swift.Error)
+    @_spi(TrueLayer) case noInternetConnection
+    @_spi(TrueLayer) case requestTimedOut
+    @_spi(TrueLayer) case resourceNotFound
+    @_spi(TrueLayer) case serverError(_: Swift.Int, reason: Swift.String? = nil)
+    @_spi(TrueLayer) case serverResponseNotValid
+    @_spi(TrueLayer) case unauthorized
+    @_spi(TrueLayer) case unexpectedEmptyResponse
+  }
+}
+extension Foundation.URLSession {
+  @_spi(TrueLayer) public static var mock: Foundation.URLSession {
+    get
+  }
+}
+@_spi(TrueLayer) public protocol HTTPRequest : TrueLayerNetwork.URLRequestConvertible {
+  @_spi(TrueLayer) var authorizationType: TrueLayerNetwork.Network.AuthorizationType { get }
+  @_spi(TrueLayer) var method: TrueLayerNetwork.Network.HTTP.Method { get }
+  @_spi(TrueLayer) var scheme: TrueLayerNetwork.Network.URL.Scheme { get }
+  @_spi(TrueLayer) var host: Swift.String { get }
+  @_spi(TrueLayer) var port: Swift.Int? { get }
+  @_spi(TrueLayer) var path: TrueLayerNetwork.Network.URL.Path { get }
+  @_spi(TrueLayer) var timeout: Foundation.TimeInterval { get }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.DecodableRequest {
+  @_spi(TrueLayer) public var method: TrueLayerNetwork.Network.HTTP.Method {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var scheme: TrueLayerNetwork.Network.URL.Scheme {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var port: Swift.Int? {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var timeout: Foundation.TimeInterval {
+    @_spi(TrueLayer) get
+  }
+}
+extension TrueLayerNetwork.Network {
+  @_spi(TrueLayer) public struct Manager {
+    @_spi(TrueLayer) public init(using session: Foundation.URLSession, sdkVersion: Swift.String)
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func request<R>(_ request: R) async throws -> R.ResponseModel where R : TrueLayerNetwork.DecodableRequest
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func poll<R>(for request: R, shouldEndPollingPrematurely: (R.ResponseModel) -> Swift.Bool) async throws -> R.ResponseModel where R : TrueLayerNetwork.PollableDecodableRequest
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func data<R>(request: R) async throws -> Foundation.Data where R : TrueLayerNetwork.DataRequest
+    #endif
+    @_spi(TrueLayer) public func error(from code: Swift.Int) throws -> TrueLayerNetwork.Network.Error?
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
+  @_spi(TrueLayer) public enum Error : Swift.Error, Swift.Hashable, Swift.Equatable {
+    @_spi(TrueLayer) case notConnectedToInternet
+    @_spi(TrueLayer) case requestTimedOut
+    @_spi(TrueLayer) case routeNotFound
+    @_spi(TrueLayer) case hostNotFound
+    @_spi(TrueLayer) case notURLError
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.Mock.Error, b: TrueLayerNetwork.Network.Mock.Error) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
+  @_spi(TrueLayer) public struct Exchange : Swift.Hashable {
+    @_spi(TrueLayer) public init(urlRequest: Foundation.URLRequest, response: TrueLayerNetwork.Network.Mock.ServerResponse?, error: TrueLayerNetwork.Network.Mock.Error? = nil)
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.Mock.Exchange, b: TrueLayerNetwork.Network.Mock.Exchange) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
+  @_spi(TrueLayer) public enum HTTPStatusCode : Swift.Int {
+    @_spi(TrueLayer) case code200
+    @_spi(TrueLayer) case code400
+    @_spi(TrueLayer) case code401
+    @_spi(TrueLayer) case code450
+    @_spi(TrueLayer) case code403
+    @_spi(TrueLayer) case code404
+    @_spi(TrueLayer) case code500
+    @_spi(TrueLayer) public init?(rawValue: Swift.Int)
+    @_spi(TrueLayer) public typealias RawValue = Swift.Int
+    @_spi(TrueLayer) public var rawValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
+  @_spi(TrueLayer) public enum HTTPVersion : Swift.String {
+    @_spi(TrueLayer) case onePointOne
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
+  @_spi(TrueLayer) public struct ServerResponse : Swift.Hashable {
+    @_spi(TrueLayer) public init(statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode = .code200, httpVersion: TrueLayerNetwork.Network.Mock.HTTPVersion = .onePointOne, data: Foundation.Data? = nil, headers: [Swift.String : Swift.String] = [:])
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.Mock.ServerResponse, b: TrueLayerNetwork.Network.Mock.ServerResponse) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
+  @_spi(TrueLayer) @objc @_inheritsConvenienceInitializers final public class URLProtocol : Foundation.URLProtocol {
+    @_spi(TrueLayer) public static var mockRequests: Swift.Set<TrueLayerNetwork.Network.Mock.Exchange>
+    @_spi(TrueLayer) public static var shouldCheckQueryParameters: Swift.Bool
+    @_spi(TrueLayer) public static var delay: Swift.Double
+    @_spi(TrueLayer) @objc override final public class func canInit(with request: Foundation.URLRequest) -> Swift.Bool
+    @_spi(TrueLayer) @objc override final public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
+    @_spi(TrueLayer) @objc override final public func startLoading()
+    @_spi(TrueLayer) @objc override final public func stopLoading()
+    @_spi(TrueLayer) @objc override dynamic public init(request: Foundation.URLRequest, cachedResponse: Foundation.CachedURLResponse?, client: Foundation.URLProtocolClient?)
+    @_spi(TrueLayer) @objc deinit
+  }
+}
+public enum Network {
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network {
+  @_spi(TrueLayer) public enum HTTP {
+  }
+  @_spi(TrueLayer) public enum URL {
+  }
+  @_spi(TrueLayer) public enum Mock {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.URL {
+  @_spi(TrueLayer) public typealias Path = [Swift.String]
+  @_spi(TrueLayer) public typealias QueryItems = [Swift.String : Swift.String]
+}
+extension TrueLayerNetwork.Network.MediaType : Swift.Equatable {}
+extension TrueLayerNetwork.Network.MediaType : Swift.Hashable {}
+extension TrueLayerNetwork.Network.MediaType : Swift.RawRepresentable {}
+extension TrueLayerNetwork.Network.HTTP.Method : Swift.Equatable {}
+extension TrueLayerNetwork.Network.HTTP.Method : Swift.Hashable {}
+extension TrueLayerNetwork.Network.HTTP.Method : Swift.RawRepresentable {}
+extension TrueLayerNetwork.Network.URL.Scheme : Swift.Equatable {}
+extension TrueLayerNetwork.Network.URL.Scheme : Swift.Hashable {}
+extension TrueLayerNetwork.Network.URL.Scheme : Swift.RawRepresentable {}
+extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.Equatable {}
+extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.Hashable {}
+extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.RawRepresentable {}
+extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.Equatable {}
+extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.Hashable {}
+extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.RawRepresentable {}

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerSDK
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import Swift
 import TrueLayerAPI
@@ -10,6 +11,7 @@ import TrueLayerUI
 import TrueLayerUtils
 import UIKit
 import _Concurrency
+import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class TrueLayerSDKResources : ObjectiveC.NSObject {
   @objc public class var bundle: Foundation.Bundle {
     @objc get
@@ -28,17 +30,107 @@ extension TrueLayerSDK.TrueLayer {
     }
   }
 }
-extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public struct Context {
-    public let paymentIdentifier: Swift.String
-    public let resourceToken: Swift.String
+    public let identifier: Swift.String
+    public let token: Swift.String
     public let redirectURL: Foundation.URL
-    public let preferences: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Preferences
-    public let presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle
-    public init(paymentIdentifier: Swift.String, resourceToken: Swift.String, redirectURL: Foundation.URL, preferences: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Preferences = Preferences(), presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle)
+    public let preferences: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Preferences
+    public init(identifier: Swift.String, token: Swift.String, redirectURL: Foundation.URL, preferences: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Preferences)
   }
 }
-extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
+  public enum Error : Swift.Error, Swift.Equatable {
+    case authorizationFailed
+    case connectionIssues
+    case generic(reason: Swift.String)
+    case invalidToken
+    case mandateExpired
+    case mandateNotFound
+    case mandateRejected
+    case revoked
+    case sdkNotConfigured
+    case serverError
+    case unexpectedBehavior
+    case userCanceled
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error) -> Swift.Bool
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
+  public struct Preferences {
+    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle)
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
+  public enum State {
+    case authorized
+    case redirect
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
+  public enum Status : Swift.Equatable {
+    case authorizationRequired
+    case authorizing
+    case authorized
+    case revoked
+    case failed
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
+  public struct Context {
+    public let identifier: Swift.String
+    public let token: Swift.String
+    public let redirectURL: Foundation.URL
+    public let preferences: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Preferences
+    public init(identifier: Swift.String, token: Swift.String, redirectURL: Foundation.URL, preferences: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Preferences)
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
+  public enum Error : Swift.Error, Swift.Equatable {
+    case authorizationFailed
+    case connectionIssues
+    case generic(reason: Swift.String)
+    case invalidToken
+    case paymentExpired
+    case paymentNotFound
+    case paymentRejected
+    case sdkNotConfigured
+    case serverError
+    case unexpectedBehavior
+    case userCanceled
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error) -> Swift.Bool
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
+  public struct Preferences {
+    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil)
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
+  public enum State {
+    case authorized
+    case executed
+    case redirect
+    case settled
+    case wait
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public enum Status : Swift.Equatable {
     case authorizationRequired
     case authorizing
@@ -47,15 +139,10 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
     case settled
     case failed
     public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status) -> Swift.Bool
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
-  }
-}
-extension TrueLayerSDK.TrueLayer.Payments.Models.Payment {
-  public struct Preferences {
-    public init(preferredCountryCode: Swift.String? = nil)
   }
 }
 public enum TrueLayer {
@@ -67,56 +154,47 @@ extension TrueLayerSDK.TrueLayer {
 }
 extension TrueLayerSDK.TrueLayer.Payments {
   public enum Models {
-    public enum Payment {
-    }
   }
 }
-extension TrueLayerSDK.TrueLayer.Payments {
-  public enum Error : Swift.Error, Swift.Equatable {
-    case authorizationFailed
-    case invalidToken
-    case paymentNotFound
-    case paymentExpired
-    case paymentRejected
-    case userCanceled
-    case connectionIssues
-    case serverError
-    case unexpectedBehavior
-    case sdkNotConfigured
-    case generic(reason: Swift.String)
-    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Error, b: TrueLayerSDK.TrueLayer.Payments.Error) -> Swift.Bool
+extension TrueLayerSDK.TrueLayer.Payments.Models {
+  public enum SinglePayment {
   }
+  public enum Mandate {
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models {
+  @available(*, unavailable, renamed: "SinglePayment")
+  public typealias Payment = TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment
+}
+extension TrueLayerSDK.TrueLayer.Payments {
+  @available(*, unavailable, renamed: "Models.SinglePayment.State")
+  public typealias PaymentState = TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State
+  @available(*, unavailable, renamed: "Models.SinglePayment.Error")
+  public typealias Error = TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error
 }
 extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers final public class Manager {
     final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings())
-    final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.Payment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.PaymentState, TrueLayerSDK.TrueLayer.Payments.Error>) -> Swift.Void)?)
-    
+    final public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
     #if compiler(>=5.3) && $AsyncAwait
-    final public func paymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status
+    final public func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
     #endif
-
+    @available(*, unavailable, renamed: "processSinglePayment(context:completion:)")
+    final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
+    #if compiler(>=5.3) && $AsyncAwait
+    @available(*, unavailable, renamed: "singlePaymentStatus(paymentIdentifier:resourceToken:)")
+    final public func paymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
+    #endif
+    final public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error>) -> Swift.Void)?)
+    #if compiler(>=5.3) && $AsyncAwait
+    final public func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status
+    #endif
     @objc deinit
-  }
-}
-extension TrueLayerSDK.TrueLayer.Payments {
-  public enum PaymentState {
-    case authorized
-    case executed
-    case redirect
-    case settled
-    case wait
-    public static func == (a: TrueLayerSDK.TrueLayer.Payments.PaymentState, b: TrueLayerSDK.TrueLayer.Payments.PaymentState) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
   }
 }
 extension TrueLayerSDK.TrueLayer {
   public enum PresentationStyle : Swift.Equatable {
     case present(on: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle = .automatic)
-    case push(on: UIKit.UINavigationController)
     public static func == (lhs: TrueLayerSDK.TrueLayer.PresentationStyle, rhs: TrueLayerSDK.TrueLayer.PresentationStyle) -> Swift.Bool
   }
 }
@@ -128,18 +206,15 @@ public protocol VisualSettingsProvider {
 }
 public protocol ColorProvider : TrueLayerUI.Makeup {
 }
-extension TrueLayerSDK.VisualSettingsProvider {
-  public var colors: TrueLayerSDK.ColorProvider {
-    get
-  }
-}
-extension TrueLayerUI.UI.DefaultColors : TrueLayerSDK.ColorProvider {
-}
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
+  public let colors: TrueLayerSDK.ColorProvider
   public init()
 }
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Hashable {}
-extension TrueLayerSDK.TrueLayer.Payments.Models.Payment.Status : Swift.Hashable {}
-extension TrueLayerSDK.TrueLayer.Payments.PaymentState : Swift.Equatable {}
-extension TrueLayerSDK.TrueLayer.Payments.PaymentState : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status : Swift.Hashable {}
