@@ -11,7 +11,7 @@ The Android version of the SDK can be found [here](https://docs.truelayer.com/do
 
 1. [How to Install the SDK](#how-to-install-the-sdk)
 	1. [SwiftPM](#swiftpm)
-  2. [Cocoapods](#cocoapods) 
+	2. [Cocoapods](#cocoapods) 
 2. [Setup](#setup)
 	1. [Prerequisites](#prerequisites)
 		1. [Setting Up Your Backend](#setting-up-your-backend) 
