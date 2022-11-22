@@ -42,23 +42,23 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public enum Error : Swift.Error, Swift.Equatable {
     case authorizationFailed
+    case connectionIssues
+    case generic(reason: Swift.String)
     case invalidToken
+    case mandateExpired
     case mandateNotFound
     case mandateRejected
-    case mandateExpired
     case revoked
-    case userCanceled
-    case connectionIssues
+    case sdkNotConfigured
     case serverError
     case unexpectedBehavior
-    case sdkNotConfigured
-    case generic(reason: Swift.String)
+    case userCanceled
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error) -> Swift.Bool
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public struct Preferences {
-    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil)
+    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle)
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
@@ -98,16 +98,16 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public enum Error : Swift.Error, Swift.Equatable {
     case authorizationFailed
-    case invalidToken
-    case paymentNotFound
-    case paymentExpired
-    case paymentRejected
-    case userCanceled
     case connectionIssues
+    case generic(reason: Swift.String)
+    case invalidToken
+    case paymentExpired
+    case paymentNotFound
+    case paymentRejected
+    case sdkNotConfigured
     case serverError
     case unexpectedBehavior
-    case sdkNotConfigured
-    case generic(reason: Swift.String)
+    case userCanceled
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error) -> Swift.Bool
   }
 }
