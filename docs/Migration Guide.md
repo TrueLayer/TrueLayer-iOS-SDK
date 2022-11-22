@@ -1,6 +1,81 @@
 # TrueLayer iOS SDK Migration Guide
 
-This guide explains how to migrate from version 1.x.x of the iOS SDK to version 2.0.0.
+- [Migrating from 1.x to 2.x](#migrating-from-1x-to-2x)
+- [Migrating from beta to 2.x](#migrating-from-beta-to-2x)
+
+## Migrating from 1.x to 2.x
+
+Xcode will suggest changes for objects that have modified namespaces and methods. For other changes, please see the steps below.
+
+##### Processing a Single Payment
+
+Previously:
+
+```
+TrueLayer.Payments.manager.processPayment(
+  context: TrueLayer.Payments.Models.Payment.Context(
+    paymentIdentifier: // Your payment ID,
+    resourceToken: // Your resource token,
+    redirectURL: // Your redirect URL,
+    presentationStyle: .present(on: yourViewController, style: .automatic)
+  )) { result in
+    switch result {
+      case .success(let authorizationFlowResult):
+        // Handle `AuthorizationFlowResult`. See below for the new handling logic.
+
+      case .failure(let error):
+        // Handle error. See below for the new handling logic.
+    }
+}
+```
+
+Now:
+
+```
+TrueLayer.Payments.manager.processSinglePayment(
+  context: TrueLayer.Payments.Models.SinglePayment.Context(
+    identifier: // Your payment ID,
+    token: // Your resource token,
+    redirectURL: // Your redirect URL,
+    preferences: TrueLayer.Payments.Models.SinglePayment.Preferences(
+        presentationStyle: .present(on: yourViewController, style: .automatic)
+      )
+  )) { result in
+    switch result {
+      case .success(let authorizationFlowResult):
+        // Handle `TrueLayer.Payments.Models.SinglePayment.State`.
+
+      case .failure(let error):
+        // Handle `TrueLayer.Payments.Models.SinglePayment.Error`.
+    }
+}
+```
+
+##### Retrieving a Single Payment Status
+
+Previously:
+
+```
+TrueLayer.Payments.manager.paymentStatus(paymentIdentifier: paymentIdentifier, resourceToken: resourceToken)
+```
+
+Now:
+
+```
+TrueLayer.Payments.manager.singlePaymentStatus(paymentIdentifier: paymentIdentifier, resourceToken: resourceToken)
+```
+
+There are also type changes, with the underlying properties remaining the same:
+
+| Previously | Now |
+| ------------- | ------------- 
+| `TrueLayer.Payments.Models.Payment.Context` | `TrueLayer.Payments.Models.SinglePayment.Context`
+| `TrueLayer.Payments.Models.Payment.Preferences` | `TrueLayer.Payments.Models.SinglePayment.Preferences`
+| `TrueLayer.Payments.Models.Payment.Status` | `TrueLayer.Payments.Models.SinglePayment.Status`
+| `TrueLayer.Payments.PaymentState` | `TrueLayer.Payments.Models.SinglePayment.State`
+| `TrueLayer.Payments.Error` | `TrueLayer.Payments.Models.SinglePayment.Error`
+
+## Migrating from beta to 2.x
 
 ### Import the TrueLayer iOS SDK
 
@@ -63,12 +138,14 @@ do {
 Now:
 
 ```
-TrueLayer.Payments.manager.processPayment(
-  context: TrueLayer.Payments.Models.Payment.Context(
-    paymentIdentifier: // Your payment ID,
-    resourceToken: // Your resource token,
+TrueLayer.Payments.manager.processSinglePayment(
+  context: TrueLayer.Payments.Models.SinglePayment.Context(
+    identifier: // Your payment ID,
+    token: // Your resource token,
     redirectURL: // Your redirect URL,
-    presentationStyle: .present(on: yourViewController, style: .automatic)
+    preferences: TrueLayer.Payments.Models.SinglePayment.Preferences(
+        presentationStyle: .present(on: yourViewController, style: .automatic)
+      )
   )) { result in
     switch result {
       case .success(let authorizationFlowResult):
@@ -93,14 +170,14 @@ TrueLayer.Payments.Models.Payment.Context(preferredCountryCode: "GB")
 Now:
 
 ```
-TrueLayer.Payments.Models.Payment.Preferences(preferredCountryCode: "GB")
+TrueLayer.Payments.Models.SinglePayment.Preferences(preferredCountryCode: "GB")
 ```
 
 
 ### Handling the Result
 #### Success
 
-| Previously (`PaymentProcessingStep`) | Now (`TrueLayer.Payments.PaymentState`) | Description |
+| Previously (`PaymentProcessingStep`) | Now (`TrueLayer.Payments.Models.SinglePayment.State`) | Description |
 | ------------- | ------------- | ------------- 
 | `.paymentCompleted` | `.executed` | The bank confirmed the payment.
 | `.authorized` | `.authorized` | The user authorized the payment with the bank.
@@ -111,7 +188,7 @@ TrueLayer.Payments.Models.Payment.Preferences(preferredCountryCode: "GB")
 
 #### Error
 
-| Previously (`TrueLayerPayments.Error`) | Now (`TrueLayer.Payments.Error`) | Description |
+| Previously (`TrueLayerPayments.Error`) | Now (`TrueLayer.Payments.Models.SinglePayment.Error`) | Description |
 | ------------- | ------------- | ------------- 
 | `.failedToStartSDK` | `.sdkNotConfigured`| The SDK `configure` method has not been called before using it.
 | `.sdkAlreadyStarted` |  | When the app tries to initialize the SDK more than once. This error is no longer thrown.

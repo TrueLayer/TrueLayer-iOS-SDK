@@ -1,12 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
-## [2.0.0] - 
+## [2.0.0] - Boomerang
 
 ### Added
 
-- Added `processMandate(context:then:)` to process a Variable Recurring Payment via mandate in the United Kingdom.
-- Added `mandateStatus(mandateIdentifier:resourceToken:)` to retrieve the status of a Variable Recurring Payment via mandate.
+- Added `processMandate(context:then:)` to process a new payment mandate in the United Kingdom.
+- Added `mandateStatus(mandateIdentifier:resourceToken:)` to retrieve the status of recurring payment mandate.
+
+### Removed
+
+- Removed the `push` presentation style as `present` was overwhelmingly the most used by users and it provided a far better animation.
 
 ### Changed
 
