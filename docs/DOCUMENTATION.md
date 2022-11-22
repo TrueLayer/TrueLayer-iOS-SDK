@@ -2,8 +2,7 @@
 
 This a high level documentation on how to use the `TrueLayerPaymentsSDK`.
 
-
-Once your app has obtained the payment (or mandate) identifier and resource token from the backend (see [Setup](README.md)), you can use the iOS SDK to process the payment.
+Once your app has obtained the payment (or mandate) identifier and resource token from the backend (see [Setup](../README.md)), you can use the iOS SDK to process the payment.
 
 ## Single Payment
 
