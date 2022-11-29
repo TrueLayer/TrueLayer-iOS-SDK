@@ -1,6 +1,5 @@
 import Foundation
 import TrueLayerSDK
-import UIKit
 
 /// A bridging class to use the `TrueLayerSDK.TrueLayer.Payments.Manager` in Objective-C projects.
 @objc
