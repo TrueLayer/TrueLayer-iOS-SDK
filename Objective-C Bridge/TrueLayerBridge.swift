@@ -17,7 +17,7 @@ public class TrueLayerBridge: NSObject {
       case .production:
         trueLayerEnvironment = .production
     }
-    
+
     TrueLayer.Payments.manager.configure(environment: trueLayerEnvironment)
   }
     
