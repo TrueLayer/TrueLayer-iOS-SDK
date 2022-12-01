@@ -53,4 +53,37 @@ public class TrueLayerBridge: NSObject {
       }
     }
   }
+  
+  /// Presents the SDK in the app to carry out a mandate.
+  ///
+  /// This method can be called multiple times to process different mandates.
+  /// Before using this method, make sure that the SDK has been started, otherwise it will raise an error.
+  /// - Parameters:
+  ///   - context: an object that contains all the information required for the mandate and to customise how the SDK behaves.
+  ///   - success: A closure called when the mandate authorisation flow has been successful within the scope of the SDK. A enum is passed with the state of the mandate.
+  ///   - failure: A closure called when the mandate authorization flow has failed within the scope of the SDK, passing a given error.
+  @objc
+  public static func processMandate(
+    context: TrueLayerMandateContext,
+    success: @escaping (TrueLayerMandateState) -> Void,
+    failure: @escaping (TrueLayerMandateError) -> Void
+  ) {
+    let preferences = TrueLayer.Payments.Models.Mandate.Preferences(presentationStyle: .present(on: context.viewController))
+    let context = TrueLayer.Payments.Models.Mandate.Context(
+      identifier: context.mandateID,
+      token: context.resourceToken,
+      redirectURL: context.redirectURL,
+      preferences: preferences
+    )
+    
+    TrueLayer.Payments.manager.processMandate(context: context) { result in
+      switch result {
+        case .success(let state):
+          success(TrueLayerMandateState(state));
+          
+        case .failure(let error):
+          failure(TrueLayerMandateError(error))
+      }
+    }
+  }
 }
