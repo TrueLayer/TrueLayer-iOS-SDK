@@ -4,9 +4,20 @@
 
 @implementation TrueLayerObjectiveCBridge
 
-+ (void)configureWith:(NSString *)environment
-                error:(NSError * _Nullable __autoreleasing *)error {
-  [TrueLayerBridge configureWith:environment error:error];
++ (void)configureWith:(TrueLayerObjectiveCEnvironment)environment {
+  TrueLayerEnvironment trueLayerEnvironment;
+  
+  switch (environment) {
+    case TrueLayerObjectiveCEnvironmentSandbox:
+      trueLayerEnvironment = TrueLayerEnvironmentSandbox;
+      break;
+   
+    case TrueLayerObjectiveCEnvironmentProduction:
+      trueLayerEnvironment = TrueLayerEnvironmentProduction;
+      break;
+  }
+  
+  [TrueLayerBridge configureWith:trueLayerEnvironment];
 }
 
 + (void)processSinglePaymentWithContext:(TrueLayerSinglePaymentContext * _Nonnull)context
