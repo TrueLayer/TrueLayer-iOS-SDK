@@ -1,7 +1,7 @@
 #ifndef TrueLayerSinglePaymentObjCError_h
 #define TrueLayerSinglePaymentObjCError_h
 
-/// The different final states in which a payment can be when successful.
+/// The different errors that can occur when processing a single payment.
 typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentObjCError) {
   TrueLayerSinglePaymentObjCErrorAuthorizationFailed = 0,
   TrueLayerSinglePaymentObjCErrorConnectionIssues = 1,
