@@ -35,7 +35,10 @@ public class TrueLayerBridge: NSObject {
     success: @escaping (TrueLayerSinglePaymentState) -> Void,
     failure: @escaping (TrueLayerSinglePaymentError) -> Void
   ) {
-    let preferences = TrueLayer.Payments.Models.SinglePayment.Preferences(presentationStyle: .present(on: context.viewController))
+    let preferences = TrueLayer.Payments.Models.SinglePayment.Preferences(
+      presentationStyle: .present(on: context.preferences.viewController),
+      preferredCountryCode: context.preferences.preferredCountryCode
+    )
     let context = TrueLayer.Payments.Models.SinglePayment.Context(
       identifier: context.paymentID,
       token: context.resourceToken,

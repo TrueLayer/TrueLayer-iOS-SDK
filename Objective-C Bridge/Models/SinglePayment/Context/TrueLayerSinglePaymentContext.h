@@ -1,6 +1,8 @@
 #ifndef TrueLayerPaymentContext_h
 #define TrueLayerPaymentContext_h
 
+#import "TrueLayerSinglePaymentPreferences.h"
+
 @interface TrueLayerSinglePaymentContext: NSObject
 /// The identifier of the single payment to process.
 @property (nonatomic, readwrite, copy) NSString * _Nonnull paymentID;
@@ -12,7 +14,7 @@
 @property (nonatomic, readwrite, copy) NSURL * _Nonnull redirectURL;
 
 /// The UIViewController to present the SDK on.
-@property (nonatomic, readwrite, strong) UIViewController * _Nonnull viewController;
+@property (nonatomic, readwrite, strong) TrueLayerSinglePaymentPreferences * _Nonnull preferences;
 
 /// Initializes a new `TrueLayerSinglePaymentContext` object.
 /// - Parameters:
@@ -23,7 +25,7 @@
 - (nonnull instancetype)initWithPaymentID:(NSString * _Nonnull)paymentID
                             resourceToken:(NSString * _Nonnull)resourceToken
                               redirectURL:(NSURL * _Nonnull)redirectURL
-                           viewController:(UIViewController * _Nonnull)viewController;
+                           preferences:(TrueLayerSinglePaymentPreferences * _Nonnull)preferences;
 @end
 
 #endif /* TrueLayerPaymentContext_h */
