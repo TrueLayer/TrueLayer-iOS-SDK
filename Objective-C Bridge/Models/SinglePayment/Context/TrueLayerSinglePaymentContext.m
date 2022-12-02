@@ -5,13 +5,13 @@
 - (instancetype)initWithPaymentID:(NSString *)paymentID
                     resourceToken:(NSString *)resourceToken
                       redirectURL:(NSURL *)redirectURL
-                   viewController:(UIViewController *)viewController {
+                   preferences:(TrueLayerSinglePaymentPreferences *)preferences {
   self = [super init];
   if (self) {
     self.paymentID = paymentID;
     self.resourceToken = resourceToken;
     self.redirectURL = redirectURL;
-    self.viewController = viewController;
+    self.preferences = preferences;
   }
   return self;
 }
