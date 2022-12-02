@@ -55,54 +55,49 @@
     
   }
                                            failure:^(enum TrueLayerSinglePaymentError error) {
-    TrueLayerSinglePaymentObjCError objCError;
+    TrueLayerSinglePaymentObjCError objCError = [TrueLayerObjectiveCBridge singlePaymentObjCErrorFromSinglePaymentError:error];
+    failure(objCError);
+  }];
+}
+
++ (void)singlePaymentStatusWithPaymentIdentifier:(NSString *)paymentIdentifier resourceToken:(NSString *)resourceToken
+                                         success:(void (^)(enum TrueLayerSinglePaymentObjCStatus))success
+                                         failure:(void (^)(enum TrueLayerSinglePaymentObjCError))failure {
+  [TrueLayerBridge singlePaymentStatusWithPaymentIdentifier:paymentIdentifier
+                                              resourceToken:resourceToken
+                                                    success:^(enum TrueLayerSinglePaymentStatus status) {
+    TrueLayerSinglePaymentObjCStatus objCStatus;
     
-    switch (error) {
-      case TrueLayerSinglePaymentErrorAuthorizationFailed:
-        objCError = TrueLayerSinglePaymentObjCErrorAuthorizationFailed;
+    switch (status) {
+      case TrueLayerSinglePaymentStatusAuthorizationRequired:
+        objCStatus = TrueLayerSinglePaymentObjCStatusAuthorizationRequired;
         break;
         
-      case TrueLayerSinglePaymentErrorConnectionIssues:
-        objCError = TrueLayerSinglePaymentObjCErrorConnectionIssues;
+      case TrueLayerSinglePaymentStatusAuthorizing:
+        objCStatus = TrueLayerSinglePaymentObjCStatusAuthorizing;
         break;
         
-      case TrueLayerSinglePaymentErrorGeneric:
-        objCError = TrueLayerSinglePaymentObjCErrorGeneric;
+      case TrueLayerSinglePaymentStatusAuthorized:
+        objCStatus = TrueLayerSinglePaymentObjCStatusAuthorized;
         break;
         
-      case TrueLayerSinglePaymentErrorInvalidToken:
-        objCError = TrueLayerSinglePaymentObjCErrorInvalidToken;
+      case TrueLayerSinglePaymentStatusExecuted:
+        objCStatus = TrueLayerSinglePaymentObjCStatusExecuted;
         break;
         
-      case TrueLayerSinglePaymentErrorPaymentExpired:
-        objCError = TrueLayerSinglePaymentObjCErrorPaymentExpired;
+      case TrueLayerSinglePaymentStatusSettled:
+        objCStatus = TrueLayerSinglePaymentObjCStatusSettled;
         break;
         
-      case TrueLayerSinglePaymentErrorPaymentNotFound:
-        objCError = TrueLayerSinglePaymentObjCErrorPaymentNotFound;
-        break;
-        
-      case TrueLayerSinglePaymentErrorPaymentRejected:
-        objCError = TrueLayerSinglePaymentObjCErrorPaymentRejected;
-        break;
-        
-      case TrueLayerSinglePaymentErrorSdkNotConfigured:
-        objCError = TrueLayerSinglePaymentObjCErrorSdkNotConfigured;
-        break;
-        
-      case TrueLayerSinglePaymentErrorServerError:
-        objCError = TrueLayerSinglePaymentObjCErrorServerError;
-        break;
-        
-      case TrueLayerSinglePaymentErrorUnexpectedBehavior:
-        objCError = TrueLayerSinglePaymentObjCErrorUnexpectedBehavior;
-        break;
-        
-      case TrueLayerSinglePaymentErrorUserCanceled:
-        objCError = TrueLayerSinglePaymentObjCErrorUserCanceled;
+      case TrueLayerSinglePaymentStatusFailed:
+        objCStatus = TrueLayerSinglePaymentObjCStatusFailed;
         break;
     }
     
+    success(objCStatus);
+  }
+                                                    failure:^(enum TrueLayerSinglePaymentError error) {
+    TrueLayerSinglePaymentObjCError objCError = [TrueLayerObjectiveCBridge singlePaymentObjCErrorFromSinglePaymentError:error];
     failure(objCError);
   }];
 }
@@ -182,6 +177,47 @@
     
     failure(objCError);
   }];
+}
+
+// MARK: -  Helpers
+
+/// Converts an @objc Swift error enum to a native Objective-C `TrueLayerSinglePaymentObjCError`.
+/// - Parameter error: The @objc Swift error to convert.
++ (TrueLayerSinglePaymentObjCError)singlePaymentObjCErrorFromSinglePaymentError:(TrueLayerSinglePaymentError) error {
+  switch (error) {
+    case TrueLayerSinglePaymentErrorAuthorizationFailed:
+      return TrueLayerSinglePaymentObjCErrorAuthorizationFailed;
+      
+    case TrueLayerSinglePaymentErrorConnectionIssues:
+      return TrueLayerSinglePaymentObjCErrorConnectionIssues;
+      
+    case TrueLayerSinglePaymentErrorGeneric:
+      return TrueLayerSinglePaymentObjCErrorGeneric;
+      
+    case TrueLayerSinglePaymentErrorInvalidToken:
+      return TrueLayerSinglePaymentObjCErrorInvalidToken;
+      
+    case TrueLayerSinglePaymentErrorPaymentExpired:
+      return TrueLayerSinglePaymentObjCErrorPaymentExpired;
+      
+    case TrueLayerSinglePaymentErrorPaymentNotFound:
+      return TrueLayerSinglePaymentObjCErrorPaymentNotFound;
+      
+    case TrueLayerSinglePaymentErrorPaymentRejected:
+      return TrueLayerSinglePaymentObjCErrorPaymentRejected;
+      
+    case TrueLayerSinglePaymentErrorSdkNotConfigured:
+      return TrueLayerSinglePaymentObjCErrorSdkNotConfigured;
+      
+    case TrueLayerSinglePaymentErrorServerError:
+      return TrueLayerSinglePaymentObjCErrorServerError;
+      
+    case TrueLayerSinglePaymentErrorUnexpectedBehavior:
+      return TrueLayerSinglePaymentObjCErrorUnexpectedBehavior;
+      
+    case TrueLayerSinglePaymentErrorUserCanceled:
+      return TrueLayerSinglePaymentObjCErrorUserCanceled;
+  }
 }
 
 @end

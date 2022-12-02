@@ -8,6 +8,7 @@
 #import "TrueLayerMandateContext.h"
 #import "TrueLayerMandateObjCState.h"
 #import "TrueLayerMandateObjCError.h"
+#import "TrueLayerSinglePaymentObjCStatus.h"
 
 /// A native bridging class to use the `TrueLayerSDK.TrueLayer.Payments.Manager` in Objective-C projects.
 @interface TrueLayerObjectiveCBridge: NSObject
@@ -16,6 +17,8 @@
 ///   - environment: The environment to set up the SDK with.
 ///   - error: An error that occurs during configuration, for example if the environment is not valid.
 +(void)configureWith:(TrueLayerObjectiveCEnvironment)environment;
+
+// MARK: - Single Payment
 
 /// Presents the SDK in the app to carry out a payment.
 ///
@@ -29,6 +32,18 @@
                                 success:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCState))success
                                 failure:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCError))failure;
 
+/// Fetches the status of a single payment given its identifier and security token.
+/// - Parameters:
+///   - paymentIdentifier: The unique identifier of the payment.
+///   - resourceToken: The security token associated with the payment.
+///   - success: A closure called when the payment status has been successfully fetched.
+///   - failure: A closure called when there was an error fetching the payment status.
++ (void)singlePaymentStatusWithPaymentIdentifier:(NSString * _Nonnull)paymentIdentifier
+                                   resourceToken:(NSString * _Nonnull)resourceToken
+                                         success:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCStatus))success
+                                         failure:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCError))failure;
+
+/// MARK: - Mandate
 
 /// It presents the SDK in the app to process a mandate/Variable Recurring Payment.
 ///
