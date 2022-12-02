@@ -71,7 +71,7 @@ public class TrueLayerBridge: NSObject {
     success: @escaping (TrueLayerMandateState) -> Void,
     failure: @escaping (TrueLayerMandateError) -> Void
   ) {
-    let preferences = TrueLayer.Payments.Models.Mandate.Preferences(presentationStyle: .present(on: context.viewController))
+    let preferences = TrueLayer.Payments.Models.Mandate.Preferences(presentationStyle: .present(on: context.preferences.viewController))
     let context = TrueLayer.Payments.Models.Mandate.Context(
       identifier: context.mandateID,
       token: context.resourceToken,
