@@ -2,13 +2,13 @@
 
 @implementation TrueLayerSinglePaymentContext
 
-- (instancetype)initWithPaymentID:(NSString *)paymentID
+- (instancetype)initWithIdentifier:(NSString *)identifier
                     resourceToken:(NSString *)resourceToken
                       redirectURL:(NSURL *)redirectURL
                    preferences:(TrueLayerSinglePaymentPreferences *)preferences {
   self = [super init];
   if (self) {
-    self.paymentID = paymentID;
+    self.identifier = identifier;
     self.resourceToken = resourceToken;
     self.redirectURL = redirectURL;
     self.preferences = preferences;
