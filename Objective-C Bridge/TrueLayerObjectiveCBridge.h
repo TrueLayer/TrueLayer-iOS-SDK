@@ -9,6 +9,7 @@
 #import "TrueLayerMandateObjCState.h"
 #import "TrueLayerMandateObjCError.h"
 #import "TrueLayerSinglePaymentObjCStatus.h"
+#import "TrueLayerMandateObjCStatus.h"
 
 /// A native bridging class to use the `TrueLayerSDK.TrueLayer.Payments.Manager` in Objective-C projects.
 @interface TrueLayerObjectiveCBridge: NSObject
@@ -29,8 +30,8 @@
 ///   - success: A closure called when the payment authorisation flow has been successful within the scope of the SDK. A enum is passed with the state of the payment.
 ///   - failure: A closure called when the payment authorization flow has failed within the scope of the SDK, passing a given error.
 +(void)processSinglePaymentWithContext:(TrueLayerSinglePaymentContext * _Nonnull)context
-                                success:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCState))success
-                                failure:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCError))failure;
+                               success:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCState))success
+                               failure:(void (^ _Nonnull)(enum TrueLayerSinglePaymentObjCError))failure;
 
 /// Fetches the status of a single payment given its identifier and security token.
 /// - Parameters:
@@ -56,6 +57,17 @@
 +(void)processMandateWithContext:(TrueLayerMandateContext * _Nonnull)context
                          success:(void (^ _Nonnull)(enum TrueLayerMandateObjCState))success
                          failure:(void (^ _Nonnull)(enum TrueLayerMandateObjCError))failure;
+
+/// Fetches the status of a mandate given its identifier and security token.
+/// - Parameters:
+///   - mandateIdentifier: The unique identifier of the mandate.
+///   - resourceToken: The security token associated with the mandate.
+///   - success: A closure called when the mandate status has been successfully fetched.
+///   - failure: A closure called when there was an error fetching the mandate status.
++ (void)mandateStatusWithMandateIdentifier:(NSString * _Nonnull)mandateIdentifier
+                             resourceToken:(NSString * _Nonnull)resourceToken
+                                   success:(void (^ _Nonnull)(enum TrueLayerMandateObjCStatus))success
+                                   failure:(void (^ _Nonnull)(enum TrueLayerMandateObjCError))failure;
 
 @end
 

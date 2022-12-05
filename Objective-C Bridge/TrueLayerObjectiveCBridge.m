@@ -123,58 +123,46 @@
     success(objCState);
   }
                                      failure:^(enum TrueLayerMandateError error) {
-    TrueLayerMandateObjCError objCError;
+    TrueLayerMandateObjCError objCError = [TrueLayerObjectiveCBridge mandateObjCErrorFromMandateError:error];
+    failure(objCError);
+  }];
+}
+
++ (void)mandateStatusWithMandateIdentifier:(NSString *)mandateIdentifier
+                             resourceToken:(NSString *)resourceToken
+                                   success:(void (^)(enum TrueLayerMandateObjCStatus))success
+                                   failure:(void (^)(enum TrueLayerMandateObjCError))failure {
+  [TrueLayerBridge mandateStatusWithMandateIdentifier:mandateIdentifier
+                                        resourceToken:resourceToken
+                                              success:^(enum TrueLayerMandateStatus status) {
+    TrueLayerMandateObjCStatus objCStatus;
     
-    switch (error) {
-      case TrueLayerMandateErrorAuthorizationFailed:
-        objCError = TrueLayerMandateObjCErrorAuthorizationFailed;
+    switch (status) {
+      case TrueLayerMandateStatusAuthorizationRequired:
+        objCStatus = TrueLayerMandateObjCStatusAuthorizationRequired;
         break;
         
-      case TrueLayerMandateErrorConnectionIssues:
-        objCError = TrueLayerMandateObjCErrorConnectionIssues;
+      case TrueLayerMandateStatusAuthorizing:
+        objCStatus = TrueLayerMandateObjCStatusAuthorizing;
         break;
         
-      case TrueLayerMandateErrorGeneric:
-        objCError = TrueLayerMandateObjCErrorGeneric;
+      case TrueLayerMandateStatusAuthorized:
+        objCStatus = TrueLayerMandateObjCStatusAuthorized;
         break;
         
-      case TrueLayerMandateErrorInvalidToken:
-        objCError = TrueLayerMandateObjCErrorInvalidToken;
+      case TrueLayerMandateStatusRevoked:
+        objCStatus = TrueLayerMandateObjCStatusRevoked;
         break;
         
-      case TrueLayerMandateErrorMandateExpired:
-        objCError = TrueLayerMandateObjCErrorMandateExpired;
-        break;
-        
-      case TrueLayerMandateErrorMandateNotFound:
-        objCError = TrueLayerMandateObjCErrorMandateNotFound;
-        break;
-        
-      case TrueLayerMandateErrorMandateRejected:
-        objCError = TrueLayerMandateObjCErrorMandateRejected;
-        break;
-        
-      case TrueLayerMandateErrorRevoked:
-        objCError = TrueLayerMandateObjCErrorRevoked;
-        break;
-        
-      case TrueLayerMandateErrorSdkNotConfigured:
-        objCError = TrueLayerMandateObjCErrorSdkNotConfigured;
-        break;
-        
-      case TrueLayerMandateErrorServerError:
-        objCError = TrueLayerMandateObjCErrorServerError;
-        break;
-        
-      case TrueLayerMandateErrorUnexpectedBehavior:
-        objCError = TrueLayerMandateObjCErrorUnexpectedBehavior;
-        break;
-        
-      case TrueLayerMandateErrorUserCanceled:
-        objCError = TrueLayerMandateObjCErrorUserCanceled;
+      case TrueLayerMandateStatusFailed:
+        objCStatus = TrueLayerMandateObjCStatusFailed;
         break;
     }
     
+    success(objCStatus);
+    
+  } failure:^(enum TrueLayerMandateError error) {
+    TrueLayerMandateObjCError objCError = [TrueLayerObjectiveCBridge mandateObjCErrorFromMandateError:error];
     failure(objCError);
   }];
 }
@@ -217,6 +205,48 @@
       
     case TrueLayerSinglePaymentErrorUserCanceled:
       return TrueLayerSinglePaymentObjCErrorUserCanceled;
+  }
+}
+
+/// Converts an @objc Swift error enum to a native Objective-C `TrueLayerMandateObjCError`.
+/// - Parameter error: The @objc Swift error to convert.
++ (TrueLayerMandateObjCError)mandateObjCErrorFromMandateError:(TrueLayerMandateError) error {
+  switch (error) {
+    case TrueLayerMandateErrorAuthorizationFailed:
+      return TrueLayerMandateObjCErrorAuthorizationFailed;
+      
+    case TrueLayerMandateErrorConnectionIssues:
+      return TrueLayerMandateObjCErrorConnectionIssues;
+      
+    case TrueLayerMandateErrorGeneric:
+      return TrueLayerMandateObjCErrorGeneric;
+      
+    case TrueLayerMandateErrorInvalidToken:
+      return TrueLayerMandateObjCErrorInvalidToken;
+      
+    case TrueLayerMandateErrorMandateExpired:
+      return TrueLayerMandateObjCErrorMandateExpired;
+      
+    case TrueLayerMandateErrorMandateNotFound:
+      return TrueLayerMandateObjCErrorMandateNotFound;
+      
+    case TrueLayerMandateErrorMandateRejected:
+      return TrueLayerMandateObjCErrorMandateRejected;
+      
+    case TrueLayerMandateErrorRevoked:
+      return TrueLayerMandateObjCErrorRevoked;
+      
+    case TrueLayerMandateErrorSdkNotConfigured:
+      return TrueLayerMandateObjCErrorSdkNotConfigured;
+      
+    case TrueLayerMandateErrorServerError:
+      return TrueLayerMandateObjCErrorServerError;
+      
+    case TrueLayerMandateErrorUnexpectedBehavior:
+      return TrueLayerMandateObjCErrorUnexpectedBehavior;
+      
+    case TrueLayerMandateErrorUserCanceled:
+      return TrueLayerMandateObjCErrorUserCanceled;
   }
 }
 

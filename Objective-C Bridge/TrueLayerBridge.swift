@@ -122,4 +122,37 @@ public class TrueLayerBridge: NSObject {
       }
     }
   }
+  
+  /// Fetches the status of a mandate given its identifier and security token.
+  /// - Parameters:
+  ///   - mandateIdentifier: The unique identifier of the mandate.
+  ///   - resourceToken: The security token associated with the mandate.
+  ///   - success: A closure called when the mandate status has been successfully fetched.
+  ///   - failure: A closure called when there was an error fetching the mandate status.
+  @objc
+  public static func mandateStatus(
+    mandateIdentifier: String,
+    resourceToken: String,
+    success: @escaping (TrueLayerMandateStatus) -> Void,
+    failure: @escaping (TrueLayerMandateError) -> Void
+  ) {
+    Task {
+      do {
+        let status = try await TrueLayer.Payments.manager.mandateStatus(mandateIdentifier: mandateIdentifier, resourceToken: resourceToken)
+        
+        success(TrueLayerMandateStatus(status))
+        
+      } catch {
+        let mandateError: TrueLayerMandateError
+        
+        if let error = error as? TrueLayer.Payments.Models.Mandate.Error {
+          mandateError = TrueLayerMandateError(error)
+        } else {
+          mandateError = .unexpectedBehavior
+        }
+        
+        failure(mandateError)
+      }
+    }
+  }
 }
