@@ -40,7 +40,7 @@ public class TrueLayerBridge: NSObject {
       preferredCountryCode: context.preferences.preferredCountryCode
     )
     let context = TrueLayer.Payments.Models.SinglePayment.Context(
-      identifier: context.paymentID,
+      identifier: context.identifier,
       token: context.resourceToken,
       redirectURL: context.redirectURL,
       preferences: preferences
