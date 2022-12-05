@@ -2,13 +2,13 @@
 
 @implementation TrueLayerMandateContext
 
-- (instancetype)initWithMandateID:(NSString *)mandateID
+- (instancetype)initWithIdentifier:(NSString *)identifier
                     resourceToken:(NSString *)resourceToken
                       redirectURL:(NSURL *)redirectURL
                    preferences:(TrueLayerMandatePreferences *)preferences {
   self = [super init];
   if (self) {
-    self.mandateID = mandateID;
+    self.identifier = identifier;
     self.resourceToken = resourceToken;
     self.redirectURL = redirectURL;
     self.preferences = preferences;

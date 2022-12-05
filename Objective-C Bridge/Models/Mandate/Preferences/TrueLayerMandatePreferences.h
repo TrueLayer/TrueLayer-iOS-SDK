@@ -1,5 +1,5 @@
-#ifndef TrueLayerSinglePaymentPreferences_h
-#define TrueLayerSinglePaymentPreferences_h
+#ifndef TrueLayerMandatePreferences_h
+#define TrueLayerMandatePreferences_h
 
 #import <UIKit/UIKit.h>
 
@@ -14,4 +14,4 @@
 - (nonnull instancetype)initWithViewController:(UIViewController * _Nullable)viewController;
 @end
 
-#endif /* TrueLayerSinglePaymentPreferences_h */
+#endif /* TrueLayerMandatePreferences_h */
