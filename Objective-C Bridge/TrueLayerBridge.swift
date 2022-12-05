@@ -106,7 +106,7 @@ public class TrueLayerBridge: NSObject {
   ) {
     let preferences = TrueLayer.Payments.Models.Mandate.Preferences(presentationStyle: .present(on: context.preferences.viewController))
     let context = TrueLayer.Payments.Models.Mandate.Context(
-      identifier: context.mandateID,
+      identifier: context.identifier,
       token: context.resourceToken,
       redirectURL: context.redirectURL,
       preferences: preferences
