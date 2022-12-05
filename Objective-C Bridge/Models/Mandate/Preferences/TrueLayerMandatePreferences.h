@@ -6,7 +6,7 @@
 /// A set of preferences that can be applied to a mandate.
 @interface TrueLayerMandatePreferences: NSObject
 /// The `UIViewController` to present the SDK on.
-@property (nonatomic, readwrite, copy) UIViewController * _Nonnull viewController;
+@property (nonatomic, readwrite, strong) UIViewController * _Nonnull viewController;
 
 /// Initializes a new Preferences object.
 /// - Parameters:

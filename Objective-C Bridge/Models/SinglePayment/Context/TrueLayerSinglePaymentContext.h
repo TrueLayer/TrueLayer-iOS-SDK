@@ -13,7 +13,7 @@
 /// The destination where the user should be redirected once the authorization flow is done outside of the app (bank website, HPP).
 @property (nonatomic, readwrite, copy) NSURL * _Nonnull redirectURL;
 
-/// The UIViewController to present the SDK on.
+/// A set of preferences to apply to the single payment.
 @property (nonatomic, readwrite, strong) TrueLayerSinglePaymentPreferences * _Nonnull preferences;
 
 /// Initializes a new `TrueLayerSinglePaymentContext` object.
@@ -21,7 +21,7 @@
 ///   - paymentID: The identifier of the single payment to process.
 ///   - resourceToken: The security token associated with the payment.
 ///   - redirectURL: The destination where the user should be redirected once the authorization flow is done outside of the app (bank website, HPP).
-///   - viewController: The UIViewController to present the SDK on.
+///   - preferences: A set of preferences to apply to the single payment.
 - (nonnull instancetype)initWithPaymentID:(NSString * _Nonnull)paymentID
                             resourceToken:(NSString * _Nonnull)resourceToken
                               redirectURL:(NSURL * _Nonnull)redirectURL
