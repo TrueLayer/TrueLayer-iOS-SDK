@@ -107,4 +107,81 @@
   }];
 }
 
++ (void)processMandateWithContext:(TrueLayerMandateContext *)context
+                          success:(void (^)(enum TrueLayerMandateObjCState))success
+                          failure:(void (^)(enum TrueLayerMandateObjCError))failure {
+  [TrueLayerBridge processMandateWithContext:context
+                                     success:^(enum TrueLayerMandateState state) {
+    // Create the public objC enum to send back to the merchant.
+    TrueLayerMandateObjCState objCState;
+    
+    switch (state) {
+      case TrueLayerMandateStateAuthorized:
+        objCState = TrueLayerMandateObjCStateAuthorized;
+        break;
+        
+      case TrueLayerMandateStateRedirect:
+        objCState = TrueLayerMandateObjCStateRedirect;
+        break;
+    }
+    
+    success(objCState);
+  }
+                                     failure:^(enum TrueLayerMandateError error) {
+    TrueLayerMandateObjCError objCError;
+    
+    switch (error) {
+      case TrueLayerMandateErrorAuthorizationFailed:
+        objCError = TrueLayerMandateObjCErrorAuthorizationFailed;
+        break;
+        
+      case TrueLayerMandateErrorConnectionIssues:
+        objCError = TrueLayerMandateObjCErrorConnectionIssues;
+        break;
+        
+      case TrueLayerMandateErrorGeneric:
+        objCError = TrueLayerMandateObjCErrorGeneric;
+        break;
+        
+      case TrueLayerMandateErrorInvalidToken:
+        objCError = TrueLayerMandateObjCErrorInvalidToken;
+        break;
+        
+      case TrueLayerMandateErrorMandateExpired:
+        objCError = TrueLayerMandateObjCErrorMandateExpired;
+        break;
+        
+      case TrueLayerMandateErrorMandateNotFound:
+        objCError = TrueLayerMandateObjCErrorMandateNotFound;
+        break;
+        
+      case TrueLayerMandateErrorMandateRejected:
+        objCError = TrueLayerMandateObjCErrorMandateRejected;
+        break;
+        
+      case TrueLayerMandateErrorRevoked:
+        objCError = TrueLayerMandateObjCErrorRevoked;
+        break;
+        
+      case TrueLayerMandateErrorSdkNotConfigured:
+        objCError = TrueLayerMandateObjCErrorSdkNotConfigured;
+        break;
+        
+      case TrueLayerMandateErrorServerError:
+        objCError = TrueLayerMandateObjCErrorServerError;
+        break;
+        
+      case TrueLayerMandateErrorUnexpectedBehavior:
+        objCError = TrueLayerMandateObjCErrorUnexpectedBehavior;
+        break;
+        
+      case TrueLayerMandateErrorUserCanceled:
+        objCError = TrueLayerMandateObjCErrorUserCanceled;
+        break;
+    }
+    
+    failure(objCError);
+  }];
+}
+
 @end
