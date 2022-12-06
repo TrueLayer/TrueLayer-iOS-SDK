@@ -8,6 +8,17 @@ public class TrueLayerBridge: NSObject {
   /// - Parameter environment: The environment to set up the SDK with.
   @objc
   public static func configure(with environment: TrueLayerEnvironment) {
+    Self.configure(with: environment, visualSettings: TrueLayerObjCVisualSettings())
+  }
+  
+  /// Configures and sets up the SDK for a given environment and custom visual settings.
+  /// - Parameter environment: The environment to set up the SDK with.
+  /// - Parameter visualSettings: Custom visual styling to apply to the SDK.
+  @objc
+  public static func configure(
+    with environment: TrueLayerEnvironment,
+    visualSettings: TrueLayerObjCVisualSettingsProvider
+  ) {
     let trueLayerEnvironment: TrueLayer.Environment
 
     switch environment {
@@ -18,7 +29,10 @@ public class TrueLayerBridge: NSObject {
         trueLayerEnvironment = .production
     }
 
-    TrueLayer.Payments.manager.configure(environment: trueLayerEnvironment)
+    TrueLayer.Payments.manager.configure(
+      environment: trueLayerEnvironment,
+      visualSettings: TrueLayerVisualSettings(objCVisualSettings: visualSettings)
+    )
   }
     
   /// Presents the SDK in the app to carry out a payment.
