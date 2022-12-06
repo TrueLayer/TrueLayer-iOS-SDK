@@ -57,6 +57,39 @@ public class TrueLayerBridge: NSObject {
     }
   }
   
+  /// Fetches the status of a single payment given its identifier and security token.
+  /// - Parameters:
+  ///   - paymentIdentifier: The unique identifier of the payment.
+  ///   - resourceToken: The security token associated with the payment.
+  ///   - success: A closure called when the payment status has been successfully fetched.
+  ///   - failure: A closure called when there was an error fetching the payment status.
+  @objc
+  public static func singlePaymentStatus(
+    paymentIdentifier: String,
+    resourceToken: String,
+    success: @escaping (TrueLayerSinglePaymentStatus) -> Void,
+    failure: @escaping (TrueLayerSinglePaymentError) -> Void
+  ) {
+    Task {
+      do {
+        let status = try await TrueLayer.Payments.manager.singlePaymentStatus(paymentIdentifier: paymentIdentifier, resourceToken: resourceToken)
+        
+        success(TrueLayerSinglePaymentStatus(status))
+        
+      } catch {
+        let singlePaymentError: TrueLayerSinglePaymentError
+        
+        if let error = error as? TrueLayer.Payments.Models.SinglePayment.Error {
+          singlePaymentError = TrueLayerSinglePaymentError(error)
+        } else {
+          singlePaymentError = .unexpectedBehavior
+        }
+        
+        failure(singlePaymentError)
+      }
+    }
+  }
+  
   /// Presents the SDK in the app to carry out a mandate.
   ///
   /// This method can be called multiple times to process different mandates.
