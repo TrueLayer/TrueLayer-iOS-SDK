@@ -5,8 +5,13 @@
 @implementation TrueLayerObjectiveCBridge
 
 + (void)configureWith:(TrueLayerObjectiveCEnvironment)environment {
+  [TrueLayerObjectiveCBridge configureWith:environment
+                   additionalConfiguration:[NSDictionary dictionary]];
+}
+
++ (void)configureWith:(TrueLayerObjectiveCEnvironment)environment additionalConfiguration:(NSDictionary *)additionalConfiguration {
   TrueLayerEnvironment trueLayerEnvironment;
-  
+
   switch (environment) {
     case TrueLayerObjectiveCEnvironmentSandbox:
       trueLayerEnvironment = TrueLayerEnvironmentSandbox;
@@ -16,8 +21,9 @@
       trueLayerEnvironment = TrueLayerEnvironmentProduction;
       break;
   }
-  
-  [TrueLayerBridge configureWith:trueLayerEnvironment];
+
+  [TrueLayerBridge configureWith:trueLayerEnvironment
+         additionalConfiguration:additionalConfiguration];
 }
 
 + (void)processSinglePaymentWithContext:(TrueLayerSinglePaymentContext * _Nonnull)context
