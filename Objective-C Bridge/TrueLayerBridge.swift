@@ -8,7 +8,10 @@ public class TrueLayerBridge: NSObject {
   /// - Parameter environment: The environment to set up the SDK with.
   @objc
   public static func configure(with environment: TrueLayerEnvironment) {
-    configure(with: environment, additionalConfiguration: [:])
+    configure(
+      with: environment, 
+      additionalConfiguration: [TrueLayerAdditionalConfigurationKey.integrationType: "ObjectiveC"]
+    )
   }
     
   /// Configures and sets up the SDK for a given environment.
@@ -28,6 +31,10 @@ public class TrueLayerBridge: NSObject {
 
       case .production:
         trueLayerEnvironment = .production
+    }
+
+    if additionalConfiguration[TrueLayerAdditionalConfigurationKey.integrationType] == nil {
+      additionalConfiguration[TrueLayerAdditionalConfigurationKey.integrationType] = "ObjectiveC"
     }
 
     TrueLayer.Payments.manager.configure(
