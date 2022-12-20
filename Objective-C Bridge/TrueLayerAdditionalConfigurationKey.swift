@@ -1,3 +1,4 @@
+import Foundation
 import TrueLayerSDK
 
 /// The  keys to use when customizing the additional configuration dictionary for the TrueLayerSDK.
