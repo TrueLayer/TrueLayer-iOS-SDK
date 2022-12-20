@@ -24,7 +24,8 @@ public class TrueLayerBridge: NSObject {
     additionalConfiguration: [String: String]
   ) {
     let trueLayerEnvironment: TrueLayer.Environment
-
+    var configuration = additionalConfiguration
+    
     switch environment {
       case .sandbox:
         trueLayerEnvironment = .sandbox
@@ -34,13 +35,10 @@ public class TrueLayerBridge: NSObject {
     }
 
     if additionalConfiguration[TrueLayerAdditionalConfigurationKey.integrationType] == nil {
-      additionalConfiguration[TrueLayerAdditionalConfigurationKey.integrationType] = "ObjectiveC"
+      configuration[TrueLayerAdditionalConfigurationKey.integrationType] = "ObjectiveC"
     }
 
-    TrueLayer.Payments.manager.configure(
-      environment: trueLayerEnvironment,
-      additionalConfiguration: additionalConfiguration
-    )
+    TrueLayer.Payments.manager.configure(environment: trueLayerEnvironment, additionalConfiguration: configuration)
   }
     
   /// Presents the SDK in the app to carry out a payment.
