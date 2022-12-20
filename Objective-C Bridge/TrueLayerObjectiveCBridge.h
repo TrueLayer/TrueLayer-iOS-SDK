@@ -16,8 +16,14 @@
 /// Configures and sets up the SDK for a given environment.
 /// - Parameters:
 ///   - environment: The environment to set up the SDK with.
-///   - error: An error that occurs during configuration, for example if the environment is not valid.
 +(void)configureWith:(TrueLayerObjectiveCEnvironment)environment;
+
+/// Configures and sets up the SDK for a given environment.
+/// - Parameters:
+///   - environment: The environment to set up the SDK with.
+///   - additionalConfiguration: A dictionary with extra information to configure the SDK.
++(void)configureWith:(TrueLayerObjectiveCEnvironment)environment
+additionalConfiguration:(NSDictionary * _Nonnull)additionalConfiguration;
 
 // MARK: - Single Payment
 
