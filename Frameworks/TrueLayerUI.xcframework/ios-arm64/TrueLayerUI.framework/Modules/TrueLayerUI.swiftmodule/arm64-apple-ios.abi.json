@@ -877,6 +877,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerCore",
         "printedName": "TrueLayerCore",
         "declKind": "Import",
@@ -2927,13 +2934,210 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "IntegrationType",
+            "printedName": "IntegrationType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "objC",
+                "printedName": "objC",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.Analytics.IntegrationType.Type) -> TrueLayerUI.Analytics.IntegrationType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntegrationType",
+                        "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                        "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.Analytics.IntegrationType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IntegrationType",
+                            "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                            "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO4objCyA2EmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO15IntegrationTypeO4objCyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "reactNative",
+                "printedName": "reactNative",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.Analytics.IntegrationType.Type) -> (Swift.String) -> TrueLayerUI.Analytics.IntegrationType",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> TrueLayerUI.Analytics.IntegrationType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IntegrationType",
+                            "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                            "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(version: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.Analytics.IntegrationType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IntegrationType",
+                            "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                            "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO11reactNativeyAESS_tcAEmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO15IntegrationTypeO11reactNativeyAESS_tcAEmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "undefined",
+                "printedName": "undefined",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.Analytics.IntegrationType.Type) -> TrueLayerUI.Analytics.IntegrationType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IntegrationType",
+                        "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                        "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.Analytics.IntegrationType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "IntegrationType",
+                            "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                            "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO9undefinedyA2EmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO15IntegrationTypeO9undefinedyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntegrationType",
+                    "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                    "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntegrationType",
+                    "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                    "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO15IntegrationTypeO2eeoiySbAE_AEtFZ",
+                "moduleName": "TrueLayerUI",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO",
+            "mangledName": "$s11TrueLayerUI9AnalyticsO15IntegrationTypeO",
+            "moduleName": "TrueLayerUI",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "Manager",
             "printedName": "Manager",
             "children": [
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(in:resourceToken:sdkVersion:)",
+                "printedName": "init(in:resourceToken:sdkVersion:integrationType:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2958,11 +3162,17 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntegrationType",
+                    "printedName": "TrueLayerUI.Analytics.IntegrationType",
+                    "usr": "s:11TrueLayerUI9AnalyticsO15IntegrationTypeO"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:11TrueLayerUI9AnalyticsO7ManagerC2in13resourceToken10sdkVersionAeC11EnvironmentO_S2Stcfc",
-                "mangledName": "$s11TrueLayerUI9AnalyticsO7ManagerC2in13resourceToken10sdkVersionAeC11EnvironmentO_S2Stcfc",
+                "usr": "s:11TrueLayerUI9AnalyticsO7ManagerC2in13resourceToken10sdkVersion15integrationTypeAeC11EnvironmentO_S2SAC011IntegrationL0Otcfc",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO7ManagerC2in13resourceToken10sdkVersion15integrationTypeAeC11EnvironmentO_S2SAC011IntegrationL0Otcfc",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "Convenience",
@@ -12143,14 +12353,14 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
       "kind": "StringLiteral",
-      "offset": 5161,
+      "offset": 5588,
       "length": 9,
       "value": "\"payment\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
       "kind": "StringLiteral",
-      "offset": 5161,
+      "offset": 5588,
       "length": 9,
       "value": "\"payment\""
     },
@@ -12164,7 +12374,7 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Manager+Analytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 2128,
+      "offset": 2228,
       "length": 5,
       "value": "false"
     },

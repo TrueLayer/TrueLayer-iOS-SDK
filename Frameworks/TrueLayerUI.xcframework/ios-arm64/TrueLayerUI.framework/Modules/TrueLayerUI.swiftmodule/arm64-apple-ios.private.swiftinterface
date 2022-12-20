@@ -74,8 +74,16 @@ extension TrueLayerUI.Analytics {
   }
 }
 extension TrueLayerUI.Analytics {
+  public enum IntegrationType : Swift.Equatable {
+    case objC
+    case reactNative(version: Swift.String)
+    case undefined
+    public static func == (a: TrueLayerUI.Analytics.IntegrationType, b: TrueLayerUI.Analytics.IntegrationType) -> Swift.Bool
+  }
+}
+extension TrueLayerUI.Analytics {
   @_hasMissingDesignatedInitializers public class Manager {
-    convenience public init(in environment: TrueLayerUI.Analytics.Environment, resourceToken: Swift.String, sdkVersion: Swift.String)
+    convenience public init(in environment: TrueLayerUI.Analytics.Environment, resourceToken: Swift.String, sdkVersion: Swift.String, integrationType: TrueLayerUI.Analytics.IntegrationType)
     @objc deinit
   }
 }

@@ -205,6 +205,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerSDK"
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerUI",
         "printedName": "TrueLayerUI",
         "declKind": "Import",
@@ -3547,13 +3554,236 @@
               },
               {
                 "kind": "TypeDecl",
+                "name": "AdditionalConfiguration",
+                "printedName": "AdditionalConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeDecl",
+                    "name": "Key",
+                    "printedName": "Key",
+                    "children": [
+                      {
+                        "kind": "Var",
+                        "name": "customIntegrationType",
+                        "printedName": "customIntegrationType",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type) -> TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Key",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Key",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO21customIntegrationTypeyA2ImF",
+                        "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO21customIntegrationTypeyA2ImF",
+                        "moduleName": "TrueLayerSDK",
+                        "declAttributes": [
+                          "RawDocComment"
+                        ]
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "customIntegrationVersion",
+                        "printedName": "customIntegrationVersion",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type) -> TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Key",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Key",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO24customIntegrationVersionyA2ImF",
+                        "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO24customIntegrationVersionyA2ImF",
+                        "moduleName": "TrueLayerSDK",
+                        "declAttributes": [
+                          "RawDocComment"
+                        ]
+                      },
+                      {
+                        "kind": "Constructor",
+                        "name": "init",
+                        "printedName": "init(rawValue:)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Key",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Constructor",
+                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO8rawValueAISgSS_tcfc",
+                        "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO8rawValueAISgSS_tcfc",
+                        "moduleName": "TrueLayerSDK",
+                        "implicit": true,
+                        "init_kind": "Designated"
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "rawValue",
+                        "printedName": "rawValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Var",
+                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO8rawValueSSvp",
+                        "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO8rawValueSSvp",
+                        "moduleName": "TrueLayerSDK",
+                        "implicit": true,
+                        "accessors": [
+                          {
+                            "kind": "Accessor",
+                            "name": "Get",
+                            "printedName": "Get()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "declKind": "Accessor",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO8rawValueSSvg",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO8rawValueSSvg",
+                            "moduleName": "TrueLayerSDK",
+                            "implicit": true,
+                            "accessorKind": "get"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Enum",
+                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO",
+                    "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO",
+                    "moduleName": "TrueLayerSDK",
+                    "declAttributes": [
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "isFromExtension": true,
+                    "enumRawTypeName": "String",
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Equatable",
+                        "printedName": "Equatable",
+                        "usr": "s:SQ",
+                        "mangledName": "$sSQ"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Hashable",
+                        "printedName": "Hashable",
+                        "usr": "s:SH",
+                        "mangledName": "$sSH"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "RawRepresentable",
+                        "printedName": "RawRepresentable",
+                        "children": [
+                          {
+                            "kind": "TypeWitness",
+                            "name": "RawValue",
+                            "printedName": "RawValue",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ],
+                        "usr": "s:SY",
+                        "mangledName": "$sSY"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO",
+                "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO",
+                "moduleName": "TrueLayerSDK",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true
+              },
+              {
+                "kind": "TypeDecl",
                 "name": "Manager",
                 "printedName": "Manager",
                 "children": [
                   {
                     "kind": "Function",
                     "name": "configure",
-                    "printedName": "configure(environment:visualSettings:)",
+                    "printedName": "configure(environment:visualSettings:additionalConfiguration:)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3572,11 +3802,32 @@
                         "printedName": "TrueLayerSDK.VisualSettingsProvider",
                         "hasDefaultArg": true,
                         "usr": "s:12TrueLayerSDK22VisualSettingsProviderP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Key",
+                            "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:SD"
                       }
                     ],
                     "declKind": "Func",
-                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO7ManagerC9configure11environment14visualSettingsyAC11EnvironmentO_AA06VisualI8Provider_ptF",
-                    "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO7ManagerC9configure11environment14visualSettingsyAC11EnvironmentO_AA06VisualI8Provider_ptF",
+                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO7ManagerC9configure11environment14visualSettings23additionalConfigurationyAC11EnvironmentO_AA06VisualI8Provider_pSDyAE010AdditionalK0O3KeyOSSGtF",
+                    "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO7ManagerC9configure11environment14visualSettings23additionalConfigurationyAC11EnvironmentO_AA06VisualI8Provider_pSDyAE010AdditionalK0O3KeyOSSGtF",
                     "moduleName": "TrueLayerSDK",
                     "declAttributes": [
                       "Final",
@@ -4441,6 +4692,13 @@
       "offset": 1596,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "Dictionary",
+      "offset": 2482,
+      "length": 3,
+      "value": "[]"
     }
   ]
 }

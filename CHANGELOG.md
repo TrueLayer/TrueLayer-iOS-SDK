@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.1.0] - Road to RN
+
+Internal work was done to enable support for react native.
+
 ## [2.0.0] - Boomerang
 
 ### Added
