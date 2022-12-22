@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.swift_version = "5.7"
   s.ios.deployment_target = "14.0"
   s.vendored_frameworks = "Frameworks/TrueLayerAPI.xcframework", "Frameworks/TrueLayerCore.xcframework", "Frameworks/TrueLayerLogger.xcframework", "Frameworks/TrueLayerMockable.xcframework", "Frameworks/TrueLayerNetwork.xcframework", "Frameworks/TrueLayerSDK.xcframework", "Frameworks/TrueLayerUI.xcframework", "Frameworks/TrueLayerUtils.xcframework"
-  s.source_files = 'Objective-C Bridge/**/*.{swift,h,m}'
-  s.public_header_files = 'Objective-C Bridge/**/*.h'
+  s.source_files = 'Objective-C-Bridge/**/*.{swift,h,m}'
+  s.public_header_files = 'Objective-C-Bridge/**/*.h'
 end
