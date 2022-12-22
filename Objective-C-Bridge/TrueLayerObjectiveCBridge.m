@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "TrueLayerObjectiveCBridge.h"
+#import "TrueLayerPaymentsSDK-Swift.h"
 
 @implementation TrueLayerObjectiveCBridge
 
