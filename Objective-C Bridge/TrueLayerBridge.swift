@@ -9,11 +9,11 @@ public class TrueLayerBridge: NSObject {
   @objc
   public static func configure(with environment: TrueLayerEnvironment) {
     configure(
-      with: environment, 
+      with: environment,
       additionalConfiguration: [TrueLayerAdditionalConfigurationKey.integrationType: "ObjectiveC"]
     )
   }
-    
+
   /// Configures and sets up the SDK for a given environment.
   /// - Parameters:
   ///   - environment: The environment to set up the SDK with.
@@ -24,7 +24,9 @@ public class TrueLayerBridge: NSObject {
     additionalConfiguration: [String: String]
   ) {
     let trueLayerEnvironment: TrueLayer.Environment
-    var configuration = additionalConfiguration
+    var configuration = additionalConfiguration.reduce(into: [TrueLayer.Payments.AdditionalConfiguration.Key: String]()) {
+      $0[TrueLayerAdditionalConfigurationKey.sdkKey(from: $1.key)!] = $1.value
+    }
     
     switch environment {
       case .sandbox:
@@ -33,14 +35,14 @@ public class TrueLayerBridge: NSObject {
       case .production:
         trueLayerEnvironment = .production
     }
-
+    
     if additionalConfiguration[TrueLayerAdditionalConfigurationKey.integrationType] == nil {
-      configuration[TrueLayerAdditionalConfigurationKey.integrationType] = "ObjectiveC"
+      configuration[.customIntegrationType] = "ObjectiveC"
     }
-
+    
     TrueLayer.Payments.manager.configure(environment: trueLayerEnvironment, additionalConfiguration: configuration)
   }
-    
+  
   /// Presents the SDK in the app to carry out a payment.
   ///
   /// This method can be called multiple times to process different payments.

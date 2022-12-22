@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import "TrueLayerObjectiveCBridge.h"
-#import "TrueLayerPaymentsSDK-Swift.h"
 
 @implementation TrueLayerObjectiveCBridge
 
@@ -177,7 +176,7 @@
 
 /// Converts an @objc Swift error enum to a native Objective-C `TrueLayerSinglePaymentObjCError`.
 /// - Parameter error: The @objc Swift error to convert.
-+ (TrueLayerSinglePaymentObjCError)singlePaymentObjCErrorFromSinglePaymentError:(TrueLayerSinglePaymentError) error {
++ (TrueLayerSinglePaymentObjCError)singlePaymentObjCErrorFromSinglePaymentError:(TrueLayerSinglePaymentError)error {
   switch (error) {
     case TrueLayerSinglePaymentErrorAuthorizationFailed:
       return TrueLayerSinglePaymentObjCErrorAuthorizationFailed;
@@ -216,7 +215,7 @@
 
 /// Converts an @objc Swift error enum to a native Objective-C `TrueLayerMandateObjCError`.
 /// - Parameter error: The @objc Swift error to convert.
-+ (TrueLayerMandateObjCError)mandateObjCErrorFromMandateError:(TrueLayerMandateError) error {
++ (TrueLayerMandateObjCError)mandateObjCErrorFromMandateError:(TrueLayerMandateError)error {
   switch (error) {
     case TrueLayerMandateErrorAuthorizationFailed:
       return TrueLayerMandateObjCErrorAuthorizationFailed;
