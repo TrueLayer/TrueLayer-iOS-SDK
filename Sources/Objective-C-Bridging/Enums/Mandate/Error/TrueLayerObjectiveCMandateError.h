@@ -1,8 +1,8 @@
-#ifndef TrueLayerMandateError_h
-#define TrueLayerMandateError_h
+#ifndef TrueLayerObjectiveCMandateError_h
+#define TrueLayerObjectiveCMandateError_h
 
 /// The different final states in which a payment can be when successful.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateError) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerObjectiveCMandateError) {
   /// The authorization process failed on the user <-> bank side.
   TrueLayerMandateErrorAuthorizationFailed = 0,
   
@@ -35,7 +35,7 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateError) {
   /// The server encountered an error while processing the answer.
   TrueLayerMandateErrorServerError = 9,
   
-  /// The SDK encountered an unexpected behaviour.
+  /// The SDK encountered an unexpected behavior.
   /// This error should never occur.
   TrueLayerMandateErrorUnexpectedBehavior = 10,
   
@@ -43,4 +43,4 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateError) {
   TrueLayerMandateErrorUserCanceled = 11,
 };
 
-#endif /* TrueLayerMandateError_h */
+#endif /* TrueLayerObjectiveCMandateError_h */

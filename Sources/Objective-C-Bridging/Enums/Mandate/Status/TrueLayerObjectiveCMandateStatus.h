@@ -1,8 +1,8 @@
-#ifndef TrueLayerMandateStatus_h
-#define TrueLayerMandateStatus_h
+#ifndef TrueLayerObjectiveCMandateStatus_h
+#define TrueLayerObjectiveCMandateStatus_h
 
 /// The various statuses in which a payment can be.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateStatus) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerObjectiveCMandateStatus) {
   /// The mandate requires authorization.
   /// Pass the same context to the `processMandate(context:then:)` method.
   TrueLayerMandateStatusAuthorizationRequired = 0,
@@ -24,4 +24,4 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateStatus) {
   TrueLayerMandateStatusFailed = 4,
 };
 
-#endif /* TrueLayerMandateStatus_h */
+#endif /* TrueLayerObjectiveCMandateStatus_h */

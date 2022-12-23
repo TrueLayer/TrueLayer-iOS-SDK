@@ -1,8 +1,8 @@
-#ifndef TrueLayerSinglePaymentError_h
-#define TrueLayerSinglePaymentError_h
+#ifndef TrueLayerObjectiveCSinglePaymentError_h
+#define TrueLayerObjectiveCSinglePaymentError_h
 
 /// The different errors that can occur when processing a single payment.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentError) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerObjectiveCSinglePaymentError) {
   /// The authorization process failed on the user <-> bank side.
   TrueLayerSinglePaymentErrorAuthorizationFailed = 0,
   
@@ -41,4 +41,4 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentError) {
   TrueLayerSinglePaymentErrorUserCanceled = 10,
 };
 
-#endif /* TrueLayerSinglePaymentError_h */
+#endif /* TrueLayerObjectiveCSinglePaymentError_h */

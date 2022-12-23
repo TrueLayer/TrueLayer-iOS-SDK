@@ -1,8 +1,8 @@
-#ifndef TrueLayerSinglePaymentStatus_h
-#define TrueLayerSinglePaymentStatus_h
+#ifndef TrueLayerObjectiveCSinglePaymentStatus_h
+#define TrueLayerObjectiveCSinglePaymentStatus_h
 
 /// The various statuses in which a payment can be.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentStatus) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSingleObjectiveCPaymentStatus) {
   /// The payment requires authorisation.
   /// Pass the same context to the `processPayment(context:then:)` method.
   TrueLayerSinglePaymentStatusAuthorizationRequired = 0,
@@ -28,4 +28,4 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentStatus) {
   TrueLayerSinglePaymentStatusFailed = 5,
 };
 
-#endif /* TrueLayerSinglePaymentStatus_h */
+#endif /* TrueLayerObjectiveCSinglePaymentStatus_h */

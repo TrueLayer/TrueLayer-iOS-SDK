@@ -1,8 +1,8 @@
-#ifndef TrueLayerMandateState_h
-#define TrueLayerMandateState_h
+#ifndef TrueLayerObjectiveCMandateState_h
+#define TrueLayerObjectiveCMandateState_h
 
 /// The different final states in which a mandate can be when successful.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateState) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerObjectiveCMandateState) {
   /// The user authorized the mandate with the bank.
   TrueLayerMandateStateAuthorized = 0,
   /// Then user has been redirected to the bank to authorize the mandate.
@@ -11,4 +11,4 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerMandateState) {
   TrueLayerMandateStateRedirect = 1,
 };
 
-#endif /* TrueLayerMandateState_h */
+#endif /* TrueLayerObjectiveCMandateState_h */

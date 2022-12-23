@@ -1,8 +1,8 @@
-#ifndef TrueLayerSinglePaymentState_h
-#define TrueLayerSinglePaymentState_h
+#ifndef TrueLayerObjectiveCSinglePaymentState_h
+#define TrueLayerObjectiveCSinglePaymentState_h
 
 /// The different final states in which a payment can be when successful.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentState) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerObjectiveCSinglePaymentState) {
 /// The user authorized the payment with the bank.
   TrueLayerSinglePaymentStateAuthorized = 0,
   
@@ -20,4 +20,4 @@ typedef NS_CLOSED_ENUM(NSInteger, TrueLayerSinglePaymentState) {
   TrueLayerSinglePaymentStateWait = 4,
 };
 
-#endif /* TrueLayerSinglePaymentState_h */
+#endif /* TrueLayerSingleObjectiveCPaymentState_h */
