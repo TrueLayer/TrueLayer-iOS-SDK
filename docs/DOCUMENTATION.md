@@ -156,3 +156,40 @@ This should be treated as the favorite source of truth for the status of the man
 | `.authorized` | The user has authorized the mandate with their bank.
 | `.revoked` | The mandate has been revoked and is no longer valid.
 | `.failed` | The mandate failed. https://docs.truelayer.com/docs/mandate-statuses#more-about-failed-mandates
+
+
+## Objective-C
+
+- Import the SDK `#import "TrueLayerPaymentsSDK-Swift.h"`
+- Configure `[TrueLayerPaymentsManager configureWithEnvironment:TrueLayerEnvironmentSandbox additionalConfiguration:[[NSDictionary alloc] init]];`
+- Process a single payment as follow:
+```
+  [TrueLayerPaymentsManager processSinglePaymentWithContext:context success:^(TrueLayerSinglePaymentState state) {
+    // Do Something
+  } failure:^(TrueLayerSinglePaymentError error) {
+    // Handle Error
+  }];
+```
+Where 
+```
+  TrueLayerPresentationStyle *presentationStyle = [[TrueLayerPresentationStyle alloc] initWithPresentOn:self style:UIModalPresentationAutomatic];
+  TrueLayerSinglePaymentsPreferences *preferences = [[TrueLayerSinglePaymentsPreferences alloc] initWithPresentationStyle:presentationStyle preferredCountryCode:NULL];
+  TrueLayerSinglePaymentContext *context = [
+    [TrueLayerSinglePaymentContext alloc] initWithIdentifier:identifier token:token redirectURL:redirectURL preferences:preferences
+  ];
+```
+- Process a mandate:
+```
+  [TrueLayerPaymentsManager processMandateWithContext:context success:^(TrueLayerMandateState state) {
+    // Do something here
+  } failure:^(TrueLayerMandateError error) {
+    // Do something here
+  }];
+```
+Where
+```
+  TrueLayerMandatePreferences *preferences = [[TrueLayerMandatePreferences alloc] initWithPresentationStyle:presentationStyle];
+  TrueLayerMandateContext *context = [
+    [TrueLayerMandateContext alloc] initWithIdentifier:identifier token:token redirectURL:redirectURL preferences:preferences
+  ];
+```
