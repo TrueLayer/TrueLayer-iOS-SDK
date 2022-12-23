@@ -27,14 +27,21 @@ public enum TrueLayerSinglePaymentState: Int {
     switch sdkState {
       case .authorized:
         self = .authorized
+
       case .executed:
         self = .executed
+
       case .redirect:
         self = .redirect
+
       case .settled:
         self = .settled
+
       case .wait:
         self = .wait
+
+      @unknown default:
+        fatalError("Unhandled case")
     }
   }
 }
