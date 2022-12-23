@@ -63,6 +63,36 @@ final public class TrueLayerPaymentsManager: NSObject {
       }
     }
   }
+  
+  // MARK: Mandate
+
+  /// It presents the SDK in the app to carry out a mandate.
+  ///
+  /// This method can be called multiple times to process different mandates.
+  /// Before using this method, make sure that the SDK has been started, otherwise it will raise an error.
+  ///
+  /// - Note: this method is thread-safe.
+  ///
+  /// - Parameters:
+  ///   - context: an object that contains all the information required for the payment and to customise how the SDK behaves.
+  ///   - success: a completion handler to execute in case of success.
+  ///   - failure: a completion handler to execute in case of failure.
+  @objc
+  public static func processMandate(
+    context: TrueLayerMandateContext,
+    success: @escaping (TrueLayerMandateState) -> Void,
+    failure: @escaping (TrueLayerMandateError) -> Void
+  ) {
+    TrueLayer.Payments.manager.processMandate(context: context.sdkContext()) { result in
+      switch result {
+        case .success(let state):
+          success(TrueLayerMandateState(state));
+          
+        case .failure(let error):
+          failure(TrueLayerMandateError(error))
+      }
+    }
+  }
 }
 
 

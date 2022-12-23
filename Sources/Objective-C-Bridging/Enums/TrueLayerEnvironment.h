@@ -1,12 +1,12 @@
-#ifndef TrueLayerObjectiveCEnvironment_h
-#define TrueLayerObjectiveCEnvironment_h
+#ifndef TrueLayerEnvironment_h
+#define TrueLayerEnvironment_h
 
 /// The different final states in which a payment can be when successful.
-typedef NS_CLOSED_ENUM(NSInteger, TrueLayerObjectiveCEnvironment) {
+typedef NS_CLOSED_ENUM(NSInteger, TrueLayerEnvironment) {
   /// The sandbox environment.
   TrueLayerObjectiveCEnvironmentSandbox = 0,
   /// The production environment.
   TrueLayerObjectiveCEnvironmentProduction = 1,
 };
 
-#endif /* TrueLayerObjectiveCEnvironment_h */
+#endif /* TrueLayerEnvironment_h */

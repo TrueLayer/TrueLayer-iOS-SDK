@@ -1,9 +1,7 @@
 import Foundation
 import TrueLayerSDK
 
-/// A set of preferences that can be applied to a payment.
-///
-/// These are fully optional, and should not impact the SDK if they are `nil`.
+/// A set of preferences that can be applied to a single payment.
 @objc
 final public class TrueLayerSinglePaymentsPreferences: NSObject {
   /// The preferred country to use when displaying the providers.
