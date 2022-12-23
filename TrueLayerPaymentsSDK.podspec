@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name  = "TrueLayerPaymentsSDK"
-  s.version = "2.0.0"
+  s.version = "2.1.0"
   s.summary = "The official iOS SDK for TrueLayer's open banking."
   s.description = "This SDK provides a complete experience to consume TrueLayer's open banking APIs in a fast, safe and optimized manner."
   s.homepage = "https://github.com/TrueLayer/truelayer-ios-sdk"
@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.swift_version = "5.7"
   s.ios.deployment_target = "14.0"
   s.vendored_frameworks = "Frameworks/TrueLayerAPI.xcframework", "Frameworks/TrueLayerCore.xcframework", "Frameworks/TrueLayerLogger.xcframework", "Frameworks/TrueLayerMockable.xcframework", "Frameworks/TrueLayerNetwork.xcframework", "Frameworks/TrueLayerSDK.xcframework", "Frameworks/TrueLayerUI.xcframework", "Frameworks/TrueLayerUtils.xcframework"
+  s.source_files = 'Sources/Objective-C-Bridging/**/*.{swift,h,m}'
 end

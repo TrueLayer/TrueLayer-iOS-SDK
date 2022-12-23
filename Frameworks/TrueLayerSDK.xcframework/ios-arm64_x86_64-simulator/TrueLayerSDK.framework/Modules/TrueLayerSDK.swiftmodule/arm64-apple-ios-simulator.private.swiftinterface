@@ -30,6 +30,17 @@ extension TrueLayerSDK.TrueLayer {
     }
   }
 }
+extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration {
+  public enum Key : Swift.String {
+    case customIntegrationType
+    case customIntegrationVersion
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public struct Context {
     public let identifier: Swift.String
@@ -155,6 +166,8 @@ extension TrueLayerSDK.TrueLayer {
 extension TrueLayerSDK.TrueLayer.Payments {
   public enum Models {
   }
+  public enum AdditionalConfiguration {
+  }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models {
   public enum SinglePayment {
@@ -174,7 +187,7 @@ extension TrueLayerSDK.TrueLayer.Payments {
 }
 extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers final public class Manager {
-    final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings())
+    final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), additionalConfiguration: [TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String] = [:])
     final public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
     #if compiler(>=5.3) && $AsyncAwait
     final public func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
@@ -214,6 +227,9 @@ public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
 }
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.RawRepresentable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status : Swift.Hashable {}
