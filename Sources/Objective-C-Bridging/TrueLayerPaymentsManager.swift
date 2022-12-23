@@ -64,6 +64,33 @@ final public class TrueLayerPaymentsManager: NSObject {
     }
   }
   
+  /// Fetches the status of a single payment given its identifier and security token.
+  /// - Parameters:
+  ///   - paymentIdentifier: The unique identifier of the payment.
+  ///   - resourceToken: The security token associated with the payment.
+  /// - Returns: An instance of `TrueLayerSinglePaymentStatus`.
+  /// - Throws:
+  ///   - `TrueLayerSinglePaymentErrorSdkNotConfigured` if the configure method was never called before.
+  ///   - `TrueLayerSinglePaymentErrorInvalidToken`
+  ///   - `TrueLayerSinglePaymentErrorPaymentNotFound`
+  ///   - `TrueLayerSinglePaymentErrorServerError`
+  @objc
+  public static func singlePaymentStatus(
+    paymentIdentifier: String,
+    resourceToken: String,
+    success: @escaping (TrueLayerSinglePaymentStatus) -> Void,
+    failure: @escaping (TrueLayerSinglePaymentError) -> Void
+  ) {
+    Task {
+      do {
+        let state = try await TrueLayer.Payments.manager.singlePaymentStatus(paymentIdentifier: paymentIdentifier, resourceToken: resourceToken)
+        success(TrueLayerSinglePaymentStatus(state))
+      } catch {
+        failure(TrueLayerSinglePaymentError(error as? TrueLayer.Payments.Models.SinglePayment.Error ?? .unexpectedBehavior))
+      }
+    }
+  }
+  
   // MARK: Mandate
 
   /// It presents the SDK in the app to carry out a mandate.
@@ -90,6 +117,33 @@ final public class TrueLayerPaymentsManager: NSObject {
           
         case .failure(let error):
           failure(TrueLayerMandateError(error))
+      }
+    }
+  }
+  
+  /// Fetches the status of a mandate given its identifier and security token.
+  /// - Parameters:
+  ///   - paymentIdentifier: The unique identifier of the payment.
+  ///   - resourceToken: The security token associated with the payment.
+  /// - Returns: An instance of `TrueLayer.Payments.Models.Payment.Status`.
+  /// - Throws:
+  ///   - `TrueLayerSinglePaymentErrorSdkNotConfigured` if the configure method was never called before.
+  ///   - `TrueLayerSinglePaymentErrorInvalidToken`
+  ///   - `TrueLayerSinglePaymentErrorPaymentNotFound`
+  ///   - `TrueLayerSinglePaymentErrorServerError`
+  @objc
+  public static func mandateStatus(
+    paymentIdentifier: String,
+    resourceToken: String,
+    success: @escaping (TrueLayerMandateStatus) -> Void,
+    failure: @escaping (TrueLayerMandateError) -> Void
+  ) {
+    Task {
+      do {
+        let state = try await TrueLayer.Payments.manager.mandateStatus(mandateIdentifier: paymentIdentifier, resourceToken: resourceToken)
+        success(TrueLayerMandateStatus(state))
+      } catch {
+        failure(TrueLayerMandateError(error as? TrueLayer.Payments.Models.Mandate.Error ?? .unexpectedBehavior))
       }
     }
   }
