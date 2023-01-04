@@ -368,6 +368,14 @@ enum TrueLayerSinglePaymentStatus : NSInteger;
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 @interface TrueLayerPaymentsManager : NSObject
+/// Configures the <code>SDK</code>.
+/// This method should be called once and only once. Failing to do so will result in the <code>SDK</code> throwing an error.
+/// note:
+/// this method is thread-safe.
+/// \param environment The environment to use throughout the SDK authorization flows.
+///
+/// \param additionalConfiguration Additional configuration values to use to set up the SDK.
+///
 + (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
 /// It presents the SDK in the app to carry out a payment.
 /// This method can be called multiple times to process different payments.
@@ -453,12 +461,17 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC26TrueLayerPresentationStyle")
 @interface TrueLayerPresentationStyle : NSObject
+/// Creates an return a <code>TrueLayerPresentationStyle</code> where the <code>SDK</code> is presented in <code>modal</code>.
+/// \param viewController The <code>UIViewController</code> to present on.
+///
+/// \param style The <code>modal</code> presentation style.
+///
 - (nonnull instancetype)initWithPresentOn:(UIViewController * _Nonnull)viewController style:(UIModalPresentationStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class TrueLayerSinglePaymentsPreferences;
+@class TrueLayerSinglePaymentPreferences;
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC29TrueLayerSinglePaymentContext")
 @interface TrueLayerSinglePaymentContext : NSObject
@@ -469,7 +482,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC29TrueLayerSinglePaymentContext")
 /// The destination where the user should be redirected once the authorization flow is done outside of the app (bank website, HPP).
 @property (nonatomic, readonly, copy) NSURL * _Nonnull redirectURL;
 /// The optional preferences to apply to the payment.
-@property (nonatomic, readonly, strong) TrueLayerSinglePaymentsPreferences * _Nonnull preferences;
+@property (nonatomic, readonly, strong) TrueLayerSinglePaymentPreferences * _Nonnull preferences;
 /// Creates and returns an instance of <code>Context</code>.
 /// \param identifier The unique identifier of the payment.
 ///
@@ -479,7 +492,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC29TrueLayerSinglePaymentContext")
 ///
 /// \param preferences The preferences to apply to the payment.
 ///
-- (nonnull instancetype)initWithIdentifier:(NSString * _Nonnull)identifier token:(NSString * _Nonnull)token redirectURL:(NSURL * _Nonnull)redirectURL preferences:(TrueLayerSinglePaymentsPreferences * _Nonnull)preferences OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithIdentifier:(NSString * _Nonnull)identifier token:(NSString * _Nonnull)token redirectURL:(NSURL * _Nonnull)redirectURL preferences:(TrueLayerSinglePaymentPreferences * _Nonnull)preferences OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -513,6 +526,20 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentError, open) {
   TrueLayerSinglePaymentErrorUserCanceled = 10,
 };
 static NSString * _Nonnull const TrueLayerSinglePaymentErrorDomain = @"TrueLayerObjectiveC.TrueLayerSinglePaymentError";
+
+
+/// A set of preferences that can be applied to a single payment.
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC33TrueLayerSinglePaymentPreferences")
+@interface TrueLayerSinglePaymentPreferences : NSObject
+/// Creates a new instance of Preferences. All values default to <code>nil</code>.
+/// \param presentationStyle The presentation style of the SDK.
+///
+/// \param preferredCountryCode The preferred country to use when displaying the providers.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// The different final states in which a payment can be when successful.
 typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentState, open) {
@@ -549,20 +576,6 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 /// This is a final stage status.
   TrueLayerSinglePaymentStatusFailed = 5,
 };
-
-
-/// A set of preferences that can be applied to a single payment.
-SWIFT_CLASS("_TtC19TrueLayerObjectiveC34TrueLayerSinglePaymentsPreferences")
-@interface TrueLayerSinglePaymentsPreferences : NSObject
-/// Creates a new instance of Preferences. All values default to <code>nil</code>.
-/// \param presentationStyle The presentation style of the SDK.
-///
-/// \param preferredCountryCode The preferred country to use when displaying the providers.
-///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 #endif
 #if defined(__cplusplus)
@@ -942,6 +955,14 @@ enum TrueLayerSinglePaymentStatus : NSInteger;
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 @interface TrueLayerPaymentsManager : NSObject
+/// Configures the <code>SDK</code>.
+/// This method should be called once and only once. Failing to do so will result in the <code>SDK</code> throwing an error.
+/// note:
+/// this method is thread-safe.
+/// \param environment The environment to use throughout the SDK authorization flows.
+///
+/// \param additionalConfiguration Additional configuration values to use to set up the SDK.
+///
 + (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
 /// It presents the SDK in the app to carry out a payment.
 /// This method can be called multiple times to process different payments.
@@ -1027,12 +1048,17 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC26TrueLayerPresentationStyle")
 @interface TrueLayerPresentationStyle : NSObject
+/// Creates an return a <code>TrueLayerPresentationStyle</code> where the <code>SDK</code> is presented in <code>modal</code>.
+/// \param viewController The <code>UIViewController</code> to present on.
+///
+/// \param style The <code>modal</code> presentation style.
+///
 - (nonnull instancetype)initWithPresentOn:(UIViewController * _Nonnull)viewController style:(UIModalPresentationStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class TrueLayerSinglePaymentsPreferences;
+@class TrueLayerSinglePaymentPreferences;
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC29TrueLayerSinglePaymentContext")
 @interface TrueLayerSinglePaymentContext : NSObject
@@ -1043,7 +1069,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC29TrueLayerSinglePaymentContext")
 /// The destination where the user should be redirected once the authorization flow is done outside of the app (bank website, HPP).
 @property (nonatomic, readonly, copy) NSURL * _Nonnull redirectURL;
 /// The optional preferences to apply to the payment.
-@property (nonatomic, readonly, strong) TrueLayerSinglePaymentsPreferences * _Nonnull preferences;
+@property (nonatomic, readonly, strong) TrueLayerSinglePaymentPreferences * _Nonnull preferences;
 /// Creates and returns an instance of <code>Context</code>.
 /// \param identifier The unique identifier of the payment.
 ///
@@ -1053,7 +1079,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC29TrueLayerSinglePaymentContext")
 ///
 /// \param preferences The preferences to apply to the payment.
 ///
-- (nonnull instancetype)initWithIdentifier:(NSString * _Nonnull)identifier token:(NSString * _Nonnull)token redirectURL:(NSURL * _Nonnull)redirectURL preferences:(TrueLayerSinglePaymentsPreferences * _Nonnull)preferences OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithIdentifier:(NSString * _Nonnull)identifier token:(NSString * _Nonnull)token redirectURL:(NSURL * _Nonnull)redirectURL preferences:(TrueLayerSinglePaymentPreferences * _Nonnull)preferences OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1087,6 +1113,20 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentError, open) {
   TrueLayerSinglePaymentErrorUserCanceled = 10,
 };
 static NSString * _Nonnull const TrueLayerSinglePaymentErrorDomain = @"TrueLayerObjectiveC.TrueLayerSinglePaymentError";
+
+
+/// A set of preferences that can be applied to a single payment.
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC33TrueLayerSinglePaymentPreferences")
+@interface TrueLayerSinglePaymentPreferences : NSObject
+/// Creates a new instance of Preferences. All values default to <code>nil</code>.
+/// \param presentationStyle The presentation style of the SDK.
+///
+/// \param preferredCountryCode The preferred country to use when displaying the providers.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// The different final states in which a payment can be when successful.
 typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentState, open) {
@@ -1123,20 +1163,6 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 /// This is a final stage status.
   TrueLayerSinglePaymentStatusFailed = 5,
 };
-
-
-/// A set of preferences that can be applied to a single payment.
-SWIFT_CLASS("_TtC19TrueLayerObjectiveC34TrueLayerSinglePaymentsPreferences")
-@interface TrueLayerSinglePaymentsPreferences : NSObject
-/// Creates a new instance of Preferences. All values default to <code>nil</code>.
-/// \param presentationStyle The presentation style of the SDK.
-///
-/// \param preferredCountryCode The preferred country to use when displaying the providers.
-///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 #endif
 #if defined(__cplusplus)

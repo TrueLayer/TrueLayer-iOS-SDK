@@ -3503,7 +3503,8 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3931,7 +3932,8 @@
             "objc_name": "initWithPresentOn:style:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -4205,14 +4207,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrueLayerSinglePaymentsPreferences",
-                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentsPreferences",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences"
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(py)preferences",
-            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11preferencesAA0abD19PaymentsPreferencesCvp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11preferencesAA0abdE11PreferencesCvp",
             "moduleName": "TrueLayerObjectiveC",
             "declAttributes": [
               "Final",
@@ -4231,14 +4233,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "TrueLayerSinglePaymentsPreferences",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentsPreferences",
-                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences"
+                    "name": "TrueLayerSinglePaymentPreferences",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)preferences",
-                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11preferencesAA0abD19PaymentsPreferencesCvg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11preferencesAA0abdE11PreferencesCvg",
                 "moduleName": "TrueLayerObjectiveC",
                 "implicit": true,
                 "declAttributes": [
@@ -4280,14 +4282,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TrueLayerSinglePaymentsPreferences",
-                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentsPreferences",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences"
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)initWithIdentifier:token:redirectURL:preferences:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC10identifier5token11redirectURL11preferencesACSS_SS10Foundation0J0VAA0abD19PaymentsPreferencesCtcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC10identifier5token11redirectURL11preferencesACSS_SS10Foundation0J0VAA0abdE11PreferencesCtcfc",
             "moduleName": "TrueLayerObjectiveC",
             "objc_name": "initWithIdentifier:token:redirectURL:preferences:",
             "declAttributes": [
@@ -4405,8 +4407,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TrueLayerSinglePaymentsPreferences",
-        "printedName": "TrueLayerSinglePaymentsPreferences",
+        "name": "TrueLayerSinglePaymentPreferences",
+        "printedName": "TrueLayerSinglePaymentPreferences",
         "children": [
           {
             "kind": "Constructor",
@@ -4415,9 +4417,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrueLayerSinglePaymentsPreferences",
-                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentsPreferences",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences"
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
               },
               {
                 "kind": "TypeNominal",
@@ -4442,8 +4444,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences(im)initWithPresentationStyle:preferredCountryCode:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB25SinglePaymentsPreferencesC17presentationStyle20preferredCountryCodeAcA0ab12PresentationH0C_SSSgtcfc",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCodeAcA0ab12PresentationH0C_SSSgtcfc",
             "moduleName": "TrueLayerObjectiveC",
             "objc_name": "initWithPresentationStyle:preferredCountryCode:",
             "declAttributes": [
@@ -4460,14 +4462,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "TrueLayerSinglePaymentsPreferences",
-                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentsPreferences",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences"
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences(im)init",
-            "mangledName": "$s19TrueLayerObjectiveC0aB25SinglePaymentsPreferencesCACycfc",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesCACycfc",
             "moduleName": "TrueLayerObjectiveC",
             "overriding": true,
             "implicit": true,
@@ -4481,8 +4483,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentsPreferences",
-        "mangledName": "$s19TrueLayerObjectiveC0aB25SinglePaymentsPreferencesC",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences",
+        "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC",
         "moduleName": "TrueLayerObjectiveC",
         "declAttributes": [
           "Final",
@@ -5086,8 +5088,8 @@
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
       "kind": "StringLiteral",
       "offset": 130,
-      "length": 34,
-      "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentsPreferences\""
+      "length": 33,
+      "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences\""
     }
   ]
 }
