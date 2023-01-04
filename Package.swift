@@ -18,7 +18,8 @@ let package = Package(
               "TrueLayerMockable",
               "TrueLayerNetwork",
               "TrueLayerLogger",
-              "TrueLayerUtils"
+              "TrueLayerUtils",
+              "TrueLayerObjectiveC"
             ]
         ),
     ],
@@ -55,5 +56,9 @@ let package = Package(
         name: "TrueLayerUtils",
         path: "Frameworks/TrueLayerUtils.xcframework"
       ),
+      .binaryTarget(
+        name: "TrueLayerObjectiveC",
+        path: "Frameworks/TrueLayerObjectiveC.xcframework"
+      )
     ]
 )
