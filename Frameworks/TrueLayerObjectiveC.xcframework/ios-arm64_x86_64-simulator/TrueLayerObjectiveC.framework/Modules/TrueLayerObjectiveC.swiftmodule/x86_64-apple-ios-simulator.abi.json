@@ -3718,7 +3718,7 @@
           {
             "kind": "Function",
             "name": "mandateStatus",
-            "printedName": "mandateStatus(paymentIdentifier:resourceToken:success:failure:)",
+            "printedName": "mandateStatus(mandateIdentifier:resourceToken:success:failure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3775,11 +3775,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)mandateStatusWithPaymentIdentifier:resourceToken:success:failure:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC13mandateStatus17paymentIdentifier13resourceToken7success7failureySS_SSyAA0ab7MandateG0OcyAA0abN5ErrorOctFZ",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)mandateStatusWithMandateIdentifier:resourceToken:success:failure:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC13mandateStatus0F10Identifier13resourceToken7success7failureySS_SSyAA0ab7MandateG0OcyAA0abM5ErrorOctFZ",
             "moduleName": "TrueLayerObjectiveC",
             "static": true,
-            "objc_name": "mandateStatusWithPaymentIdentifier:resourceToken:success:failure:",
+            "objc_name": "mandateStatusWithMandateIdentifier:resourceToken:success:failure:",
             "declAttributes": [
               "Final",
               "AccessControl",

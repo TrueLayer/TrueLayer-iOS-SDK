@@ -428,31 +428,31 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 + (void)processMandateWithContext:(TrueLayerMandateContext * _Nonnull)context success:(void (^ _Nonnull)(enum TrueLayerMandateState))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
 /// Fetches the status of a mandate given its identifier and security token.
-/// \param paymentIdentifier The unique identifier of the payment.
+/// \param mandateIdentifier The unique identifier of the mandate.
 ///
-/// \param resourceToken The security token associated with the payment.
+/// \param resourceToken The security token associated with the mandate.
 ///
 ///
 /// throws:
 ///
 /// <ul>
 ///   <li>
-///     <code>TrueLayerSinglePaymentErrorSdkNotConfigured</code> if the configure method was never called before.
+///     <code>TrueLayerMandateErrorSdkNotConfigured</code> if the configure method was never called before.
 ///   </li>
 ///   <li>
-///     <code>TrueLayerSinglePaymentErrorInvalidToken</code>
+///     <code>TrueLayerMandateErrorInvalidToken</code>
 ///   </li>
 ///   <li>
-///     <code>TrueLayerSinglePaymentErrorPaymentNotFound</code>
+///     <code>TrueLayerMandateErrorPaymentNotFound</code>
 ///   </li>
 ///   <li>
-///     <code>TrueLayerSinglePaymentErrorServerError</code>
+///     <code>TrueLayerMandateErrorServerError</code>
 ///   </li>
 /// </ul>
 ///
 /// returns:
-/// An instance of <code>TrueLayer.Payments.Models.Payment.Status</code>.
-+ (void)mandateStatusWithPaymentIdentifier:(NSString * _Nonnull)paymentIdentifier resourceToken:(NSString * _Nonnull)resourceToken success:(void (^ _Nonnull)(enum TrueLayerMandateStatus))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
+/// An instance of <code>TrueLayerPaymentsMandateStatus</code>.
++ (void)mandateStatusWithMandateIdentifier:(NSString * _Nonnull)mandateIdentifier resourceToken:(NSString * _Nonnull)resourceToken success:(void (^ _Nonnull)(enum TrueLayerMandateStatus))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
