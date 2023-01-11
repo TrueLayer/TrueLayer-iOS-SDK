@@ -1,0 +1,5095 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerMandateError",
+        "printedName": "TrueLayerMandateError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorizationFailed",
+            "printedName": "authorizationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorAuthorizationFailed",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO19authorizationFailedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "connectionIssues",
+            "printedName": "connectionIssues",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorConnectionIssues",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO16connectionIssuesyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "generic",
+            "printedName": "generic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorGeneric",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO7genericyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "invalidToken",
+            "printedName": "invalidToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorInvalidToken",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO12invalidTokenyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "mandateExpired",
+            "printedName": "mandateExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorMandateExpired",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO14mandateExpiredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "mandateNotFound",
+            "printedName": "mandateNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorMandateNotFound",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO15mandateNotFoundyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "mandateRejected",
+            "printedName": "mandateRejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorMandateRejected",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO15mandateRejectedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "revoked",
+            "printedName": "revoked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorRevoked",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO7revokedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "sdkNotConfigured",
+            "printedName": "sdkNotConfigured",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorSdkNotConfigured",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO16sdkNotConfiguredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorServerError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO06serverE0yA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedBehavior",
+            "printedName": "unexpectedBehavior",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorUnexpectedBehavior",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO18unexpectedBehavioryA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "userCanceled",
+            "printedName": "userCanceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorUserCanceled",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO12userCanceledyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB12MandateErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB12MandateErrorO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB12MandateErrorO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB12MandateErrorO03_nsE6DomainSSvpZ",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO03_nsE6DomainSSvpZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB12MandateErrorO03_nsE6DomainSSvgZ",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO03_nsE6DomainSSvgZ",
+                "moduleName": "TrueLayerObjectiveC",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError",
+        "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerMandateState",
+        "printedName": "TrueLayerMandateState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorized",
+            "printedName": "authorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateState.Type) -> TrueLayerObjectiveC.TrueLayerMandateState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState@TrueLayerMandateStateAuthorized",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO10authorizedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "redirect",
+            "printedName": "redirect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateState.Type) -> TrueLayerObjectiveC.TrueLayerMandateState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState@TrueLayerMandateStateRedirect",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO8redirectyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB12MandateStateO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB12MandateStateO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB12MandateStateO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState",
+        "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerMandateStatus",
+        "printedName": "TrueLayerMandateStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorizationRequired",
+            "printedName": "authorizationRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateStatus.Type) -> TrueLayerObjectiveC.TrueLayerMandateStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus@TrueLayerMandateStatusAuthorizationRequired",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO21authorizationRequiredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "authorizing",
+            "printedName": "authorizing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateStatus.Type) -> TrueLayerObjectiveC.TrueLayerMandateStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus@TrueLayerMandateStatusAuthorizing",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO11authorizingyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "authorized",
+            "printedName": "authorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateStatus.Type) -> TrueLayerObjectiveC.TrueLayerMandateStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus@TrueLayerMandateStatusAuthorized",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO10authorizedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "revoked",
+            "printedName": "revoked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateStatus.Type) -> TrueLayerObjectiveC.TrueLayerMandateStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus@TrueLayerMandateStatusRevoked",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO7revokedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateStatus.Type) -> TrueLayerObjectiveC.TrueLayerMandateStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus@TrueLayerMandateStatusFailed",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO6failedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB13MandateStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB13MandateStatusO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB13MandateStatusO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus",
+        "mangledName": "$s19TrueLayerObjectiveC0aB13MandateStatusO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerSinglePaymentError",
+        "printedName": "TrueLayerSinglePaymentError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorizationFailed",
+            "printedName": "authorizationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorAuthorizationFailed",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO19authorizationFailedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "connectionIssues",
+            "printedName": "connectionIssues",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorConnectionIssues",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO16connectionIssuesyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "generic",
+            "printedName": "generic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorGeneric",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO7genericyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "invalidToken",
+            "printedName": "invalidToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidToken",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO12invalidTokenyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "paymentExpired",
+            "printedName": "paymentExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorPaymentExpired",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO14paymentExpiredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "paymentNotFound",
+            "printedName": "paymentNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorPaymentNotFound",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO15paymentNotFoundyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "paymentRejected",
+            "printedName": "paymentRejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorPaymentRejected",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO15paymentRejectedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "sdkNotConfigured",
+            "printedName": "sdkNotConfigured",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorSdkNotConfigured",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO16sdkNotConfiguredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorServerError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO06serverF0yA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "unexpectedBehavior",
+            "printedName": "unexpectedBehavior",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorUnexpectedBehavior",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO18unexpectedBehavioryA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "userCanceled",
+            "printedName": "userCanceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorUserCanceled",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO12userCanceledyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentErrorO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentErrorO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentErrorO03_nsF6DomainSSvpZ",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO03_nsF6DomainSSvpZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentErrorO03_nsF6DomainSSvgZ",
+                "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO03_nsF6DomainSSvgZ",
+                "moduleName": "TrueLayerObjectiveC",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError",
+        "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerSinglePaymentState",
+        "printedName": "TrueLayerSinglePaymentState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorized",
+            "printedName": "authorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateAuthorized",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO10authorizedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "executed",
+            "printedName": "executed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateExecuted",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8executedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "redirect",
+            "printedName": "redirect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateRedirect",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8redirectyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "settled",
+            "printedName": "settled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateSettled",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO7settledyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "wait",
+            "printedName": "wait",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentState",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateWait",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO4waityA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentStateO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentStateO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB18SinglePaymentStateO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState",
+        "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerSinglePaymentStatus",
+        "printedName": "TrueLayerSinglePaymentStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorizationRequired",
+            "printedName": "authorizationRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus@TrueLayerSinglePaymentStatusAuthorizationRequired",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO21authorizationRequiredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "authorizing",
+            "printedName": "authorizing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus@TrueLayerSinglePaymentStatusAuthorizing",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO11authorizingyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "authorized",
+            "printedName": "authorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus@TrueLayerSinglePaymentStatusAuthorized",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO10authorizedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "executed",
+            "printedName": "executed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus@TrueLayerSinglePaymentStatusExecuted",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO8executedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "settled",
+            "printedName": "settled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus@TrueLayerSinglePaymentStatusSettled",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO7settledyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentStatus",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus@TrueLayerSinglePaymentStatusFailed",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO6failedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB19SinglePaymentStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB19SinglePaymentStatusO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB19SinglePaymentStatusO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus",
+        "mangledName": "$s19TrueLayerObjectiveC0aB19SinglePaymentStatusO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerEnvironment",
+        "printedName": "TrueLayerEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerEnvironment.Type) -> TrueLayerObjectiveC.TrueLayerEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerEnvironment",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerEnvironment",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment@TrueLayerEnvironmentSandbox",
+            "mangledName": "$s19TrueLayerObjectiveC0aB11EnvironmentO7sandboxyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerEnvironment.Type) -> TrueLayerObjectiveC.TrueLayerEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerEnvironment",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerEnvironment",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment@TrueLayerEnvironmentProduction",
+            "mangledName": "$s19TrueLayerObjectiveC0aB11EnvironmentO10productionyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerEnvironment",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB11EnvironmentO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB11EnvironmentO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB11EnvironmentO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB11EnvironmentO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB11EnvironmentO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB11EnvironmentO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment",
+        "mangledName": "$s19TrueLayerObjectiveC0aB11EnvironmentO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerMandateContext",
+        "printedName": "TrueLayerMandateContext",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(py)identifier",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC10identifierSSvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(im)identifier",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC10identifierSSvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(py)token",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC5tokenSSvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(im)token",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC5tokenSSvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redirectURL",
+            "printedName": "redirectURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(py)redirectURL",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC11redirectURL10Foundation0G0Vvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(im)redirectURL",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC11redirectURL10Foundation0G0Vvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preferences",
+            "printedName": "preferences",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandatePreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandatePreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(py)preferences",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC11preferencesAA0abD11PreferencesCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandatePreferences",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandatePreferences",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(im)preferences",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC11preferencesAA0abD11PreferencesCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(identifier:token:redirectURL:preferences:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandateContext",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateContext",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandatePreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandatePreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(im)initWithIdentifier:token:redirectURL:preferences:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC10identifier5token11redirectURL11preferencesACSS_SS10Foundation0I0VAA0abD11PreferencesCtcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "objc_name": "initWithIdentifier:token:redirectURL:preferences:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandateContext",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateContext",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext",
+        "mangledName": "$s19TrueLayerObjectiveC0aB14MandateContextC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerMandatePreferences",
+        "printedName": "TrueLayerMandatePreferences",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(presentationStyle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandatePreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandatePreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerPresentationStyle",
+                "printedName": "TrueLayerObjectiveC.TrueLayerPresentationStyle",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences(im)initWithPresentationStyle:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18MandatePreferencesC17presentationStyleAcA0ab12PresentationG0C_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "objc_name": "initWithPresentationStyle:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandatePreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandatePreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18MandatePreferencesCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences",
+        "mangledName": "$s19TrueLayerObjectiveC0aB18MandatePreferencesC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerPaymentsManager",
+        "printedName": "TrueLayerPaymentsManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(environment:additionalConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerEnvironment",
+                "printedName": "TrueLayerObjectiveC.TrueLayerEnvironment",
+                "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerEnvironment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)configureWithEnvironment:additionalConfiguration:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC9configure11environment23additionalConfigurationyAA0aB11EnvironmentO_SDyS2SGtFZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "objc_name": "configureWithEnvironment:additionalConfiguration:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processSinglePayment",
+            "printedName": "processSinglePayment(context:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentContext",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentContext",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)processSinglePaymentWithContext:success:failure:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC20processSinglePayment7context7success7failureyAA0abgH7ContextC_yAA0abgH5StateOcyAA0abgH5ErrorOctFZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "objc_name": "processSinglePaymentWithContext:success:failure:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "singlePaymentStatus",
+            "printedName": "singlePaymentStatus(paymentIdentifier:resourceToken:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentStatus"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)singlePaymentStatusWithPaymentIdentifier:resourceToken:success:failure:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC19singlePaymentStatus17paymentIdentifier13resourceToken7success7failureySS_SSyAA0ab6SinglegH0OcyAA0aboG5ErrorOctFZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "objc_name": "singlePaymentStatusWithPaymentIdentifier:resourceToken:success:failure:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processMandate",
+            "printedName": "processMandate(context:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerMandateContext",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateContext",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandateContext"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateState) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateState",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)processMandateWithContext:success:failure:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC14processMandate7context7success7failureyAA0abG7ContextC_yAA0abG5StateOcyAA0abG5ErrorOctFZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "objc_name": "processMandateWithContext:success:failure:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mandateStatus",
+            "printedName": "mandateStatus(mandateIdentifier:resourceToken:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateStatus",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateStatus",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateStatus"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)mandateStatusWithMandateIdentifier:resourceToken:success:failure:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC13mandateStatus0F10Identifier13resourceToken7success7failureySS_SSyAA0ab7MandateG0OcyAA0abM5ErrorOctFZ",
+            "moduleName": "TrueLayerObjectiveC",
+            "static": true,
+            "objc_name": "mandateStatusWithMandateIdentifier:resourceToken:success:failure:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerPaymentsManager",
+                "printedName": "TrueLayerObjectiveC.TrueLayerPaymentsManager",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager",
+        "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerPresentationStyle",
+        "printedName": "TrueLayerPresentationStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(presentOn:style:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerPresentationStyle",
+                "printedName": "TrueLayerObjectiveC.TrueLayerPresentationStyle",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIModalPresentationStyle",
+                "printedName": "UIKit.UIModalPresentationStyle",
+                "hasDefaultArg": true,
+                "usr": "c:@E@UIModalPresentationStyle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle(im)initWithPresentOn:style:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB17PresentationStyleC9presentOn5styleACSo16UIViewControllerC_So07UIModaldE0Vtcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "objc_name": "initWithPresentOn:style:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerPresentationStyle",
+                "printedName": "TrueLayerObjectiveC.TrueLayerPresentationStyle",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB17PresentationStyleCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle",
+        "mangledName": "$s19TrueLayerObjectiveC0aB17PresentationStyleC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerSinglePaymentContext",
+        "printedName": "TrueLayerSinglePaymentContext",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(py)identifier",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC10identifierSSvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)identifier",
+                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC10identifierSSvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(py)token",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC5tokenSSvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)token",
+                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC5tokenSSvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redirectURL",
+            "printedName": "redirectURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(py)redirectURL",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11redirectURL10Foundation0H0Vvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)redirectURL",
+                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11redirectURL10Foundation0H0Vvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preferences",
+            "printedName": "preferences",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(py)preferences",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11preferencesAA0abdE11PreferencesCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentPreferences",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)preferences",
+                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC11preferencesAA0abdE11PreferencesCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(identifier:token:redirectURL:preferences:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentContext",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentContext",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)initWithIdentifier:token:redirectURL:preferences:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC10identifier5token11redirectURL11preferencesACSS_SS10Foundation0J0VAA0abdE11PreferencesCtcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "objc_name": "initWithIdentifier:token:redirectURL:preferences:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentContext",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentContext",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentContext",
+        "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentContextC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerSinglePaymentPreferences",
+        "printedName": "TrueLayerSinglePaymentPreferences",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(presentationStyle:preferredCountryCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerPresentationStyle",
+                "printedName": "TrueLayerObjectiveC.TrueLayerPresentationStyle",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCodeAcA0ab12PresentationH0C_SSSgtcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "objc_name": "initWithPresentationStyle:preferredCountryCode:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentPreferences",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences",
+        "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 416,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 517,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 619,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 667,
+      "length": 14,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 873,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 956,
+      "length": 7,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1042,
+      "length": 16,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1134,
+      "length": 11,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1248,
+      "length": 18,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1312,
+      "length": 12,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 416,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 517,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 619,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 667,
+      "length": 14,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 873,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 956,
+      "length": 7,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1042,
+      "length": 16,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1134,
+      "length": 11,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1248,
+      "length": 18,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1312,
+      "length": 12,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 419,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 532,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 652,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 772,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 419,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 532,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 652,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 772,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 496,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 699,
+      "length": 14,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 837,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 905,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1001,
+      "length": 16,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1093,
+      "length": 11,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1208,
+      "length": 18,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1272,
+      "length": 12,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 496,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 699,
+      "length": 14,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 837,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 905,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1001,
+      "length": 16,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1093,
+      "length": 11,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1208,
+      "length": 18,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1272,
+      "length": 12,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 470,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 638,
+      "length": 4,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 470,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 638,
+      "length": 4,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 538,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 744,
+      "length": 7,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 538,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 744,
+      "length": 7,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 230,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 230,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerMandateContext.swift",
+      "kind": "StringLiteral",
+      "offset": 64,
+      "length": 23,
+      "value": "\"TrueLayerObjectiveC.TrueLayerMandateContext\""
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
+      "kind": "StringLiteral",
+      "offset": 123,
+      "length": 27,
+      "value": "\"TrueLayerObjectiveC.TrueLayerMandatePreferences\""
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerPresentationStyle.swift",
+      "kind": "StringLiteral",
+      "offset": 53,
+      "length": 26,
+      "value": "\"TrueLayerObjectiveC.TrueLayerPresentationStyle\""
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentContext.swift",
+      "kind": "StringLiteral",
+      "offset": 64,
+      "length": 29,
+      "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentContext\""
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
+      "kind": "StringLiteral",
+      "offset": 130,
+      "length": 33,
+      "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences\""
+    }
+  ]
+}

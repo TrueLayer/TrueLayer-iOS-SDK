@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.2.0] - Old School II
+
+### Added
+
+- Added support for `Objective-C` via `Swift Package Manager`.
+
 ## [2.1.0] - Old School
 
 ### Added

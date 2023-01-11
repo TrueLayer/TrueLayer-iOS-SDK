@@ -4265,14 +4265,22 @@
                                     "children": [
                                       {
                                         "kind": "TypeNominal",
-                                        "name": "String",
-                                        "printedName": "Swift.String",
-                                        "usr": "s:SS"
+                                        "name": "Optional",
+                                        "printedName": "Swift.String?",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "String",
+                                            "printedName": "Swift.String",
+                                            "usr": "s:SS"
+                                          }
+                                        ],
+                                        "usr": "s:Sq"
                                       }
                                     ],
                                     "declKind": "Var",
-                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSvp",
-                                    "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSvp",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSSgvp",
+                                    "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSSgvp",
                                     "moduleName": "TrueLayerCore",
                                     "declAttributes": [
                                       "HasStorage",
@@ -4292,14 +4300,22 @@
                                         "children": [
                                           {
                                             "kind": "TypeNominal",
-                                            "name": "String",
-                                            "printedName": "Swift.String",
-                                            "usr": "s:SS"
+                                            "name": "Optional",
+                                            "printedName": "Swift.String?",
+                                            "children": [
+                                              {
+                                                "kind": "TypeNominal",
+                                                "name": "String",
+                                                "printedName": "Swift.String",
+                                                "usr": "s:SS"
+                                              }
+                                            ],
+                                            "usr": "s:Sq"
                                           }
                                         ],
                                         "declKind": "Accessor",
-                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSvg",
-                                        "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSvg",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSSgvg",
+                                        "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3keySSSgvg",
                                         "moduleName": "TrueLayerCore",
                                         "implicit": true,
                                         "spi_group_names": [
@@ -4373,9 +4389,17 @@
                                       },
                                       {
                                         "kind": "TypeNominal",
-                                        "name": "String",
-                                        "printedName": "Swift.String",
-                                        "usr": "s:SS"
+                                        "name": "Optional",
+                                        "printedName": "Swift.String?",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "String",
+                                            "printedName": "Swift.String",
+                                            "usr": "s:SS"
+                                          }
+                                        ],
+                                        "usr": "s:Sq"
                                       },
                                       {
                                         "kind": "TypeNominal",
@@ -4385,8 +4409,8 @@
                                       }
                                     ],
                                     "declKind": "Constructor",
-                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3key7defaultAOSS_SStcfc",
-                                    "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3key7defaultAOSS_SStcfc",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3key7defaultAOSSSg_SStcfc",
+                                    "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO9KeyedTextV3key7defaultAOSSSg_SStcfc",
                                     "moduleName": "TrueLayerCore",
                                     "declAttributes": [
                                       "AccessControl",
