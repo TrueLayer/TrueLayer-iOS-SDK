@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/TrueLayer/truelayer-ios-sdk"
   s.license = "git@github.com:TrueLayer/truelayer-ios-sdk/licence"
   s.author = "TrueLayer Limited"
-  s.source = { :git => "https://github.com/TrueLayer/TrueLayer-iOS-SDK.git", :branch => "release/2.2.0" }
+  s.source = { :git => "https://github.com/TrueLayer/TrueLayer-iOS-SDK.git", :branch => "#{s.version}" }
   s.platform = :ios
   s.swift_version = "5.7"
   s.ios.deployment_target = "14.0"
