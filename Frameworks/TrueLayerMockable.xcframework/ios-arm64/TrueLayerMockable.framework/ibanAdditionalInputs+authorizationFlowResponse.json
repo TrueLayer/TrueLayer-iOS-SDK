@@ -13,7 +13,6 @@
               {
                 "regex" : "^[^\\(\\)]+$",
                 "message" : {
-                  "key" : "remitter-name.name-regex",
                   "default" : "Value must consist of alphanumeric characters without brackets."
                 }
               }

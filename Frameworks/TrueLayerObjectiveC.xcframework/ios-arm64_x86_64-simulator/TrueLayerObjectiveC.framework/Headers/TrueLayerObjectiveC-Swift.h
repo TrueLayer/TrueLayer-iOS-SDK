@@ -394,26 +394,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param resourceToken The security token associated with the payment.
 ///
+/// \param success a completion handler to execute in case of success.
 ///
-/// throws:
+/// \param failure a completion handler to execute in case of failure.
 ///
-/// <ul>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorSdkNotConfigured</code> if the configure method was never called before.
-///   </li>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorInvalidToken</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorPaymentNotFound</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorServerError</code>
-///   </li>
-/// </ul>
-///
-/// returns:
-/// An instance of <code>TrueLayerSinglePaymentStatus</code>.
 + (void)singlePaymentStatusWithPaymentIdentifier:(NSString * _Nonnull)paymentIdentifier resourceToken:(NSString * _Nonnull)resourceToken success:(void (^ _Nonnull)(enum TrueLayerSinglePaymentStatus))success failure:(void (^ _Nonnull)(enum TrueLayerSinglePaymentError))failure;
 /// It presents the SDK in the app to carry out a mandate.
 /// This method can be called multiple times to process different mandates.
@@ -432,26 +416,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param resourceToken The security token associated with the mandate.
 ///
+/// \param success a completion handler to execute in case of success.
 ///
-/// throws:
+/// \param failure a completion handler to execute in case of failure.
 ///
-/// <ul>
-///   <li>
-///     <code>TrueLayerMandateErrorSdkNotConfigured</code> if the configure method was never called before.
-///   </li>
-///   <li>
-///     <code>TrueLayerMandateErrorInvalidToken</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerMandateErrorPaymentNotFound</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerMandateErrorServerError</code>
-///   </li>
-/// </ul>
-///
-/// returns:
-/// An instance of <code>TrueLayerPaymentsMandateStatus</code>.
 + (void)mandateStatusWithMandateIdentifier:(NSString * _Nonnull)mandateIdentifier resourceToken:(NSString * _Nonnull)resourceToken success:(void (^ _Nonnull)(enum TrueLayerMandateStatus))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -981,26 +949,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param resourceToken The security token associated with the payment.
 ///
+/// \param success a completion handler to execute in case of success.
 ///
-/// throws:
+/// \param failure a completion handler to execute in case of failure.
 ///
-/// <ul>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorSdkNotConfigured</code> if the configure method was never called before.
-///   </li>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorInvalidToken</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorPaymentNotFound</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerSinglePaymentErrorServerError</code>
-///   </li>
-/// </ul>
-///
-/// returns:
-/// An instance of <code>TrueLayerSinglePaymentStatus</code>.
 + (void)singlePaymentStatusWithPaymentIdentifier:(NSString * _Nonnull)paymentIdentifier resourceToken:(NSString * _Nonnull)resourceToken success:(void (^ _Nonnull)(enum TrueLayerSinglePaymentStatus))success failure:(void (^ _Nonnull)(enum TrueLayerSinglePaymentError))failure;
 /// It presents the SDK in the app to carry out a mandate.
 /// This method can be called multiple times to process different mandates.
@@ -1019,26 +971,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param resourceToken The security token associated with the mandate.
 ///
+/// \param success a completion handler to execute in case of success.
 ///
-/// throws:
+/// \param failure a completion handler to execute in case of failure.
 ///
-/// <ul>
-///   <li>
-///     <code>TrueLayerMandateErrorSdkNotConfigured</code> if the configure method was never called before.
-///   </li>
-///   <li>
-///     <code>TrueLayerMandateErrorInvalidToken</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerMandateErrorPaymentNotFound</code>
-///   </li>
-///   <li>
-///     <code>TrueLayerMandateErrorServerError</code>
-///   </li>
-/// </ul>
-///
-/// returns:
-/// An instance of <code>TrueLayerPaymentsMandateStatus</code>.
 + (void)mandateStatusWithMandateIdentifier:(NSString * _Nonnull)mandateIdentifier resourceToken:(NSString * _Nonnull)resourceToken success:(void (^ _Nonnull)(enum TrueLayerMandateStatus))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
