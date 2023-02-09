@@ -10,3 +10,11 @@ import _Concurrency
 import _StringProcessing
 public enum Network {
 }
+public protocol RetryableRequest {
+  var maxNumberOfRetries: Swift.Int { get }
+}
+extension TrueLayerNetwork.RetryableRequest {
+  public var maxNumberOfRetries: Swift.Int {
+    get
+  }
+}

@@ -2710,6 +2710,712 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerVisualSettingsProvider",
+        "printedName": "TrueLayerVisualSettingsProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "colors",
+            "printedName": "colors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerColorProvider",
+                "printedName": "TrueLayerObjectiveC.TrueLayerColorProvider",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerColorProvider"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerVisualSettingsProvider(py)colors",
+            "mangledName": "$s19TrueLayerObjectiveC0aB22VisualSettingsProviderP6colorsAA0ab5ColorF0_pvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerColorProvider",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerColorProvider",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerColorProvider"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerVisualSettingsProvider(im)colors",
+                "mangledName": "$s19TrueLayerObjectiveC0aB22VisualSettingsProviderP6colorsAA0ab5ColorF0_pvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerVisualSettingsProvider>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerVisualSettingsProvider>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerVisualSettingsProvider",
+        "mangledName": "$s19TrueLayerObjectiveC0aB22VisualSettingsProviderP",
+        "moduleName": "TrueLayerObjectiveC",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerColorProvider",
+        "printedName": "TrueLayerColorProvider",
+        "declKind": "Protocol",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerColorProvider",
+        "mangledName": "$s19TrueLayerObjectiveC0aB13ColorProviderP",
+        "moduleName": "TrueLayerObjectiveC",
+        "genericSig": "<τ_0_0 : TrueLayerObjectiveC.TrueLayerAccessoryColor, τ_0_0 : TrueLayerObjectiveC.TrueLayerBackgroundColor, τ_0_0 : TrueLayerObjectiveC.TrueLayerContentColor>",
+        "sugared_genericSig": "<Self : TrueLayerObjectiveC.TrueLayerAccessoryColor, Self : TrueLayerObjectiveC.TrueLayerBackgroundColor, Self : TrueLayerObjectiveC.TrueLayerContentColor>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TrueLayerBackgroundColor",
+            "printedName": "TrueLayerBackgroundColor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TrueLayerContentColor",
+            "printedName": "TrueLayerContentColor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TrueLayerAccessoryColor",
+            "printedName": "TrueLayerAccessoryColor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerAccessoryColor",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14AccessoryColorP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerBackgroundColor",
+        "printedName": "TrueLayerBackgroundColor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "backgroundPrimary",
+            "printedName": "backgroundPrimary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(py)backgroundPrimary",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP17backgroundPrimarySo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(im)backgroundPrimary",
+                "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP17backgroundPrimarySo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundSecondary",
+            "printedName": "backgroundSecondary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(py)backgroundSecondary",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP19backgroundSecondarySo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(im)backgroundSecondary",
+                "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP19backgroundSecondarySo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundActionPrimary",
+            "printedName": "backgroundActionPrimary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(py)backgroundActionPrimary",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP23backgroundActionPrimarySo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(im)backgroundActionPrimary",
+                "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP23backgroundActionPrimarySo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundCell",
+            "printedName": "backgroundCell",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(py)backgroundCell",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP14backgroundCellSo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor(im)backgroundCell",
+                "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP14backgroundCellSo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerBackgroundColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerBackgroundColor",
+        "mangledName": "$s19TrueLayerObjectiveC0aB15BackgroundColorP",
+        "moduleName": "TrueLayerObjectiveC",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerContentColor",
+        "printedName": "TrueLayerContentColor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "contentPrimary",
+            "printedName": "contentPrimary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(py)contentPrimary",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP14contentPrimarySo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(im)contentPrimary",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP14contentPrimarySo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentSecondary",
+            "printedName": "contentSecondary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(py)contentSecondary",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP16contentSecondarySo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(im)contentSecondary",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP16contentSecondarySo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentPrimaryInverted",
+            "printedName": "contentPrimaryInverted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(py)contentPrimaryInverted",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP22contentPrimaryInvertedSo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(im)contentPrimaryInverted",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP22contentPrimaryInvertedSo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentAction",
+            "printedName": "contentAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(py)contentAction",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP13contentActionSo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(im)contentAction",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP13contentActionSo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentError",
+            "printedName": "contentError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(py)contentError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP12contentErrorSo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor(im)contentError",
+                "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP12contentErrorSo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerContentColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerContentColor",
+        "mangledName": "$s19TrueLayerObjectiveC0aB12ContentColorP",
+        "moduleName": "TrueLayerObjectiveC",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerAccessoryColor",
+        "printedName": "TrueLayerAccessoryColor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "separator",
+            "printedName": "separator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerAccessoryColor(py)separator",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14AccessoryColorP9separatorSo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerAccessoryColor(im)separator",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14AccessoryColorP9separatorSo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerAccessoryColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerAccessoryColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uiElementBorder",
+            "printedName": "uiElementBorder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerAccessoryColor(py)uiElementBorder",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14AccessoryColorP15uiElementBorderSo7UIColorCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerAccessoryColor(im)uiElementBorder",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14AccessoryColorP15uiElementBorderSo7UIColorCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerObjectiveC.TrueLayerAccessoryColor>",
+                "sugared_genericSig": "<Self where Self : TrueLayerObjectiveC.TrueLayerAccessoryColor>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerAccessoryColor",
+        "mangledName": "$s19TrueLayerObjectiveC0aB14AccessoryColorP",
+        "moduleName": "TrueLayerObjectiveC",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",

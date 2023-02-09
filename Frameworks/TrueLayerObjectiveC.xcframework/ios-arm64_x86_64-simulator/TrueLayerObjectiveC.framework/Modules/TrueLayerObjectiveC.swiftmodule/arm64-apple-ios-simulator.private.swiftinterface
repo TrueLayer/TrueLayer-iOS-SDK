@@ -97,6 +97,28 @@ import _StringProcessing
     get
   }
 }
+@objc public protocol TrueLayerVisualSettingsProvider {
+  @objc var colors: TrueLayerObjectiveC.TrueLayerColorProvider { get }
+}
+@objc public protocol TrueLayerColorProvider : TrueLayerObjectiveC.TrueLayerAccessoryColor, TrueLayerObjectiveC.TrueLayerBackgroundColor, TrueLayerObjectiveC.TrueLayerContentColor {
+}
+@objc public protocol TrueLayerBackgroundColor {
+  @objc var backgroundPrimary: UIKit.UIColor { get }
+  @objc var backgroundSecondary: UIKit.UIColor { get }
+  @objc var backgroundActionPrimary: UIKit.UIColor { get }
+  @objc var backgroundCell: UIKit.UIColor { get }
+}
+@objc public protocol TrueLayerContentColor {
+  @objc var contentPrimary: UIKit.UIColor { get }
+  @objc var contentSecondary: UIKit.UIColor { get }
+  @objc var contentPrimaryInverted: UIKit.UIColor { get }
+  @objc var contentAction: UIKit.UIColor { get }
+  @objc var contentError: UIKit.UIColor { get }
+}
+@objc public protocol TrueLayerAccessoryColor {
+  @objc var separator: UIKit.UIColor { get }
+  @objc var uiElementBorder: UIKit.UIColor { get }
+}
 @objc public enum TrueLayerEnvironment : Swift.Int {
   case sandbox
   case production

@@ -1376,7 +1376,7 @@
                           {
                             "kind": "Function",
                             "name": "getAdditionalInputsLocalizations",
-                            "printedName": "getAdditionalInputsLocalizations()",
+                            "printedName": "getAdditionalInputsLocalizations(countryCode:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1391,11 +1391,17 @@
                                   }
                                 ],
                                 "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizationsSay0aB4Core0M0OADO6ModelsOAJO17AuthorizationFlowO0jK0O12LocalizationVGyYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizationsSay0aB4Core0M0OADO6ModelsOAJO17AuthorizationFlowO0jK0O12LocalizationVGyYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizations11countryCodeSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO0jK0O12LocalizationVGSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizations11countryCodeSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO0jK0O12LocalizationVGSS_tYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -3251,13 +3257,6 @@
       "value": "\"\/payments-providers\/*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Namespaces+API.swift",
-      "kind": "Array",
-      "offset": 1749,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 685,
@@ -3330,14 +3329,14 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3637,
+      "offset": 3705,
       "length": 26,
       "value": "\"sort_code_account_number\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3637,
+      "offset": 3705,
       "length": 26,
       "value": "\"sort_code_account_number\""
     },
@@ -3386,28 +3385,28 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 9631,
+      "offset": 9752,
       "length": 16,
       "value": "\"account_number\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 10079,
+      "offset": 10200,
       "length": 11,
       "value": "\"sort_code\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 9631,
+      "offset": 9752,
       "length": 16,
       "value": "\"account_number\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 10079,
+      "offset": 10200,
       "length": 11,
       "value": "\"sort_code\""
     },
@@ -3428,196 +3427,196 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2242,
+      "offset": 2380,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2433,
       "length": 5,
       "value": "\"uri\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2242,
+      "offset": 2380,
       "length": 6,
       "value": "\"next\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2433,
       "length": 5,
       "value": "\"uri\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5362,
+      "offset": 5614,
       "length": 22,
       "value": "\"authorization_failed\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5434,
+      "offset": 5686,
       "length": 22,
       "value": "\"constraint_violation\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5505,
+      "offset": 5757,
       "length": 23,
       "value": "\"internal_server_error\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5558,
+      "offset": 5810,
       "length": 20,
       "value": "\"insufficient_funds\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5610,
+      "offset": 5862,
       "length": 23,
       "value": "\"invalid_mandate_state\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5660,
+      "offset": 5912,
       "length": 17,
       "value": "\"invalid_request\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5705,
+      "offset": 5957,
       "length": 19,
       "value": "\"invalid_sort_code\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5751,
+      "offset": 6003,
       "length": 17,
       "value": "\"mandate_revoked\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5794,
+      "offset": 6046,
       "length": 16,
       "value": "\"provider_error\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5839,
+      "offset": 6091,
       "length": 19,
       "value": "\"provider_rejected\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5901,
+      "offset": 6153,
       "length": 15,
       "value": "\"unknown_error\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5362,
+      "offset": 5614,
       "length": 22,
       "value": "\"authorization_failed\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5434,
+      "offset": 5686,
       "length": 22,
       "value": "\"constraint_violation\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5505,
+      "offset": 5757,
       "length": 23,
       "value": "\"internal_server_error\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5558,
+      "offset": 5810,
       "length": 20,
       "value": "\"insufficient_funds\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5610,
+      "offset": 5862,
       "length": 23,
       "value": "\"invalid_mandate_state\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5660,
+      "offset": 5912,
       "length": 17,
       "value": "\"invalid_request\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5705,
+      "offset": 5957,
       "length": 19,
       "value": "\"invalid_sort_code\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5751,
+      "offset": 6003,
       "length": 17,
       "value": "\"mandate_revoked\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5794,
+      "offset": 6046,
       "length": 16,
       "value": "\"provider_error\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5839,
+      "offset": 6091,
       "length": 19,
       "value": "\"provider_rejected\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 5901,
+      "offset": 6153,
       "length": 15,
       "value": "\"unknown_error\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 6000,
+      "offset": 6252,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 6000,
+      "offset": 6252,
       "length": 24,
       "value": "\"authorization_required\""
     },
@@ -3741,14 +3740,14 @@
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfig+SharedAPIRequests.swift",
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1064,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfig+SharedAPIRequests.swift",
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1087,
       "length": 11,
@@ -3771,42 +3770,49 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3154,
+      "offset": 3408,
       "length": 4,
       "value": "\"es\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3178,
+      "offset": 3432,
       "length": 11,
       "value": "\"someToken\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3413,
+      "offset": 3667,
       "length": 11,
       "value": "\"someToken\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3639,
+      "offset": 3728,
+      "length": 4,
+      "value": "\"DE\""
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 3916,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3662,
+      "offset": 3939,
       "length": 11,
       "value": "\"someToken\""
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "Dictionary",
-      "offset": 3718,
+      "offset": 3995,
       "length": 27,
       "value": "[(\"someIBANKey\", \"someIBAN\")]"
     },

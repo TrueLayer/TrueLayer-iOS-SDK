@@ -253,6 +253,53 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class UIColor;
+
+SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC23TrueLayerAccessoryColor_")
+@protocol TrueLayerAccessoryColor
+/// The color for thin borders or divider lines that allows some underlying content to be visible.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull separator;
+/// The color of the border of some content elements.
+/// This is mainly used inside the table view cells’ images.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull uiElementBorder;
+@end
+
+
+SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC24TrueLayerBackgroundColor_")
+@protocol TrueLayerBackgroundColor
+/// The primary color of the background of the views.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundPrimary;
+/// The secondary color of the background of the views.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundSecondary;
+/// The primary color of an action item such as a button (example: Continue).
+@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundActionPrimary;
+/// The color of the background for the cells.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundCell;
+@end
+
+
+SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC21TrueLayerContentColor_")
+@protocol TrueLayerContentColor
+/// The color of the primary content. That is any generic text around the <code>SDK</code>.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull contentPrimary;
+/// The color of secondary content. This is things like explanation text.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull contentSecondary;
+/// The system color for text on a dark background.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull contentPrimaryInverted;
+/// The color for text invoking an action. Like a link for instance.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull contentAction;
+/// The color of text displaying an error.
+@property (nonatomic, readonly, strong) UIColor * _Nonnull contentError;
+@end
+
+
+/// The list of all used colors throughout the <code>SDK</code>.
+/// Customizing these values will allow the integrator to have a more linear visual experience throughout his app.
+SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC22TrueLayerColorProvider_")
+@protocol TrueLayerColorProvider <TrueLayerAccessoryColor, TrueLayerBackgroundColor, TrueLayerContentColor>
+@end
+
+
 /// The environment to use when using the TrueLayer SDK.
 typedef SWIFT_ENUM(NSInteger, TrueLayerEnvironment, open) {
 /// The sandbox environment.
@@ -544,6 +591,23 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 /// This is a final stage status.
   TrueLayerSinglePaymentStatusFailed = 5,
 };
+
+
+/// An object providing all the necessary pieces to customize the visual aspect of the <code>SDK</code>.
+/// All values fallback to a default one making easy to customize only the desired bits.
+/// The following pieces can be customized:
+/// <ul>
+///   <li>
+///     The colors, be it of the background, content etc.. All colors can be modified.
+///     They are not passed as single colors but as a pair inside <code>ChameleonColor</code>.
+///     The light color will be used in light mode, and the dark one in dark mode.
+///   </li>
+/// </ul>
+SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC31TrueLayerVisualSettingsProvider_")
+@protocol TrueLayerVisualSettingsProvider
+/// The colors to use for components in the <code>SDK</code>.
+@property (nonatomic, readonly, strong) id <TrueLayerColorProvider> _Nonnull colors;
+@end
 
 #endif
 #if defined(__cplusplus)

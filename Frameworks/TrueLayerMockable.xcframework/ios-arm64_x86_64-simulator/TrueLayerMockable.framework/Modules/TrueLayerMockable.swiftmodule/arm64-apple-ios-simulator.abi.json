@@ -394,6 +394,13 @@
             "printedName": "URLRequestConvertible",
             "usr": "s:16TrueLayerNetwork21URLRequestConvertibleP",
             "mangledName": "$s16TrueLayerNetwork21URLRequestConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RetryableRequest",
+            "printedName": "RetryableRequest",
+            "usr": "s:16TrueLayerNetwork16RetryableRequestP",
+            "mangledName": "$s16TrueLayerNetwork16RetryableRequestP"
           }
         ]
       },

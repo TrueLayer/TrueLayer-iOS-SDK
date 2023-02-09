@@ -1460,6 +1460,13 @@
             "printedName": "URLRequestConvertible",
             "usr": "s:16TrueLayerNetwork21URLRequestConvertibleP",
             "mangledName": "$s16TrueLayerNetwork21URLRequestConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RetryableRequest",
+            "printedName": "RetryableRequest",
+            "usr": "s:16TrueLayerNetwork16RetryableRequestP",
+            "mangledName": "$s16TrueLayerNetwork16RetryableRequestP"
           }
         ]
       },
@@ -1887,6 +1894,13 @@
             "printedName": "URLRequestConvertible",
             "usr": "s:16TrueLayerNetwork21URLRequestConvertibleP",
             "mangledName": "$s16TrueLayerNetwork21URLRequestConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RetryableRequest",
+            "printedName": "RetryableRequest",
+            "usr": "s:16TrueLayerNetwork16RetryableRequestP",
+            "mangledName": "$s16TrueLayerNetwork16RetryableRequestP"
           }
         ]
       },
@@ -2372,8 +2386,8 @@
         "usr": "s:16TrueLayerNetwork11HTTPRequestP",
         "mangledName": "$s16TrueLayerNetwork11HTTPRequestP",
         "moduleName": "TrueLayerNetwork",
-        "genericSig": "<τ_0_0 : TrueLayerNetwork.URLRequestConvertible>",
-        "sugared_genericSig": "<Self : TrueLayerNetwork.URLRequestConvertible>",
+        "genericSig": "<τ_0_0 : TrueLayerNetwork.RetryableRequest, τ_0_0 : TrueLayerNetwork.URLRequestConvertible>",
+        "sugared_genericSig": "<Self : TrueLayerNetwork.RetryableRequest, Self : TrueLayerNetwork.URLRequestConvertible>",
         "declAttributes": [
           "AccessControl",
           "SPIAccessControl",
@@ -2389,6 +2403,13 @@
             "printedName": "URLRequestConvertible",
             "usr": "s:16TrueLayerNetwork21URLRequestConvertibleP",
             "mangledName": "$s16TrueLayerNetwork21URLRequestConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RetryableRequest",
+            "printedName": "RetryableRequest",
+            "usr": "s:16TrueLayerNetwork16RetryableRequestP",
+            "mangledName": "$s16TrueLayerNetwork16RetryableRequestP"
           }
         ]
       },
@@ -4318,7 +4339,7 @@
               {
                 "kind": "Function",
                 "name": "request",
-                "printedName": "request(_:)",
+                "printedName": "request(_:tentativeNumber:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4329,11 +4350,18 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "hasDefaultArg": true,
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:16TrueLayerNetwork0C0O7ManagerV7requesty13ResponseModelQzxYaKAA16DecodableRequestRzlF",
-                "mangledName": "$s16TrueLayerNetwork0C0O7ManagerV7requesty13ResponseModelQzxYaKAA16DecodableRequestRzlF",
+                "usr": "s:16TrueLayerNetwork0C0O7ManagerV7request_15tentativeNumber13ResponseModelQzx_SitYaKAA16DecodableRequestRzlF",
+                "mangledName": "$s16TrueLayerNetwork0C0O7ManagerV7request_15tentativeNumber13ResponseModelQzx_SitYaKAA16DecodableRequestRzlF",
                 "moduleName": "TrueLayerNetwork",
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerNetwork.DecodableRequest>",
                 "sugared_genericSig": "<R where R : TrueLayerNetwork.DecodableRequest>",
@@ -4423,46 +4451,6 @@
                 "moduleName": "TrueLayerNetwork",
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerNetwork.DataRequest>",
                 "sugared_genericSig": "<R where R : TrueLayerNetwork.DataRequest>",
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "error",
-                "printedName": "error(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TrueLayerNetwork.Network.Error?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "TrueLayerNetwork.Network.Error",
-                        "usr": "s:16TrueLayerNetwork0C0O5ErrorO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16TrueLayerNetwork0C0O7ManagerV5error4fromAC5ErrorOSgSi_tKF",
-                "mangledName": "$s16TrueLayerNetwork0C0O7ManagerV5error4fromAC5ErrorOSgSi_tKF",
-                "moduleName": "TrueLayerNetwork",
                 "declAttributes": [
                   "AccessControl",
                   "RawDocComment"
@@ -10862,6 +10850,113 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerNetwork"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RetryableRequest",
+        "printedName": "RetryableRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "maxNumberOfRetries",
+            "printedName": "maxNumberOfRetries",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16TrueLayerNetwork16RetryableRequestP18maxNumberOfRetriesSivp",
+            "mangledName": "$s16TrueLayerNetwork16RetryableRequestP18maxNumberOfRetriesSivp",
+            "moduleName": "TrueLayerNetwork",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16TrueLayerNetwork16RetryableRequestP18maxNumberOfRetriesSivg",
+                "mangledName": "$s16TrueLayerNetwork16RetryableRequestP18maxNumberOfRetriesSivg",
+                "moduleName": "TrueLayerNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerNetwork.RetryableRequest>",
+                "sugared_genericSig": "<Self where Self : TrueLayerNetwork.RetryableRequest>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxNumberOfRetries",
+            "printedName": "maxNumberOfRetries",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16TrueLayerNetwork16RetryableRequestPAAE18maxNumberOfRetriesSivp",
+            "mangledName": "$s16TrueLayerNetwork16RetryableRequestPAAE18maxNumberOfRetriesSivp",
+            "moduleName": "TrueLayerNetwork",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16TrueLayerNetwork16RetryableRequestPAAE18maxNumberOfRetriesSivg",
+                "mangledName": "$s16TrueLayerNetwork16RetryableRequestPAAE18maxNumberOfRetriesSivg",
+                "moduleName": "TrueLayerNetwork",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerNetwork.RetryableRequest>",
+                "sugared_genericSig": "<Self where Self : TrueLayerNetwork.RetryableRequest>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:16TrueLayerNetwork16RetryableRequestP",
+        "mangledName": "$s16TrueLayerNetwork16RetryableRequestP",
+        "moduleName": "TrueLayerNetwork",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "JSONDecoder",
         "printedName": "JSONDecoder",
@@ -11506,6 +11601,13 @@
       "offset": 407,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1140,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
