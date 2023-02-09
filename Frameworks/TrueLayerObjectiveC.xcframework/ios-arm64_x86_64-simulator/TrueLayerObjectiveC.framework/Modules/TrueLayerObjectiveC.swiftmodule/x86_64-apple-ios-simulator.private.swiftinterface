@@ -141,7 +141,7 @@ import _StringProcessing
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class TrueLayerPaymentsManager : ObjectiveC.NSObject {
-  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, additionalConfiguration: [Swift.String : Swift.String])
+  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettingsProvider, additionalConfiguration: [Swift.String : Swift.String])
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
