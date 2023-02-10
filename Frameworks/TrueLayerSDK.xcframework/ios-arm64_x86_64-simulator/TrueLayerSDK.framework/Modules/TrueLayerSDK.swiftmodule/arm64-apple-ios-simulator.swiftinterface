@@ -223,9 +223,6 @@ public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
   public let colors: TrueLayerSDK.ColorProvider
   public init()
 }
-public struct DefaultColors : TrueLayerSDK.ColorProvider {
-  public init()
-}
 public protocol BackgroundColor {
   var backgroundPrimary: UIKit.UIColor { get }
   var backgroundSecondary: UIKit.UIColor { get }

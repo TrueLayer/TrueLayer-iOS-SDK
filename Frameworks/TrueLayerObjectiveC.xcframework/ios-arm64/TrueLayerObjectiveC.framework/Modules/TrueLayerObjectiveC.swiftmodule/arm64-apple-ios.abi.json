@@ -2710,6 +2710,13 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
