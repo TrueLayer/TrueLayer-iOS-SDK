@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TrueLayerObjectiveC-Swift.h</key>
 		<data>
-		cfiRHzfTiIAGUoA1+JVwrI9ur5I=
+		HSidVKEoVFiK+5/+6RN2Fa8dOtA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Kg6BUg9Xf1QRHiCan59Dl2tYmYM=
+		1G3J8+ZKuBramwj+Nft0fWiAUwI=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		m2CuFcjYDBIiOT1POjz4Rh7K1qA=
+		aUZ/l9YhkAPQr/lKzWqZJmyrIGQ=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		m2CuFcjYDBIiOT1POjz4Rh7K1qA=
+		aUZ/l9YhkAPQr/lKzWqZJmyrIGQ=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XxVlKOG0Yk7SaO+tgt5Cn2I6HyQ=
+		OFUP7L+EcnWDjybu0Gy25WAQOBA=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Kg6BUg9Xf1QRHiCan59Dl2tYmYM=
+		1G3J8+ZKuBramwj+Nft0fWiAUwI=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		E/qooictGHzMomvYJOSs68psGOE=
+		cGSzl6O6kNpi5bfGJqUfJFgY4rs=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E/qooictGHzMomvYJOSs68psGOE=
+		cGSzl6O6kNpi5bfGJqUfJFgY4rs=
 		</data>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hPU2/vQ0lzVRkhKtBxTnLwTyfms=
+		Yck46zGPZ9H2zBo5/+wUI4HGHvY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZE7evS3alPiZfxKCS8Y2OSk4otJ7HzsL00MpZGzg1rc=
+			1cB2gaJad2lHty+Ka3UrqhEzh8OqF/UZUnyXqzpq5HA=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+cV/Du/Zp1KFEoEEPeoUyvyudom8BwFVWRa5Xszv1hI=
+			Vy56Gqxs3kzN/Qc9wNj87YXuWzEZVvC1beVVOSR4bAQ=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ocGo2hwlD0WjtC4UlDUx3SV3IXAMk7gjCLqASYxcQI=
+			qejO2EVa7mZcKzNnPY13VisgsQiKU6eRLl+0185VreY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ocGo2hwlD0WjtC4UlDUx3SV3IXAMk7gjCLqASYxcQI=
+			qejO2EVa7mZcKzNnPY13VisgsQiKU6eRLl+0185VreY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fijPdjJ7GkxgaFYlk+JLgjso/bgV8Y2E5Z0ZzYrxbrs=
+			22UiyOk2lWQEW3R9DY2cDHttYpaRgck67azW6bpAzW4=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+cV/Du/Zp1KFEoEEPeoUyvyudom8BwFVWRa5Xszv1hI=
+			Vy56Gqxs3kzN/Qc9wNj87YXuWzEZVvC1beVVOSR4bAQ=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nx9lQn3ISOQSMvIpxfPFgIJsemAt/IVovBN4/HjTyBk=
+			dzQsPPxhyZfvlDkBa6FJaz3J6HERKWNzY0pNY5YxCG0=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nx9lQn3ISOQSMvIpxfPFgIJsemAt/IVovBN4/HjTyBk=
+			dzQsPPxhyZfvlDkBa6FJaz3J6HERKWNzY0pNY5YxCG0=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GwXVqYVzsrbj+UOas1+EIFhWLIPwjCSMHi68xrHoyyA=
+			36kPM2uxfVfyeV5LHLoVeffJZu/VL/HdAdA52ULo23c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

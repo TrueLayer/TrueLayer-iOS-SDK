@@ -4188,9 +4188,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TrueLayerVisualSettingsProvider",
-                "printedName": "TrueLayerObjectiveC.TrueLayerVisualSettingsProvider",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerVisualSettingsProvider"
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerVisualSettingsProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerVisualSettingsProvider",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerVisualSettingsProvider",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(pl)TrueLayerVisualSettingsProvider"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4215,7 +4223,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)configureWithEnvironment:visualSettings:additionalConfiguration:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC9configure11environment14visualSettings23additionalConfigurationyAA0aB11EnvironmentO_AA0ab6VisualI8Provider_pSDyS2SGtFZ",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC9configure11environment14visualSettings23additionalConfigurationyAA0aB11EnvironmentO_AA0ab6VisualI8Provider_pSgSDyS2SGtFZ",
             "moduleName": "TrueLayerObjectiveC",
             "static": true,
             "objc_name": "configureWithEnvironment:visualSettings:additionalConfiguration:",

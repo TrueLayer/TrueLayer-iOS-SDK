@@ -424,7 +424,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param additionalConfiguration Additional configuration values to use to set up the SDK.
 ///
-+ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(id <TrueLayerVisualSettingsProvider> _Nonnull)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
++ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(id <TrueLayerVisualSettingsProvider> _Nullable)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
 /// It presents the SDK in the app to carry out a payment.
 /// This method can be called multiple times to process different payments.
 /// Before using this method, make sure that the SDK has been started, otherwise it will raise an error.
@@ -1044,7 +1044,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param additionalConfiguration Additional configuration values to use to set up the SDK.
 ///
-+ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(id <TrueLayerVisualSettingsProvider> _Nonnull)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
++ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(id <TrueLayerVisualSettingsProvider> _Nullable)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
 /// It presents the SDK in the app to carry out a payment.
 /// This method can be called multiple times to process different payments.
 /// Before using this method, make sure that the SDK has been started, otherwise it will raise an error.
