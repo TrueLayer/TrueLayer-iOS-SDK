@@ -279,11 +279,15 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TrueLayerContentColors;
 
 /// The list of all used colors throughout the <code>SDK</code>.
 /// Customizing these values will allow the integrator to have a more linear visual experience throughout his app.
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC15TrueLayerColors")
 @interface TrueLayerColors : NSObject
+@property (nonatomic, strong) TrueLayerBackgroundColors * _Nonnull backgroundColors;
+@property (nonatomic, strong) TrueLayerContentColors * _Nonnull contentColors;
+@property (nonatomic, strong) TrueLayerAccessoryColors * _Nonnull accessoryColors;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -610,6 +614,8 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 /// </ul>
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC23TrueLayerVisualSettings")
 @interface TrueLayerVisualSettings : NSObject
+/// The colors to use for components in the <code>SDK</code>.
+@property (nonatomic, strong) TrueLayerColors * _Nonnull colors;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -902,11 +908,15 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TrueLayerContentColors;
 
 /// The list of all used colors throughout the <code>SDK</code>.
 /// Customizing these values will allow the integrator to have a more linear visual experience throughout his app.
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC15TrueLayerColors")
 @interface TrueLayerColors : NSObject
+@property (nonatomic, strong) TrueLayerBackgroundColors * _Nonnull backgroundColors;
+@property (nonatomic, strong) TrueLayerContentColors * _Nonnull contentColors;
+@property (nonatomic, strong) TrueLayerAccessoryColors * _Nonnull accessoryColors;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1233,6 +1243,8 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 /// </ul>
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC23TrueLayerVisualSettings")
 @interface TrueLayerVisualSettings : NSObject
+/// The colors to use for components in the <code>SDK</code>.
+@property (nonatomic, strong) TrueLayerColors * _Nonnull colors;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

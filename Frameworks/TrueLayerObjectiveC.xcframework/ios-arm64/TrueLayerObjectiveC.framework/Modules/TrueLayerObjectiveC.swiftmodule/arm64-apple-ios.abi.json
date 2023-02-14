@@ -2953,6 +2953,99 @@
         "printedName": "TrueLayerVisualSettings",
         "children": [
           {
+            "kind": "Var",
+            "name": "colors",
+            "printedName": "colors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerColors",
+                "printedName": "TrueLayerObjectiveC.TrueLayerColors",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(py)colors",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)colors",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)setColors:",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvs",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvM",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvM",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3050,6 +3143,282 @@
         "name": "TrueLayerColors",
         "printedName": "TrueLayerColors",
         "children": [
+          {
+            "kind": "Var",
+            "name": "backgroundColors",
+            "printedName": "backgroundColors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerBackgroundColors",
+                "printedName": "TrueLayerObjectiveC.TrueLayerBackgroundColors",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerBackgroundColors"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(py)backgroundColors",
+            "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC010backgroundD0AA0ab10BackgroundD0Cvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerBackgroundColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerBackgroundColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerBackgroundColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(im)backgroundColors",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC010backgroundD0AA0ab10BackgroundD0Cvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerBackgroundColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerBackgroundColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerBackgroundColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(im)setBackgroundColors:",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC010backgroundD0AA0ab10BackgroundD0Cvs",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB6ColorsC010backgroundD0AA0ab10BackgroundD0CvM",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC010backgroundD0AA0ab10BackgroundD0CvM",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentColors",
+            "printedName": "contentColors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerContentColors",
+                "printedName": "TrueLayerObjectiveC.TrueLayerContentColors",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerContentColors"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(py)contentColors",
+            "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC07contentD0AA0ab7ContentD0Cvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerContentColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerContentColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerContentColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(im)contentColors",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC07contentD0AA0ab7ContentD0Cvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerContentColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerContentColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerContentColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(im)setContentColors:",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC07contentD0AA0ab7ContentD0Cvs",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB6ColorsC07contentD0AA0ab7ContentD0CvM",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC07contentD0AA0ab7ContentD0CvM",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessoryColors",
+            "printedName": "accessoryColors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerAccessoryColors",
+                "printedName": "TrueLayerObjectiveC.TrueLayerAccessoryColors",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerAccessoryColors"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(py)accessoryColors",
+            "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC09accessoryD0AA0ab9AccessoryD0Cvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerAccessoryColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerAccessoryColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerAccessoryColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(im)accessoryColors",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC09accessoryD0AA0ab9AccessoryD0Cvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerAccessoryColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerAccessoryColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerAccessoryColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors(im)setAccessoryColors:",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC09accessoryD0AA0ab9AccessoryD0Cvs",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB6ColorsC09accessoryD0AA0ab9AccessoryD0CvM",
+                "mangledName": "$s19TrueLayerObjectiveC0aB6ColorsC09accessoryD0AA0ab9AccessoryD0CvM",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",

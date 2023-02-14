@@ -107,10 +107,14 @@ import _StringProcessing
   }
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
+  @objc public var colors: TrueLayerObjectiveC.TrueLayerColors
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerColors : ObjectiveC.NSObject {
+  @objc public var backgroundColors: TrueLayerObjectiveC.TrueLayerBackgroundColors
+  @objc public var contentColors: TrueLayerObjectiveC.TrueLayerContentColors
+  @objc public var accessoryColors: TrueLayerObjectiveC.TrueLayerAccessoryColors
   @objc override dynamic public init()
   @objc deinit
 }
