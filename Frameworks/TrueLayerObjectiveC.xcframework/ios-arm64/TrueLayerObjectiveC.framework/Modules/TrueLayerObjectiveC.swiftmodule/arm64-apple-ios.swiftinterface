@@ -106,24 +106,35 @@ import _StringProcessing
     get
   }
 }
-@objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
-  @objc public init(colors: TrueLayerObjectiveC.TrueLayerColors)
+@_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   @objc deinit
 }
-@objc public class TrueLayerColors : ObjectiveC.NSObject {
-  @objc public init(backgroundColors: TrueLayerObjectiveC.TrueLayerBackgroundColors, contentColors: TrueLayerObjectiveC.TrueLayerContentColors, accessoryColors: TrueLayerObjectiveC.TrueLayerAccessoryColors)
+@_inheritsConvenienceInitializers @objc public class TrueLayerColors : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   @objc deinit
 }
-@objc public class TrueLayerBackgroundColors : ObjectiveC.NSObject {
-  @objc public init(backgroundPrimary: UIKit.UIColor, backgroundSecondary: UIKit.UIColor, backgroundActionPrimary: UIKit.UIColor, backgroundCell: UIKit.UIColor)
+@_inheritsConvenienceInitializers @objc public class TrueLayerBackgroundColors : ObjectiveC.NSObject {
+  @objc public var backgroundPrimary: UIKit.UIColor
+  @objc public var backgroundSecondary: UIKit.UIColor
+  @objc public var backgroundActionPrimary: UIKit.UIColor
+  @objc public var backgroundCell: UIKit.UIColor
+  @objc override dynamic public init()
   @objc deinit
 }
-@objc public class TrueLayerContentColors : ObjectiveC.NSObject {
-  @objc public init(contentPrimary: UIKit.UIColor, contentSecondary: UIKit.UIColor, contentPrimaryInverted: UIKit.UIColor, contentAction: UIKit.UIColor, contentError: UIKit.UIColor)
+@_inheritsConvenienceInitializers @objc public class TrueLayerContentColors : ObjectiveC.NSObject {
+  @objc public var contentPrimary: UIKit.UIColor
+  @objc public var contentSecondary: UIKit.UIColor
+  @objc public var contentPrimaryInverted: UIKit.UIColor
+  @objc public var contentAction: UIKit.UIColor
+  @objc public var contentError: UIKit.UIColor
+  @objc override dynamic public init()
   @objc deinit
 }
-@objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
-  @objc public init(separator: UIKit.UIColor, uiElementBorder: UIKit.UIColor)
+@_inheritsConvenienceInitializers @objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
+  @objc public var separator: UIKit.UIColor
+  @objc public var uiElementBorder: UIKit.UIColor
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc final public class TrueLayerMandateContext : ObjectiveC.NSObject {
