@@ -97,28 +97,6 @@ import _StringProcessing
     get
   }
 }
-@objc public protocol TrueLayerVisualSettingsProvider {
-  @objc var colors: TrueLayerObjectiveC.TrueLayerColorProvider { get }
-}
-@objc public protocol TrueLayerColorProvider : TrueLayerObjectiveC.TrueLayerAccessoryColor, TrueLayerObjectiveC.TrueLayerBackgroundColor, TrueLayerObjectiveC.TrueLayerContentColor {
-}
-@objc public protocol TrueLayerBackgroundColor {
-  @objc var backgroundPrimary: UIKit.UIColor { get }
-  @objc var backgroundSecondary: UIKit.UIColor { get }
-  @objc var backgroundActionPrimary: UIKit.UIColor { get }
-  @objc var backgroundCell: UIKit.UIColor { get }
-}
-@objc public protocol TrueLayerContentColor {
-  @objc var contentPrimary: UIKit.UIColor { get }
-  @objc var contentSecondary: UIKit.UIColor { get }
-  @objc var contentPrimaryInverted: UIKit.UIColor { get }
-  @objc var contentAction: UIKit.UIColor { get }
-  @objc var contentError: UIKit.UIColor { get }
-}
-@objc public protocol TrueLayerAccessoryColor {
-  @objc var separator: UIKit.UIColor { get }
-  @objc var uiElementBorder: UIKit.UIColor { get }
-}
 @objc public enum TrueLayerEnvironment : Swift.Int {
   case sandbox
   case production
@@ -127,6 +105,26 @@ import _StringProcessing
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
+  @objc public init(colors: TrueLayerObjectiveC.TrueLayerColors)
+  @objc deinit
+}
+@objc public class TrueLayerColors : ObjectiveC.NSObject {
+  @objc public init(backgroundColors: TrueLayerObjectiveC.TrueLayerBackgroundColors, contentColors: TrueLayerObjectiveC.TrueLayerContentColors, accessoryColors: TrueLayerObjectiveC.TrueLayerAccessoryColors)
+  @objc deinit
+}
+@objc public class TrueLayerBackgroundColors : ObjectiveC.NSObject {
+  @objc public init(backgroundPrimary: UIKit.UIColor, backgroundSecondary: UIKit.UIColor, backgroundActionPrimary: UIKit.UIColor, backgroundCell: UIKit.UIColor)
+  @objc deinit
+}
+@objc public class TrueLayerContentColors : ObjectiveC.NSObject {
+  @objc public init(contentPrimary: UIKit.UIColor, contentSecondary: UIKit.UIColor, contentPrimaryInverted: UIKit.UIColor, contentAction: UIKit.UIColor, contentError: UIKit.UIColor)
+  @objc deinit
+}
+@objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
+  @objc public init(separator: UIKit.UIColor, uiElementBorder: UIKit.UIColor)
+  @objc deinit
 }
 @objc final public class TrueLayerMandateContext : ObjectiveC.NSObject {
   @objc final public let identifier: Swift.String
@@ -141,7 +139,7 @@ import _StringProcessing
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class TrueLayerPaymentsManager : ObjectiveC.NSObject {
-  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: (TrueLayerObjectiveC.TrueLayerVisualSettingsProvider)?, additionalConfiguration: [Swift.String : Swift.String])
+  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettings?, additionalConfiguration: [Swift.String : Swift.String])
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)

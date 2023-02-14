@@ -255,50 +255,40 @@ using UInt = size_t;
 #if defined(__OBJC__)
 @class UIColor;
 
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC23TrueLayerAccessoryColor_")
-@protocol TrueLayerAccessoryColor
-/// The color for thin borders or divider lines that allows some underlying content to be visible.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull separator;
-/// The color of the border of some content elements.
-/// This is mainly used inside the table view cells’ images.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull uiElementBorder;
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerAccessoryColors")
+@interface TrueLayerAccessoryColors : NSObject
+- (nonnull instancetype)initWithSeparator:(UIColor * _Nonnull)separator uiElementBorder:(UIColor * _Nonnull)uiElementBorder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC24TrueLayerBackgroundColor_")
-@protocol TrueLayerBackgroundColor
-/// The primary color of the background of the views.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundPrimary;
-/// The secondary color of the background of the views.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundSecondary;
-/// The primary color of an action item such as a button (example: Continue).
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundActionPrimary;
-/// The color of the background for the cells.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundCell;
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
+@interface TrueLayerBackgroundColors : NSObject
+- (nonnull instancetype)initWithBackgroundPrimary:(UIColor * _Nonnull)backgroundPrimary backgroundSecondary:(UIColor * _Nonnull)backgroundSecondary backgroundActionPrimary:(UIColor * _Nonnull)backgroundActionPrimary backgroundCell:(UIColor * _Nonnull)backgroundCell OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC21TrueLayerContentColor_")
-@protocol TrueLayerContentColor
-/// The color of the primary content. That is any generic text around the <code>SDK</code>.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentPrimary;
-/// The color of secondary content. This is things like explanation text.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentSecondary;
-/// The system color for text on a dark background.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentPrimaryInverted;
-/// The color for text invoking an action. Like a link for instance.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentAction;
-/// The color of text displaying an error.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentError;
-@end
-
+@class TrueLayerContentColors;
 
 /// The list of all used colors throughout the <code>SDK</code>.
 /// Customizing these values will allow the integrator to have a more linear visual experience throughout his app.
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC22TrueLayerColorProvider_")
-@protocol TrueLayerColorProvider <TrueLayerAccessoryColor, TrueLayerBackgroundColor, TrueLayerContentColor>
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC15TrueLayerColors")
+@interface TrueLayerColors : NSObject
+- (nonnull instancetype)initWithBackgroundColors:(TrueLayerBackgroundColors * _Nonnull)backgroundColors contentColors:(TrueLayerContentColors * _Nonnull)contentColors accessoryColors:(TrueLayerAccessoryColors * _Nonnull)accessoryColors OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC22TrueLayerContentColors")
+@interface TrueLayerContentColors : NSObject
+- (nonnull instancetype)initWithContentPrimary:(UIColor * _Nonnull)contentPrimary contentSecondary:(UIColor * _Nonnull)contentSecondary contentPrimaryInverted:(UIColor * _Nonnull)contentPrimaryInverted contentAction:(UIColor * _Nonnull)contentAction contentError:(UIColor * _Nonnull)contentError OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// The environment to use when using the TrueLayer SDK.
 typedef SWIFT_ENUM(NSInteger, TrueLayerEnvironment, open) {
@@ -408,7 +398,7 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateStatus, open) {
   TrueLayerMandateStatusFailed = 4,
 };
 
-@protocol TrueLayerVisualSettingsProvider;
+@class TrueLayerVisualSettings;
 @class TrueLayerSinglePaymentContext;
 enum TrueLayerSinglePaymentState : NSInteger;
 enum TrueLayerSinglePaymentError : NSInteger;
@@ -424,7 +414,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param additionalConfiguration Additional configuration values to use to set up the SDK.
 ///
-+ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(id <TrueLayerVisualSettingsProvider> _Nullable)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
++ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(TrueLayerVisualSettings * _Nullable)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
 /// It presents the SDK in the app to carry out a payment.
 /// This method can be called multiple times to process different payments.
 /// Before using this method, make sure that the SDK has been started, otherwise it will raise an error.
@@ -604,10 +594,11 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 ///     The light color will be used in light mode, and the dark one in dark mode.
 ///   </li>
 /// </ul>
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC31TrueLayerVisualSettingsProvider_")
-@protocol TrueLayerVisualSettingsProvider
-/// The colors to use for components in the <code>SDK</code>.
-@property (nonatomic, readonly, strong) id <TrueLayerColorProvider> _Nonnull colors;
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC23TrueLayerVisualSettings")
+@interface TrueLayerVisualSettings : NSObject
+- (nonnull instancetype)initWithColors:(TrueLayerColors * _Nonnull)colors OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif
@@ -875,50 +866,40 @@ using UInt = size_t;
 #if defined(__OBJC__)
 @class UIColor;
 
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC23TrueLayerAccessoryColor_")
-@protocol TrueLayerAccessoryColor
-/// The color for thin borders or divider lines that allows some underlying content to be visible.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull separator;
-/// The color of the border of some content elements.
-/// This is mainly used inside the table view cells’ images.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull uiElementBorder;
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerAccessoryColors")
+@interface TrueLayerAccessoryColors : NSObject
+- (nonnull instancetype)initWithSeparator:(UIColor * _Nonnull)separator uiElementBorder:(UIColor * _Nonnull)uiElementBorder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC24TrueLayerBackgroundColor_")
-@protocol TrueLayerBackgroundColor
-/// The primary color of the background of the views.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundPrimary;
-/// The secondary color of the background of the views.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundSecondary;
-/// The primary color of an action item such as a button (example: Continue).
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundActionPrimary;
-/// The color of the background for the cells.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull backgroundCell;
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
+@interface TrueLayerBackgroundColors : NSObject
+- (nonnull instancetype)initWithBackgroundPrimary:(UIColor * _Nonnull)backgroundPrimary backgroundSecondary:(UIColor * _Nonnull)backgroundSecondary backgroundActionPrimary:(UIColor * _Nonnull)backgroundActionPrimary backgroundCell:(UIColor * _Nonnull)backgroundCell OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC21TrueLayerContentColor_")
-@protocol TrueLayerContentColor
-/// The color of the primary content. That is any generic text around the <code>SDK</code>.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentPrimary;
-/// The color of secondary content. This is things like explanation text.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentSecondary;
-/// The system color for text on a dark background.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentPrimaryInverted;
-/// The color for text invoking an action. Like a link for instance.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentAction;
-/// The color of text displaying an error.
-@property (nonatomic, readonly, strong) UIColor * _Nonnull contentError;
-@end
-
+@class TrueLayerContentColors;
 
 /// The list of all used colors throughout the <code>SDK</code>.
 /// Customizing these values will allow the integrator to have a more linear visual experience throughout his app.
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC22TrueLayerColorProvider_")
-@protocol TrueLayerColorProvider <TrueLayerAccessoryColor, TrueLayerBackgroundColor, TrueLayerContentColor>
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC15TrueLayerColors")
+@interface TrueLayerColors : NSObject
+- (nonnull instancetype)initWithBackgroundColors:(TrueLayerBackgroundColors * _Nonnull)backgroundColors contentColors:(TrueLayerContentColors * _Nonnull)contentColors accessoryColors:(TrueLayerAccessoryColors * _Nonnull)accessoryColors OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC22TrueLayerContentColors")
+@interface TrueLayerContentColors : NSObject
+- (nonnull instancetype)initWithContentPrimary:(UIColor * _Nonnull)contentPrimary contentSecondary:(UIColor * _Nonnull)contentSecondary contentPrimaryInverted:(UIColor * _Nonnull)contentPrimaryInverted contentAction:(UIColor * _Nonnull)contentAction contentError:(UIColor * _Nonnull)contentError OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 /// The environment to use when using the TrueLayer SDK.
 typedef SWIFT_ENUM(NSInteger, TrueLayerEnvironment, open) {
@@ -1028,7 +1009,7 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateStatus, open) {
   TrueLayerMandateStatusFailed = 4,
 };
 
-@protocol TrueLayerVisualSettingsProvider;
+@class TrueLayerVisualSettings;
 @class TrueLayerSinglePaymentContext;
 enum TrueLayerSinglePaymentState : NSInteger;
 enum TrueLayerSinglePaymentError : NSInteger;
@@ -1044,7 +1025,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param additionalConfiguration Additional configuration values to use to set up the SDK.
 ///
-+ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(id <TrueLayerVisualSettingsProvider> _Nullable)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
++ (void)configureWithEnvironment:(enum TrueLayerEnvironment)environment visualSettings:(TrueLayerVisualSettings * _Nullable)visualSettings additionalConfiguration:(NSDictionary<NSString *, NSString *> * _Nonnull)additionalConfiguration;
 /// It presents the SDK in the app to carry out a payment.
 /// This method can be called multiple times to process different payments.
 /// Before using this method, make sure that the SDK has been started, otherwise it will raise an error.
@@ -1224,10 +1205,11 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 ///     The light color will be used in light mode, and the dark one in dark mode.
 ///   </li>
 /// </ul>
-SWIFT_PROTOCOL("_TtP19TrueLayerObjectiveC31TrueLayerVisualSettingsProvider_")
-@protocol TrueLayerVisualSettingsProvider
-/// The colors to use for components in the <code>SDK</code>.
-@property (nonatomic, readonly, strong) id <TrueLayerColorProvider> _Nonnull colors;
+SWIFT_CLASS("_TtC19TrueLayerObjectiveC23TrueLayerVisualSettings")
+@interface TrueLayerVisualSettings : NSObject
+- (nonnull instancetype)initWithColors:(TrueLayerColors * _Nonnull)colors OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #endif
