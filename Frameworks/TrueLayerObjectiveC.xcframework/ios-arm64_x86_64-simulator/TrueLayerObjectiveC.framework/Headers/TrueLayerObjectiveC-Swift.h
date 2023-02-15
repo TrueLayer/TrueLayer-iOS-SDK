@@ -254,6 +254,7 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class UIColor;
+@class NSString;
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerAccessoryColors")
 @interface TrueLayerAccessoryColors : NSObject
@@ -262,7 +263,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerAccessoryColors")
 /// The color of the border of some content elements.
 /// This is mainly used inside the table view cells’ images.
 @property (nonatomic, strong) UIColor * _Nonnull uiElementBorder;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSeparatorLight:(UIColor * _Nullable)separatorLight uiElementBorderLight:(UIColor * _Nullable)uiElementBorderLight separatorDark:(UIColor * _Nullable)separatorDark uiElementBorderDark:(UIColor * _Nullable)uiElementBorderDark OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithSeparatorLightHex:(NSString * _Nullable)separatorLightHex uiElementBorderLightHex:(NSString * _Nullable)uiElementBorderLightHex separatorDarkHex:(NSString * _Nullable)separatorDarkHex uiElementBorderDarkHex:(NSString * _Nullable)uiElementBorderDarkHex error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -276,7 +280,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
 @property (nonatomic, strong) UIColor * _Nonnull backgroundActionPrimary;
 /// The color of the background for the cells.
 @property (nonatomic, strong) UIColor * _Nonnull backgroundCell;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBackgroundPrimaryLight:(UIColor * _Nullable)backgroundPrimaryLight backgroundSecondaryLight:(UIColor * _Nullable)backgroundSecondaryLight backgroundActionPrimaryLight:(UIColor * _Nullable)backgroundActionPrimaryLight backgroundCellLight:(UIColor * _Nullable)backgroundCellLight backgroundPrimaryDark:(UIColor * _Nullable)backgroundPrimaryDark backgroundSecondaryDark:(UIColor * _Nullable)backgroundSecondaryDark backgroundActionPrimaryDark:(UIColor * _Nullable)backgroundActionPrimaryDark backgroundCellDark:(UIColor * _Nullable)backgroundCellDark OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithBackgroundPrimaryLightHex:(NSString * _Nullable)backgroundPrimaryLightHex backgroundSecondaryLightHex:(NSString * _Nullable)backgroundSecondaryLightHex backgroundActionPrimaryLightHex:(NSString * _Nullable)backgroundActionPrimaryLightHex backgroundCellLightHex:(NSString * _Nullable)backgroundCellLightHex backgroundPrimaryDarkHex:(NSString * _Nullable)backgroundPrimaryDarkHex backgroundSecondaryDarkHex:(NSString * _Nullable)backgroundSecondaryDarkHex backgroundActionPrimaryDarkHex:(NSString * _Nullable)backgroundActionPrimaryDarkHex backgroundCellDarkHex:(NSString * _Nullable)backgroundCellDarkHex error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class TrueLayerContentColors;
@@ -305,7 +312,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC22TrueLayerContentColors")
 @property (nonatomic, strong) UIColor * _Nonnull contentAction;
 /// The color of text displaying an error.
 @property (nonatomic, strong) UIColor * _Nonnull contentError;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithContentPrimaryLight:(UIColor * _Nullable)contentPrimaryLight contentSecondaryLight:(UIColor * _Nullable)contentSecondaryLight contentPrimaryInvertedLight:(UIColor * _Nullable)contentPrimaryInvertedLight contentActionLight:(UIColor * _Nullable)contentActionLight contentErrorLight:(UIColor * _Nullable)contentErrorLight contentPrimaryDark:(UIColor * _Nullable)contentPrimaryDark contentSecondaryDark:(UIColor * _Nullable)contentSecondaryDark contentPrimaryInvertedDark:(UIColor * _Nullable)contentPrimaryInvertedDark contentActionDark:(UIColor * _Nullable)contentActionDark contentErrorDark:(UIColor * _Nullable)contentErrorDark OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithContentPrimaryLightHex:(NSString * _Nullable)contentPrimaryLightHex contentSecondaryLightHex:(NSString * _Nullable)contentSecondaryLightHex contentPrimaryInvertedLightHex:(NSString * _Nullable)contentPrimaryInvertedLightHex contentActionLightHex:(NSString * _Nullable)contentActionLightHex contentErrorLightHex:(NSString * _Nullable)contentErrorLightHex contentPrimaryDarkHex:(NSString * _Nullable)contentPrimaryDarkHex contentSecondaryDarkHex:(NSString * _Nullable)contentSecondaryDarkHex contentPrimaryInvertedDarkHex:(NSString * _Nullable)contentPrimaryInvertedDarkHex contentActionDarkHex:(NSString * _Nullable)contentActionDarkHex contentErrorDarkHex:(NSString * _Nullable)contentErrorDarkHex error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// The environment to use when using the TrueLayer SDK.
@@ -316,7 +326,6 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerEnvironment, open) {
   TrueLayerEnvironmentProduction = 1,
 };
 
-@class NSString;
 @class NSURL;
 @class TrueLayerMandatePreferences;
 
@@ -883,6 +892,7 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class UIColor;
+@class NSString;
 
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerAccessoryColors")
 @interface TrueLayerAccessoryColors : NSObject
@@ -891,7 +901,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerAccessoryColors")
 /// The color of the border of some content elements.
 /// This is mainly used inside the table view cells’ images.
 @property (nonatomic, strong) UIColor * _Nonnull uiElementBorder;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSeparatorLight:(UIColor * _Nullable)separatorLight uiElementBorderLight:(UIColor * _Nullable)uiElementBorderLight separatorDark:(UIColor * _Nullable)separatorDark uiElementBorderDark:(UIColor * _Nullable)uiElementBorderDark OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithSeparatorLightHex:(NSString * _Nullable)separatorLightHex uiElementBorderLightHex:(NSString * _Nullable)uiElementBorderLightHex separatorDarkHex:(NSString * _Nullable)separatorDarkHex uiElementBorderDarkHex:(NSString * _Nullable)uiElementBorderDarkHex error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -905,7 +918,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
 @property (nonatomic, strong) UIColor * _Nonnull backgroundActionPrimary;
 /// The color of the background for the cells.
 @property (nonatomic, strong) UIColor * _Nonnull backgroundCell;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBackgroundPrimaryLight:(UIColor * _Nullable)backgroundPrimaryLight backgroundSecondaryLight:(UIColor * _Nullable)backgroundSecondaryLight backgroundActionPrimaryLight:(UIColor * _Nullable)backgroundActionPrimaryLight backgroundCellLight:(UIColor * _Nullable)backgroundCellLight backgroundPrimaryDark:(UIColor * _Nullable)backgroundPrimaryDark backgroundSecondaryDark:(UIColor * _Nullable)backgroundSecondaryDark backgroundActionPrimaryDark:(UIColor * _Nullable)backgroundActionPrimaryDark backgroundCellDark:(UIColor * _Nullable)backgroundCellDark OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithBackgroundPrimaryLightHex:(NSString * _Nullable)backgroundPrimaryLightHex backgroundSecondaryLightHex:(NSString * _Nullable)backgroundSecondaryLightHex backgroundActionPrimaryLightHex:(NSString * _Nullable)backgroundActionPrimaryLightHex backgroundCellLightHex:(NSString * _Nullable)backgroundCellLightHex backgroundPrimaryDarkHex:(NSString * _Nullable)backgroundPrimaryDarkHex backgroundSecondaryDarkHex:(NSString * _Nullable)backgroundSecondaryDarkHex backgroundActionPrimaryDarkHex:(NSString * _Nullable)backgroundActionPrimaryDarkHex backgroundCellDarkHex:(NSString * _Nullable)backgroundCellDarkHex error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class TrueLayerContentColors;
@@ -934,7 +950,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC22TrueLayerContentColors")
 @property (nonatomic, strong) UIColor * _Nonnull contentAction;
 /// The color of text displaying an error.
 @property (nonatomic, strong) UIColor * _Nonnull contentError;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithContentPrimaryLight:(UIColor * _Nullable)contentPrimaryLight contentSecondaryLight:(UIColor * _Nullable)contentSecondaryLight contentPrimaryInvertedLight:(UIColor * _Nullable)contentPrimaryInvertedLight contentActionLight:(UIColor * _Nullable)contentActionLight contentErrorLight:(UIColor * _Nullable)contentErrorLight contentPrimaryDark:(UIColor * _Nullable)contentPrimaryDark contentSecondaryDark:(UIColor * _Nullable)contentSecondaryDark contentPrimaryInvertedDark:(UIColor * _Nullable)contentPrimaryInvertedDark contentActionDark:(UIColor * _Nullable)contentActionDark contentErrorDark:(UIColor * _Nullable)contentErrorDark OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithContentPrimaryLightHex:(NSString * _Nullable)contentPrimaryLightHex contentSecondaryLightHex:(NSString * _Nullable)contentSecondaryLightHex contentPrimaryInvertedLightHex:(NSString * _Nullable)contentPrimaryInvertedLightHex contentActionLightHex:(NSString * _Nullable)contentActionLightHex contentErrorLightHex:(NSString * _Nullable)contentErrorLightHex contentPrimaryDarkHex:(NSString * _Nullable)contentPrimaryDarkHex contentSecondaryDarkHex:(NSString * _Nullable)contentSecondaryDarkHex contentPrimaryInvertedDarkHex:(NSString * _Nullable)contentPrimaryInvertedDarkHex contentActionDarkHex:(NSString * _Nullable)contentActionDarkHex contentErrorDarkHex:(NSString * _Nullable)contentErrorDarkHex error:(NSError * _Nullable * _Nullable)error;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// The environment to use when using the TrueLayer SDK.
@@ -945,7 +964,6 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerEnvironment, open) {
   TrueLayerEnvironmentProduction = 1,
 };
 
-@class NSString;
 @class NSURL;
 @class TrueLayerMandatePreferences;
 

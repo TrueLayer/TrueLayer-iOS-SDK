@@ -5,6 +5,7 @@
 import Foundation
 import Swift
 import TrueLayerSDK
+@_spi(TrueLayer) import TrueLayerUtils
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -118,27 +119,30 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class TrueLayerBackgroundColors : ObjectiveC.NSObject {
+@objc public class TrueLayerBackgroundColors : ObjectiveC.NSObject {
   @objc public var backgroundPrimary: UIKit.UIColor
   @objc public var backgroundSecondary: UIKit.UIColor
   @objc public var backgroundActionPrimary: UIKit.UIColor
   @objc public var backgroundCell: UIKit.UIColor
-  @objc override dynamic public init()
+  @objc public init(backgroundPrimaryLight: UIKit.UIColor? = nil, backgroundSecondaryLight: UIKit.UIColor? = nil, backgroundActionPrimaryLight: UIKit.UIColor? = nil, backgroundCellLight: UIKit.UIColor? = nil, backgroundPrimaryDark: UIKit.UIColor? = nil, backgroundSecondaryDark: UIKit.UIColor? = nil, backgroundActionPrimaryDark: UIKit.UIColor? = nil, backgroundCellDark: UIKit.UIColor? = nil)
+  @objc convenience public init(backgroundPrimaryLightHex: Swift.String?, backgroundSecondaryLightHex: Swift.String?, backgroundActionPrimaryLightHex: Swift.String?, backgroundCellLightHex: Swift.String?, backgroundPrimaryDarkHex: Swift.String?, backgroundSecondaryDarkHex: Swift.String?, backgroundActionPrimaryDarkHex: Swift.String?, backgroundCellDarkHex: Swift.String?) throws
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class TrueLayerContentColors : ObjectiveC.NSObject {
+@objc public class TrueLayerContentColors : ObjectiveC.NSObject {
   @objc public var contentPrimary: UIKit.UIColor
   @objc public var contentSecondary: UIKit.UIColor
   @objc public var contentPrimaryInverted: UIKit.UIColor
   @objc public var contentAction: UIKit.UIColor
   @objc public var contentError: UIKit.UIColor
-  @objc override dynamic public init()
+  @objc public init(contentPrimaryLight: UIKit.UIColor? = nil, contentSecondaryLight: UIKit.UIColor? = nil, contentPrimaryInvertedLight: UIKit.UIColor? = nil, contentActionLight: UIKit.UIColor? = nil, contentErrorLight: UIKit.UIColor? = nil, contentPrimaryDark: UIKit.UIColor? = nil, contentSecondaryDark: UIKit.UIColor? = nil, contentPrimaryInvertedDark: UIKit.UIColor? = nil, contentActionDark: UIKit.UIColor? = nil, contentErrorDark: UIKit.UIColor? = nil)
+  @objc convenience public init(contentPrimaryLightHex: Swift.String?, contentSecondaryLightHex: Swift.String?, contentPrimaryInvertedLightHex: Swift.String?, contentActionLightHex: Swift.String?, contentErrorLightHex: Swift.String?, contentPrimaryDarkHex: Swift.String?, contentSecondaryDarkHex: Swift.String?, contentPrimaryInvertedDarkHex: Swift.String?, contentActionDarkHex: Swift.String?, contentErrorDarkHex: Swift.String?) throws
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
+@objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
   @objc public var separator: UIKit.UIColor
   @objc public var uiElementBorder: UIKit.UIColor
-  @objc override dynamic public init()
+  @objc public init(separatorLight: UIKit.UIColor? = nil, uiElementBorderLight: UIKit.UIColor? = nil, separatorDark: UIKit.UIColor? = nil, uiElementBorderDark: UIKit.UIColor? = nil)
+  @objc convenience public init(separatorLightHex: Swift.String?, uiElementBorderLightHex: Swift.String?, separatorDarkHex: Swift.String?, uiElementBorderDarkHex: Swift.String?) throws
   @objc deinit
 }
 @objc final public class TrueLayerMandateContext : ObjectiveC.NSObject {
