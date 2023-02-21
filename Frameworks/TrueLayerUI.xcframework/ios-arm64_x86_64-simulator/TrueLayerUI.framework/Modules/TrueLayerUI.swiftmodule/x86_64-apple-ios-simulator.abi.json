@@ -4486,695 +4486,6 @@
         "moduleName": "TrueLayerUI"
       },
       {
-        "kind": "TypeDecl",
-        "name": "MakeupColors",
-        "printedName": "MakeupColors",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "backgroundPrimary",
-            "printedName": "backgroundPrimary",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV17backgroundPrimarySo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV17backgroundPrimarySo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV17backgroundPrimarySo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV17backgroundPrimarySo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "backgroundSecondary",
-            "printedName": "backgroundSecondary",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV19backgroundSecondarySo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV19backgroundSecondarySo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV19backgroundSecondarySo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV19backgroundSecondarySo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "backgroundActionPrimary",
-            "printedName": "backgroundActionPrimary",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV23backgroundActionPrimarySo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV23backgroundActionPrimarySo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV23backgroundActionPrimarySo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV23backgroundActionPrimarySo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "backgroundCell",
-            "printedName": "backgroundCell",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV14backgroundCellSo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV14backgroundCellSo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV14backgroundCellSo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV14backgroundCellSo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "contentPrimary",
-            "printedName": "contentPrimary",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV14contentPrimarySo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV14contentPrimarySo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV14contentPrimarySo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV14contentPrimarySo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "contentSecondary",
-            "printedName": "contentSecondary",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV16contentSecondarySo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV16contentSecondarySo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV16contentSecondarySo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV16contentSecondarySo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "contentPrimaryInverted",
-            "printedName": "contentPrimaryInverted",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "contentAction",
-            "printedName": "contentAction",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV13contentActionSo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV13contentActionSo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV13contentActionSo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV13contentActionSo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "contentError",
-            "printedName": "contentError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV12contentErrorSo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV12contentErrorSo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV12contentErrorSo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV12contentErrorSo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "separator",
-            "printedName": "separator",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV9separatorSo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV9separatorSo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV9separatorSo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV9separatorSo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "uiElementBorder",
-            "printedName": "uiElementBorder",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI12MakeupColorsV15uiElementBorderSo7UIColorCvp",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV15uiElementBorderSo7UIColorCvp",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI12MakeupColorsV15uiElementBorderSo7UIColorCvg",
-                "mangledName": "$s11TrueLayerUI12MakeupColorsV15uiElementBorderSo7UIColorCvg",
-                "moduleName": "TrueLayerUI",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(backgroundPrimary:backgroundSecondary:backgroundActionPrimary:backgroundCell:contentPrimary:contentSecondary:contentPrimaryInverted:contentAction:contentError:separator:uiElementBorder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MakeupColors",
-                "printedName": "TrueLayerUI.MakeupColors",
-                "usr": "s:11TrueLayerUI12MakeupColorsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:11TrueLayerUI12MakeupColorsV17backgroundPrimary0F9Secondary0f6ActionG00F4Cell07contentG00kH00kG8Inverted0kI00K5Error9separator15uiElementBorderACSo7UIColorC_A10Ptcfc",
-            "mangledName": "$s11TrueLayerUI12MakeupColorsV17backgroundPrimary0F9Secondary0f6ActionG00F4Cell07contentG00kH00kG8Inverted0kI00K5Error9separator15uiElementBorderACSo7UIColorC_A10Ptcfc",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:11TrueLayerUI12MakeupColorsV",
-        "mangledName": "$s11TrueLayerUI12MakeupColorsV",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "AccessControl",
-          "SPIAccessControl",
-          "RawDocComment"
-        ],
-        "spi_group_names": [
-          "TrueLayer"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Makeup",
-            "printedName": "Makeup",
-            "usr": "s:11TrueLayerUI6MakeupP",
-            "mangledName": "$s11TrueLayerUI6MakeupP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BackgroundColor",
-            "printedName": "BackgroundColor",
-            "usr": "s:11TrueLayerUI15BackgroundColorP",
-            "mangledName": "$s11TrueLayerUI15BackgroundColorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContentColor",
-            "printedName": "ContentColor",
-            "usr": "s:11TrueLayerUI12ContentColorP",
-            "mangledName": "$s11TrueLayerUI12ContentColorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Accessory",
-            "printedName": "Accessory",
-            "usr": "s:11TrueLayerUI9AccessoryP",
-            "mangledName": "$s11TrueLayerUI9AccessoryP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -6729,22 +6040,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "TrueLayerUI.UI.VisualSettings?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VisualSettings",
-                    "printedName": "TrueLayerUI.UI.VisualSettings",
-                    "usr": "s:11TrueLayerUI0C0O14VisualSettingsV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "VisualSettings",
+                "printedName": "TrueLayerUI.UI.VisualSettings",
+                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvpZ",
-            "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvpZ",
+            "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvpZ",
+            "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvpZ",
             "moduleName": "TrueLayerUI",
             "static": true,
             "declAttributes": [
@@ -6765,22 +6068,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "TrueLayerUI.UI.VisualSettings?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VisualSettings",
-                        "printedName": "TrueLayerUI.UI.VisualSettings",
-                        "usr": "s:11TrueLayerUI0C0O14VisualSettingsV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "VisualSettings",
+                    "printedName": "TrueLayerUI.UI.VisualSettings",
+                    "usr": "s:11TrueLayerUI0C0O14VisualSettingsV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvgZ",
-                "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvgZ",
+                "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvgZ",
+                "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvgZ",
                 "moduleName": "TrueLayerUI",
                 "static": true,
                 "implicit": true,
@@ -6801,22 +6096,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "TrueLayerUI.UI.VisualSettings?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VisualSettings",
-                        "printedName": "TrueLayerUI.UI.VisualSettings",
-                        "usr": "s:11TrueLayerUI0C0O14VisualSettingsV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "VisualSettings",
+                    "printedName": "TrueLayerUI.UI.VisualSettings",
+                    "usr": "s:11TrueLayerUI0C0O14VisualSettingsV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvsZ",
-                "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvsZ",
+                "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvsZ",
+                "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvsZ",
                 "moduleName": "TrueLayerUI",
                 "static": true,
                 "implicit": true,
@@ -6837,8 +6124,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvMZ",
-                "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VSgvMZ",
+                "usr": "s:11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvMZ",
+                "mangledName": "$s11TrueLayerUI0C0O14visualSettingsAC06VisualE0VvMZ",
                 "moduleName": "TrueLayerUI",
                 "static": true,
                 "implicit": true,
@@ -6856,8 +6143,8 @@
             "children": [
               {
                 "kind": "Var",
-                "name": "color",
-                "printedName": "color",
+                "name": "colors",
+                "printedName": "colors",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6867,8 +6154,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV5colorAA6Makeup_pvp",
-                "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV5colorAA6Makeup_pvp",
+                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV6colorsAA6Makeup_pvp",
+                "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV6colorsAA6Makeup_pvp",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "HasStorage",
@@ -6894,8 +6181,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:11TrueLayerUI0C0O14VisualSettingsV5colorAA6Makeup_pvg",
-                    "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV5colorAA6Makeup_pvg",
+                    "usr": "s:11TrueLayerUI0C0O14VisualSettingsV6colorsAA6Makeup_pvg",
+                    "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV6colorsAA6Makeup_pvg",
                     "moduleName": "TrueLayerUI",
                     "implicit": true,
                     "spi_group_names": [
@@ -6908,7 +6195,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(color:)",
+                "printedName": "init(color:fontFamilyName:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6920,12 +6207,20 @@
                     "kind": "TypeNominal",
                     "name": "Makeup",
                     "printedName": "TrueLayerUI.Makeup",
+                    "hasDefaultArg": true,
                     "usr": "s:11TrueLayerUI6MakeupP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "hasDefaultArg": true,
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV5colorAeA6Makeup_p_tcfc",
-                "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV5colorAeA6Makeup_p_tcfc",
+                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV5color14fontFamilyNameAeA6Makeup_p_SStcfc",
+                "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV5color14fontFamilyNameAeA6Makeup_p_SStcfc",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "AccessControl",
@@ -6948,6 +6243,705 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "MakeupColors",
+            "printedName": "MakeupColors",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "backgroundPrimary",
+                "printedName": "backgroundPrimary",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV17backgroundPrimarySo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV17backgroundPrimarySo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV17backgroundPrimarySo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV17backgroundPrimarySo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "backgroundSecondary",
+                "printedName": "backgroundSecondary",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV19backgroundSecondarySo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV19backgroundSecondarySo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV19backgroundSecondarySo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV19backgroundSecondarySo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "backgroundActionPrimary",
+                "printedName": "backgroundActionPrimary",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV23backgroundActionPrimarySo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV23backgroundActionPrimarySo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV23backgroundActionPrimarySo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV23backgroundActionPrimarySo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "backgroundCell",
+                "printedName": "backgroundCell",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV14backgroundCellSo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV14backgroundCellSo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV14backgroundCellSo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV14backgroundCellSo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "contentPrimary",
+                "printedName": "contentPrimary",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV14contentPrimarySo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV14contentPrimarySo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV14contentPrimarySo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV14contentPrimarySo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "contentSecondary",
+                "printedName": "contentSecondary",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV16contentSecondarySo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV16contentSecondarySo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV16contentSecondarySo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV16contentSecondarySo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "contentPrimaryInverted",
+                "printedName": "contentPrimaryInverted",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV22contentPrimaryInvertedSo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "contentAction",
+                "printedName": "contentAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV13contentActionSo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV13contentActionSo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV13contentActionSo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV13contentActionSo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "contentError",
+                "printedName": "contentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV12contentErrorSo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV12contentErrorSo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV12contentErrorSo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV12contentErrorSo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "separator",
+                "printedName": "separator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV9separatorSo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV9separatorSo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV9separatorSo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV9separatorSo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "uiElementBorder",
+                "printedName": "uiElementBorder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV15uiElementBorderSo7UIColorCvp",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV15uiElementBorderSo7UIColorCvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV15uiElementBorderSo7UIColorCvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV15uiElementBorderSo7UIColorCvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(backgroundPrimary:backgroundSecondary:backgroundActionPrimary:backgroundCell:contentPrimary:contentSecondary:contentPrimaryInverted:contentAction:contentError:separator:uiElementBorder:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MakeupColors",
+                    "printedName": "TrueLayerUI.UI.MakeupColors",
+                    "usr": "s:11TrueLayerUI0C0O12MakeupColorsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11TrueLayerUI0C0O12MakeupColorsV17backgroundPrimary0F9Secondary0f6ActionG00F4Cell07contentG00kH00kG8Inverted0kI00K5Error9separator15uiElementBorderAESo7UIColorC_A10Rtcfc",
+                "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV17backgroundPrimary0F9Secondary0f6ActionG00F4Cell07contentG00kH00kG8Inverted0kI00K5Error9separator15uiElementBorderAESo7UIColorC_A10Rtcfc",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11TrueLayerUI0C0O12MakeupColorsV",
+            "mangledName": "$s11TrueLayerUI0C0O12MakeupColorsV",
+            "moduleName": "TrueLayerUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Makeup",
+                "printedName": "Makeup",
+                "usr": "s:11TrueLayerUI6MakeupP",
+                "mangledName": "$s11TrueLayerUI6MakeupP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BackgroundColor",
+                "printedName": "BackgroundColor",
+                "usr": "s:11TrueLayerUI15BackgroundColorP",
+                "mangledName": "$s11TrueLayerUI15BackgroundColorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "ContentColor",
+                "printedName": "ContentColor",
+                "usr": "s:11TrueLayerUI12ContentColorP",
+                "mangledName": "$s11TrueLayerUI12ContentColorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Accessory",
+                "printedName": "Accessory",
+                "usr": "s:11TrueLayerUI9AccessoryP",
+                "mangledName": "$s11TrueLayerUI9AccessoryP"
+              }
             ]
           },
           {
@@ -12254,6 +12248,144 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIFont",
+        "printedName": "UIFont",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "systemFontFamily",
+            "printedName": "systemFontFamily",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So6UIFontC11TrueLayerUIE16systemFontFamilySSvpZ",
+            "mangledName": "$sSo6UIFontC11TrueLayerUIE16systemFontFamilySSvpZ",
+            "moduleName": "TrueLayerUI",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIFontC11TrueLayerUIE16systemFontFamilySSvgZ",
+                "mangledName": "$sSo6UIFontC11TrueLayerUIE16systemFontFamilySSvgZ",
+                "moduleName": "TrueLayerUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIFont",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIFont",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -13494,7 +13626,7 @@
     {
       "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Components\/BulletList\/View+BulletList.swift",
       "kind": "BooleanLiteral",
-      "offset": 5269,
+      "offset": 5283,
       "length": 5,
       "value": "false"
     },

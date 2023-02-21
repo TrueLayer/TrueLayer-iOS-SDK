@@ -5,6 +5,7 @@
 import Foundation
 import Swift
 import TrueLayerSDK
+import TrueLayerUI
 import TrueLayerUtils
 import UIKit
 import _Concurrency
@@ -107,11 +108,6 @@ import _StringProcessing
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
-  @objc public var colors: TrueLayerObjectiveC.TrueLayerColors
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc public class TrueLayerColors : ObjectiveC.NSObject {
   @objc public var backgroundColors: TrueLayerObjectiveC.TrueLayerBackgroundColors
   @objc public var contentColors: TrueLayerObjectiveC.TrueLayerContentColors
@@ -180,6 +176,12 @@ import _StringProcessing
 }
 @objc final public class TrueLayerSinglePaymentPreferences : ObjectiveC.NSObject {
   @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
+  @objc public var colors: TrueLayerObjectiveC.TrueLayerColors
+  @objc public var fontFamilyName: Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 extension TrueLayerObjectiveC.TrueLayerMandateError : Swift.Equatable {}

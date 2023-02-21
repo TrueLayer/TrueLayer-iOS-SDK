@@ -115,23 +115,25 @@ public enum Analytics {
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public struct VisualSettings {
-    @_spi(TrueLayer) public let color: TrueLayerUI.Makeup
-    @_spi(TrueLayer) public init(color: TrueLayerUI.Makeup)
+    @_spi(TrueLayer) public let colors: TrueLayerUI.Makeup
+    @_spi(TrueLayer) public init(color: TrueLayerUI.Makeup = UI.MakeupColors(), fontFamilyName: Swift.String = UIFont.systemFontFamily)
   }
 }
-@_spi(TrueLayer) public struct MakeupColors : TrueLayerUI.Makeup {
-  @_spi(TrueLayer) public let backgroundPrimary: UIKit.UIColor
-  @_spi(TrueLayer) public let backgroundSecondary: UIKit.UIColor
-  @_spi(TrueLayer) public let backgroundActionPrimary: UIKit.UIColor
-  @_spi(TrueLayer) public let backgroundCell: UIKit.UIColor
-  @_spi(TrueLayer) public let contentPrimary: UIKit.UIColor
-  @_spi(TrueLayer) public let contentSecondary: UIKit.UIColor
-  @_spi(TrueLayer) public let contentPrimaryInverted: UIKit.UIColor
-  @_spi(TrueLayer) public let contentAction: UIKit.UIColor
-  @_spi(TrueLayer) public let contentError: UIKit.UIColor
-  @_spi(TrueLayer) public let separator: UIKit.UIColor
-  @_spi(TrueLayer) public let uiElementBorder: UIKit.UIColor
-  @_spi(TrueLayer) public init(backgroundPrimary: UIKit.UIColor, backgroundSecondary: UIKit.UIColor, backgroundActionPrimary: UIKit.UIColor, backgroundCell: UIKit.UIColor, contentPrimary: UIKit.UIColor, contentSecondary: UIKit.UIColor, contentPrimaryInverted: UIKit.UIColor, contentAction: UIKit.UIColor, contentError: UIKit.UIColor, separator: UIKit.UIColor, uiElementBorder: UIKit.UIColor)
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public struct MakeupColors : TrueLayerUI.Makeup {
+    @_spi(TrueLayer) public let backgroundPrimary: UIKit.UIColor
+    @_spi(TrueLayer) public let backgroundSecondary: UIKit.UIColor
+    @_spi(TrueLayer) public let backgroundActionPrimary: UIKit.UIColor
+    @_spi(TrueLayer) public let backgroundCell: UIKit.UIColor
+    @_spi(TrueLayer) public let contentPrimary: UIKit.UIColor
+    @_spi(TrueLayer) public let contentSecondary: UIKit.UIColor
+    @_spi(TrueLayer) public let contentPrimaryInverted: UIKit.UIColor
+    @_spi(TrueLayer) public let contentAction: UIKit.UIColor
+    @_spi(TrueLayer) public let contentError: UIKit.UIColor
+    @_spi(TrueLayer) public let separator: UIKit.UIColor
+    @_spi(TrueLayer) public let uiElementBorder: UIKit.UIColor
+    @_spi(TrueLayer) public init(backgroundPrimary: UIKit.UIColor = .systemBackground, backgroundSecondary: UIKit.UIColor = .secondarySystemBackground, backgroundActionPrimary: UIKit.UIColor = .systemBlue, backgroundCell: UIKit.UIColor = .clear, contentPrimary: UIKit.UIColor = .label, contentSecondary: UIKit.UIColor = .secondaryLabel, contentPrimaryInverted: UIKit.UIColor = .white, contentAction: UIKit.UIColor = .systemBlue, contentError: UIKit.UIColor = .systemRed, separator: UIKit.UIColor = .separator, uiElementBorder: UIKit.UIColor = .systemGray5)
+  }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public struct Dependencies : TrueLayerUI.SomeDependencies {
@@ -183,7 +185,7 @@ public enum Analytics {
   }
 }
 @_spi(TrueLayer) public enum UI {
-  @_spi(TrueLayer) public static var visualSettings: TrueLayerUI.UI.VisualSettings!
+  @_spi(TrueLayer) public static var visualSettings: TrueLayerUI.UI.VisualSettings
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public enum SDKRoot {
@@ -286,6 +288,11 @@ public enum Analytics {
   @_spi(TrueLayer) public typealias Mandate = Swift.Result<TrueLayerCore.Core.Payments.Models.Mandate.State, TrueLayerUI.UI.TrueLayerError>
   @_spi(TrueLayer) case singlePayment(_: TrueLayerUI.AuthorizationFlowResult.SinglePayment)
   @_spi(TrueLayer) case mandate(_: TrueLayerUI.AuthorizationFlowResult.Mandate)
+}
+extension UIKit.UIFont {
+  @_spi(TrueLayer) public static var systemFontFamily: Swift.String {
+    get
+  }
 }
 @_spi(TrueLayer) public protocol URLOpener {
   @_spi(TrueLayer) func open(_ url: Foundation.URL)

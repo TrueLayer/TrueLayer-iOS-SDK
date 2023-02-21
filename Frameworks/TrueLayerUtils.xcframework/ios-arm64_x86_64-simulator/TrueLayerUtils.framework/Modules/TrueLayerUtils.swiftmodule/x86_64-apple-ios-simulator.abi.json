@@ -4072,6 +4072,9 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
             "throwing": true,
             "init_kind": "Convenience"
           }

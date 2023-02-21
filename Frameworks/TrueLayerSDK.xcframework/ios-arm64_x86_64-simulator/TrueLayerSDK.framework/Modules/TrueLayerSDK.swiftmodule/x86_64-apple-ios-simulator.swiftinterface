@@ -216,11 +216,18 @@ extension UIKit.UIColor {
 }
 public protocol VisualSettingsProvider {
   var colors: TrueLayerSDK.ColorProvider { get }
+  var fontFamilyName: Swift.String { get }
+}
+extension TrueLayerSDK.VisualSettingsProvider {
+  public var fontFamilyName: Swift.String {
+    get
+  }
 }
 public protocol ColorProvider : TrueLayerSDK.AccessoryColor, TrueLayerSDK.BackgroundColor, TrueLayerSDK.ContentColor {
 }
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
   public let colors: TrueLayerSDK.ColorProvider
+  public let fontFamilyName: Swift.String
   public init()
 }
 public protocol BackgroundColor {

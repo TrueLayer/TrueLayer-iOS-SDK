@@ -292,8 +292,11 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC25TrueLayerBackgroundColors")
 /// Customizing these values will allow the integrator to have a more linear visual experience throughout his app.
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC15TrueLayerColors")
 @interface TrueLayerColors : NSObject
+/// The background colors inside the <code>SDK</code>.
 @property (nonatomic, strong) TrueLayerBackgroundColors * _Nonnull backgroundColors;
+/// The content colors inside the <code>SDK</code>.
 @property (nonatomic, strong) TrueLayerContentColors * _Nonnull contentColors;
+/// The accessory colors inside the <code>SDK</code>.
 @property (nonatomic, strong) TrueLayerAccessoryColors * _Nonnull accessoryColors;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -438,6 +441,8 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 /// note:
 /// this method is thread-safe.
 /// \param environment The environment to use throughout the SDK authorization flows.
+///
+/// \param visualSettings An instance of <code>TrueLayerVisualSettings</code> providing customisations for the <code>SDK</code>.
 ///
 /// \param additionalConfiguration Additional configuration values to use to set up the SDK.
 ///
@@ -620,11 +625,17 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 ///     They are not passed as single colors but as a pair inside <code>ChameleonColor</code>.
 ///     The light color will be used in light mode, and the dark one in dark mode.
 ///   </li>
+///   <li>
+///     The font family.
+///   </li>
 /// </ul>
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC23TrueLayerVisualSettings")
 @interface TrueLayerVisualSettings : NSObject
 /// The colors to use for components in the <code>SDK</code>.
 @property (nonatomic, strong) TrueLayerColors * _Nonnull colors;
+/// The family name of the font.
+/// If the SDK fails to load it, it will fallback on the system’s font.
+@property (nonatomic, copy) NSString * _Nonnull fontFamilyName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -100,8 +100,8 @@ extension Foundation.TimeZone : TrueLayerUtils.TimezoneInformationProvider {
     @_spi(TrueLayer) get
   }
 }
-extension UIKit.UIColor {
-  convenience public init(hex code: Swift.String) throws
+@_spi(TrueLayer) extension UIKit.UIColor {
+  @_spi(TrueLayer) convenience public init(hex code: Swift.String) throws
 }
 @_spi(TrueLayer) extension UIKit.UIScreen {
   @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var relativeWidth: CoreFoundation.CGFloat {

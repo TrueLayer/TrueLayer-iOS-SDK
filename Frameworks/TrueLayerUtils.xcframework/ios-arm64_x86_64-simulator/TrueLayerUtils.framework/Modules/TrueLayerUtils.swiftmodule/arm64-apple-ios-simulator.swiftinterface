@@ -37,6 +37,3 @@ public protocol TimezoneInformationProvider {
 }
 extension Foundation.TimeZone : TrueLayerUtils.TimezoneInformationProvider {
 }
-extension UIKit.UIColor {
-  convenience public init(hex code: Swift.String) throws
-}

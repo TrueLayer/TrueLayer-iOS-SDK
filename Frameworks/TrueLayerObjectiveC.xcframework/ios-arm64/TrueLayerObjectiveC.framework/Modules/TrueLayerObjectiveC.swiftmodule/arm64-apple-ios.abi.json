@@ -2942,6 +2942,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUI",
+        "printedName": "TrueLayerUI",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
         "declKind": "Import",
@@ -2956,197 +2980,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TrueLayerObjectiveC"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TrueLayerVisualSettings",
-        "printedName": "TrueLayerVisualSettings",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "colors",
-            "printedName": "colors",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TrueLayerColors",
-                "printedName": "TrueLayerObjectiveC.TrueLayerColors",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(py)colors",
-            "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvp",
-            "moduleName": "TrueLayerObjectiveC",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerColors",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerColors",
-                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)colors",
-                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvg",
-                "moduleName": "TrueLayerObjectiveC",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerColors",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerColors",
-                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)setColors:",
-                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvs",
-                "moduleName": "TrueLayerObjectiveC",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvM",
-                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvM",
-                "moduleName": "TrueLayerObjectiveC",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TrueLayerVisualSettings",
-                "printedName": "TrueLayerObjectiveC.TrueLayerVisualSettings",
-                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)init",
-            "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsCACycfc",
-            "moduleName": "TrueLayerObjectiveC",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings",
-        "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC",
-        "moduleName": "TrueLayerObjectiveC",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       },
       {
         "kind": "TypeDecl",
@@ -3172,7 +3005,8 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3264,7 +3098,8 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3356,7 +3191,8 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7246,6 +7082,326 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUI",
+        "printedName": "TrueLayerUI",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerVisualSettings",
+        "printedName": "TrueLayerVisualSettings",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "colors",
+            "printedName": "colors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerColors",
+                "printedName": "TrueLayerObjectiveC.TrueLayerColors",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(py)colors",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)colors",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerColors",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerColors",
+                    "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerColors"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)setColors:",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvs",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvM",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC6colorsAA0aB6ColorsCvM",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fontFamilyName",
+            "printedName": "fontFamilyName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(py)fontFamilyName",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC14fontFamilyNameSSvp",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)fontFamilyName",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC14fontFamilyNameSSvg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)setFontFamilyName:",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC14fontFamilyNameSSvs",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB14VisualSettingsC14fontFamilyNameSSvM",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC14fontFamilyNameSSvM",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerVisualSettings",
+                "printedName": "TrueLayerObjectiveC.TrueLayerVisualSettings",
+                "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings(im)init",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsCACycfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerVisualSettings",
+        "mangledName": "$s19TrueLayerObjectiveC0aB14VisualSettingsC",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -7756,23 +7912,23 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerVisualSettings.swift",
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerColors.swift",
       "kind": "StringLiteral",
-      "offset": 2159,
+      "offset": 1622,
       "length": 25,
       "value": "\"TrueLayerObjectiveC.TrueLayerBackgroundColors\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerVisualSettings.swift",
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerColors.swift",
       "kind": "StringLiteral",
-      "offset": 6587,
+      "offset": 6279,
       "length": 22,
       "value": "\"TrueLayerObjectiveC.TrueLayerContentColors\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerVisualSettings.swift",
+      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/ObjectiveC\/TrueLayerColors.swift",
       "kind": "StringLiteral",
-      "offset": 11718,
+      "offset": 11677,
       "length": 24,
       "value": "\"TrueLayerObjectiveC.TrueLayerAccessoryColors\""
     },
