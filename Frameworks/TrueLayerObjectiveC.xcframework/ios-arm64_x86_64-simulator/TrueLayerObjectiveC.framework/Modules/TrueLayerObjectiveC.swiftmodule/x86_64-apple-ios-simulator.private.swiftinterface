@@ -5,6 +5,8 @@
 import Foundation
 import Swift
 import TrueLayerSDK
+@_spi(TrueLayer) import TrueLayerUI
+@_spi(TrueLayer) import TrueLayerUtils
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -106,6 +108,39 @@ import _StringProcessing
     get
   }
 }
+@_inheritsConvenienceInitializers @objc public class TrueLayerColors : ObjectiveC.NSObject {
+  @objc public var backgroundColors: TrueLayerObjectiveC.TrueLayerBackgroundColors
+  @objc public var contentColors: TrueLayerObjectiveC.TrueLayerContentColors
+  @objc public var accessoryColors: TrueLayerObjectiveC.TrueLayerAccessoryColors
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class TrueLayerBackgroundColors : ObjectiveC.NSObject {
+  @objc public var backgroundPrimary: UIKit.UIColor
+  @objc public var backgroundSecondary: UIKit.UIColor
+  @objc public var backgroundActionPrimary: UIKit.UIColor
+  @objc public var backgroundCell: UIKit.UIColor
+  @objc public init(backgroundPrimaryLight: UIKit.UIColor? = nil, backgroundSecondaryLight: UIKit.UIColor? = nil, backgroundActionPrimaryLight: UIKit.UIColor? = nil, backgroundCellLight: UIKit.UIColor? = nil, backgroundPrimaryDark: UIKit.UIColor? = nil, backgroundSecondaryDark: UIKit.UIColor? = nil, backgroundActionPrimaryDark: UIKit.UIColor? = nil, backgroundCellDark: UIKit.UIColor? = nil)
+  @objc convenience public init(backgroundPrimaryLightHex: Swift.String?, backgroundSecondaryLightHex: Swift.String?, backgroundActionPrimaryLightHex: Swift.String?, backgroundCellLightHex: Swift.String?, backgroundPrimaryDarkHex: Swift.String?, backgroundSecondaryDarkHex: Swift.String?, backgroundActionPrimaryDarkHex: Swift.String?, backgroundCellDarkHex: Swift.String?) throws
+  @objc deinit
+}
+@objc public class TrueLayerContentColors : ObjectiveC.NSObject {
+  @objc public var contentPrimary: UIKit.UIColor
+  @objc public var contentSecondary: UIKit.UIColor
+  @objc public var contentPrimaryInverted: UIKit.UIColor
+  @objc public var contentAction: UIKit.UIColor
+  @objc public var contentError: UIKit.UIColor
+  @objc public init(contentPrimaryLight: UIKit.UIColor? = nil, contentSecondaryLight: UIKit.UIColor? = nil, contentPrimaryInvertedLight: UIKit.UIColor? = nil, contentActionLight: UIKit.UIColor? = nil, contentErrorLight: UIKit.UIColor? = nil, contentPrimaryDark: UIKit.UIColor? = nil, contentSecondaryDark: UIKit.UIColor? = nil, contentPrimaryInvertedDark: UIKit.UIColor? = nil, contentActionDark: UIKit.UIColor? = nil, contentErrorDark: UIKit.UIColor? = nil)
+  @objc convenience public init(contentPrimaryLightHex: Swift.String?, contentSecondaryLightHex: Swift.String?, contentPrimaryInvertedLightHex: Swift.String?, contentActionLightHex: Swift.String?, contentErrorLightHex: Swift.String?, contentPrimaryDarkHex: Swift.String?, contentSecondaryDarkHex: Swift.String?, contentPrimaryInvertedDarkHex: Swift.String?, contentActionDarkHex: Swift.String?, contentErrorDarkHex: Swift.String?) throws
+  @objc deinit
+}
+@objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
+  @objc public var separator: UIKit.UIColor
+  @objc public var uiElementBorder: UIKit.UIColor
+  @objc public init(separatorLight: UIKit.UIColor? = nil, uiElementBorderLight: UIKit.UIColor? = nil, separatorDark: UIKit.UIColor? = nil, uiElementBorderDark: UIKit.UIColor? = nil)
+  @objc convenience public init(separatorLightHex: Swift.String?, uiElementBorderLightHex: Swift.String?, separatorDarkHex: Swift.String?, uiElementBorderDarkHex: Swift.String?) throws
+  @objc deinit
+}
 @objc final public class TrueLayerMandateContext : ObjectiveC.NSObject {
   @objc final public let identifier: Swift.String
   @objc final public let token: Swift.String
@@ -119,7 +154,7 @@ import _StringProcessing
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class TrueLayerPaymentsManager : ObjectiveC.NSObject {
-  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, additionalConfiguration: [Swift.String : Swift.String])
+  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettings?, additionalConfiguration: [Swift.String : Swift.String])
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
@@ -141,6 +176,12 @@ import _StringProcessing
 }
 @objc final public class TrueLayerSinglePaymentPreferences : ObjectiveC.NSObject {
   @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
+  @objc public var colors: TrueLayerObjectiveC.TrueLayerColors
+  @objc public var fontFamilyName: Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 extension TrueLayerObjectiveC.TrueLayerMandateError : Swift.Equatable {}

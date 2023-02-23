@@ -151,7 +151,7 @@ import _StringProcessing
     @_spi(TrueLayer) public func getAdditionalInputsHelpText(with providerCountryCode: Swift.String) async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.HelpText]
     #endif
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getAdditionalInputsLocalizations() async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization]
+    @_spi(TrueLayer) public func getAdditionalInputsLocalizations(countryCode: Swift.String) async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization]
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func submitForm(inputs: [Swift.String : Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status

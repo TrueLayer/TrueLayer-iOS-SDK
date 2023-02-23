@@ -192,15 +192,15 @@ extension TrueLayerSDK.TrueLayer.Payments {
     #if compiler(>=5.3) && $AsyncAwait
     final public func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
     #endif
+    final public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error>) -> Swift.Void)?)
+    #if compiler(>=5.3) && $AsyncAwait
+    final public func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status
+    #endif
     @available(*, unavailable, renamed: "processSinglePayment(context:completion:)")
     final public func processPayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
     #if compiler(>=5.3) && $AsyncAwait
     @available(*, unavailable, renamed: "singlePaymentStatus(paymentIdentifier:resourceToken:)")
     final public func paymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
-    #endif
-    final public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error>) -> Swift.Void)?)
-    #if compiler(>=5.3) && $AsyncAwait
-    final public func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status
     #endif
     @objc deinit
   }
@@ -216,12 +216,75 @@ extension UIKit.UIColor {
 }
 public protocol VisualSettingsProvider {
   var colors: TrueLayerSDK.ColorProvider { get }
+  var fontFamilyName: Swift.String { get }
 }
-public protocol ColorProvider : TrueLayerUI.Makeup {
+extension TrueLayerSDK.VisualSettingsProvider {
+  public var fontFamilyName: Swift.String {
+    get
+  }
+}
+public protocol ColorProvider : TrueLayerSDK.AccessoryColor, TrueLayerSDK.BackgroundColor, TrueLayerSDK.ContentColor {
 }
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
   public let colors: TrueLayerSDK.ColorProvider
+  public let fontFamilyName: Swift.String
   public init()
+}
+public protocol BackgroundColor {
+  var backgroundPrimary: UIKit.UIColor { get }
+  var backgroundSecondary: UIKit.UIColor { get }
+  var backgroundActionPrimary: UIKit.UIColor { get }
+  var backgroundCell: UIKit.UIColor { get }
+}
+extension TrueLayerSDK.BackgroundColor {
+  public var backgroundPrimary: UIKit.UIColor {
+    get
+  }
+  public var backgroundSecondary: UIKit.UIColor {
+    get
+  }
+  public var backgroundActionPrimary: UIKit.UIColor {
+    get
+  }
+  public var backgroundCell: UIKit.UIColor {
+    get
+  }
+}
+public protocol ContentColor {
+  var contentPrimary: UIKit.UIColor { get }
+  var contentSecondary: UIKit.UIColor { get }
+  var contentPrimaryInverted: UIKit.UIColor { get }
+  var contentAction: UIKit.UIColor { get }
+  var contentError: UIKit.UIColor { get }
+}
+extension TrueLayerSDK.ContentColor {
+  public var contentPrimary: UIKit.UIColor {
+    get
+  }
+  public var contentSecondary: UIKit.UIColor {
+    get
+  }
+  public var contentPrimaryInverted: UIKit.UIColor {
+    get
+  }
+  public var contentAction: UIKit.UIColor {
+    get
+  }
+  public var contentError: UIKit.UIColor {
+    get
+  }
+}
+public protocol AccessoryColor {
+  var separator: UIKit.UIColor { get }
+  var uiElementBorder: UIKit.UIColor { get }
+}
+extension TrueLayerSDK.AccessoryColor {
+  public var separator: UIKit.UIColor {
+    get
+  }
+  public var uiElementBorder: UIKit.UIColor {
+    get
+  }
 }
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Environment : Swift.Hashable {}

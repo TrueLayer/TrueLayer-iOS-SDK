@@ -45,9 +45,9 @@ extension TrueLayerUI.Analytics {
 }
 extension TrueLayerUI.Analytics {
   @_spi(TrueLayer) public enum Event {
-    @_spi(TrueLayer) case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputIDs: [Swift.String], listSize: Swift.Int? = nil)
+    @_spi(TrueLayer) case additionalInputsLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputsAndTypes: [Swift.String : Swift.String], listSize: Swift.Int? = nil)
     @_spi(TrueLayer) case additionalInputsContinueButtonClicked(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputIDs: [Swift.String], listSize: Swift.Int? = nil)
-    @_spi(TrueLayer) case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, inputIDs: [Swift.String])
+    @_spi(TrueLayer) case additionalInputsSubmitted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, inputsAndTypes: [Swift.String : Swift.String])
     @_spi(TrueLayer) case additionalInputsServerValidationError(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputIDs: [Swift.String])
     @_spi(TrueLayer) case countryFlagTapped
     @_spi(TrueLayer) case countrySelected(countryCode: Swift.String)
@@ -94,73 +94,45 @@ public enum Analytics {
 }
 @_spi(TrueLayer) extension UIKit.UIScreen : TrueLayerUI.ScreenInformationProvider {
 }
-public protocol Makeup : TrueLayerUI.Accessory, TrueLayerUI.BackgroundColor, TrueLayerUI.ContentColor {
+@_spi(TrueLayer) public protocol Makeup : TrueLayerUI.Accessory, TrueLayerUI.BackgroundColor, TrueLayerUI.ContentColor {
 }
-public protocol BackgroundColor {
-  var backgroundPrimary: UIKit.UIColor { get }
-  var backgroundSecondary: UIKit.UIColor { get }
-  var backgroundActionPrimary: UIKit.UIColor { get }
-  var backgroundCell: UIKit.UIColor { get }
+@_spi(TrueLayer) public protocol BackgroundColor {
+  @_spi(TrueLayer) var backgroundPrimary: UIKit.UIColor { get }
+  @_spi(TrueLayer) var backgroundSecondary: UIKit.UIColor { get }
+  @_spi(TrueLayer) var backgroundActionPrimary: UIKit.UIColor { get }
+  @_spi(TrueLayer) var backgroundCell: UIKit.UIColor { get }
 }
-extension TrueLayerUI.BackgroundColor {
-  public var backgroundPrimary: UIKit.UIColor {
-    get
-  }
-  public var backgroundSecondary: UIKit.UIColor {
-    get
-  }
-  public var backgroundActionPrimary: UIKit.UIColor {
-    get
-  }
-  public var backgroundCell: UIKit.UIColor {
-    get
-  }
+@_spi(TrueLayer) public protocol ContentColor {
+  @_spi(TrueLayer) var contentPrimary: UIKit.UIColor { get }
+  @_spi(TrueLayer) var contentSecondary: UIKit.UIColor { get }
+  @_spi(TrueLayer) var contentPrimaryInverted: UIKit.UIColor { get }
+  @_spi(TrueLayer) var contentAction: UIKit.UIColor { get }
+  @_spi(TrueLayer) var contentError: UIKit.UIColor { get }
 }
-public protocol ContentColor {
-  var contentPrimary: UIKit.UIColor { get }
-  var contentSecondary: UIKit.UIColor { get }
-  var contentPrimaryInverted: UIKit.UIColor { get }
-  var contentAction: UIKit.UIColor { get }
-  var contentError: UIKit.UIColor { get }
-}
-extension TrueLayerUI.ContentColor {
-  public var contentPrimary: UIKit.UIColor {
-    get
-  }
-  public var contentSecondary: UIKit.UIColor {
-    get
-  }
-  public var contentPrimaryInverted: UIKit.UIColor {
-    get
-  }
-  public var contentAction: UIKit.UIColor {
-    get
-  }
-  public var contentError: UIKit.UIColor {
-    get
-  }
-}
-public protocol Accessory {
-  var separator: UIKit.UIColor { get }
-  var uiElementBorder: UIKit.UIColor { get }
-}
-extension TrueLayerUI.Accessory {
-  public var separator: UIKit.UIColor {
-    get
-  }
-  public var uiElementBorder: UIKit.UIColor {
-    get
-  }
-}
-@_spi(TrueLayer) extension TrueLayerUI.UI {
-  @_spi(TrueLayer) public struct DefaultColors : TrueLayerUI.Makeup {
-    @_spi(TrueLayer) public init()
-  }
+@_spi(TrueLayer) public protocol Accessory {
+  @_spi(TrueLayer) var separator: UIKit.UIColor { get }
+  @_spi(TrueLayer) var uiElementBorder: UIKit.UIColor { get }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public struct VisualSettings {
-    @_spi(TrueLayer) public let color: TrueLayerUI.Makeup
-    @_spi(TrueLayer) public init(color: TrueLayerUI.Makeup = DefaultColors())
+    @_spi(TrueLayer) public let colors: TrueLayerUI.Makeup
+    @_spi(TrueLayer) public init(color: TrueLayerUI.Makeup = UI.MakeupColors(), fontFamilyName: Swift.String = UIFont.systemFontFamily)
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public struct MakeupColors : TrueLayerUI.Makeup {
+    @_spi(TrueLayer) public let backgroundPrimary: UIKit.UIColor
+    @_spi(TrueLayer) public let backgroundSecondary: UIKit.UIColor
+    @_spi(TrueLayer) public let backgroundActionPrimary: UIKit.UIColor
+    @_spi(TrueLayer) public let backgroundCell: UIKit.UIColor
+    @_spi(TrueLayer) public let contentPrimary: UIKit.UIColor
+    @_spi(TrueLayer) public let contentSecondary: UIKit.UIColor
+    @_spi(TrueLayer) public let contentPrimaryInverted: UIKit.UIColor
+    @_spi(TrueLayer) public let contentAction: UIKit.UIColor
+    @_spi(TrueLayer) public let contentError: UIKit.UIColor
+    @_spi(TrueLayer) public let separator: UIKit.UIColor
+    @_spi(TrueLayer) public let uiElementBorder: UIKit.UIColor
+    @_spi(TrueLayer) public init(backgroundPrimary: UIKit.UIColor = .systemBackground, backgroundSecondary: UIKit.UIColor = .secondarySystemBackground, backgroundActionPrimary: UIKit.UIColor = .systemBlue, backgroundCell: UIKit.UIColor = .clear, contentPrimary: UIKit.UIColor = .label, contentSecondary: UIKit.UIColor = .secondaryLabel, contentPrimaryInverted: UIKit.UIColor = .white, contentAction: UIKit.UIColor = .systemBlue, contentError: UIKit.UIColor = .systemRed, separator: UIKit.UIColor = .separator, uiElementBorder: UIKit.UIColor = .systemGray5)
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
@@ -215,6 +187,10 @@ extension TrueLayerUI.Accessory {
 @_spi(TrueLayer) public enum UI {
   @_spi(TrueLayer) public static var visualSettings: TrueLayerUI.UI.VisualSettings
 }
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public enum SDKRoot {
+  }
+}
 @_spi(TrueLayer) extension TrueLayerUI.Router {
   @_spi(TrueLayer) public func showLoader(dependencies: TrueLayerUI.SomeDependencies)
   @_spi(TrueLayer) public func hideLoader(completion: TrueLayerUI.Router.Completion? = nil)
@@ -222,7 +198,7 @@ extension TrueLayerUI.Accessory {
 @_spi(TrueLayer) public protocol NavigationProvider {
   @_spi(TrueLayer) var topViewController: UIKit.UIViewController { get }
   @_spi(TrueLayer) init(on rootViewController: UIKit.UIViewController)
-  @_spi(TrueLayer) func start(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) func start<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) func show(alertController: UIKit.UIAlertController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   @_spi(TrueLayer) func popTo<R>(identifier: R, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, R.RawValue == Swift.String
@@ -244,7 +220,7 @@ extension TrueLayerUI.Accessory {
     @_spi(TrueLayer) get
   }
   @_spi(TrueLayer) public init(on rootViewController: UIKit.UIViewController)
-  @_spi(TrueLayer) public func start(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) public func start<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
   public func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
@@ -260,8 +236,35 @@ extension TrueLayerUI.Accessory {
   @_spi(TrueLayer) var rootViewController: UIKit.UIViewController { get }
 }
 @_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
+@_spi(TrueLayer) extension TrueLayerUI.UI.SDKRoot {
+  @_spi(TrueLayer) public struct ViewModel : TrueLayerUI.SomeViewModel {
+    @_spi(TrueLayer) public init(customizedUIElements: [Swift.String : Swift.String])
+  }
+}
 @_spi(TrueLayer) extension TrueLayerUI.UI {
-  @_spi(TrueLayer) public enum TrueLayerError : Swift.Error, Swift.Equatable {
+  @_spi(TrueLayer) public enum Route : Swift.String {
+    @_spi(TrueLayer) case activityIndicator
+    @_spi(TrueLayer) case paymentConsent
+    @_spi(TrueLayer) case mandateConsent
+    @_spi(TrueLayer) case countrySelection
+    @_spi(TrueLayer) case mandateDetails
+    @_spi(TrueLayer) case mandateSecurity
+    @_spi(TrueLayer) case singleChoiceListAdditionalInputs
+    @_spi(TrueLayer) case textInputsAdditionalInputs
+    @_spi(TrueLayer) case textWithImageAdditionalInputs
+    @_spi(TrueLayer) case providerSelection
+    @_spi(TrueLayer) case zoomedImage
+    @_spi(TrueLayer) case sdkRoot
+    @_spi(TrueLayer) case wait
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.UI {
+  @_spi(TrueLayer) public enum TrueLayerError : Swift.Error, Swift.Equatable, Swift.CustomStringConvertible {
     @_spi(TrueLayer) case authorizationFailed
     @_spi(TrueLayer) case invalidToken
     @_spi(TrueLayer) case resourceNotFound
@@ -274,6 +277,9 @@ extension TrueLayerUI.Accessory {
     @_spi(TrueLayer) case unexpectedBehavior
     @_spi(TrueLayer) case sdkNotConfigured
     @_spi(TrueLayer) case generic(reason: Swift.String)
+    @_spi(TrueLayer) public var description: Swift.String {
+      @_spi(TrueLayer) get
+    }
     @_spi(TrueLayer) public static func == (a: TrueLayerUI.UI.TrueLayerError, b: TrueLayerUI.UI.TrueLayerError) -> Swift.Bool
   }
 }
@@ -282,6 +288,11 @@ extension TrueLayerUI.Accessory {
   @_spi(TrueLayer) public typealias Mandate = Swift.Result<TrueLayerCore.Core.Payments.Models.Mandate.State, TrueLayerUI.UI.TrueLayerError>
   @_spi(TrueLayer) case singlePayment(_: TrueLayerUI.AuthorizationFlowResult.SinglePayment)
   @_spi(TrueLayer) case mandate(_: TrueLayerUI.AuthorizationFlowResult.Mandate)
+}
+extension UIKit.UIFont {
+  @_spi(TrueLayer) public static var systemFontFamily: Swift.String {
+    get
+  }
 }
 @_spi(TrueLayer) public protocol URLOpener {
   @_spi(TrueLayer) func open(_ url: Foundation.URL)
@@ -300,3 +311,6 @@ extension TrueLayerUI.Accessory {
 }
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
 extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}
+extension TrueLayerUI.UI.Route : Swift.Equatable {}
+extension TrueLayerUI.UI.Route : Swift.Hashable {}
+extension TrueLayerUI.UI.Route : Swift.RawRepresentable {}

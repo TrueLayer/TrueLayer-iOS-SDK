@@ -1,6 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.3.0] - DEUTSCHLAND
+
+### Added
+
+- General enhancements aiming to increase conversion in Germany based on collected data.
+- IBAN validation on device to reduce possibility of encountering an error when an IBAN is inserted.
+- Automatic retries on 500 errors to reduce the possibility of failure should the server recover.
+- Support for search using alternative search terms (like BLZ with German banks) to make it easier for users to find their banks.
+- A recurring payment displays the merchant's sort code and account number where applicable.
+- Support for customising the SDK from the `ObjectiveC` layer.
+
+### Fixed
+
+- SDK animation when processing a payment between initial `UIActivityViewController` and first `SDK` screen.
+
 ## [2.2.0] - Old School II
 
 ### Added

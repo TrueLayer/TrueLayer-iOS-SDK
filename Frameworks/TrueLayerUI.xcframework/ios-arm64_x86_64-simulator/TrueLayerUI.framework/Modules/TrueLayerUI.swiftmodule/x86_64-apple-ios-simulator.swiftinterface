@@ -49,64 +49,6 @@ extension TrueLayerUI.Analytics {
 }
 public enum Analytics {
 }
-public protocol Makeup : TrueLayerUI.Accessory, TrueLayerUI.BackgroundColor, TrueLayerUI.ContentColor {
-}
-public protocol BackgroundColor {
-  var backgroundPrimary: UIKit.UIColor { get }
-  var backgroundSecondary: UIKit.UIColor { get }
-  var backgroundActionPrimary: UIKit.UIColor { get }
-  var backgroundCell: UIKit.UIColor { get }
-}
-extension TrueLayerUI.BackgroundColor {
-  public var backgroundPrimary: UIKit.UIColor {
-    get
-  }
-  public var backgroundSecondary: UIKit.UIColor {
-    get
-  }
-  public var backgroundActionPrimary: UIKit.UIColor {
-    get
-  }
-  public var backgroundCell: UIKit.UIColor {
-    get
-  }
-}
-public protocol ContentColor {
-  var contentPrimary: UIKit.UIColor { get }
-  var contentSecondary: UIKit.UIColor { get }
-  var contentPrimaryInverted: UIKit.UIColor { get }
-  var contentAction: UIKit.UIColor { get }
-  var contentError: UIKit.UIColor { get }
-}
-extension TrueLayerUI.ContentColor {
-  public var contentPrimary: UIKit.UIColor {
-    get
-  }
-  public var contentSecondary: UIKit.UIColor {
-    get
-  }
-  public var contentPrimaryInverted: UIKit.UIColor {
-    get
-  }
-  public var contentAction: UIKit.UIColor {
-    get
-  }
-  public var contentError: UIKit.UIColor {
-    get
-  }
-}
-public protocol Accessory {
-  var separator: UIKit.UIColor { get }
-  var uiElementBorder: UIKit.UIColor { get }
-}
-extension TrueLayerUI.Accessory {
-  public var separator: UIKit.UIColor {
-    get
-  }
-  public var uiElementBorder: UIKit.UIColor {
-    get
-  }
-}
 @dynamicMemberLookup public protocol SomeViewModel {
 }
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}

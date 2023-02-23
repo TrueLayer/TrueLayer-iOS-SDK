@@ -3126,6 +3126,31 @@
               "TrueLayer"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isValidIBAN",
+            "printedName": "isValidIBAN()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS14TrueLayerUtilsE11isValidIBANSbyF",
+            "mangledName": "$sSS14TrueLayerUtilsE11isValidIBANSbyF",
+            "moduleName": "TrueLayerUtils",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -4018,6 +4043,40 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:So7UIColorC14TrueLayerUtilsE3hexABSS_tKcfc",
+            "mangledName": "$sSo7UIColorC14TrueLayerUtilsE3hexABSS_tKcfc",
+            "moduleName": "TrueLayerUtils",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
           }
         ],
         "declKind": "Class",
@@ -4600,7 +4659,7 @@
           {
             "kind": "Function",
             "name": "load",
-            "printedName": "load(svgURL:)",
+            "printedName": "load(svgURL:urlSession:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4612,11 +4671,18 @@
                 "name": "URL",
                 "printedName": "Foundation.URL",
                 "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSession"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So9WKWebViewC14TrueLayerUtilsE4load6svgURLy10Foundation0H0V_tF",
-            "mangledName": "$sSo9WKWebViewC14TrueLayerUtilsE4load6svgURLy10Foundation0H0V_tF",
+            "usr": "s:So9WKWebViewC14TrueLayerUtilsE4load6svgURL10urlSessiony10Foundation0H0V_So12NSURLSessionCtF",
+            "mangledName": "$sSo9WKWebViewC14TrueLayerUtilsE4load6svgURL10urlSessiony10Foundation0H0V_So12NSURLSessionCtF",
             "moduleName": "TrueLayerUtils",
             "declAttributes": [
               "Custom",
@@ -4740,7 +4806,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/Utils\/SVGImageCache.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Utils\/SVGImageCache.swift",
       "kind": "StringLiteral",
       "offset": 902,
       "length": 34,

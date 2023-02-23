@@ -301,7 +301,7 @@ extension Foundation.URLSession {
     get
   }
 }
-@_spi(TrueLayer) public protocol HTTPRequest : TrueLayerNetwork.URLRequestConvertible {
+@_spi(TrueLayer) public protocol HTTPRequest : TrueLayerNetwork.RetryableRequest, TrueLayerNetwork.URLRequestConvertible {
   @_spi(TrueLayer) var authorizationType: TrueLayerNetwork.Network.AuthorizationType { get }
   @_spi(TrueLayer) var method: TrueLayerNetwork.Network.HTTP.Method { get }
   @_spi(TrueLayer) var scheme: TrueLayerNetwork.Network.URL.Scheme { get }
@@ -328,7 +328,7 @@ extension TrueLayerNetwork.Network {
   @_spi(TrueLayer) public struct Manager {
     @_spi(TrueLayer) public init(using session: Foundation.URLSession, sdkVersion: Swift.String)
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func request<R>(_ request: R) async throws -> R.ResponseModel where R : TrueLayerNetwork.DecodableRequest
+    @_spi(TrueLayer) public func request<R>(_ request: R, tentativeNumber: Swift.Int = 1) async throws -> R.ResponseModel where R : TrueLayerNetwork.DecodableRequest
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func poll<R>(for request: R, shouldEndPollingPrematurely: (R.ResponseModel) -> Swift.Bool) async throws -> R.ResponseModel where R : TrueLayerNetwork.PollableDecodableRequest
@@ -336,7 +336,6 @@ extension TrueLayerNetwork.Network {
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func data<R>(request: R) async throws -> Foundation.Data where R : TrueLayerNetwork.DataRequest
     #endif
-    @_spi(TrueLayer) public func error(from code: Swift.Int) throws -> TrueLayerNetwork.Network.Error?
   }
 }
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
@@ -420,6 +419,14 @@ public enum Network {
   @_spi(TrueLayer) public enum URL {
   }
   @_spi(TrueLayer) public enum Mock {
+  }
+}
+public protocol RetryableRequest {
+  var maxNumberOfRetries: Swift.Int { get }
+}
+extension TrueLayerNetwork.RetryableRequest {
+  public var maxNumberOfRetries: Swift.Int {
+    get
   }
 }
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.URL {
