@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UWYi80TZu/82Rq3p2j/tAM313i8=
+		EgRXSIm5+NuXflwk2NbgnLdrfzY=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		VK/FwlxRPNV/LAcko8+DBSsbsgA=
+		yuMLujElGMR6QXur8CJy8E5nOvk=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3LH0gadRm52+oRV4nlTeG9FtuD8=
+		uW0HsU5NVZ3YmPImyf5H5k3+yuI=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		VK/FwlxRPNV/LAcko8+DBSsbsgA=
+		yuMLujElGMR6QXur8CJy8E5nOvk=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5zMfXpSDalP1zkKhfPr06uXaLqY=
+		3qpsJjjkBa6ltF1K+riAdlMCdoQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WY4oF2G8HGE2daXKDimAAfEkZKxS4LplPBdo4LFRrkc=
+			8fNsZ0Pm3i3+0IFFZs2DHPfGRoOplFwpj6dxhhD8qHY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T0cW9GZM04a/YSaY2zBY+5o8iOCTHEkRmTgm83uCffE=
+			2XTpgS4JotjO9EXtsj15ctmdgJlehhuXT2DOunzv3Sc=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WY4oF2G8HGE2daXKDimAAfEkZKxS4LplPBdo4LFRrkc=
+			8fNsZ0Pm3i3+0IFFZs2DHPfGRoOplFwpj6dxhhD8qHY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XRMkx641juEJN3ToQCiiXHVfM+ln8eYVlaCTe6T4MfU=
+			3w3tar9OTMs2dntMysRTsUxATSNdc0VZpAxqg+KuRWY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

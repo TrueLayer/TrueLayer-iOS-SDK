@@ -272,6 +272,17 @@ import _StringProcessing
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.ProviderSelection, b: TrueLayerCore.Core.Payments.Models.Shared.ProviderSelection) -> Swift.Bool
   }
 }
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared {
+  @_spi(TrueLayer) public enum TransactionUseCase : Swift.Equatable {
+    @_spi(TrueLayer) case send
+    @_spi(TrueLayer) case signupPlus
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase, b: TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow {
   @_spi(TrueLayer) public enum AdditionalInputs {
     @_spi(TrueLayer) public enum `Type` : Swift.Equatable {
@@ -560,6 +571,7 @@ extension TrueLayerCore.Core.Payments.Models.Mandate.State : Swift.Equatable {}
 extension TrueLayerCore.Core.Payments.Models.Mandate.State : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.Mandate.Constraints.Period.Alignment : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.Mandate.Constraints.Period.Alignment : Swift.RawRepresentable {}
+extension TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Text.Format : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.SubsequentActionHint : Swift.Equatable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.SubsequentActionHint : Swift.Hashable {}

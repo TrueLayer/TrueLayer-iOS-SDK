@@ -13424,6 +13424,235 @@
                             "mangledName": "$sSQ"
                           }
                         ]
+                      },
+                      {
+                        "kind": "TypeDecl",
+                        "name": "TransactionUseCase",
+                        "printedName": "TransactionUseCase",
+                        "children": [
+                          {
+                            "kind": "Var",
+                            "name": "send",
+                            "printedName": "send",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase.Type) -> TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "TransactionUseCase",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "TransactionUseCase",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO4sendyA2KmF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO4sendyA2KmF",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "signupPlus",
+                            "printedName": "signupPlus",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase.Type) -> TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "TransactionUseCase",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "TransactionUseCase",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO10signupPlusyA2KmF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO10signupPlusyA2KmF",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "hashValue",
+                            "printedName": "hashValue",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO9hashValueSivp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO9hashValueSivp",
+                            "moduleName": "TrueLayerCore",
+                            "implicit": true,
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO9hashValueSivg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO9hashValueSivg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "hash",
+                            "printedName": "hash(into:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Hasher",
+                                "printedName": "Swift.Hasher",
+                                "paramValueOwnership": "InOut",
+                                "usr": "s:s6HasherV"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO4hash4intoys6HasherVz_tF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO4hash4intoys6HasherVz_tF",
+                            "moduleName": "TrueLayerCore",
+                            "implicit": true,
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "==",
+                            "printedName": "==(_:_:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "TransactionUseCase",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "TransactionUseCase",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO2eeoiySbAK_AKtFZ",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO2eeoiySbAK_AKtFZ",
+                            "moduleName": "TrueLayerCore",
+                            "static": true,
+                            "implicit": true,
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "funcSelfKind": "NonMutating"
+                          }
+                        ],
+                        "declKind": "Enum",
+                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO",
+                        "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO",
+                        "moduleName": "TrueLayerCore",
+                        "declAttributes": [
+                          "AccessControl",
+                          "RawDocComment"
+                        ],
+                        "isFromExtension": true,
+                        "spi_group_names": [
+                          "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Hashable",
+                            "printedName": "Hashable",
+                            "usr": "s:SH",
+                            "mangledName": "$sSH"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Equatable",
+                            "printedName": "Equatable",
+                            "usr": "s:SQ",
+                            "mangledName": "$sSQ"
+                          }
+                        ]
                       }
                     ],
                     "declKind": "Enum",
