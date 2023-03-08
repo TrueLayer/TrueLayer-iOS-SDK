@@ -1309,6 +1309,231 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TrueLayerMandateUseCase",
+        "printedName": "TrueLayerMandateUseCase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "send",
+            "printedName": "send",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateUseCase.Type) -> TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateUseCase",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateUseCase",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase@TrueLayerMandateUseCaseSend",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO4sendyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "signupPlus",
+            "printedName": "signupPlus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateUseCase.Type) -> TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateUseCase",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateUseCase",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase@TrueLayerMandateUseCaseSignupPlus",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO10signupPlusyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateUseCase",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase",
+        "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TrueLayerSinglePaymentError",
         "printedName": "TrueLayerSinglePaymentError",
         "children": [
@@ -2667,6 +2892,231 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerSDK",
+        "printedName": "TrueLayerSDK",
+        "declKind": "Import",
+        "moduleName": "TrueLayerObjectiveC"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrueLayerSinglePaymentUseCase",
+        "printedName": "TrueLayerSinglePaymentUseCase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "send",
+            "printedName": "send",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentUseCase",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentUseCase",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase@TrueLayerSinglePaymentUseCaseSend",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO4sendyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "signupPlus",
+            "printedName": "signupPlus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentUseCase",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentUseCase",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase@TrueLayerSinglePaymentUseCaseSignupPlus",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO10signupPlusyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentUseCase",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueACSgSi_tcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueACSgSi_tcfc",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivp",
+            "moduleName": "TrueLayerObjectiveC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivg",
+                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivg",
+                "moduleName": "TrueLayerObjectiveC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase",
+        "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO",
+        "moduleName": "TrueLayerObjectiveC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -6948,7 +7398,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(presentationStyle:preferredCountryCode:)",
+            "printedName": "init(presentationStyle:preferredCountryCode:useCase:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6976,13 +7426,20 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrueLayerSinglePaymentUseCase",
+                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
+                "hasDefaultArg": true,
+                "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCodeAcA0ab12PresentationH0C_SSSgtcfc",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:useCase:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCode7useCaseAcA0ab12PresentationH0C_SSSgAA0abde3UseM0Otcfc",
             "moduleName": "TrueLayerObjectiveC",
-            "objc_name": "initWithPresentationStyle:preferredCountryCode:",
+            "objc_name": "initWithPresentationStyle:preferredCountryCode:useCase:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -7632,6 +8089,20 @@
       "value": "4"
     },
     {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/UseCase\/TrueLayerMandateUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/UseCase\/TrueLayerMandateUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 10,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 395,
@@ -7896,6 +8367,20 @@
       "offset": 864,
       "length": 6,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/UseCase\/TrueLayerSinglePaymentUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 351,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/UseCase\/TrueLayerSinglePaymentUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 351,
+      "length": 10,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",

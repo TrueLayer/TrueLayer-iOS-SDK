@@ -176,7 +176,6 @@ public enum Analytics {
   @_spi(TrueLayer) var endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)? { get }
   @_spi(TrueLayer) var presentationStyle: TrueLayerUI.UI.PresentationStyle { get }
   @_spi(TrueLayer) var paymentType: TrueLayerCore.Core.Payments.Models.PaymentType { get }
-  @_spi(TrueLayer) var transactionUseCase: TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase { get }
 }
 @dynamicMemberLookup public protocol SomeViewModel {
 }
@@ -308,8 +307,7 @@ extension UIKit.UIFont {
     @_spi(TrueLayer) public let endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?
     @_spi(TrueLayer) public let presentationStyle: TrueLayerUI.UI.PresentationStyle
     @_spi(TrueLayer) public let paymentType: TrueLayerCore.Core.Payments.Models.PaymentType
-    @_spi(TrueLayer) public let transactionUseCase: TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase
-    @_spi(TrueLayer) public init(paymentType: TrueLayerCore.Core.Payments.Models.PaymentType, preferredCountryCode: Swift.String?, presentationStyle: TrueLayerUI.UI.PresentationStyle, transactionUseCase: TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase, endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?)
+    @_spi(TrueLayer) public init(paymentType: TrueLayerCore.Core.Payments.Models.PaymentType, preferredCountryCode: Swift.String?, presentationStyle: TrueLayerUI.UI.PresentationStyle, endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?)
   }
 }
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}

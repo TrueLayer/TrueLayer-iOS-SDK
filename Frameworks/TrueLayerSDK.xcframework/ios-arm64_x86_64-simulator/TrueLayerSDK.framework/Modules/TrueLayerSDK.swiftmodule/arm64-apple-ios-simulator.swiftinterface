@@ -97,11 +97,11 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
     }
   }
 }
-extension TrueLayerSDK.TrueLayer.Payments.Models.Shared {
-  public enum TransactionUseCase {
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
+  public enum UseCase {
     case send
     case signupPlus
-    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Shared.TransactionUseCase, b: TrueLayerSDK.TrueLayer.Payments.Models.Shared.TransactionUseCase) -> Swift.Bool
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
@@ -135,7 +135,7 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public struct Preferences {
-    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil, transactionUseCase: TrueLayerSDK.TrueLayer.Payments.Models.Shared.TransactionUseCase = .send)
+    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil, useCase: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase = .send)
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
@@ -167,6 +167,17 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
     }
   }
 }
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
+  public enum UseCase {
+    case send
+    case signupPlus
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 public enum TrueLayer {
 }
 extension TrueLayerSDK.TrueLayer {
@@ -184,8 +195,6 @@ extension TrueLayerSDK.TrueLayer.Payments.Models {
   public enum SinglePayment {
   }
   public enum Mandate {
-  }
-  public enum Shared {
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models {
@@ -307,8 +316,10 @@ extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.Ra
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status : Swift.Hashable {}
-extension TrueLayerSDK.TrueLayer.Payments.Models.Shared.TransactionUseCase : Swift.Equatable {}
-extension TrueLayerSDK.TrueLayer.Payments.Models.Shared.TransactionUseCase : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase : Swift.Hashable {}

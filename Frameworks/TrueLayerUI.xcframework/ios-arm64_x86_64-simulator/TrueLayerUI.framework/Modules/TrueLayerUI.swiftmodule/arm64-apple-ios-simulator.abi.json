@@ -5779,57 +5779,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "transactionUseCase",
-            "printedName": "transactionUseCase",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TransactionUseCase",
-                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
-                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11TrueLayerUI15MerchantContextP18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovp",
-            "mangledName": "$s11TrueLayerUI15MerchantContextP18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovp",
-            "moduleName": "TrueLayerUI",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionUseCase",
-                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
-                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI15MerchantContextP18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovg",
-                "mangledName": "$s11TrueLayerUI15MerchantContextP18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovg",
-                "moduleName": "TrueLayerUI",
-                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerUI.MerchantContext>",
-                "sugared_genericSig": "<Self where Self : TrueLayerUI.MerchantContext>",
-                "protocolReq": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Protocol",
@@ -7769,60 +7718,9 @@
                     ]
                   },
                   {
-                    "kind": "Var",
-                    "name": "transactionUseCase",
-                    "printedName": "transactionUseCase",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionUseCase",
-                        "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
-                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
-                      }
-                    ],
-                    "declKind": "Var",
-                    "usr": "s:11TrueLayerUI0C0O12DependenciesV7ContextV18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovp",
-                    "mangledName": "$s11TrueLayerUI0C0O12DependenciesV7ContextV18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovp",
-                    "moduleName": "TrueLayerUI",
-                    "declAttributes": [
-                      "HasStorage",
-                      "AccessControl",
-                      "RawDocComment"
-                    ],
-                    "spi_group_names": [
-                      "TrueLayer"
-                    ],
-                    "isLet": true,
-                    "hasStorage": true,
-                    "accessors": [
-                      {
-                        "kind": "Accessor",
-                        "name": "Get",
-                        "printedName": "Get()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "TransactionUseCase",
-                            "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
-                          }
-                        ],
-                        "declKind": "Accessor",
-                        "usr": "s:11TrueLayerUI0C0O12DependenciesV7ContextV18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovg",
-                        "mangledName": "$s11TrueLayerUI0C0O12DependenciesV7ContextV18transactionUseCase0aB4Core0I0O8PaymentsO6ModelsO6SharedO011TransactiongH0Ovg",
-                        "moduleName": "TrueLayerUI",
-                        "implicit": true,
-                        "spi_group_names": [
-                          "TrueLayer"
-                        ],
-                        "accessorKind": "get"
-                      }
-                    ]
-                  },
-                  {
                     "kind": "Constructor",
                     "name": "init",
-                    "printedName": "init(paymentType:preferredCountryCode:presentationStyle:transactionUseCase:endOfFlowCompletion:)",
+                    "printedName": "init(paymentType:preferredCountryCode:presentationStyle:endOfFlowCompletion:)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7858,12 +7756,6 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "TransactionUseCase",
-                        "printedName": "TrueLayerCore.Core.Payments.Models.Shared.TransactionUseCase",
-                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO18TransactionUseCaseO"
-                      },
-                      {
-                        "kind": "TypeNominal",
                         "name": "Optional",
                         "printedName": "((TrueLayerUI.AuthorizationFlowResult) -> ())?",
                         "children": [
@@ -7890,8 +7782,8 @@
                       }
                     ],
                     "declKind": "Constructor",
-                    "usr": "s:11TrueLayerUI0C0O12DependenciesV7ContextV11paymentType20preferredCountryCode17presentationStyle18transactionUseCase19endOfFlowCompletionAG0aB4Core0T0O8PaymentsO6ModelsO07PaymentG0O_SSSgAC012PresentationL0OAS6SharedO011TransactionnO0OyAA013AuthorizationR6ResultOcSgtcfc",
-                    "mangledName": "$s11TrueLayerUI0C0O12DependenciesV7ContextV11paymentType20preferredCountryCode17presentationStyle18transactionUseCase19endOfFlowCompletionAG0aB4Core0T0O8PaymentsO6ModelsO07PaymentG0O_SSSgAC012PresentationL0OAS6SharedO011TransactionnO0OyAA013AuthorizationR6ResultOcSgtcfc",
+                    "usr": "s:11TrueLayerUI0C0O12DependenciesV7ContextV11paymentType20preferredCountryCode17presentationStyle19endOfFlowCompletionAG0aB4Core0Q0O8PaymentsO6ModelsO07PaymentG0O_SSSgAC012PresentationL0OyAA013AuthorizationO6ResultOcSgtcfc",
+                    "mangledName": "$s11TrueLayerUI0C0O12DependenciesV7ContextV11paymentType20preferredCountryCode17presentationStyle19endOfFlowCompletionAG0aB4Core0Q0O8PaymentsO6ModelsO07PaymentG0O_SSSgAC012PresentationL0OyAA013AuthorizationO6ResultOcSgtcfc",
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
                       "AccessControl"
@@ -13928,11 +13820,11 @@
       "value": "18"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/UI\/DesignComponents\/Button\/Secondary+Button.swift",
+      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/UI\/DesignComponents\/Button\/Textual+Button.swift",
       "kind": "StringLiteral",
-      "offset": 158,
-      "length": 9,
-      "value": "\"TrueLayerUI.Secondary\""
+      "offset": 156,
+      "length": 7,
+      "value": "\"TrueLayerUI.Textual\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/View+ContinueFooter.swift",
