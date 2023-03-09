@@ -428,6 +428,15 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateStatus, open) {
   TrueLayerMandateStatusFailed = 4,
 };
 
+/// The reason for sending the mandate.
+typedef SWIFT_ENUM(NSInteger, TrueLayerMandateUseCase, open) {
+/// The mandate is being used to send money.
+  TrueLayerMandateUseCaseSend = 0,
+/// The mandate is being used for Signup+.
+/// This will display a String to the user explaining that the mandate will be used for Signup+.
+  TrueLayerMandateUseCaseSignupPlus = 1,
+};
+
 @class TrueLayerVisualSettings;
 @class TrueLayerSinglePaymentContext;
 enum TrueLayerSinglePaymentState : NSInteger;
@@ -565,6 +574,7 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentError, open) {
 };
 static NSString * _Nonnull const TrueLayerSinglePaymentErrorDomain = @"TrueLayerObjectiveC.TrueLayerSinglePaymentError";
 
+enum TrueLayerSinglePaymentUseCase : NSInteger;
 
 /// A set of preferences that can be applied to a single payment.
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC33TrueLayerSinglePaymentPreferences")
@@ -574,7 +584,9 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC33TrueLayerSinglePaymentPreferences")
 ///
 /// \param preferredCountryCode The preferred country to use when displaying the providers.
 ///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
+/// \param useCase The reason for the payment.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode useCase:(enum TrueLayerSinglePaymentUseCase)useCase OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -613,6 +625,15 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
 /// The payment failed. This can be due to various reasons.
 /// This is a final stage status.
   TrueLayerSinglePaymentStatusFailed = 5,
+};
+
+/// The reason for sending the payment.
+typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentUseCase, open) {
+/// The payment is being used to send money.
+  TrueLayerSinglePaymentUseCaseSend = 0,
+/// The payment is being used for Signup+.
+/// This will display a String to the user explaining that the payment will be used for Signup+.
+  TrueLayerSinglePaymentUseCaseSignupPlus = 1,
 };
 
 
