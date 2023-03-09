@@ -14295,20 +14295,6 @@
         "moduleName": "TrueLayerCore"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerCore"
-      },
-      {
         "kind": "TypeDecl",
         "name": "CodablePersistable",
         "printedName": "CodablePersistable",

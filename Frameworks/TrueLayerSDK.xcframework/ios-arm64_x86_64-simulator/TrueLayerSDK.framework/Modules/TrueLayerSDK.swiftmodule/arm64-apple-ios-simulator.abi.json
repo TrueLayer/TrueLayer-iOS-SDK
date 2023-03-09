@@ -4524,12 +4524,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerSDK.TrueLayer.PresentationStyle.Type) -> (UIKit.UIViewController, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
+                    "printedName": "(TrueLayerSDK.TrueLayer.PresentationStyle.Type) -> (UIKit.UIViewController?, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(UIKit.UIViewController, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
+                        "printedName": "(UIKit.UIViewController?, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4540,13 +4540,21 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(on: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle)",
+                            "printedName": "(on: UIKit.UIViewController?, style: UIKit.UIModalPresentationStyle)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "UIViewController",
-                                "printedName": "UIKit.UIViewController",
-                                "usr": "c:objc(cs)UIViewController"
+                                "name": "Optional",
+                                "printedName": "UIKit.UIViewController?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UIViewController",
+                                    "printedName": "UIKit.UIViewController",
+                                    "usr": "c:objc(cs)UIViewController"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -4575,8 +4583,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerC_So07UIModaldE0VtcAEmF",
-                "mangledName": "$s12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerC_So07UIModaldE0VtcAEmF",
+                "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerCSg_So07UIModaldE0VtcAEmF",
+                "mangledName": "$s12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerCSg_So07UIModaldE0VtcAEmF",
                 "moduleName": "TrueLayerSDK",
                 "declAttributes": [
                   "RawDocComment"
@@ -6240,30 +6248,30 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
       "offset": 1596,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
       "offset": 1721,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
       "offset": 2605,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Documents\/Git\/ios-sdk-experimental\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 9398,
+      "offset": 9460,
       "length": 3,
       "value": "[]"
     }

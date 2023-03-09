@@ -197,7 +197,7 @@ public enum Analytics {
 }
 @_spi(TrueLayer) public protocol NavigationProvider {
   @_spi(TrueLayer) var topViewController: UIKit.UIViewController { get }
-  @_spi(TrueLayer) init(on rootViewController: UIKit.UIViewController)
+  @_spi(TrueLayer) init(on rootViewController: UIKit.UIViewController?)
   @_spi(TrueLayer) func start<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) func show(alertController: UIKit.UIAlertController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
@@ -219,7 +219,7 @@ public enum Analytics {
   @_spi(TrueLayer) public var topViewController: UIKit.UIViewController {
     @_spi(TrueLayer) get
   }
-  @_spi(TrueLayer) public init(on rootViewController: UIKit.UIViewController)
+  @_spi(TrueLayer) public init(on rootViewController: UIKit.UIViewController?)
   @_spi(TrueLayer) public func start<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
   public func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String

@@ -53,15 +53,6 @@ import _StringProcessing
     get
   }
 }
-@objc public enum TrueLayerMandateUseCase : Swift.Int {
-  case send
-  case signupPlus
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc public enum TrueLayerSinglePaymentError : Swift.Int, Swift.Error {
   case authorizationFailed
   case connectionIssues
@@ -102,15 +93,6 @@ import _StringProcessing
   case executed
   case settled
   case failed
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum TrueLayerSinglePaymentUseCase : Swift.Int {
-  case send
-  case signupPlus
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -193,7 +175,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc final public class TrueLayerSinglePaymentPreferences : ObjectiveC.NSObject {
-  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil, useCase: TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase = .send)
+  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
@@ -211,9 +193,6 @@ extension TrueLayerObjectiveC.TrueLayerMandateState : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.RawRepresentable {}
-extension TrueLayerObjectiveC.TrueLayerMandateUseCase : Swift.Equatable {}
-extension TrueLayerObjectiveC.TrueLayerMandateUseCase : Swift.Hashable {}
-extension TrueLayerObjectiveC.TrueLayerMandateUseCase : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.RawRepresentable {}
@@ -223,9 +202,6 @@ extension TrueLayerObjectiveC.TrueLayerSinglePaymentState : Swift.RawRepresentab
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentStatus : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentStatus : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentStatus : Swift.RawRepresentable {}
-extension TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase : Swift.Equatable {}
-extension TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase : Swift.Hashable {}
-extension TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerEnvironment : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerEnvironment : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerEnvironment : Swift.RawRepresentable {}
