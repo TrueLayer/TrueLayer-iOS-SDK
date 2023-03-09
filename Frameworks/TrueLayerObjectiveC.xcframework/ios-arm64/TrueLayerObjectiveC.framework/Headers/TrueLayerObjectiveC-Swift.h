@@ -504,7 +504,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC26TrueLayerPresentationStyle")
 ///
 /// \param style The <code>modal</code> presentation style.
 ///
-- (nonnull instancetype)initWithPresentOn:(UIViewController * _Nonnull)viewController style:(UIModalPresentationStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPresentOn:(UIViewController * _Nullable)viewController style:(UIModalPresentationStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

@@ -6448,9 +6448,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -6462,7 +6470,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle(im)initWithPresentOn:style:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB17PresentationStyleC9presentOn5styleACSo16UIViewControllerC_So07UIModaldE0Vtcfc",
+            "mangledName": "$s19TrueLayerObjectiveC0aB17PresentationStyleC9presentOn5styleACSo16UIViewControllerCSg_So07UIModaldE0Vtcfc",
             "moduleName": "TrueLayerObjectiveC",
             "objc_name": "initWithPresentOn:style:",
             "declAttributes": [
