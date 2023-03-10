@@ -513,7 +513,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC26TrueLayerPresentationStyle")
 ///
 /// \param style The <code>modal</code> presentation style.
 ///
-- (nonnull instancetype)initWithPresentOn:(UIViewController * _Nullable)viewController style:(UIModalPresentationStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPresentOn:(UIViewController * _Nonnull)viewController style:(UIModalPresentationStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -656,7 +656,10 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC23TrueLayerVisualSettings")
 @property (nonatomic, strong) TrueLayerColors * _Nonnull colors;
 /// The family name of the font.
 /// If the SDK fails to load it, it will fallback on the system’s font.
-@property (nonatomic, copy) NSString * _Nonnull fontFamilyName;
+@property (nonatomic, copy) NSString * _Nonnull fontFamilyName SWIFT_DEPRECATED_MSG("Use customFontFamilyName instead.", "customFontFamilyName");
+/// The family name of the font.
+/// If the SDK fails to load it, it will fallback on the system’s font.
+@property (nonatomic, copy) NSString * _Nullable customFontFamilyName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

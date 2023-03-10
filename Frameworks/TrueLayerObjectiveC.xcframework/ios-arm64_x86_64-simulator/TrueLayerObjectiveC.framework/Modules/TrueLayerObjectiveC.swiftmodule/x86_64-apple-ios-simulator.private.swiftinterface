@@ -181,7 +181,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc public class TrueLayerPresentationStyle : ObjectiveC.NSObject {
-  @objc public init(presentOn viewController: UIKit.UIViewController?, style: UIKit.UIModalPresentationStyle = .automatic)
+  @objc public init(presentOn viewController: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle = .automatic)
   @objc deinit
 }
 @objc final public class TrueLayerSinglePaymentContext : ObjectiveC.NSObject {
@@ -198,7 +198,9 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
   @objc public var colors: TrueLayerObjectiveC.TrueLayerColors
+  @available(*, deprecated, renamed: "customFontFamilyName", message: "Use customFontFamilyName instead.")
   @objc public var fontFamilyName: Swift.String
+  @objc public var customFontFamilyName: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

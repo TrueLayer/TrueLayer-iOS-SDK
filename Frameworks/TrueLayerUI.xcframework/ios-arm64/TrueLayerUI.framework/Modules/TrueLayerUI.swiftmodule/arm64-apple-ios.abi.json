@@ -6232,7 +6232,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(color:fontFamilyName:)",
+                "printedName": "init(color:customFontFamilyName:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6249,15 +6249,23 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
                     "hasDefaultArg": true,
-                    "usr": "s:SS"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV5color14fontFamilyNameAeA6Makeup_p_SStcfc",
-                "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV5color14fontFamilyNameAeA6Makeup_p_SStcfc",
+                "usr": "s:11TrueLayerUI0C0O14VisualSettingsV5color20customFontFamilyNameAeA6Makeup_p_SSSgtcfc",
+                "mangledName": "$s11TrueLayerUI0C0O14VisualSettingsV5color20customFontFamilyNameAeA6Makeup_p_SSSgtcfc",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "AccessControl",
@@ -9563,22 +9571,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11TrueLayerUI18NavigationProviderP2onxSo16UIViewControllerCSg_tcfc",
-            "mangledName": "$s11TrueLayerUI18NavigationProviderP2onxSo16UIViewControllerCSg_tcfc",
+            "usr": "s:11TrueLayerUI18NavigationProviderP2onxSo16UIViewControllerC_tcfc",
+            "mangledName": "$s11TrueLayerUI18NavigationProviderP2onxSo16UIViewControllerC_tcfc",
             "moduleName": "TrueLayerUI",
             "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerUI.NavigationProvider>",
             "sugared_genericSig": "<Self where Self : TrueLayerUI.NavigationProvider>",
@@ -10210,22 +10210,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11TrueLayerUI6RouterV2onACSo16UIViewControllerCSg_tcfc",
-            "mangledName": "$s11TrueLayerUI6RouterV2onACSo16UIViewControllerCSg_tcfc",
+            "usr": "s:11TrueLayerUI6RouterV2onACSo16UIViewControllerC_tcfc",
+            "mangledName": "$s11TrueLayerUI6RouterV2onACSo16UIViewControllerC_tcfc",
             "moduleName": "TrueLayerUI",
             "declAttributes": [
               "AccessControl",
@@ -12348,20 +12340,26 @@
         "printedName": "UIFont",
         "children": [
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "systemFontFamily",
-            "printedName": "systemFontFamily",
+            "printedName": "systemFontFamily(for:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TextStyle",
+                "printedName": "UIKit.UIFont.TextStyle",
+                "usr": "c:@T@UIFontTextStyle"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:So6UIFontC11TrueLayerUIE16systemFontFamilySSvpZ",
-            "mangledName": "$sSo6UIFontC11TrueLayerUIE16systemFontFamilySSvpZ",
+            "declKind": "Func",
+            "usr": "s:So6UIFontC11TrueLayerUIE16systemFontFamily3forSSSo0A9TextStylea_tFZ",
+            "mangledName": "$sSo6UIFontC11TrueLayerUIE16systemFontFamily3forSSSo0A9TextStylea_tFZ",
             "moduleName": "TrueLayerUI",
             "static": true,
             "declAttributes": [
@@ -12374,31 +12372,7 @@
             "spi_group_names": [
               "TrueLayer"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So6UIFontC11TrueLayerUIE16systemFontFamilySSvgZ",
-                "mangledName": "$sSo6UIFontC11TrueLayerUIE16systemFontFamilySSvgZ",
-                "moduleName": "TrueLayerUI",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -13936,7 +13910,7 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/NavigationProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 4068,
+      "offset": 4067,
       "length": 4,
       "value": "true"
     },
@@ -13964,49 +13938,49 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 5271,
+      "offset": 5229,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6046,
+      "offset": 6004,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6878,
+      "offset": 6836,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 7994,
+      "offset": 7952,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 8761,
+      "offset": 8719,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 10640,
+      "offset": 10598,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 12753,
+      "offset": 12711,
       "length": 4,
       "value": "true"
     },

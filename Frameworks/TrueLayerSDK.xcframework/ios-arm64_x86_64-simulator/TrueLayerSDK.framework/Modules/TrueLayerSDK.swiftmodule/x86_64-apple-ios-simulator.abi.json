@@ -4524,12 +4524,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerSDK.TrueLayer.PresentationStyle.Type) -> (UIKit.UIViewController?, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
+                    "printedName": "(TrueLayerSDK.TrueLayer.PresentationStyle.Type) -> (UIKit.UIViewController, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(UIKit.UIViewController?, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
+                        "printedName": "(UIKit.UIViewController, UIKit.UIModalPresentationStyle) -> TrueLayerSDK.TrueLayer.PresentationStyle",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4540,21 +4540,13 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(on: UIKit.UIViewController?, style: UIKit.UIModalPresentationStyle)",
+                            "printedName": "(on: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "UIKit.UIViewController?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "UIViewController",
-                                    "printedName": "UIKit.UIViewController",
-                                    "usr": "c:objc(cs)UIViewController"
-                                  }
-                                ],
-                                "usr": "s:Sq"
+                                "name": "UIViewController",
+                                "printedName": "UIKit.UIViewController",
+                                "usr": "c:objc(cs)UIViewController"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -4583,8 +4575,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerCSg_So07UIModaldE0VtcAEmF",
-                "mangledName": "$s12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerCSg_So07UIModaldE0VtcAEmF",
+                "usr": "s:12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerC_So07UIModaldE0VtcAEmF",
+                "mangledName": "$s12TrueLayerSDK0aB0O17PresentationStyleO7presentyAESo16UIViewControllerC_So07UIModaldE0VtcAEmF",
                 "moduleName": "TrueLayerSDK",
                 "declAttributes": [
                   "RawDocComment"
@@ -4835,8 +4827,10 @@
             "usr": "s:12TrueLayerSDK22VisualSettingsProviderP14fontFamilyNameSSvp",
             "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderP14fontFamilyNameSSvp",
             "moduleName": "TrueLayerSDK",
+            "deprecated": true,
             "protocolReq": true,
             "declAttributes": [
+              "Available",
               "RawDocComment"
             ],
             "accessors": [
@@ -4855,6 +4849,67 @@
                 "declKind": "Accessor",
                 "usr": "s:12TrueLayerSDK22VisualSettingsProviderP14fontFamilyNameSSvg",
                 "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderP14fontFamilyNameSSvg",
+                "moduleName": "TrueLayerSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerSDK.VisualSettingsProvider>",
+                "sugared_genericSig": "<Self where Self : TrueLayerSDK.VisualSettingsProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customFontFamilyName",
+            "printedName": "customFontFamilyName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12TrueLayerSDK22VisualSettingsProviderP20customFontFamilyNameSSSgvp",
+            "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderP20customFontFamilyNameSSSgvp",
+            "moduleName": "TrueLayerSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12TrueLayerSDK22VisualSettingsProviderP20customFontFamilyNameSSSgvg",
+                "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderP20customFontFamilyNameSSSgvg",
                 "moduleName": "TrueLayerSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerSDK.VisualSettingsProvider>",
                 "sugared_genericSig": "<Self where Self : TrueLayerSDK.VisualSettingsProvider>",
@@ -4900,6 +4955,66 @@
                 "declKind": "Accessor",
                 "usr": "s:12TrueLayerSDK22VisualSettingsProviderPAAE14fontFamilyNameSSvg",
                 "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderPAAE14fontFamilyNameSSvg",
+                "moduleName": "TrueLayerSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerSDK.VisualSettingsProvider>",
+                "sugared_genericSig": "<Self where Self : TrueLayerSDK.VisualSettingsProvider>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customFontFamilyName",
+            "printedName": "customFontFamilyName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12TrueLayerSDK22VisualSettingsProviderPAAE20customFontFamilyNameSSSgvp",
+            "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderPAAE20customFontFamilyNameSSSgvp",
+            "moduleName": "TrueLayerSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12TrueLayerSDK22VisualSettingsProviderPAAE20customFontFamilyNameSSSgvg",
+                "mangledName": "$s12TrueLayerSDK22VisualSettingsProviderPAAE20customFontFamilyNameSSSgvg",
                 "moduleName": "TrueLayerSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerSDK.VisualSettingsProvider>",
                 "sugared_genericSig": "<Self where Self : TrueLayerSDK.VisualSettingsProvider>",
@@ -5008,19 +5123,27 @@
           },
           {
             "kind": "Var",
-            "name": "fontFamilyName",
-            "printedName": "fontFamilyName",
+            "name": "customFontFamilyName",
+            "printedName": "customFontFamilyName",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12TrueLayerSDK21DefaultVisualSettingsV14fontFamilyNameSSvp",
-            "mangledName": "$s12TrueLayerSDK21DefaultVisualSettingsV14fontFamilyNameSSvp",
+            "usr": "s:12TrueLayerSDK21DefaultVisualSettingsV20customFontFamilyNameSSSgvp",
+            "mangledName": "$s12TrueLayerSDK21DefaultVisualSettingsV20customFontFamilyNameSSSgvp",
             "moduleName": "TrueLayerSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -5037,14 +5160,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12TrueLayerSDK21DefaultVisualSettingsV14fontFamilyNameSSvg",
-                "mangledName": "$s12TrueLayerSDK21DefaultVisualSettingsV14fontFamilyNameSSvg",
+                "usr": "s:12TrueLayerSDK21DefaultVisualSettingsV20customFontFamilyNameSSSgvg",
+                "mangledName": "$s12TrueLayerSDK21DefaultVisualSettingsV20customFontFamilyNameSSSgvg",
                 "moduleName": "TrueLayerSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6271,7 +6402,7 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 9472,
+      "offset": 9398,
       "length": 3,
       "value": "[]"
     }

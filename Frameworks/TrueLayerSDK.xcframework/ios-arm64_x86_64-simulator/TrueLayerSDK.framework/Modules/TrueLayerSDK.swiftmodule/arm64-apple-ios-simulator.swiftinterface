@@ -229,7 +229,7 @@ extension TrueLayerSDK.TrueLayer.Payments {
 }
 extension TrueLayerSDK.TrueLayer {
   public enum PresentationStyle : Swift.Equatable {
-    case present(on: UIKit.UIViewController? = nil, style: UIKit.UIModalPresentationStyle = .automatic)
+    case present(on: UIKit.UIViewController, style: UIKit.UIModalPresentationStyle = .automatic)
     public static func == (lhs: TrueLayerSDK.TrueLayer.PresentationStyle, rhs: TrueLayerSDK.TrueLayer.PresentationStyle) -> Swift.Bool
   }
 }
@@ -238,10 +238,15 @@ extension UIKit.UIColor {
 }
 public protocol VisualSettingsProvider {
   var colors: TrueLayerSDK.ColorProvider { get }
+  @available(*, deprecated, renamed: "customFontFamilyName", message: "Use customFontFamilyName instead.")
   var fontFamilyName: Swift.String { get }
+  var customFontFamilyName: Swift.String? { get }
 }
 extension TrueLayerSDK.VisualSettingsProvider {
   public var fontFamilyName: Swift.String {
+    get
+  }
+  public var customFontFamilyName: Swift.String? {
     get
   }
 }
@@ -249,7 +254,7 @@ public protocol ColorProvider : TrueLayerSDK.AccessoryColor, TrueLayerSDK.Backgr
 }
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
   public let colors: TrueLayerSDK.ColorProvider
-  public let fontFamilyName: Swift.String
+  public let customFontFamilyName: Swift.String?
   public init()
 }
 public protocol BackgroundColor {
