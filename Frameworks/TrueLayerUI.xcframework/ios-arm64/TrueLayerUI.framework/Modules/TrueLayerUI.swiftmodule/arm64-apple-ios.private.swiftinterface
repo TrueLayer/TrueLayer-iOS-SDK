@@ -290,9 +290,6 @@ public enum Analytics {
   @_spi(TrueLayer) case singlePayment(_: TrueLayerUI.AuthorizationFlowResult.SinglePayment)
   @_spi(TrueLayer) case mandate(_: TrueLayerUI.AuthorizationFlowResult.Mandate)
 }
-extension UIKit.UIFont {
-  @_spi(TrueLayer) public static func systemFontFamily(for textStyle: UIKit.UIFont.TextStyle) -> Swift.String
-}
 @_spi(TrueLayer) public protocol URLOpener {
   @_spi(TrueLayer) func open(_ url: Foundation.URL)
 }
