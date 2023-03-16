@@ -66,7 +66,7 @@ extension TrueLayerUI.Analytics {
     @_spi(TrueLayer) case providerSelectionSearch(searchString: Swift.String)
     @_spi(TrueLayer) case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?)
     @_spi(TrueLayer) case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
-    @_spi(TrueLayer) case sdkStarted(presentationStyle: TrueLayerUI.UI.PresentationStyle)
+    @_spi(TrueLayer) case sdkStarted(presentationStyle: TrueLayerUI.UI.PresentationStyle, contentSizeCategory: UIKit.UIContentSizeCategory)
     @_spi(TrueLayer) case sdkUICustomised(changes: [Swift.String : Swift.String])
     @_spi(TrueLayer) case waitLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
     @_spi(TrueLayer) case waitTimeOutDialogKeepWaitingTapped
@@ -156,6 +156,11 @@ public enum Analytics {
     @_spi(TrueLayer) public init(requestsManager: TrueLayerAPI.RequestsManager, dataPersister: TrueLayerUI.DataPersistable, router: TrueLayerUI.NavigationProvider, urlOpener: TrueLayerUI.URLOpener, context: TrueLayerUI.MerchantContext, networkManager: TrueLayerNetwork.Network.Manager, analyticsManager: TrueLayerUI.Analytics.Manager)
   }
 }
+@_spi(TrueLayer) public protocol DynamicTypeRetriever {
+  @_spi(TrueLayer) var preferredContentSizeCategory: UIKit.UIContentSizeCategory { get }
+}
+@_spi(TrueLayer) extension UIKit.UIApplication : TrueLayerUI.DynamicTypeRetriever {
+}
 @_spi(TrueLayer) public typealias DataPersistable = TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable
 @_spi(TrueLayer) public protocol SomeDependencies {
   @_spi(TrueLayer) var dataPersister: TrueLayerUI.DataPersistable { get }
@@ -238,7 +243,7 @@ public enum Analytics {
 @_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
 @_spi(TrueLayer) extension TrueLayerUI.UI.SDKRoot {
   @_spi(TrueLayer) public struct ViewModel : TrueLayerUI.SomeViewModel {
-    @_spi(TrueLayer) public init(customizedUIElements: [Swift.String : Swift.String])
+    @_spi(TrueLayer) public init(customizedUIElements: [Swift.String : Swift.String], dynamicTypeRetriever: TrueLayerUI.DynamicTypeRetriever)
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {

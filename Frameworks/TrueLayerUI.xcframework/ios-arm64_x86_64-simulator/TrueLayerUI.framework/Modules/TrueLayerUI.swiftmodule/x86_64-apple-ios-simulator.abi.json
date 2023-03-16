@@ -873,6 +873,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2671,12 +2678,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (TrueLayerUI.UI.PresentationStyle) -> TrueLayerUI.Analytics.Event",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (TrueLayerUI.UI.PresentationStyle, UIKit.UIContentSizeCategory) -> TrueLayerUI.Analytics.Event",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(TrueLayerUI.UI.PresentationStyle) -> TrueLayerUI.Analytics.Event",
+                        "printedName": "(TrueLayerUI.UI.PresentationStyle, UIKit.UIContentSizeCategory) -> TrueLayerUI.Analytics.Event",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2687,13 +2694,19 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(presentationStyle: TrueLayerUI.UI.PresentationStyle)",
+                            "printedName": "(presentationStyle: TrueLayerUI.UI.PresentationStyle, contentSizeCategory: UIKit.UIContentSizeCategory)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "PresentationStyle",
                                 "printedName": "TrueLayerUI.UI.PresentationStyle",
                                 "usr": "s:11TrueLayerUI0C0O17PresentationStyleO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UIContentSizeCategory",
+                                "printedName": "UIKit.UIContentSizeCategory",
+                                "usr": "c:@T@UIContentSizeCategory"
                               }
                             ]
                           }
@@ -2716,8 +2729,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:11TrueLayerUI9AnalyticsO5EventO10sdkStartedyAeA0C0O17PresentationStyleO_tcAEmF",
-                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO10sdkStartedyAeA0C0O17PresentationStyleO_tcAEmF",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO10sdkStartedyAeA0C0O17PresentationStyleO_So21UIContentSizeCategoryatcAEmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO10sdkStartedyAeA0C0O17PresentationStyleO_So21UIContentSizeCategoryatcAEmF",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "RawDocComment"
@@ -4942,6 +4955,83 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DynamicTypeRetriever",
+        "printedName": "DynamicTypeRetriever",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "preferredContentSizeCategory",
+            "printedName": "preferredContentSizeCategory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIContentSizeCategory",
+                "printedName": "UIKit.UIContentSizeCategory",
+                "usr": "c:@T@UIContentSizeCategory"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11TrueLayerUI20DynamicTypeRetrieverP28preferredContentSizeCategorySo09UIContentiJ0avp",
+            "mangledName": "$s11TrueLayerUI20DynamicTypeRetrieverP28preferredContentSizeCategorySo09UIContentiJ0avp",
+            "moduleName": "TrueLayerUI",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIContentSizeCategory",
+                    "printedName": "UIKit.UIContentSizeCategory",
+                    "usr": "c:@T@UIContentSizeCategory"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TrueLayerUI20DynamicTypeRetrieverP28preferredContentSizeCategorySo09UIContentiJ0avg",
+                "mangledName": "$s11TrueLayerUI20DynamicTypeRetrieverP28preferredContentSizeCategorySo09UIContentiJ0avg",
+                "moduleName": "TrueLayerUI",
+                "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerUI.DynamicTypeRetriever>",
+                "sugared_genericSig": "<Self where Self : TrueLayerUI.DynamicTypeRetriever>",
+                "protocolReq": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11TrueLayerUI20DynamicTypeRetrieverP",
+        "mangledName": "$s11TrueLayerUI20DynamicTypeRetrieverP",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "TrueLayer"
+        ]
       },
       {
         "kind": "Import",
@@ -7866,7 +7956,7 @@
                   {
                     "kind": "Constructor",
                     "name": "init",
-                    "printedName": "init(customizedUIElements:)",
+                    "printedName": "init(customizedUIElements:dynamicTypeRetriever:)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7893,11 +7983,17 @@
                           }
                         ],
                         "usr": "s:SD"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DynamicTypeRetriever",
+                        "printedName": "TrueLayerUI.DynamicTypeRetriever",
+                        "usr": "s:11TrueLayerUI20DynamicTypeRetrieverP"
                       }
                     ],
                     "declKind": "Constructor",
-                    "usr": "s:11TrueLayerUI0C0O7SDKRootO9ViewModelV20customizedUIElementsAGSDyS2SG_tcfc",
-                    "mangledName": "$s11TrueLayerUI0C0O7SDKRootO9ViewModelV20customizedUIElementsAGSDyS2SG_tcfc",
+                    "usr": "s:11TrueLayerUI0C0O7SDKRootO9ViewModelV20customizedUIElements20dynamicTypeRetrieverAGSDyS2SG_AA07DynamicjK0_ptcfc",
+                    "mangledName": "$s11TrueLayerUI0C0O7SDKRootO9ViewModelV20customizedUIElements20dynamicTypeRetrieverAGSDyS2SG_AA07DynamicjK0_ptcfc",
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
                       "AccessControl"
@@ -11865,6 +11961,136 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13UIApplicationC11TrueLayerUIE4openyy10Foundation3URLVF",
+            "mangledName": "$sSo13UIApplicationC11TrueLayerUIE4openyy10Foundation3URLVF",
+            "moduleName": "TrueLayerUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DynamicTypeRetriever",
+            "printedName": "DynamicTypeRetriever",
+            "usr": "s:11TrueLayerUI20DynamicTypeRetrieverP",
+            "mangledName": "$s11TrueLayerUI20DynamicTypeRetrieverP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "URLOpener",
+            "printedName": "URLOpener",
+            "usr": "s:11TrueLayerUI9URLOpenerP",
+            "mangledName": "$s11TrueLayerUI9URLOpenerP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FailureReason",
         "printedName": "FailureReason",
         "declKind": "Enum",
@@ -12185,129 +12411,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIApplication",
-        "printedName": "UIApplication",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "open",
-            "printedName": "open(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So13UIApplicationC11TrueLayerUIE4openyy10Foundation3URLVF",
-            "mangledName": "$sSo13UIApplicationC11TrueLayerUIE4openyy10Foundation3URLVF",
-            "moduleName": "TrueLayerUI",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIApplication",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIApplication",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIResponder",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "URLOpener",
-            "printedName": "URLOpener",
-            "usr": "s:11TrueLayerUI9URLOpenerP",
-            "mangledName": "$s11TrueLayerUI9URLOpenerP"
           }
         ]
       },
