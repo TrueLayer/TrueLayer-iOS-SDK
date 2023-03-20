@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.4.0] - Signup+
+
+### Added
+
+- Support for Signup+ transactions via a new parameter `useCase` in the `TrueLayer.Payments.Models.SinglePayment.Preferences` initializer.
+
+### Fixed
+
+- A UI bug that prevented the users to use the SDK when accessibility was set > AX3.
+- General minor UI fixes.
+
 ## [2.3.0] - DEUTSCHLAND
 
 ### Added

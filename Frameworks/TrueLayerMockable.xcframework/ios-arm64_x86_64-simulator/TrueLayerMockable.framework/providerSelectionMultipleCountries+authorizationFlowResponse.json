@@ -1,0 +1,172 @@
+{
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "provider_selection",
+        "providers": [
+          {
+            "id": "ob-bank-name",
+            "display_name": "Mock Bank GB",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-2",
+            "display_name": "Mock Bank GB 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-gb-3",
+            "display_name": "Mock Bank GB 3",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-gb-4",
+            "display_name": "Mock Bank GB 4",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-gb-5",
+            "display_name": "Mock Bank GB 5",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB"
+          },
+          {
+            "id": "ob-bank-name-3",
+            "display_name": "Mock Bank FR",
+            "icon_uri": "",
+            "logo_uri": "",
+            "bg_color": "",
+            "country_code": "FR"
+          },
+          {
+            "id": "ob-bank-name-4",
+            "display_name": "Mock Bank FR 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "FR"
+          },
+          {
+            "id": "ob-bank-name-5",
+            "display_name": "Mock Bank DE",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "DE"
+          },
+          {
+            "id": "ob-bank-name-6",
+            "display_name": "Mock Bank DE 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "DE"
+          },
+          {
+            "id": "ob-bank-name-7",
+            "display_name": "Mock Bank PT",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "PT"
+          },
+          {
+            "id": "ob-bank-name-8",
+            "display_name": "Mock Bank IE",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "IE"
+          },
+          {
+            "id": "ob-bank-name-9",
+            "display_name": "Mock Bank IE 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "IE"
+          },
+          {
+            "id": "ob-bank-name-10",
+            "display_name": "Mock Bank NL",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "NL"
+          },
+          {
+            "id": "ob-bank-name-11",
+            "display_name": "Mock Bank NL 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "NL"
+          },
+          {
+            "id": "ob-bank-name-11",
+            "display_name": "Mock Bank LT",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "LT"
+          },
+          {
+            "id": "ob-bank-name-12",
+            "display_name": "Mock Bank LT 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "LT"
+          },
+          {
+            "id": "ob-bank-name-13",
+            "display_name": "Mock Bank PL",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "PL"
+          },
+          {
+            "id": "ob-bank-name-14",
+            "display_name": "Mock Bank PL 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "PL"
+          },
+          {
+            "id": "ob-bank-name-15",
+            "display_name": "Mock Bank ES",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "ES"
+          },
+          {
+            "id": "ob-bank-name-16",
+            "display_name": "Mock Bank ES 2",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "ES"
+          },
+        ]
+      }
+    }
+  },
+  "status": "authorizing"
+}

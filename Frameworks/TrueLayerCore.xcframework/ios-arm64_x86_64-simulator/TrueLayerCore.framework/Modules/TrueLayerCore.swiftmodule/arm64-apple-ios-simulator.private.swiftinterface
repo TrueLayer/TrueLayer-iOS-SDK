@@ -143,11 +143,25 @@ import _StringProcessing
     }
   }
 }
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Mandate {
+  @_spi(TrueLayer) public enum UseCase : Swift.Equatable {
+    @_spi(TrueLayer) case send
+    @_spi(TrueLayer) case signupPlus
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Mandate.UseCase, b: TrueLayerCore.Core.Payments.Models.Mandate.UseCase) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models {
   @_spi(TrueLayer) public enum PaymentType {
-    @_spi(TrueLayer) case singlePayment(identifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier)
-    @_spi(TrueLayer) case mandate(identifier: TrueLayerCore.Core.Payments.Models.Mandate.Identifier)
+    @_spi(TrueLayer) case singlePayment(identifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier, useCase: TrueLayerCore.Core.Payments.Models.SinglePayment.UseCase)
+    @_spi(TrueLayer) case mandate(identifier: TrueLayerCore.Core.Payments.Models.Mandate.Identifier, useCase: TrueLayerCore.Core.Payments.Models.Mandate.UseCase)
     @_spi(TrueLayer) public var resourceIdentifier: Swift.String {
+      @_spi(TrueLayer) get
+    }
+    @_spi(TrueLayer) public var isSignupPlus: Swift.Bool {
       @_spi(TrueLayer) get
     }
   }
@@ -497,6 +511,17 @@ import _StringProcessing
     }
   }
 }
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
+  @_spi(TrueLayer) public enum UseCase : Swift.Equatable {
+    @_spi(TrueLayer) case send
+    @_spi(TrueLayer) case signupPlus
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.UseCase, b: TrueLayerCore.Core.Payments.Models.SinglePayment.UseCase) -> Swift.Bool
+    @_spi(TrueLayer) public var hashValue: Swift.Int {
+      @_spi(TrueLayer) get
+    }
+  }
+}
 @_spi(TrueLayer) public protocol CodablePersistable {
   @_spi(TrueLayer) func get<Key, Value>(_ key: Key) throws -> Value? where Key : TrueLayerCore.PersistenceKey, Value : Swift.Decodable
   @_spi(TrueLayer) func delete<Key>(_ key: Key) where Key : TrueLayerCore.PersistenceKey
@@ -560,10 +585,12 @@ extension TrueLayerCore.Core.Payments.Models.Mandate.State : Swift.Equatable {}
 extension TrueLayerCore.Core.Payments.Models.Mandate.State : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.Mandate.Constraints.Period.Alignment : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.Mandate.Constraints.Period.Alignment : Swift.RawRepresentable {}
+extension TrueLayerCore.Core.Payments.Models.Mandate.UseCase : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Text.Format : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.SubsequentActionHint : Swift.Equatable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.SubsequentActionHint : Swift.Hashable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.State : Swift.Equatable {}
 extension TrueLayerCore.Core.Payments.Models.SinglePayment.State : Swift.Hashable {}
+extension TrueLayerCore.Core.Payments.Models.SinglePayment.UseCase : Swift.Hashable {}
 extension TrueLayerCore.UserDefaultsKey : Swift.Equatable {}
 extension TrueLayerCore.UserDefaultsKey : Swift.Hashable {}

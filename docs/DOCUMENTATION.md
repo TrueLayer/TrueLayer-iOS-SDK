@@ -34,6 +34,7 @@ The parameters used in `TrueLayer.Payments.Models.SinglePayment.Context` are exp
 - `preferences` parameter to allow you to customize the authentication flow. Precisely:
   - `presentationStyle`: determines how the SDK should be presented.
   - `preferredCountryCode`: the preferred country to use when displaying the providers. If the country is invalid, or does not include any providers, the value will fallback to the user's locale.
+  - `useCase`: the reason for the payment - either `.send` for a regular transaction or `.signupPlus` for a Signup+ transaction.
 
 ### Handling the Result
  

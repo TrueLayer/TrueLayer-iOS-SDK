@@ -97,6 +97,17 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
     }
   }
 }
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
+  public enum UseCase {
+    case send
+    case signupPlus
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public struct Context {
     public let identifier: Swift.String
@@ -124,7 +135,7 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public struct Preferences {
-    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil)
+    public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil, useCase: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase = .send)
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
@@ -151,6 +162,17 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
     case failed
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
+  public enum UseCase {
+    case send
+    case signupPlus
+    public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -216,10 +238,15 @@ extension UIKit.UIColor {
 }
 public protocol VisualSettingsProvider {
   var colors: TrueLayerSDK.ColorProvider { get }
+  @available(*, deprecated, renamed: "customFontFamilyName", message: "Use customFontFamilyName instead.")
   var fontFamilyName: Swift.String { get }
+  var customFontFamilyName: Swift.String? { get }
 }
 extension TrueLayerSDK.VisualSettingsProvider {
   public var fontFamilyName: Swift.String {
+    get
+  }
+  public var customFontFamilyName: Swift.String? {
     get
   }
 }
@@ -227,7 +254,7 @@ public protocol ColorProvider : TrueLayerSDK.AccessoryColor, TrueLayerSDK.Backgr
 }
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
   public let colors: TrueLayerSDK.ColorProvider
-  public let fontFamilyName: Swift.String
+  public let customFontFamilyName: Swift.String?
   public init()
 }
 public protocol BackgroundColor {
@@ -294,6 +321,10 @@ extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.Ra
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate.UseCase : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State : Swift.Equatable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State : Swift.Hashable {}
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status : Swift.Hashable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase : Swift.Equatable {}
+extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.UseCase : Swift.Hashable {}

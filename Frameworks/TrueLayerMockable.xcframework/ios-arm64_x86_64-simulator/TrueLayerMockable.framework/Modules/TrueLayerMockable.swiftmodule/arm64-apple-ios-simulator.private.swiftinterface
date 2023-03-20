@@ -79,7 +79,8 @@ extension TrueLayerMockable.File.Shared {
 }
 extension TrueLayerMockable.File.SinglePayment {
   public enum AuthorizationFlowResponse : Swift.String {
-    case providerSelection
+    case providerSelectionSingleCountry
+    case providerSelectionMultipleCountries
     case consentThenRedirect
     case consentThenAdditionalInputs
     case ibanAdditionalInputs
@@ -101,6 +102,7 @@ extension TrueLayerMockable.File.SinglePayment {
   }
   public enum GetPaymentResponse : Swift.String {
     case authorizationRequired
+    case preselectedProvider
     case wait
     public var rawValue: Swift.String {
       get
