@@ -54,7 +54,7 @@ extension TrueLayerUI.Analytics {
     @_spi(TrueLayer) case countrySelectionLoaded
     @_spi(TrueLayer) case consentGranted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, amount: Swift.Double?, currency: Swift.String)
     @_spi(TrueLayer) case consentLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, amount: Swift.Double?, currency: Swift.String, isSignupPlus: Swift.Bool)
-    @_spi(TrueLayer) case errorOccurred(type: Swift.String, message: Swift.String)
+    @_spi(TrueLayer) case errorOccurred(type: Swift.String, message: Swift.String, moreInfo: Swift.String?)
     @_spi(TrueLayer) case legalsOpened(link: Foundation.URL)
     @_spi(TrueLayer) case ibanHelpLinkTapped(link: Foundation.URL, provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
     @_spi(TrueLayer) case infoSecureConnectionOpened(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
@@ -62,12 +62,15 @@ extension TrueLayerUI.Analytics {
     @_spi(TrueLayer) case mandateDetailsOpened(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
     @_spi(TrueLayer) case paymentCancelled(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?)
     @_spi(TrueLayer) case providerSelected(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, isFromPreviouslyUsedSection: Swift.Bool)
-    @_spi(TrueLayer) case providerSelectionLoaded(includesPreviouslySelectedProviders: Swift.Bool)
+    @_spi(TrueLayer) case providerSelectionLoaded(includesPreviouslySelectedProviders: Swift.Bool, unavailableProviders: [Swift.String])
     @_spi(TrueLayer) case providerSelectionSearch(searchString: Swift.String)
     @_spi(TrueLayer) case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?)
     @_spi(TrueLayer) case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
     @_spi(TrueLayer) case sdkStarted(presentationStyle: TrueLayerUI.UI.PresentationStyle, contentSizeCategory: UIKit.UIContentSizeCategory)
     @_spi(TrueLayer) case sdkUICustomised(changes: [Swift.String : Swift.String])
+    @_spi(TrueLayer) case userPrimingLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case userPrimingBankLinkTapped
+    @_spi(TrueLayer) case userPrimingContinueTapped
     @_spi(TrueLayer) case waitLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
     @_spi(TrueLayer) case waitTimeOutDialogKeepWaitingTapped
     @_spi(TrueLayer) case waitTimeOutDialogLoaded
@@ -262,6 +265,7 @@ public enum Analytics {
     @_spi(TrueLayer) case zoomedImage
     @_spi(TrueLayer) case sdkRoot
     @_spi(TrueLayer) case wait
+    @_spi(TrueLayer) case userPriming
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
@@ -272,7 +276,9 @@ public enum Analytics {
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public enum TrueLayerError : Swift.Error, Swift.Equatable, Swift.CustomStringConvertible {
     @_spi(TrueLayer) case authorizationFailed
+    @_spi(TrueLayer) case failedToDecode(_: Swift.String)
     @_spi(TrueLayer) case invalidToken
+    @_spi(TrueLayer) case invalidRedirectURI(_: [Swift.String])
     @_spi(TrueLayer) case resourceNotFound
     @_spi(TrueLayer) case rejected
     @_spi(TrueLayer) case expired
@@ -283,7 +289,11 @@ public enum Analytics {
     @_spi(TrueLayer) case unexpectedBehavior
     @_spi(TrueLayer) case sdkNotConfigured
     @_spi(TrueLayer) case generic(reason: Swift.String)
+    @_spi(TrueLayer) case providerOffline
     @_spi(TrueLayer) public var description: Swift.String {
+      @_spi(TrueLayer) get
+    }
+    @_spi(TrueLayer) public var extraInfo: Swift.String? {
       @_spi(TrueLayer) get
     }
     @_spi(TrueLayer) public static func == (a: TrueLayerUI.UI.TrueLayerError, b: TrueLayerUI.UI.TrueLayerError) -> Swift.Bool

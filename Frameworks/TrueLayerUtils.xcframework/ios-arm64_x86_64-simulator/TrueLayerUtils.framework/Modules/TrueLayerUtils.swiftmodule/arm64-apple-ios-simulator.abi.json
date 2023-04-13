@@ -485,6 +485,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUtils"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3145,6 +3152,52 @@
             "moduleName": "TrueLayerUtils",
             "declAttributes": [
               "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attributedStringWithDynamicFontAndHTML",
+            "printedName": "attributedStringWithDynamicFontAndHTML(baseFont:boldFont:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSAttributedString?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSAttributedString",
+                    "printedName": "Foundation.NSAttributedString",
+                    "usr": "c:objc(cs)NSAttributedString"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS14TrueLayerUtilsE38attributedStringWithDynamicFontAndHTML04baseH004boldH0So012NSAttributedE0CSgSo6UIFontC_AItF",
+            "mangledName": "$sSS14TrueLayerUtilsE38attributedStringWithDynamicFontAndHTML04baseH004boldH0So012NSAttributedE0CSgSo6UIFontC_AItF",
+            "moduleName": "TrueLayerUtils",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "spi_group_names": [

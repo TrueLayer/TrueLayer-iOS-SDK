@@ -1,0 +1,62 @@
+[
+  {
+    "country_code" : "GB",
+    "id" : "ob-bank-name",
+    "display_name" : "Mock Bank GB",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 15.2,
+    "user_priming": false
+  },
+  {
+    "country_code" : "GB",
+    "id" : "ob-bank-name-2",
+    "display_name" : "Mock Bank GB 2",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 17.3,
+    "user_priming": true
+  },
+  {
+    "country_code" : "GB",
+    "id" : "ob-bank-name-3",
+    "display_name" : "Mock Bank GB 3",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 0,
+    "user_priming": false
+  },
+  {
+    "country_code" : "GB",
+    "id" : "ob-bank-name-4",
+    "display_name" : "Mock Bank GB 4",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 17.3,
+    "user_priming": false
+  },
+  {
+    "country_code" : "GB",
+    "id" : "ob-bank-name-5",
+    "display_name" : "Mock Bank GB 5",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 10,
+    "user_priming": false
+  },
+  {
+    "country_code" : "GB",
+    "id" : "ob-bank-name-5",
+    "display_name" : "Mock Bank GB 5",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 10,
+    "user_priming": false
+  },
+]

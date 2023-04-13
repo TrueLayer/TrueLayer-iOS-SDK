@@ -56,9 +56,11 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
     case connectionIssues
     case generic(reason: Swift.String)
     case invalidToken
+    case invalidRedirectURI(_: [Swift.String])
     case mandateExpired
     case mandateNotFound
     case mandateRejected
+    case providerOffline
     case revoked
     case sdkNotConfigured
     case serverError
@@ -123,9 +125,11 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
     case connectionIssues
     case generic(reason: Swift.String)
     case invalidToken
+    case invalidRedirectURI(_: [Swift.String])
     case paymentExpired
     case paymentNotFound
     case paymentRejected
+    case providerOffline
     case sdkNotConfigured
     case serverError
     case unexpectedBehavior

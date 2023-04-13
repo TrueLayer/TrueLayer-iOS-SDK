@@ -1,8 +1,11 @@
 {
   "country_code" : "GB",
-  "id" : "ob-bank-name-3",
+  "id" : "ob-bank-name-fr",
   "display_name" : "Barclays",
   "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
   "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
-  "bg_color" : "#007EB6"
+  "bg_color" : "#007EB6",
+  "availability": {
+    "recommended_status": "unhealthy"
+  }
 }
