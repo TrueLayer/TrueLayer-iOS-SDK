@@ -6,6 +6,6 @@
   "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
   "bg_color" : "#007EB6",
   "availability": {
-    "recommended_status": "unhealthy"
+    "recommended_status": "healthy"
   }
 }

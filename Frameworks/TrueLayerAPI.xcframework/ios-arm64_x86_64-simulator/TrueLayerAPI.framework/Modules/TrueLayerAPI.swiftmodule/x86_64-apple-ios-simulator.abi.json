@@ -1329,6 +1329,52 @@
                           },
                           {
                             "kind": "Function",
+                            "name": "getLastUsedProviders",
+                            "printedName": "getLastUsedProviders(userIdentifier:paymentType:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PaymentType",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV20getLastUsedProviders14userIdentifier11paymentTypeSaySSGSS_0aB4Core0Q0OADO6ModelsO6SharedO0hP0OtYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV20getLastUsedProviders14userIdentifier11paymentTypeSaySSGSS_0aB4Core0Q0OADO6ModelsO6SharedO0hP0OtYaKF",
+                            "moduleName": "TrueLayerAPI",
+                            "declAttributes": [
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "throwing": true,
+                            "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Function",
                             "name": "getUserPriming",
                             "printedName": "getUserPriming(providerIdentifier:)",
                             "children": [
@@ -2200,6 +2246,13 @@
         "declAttributes": [
           "SPIAccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
       },
       {
         "kind": "Import",
@@ -3407,686 +3460,756 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 685,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 685,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2100,
       "length": 20,
       "value": "\"provider_selection\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2100,
       "length": 20,
       "value": "\"provider_selection\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 3170,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 3170,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1190,
       "length": 18,
       "value": "\"merchant_account\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 18,
       "value": "\"external_account\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1190,
       "length": 18,
       "value": "\"merchant_account\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 18,
       "value": "\"external_account\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3705,
+      "offset": 3541,
       "length": 26,
       "value": "\"sort_code_account_number\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3705,
+      "offset": 3541,
       "length": 26,
       "value": "\"sort_code_account_number\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1631,
       "length": 15,
       "value": "\"user_selected\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1672,
       "length": 13,
       "value": "\"preselected\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1631,
       "length": 15,
       "value": "\"user_selected\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1672,
       "length": 13,
       "value": "\"preselected\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3236,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3236,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9324,
       "length": 16,
       "value": "\"account_number\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9772,
       "length": 11,
       "value": "\"sort_code\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9324,
       "length": 16,
       "value": "\"account_number\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9772,
       "length": 11,
       "value": "\"sort_code\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2436,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2489,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2436,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2489,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5670,
       "length": 22,
       "value": "\"authorization_failed\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5742,
       "length": 22,
       "value": "\"constraint_violation\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5813,
       "length": 23,
       "value": "\"internal_server_error\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5866,
       "length": 20,
       "value": "\"insufficient_funds\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5918,
       "length": 23,
       "value": "\"invalid_mandate_state\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5968,
       "length": 17,
       "value": "\"invalid_request\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6013,
       "length": 19,
       "value": "\"invalid_sort_code\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6059,
       "length": 17,
       "value": "\"mandate_revoked\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6102,
       "length": 16,
       "value": "\"provider_error\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6147,
       "length": 19,
       "value": "\"provider_rejected\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6209,
       "length": 15,
       "value": "\"unknown_error\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5670,
       "length": 22,
       "value": "\"authorization_failed\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5742,
       "length": 22,
       "value": "\"constraint_violation\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5813,
       "length": 23,
       "value": "\"internal_server_error\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5866,
       "length": 20,
       "value": "\"insufficient_funds\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5918,
       "length": 23,
       "value": "\"invalid_mandate_state\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 5968,
       "length": 17,
       "value": "\"invalid_request\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6013,
       "length": 19,
       "value": "\"invalid_sort_code\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6059,
       "length": 17,
       "value": "\"mandate_revoked\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6102,
       "length": 16,
       "value": "\"provider_error\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6147,
       "length": 19,
       "value": "\"provider_rejected\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6209,
       "length": 15,
       "value": "\"unknown_error\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6308,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6308,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2707,
+      "offset": 2859,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2707,
+      "offset": 2859,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3183,
+      "offset": 3351,
       "length": 15,
       "value": "\"bank_transfer\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3258,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3281,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3329,
       "length": 13,
       "value": "\"example.com\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3557,
       "length": 16,
       "value": "\"someProviderID\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3590,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3613,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3835,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3858,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1409,
       "length": 4,
       "value": "\"gb\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1433,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1670,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1693,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1882,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1905,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1064,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1087,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2044,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2067,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2703,
+      "offset": 3083,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2732,
+      "offset": 3112,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2755,
+      "offset": 3135,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 323,
+      "length": 9,
+      "value": "\"payment\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 9,
+      "value": "\"mandate\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 323,
+      "length": 9,
+      "value": "\"payment\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 9,
+      "value": "\"mandate\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2345,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2565,
+      "length": 16,
+      "value": "\"someIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2606,
+      "length": 16,
+      "value": "\"someIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2676,
+      "length": 11,
+      "value": "\"someToken\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2824,
+      "length": 16,
+      "value": "\"someIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2865,
+      "length": 16,
+      "value": "\"someIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2929,
+      "length": 11,
+      "value": "\"someToken\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3384,
       "length": 4,
       "value": "\"es\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3408,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3643,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3704,
       "length": 4,
       "value": "\"DE\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3892,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3915,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "Dictionary",
       "offset": 3971,
       "length": 27,
       "value": "[(\"someIBANKey\", \"someIBAN\")]"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3473,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3496,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3544,
       "length": 13,
       "value": "\"example.com\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3784,
       "length": 16,
       "value": "\"someProviderID\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3817,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3840,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4074,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4097,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1440,
       "length": 4,
       "value": "\"gb\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1464,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/URL+API.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 25,
       "value": "\"payments-experience-api\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/URL+API.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 25,
       "value": "\"payments-experience-api\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 39,
       "value": "\"Unsupported date value: \""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1393,
       "length": 2,

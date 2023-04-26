@@ -70,6 +70,8 @@ extension TrueLayerMockable.File {
 extension TrueLayerMockable.File.Shared {
   public enum Miscellaneous : Swift.String {
     case merchantConfiguration
+    case merchantConfigurationRegulated
+    case recentlyUsedProviders
     public var rawValue: Swift.String {
       get
     }
@@ -112,6 +114,7 @@ extension TrueLayerMockable.File.SinglePayment {
   }
   public enum PaymentProviderResponse : Swift.String {
     case information
+    case unhealthyProvider
     case userPrimingTrue
     case userPrimingFalse
     public var rawValue: Swift.String {

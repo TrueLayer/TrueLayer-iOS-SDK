@@ -147,6 +147,9 @@ import _StringProcessing
     @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
     #endif
     #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getLastUsedProviders(userIdentifier: Swift.String, paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getUserPriming(providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming.Status
     #endif
     #if compiler(>=5.3) && $AsyncAwait

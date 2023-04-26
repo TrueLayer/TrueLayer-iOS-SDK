@@ -5101,6 +5101,73 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "userIdentifier",
+                            "printedName": "userIdentifier",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV14userIdentifierSSSgvp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV14userIdentifierSSSgvp",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "HasStorage",
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "isLet": true,
+                            "hasStorage": true,
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Optional",
+                                    "printedName": "Swift.String?",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "String",
+                                        "printedName": "Swift.String",
+                                        "usr": "s:SS"
+                                      }
+                                    ],
+                                    "usr": "s:Sq"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV14userIdentifierSSSgvg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV14userIdentifierSSSgvg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "Var",
                             "name": "providerID",
                             "printedName": "providerID",
                             "children": [
@@ -5259,7 +5326,7 @@
                           {
                             "kind": "Constructor",
                             "name": "init",
-                            "printedName": "init(identifier:amount:currency:status:method:)",
+                            "printedName": "init(identifier:amount:currency:status:method:userIdentifier:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -5296,11 +5363,25 @@
                                 "name": "Method",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.Method",
                                 "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO6MethodO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               }
                             ],
                             "declKind": "Constructor",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV10identifier6amount8currency6status6methodAKSS_SdSSAI6StatusOAI6MethodOtcfc",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV10identifier6amount8currency6status6methodAKSS_SdSSAI6StatusOAI6MethodOtcfc",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV10identifier6amount8currency6status6method14userIdentifierAKSS_SdSSAI6StatusOAI6MethodOSSSgtcfc",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO11InformationV10identifier6amount8currency6status6method14userIdentifierAKSS_SdSSAI6StatusOAI6MethodOSSSgtcfc",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "AccessControl",
@@ -7943,6 +8024,124 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "reference",
+                            "printedName": "reference",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV9referenceSSvp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV9referenceSSvp",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "HasStorage",
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "isLet": true,
+                            "hasStorage": true,
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV9referenceSSvg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV9referenceSSvg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "userIdentifier",
+                            "printedName": "userIdentifier",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV14userIdentifierSSSgvp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV14userIdentifierSSSgvp",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "HasStorage",
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "isLet": true,
+                            "hasStorage": true,
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Optional",
+                                    "printedName": "Swift.String?",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "String",
+                                        "printedName": "Swift.String",
+                                        "usr": "s:SS"
+                                      }
+                                    ],
+                                    "usr": "s:Sq"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV14userIdentifierSSSgvg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV14userIdentifierSSSgvg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "Var",
                             "name": "providerIdentifier",
                             "printedName": "providerIdentifier",
                             "children": [
@@ -8007,7 +8206,7 @@
                           {
                             "kind": "Constructor",
                             "name": "init",
-                            "printedName": "init(identifier:currency:beneficiary:creationDate:constraints:status:providerSelection:)",
+                            "printedName": "init(identifier:currency:beneficiary:creationDate:constraints:status:reference:providerSelection:userIdentifier:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -8053,14 +8252,34 @@
                               },
                               {
                                 "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
                                 "name": "ProviderSelection",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.Shared.ProviderSelection",
                                 "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO17ProviderSelectionO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               }
                             ],
                             "declKind": "Constructor",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV10identifier8currency11beneficiary12creationDate11constraints6status17providerSelectionAKSS_SSAG6SharedO11BeneficiaryV10Foundation0L0VAI11ConstraintsVAI6StatusOAT08ProviderP0Otcfc",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV10identifier8currency11beneficiary12creationDate11constraints6status17providerSelectionAKSS_SSAG6SharedO11BeneficiaryV10Foundation0L0VAI11ConstraintsVAI6StatusOAT08ProviderP0Otcfc",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV10identifier8currency11beneficiary12creationDate11constraints6status9reference17providerSelection14userIdentifierAKSS_SSAG6SharedO11BeneficiaryV10Foundation0L0VAI11ConstraintsVAI6StatusOSSAV08ProviderQ0OSSSgtcfc",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO11InformationV10identifier8currency11beneficiary12creationDate11constraints6status9reference17providerSelection14userIdentifierAKSS_SSAG6SharedO11BeneficiaryV10Foundation0L0VAI11ConstraintsVAI6StatusOSSAV08ProviderQ0OSSSgtcfc",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "AccessControl",
@@ -11279,76 +11498,9 @@
                             ]
                           },
                           {
-                            "kind": "Var",
-                            "name": "reference",
-                            "printedName": "reference",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "Swift.String?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "String",
-                                    "printedName": "Swift.String",
-                                    "usr": "s:SS"
-                                  }
-                                ],
-                                "usr": "s:Sq"
-                              }
-                            ],
-                            "declKind": "Var",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV9referenceSSSgvp",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV9referenceSSSgvp",
-                            "moduleName": "TrueLayerCore",
-                            "declAttributes": [
-                              "HasStorage",
-                              "AccessControl",
-                              "RawDocComment"
-                            ],
-                            "spi_group_names": [
-                              "TrueLayer"
-                            ],
-                            "isLet": true,
-                            "hasStorage": true,
-                            "accessors": [
-                              {
-                                "kind": "Accessor",
-                                "name": "Get",
-                                "printedName": "Get()",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Optional",
-                                    "printedName": "Swift.String?",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "String",
-                                        "printedName": "Swift.String",
-                                        "usr": "s:SS"
-                                      }
-                                    ],
-                                    "usr": "s:Sq"
-                                  }
-                                ],
-                                "declKind": "Accessor",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV9referenceSSSgvg",
-                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV9referenceSSSgvg",
-                                "moduleName": "TrueLayerCore",
-                                "implicit": true,
-                                "spi_group_names": [
-                                  "TrueLayer"
-                                ],
-                                "accessorKind": "get"
-                              }
-                            ]
-                          },
-                          {
                             "kind": "Constructor",
                             "name": "init",
-                            "printedName": "init(name:accountIdentifier:reference:)",
+                            "printedName": "init(name:accountIdentifier:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -11383,25 +11535,11 @@
                                   }
                                 ],
                                 "usr": "s:Sq"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "Swift.String?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "String",
-                                    "printedName": "Swift.String",
-                                    "usr": "s:SS"
-                                  }
-                                ],
-                                "usr": "s:Sq"
                               }
                             ],
                             "declKind": "Constructor",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV4name17accountIdentifier9referenceAKSSSg_AK07AccountJ0OSgAOtcfc",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV4name17accountIdentifier9referenceAKSSSg_AK07AccountJ0OSgAOtcfc",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV4name17accountIdentifierAKSSSg_AK07AccountJ0OSgtcfc",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11BeneficiaryV4name17accountIdentifierAKSSSg_AK07AccountJ0OSgtcfc",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "AccessControl"
@@ -12677,9 +12815,60 @@
                             ]
                           },
                           {
+                            "kind": "Var",
+                            "name": "isRegulated",
+                            "printedName": "isRegulated",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11isRegulatedSbvp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11isRegulatedSbvp",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "HasStorage",
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "isLet": true,
+                            "hasStorage": true,
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Bool",
+                                    "printedName": "Swift.Bool",
+                                    "usr": "s:Sb"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11isRegulatedSbvg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11isRegulatedSbvg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
                             "kind": "Constructor",
                             "name": "init",
-                            "printedName": "init(name:logoURI:)",
+                            "printedName": "init(name:logoURI:isRegulated:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -12698,11 +12887,17 @@
                                 "name": "URL",
                                 "printedName": "Foundation.URL",
                                 "usr": "s:10Foundation3URLV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
                               }
                             ],
                             "declKind": "Constructor",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURIAKSS_10Foundation3URLVtcfc",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURIAKSS_10Foundation3URLVtcfc",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURI11isRegulatedAKSS_10Foundation3URLVSbtcfc",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURI11isRegulatedAKSS_10Foundation3URLVSbtcfc",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "AccessControl",
@@ -12768,6 +12963,229 @@
                             "printedName": "Equatable",
                             "usr": "s:SQ",
                             "mangledName": "$sSQ"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeDecl",
+                        "name": "PaymentType",
+                        "printedName": "PaymentType",
+                        "children": [
+                          {
+                            "kind": "Var",
+                            "name": "singlePayment",
+                            "printedName": "singlePayment",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.PaymentType.Type) -> TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentType",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "PaymentType",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO06singleG0yA2KmF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO06singleG0yA2KmF",
+                            "moduleName": "TrueLayerCore",
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "mandate",
+                            "printedName": "mandate",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.PaymentType.Type) -> TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "PaymentType",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "PaymentType",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO7mandateyA2KmF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO7mandateyA2KmF",
+                            "moduleName": "TrueLayerCore",
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ]
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "==",
+                            "printedName": "==(_:_:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PaymentType",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PaymentType",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PaymentType",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO2eeoiySbAK_AKtFZ",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO2eeoiySbAK_AKtFZ",
+                            "moduleName": "TrueLayerCore",
+                            "static": true,
+                            "implicit": true,
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "hashValue",
+                            "printedName": "hashValue",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO9hashValueSivp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO9hashValueSivp",
+                            "moduleName": "TrueLayerCore",
+                            "implicit": true,
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO9hashValueSivg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO9hashValueSivg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "hash",
+                            "printedName": "hash(into:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Hasher",
+                                "printedName": "Swift.Hasher",
+                                "paramValueOwnership": "InOut",
+                                "usr": "s:s6HasherV"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO4hash4intoys6HasherVz_tF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO4hash4intoys6HasherVz_tF",
+                            "moduleName": "TrueLayerCore",
+                            "implicit": true,
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "funcSelfKind": "NonMutating"
+                          }
+                        ],
+                        "declKind": "Enum",
+                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO",
+                        "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO11PaymentTypeO",
+                        "moduleName": "TrueLayerCore",
+                        "declAttributes": [
+                          "AccessControl",
+                          "RawDocComment"
+                        ],
+                        "isFromExtension": true,
+                        "spi_group_names": [
+                          "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Equatable",
+                            "printedName": "Equatable",
+                            "usr": "s:SQ",
+                            "mangledName": "$sSQ"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Hashable",
+                            "printedName": "Hashable",
+                            "usr": "s:SH",
+                            "mangledName": "$sSH"
                           }
                         ]
                       },
@@ -16032,165 +16450,6 @@
         "moduleName": "TrueLayerCore"
       },
       {
-        "kind": "TypeDecl",
-        "name": "ProviderPersistable",
-        "printedName": "ProviderPersistable",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "updateLastUsed",
-            "printedName": "updateLastUsed(with:dateProvider:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Foundation.Date",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13TrueLayerCore19ProviderPersistableP14updateLastUsed4with04dateD0ySS_10Foundation4DateVyXEtKF",
-            "mangledName": "$s13TrueLayerCore19ProviderPersistableP14updateLastUsed4with04dateD0ySS_10Foundation4DateVyXEtKF",
-            "moduleName": "TrueLayerCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerCore.ProviderPersistable>",
-            "sugared_genericSig": "<Self where Self : TrueLayerCore.ProviderPersistable>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeFromLastUsed",
-            "printedName": "removeFromLastUsed(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13TrueLayerCore19ProviderPersistableP18removeFromLastUsedyySSKF",
-            "mangledName": "$s13TrueLayerCore19ProviderPersistableP18removeFromLastUsedyySSKF",
-            "moduleName": "TrueLayerCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerCore.ProviderPersistable>",
-            "sugared_genericSig": "<Self where Self : TrueLayerCore.ProviderPersistable>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastUsedProviders",
-            "printedName": "getLastUsedProviders()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[TrueLayerCore.Core.Payments.Models.Shared.Provider.Stored]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Stored",
-                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.Provider.Stored",
-                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8ProviderV6StoredV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13TrueLayerCore19ProviderPersistableP20getLastUsedProvidersSayAA0C0O8PaymentsO6ModelsO6SharedO0D0V6StoredVGyKF",
-            "mangledName": "$s13TrueLayerCore19ProviderPersistableP20getLastUsedProvidersSayAA0C0O8PaymentsO6ModelsO6SharedO0D0V6StoredVGyKF",
-            "moduleName": "TrueLayerCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerCore.ProviderPersistable>",
-            "sugared_genericSig": "<Self where Self : TrueLayerCore.ProviderPersistable>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:13TrueLayerCore19ProviderPersistableP",
-        "mangledName": "$s13TrueLayerCore19ProviderPersistableP",
-        "moduleName": "TrueLayerCore",
-        "declAttributes": [
-          "AccessControl",
-          "SPIAccessControl",
-          "RawDocComment"
-        ],
-        "spi_group_names": [
-          "TrueLayer"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerCore"
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -17654,124 +17913,6 @@
               "TrueLayer"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateLastUsed",
-            "printedName": "updateLastUsed(with:dateProvider:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Foundation.Date",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ],
-                "hasDefaultArg": true
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So14NSUserDefaultsC13TrueLayerCoreE14updateLastUsed4with12dateProviderySS_10Foundation4DateVyXEtKF",
-            "mangledName": "$sSo14NSUserDefaultsC13TrueLayerCoreE14updateLastUsed4with12dateProviderySS_10Foundation4DateVyXEtKF",
-            "moduleName": "TrueLayerCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeFromLastUsed",
-            "printedName": "removeFromLastUsed(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So14NSUserDefaultsC13TrueLayerCoreE18removeFromLastUsedyySSKF",
-            "mangledName": "$sSo14NSUserDefaultsC13TrueLayerCoreE18removeFromLastUsedyySSKF",
-            "moduleName": "TrueLayerCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLastUsedProviders",
-            "printedName": "getLastUsedProviders()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[TrueLayerCore.Core.Payments.Models.Shared.Provider.Stored]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Stored",
-                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.Provider.Stored",
-                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8ProviderV6StoredV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So14NSUserDefaultsC13TrueLayerCoreE20getLastUsedProvidersSayAC0E0O8PaymentsO6ModelsO6SharedO8ProviderV6StoredVGyKF",
-            "mangledName": "$sSo14NSUserDefaultsC13TrueLayerCoreE20getLastUsedProvidersSayAC0E0O8PaymentsO6ModelsO6SharedO8ProviderV6StoredVGyKF",
-            "moduleName": "TrueLayerCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -17860,13 +18001,6 @@
             "printedName": "LongListOptionPersistable",
             "usr": "s:13TrueLayerCore25LongListOptionPersistableP",
             "mangledName": "$s13TrueLayerCore25LongListOptionPersistableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ProviderPersistable",
-            "printedName": "ProviderPersistable",
-            "usr": "s:13TrueLayerCore19ProviderPersistableP",
-            "mangledName": "$s13TrueLayerCore19ProviderPersistableP"
           }
         ]
       }

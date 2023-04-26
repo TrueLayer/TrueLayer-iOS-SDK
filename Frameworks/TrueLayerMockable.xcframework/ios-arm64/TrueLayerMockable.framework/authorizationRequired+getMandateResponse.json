@@ -40,6 +40,7 @@
     "type" : "user_selected",
     "provider_id": "315f429743d4"
   },
+  "reference" : "Penny",
   "currency" : "GBP",
   "beneficiary" : {
     "account_identifier" : {
@@ -47,7 +48,6 @@
       "sort_code" : "123456",
       "account_number" : "98765432"
     },
-    "reference" : "Penny",
     "type" : "external_account",
     "account_holder_name" : "SomeExternalName"
   }
