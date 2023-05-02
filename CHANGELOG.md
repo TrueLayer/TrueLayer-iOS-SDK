@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.5.0] - Apollo
+
+### Added
+
+- A new screen for selected banks in France and Finland primes new users on how to enable international payments from their bank, when the payment is being sent internationally
+- Providers are now sorted by market share on the provider selection screen.
+- Providers now show when their connection is offline before the user selects them.
+- New error cases:
+  - `invalidRedirectURI` error case to `TrueLayer.Payments.Models.Mandate.Error` and `TrueLayer.Payments.Models.SinglePayment.Error`.
+  - `providerOffline` error case to `TrueLayer.Payments.Models.Mandate.Error` and `TrueLayer.Payments.Models.SinglePayment.Error`. It will be thrown only if the provider is pre-selected.
+- PISP license holders who are processing payments under their certificates can now choose to remove TrueLayer branding from the user interface. Contact us to enquire about enabling this feature.
+
 ## [2.4.0] - Signup+
 
 ### Added

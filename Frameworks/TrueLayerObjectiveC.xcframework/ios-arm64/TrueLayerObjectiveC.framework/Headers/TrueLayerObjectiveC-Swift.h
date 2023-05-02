@@ -367,24 +367,28 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateError, open) {
   TrueLayerMandateErrorGeneric = 2,
 /// The token used to make the mandate is not authorized to undergo such operation.
   TrueLayerMandateErrorInvalidToken = 3,
+/// The redirect URI passed to the TrueLayer SDK is invalid.
+  TrueLayerMandateErrorInvalidRedirectURI = 4,
 /// The mandate expired.
-  TrueLayerMandateErrorMandateExpired = 4,
+  TrueLayerMandateErrorMandateExpired = 5,
 /// The requested mandate was not found.
 /// This is probably due to it not being created on the backend side.
-  TrueLayerMandateErrorMandateNotFound = 5,
+  TrueLayerMandateErrorMandateNotFound = 6,
 /// The mandate was rejected by the bank.
-  TrueLayerMandateErrorMandateRejected = 6,
+  TrueLayerMandateErrorMandateRejected = 7,
+/// The pre-selected provider was offline.
+  TrueLayerMandateErrorProviderOffline = 8,
 /// The mandate has been revoked and is no longer valid.
-  TrueLayerMandateErrorRevoked = 7,
+  TrueLayerMandateErrorRevoked = 9,
 /// The SDK <code>configure</code> method has not been called before using it.
-  TrueLayerMandateErrorSdkNotConfigured = 8,
+  TrueLayerMandateErrorSdkNotConfigured = 10,
 /// The server encountered an error while processing the answer.
-  TrueLayerMandateErrorServerError = 9,
+  TrueLayerMandateErrorServerError = 11,
 /// The SDK encountered an unexpected behaviour.
 /// This error should never occur.
-  TrueLayerMandateErrorUnexpectedBehavior = 10,
+  TrueLayerMandateErrorUnexpectedBehavior = 12,
 /// The user canceled the mandate.
-  TrueLayerMandateErrorUserCanceled = 11,
+  TrueLayerMandateErrorUserCanceled = 13,
 };
 static NSString * _Nonnull const TrueLayerMandateErrorDomain = @"TrueLayerObjectiveC.TrueLayerMandateError";
 
@@ -555,22 +559,26 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentError, open) {
   TrueLayerSinglePaymentErrorGeneric = 2,
 /// The token used to make the payment is not authorized to undergo such operation.
   TrueLayerSinglePaymentErrorInvalidToken = 3,
+/// The redirect URI passed to the TrueLayer SDK is invalid.
+  TrueLayerSinglePaymentErrorInvalidRedirectURI = 4,
 /// The user took too long to complete the payment, and therefore it expired.
-  TrueLayerSinglePaymentErrorPaymentExpired = 4,
+  TrueLayerSinglePaymentErrorPaymentExpired = 5,
 /// The requested payment was not found.
 /// This is probably due to it not being created on the backend side.
-  TrueLayerSinglePaymentErrorPaymentNotFound = 5,
+  TrueLayerSinglePaymentErrorPaymentNotFound = 6,
 /// The payment was rejected by the bank.
-  TrueLayerSinglePaymentErrorPaymentRejected = 6,
+  TrueLayerSinglePaymentErrorPaymentRejected = 7,
+/// The pre-selected provider was offline.
+  TrueLayerSinglePaymentErrorProviderOffline = 8,
 /// The <code>SDK</code> <code>configure</code> method has not been called before using it.
-  TrueLayerSinglePaymentErrorSdkNotConfigured = 7,
+  TrueLayerSinglePaymentErrorSdkNotConfigured = 9,
 /// The server encountered an error while processing the answer.
-  TrueLayerSinglePaymentErrorServerError = 8,
+  TrueLayerSinglePaymentErrorServerError = 10,
 /// The <code>SDK</code> encountered an unexpected behavior.
 /// This error should never occur.
-  TrueLayerSinglePaymentErrorUnexpectedBehavior = 9,
+  TrueLayerSinglePaymentErrorUnexpectedBehavior = 11,
 /// The user canceled the payment.
-  TrueLayerSinglePaymentErrorUserCanceled = 10,
+  TrueLayerSinglePaymentErrorUserCanceled = 12,
 };
 static NSString * _Nonnull const TrueLayerSinglePaymentErrorDomain = @"TrueLayerObjectiveC.TrueLayerSinglePaymentError";
 

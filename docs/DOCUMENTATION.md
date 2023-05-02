@@ -63,6 +63,8 @@ The parameters used in `TrueLayer.Payments.Models.SinglePayment.Context` are exp
 | `.serverError` | The server encountered an error while processing the answer.
 | `.unexpectedBehaviour`| The `SDK` encountered an unexpected behavior.
 | `.userCanceled` | The user canceled the payment.
+| `.invalidRedirectURI` | The redirect URL provided in the context is not valid.
+| `.providerOffline` | The preselected provider is offline and cannot be reached.
 
 ### Getting Payment Status
 
@@ -139,6 +141,8 @@ The parameters used in `TrueLayer.Payments.Models.Mandate.Context` are explained
 | `.serverError` | The server encountered an error while processing the answer.
 | `.unexpectedBehaviour`| The `SDK` encountered an unexpected behavior.
 | `.userCanceled` | The user canceled the mandate.
+| `.invalidRedirectURI` | The redirect URL provided in the context is not valid.
+| `.providerOffline` | The preselected provider is offline and cannot be reached.
 
 ### Getting Mandate Status
 

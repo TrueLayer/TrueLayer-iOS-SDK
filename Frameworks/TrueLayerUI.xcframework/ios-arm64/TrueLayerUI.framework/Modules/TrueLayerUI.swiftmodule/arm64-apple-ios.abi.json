@@ -1217,12 +1217,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (TrueLayerCore.Core.Payments.Models.Shared.Provider, [Swift.String : Swift.String], Swift.Int?) -> TrueLayerUI.Analytics.Event",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (TrueLayerCore.Core.Payments.Models.Shared.Provider, [Swift.String : Swift.String], Swift.String, Swift.Int?) -> TrueLayerUI.Analytics.Event",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.Provider, [Swift.String : Swift.String], Swift.Int?) -> TrueLayerUI.Analytics.Event",
+                        "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.Provider, [Swift.String : Swift.String], Swift.String, Swift.Int?) -> TrueLayerUI.Analytics.Event",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1233,7 +1233,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputsAndTypes: [Swift.String : Swift.String], listSize: Swift.Int?)",
+                            "printedName": "(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, inputsAndTypes: [Swift.String : Swift.String], paymentCurrency: Swift.String, listSize: Swift.Int?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1260,6 +1260,12 @@
                                   }
                                 ],
                                 "usr": "s:SD"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -1296,8 +1302,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:11TrueLayerUI9AnalyticsO5EventO22additionalInputsLoadedyAE0aB4Core0I0O8PaymentsO6ModelsO6SharedO8ProviderV_SDyS2SGSiSgtcAEmF",
-                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO22additionalInputsLoadedyAE0aB4Core0I0O8PaymentsO6ModelsO6SharedO8ProviderV_SDyS2SGSiSgtcAEmF",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO22additionalInputsLoadedyAE0aB4Core0I0O8PaymentsO6ModelsO6SharedO8ProviderV_SDyS2SGSSSiSgtcAEmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO22additionalInputsLoadedyAE0aB4Core0I0O8PaymentsO6ModelsO6SharedO8ProviderV_SDyS2SGSSSiSgtcAEmF",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "RawDocComment"
@@ -1894,12 +1900,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (Swift.String, Swift.String) -> TrueLayerUI.Analytics.Event",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (Swift.String, Swift.String, Swift.String?) -> TrueLayerUI.Analytics.Event",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String, Swift.String) -> TrueLayerUI.Analytics.Event",
+                        "printedName": "(Swift.String, Swift.String, Swift.String?) -> TrueLayerUI.Analytics.Event",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1910,7 +1916,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(type: Swift.String, message: Swift.String)",
+                            "printedName": "(type: Swift.String, message: Swift.String, moreInfo: Swift.String?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1923,6 +1929,20 @@
                                 "name": "String",
                                 "printedName": "Swift.String",
                                 "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               }
                             ]
                           }
@@ -1945,8 +1965,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:11TrueLayerUI9AnalyticsO5EventO13errorOccurredyAESS_SStcAEmF",
-                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO13errorOccurredyAESS_SStcAEmF",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO13errorOccurredyAESS_S2SSgtcAEmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO13errorOccurredyAESS_S2SSgtcAEmF",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "RawDocComment"
@@ -2404,12 +2424,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (Swift.Bool) -> TrueLayerUI.Analytics.Event",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (Swift.Bool, [Swift.String], Swift.String) -> TrueLayerUI.Analytics.Event",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Bool) -> TrueLayerUI.Analytics.Event",
+                        "printedName": "(Swift.Bool, [Swift.String], Swift.String) -> TrueLayerUI.Analytics.Event",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2420,13 +2440,33 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(includesPreviouslySelectedProviders: Swift.Bool)",
+                            "printedName": "(includesPreviouslySelectedProviders: Swift.Bool, unavailableProviders: [Swift.String], paymentCurrency: Swift.String)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Bool",
                                 "printedName": "Swift.Bool",
                                 "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
                               }
                             ]
                           }
@@ -2449,8 +2489,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:11TrueLayerUI9AnalyticsO5EventO23providerSelectionLoadedyAESb_tcAEmF",
-                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO23providerSelectionLoadedyAESb_tcAEmF",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO23providerSelectionLoadedyAESb_SaySSGSStcAEmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO23providerSelectionLoadedyAESb_SaySSGSStcAEmF",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "RawDocComment"
@@ -2808,6 +2848,155 @@
                 "declKind": "EnumElement",
                 "usr": "s:11TrueLayerUI9AnalyticsO5EventO15sdkUICustomisedyAESDyS2SG_tcAEmF",
                 "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO15sdkUICustomisedyAESDyS2SG_tcAEmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "userPrimingLoaded",
+                "printedName": "userPrimingLoaded",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> (TrueLayerCore.Core.Payments.Models.Shared.Provider) -> TrueLayerUI.Analytics.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerCore.Core.Payments.Models.Shared.Provider) -> TrueLayerUI.Analytics.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "TrueLayerUI.Analytics.Event",
+                            "usr": "s:11TrueLayerUI9AnalyticsO5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Provider",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.Provider",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8ProviderV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.Analytics.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "TrueLayerUI.Analytics.Event",
+                            "usr": "s:11TrueLayerUI9AnalyticsO5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO17userPrimingLoadedyAE0aB4Core0I0O8PaymentsO6ModelsO6SharedO8ProviderV_tcAEmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO17userPrimingLoadedyAE0aB4Core0I0O8PaymentsO6ModelsO6SharedO8ProviderV_tcAEmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "userPrimingBankLinkTapped",
+                "printedName": "userPrimingBankLinkTapped",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> TrueLayerUI.Analytics.Event",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Event",
+                        "printedName": "TrueLayerUI.Analytics.Event",
+                        "usr": "s:11TrueLayerUI9AnalyticsO5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.Analytics.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "TrueLayerUI.Analytics.Event",
+                            "usr": "s:11TrueLayerUI9AnalyticsO5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO25userPrimingBankLinkTappedyA2EmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO25userPrimingBankLinkTappedyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "userPrimingContinueTapped",
+                "printedName": "userPrimingContinueTapped",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.Analytics.Event.Type) -> TrueLayerUI.Analytics.Event",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Event",
+                        "printedName": "TrueLayerUI.Analytics.Event",
+                        "usr": "s:11TrueLayerUI9AnalyticsO5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.Analytics.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "TrueLayerUI.Analytics.Event",
+                            "usr": "s:11TrueLayerUI9AnalyticsO5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI9AnalyticsO5EventO25userPrimingContinueTappedyA2EmF",
+                "mangledName": "$s11TrueLayerUI9AnalyticsO5EventO25userPrimingContinueTappedyA2EmF",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "RawDocComment"
@@ -3350,8 +3539,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TrueLayerUI"
       },
@@ -3410,37 +3599,6 @@
         "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerCore",
-        "printedName": "TrueLayerCore",
         "declKind": "Import",
         "moduleName": "TrueLayerUI",
         "declAttributes": [
@@ -3480,98 +3638,10 @@
       },
       {
         "kind": "Import",
-        "name": "TrueLayerUtils",
-        "printedName": "TrueLayerUtils",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerAPI",
-        "printedName": "TrueLayerAPI",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerCore",
-        "printedName": "TrueLayerCore",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerUtils",
-        "printedName": "TrueLayerUtils",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerUtils",
-        "printedName": "TrueLayerUtils",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerCore",
-        "printedName": "TrueLayerCore",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
       },
       {
         "kind": "Import",
@@ -3633,6 +3703,125 @@
         "declAttributes": [
           "SPIAccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerAPI",
+        "printedName": "TrueLayerAPI",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
       },
       {
         "kind": "Import",
@@ -5199,12 +5388,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "ProtocolComposition",
-                "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable"
+                "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0AE08ProviderJ0pvp",
-            "mangledName": "$s11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0AE08ProviderJ0pvp",
+            "usr": "s:11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0pvp",
+            "mangledName": "$s11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0pvp",
             "moduleName": "TrueLayerUI",
             "protocolReq": true,
             "declAttributes": [
@@ -5222,12 +5411,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ProtocolComposition",
-                    "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable"
+                    "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0AE08ProviderJ0pvg",
-                "mangledName": "$s11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0AE08ProviderJ0pvg",
+                "usr": "s:11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0pvg",
+                "mangledName": "$s11TrueLayerUI16SomeDependenciesP13dataPersister0aB4Core18CountryPersistable_AE014LongListOptionJ0pvg",
                 "moduleName": "TrueLayerUI",
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerUI.SomeDependencies>",
                 "sugared_genericSig": "<Self where Self : TrueLayerUI.SomeDependencies>",
@@ -7099,12 +7288,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ProtocolComposition",
-                    "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable"
+                    "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0AG08ProviderI0pvp",
-                "mangledName": "$s11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0AG08ProviderI0pvp",
+                "usr": "s:11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0pvp",
+                "mangledName": "$s11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0pvp",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "HasStorage",
@@ -7125,12 +7314,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "ProtocolComposition",
-                        "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable"
+                        "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0AG08ProviderI0pvg",
-                    "mangledName": "$s11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0AG08ProviderI0pvg",
+                    "usr": "s:11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0pvg",
+                    "mangledName": "$s11TrueLayerUI0C0O12DependenciesV13dataPersister0aB4Core18CountryPersistable_AG014LongListOptionI0pvg",
                     "moduleName": "TrueLayerUI",
                     "implicit": true,
                     "spi_group_names": [
@@ -7511,7 +7700,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ProtocolComposition",
-                    "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable & TrueLayerCore.ProviderPersistable"
+                    "printedName": "TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable"
                   },
                   {
                     "kind": "TypeNominal",
@@ -7545,8 +7734,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:11TrueLayerUI0C0O12DependenciesV15requestsManager13dataPersister6router9urlOpener7context07networkF009analyticsF0AE0aB3API08RequestsF0_p_0aB4Core18CountryPersistable_AO014LongListOptionS0AO08ProviderS0pAA010NavigationW0_pAA9URLOpener_pAA15MerchantContext_p0aB7Network7NetworkO0F0VAA9AnalyticsOAYCtcfc",
-                "mangledName": "$s11TrueLayerUI0C0O12DependenciesV15requestsManager13dataPersister6router9urlOpener7context07networkF009analyticsF0AE0aB3API08RequestsF0_p_0aB4Core18CountryPersistable_AO014LongListOptionS0AO08ProviderS0pAA010NavigationW0_pAA9URLOpener_pAA15MerchantContext_p0aB7Network7NetworkO0F0VAA9AnalyticsOAYCtcfc",
+                "usr": "s:11TrueLayerUI0C0O12DependenciesV15requestsManager13dataPersister6router9urlOpener7context07networkF009analyticsF0AE0aB3API08RequestsF0_p_0aB4Core18CountryPersistable_AO014LongListOptionS0pAA18NavigationProvider_pAA9URLOpener_pAA15MerchantContext_p0aB7Network7NetworkO0F0VAA9AnalyticsOAXCtcfc",
+                "mangledName": "$s11TrueLayerUI0C0O12DependenciesV15requestsManager13dataPersister6router9urlOpener7context07networkF009analyticsF0AE0aB3API08RequestsF0_p_0aB4Core18CountryPersistable_AO014LongListOptionS0pAA18NavigationProvider_pAA9URLOpener_pAA15MerchantContext_p0aB7Network7NetworkO0F0VAA9AnalyticsOAXCtcfc",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "AccessControl",
@@ -8735,6 +8924,46 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "userPriming",
+                "printedName": "userPriming",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.UI.Route.Type) -> TrueLayerUI.UI.Route",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "TrueLayerUI.UI.Route",
+                        "usr": "s:11TrueLayerUI0C0O5RouteO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.UI.Route.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Route",
+                            "printedName": "TrueLayerUI.UI.Route",
+                            "usr": "s:11TrueLayerUI0C0O5RouteO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI0C0O5RouteO11userPrimingyA2EmF",
+                "mangledName": "$s11TrueLayerUI0C0O5RouteO11userPrimingyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -8917,6 +9146,62 @@
               },
               {
                 "kind": "Var",
+                "name": "failedToDecode",
+                "printedName": "failedToDecode",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.UI.TrueLayerError.Type) -> (Swift.String) -> TrueLayerUI.UI.TrueLayerError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> TrueLayerUI.UI.TrueLayerError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TrueLayerError",
+                            "printedName": "TrueLayerUI.UI.TrueLayerError",
+                            "usr": "s:11TrueLayerUI0C0O0aB5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.UI.TrueLayerError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TrueLayerError",
+                            "printedName": "TrueLayerUI.UI.TrueLayerError",
+                            "usr": "s:11TrueLayerUI0C0O0aB5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI0C0O0aB5ErrorO14failedToDecodeyAESScAEmF",
+                "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO14failedToDecodeyAESScAEmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "invalidToken",
                 "printedName": "invalidToken",
                 "children": [
@@ -8950,6 +9235,70 @@
                 "declKind": "EnumElement",
                 "usr": "s:11TrueLayerUI0C0O0aB5ErrorO12invalidTokenyA2EmF",
                 "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO12invalidTokenyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "invalidRedirectURI",
+                "printedName": "invalidRedirectURI",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.UI.TrueLayerError.Type) -> ([Swift.String]) -> TrueLayerUI.UI.TrueLayerError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String]) -> TrueLayerUI.UI.TrueLayerError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TrueLayerError",
+                            "printedName": "TrueLayerUI.UI.TrueLayerError",
+                            "usr": "s:11TrueLayerUI0C0O0aB5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.UI.TrueLayerError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TrueLayerError",
+                            "printedName": "TrueLayerUI.UI.TrueLayerError",
+                            "usr": "s:11TrueLayerUI0C0O0aB5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI0C0O0aB5ErrorO18invalidRedirectURIyAESaySSGcAEmF",
+                "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO18invalidRedirectURIyAESaySSGcAEmF",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
                   "RawDocComment"
@@ -9410,6 +9759,49 @@
               },
               {
                 "kind": "Var",
+                "name": "providerOffline",
+                "printedName": "providerOffline",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.UI.TrueLayerError.Type) -> TrueLayerUI.UI.TrueLayerError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerError",
+                        "printedName": "TrueLayerUI.UI.TrueLayerError",
+                        "usr": "s:11TrueLayerUI0C0O0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.UI.TrueLayerError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TrueLayerError",
+                            "printedName": "TrueLayerUI.UI.TrueLayerError",
+                            "usr": "s:11TrueLayerUI0C0O0aB5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI0C0O0aB5ErrorO15providerOfflineyA2EmF",
+                "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO15providerOfflineyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "description",
                 "printedName": "description",
                 "children": [
@@ -9447,6 +9839,69 @@
                     "declKind": "Accessor",
                     "usr": "s:11TrueLayerUI0C0O0aB5ErrorO11descriptionSSvg",
                     "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO11descriptionSSvg",
+                    "moduleName": "TrueLayerUI",
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "extraInfo",
+                "printedName": "extraInfo",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI0C0O0aB5ErrorO9extraInfoSSSgvp",
+                "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO9extraInfoSSSgvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI0C0O0aB5ErrorO9extraInfoSSSgvg",
+                    "mangledName": "$s11TrueLayerUI0C0O0aB5ErrorO9extraInfoSSSgvg",
                     "moduleName": "TrueLayerUI",
                     "spi_group_names": [
                       "TrueLayer"
@@ -11313,6 +11768,16 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerAPI",
+        "printedName": "TrueLayerAPI",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerCore",
         "printedName": "TrueLayerCore",
         "declKind": "Import",
@@ -11588,6 +12053,84 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
         ]
       },
       {
@@ -12449,1985 +12992,1810 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 704,
       "length": 12,
       "value": "\"back_arrow\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 782,
       "length": 18,
       "value": "\"bank_placeholder\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 908,
       "length": 17,
       "value": "\"flags\/square\/at\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 982,
       "length": 17,
       "value": "\"flags\/square\/au\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1056,
       "length": 17,
       "value": "\"flags\/square\/be\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1130,
       "length": 17,
       "value": "\"flags\/square\/de\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1204,
       "length": 17,
       "value": "\"flags\/square\/dk\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1278,
       "length": 17,
       "value": "\"flags\/square\/es\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1352,
       "length": 17,
       "value": "\"flags\/square\/fi\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 17,
       "value": "\"flags\/square\/fr\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1500,
       "length": 17,
       "value": "\"flags\/square\/gb\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1574,
       "length": 17,
       "value": "\"flags\/square\/ie\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1648,
       "length": 17,
       "value": "\"flags\/square\/it\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1722,
       "length": 17,
       "value": "\"flags\/square\/lt\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1796,
       "length": 17,
       "value": "\"flags\/square\/nl\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1870,
       "length": 17,
       "value": "\"flags\/square\/no\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1944,
       "length": 17,
       "value": "\"flags\/square\/pl\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2018,
       "length": 17,
       "value": "\"flags\/square\/pt\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2092,
       "length": 17,
       "value": "\"flags\/square\/ro\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2166,
       "length": 17,
       "value": "\"flags\/square\/se\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2240,
       "length": 17,
       "value": "\"flags\/square\/us\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2336,
       "length": 21,
       "value": "\"generic_placeholder\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2424,
       "length": 20,
       "value": "\"tl_logo_connecting\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistAssets+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 2520,
+      "length": 30,
+      "value": "\"tl_logo_connecting_regulated\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 606,
       "length": 21,
       "value": "\"alert.abort.message\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 734,
       "length": 30,
       "value": "\"alert.abort.noContinueButton\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 847,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 862,
       "length": 19,
       "value": "\"alert.abort.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 971,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 986,
       "length": 29,
       "value": "\"alert.abort.yesCancelButton\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1131,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 27,
       "value": "\"alert.action.goBackButton\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1253,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1268,
       "length": 26,
       "value": "\"alert.action.retryButton\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1483,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1498,
       "length": 27,
       "value": "\"alert.cancel.mandate.body\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1612,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1627,
       "length": 28,
       "value": "\"alert.cancel.mandate.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1854,
       "length": 29,
       "value": "\"alert.generic.error.message\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1961,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 1976,
       "length": 27,
       "value": "\"alert.generic.error.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2238,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2253,
       "length": 29,
       "value": "\"alert.network.error.message\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2368,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
       "offset": 2383,
       "length": 27,
       "value": "\"alert.network.error.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2544,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2559,
+      "length": 37,
+      "value": "\"alert.providerDowntime.goBackButton\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 2948,
+      "length": 13,
+      "value": "\"Localizable\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 2963,
+      "length": 30,
+      "value": "\"alert.providerDowntime.title\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 3187,
+      "length": 13,
+      "value": "\"Localizable\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 3202,
       "length": 28,
       "value": "\"alert.server.error.message\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2740,
+      "offset": 3315,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2755,
+      "offset": 3330,
       "length": 26,
       "value": "\"alert.server.error.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2933,
+      "offset": 3508,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2948,
+      "offset": 3523,
       "length": 22,
       "value": "\"legal.headline.right\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3125,
+      "offset": 3700,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3140,
+      "offset": 3715,
       "length": 36,
       "value": "\"screen.additionalInput.actionTitle\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3262,
+      "offset": 3837,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3277,
+      "offset": 3852,
       "length": 35,
       "value": "\"screen.additionalInput.isRequired\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3965,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3405,
+      "offset": 3980,
       "length": 30,
       "value": "\"screen.additionalInput.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3628,
+      "offset": 4203,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3643,
+      "offset": 4218,
       "length": 52,
       "value": "\"screen.additionalInput.branch.selection.view.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3843,
+      "offset": 4418,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3858,
+      "offset": 4433,
       "length": 35,
       "value": "\"screen.additionalInput.form.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4309,
+      "offset": 4884,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4324,
+      "offset": 4899,
       "length": 48,
       "value": "\"screen.additionalInput.form.input.ibanNotValid\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4949,
+      "offset": 5524,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4964,
+      "offset": 5539,
       "length": 44,
       "value": "\"screen.additionalInput.form.input.required\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5148,
+      "offset": 5723,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 5738,
       "length": 41,
       "value": "\"screen.additionalInput.noDataView.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5330,
+      "offset": 5905,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5345,
+      "offset": 5920,
       "length": 42,
       "value": "\"screen.additionalInput.placeholder.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5503,
+      "offset": 6078,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5518,
+      "offset": 6093,
       "length": 50,
       "value": "\"screen.additionalInput.placeholder.numeric.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5704,
+      "offset": 6279,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5719,
+      "offset": 6294,
       "length": 42,
       "value": "\"screen.additionalInput.radioSelect.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5883,
+      "offset": 6458,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5898,
+      "offset": 6473,
       "length": 55,
       "value": "\"screen.additionalInput.radioSelect.actionButton.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6220,
+      "offset": 6795,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6235,
+      "offset": 6810,
       "length": 71,
       "value": "\"screen.additionalInputs.singleChoiceList.section.previouslyUsed.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6459,
+      "offset": 7034,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6474,
+      "offset": 7049,
       "length": 28,
       "value": "\"screen.confirmPayment.body\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6585,
+      "offset": 7160,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6600,
+      "offset": 7175,
       "length": 29,
       "value": "\"screen.confirmPayment.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6774,
+      "offset": 7349,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6789,
+      "offset": 7364,
       "length": 34,
       "value": "\"screen.confirmPayment.alert.body\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6899,
+      "offset": 7474,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6914,
+      "offset": 7489,
       "length": 36,
       "value": "\"screen.confirmPayment.alert.button\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7031,
+      "offset": 7606,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7046,
+      "offset": 7621,
       "length": 35,
       "value": "\"screen.confirmPayment.alert.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7215,
+      "offset": 7790,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7230,
+      "offset": 7805,
       "length": 39,
       "value": "\"screen.confirmPayment.continue.button\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8050,
+      "offset": 8625,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8065,
+      "offset": 8640,
       "length": 48,
       "value": "\"screen.consent.components.information.fca.info\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8267,
+      "offset": 8842,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8282,
+      "offset": 8857,
       "length": 61,
       "value": "\"screen.consent.components.information.howDoesThisWork.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8495,
+      "offset": 9070,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8510,
+      "offset": 9085,
       "length": 37,
       "value": "\"screen.consent.mandate.cancellation\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8644,
+      "offset": 9219,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8659,
+      "offset": 9234,
       "length": 39,
       "value": "\"screen.consent.mandate.paymentDetails\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9123,
+      "offset": 9698,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9138,
+      "offset": 9713,
       "length": 30,
       "value": "\"screen.consent.mandate.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9246,
+      "offset": 9821,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9261,
+      "offset": 9836,
       "length": 30,
       "value": "\"screen.consent.mandate.today\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9437,
+      "offset": 10012,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9452,
+      "offset": 10027,
       "length": 49,
       "value": "\"screen.consent.mandate.bulletList.cancelAnyTime\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9614,
+      "offset": 10189,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9629,
+      "offset": 10204,
       "length": 47,
       "value": "\"screen.consent.mandate.bulletList.connectOnce\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9786,
+      "offset": 10361,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9801,
+      "offset": 10376,
       "length": 49,
       "value": "\"screen.consent.mandate.bulletList.fcaAuthorized\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9986,
+      "offset": 10561,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10001,
+      "offset": 10576,
       "length": 40,
       "value": "\"screen.consent.mandate.continue.button\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10208,
+      "offset": 10783,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10223,
+      "offset": 10798,
       "length": 42,
       "value": "\"screen.consent.mandate.details.fca.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10708,
+      "offset": 11283,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10723,
+      "offset": 11298,
       "length": 53,
       "value": "\"screen.consent.mandate.details.howDoesThisWork.info\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11083,
+      "offset": 11658,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11098,
+      "offset": 11673,
       "length": 46,
       "value": "\"screen.consent.mandate.details.security.info\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11231,
+      "offset": 11806,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11246,
+      "offset": 11821,
       "length": 47,
       "value": "\"screen.consent.mandate.details.security.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 14800,
+      "offset": 15375,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 14815,
+      "offset": 15390,
       "length": 48,
       "value": "\"screen.consent.signupPlus.howDoesThisWork.body\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15012,
+      "offset": 15587,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15027,
+      "offset": 15602,
       "length": 31,
       "value": "\"screen.countrySelection.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15196,
+      "offset": 15771,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15211,
+      "offset": 15786,
       "length": 40,
       "value": "\"screen.countrySelection.noResults.body\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15340,
+      "offset": 15915,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15355,
+      "offset": 15930,
       "length": 41,
       "value": "\"screen.countrySelection.noResults.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15521,
+      "offset": 16096,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15536,
+      "offset": 16111,
       "length": 47,
       "value": "\"screen.countrySelection.searchBar.placeholder\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15720,
+      "offset": 16295,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15735,
+      "offset": 16310,
       "length": 32,
       "value": "\"screen.providerSelection.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15877,
+      "offset": 16519,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 15892,
+      "offset": 16534,
+      "length": 58,
+      "value": "\"screen.providerSelection.cell.error.providerNotAvailable\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 16720,
+      "length": 13,
+      "value": "\"Localizable\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 16735,
       "length": 38,
       "value": "\"screen.providerSelection.error.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16045,
+      "offset": 16888,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16060,
+      "offset": 16903,
       "length": 46,
       "value": "\"screen.providerSelection.error.cancel.button\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16236,
+      "offset": 17079,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16251,
+      "offset": 17094,
       "length": 48,
       "value": "\"screen.providerSelection.error.tryAgain.button\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16452,
+      "offset": 17295,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16467,
+      "offset": 17310,
       "length": 41,
       "value": "\"screen.providerSelection.noResults.body\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16594,
+      "offset": 17437,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16609,
+      "offset": 17452,
       "length": 42,
       "value": "\"screen.providerSelection.noResults.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16776,
+      "offset": 17619,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 16791,
+      "offset": 17634,
       "length": 48,
       "value": "\"screen.providerSelection.searchBar.placeholder\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17367,
+      "offset": 18210,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17382,
+      "offset": 18225,
       "length": 63,
       "value": "\"screen.providerSelection.section.allBanks.singleCountry.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17657,
+      "offset": 18500,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17672,
+      "offset": 18515,
       "length": 67,
       "value": "\"screen.providerSelection.section.filtered.multipleCountries.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17887,
+      "offset": 18730,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17902,
+      "offset": 18745,
       "length": 63,
       "value": "\"screen.providerSelection.section.filtered.singleCountry.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18116,
+      "offset": 18959,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18131,
+      "offset": 18974,
       "length": 55,
       "value": "\"screen.providerSelection.section.previouslyUsed.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18331,
+      "offset": 19179,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18346,
+      "offset": 19194,
+      "length": 35,
+      "value": "\"screen.userPriming.doneThisButton\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 19356,
+      "length": 13,
+      "value": "\"Localizable\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "kind": "StringLiteral",
+      "offset": 19371,
       "length": 21,
       "value": "\"screen.wait.message\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18609,
+      "offset": 19634,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18624,
+      "offset": 19649,
       "length": 36,
       "value": "\"screen.wait.timeout.dialog.message\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18757,
+      "offset": 19782,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18772,
+      "offset": 19797,
       "length": 34,
       "value": "\"screen.wait.timeout.dialog.title\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18938,
+      "offset": 19963,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18953,
+      "offset": 19978,
       "length": 47,
       "value": "\"screen.wait.timeout.dialog.button.keepwaiting\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19086,
+      "offset": 20111,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19101,
+      "offset": 20126,
       "length": 41,
       "value": "\"screen.wait.timeout.dialog.button.leave\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 322,
-      "length": 36,
-      "value": "\"providerSelectionCountryFlagButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 431,
-      "length": 28,
-      "value": "\"providerSelectionSearchBar\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 534,
-      "length": 28,
-      "value": "\"providerSelectionTableView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 322,
-      "length": 36,
-      "value": "\"providerSelectionCountryFlagButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 431,
-      "length": 28,
-      "value": "\"providerSelectionSearchBar\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 534,
-      "length": 28,
-      "value": "\"providerSelectionTableView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 873,
-      "length": 29,
-      "value": "\"countrySelectionCloseButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 975,
-      "length": 27,
-      "value": "\"countrySelectionSearchBar\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1077,
-      "length": 27,
-      "value": "\"countrySelectionTableView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 873,
-      "length": 29,
-      "value": "\"countrySelectionCloseButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 975,
-      "length": 27,
-      "value": "\"countrySelectionSearchBar\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1077,
-      "length": 27,
-      "value": "\"countrySelectionTableView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1281,
-      "length": 31,
-      "value": "\"paymentConsentAmountToPayBody\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1383,
-      "length": 32,
-      "value": "\"paymentConsentAmountToPayTitle\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1500,
-      "length": 36,
-      "value": "\"paymentConsentBeneficiaryNameLabel\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1680,
-      "length": 39,
-      "value": "\"paymentConsentSignupPlusHeadlineLabel\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1849,
-      "length": 47,
-      "value": "\"paymentConsentSignupPlusHowDoesThisWorkButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1281,
-      "length": 31,
-      "value": "\"paymentConsentAmountToPayBody\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1383,
-      "length": 32,
-      "value": "\"paymentConsentAmountToPayTitle\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1500,
-      "length": 36,
-      "value": "\"paymentConsentBeneficiaryNameLabel\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1680,
-      "length": 39,
-      "value": "\"paymentConsentSignupPlusHeadlineLabel\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 1849,
-      "length": 47,
-      "value": "\"paymentConsentSignupPlusHowDoesThisWorkButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 2709,
-      "length": 25,
-      "value": "\"sharedActivityIndicator\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 2819,
-      "length": 19,
-      "value": "\"sharedCloseButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 2930,
-      "length": 27,
-      "value": "\"sharedConnectingImageView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3025,
-      "length": 27,
-      "value": "\"sharedMerchantRemoteImage\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3120,
-      "length": 27,
-      "value": "\"sharedProviderRemoteImage\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 2709,
-      "length": 25,
-      "value": "\"sharedActivityIndicator\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 2819,
-      "length": 19,
-      "value": "\"sharedCloseButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 2930,
-      "length": 27,
-      "value": "\"sharedConnectingImageView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3025,
-      "length": 27,
-      "value": "\"sharedMerchantRemoteImage\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3120,
-      "length": 27,
-      "value": "\"sharedProviderRemoteImage\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3348,
+      "offset": 3158,
       "length": 28,
       "value": "\"continueFooterActionButton\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 3477,
+      "offset": 3287,
       "length": 40,
       "value": "\"continueFooterLegalsActionableTextView\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 3348,
+      "offset": 3158,
       "length": 28,
       "value": "\"continueFooterActionButton\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 3477,
+      "offset": 3287,
       "length": 40,
       "value": "\"continueFooterLegalsActionableTextView\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 3820,
-      "length": 38,
-      "value": "\"signupPlusExplanationHowDoesThisWork\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3946,
-      "length": 33,
-      "value": "\"signupPlusExplanationScrollView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 4087,
-      "length": 34,
-      "value": "\"signupPlusExplanationCloseButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3820,
-      "length": 38,
-      "value": "\"signupPlusExplanationHowDoesThisWork\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3946,
-      "length": 33,
-      "value": "\"signupPlusExplanationScrollView\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 4087,
-      "length": 34,
-      "value": "\"signupPlusExplanationCloseButton\""
-    },
-    {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 4430,
+      "offset": 5218,
       "length": 15,
       "value": "\"mandateSecure\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 4535,
+      "offset": 5323,
       "length": 21,
       "value": "\"mandateHowThisWorks\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 4652,
+      "offset": 5440,
       "length": 12,
       "value": "\"mandateFCA\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 4430,
+      "offset": 5218,
       "length": 15,
       "value": "\"mandateSecure\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 4535,
+      "offset": 5323,
       "length": 21,
       "value": "\"mandateHowThisWorks\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 4652,
+      "offset": 5440,
       "length": 12,
       "value": "\"mandateFCA\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2149,
       "length": 15,
       "value": "\"remitter-iban\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2256,
       "length": 8,
       "value": "\"psu-id\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2356,
       "length": 14,
       "value": "\"psu-password\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2527,
       "length": 22,
       "value": "\"sca_method_selection\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2657,
       "length": 19,
       "value": "\"otp_authorization\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2149,
       "length": 15,
       "value": "\"remitter-iban\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2256,
       "length": 8,
       "value": "\"psu-id\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2356,
       "length": 14,
       "value": "\"psu-password\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2527,
       "length": 22,
       "value": "\"sca_method_selection\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
       "offset": 2657,
       "length": 19,
       "value": "\"otp_authorization\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 3,
       "value": "172"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Analytics+APIRequest.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Analytics+APIRequest.swift",
       "kind": "Array",
       "offset": 383,
       "length": 15,
       "value": "[\"v1\", \"event\"]"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 5588,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 5588,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Manager+Analytics.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Manager+Analytics.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 25,
       "value": "\"com.truelayer.analytics\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Analytics\/Manager+Analytics.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Manager+Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 2228,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Components\/BulletList\/View+BulletList.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/BulletList\/View+BulletList.swift",
       "kind": "StringLiteral",
       "offset": 112,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Components\/BulletList\/View+BulletList.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/BulletList\/View+BulletList.swift",
       "kind": "BooleanLiteral",
       "offset": 5283,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Components\/ImagesStack\/View+ImagesStack.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/ImagesStack\/View+ImagesStack.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 2,
       "value": "64"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Components\/ImagesStack\/View+ImagesStack.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/ImagesStack\/View+ImagesStack.swift",
       "kind": "StringLiteral",
       "offset": 158,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Components\/Information\/View+ConsentInformation.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/Information\/View+ConsentInformation.swift",
       "kind": "StringLiteral",
       "offset": 74,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Mandate\/Details\/Header\/View+MandateHeader.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/Details\/Header\/View+MandateHeader.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Mandate\/Details\/Header\/View+MandateHeader.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/Details\/Header\/View+MandateHeader.swift",
       "kind": "StringLiteral",
       "offset": 113,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Consent\/Mandate\/Limits\/View+MandateLimits.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/Limits\/View+MandateLimits.swift",
       "kind": "StringLiteral",
       "offset": 66,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Custom\/Table\/Cell\/Primary\/View+PrimaryTableCell.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/Cell\/Primary\/View+PrimaryTableCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 248,
+      "offset": 255,
       "length": 2,
       "value": "56"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Custom\/Table\/Cell\/Primary\/ViewModel+PrimaryTableCell.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/Cell\/Primary\/ViewModel+PrimaryTableCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 1077,
+      "offset": 1243,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Custom\/Table\/EmptyState\/View+TableEmptyState.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/Cell\/Primary\/ViewModel+PrimaryTableCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1274,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/EmptyState\/View+TableEmptyState.swift",
       "kind": "StringLiteral",
       "offset": 67,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Custom\/Table\/SearchController\/SearchController+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/SearchController\/SearchController+UI.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 16,
       "value": "\"TrueLayerUI.SearchController\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Custom\/Table\/SearchController\/SearchController+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/SearchController\/SearchController+UI.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 16,
       "value": "\"TrueLayerUI.SearchController\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/ActionableTextView\/ActionableTextView+DesignComponents.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ActionableTextView\/ActionableTextView+DesignComponents.swift",
       "kind": "Dictionary",
       "offset": 693,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/ActionableTextView\/ActionableTextView+DesignComponents.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ActionableTextView\/ActionableTextView+DesignComponents.swift",
       "kind": "StringLiteral",
       "offset": 156,
       "length": 18,
       "value": "\"TrueLayerUI.ActionableTextView\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/Banner\/View+Banner.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/Banner\/View+Banner.swift",
       "kind": "IntegerLiteral",
       "offset": 206,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/Button\/Textual+Button.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/Button\/Textual+Button.swift",
       "kind": "StringLiteral",
       "offset": 156,
       "length": 7,
       "value": "\"TrueLayerUI.Textual\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/View+ContinueFooter.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/View+ContinueFooter.swift",
       "kind": "StringLiteral",
       "offset": 114,
       "length": 4,
       "value": "\"TrueLayerUI.View\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/ViewModel+ContinueFooter.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/ViewModel+ContinueFooter.swift",
       "kind": "BooleanLiteral",
       "offset": 794,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/RemoteImage.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/RemoteImage.swift",
       "kind": "StringLiteral",
       "offset": 624,
       "length": 5,
       "value": "\"svg\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/View+RemoteImage.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/View+RemoteImage.swift",
       "kind": "StringLiteral",
       "offset": 836,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
       "kind": "StringLiteral",
       "offset": 385,
       "length": 5,
       "value": "\"svg\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
       "kind": "BooleanLiteral",
       "offset": 537,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
       "kind": "BooleanLiteral",
       "offset": 655,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 3,
       "value": "\"TrueLayerUI.SVG\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/DesignComponents\/TextField\/View+TextField.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/TextField\/View+TextField.swift",
       "kind": "BooleanLiteral",
       "offset": 315,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Guide\/SomeModellableView.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Guide\/SomeModellableView.swift",
       "kind": "StringLiteral",
       "offset": 85,
       "length": 34,
       "value": "\"somemodellableview_viewmodel_key\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Guide\/SomeView.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Guide\/SomeView.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 30,
       "value": "\"truelayer.viewController.key\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Guide\/SomeViewController.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Guide\/SomeViewController.swift",
       "kind": "StringLiteral",
       "offset": 99,
       "length": 18,
       "value": "\"TrueLayerUI.SomeViewController\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Logic+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 10395,
+      "offset": 13768,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/NavigationProvider.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/NavigationProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 4067,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/PresentationStyle+UI.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/PresentationStyle+UI.swift",
       "kind": "BooleanLiteral",
       "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "IntegerLiteral",
-      "offset": 1508,
+      "offset": 1547,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1650,
       "length": 28,
       "value": "\"com.truelayer.routingQueue\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 5229,
+      "offset": 5268,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6004,
+      "offset": 6043,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6836,
+      "offset": 6875,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 7952,
+      "offset": 7991,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 8719,
+      "offset": 8758,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 10598,
+      "offset": 10637,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Navigation\/Router.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 12711,
+      "offset": 12750,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/SinglePayment\/Logic+MandateManageAuthorizationFlow.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+MandateManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
       "offset": 1236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
       "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/UserPriming\/Step\/View+UserPrimingStep.swift",
+      "kind": "StringLiteral",
+      "offset": 99,
+      "length": 4,
+      "value": "\"TrueLayerUI.View\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/UserPriming\/View+UserPriming.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1471,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 18,
       "value": "\"info.circle.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 251,
       "length": 11,
       "value": "\"lock.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 26,
       "value": "\"questionmark.circle.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 24,
       "value": "\"shield.lefthalf.filled\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 23,
       "value": "\"checkmark.shield.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 7,
       "value": "\"xmark\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 18,
       "value": "\"info.circle.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 251,
       "length": 11,
       "value": "\"lock.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 26,
       "value": "\"questionmark.circle.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 24,
       "value": "\"shield.lefthalf.filled\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 23,
       "value": "\"checkmark.shield.fill\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 7,
       "value": "\"xmark\""
     },
     {
-      "filePath": "\/Users\/firas.safa\/Code\/ios-sdk\/SDK\/Sources\/UI\/Utils\/UIScrollView+Extensions.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/UIScrollView+Extensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 1392,
+      "offset": 1359,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/UIView+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 858,
+      "length": 1,
+      "value": "0"
     }
   ]
 }

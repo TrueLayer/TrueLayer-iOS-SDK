@@ -81,6 +81,9 @@ extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
 @_spi(TrueLayer) extension Swift.String {
   @_spi(TrueLayer) public func isValidIBAN() -> Swift.Bool
 }
+@_spi(TrueLayer) extension Swift.String {
+  @_spi(TrueLayer) public func attributedStringWithDynamicFontAndHTML(baseFont: UIKit.UIFont, boldFont: UIKit.UIFont) -> Foundation.NSAttributedString?
+}
 @_spi(TrueLayer) public func mainThread(_ closure: () -> Swift.Void)
 @_spi(TrueLayer) extension Foundation.Thread {
   @_spi(TrueLayer) public var isRunningXCTest: Swift.Bool {

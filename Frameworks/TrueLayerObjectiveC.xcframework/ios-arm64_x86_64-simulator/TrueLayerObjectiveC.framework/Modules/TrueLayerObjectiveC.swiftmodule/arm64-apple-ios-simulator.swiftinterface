@@ -15,9 +15,11 @@ import _StringProcessing
   case connectionIssues
   case generic
   case invalidToken
+  case invalidRedirectURI
   case mandateExpired
   case mandateNotFound
   case mandateRejected
+  case providerOffline
   case revoked
   case sdkNotConfigured
   case serverError
@@ -67,9 +69,11 @@ import _StringProcessing
   case connectionIssues
   case generic
   case invalidToken
+  case invalidRedirectURI
   case paymentExpired
   case paymentNotFound
   case paymentRejected
+  case providerOffline
   case sdkNotConfigured
   case serverError
   case unexpectedBehavior

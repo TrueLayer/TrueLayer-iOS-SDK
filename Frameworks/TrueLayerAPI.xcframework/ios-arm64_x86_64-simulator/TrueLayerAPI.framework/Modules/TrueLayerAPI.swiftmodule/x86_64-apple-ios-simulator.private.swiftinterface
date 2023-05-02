@@ -47,6 +47,8 @@ import _StringProcessing
   @_spi(TrueLayer) public enum Mandate {
     @_spi(TrueLayer) public typealias ID = Swift.String
   }
+  @_spi(TrueLayer) public enum Shared {
+  }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests {
   @_spi(TrueLayer) public enum Manager {
@@ -56,20 +58,20 @@ import _StringProcessing
   associatedtype Output
   @_spi(TrueLayer) func normalized() -> Self.Output
 }
-@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment {
-  @_spi(TrueLayer) public enum AdditionalInputs {
-  }
-}
-@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs {
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.Shared {
   @_spi(TrueLayer) public struct BadRequest : Swift.Decodable, Swift.Equatable {
     @_spi(TrueLayer) public let errors: [Swift.String : [Swift.String]]
-    @_spi(TrueLayer) public static func == (a: TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs.BadRequest, b: TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs.BadRequest) -> Swift.Bool
+    @_spi(TrueLayer) public static func == (a: TrueLayerAPI.API.Payments.Models.Response.Shared.BadRequest, b: TrueLayerAPI.API.Payments.Models.Response.Shared.BadRequest) -> Swift.Bool
     @_spi(TrueLayer) public init(from decoder: Swift.Decoder) throws
   }
 }
-@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment.AdditionalInputs.BadRequest : TrueLayerAPI.Normalizable {
-  @_spi(TrueLayer) public func normalized() -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.BadRequest
-  @_spi(TrueLayer) public typealias Output = TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.BadRequest
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.Shared.BadRequest : TrueLayerAPI.Normalizable {
+  @_spi(TrueLayer) public func normalized() -> TrueLayerCore.Core.Payments.Models.Shared.BadRequest
+  @_spi(TrueLayer) public typealias Output = TrueLayerCore.Core.Payments.Models.Shared.BadRequest
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.SinglePayment {
+  @_spi(TrueLayer) public enum AdditionalInputs {
+  }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
   @_spi(TrueLayer) public struct Mandate : TrueLayerAPI.RequestsManager {
@@ -140,6 +142,15 @@ import _StringProcessing
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getLastUsedProviders(userIdentifier: Swift.String, paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getUserPriming(providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming.Status
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider

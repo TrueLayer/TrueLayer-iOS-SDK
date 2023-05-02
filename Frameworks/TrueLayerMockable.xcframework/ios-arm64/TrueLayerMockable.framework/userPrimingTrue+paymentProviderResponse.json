@@ -1,0 +1,15 @@
+{
+  "type": "priming",
+  "title": "Have you enabled International transfers?",
+  "headline": "For security reasons, you need to complete these steps before you initiate the payment.",
+  "steps":[
+    {"text":"Get in touch with your CIC advisor"},
+    {"text":"Ask them to activate international transfers on your account and wait for a confirmation before executing your payment"},
+    {"text":"Add the following beneficiary from your personal space:\n\nName: {{beneficiaryName}}\nIBAN: {{beneficiaryIban}}"},
+    {"text":"Make sure you have your <b>Carte de clés personnelles</b> that will be used to authenticate you"}
+  ],
+  "bank_link": {
+    "text":"Go to Crédit Industriel et Commercial",
+    "link":"https://truelayer.com/"
+  }
+}
