@@ -105,6 +105,7 @@ extension TrueLayerMockable.File.SinglePayment {
   public enum GetPaymentResponse : Swift.String {
     case authorizationRequired
     case preselectedProvider
+    case preselectedProviderBranches
     case wait
     public var rawValue: Swift.String {
       get

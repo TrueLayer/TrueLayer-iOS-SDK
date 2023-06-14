@@ -1,0 +1,34 @@
+{
+  "status":"authorizing",
+  "authorization_flow":{
+    "actions":{
+      "next":{
+        "type":"provider_selection",
+        "providers":[
+          {
+            "id":"ob-gb-1",
+            "display_name":"GB Bank 1",
+            "icon_uri":"",
+            "logo_uri":"",
+            "bg_color":"",
+            "country_code":"GB",
+            "availability": {
+              "recommended_status": "healthy"
+            }
+          },
+          {
+            "id":"ob-gb-2",
+            "display_name":"GB Bank 2",
+            "icon_uri":"http://tl.com/icon",
+            "logo_uri":"http://tl.com/logo",
+            "bg_color":"",
+            "country_code":"GB",
+            "availability": {
+              "recommended_status": "healthy"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

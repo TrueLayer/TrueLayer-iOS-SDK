@@ -3515,6 +3515,84 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
         "declKind": "Import",
@@ -8805,6 +8883,46 @@
               },
               {
                 "kind": "Var",
+                "name": "branchSelection",
+                "printedName": "branchSelection",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.UI.Route.Type) -> TrueLayerUI.UI.Route",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "TrueLayerUI.UI.Route",
+                        "usr": "s:11TrueLayerUI0C0O5RouteO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.UI.Route.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Route",
+                            "printedName": "TrueLayerUI.UI.Route",
+                            "usr": "s:11TrueLayerUI0C0O5RouteO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI0C0O5RouteO15branchSelectionyA2EmF",
+                "mangledName": "$s11TrueLayerUI0C0O5RouteO15branchSelectionyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "zoomedImage",
                 "printedName": "zoomedImage",
                 "children": [
@@ -11473,6 +11591,23 @@
         "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
         "declKind": "Import",
         "moduleName": "TrueLayerUI",
         "declAttributes": [
@@ -14212,112 +14347,126 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 5218,
+      "offset": 5866,
       "length": 15,
       "value": "\"mandateSecure\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 5323,
+      "offset": 5971,
       "length": 21,
       "value": "\"mandateHowThisWorks\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 5440,
+      "offset": 6088,
       "length": 12,
       "value": "\"mandateFCA\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 5218,
+      "offset": 5866,
       "length": 15,
       "value": "\"mandateSecure\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 5323,
+      "offset": 5971,
       "length": 21,
       "value": "\"mandateHowThisWorks\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
       "kind": "StringLiteral",
-      "offset": 5440,
+      "offset": 6088,
       "length": 12,
       "value": "\"mandateFCA\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2138,
+      "length": 13,
+      "value": "\"branch-name\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "kind": "StringLiteral",
+      "offset": 2230,
       "length": 15,
       "value": "\"remitter-iban\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2256,
+      "offset": 2337,
       "length": 8,
       "value": "\"psu-id\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2437,
       "length": 14,
       "value": "\"psu-password\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2608,
       "length": 22,
       "value": "\"sca_method_selection\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2657,
+      "offset": 2738,
       "length": 19,
       "value": "\"otp_authorization\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2138,
+      "length": 13,
+      "value": "\"branch-name\""
+    },
+    {
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
+      "kind": "StringLiteral",
+      "offset": 2230,
       "length": 15,
       "value": "\"remitter-iban\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2256,
+      "offset": 2337,
       "length": 8,
       "value": "\"psu-id\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2437,
       "length": 14,
       "value": "\"psu-password\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2527,
+      "offset": 2608,
       "length": 22,
       "value": "\"sca_method_selection\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/Logic+AdditionalInputs.swift",
       "kind": "StringLiteral",
-      "offset": 2657,
+      "offset": 2738,
       "length": 19,
       "value": "\"otp_authorization\""
     },
@@ -14373,7 +14522,7 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/BulletList\/View+BulletList.swift",
       "kind": "BooleanLiteral",
-      "offset": 5283,
+      "offset": 5617,
       "length": 5,
       "value": "false"
     },
@@ -14576,7 +14725,7 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 13768,
+      "offset": 13849,
       "length": 4,
       "value": "true"
     },
@@ -14597,77 +14746,77 @@
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "IntegerLiteral",
-      "offset": 1547,
+      "offset": 1591,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "StringLiteral",
-      "offset": 1650,
+      "offset": 1694,
       "length": 28,
       "value": "\"com.truelayer.routingQueue\""
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 5268,
+      "offset": 5312,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6043,
+      "offset": 6087,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6875,
+      "offset": 6919,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 7991,
+      "offset": 8035,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 8758,
+      "offset": 8802,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 10637,
+      "offset": 10681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 12750,
+      "offset": 12794,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+MandateManageAuthorizationFlow.swift",
+      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/ProviderSelection\/ViewModel+ProviderSelection.swift",
       "kind": "BooleanLiteral",
-      "offset": 1236,
+      "offset": 11852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 1257,
+      "offset": 1268,
       "length": 5,
       "value": "false"
     },

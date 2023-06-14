@@ -1236,6 +1236,46 @@
                   },
                   {
                     "kind": "Var",
+                    "name": "preselectedProviderBranches",
+                    "printedName": "preselectedProviderBranches",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.GetPaymentResponse.Type) -> TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetPaymentResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GetPaymentResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO27preselectedProviderBranchesyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO27preselectedProviderBranchesyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
                     "name": "wait",
                     "printedName": "wait",
                     "children": [

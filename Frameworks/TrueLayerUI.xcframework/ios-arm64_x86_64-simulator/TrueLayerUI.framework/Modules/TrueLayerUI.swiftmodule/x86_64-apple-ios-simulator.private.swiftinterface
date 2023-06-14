@@ -262,6 +262,7 @@ public enum Analytics {
     @_spi(TrueLayer) case textInputsAdditionalInputs
     @_spi(TrueLayer) case textWithImageAdditionalInputs
     @_spi(TrueLayer) case providerSelection
+    @_spi(TrueLayer) case branchSelection
     @_spi(TrueLayer) case zoomedImage
     @_spi(TrueLayer) case sdkRoot
     @_spi(TrueLayer) case wait

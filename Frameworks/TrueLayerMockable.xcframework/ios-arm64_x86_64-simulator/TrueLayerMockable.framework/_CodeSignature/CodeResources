@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7RfPBpzo535yyj2FhgxU56n/jT4=
+		+lFajgFqOtqHfz71dSAf1bomWCU=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		YzO27mV/ujYeLg0VNNnXpTThJEM=
+		14FnDWfO/LlrKJbOIjPCLE/vNeg=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oZi+Qg2FqXLwLSrFa6/Uv48pvGI=
+		VshcO/pqFdrMxB3F4hhDmg6XLCM=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aGzRlQ586A2Oe5rIlEjxKxsggyg=
+		u9sOb+Fhw0XnlA1dt9UuK291vng=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IC3TBuFc5fe8biOnTnxdjFZEHHI=
+		za/HYQ0h2iLKdKFq1i/LnQJ3Cr0=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gnddQLc1FpVihCPmTWlR1qdwyJ0=
+		jcmb3Wazi3OMrqQCOBkg5NNryFs=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		YzO27mV/ujYeLg0VNNnXpTThJEM=
+		14FnDWfO/LlrKJbOIjPCLE/vNeg=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oClXXehpjBy+naNeTDED7j3fRtQ=
+		+bBgqDcc0pBN7GK3hydK/C5GxBU=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GUHiAA0eFASeLaE6Iq0DOeKWKCY=
+		ldXpmKQcE4jvq5WVKEYoV6IpjW4=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ErmyyDt2TKv95zJTYE2baxsa1oM=
+		8wl8nk9povsZe27OWhSxikTJcSk=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0W44YQ0P6RfRLgmHTVV0oa8kGxE=
+		huJMhkK7Wn8qfpppv1oz0HJTwGI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>configuration+paymentProvidersResponse.json</key>
 		<data>
-		olkfm0W9Wq4KO+5JbltAxQw84tU=
+		JCv8y/fpsGel4ymiFQwh8dWbtc4=
 		</data>
 		<key>consentThenAdditionalInputs+authorizationFlowResponse.json</key>
 		<data>
@@ -75,6 +75,10 @@
 		<key>consentThenRedirect+authorizationFlowResponse.json</key>
 		<data>
 		YrlUotm6/rvjCgTfkX22Q2hIVvQ=
+		</data>
+		<key>consentThenRedirect+mandateAuthorizationFlowResponse.json</key>
+		<data>
+		R1HNjtttdzAy1OjFX3OAOYEOFoE=
 		</data>
 		<key>empty+mandateCancelResponse.json</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>information+paymentProviderResponse.json</key>
 		<data>
-		xu4lYmvPhHfiGV4QQkHVf4HOqp4=
+		JSXaDbSDoAUY8618Oo9ETubRCgo=
 		</data>
 		<key>legals+miscellaneousResponse.json</key>
 		<data>
@@ -128,9 +132,17 @@
 		<data>
 		pwAdojI+qxWcARzPr3U0zpiSUco=
 		</data>
+		<key>preselectedProvider+getMandateResponse.json</key>
+		<data>
+		tTMV1H7xhgTXMBA3m2Unf4G8RFQ=
+		</data>
 		<key>preselectedProvider+getPaymentResponse.json</key>
 		<data>
 		GRFH3i5YkdPG2+/dGK5wY+1pgbc=
+		</data>
+		<key>preselectedProviderBranches+getPaymentResponse.json</key>
+		<data>
+		MI2ENcuDvJk6iYfeMN+q/VNizTA=
 		</data>
 		<key>providerHasInternalServerError+authorizationFlowResponse.json</key>
 		<data>
@@ -139,6 +151,10 @@
 		<key>providerSelection+authorizationFlowResponse.json</key>
 		<data>
 		pTEkEId28MIlpvwV/Gz2q5NkSj8=
+		</data>
+		<key>providerSelection+mandateAuthorizationFlowResponse.json</key>
+		<data>
+		fRLBl7rj3wlUSErDOswAetKQCXU=
 		</data>
 		<key>providerSelectionMultipleCountries+authorizationFlowResponse.json</key>
 		<data>
@@ -155,6 +171,10 @@
 		<key>redirect+authorizationFlowResponse.json</key>
 		<data>
 		/3/t9E+PPpiDh8iJTsrgOMMh2N4=
+		</data>
+		<key>redirect+mandateAuthorizationFlowResponse.json</key>
+		<data>
+		3OUtAY7QdRJj8TlL9+XCf9xuLNc=
 		</data>
 		<key>selectOnlyAdditionalInputs+authorizationFlowResponse.json</key>
 		<data>
@@ -190,7 +210,7 @@
 		</data>
 		<key>unhealthyProvider+paymentProviderResponse.json</key>
 		<data>
-		X5v8UAw3xoA5ksZItLgcxAF9VRc=
+		lyVcaEs3fRi+p+km2VDu1YO8jeU=
 		</data>
 		<key>userPrimingFalse+payementProviderResponse.json</key>
 		<data>
@@ -222,70 +242,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			snDHQ3wqk2o1USnuOaHcesh+UkRUqG6OnAdaBylkrN8=
+			eI1m7UrljoIfYxe1/bNgRiOejd1cDgeT/TMNpAsj1P0=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K8+BCz9CSLsGO8xKVmQfY5jAsmKbsXXUSrqWmPbd9Po=
+			xTSfx3KXYF++fIhWortaEl3vJD/qw3A/CYyGOu76zZc=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W3EMLPc4F8ymULLob5dOduOMNKoIxZP8s4NOgCq52VM=
+			ik5rqKGGVDjK5eYANbuBPSODERk1mgiHrbcC59IfPF8=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HUWheSL7P8USuvGSpPJj3zxeXbBpeUwcYVzj2PWtFSY=
+			iBqC4DLxE6H8c2PIaRoz4CArL7bm6tEMpcGULlZFZWA=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+pX5Z5NitZeIx4IjckajPA8fvnkoEJiw/slsAu8tsZ0=
+			weKoQAYNN2aaYci7uQthVKd04XG8Bz0RuUSu3A73Ta8=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			snDHQ3wqk2o1USnuOaHcesh+UkRUqG6OnAdaBylkrN8=
+			eI1m7UrljoIfYxe1/bNgRiOejd1cDgeT/TMNpAsj1P0=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eEJqoyV+H99hJegA2+VXt11xFOo5e2xh6phT2A4VR4Y=
+			ZOgsJQBSl+TNWjVIAdVvZ7v4OviTaDXHW9TthvZLwRY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q84NXl6f9SDIG8aPdrYpb4kwSzQ1mbh/UcuAxfpT2Bo=
+			SCyKcGPP9V6S+mBrUdr8atQwMMOgrYIUvyiNOToi88U=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1g12R/n9as6dxIl0wJcJ1GLzZAqU9tvs9mbb0devj1o=
+			CeN+UMKH8073UKMaM4ZskpTjCgljszgriQFjfYo1HJw=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0zYDUATqQtOHbh9W9goCRDbg6rYyc9k49V/juA90mZE=
+			IO1jLKeok29+HIGFzNWBOUNBhktg7/n+i7+aSmQWMHk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -313,7 +333,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			okT2TqlhFXiiS0RLSOuEYGij6MQuLgDIg/8bCLAosmc=
+			DnYhNuRx315r96/t+GGGgwbsVF62AzjYAfgwYMUP+Rk=
 			</data>
 		</dict>
 		<key>consentThenAdditionalInputs+authorizationFlowResponse.json</key>
@@ -328,6 +348,13 @@
 			<key>hash2</key>
 			<data>
 			eLNrYLOhrY41Mcl3jZEbF45JIr6fT5CK0Arw7YNY3+I=
+			</data>
+		</dict>
+		<key>consentThenRedirect+mandateAuthorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kAeMNzX3XGoLh/xLoDlVFOxy1lvh5LkawJx5TO6tmF0=
 			</data>
 		</dict>
 		<key>empty+mandateCancelResponse.json</key>
@@ -362,7 +389,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BykYa7SQhBTHpEH1pQcNh33mIl0F0zOHn0IedEl6iag=
+			UqeoQF+qulcYyZR7uwVPh8k62Dwm/DfslcRG1f1lAIk=
 			</data>
 		</dict>
 		<key>legals+miscellaneousResponse.json</key>
@@ -421,11 +448,25 @@
 			34+/hIFZdSsMKZ2enZY1rmFqfnDNZXmDLCGBBbWpOZE=
 			</data>
 		</dict>
+		<key>preselectedProvider+getMandateResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CSiO4kyTjQAQ4mlF4MwHkelkUmPpO2JCqkQr9c1y28k=
+			</data>
+		</dict>
 		<key>preselectedProvider+getPaymentResponse.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			BTcGU8eUL2RiwWxWEOPBOhkqpM4HttgNr2Mc4uK4w20=
+			</data>
+		</dict>
+		<key>preselectedProviderBranches+getPaymentResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RuDS3zikJUUrBw2+79Pp2Td6jj7aQTadM6Zrcg9I2s8=
 			</data>
 		</dict>
 		<key>providerHasInternalServerError+authorizationFlowResponse.json</key>
@@ -440,6 +481,13 @@
 			<key>hash2</key>
 			<data>
 			8LcXAb8ER6ZGqEByCMI0qr7kRY+2rC+jw4lX+B6KCHc=
+			</data>
+		</dict>
+		<key>providerSelection+mandateAuthorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UoLWJIAk56niEHD8MMHKexDhStcK64m9OBHEZCouosM=
 			</data>
 		</dict>
 		<key>providerSelectionMultipleCountries+authorizationFlowResponse.json</key>
@@ -468,6 +516,13 @@
 			<key>hash2</key>
 			<data>
 			YMS+5fpsEfGwD/OzYzP1OjyWTwRHI+b9v+sm2dN5Ih4=
+			</data>
+		</dict>
+		<key>redirect+mandateAuthorizationFlowResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ofhN8bTP8/DucNVuMN5F9E8zQT82+UGxicGveKIqAPM=
 			</data>
 		</dict>
 		<key>selectOnlyAdditionalInputs+authorizationFlowResponse.json</key>
@@ -530,7 +585,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V/BB0Wy3wTbZG3OVdz6DqdR01UHGYmAsWLdehFseCvM=
+			UB3fBLmZPWZwxBJOQMyG1mpD2ZijcvPgMI8IyDTOazA=
 			</data>
 		</dict>
 		<key>userPrimingFalse+payementProviderResponse.json</key>
