@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.6.0] - Rocky
+
+### Added
+
+- Better branch selection. If a user looks for a branch now in the provider screen he will be able to select it, and not have to input it again where additional inputs are required.
+
+### Fixed
+
+- Loader not showing when making certain network calls
+
 ## [2.5.0] - Apollo
 
 ### Added
