@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8MEw1UVUPPwOsNaAalomloZoc1U=
+		us06hFNKzDXb1rkq8ql9KHeQnUM=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/kb9u1GkKyL0cUQ0j0TXdzxJFJg=
+		yJ8TrYyS8nu3yR7hL6sIbvFRfaY=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZgIrNzz4zIcOCBouX2p5QIIdvmk=
+		aoN37dLQslck+ZVLifLC69WtQFo=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/kb9u1GkKyL0cUQ0j0TXdzxJFJg=
+		yJ8TrYyS8nu3yR7hL6sIbvFRfaY=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FHY65VVblV4m/wXoNCwG6sRuKRE=
+		Dp/RGP7pXTHDmYASXZ9+zRphqes=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kg5G2HGAJe7BM/BlokeD0U7G3Hu25/c0/x0DokaLFKc=
+			73603GwV1rj+jczkbNTU7vZNeYAXHX/2gEev5TLs6SY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/CoTuc8LbuK9f65N4BsWBmABczbCkxEhnLlsz8BFedI=
+			kM7XwUwz0LUjSdfdl5Ye+qKoNyEAzBXqBpg9qtnJeWc=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kg5G2HGAJe7BM/BlokeD0U7G3Hu25/c0/x0DokaLFKc=
+			73603GwV1rj+jczkbNTU7vZNeYAXHX/2gEev5TLs6SY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wkDhqa9i3WgD4gnkVS2SmBQrfHE63mkAM8gb/JtIBpE=
+			/NdYneXOWjVz4PgvohpjZelGi/pqq/1f1d1s4m9H4lo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

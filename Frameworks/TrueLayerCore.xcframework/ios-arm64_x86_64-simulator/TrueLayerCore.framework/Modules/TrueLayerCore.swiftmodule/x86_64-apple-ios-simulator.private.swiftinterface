@@ -302,8 +302,19 @@ import _StringProcessing
     @_spi(TrueLayer) public let parentIdentifier: Swift.String
     @_spi(TrueLayer) public let weight: Swift.Double
     @_spi(TrueLayer) public let shouldPrimeUser: Swift.Bool
-    @_spi(TrueLayer) public init(parentIdentifier: Swift.String, weight: Swift.Double, shouldPrimeUser: Swift.Bool)
+    @_spi(TrueLayer) public let branches: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch]
+    @_spi(TrueLayer) public init(parentIdentifier: Swift.String, weight: Swift.Double, shouldPrimeUser: Swift.Bool, branches: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch])
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration, b: TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared.Provider {
+  @_spi(TrueLayer) public struct Branch : Swift.Equatable {
+    @_spi(TrueLayer) public typealias Identifier = Swift.String
+    @_spi(TrueLayer) public let id: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch.Identifier
+    @_spi(TrueLayer) public let displayName: Swift.String
+    @_spi(TrueLayer) public let searchAliases: [Swift.String]
+    @_spi(TrueLayer) public init(id: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch.Identifier, displayName: Swift.String, searchAliases: [Swift.String])
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch, b: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch) -> Swift.Bool
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming {
@@ -381,6 +392,9 @@ import _StringProcessing
     @_spi(TrueLayer) public init(key: Swift.String, value: Swift.String)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization, b: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization) -> Swift.Bool
   }
+}
+@_spi(TrueLayer) extension Swift.Array where Element == TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization {
+  @_spi(TrueLayer) public func translation(for key: Swift.String) -> Swift.String?
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs {
   @_spi(TrueLayer) public struct KeyedText : Swift.Equatable {

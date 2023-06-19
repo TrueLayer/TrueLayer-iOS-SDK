@@ -1,0 +1,11 @@
+{
+  "status":"authorizing",
+  "authorization_flow":{
+    "actions":{
+      "next":{
+        "type":"redirect",
+        "uri": "http://tl.com/redirect"
+      }
+    }
+  }
+}

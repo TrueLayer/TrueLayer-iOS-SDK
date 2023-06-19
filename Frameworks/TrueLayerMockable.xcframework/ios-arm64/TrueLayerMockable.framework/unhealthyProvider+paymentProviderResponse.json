@@ -5,7 +5,21 @@
   "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
   "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
   "bg_color" : "#007EB6",
-  "availability": {
-    "recommended_status": "unhealthy"
+  "capabilities": {
+    "payments": {
+      "bank_transfer": {
+        "release_channel": "public_beta",
+        "availability": {
+          "error_rate": 0,
+          "recommended_status": "unhealthy",
+          "updated_at": "2023-06-12T13:25:03.7906527Z"
+        },
+        "schemes": [
+          {
+            "id": "sepa_credit_transfer"
+          }
+        ]
+      }
+    }
   }
 }
