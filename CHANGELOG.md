@@ -6,10 +6,11 @@ All notable changes to this project will be documented in this file. To know bet
 ### Added
 
 - Better branch selection. If a user looks for a branch now in the provider screen he will be able to select it, and not have to input it again where additional inputs are required.
+- Provider offline detection for pre-selected providers.
 
 ### Fixed
 
-- Loader not showing when making certain network calls
+- Loader not showing when making certain network calls.
 
 ## [2.5.0] - Apollo
 
