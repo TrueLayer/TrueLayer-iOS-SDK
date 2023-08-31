@@ -5252,10 +5252,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "BackgroundColor",
-            "printedName": "BackgroundColor",
-            "usr": "s:12TrueLayerSDK15BackgroundColorP",
-            "mangledName": "$s12TrueLayerSDK15BackgroundColorP"
+            "name": "AccessoryColor",
+            "printedName": "AccessoryColor",
+            "usr": "s:12TrueLayerSDK14AccessoryColorP",
+            "mangledName": "$s12TrueLayerSDK14AccessoryColorP"
           },
           {
             "kind": "Conformance",
@@ -5266,10 +5266,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "AccessoryColor",
-            "printedName": "AccessoryColor",
-            "usr": "s:12TrueLayerSDK14AccessoryColorP",
-            "mangledName": "$s12TrueLayerSDK14AccessoryColorP"
+            "name": "BackgroundColor",
+            "printedName": "BackgroundColor",
+            "usr": "s:12TrueLayerSDK15BackgroundColorP",
+            "mangledName": "$s12TrueLayerSDK15BackgroundColorP"
           }
         ]
       },
@@ -6581,32 +6581,123 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
       "offset": 1596,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
       "offset": 1721,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
       "offset": 2605,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 8427,
+      "length": 15,
+      "value": "\"configuration\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 8452,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 8518,
+      "length": 73,
+      "value": "\"File not found. Make sure the file exists, and the spelling is correct.\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
       "offset": 9398,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 9679,
+      "length": 14,
+      "value": "\"React Native\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 9900,
+      "length": 12,
+      "value": "\"ObjectiveC\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10167,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 13589,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 17972,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "Dictionary",
+      "offset": 19205,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 19479,
+      "length": 9,
+      "value": "\"colors.\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "StringLiteral",
+      "offset": 19628,
+      "length": 17,
+      "value": "\"font.familyName\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/PresentationStyle+Facade.swift",
+      "kind": "BooleanLiteral",
+      "offset": 964,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Facade\/Styling\/VisualSettingsProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1098,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }

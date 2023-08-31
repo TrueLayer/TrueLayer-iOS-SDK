@@ -8,7 +8,8 @@
     "bg_color" : "#007EB6",
     "order": 15.2,
     "user_priming": false,
-    "branches": []
+    "branches": [],
+    "icons": {}
   },
   {
     "country_code" : "GB",
@@ -19,7 +20,8 @@
     "bg_color" : "#007EB6",
     "order": 17.3,
     "user_priming": true,
-    "branches": []
+    "branches": [],
+    "icons": {}
   },
   {
     "country_code" : "DE",
@@ -46,8 +48,9 @@
           "DE-2-Branch-2-Alias-1",
           "DE-2-Branch-2-Alias-2"
         ]
-      },
-    ]
+      }
+    ],
+    "icons": {}
   },
   {
     "country_code" : "GB",
@@ -58,7 +61,8 @@
     "bg_color" : "#007EB6",
     "order": 0,
     "user_priming": false,
-    "branches": []
+    "branches": [],
+    "icons": {}
   },
   {
     "country_code" : "GB",
@@ -69,7 +73,8 @@
     "bg_color" : "#007EB6",
     "order": 17.3,
     "user_priming": false,
-    "branches": []
+    "branches": [],
+    "icons": {}
   },
   {
     "country_code" : "GB",
@@ -80,7 +85,8 @@
     "bg_color" : "#007EB6",
     "order": 10,
     "user_priming": false,
-    "branches": []
+    "branches": [],
+    "icons": {}
   },
   {
     "country_code" : "GB",
@@ -91,7 +97,8 @@
     "bg_color" : "#007EB6",
     "order": 10,
     "user_priming": false,
-    "branches": []
+    "branches": [],
+    "icons": {}
   },
   {
     "country_code" : "FR",
@@ -119,7 +126,8 @@
           "21051275"
         ]
       },
-    ]
+    ],
+    "icons": {}
   },
   {
     "country_code" : "FR",
@@ -130,6 +138,177 @@
     "bg_color" : "#007EB6",
     "order": 1,
     "user_priming": true,
-    "branches": []
+    "branches": [],
+    "icons": {}
+  },
+  {
+    "country_code" : "FR",
+    "id" : "ob-bank-name-fr-long-branches",
+    "display_name" : "Mock Bank FR",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 1,
+    "user_priming": true,
+    "branches": [
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-1",
+        "display_name": "Mock Bank FR Branch 1",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-2",
+        "display_name": "Mock Bank FR Branch 2",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-3",
+        "display_name": "Mock Bank FR Branch 3",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-4",
+        "display_name": "Mock Bank FR Branch 4",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-5",
+        "display_name": "Mock Bank FR Branch 5",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-6",
+        "display_name": "Mock Bank FR Branch 6",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-7",
+        "display_name": "Mock Bank FR Branch 7",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-8",
+        "display_name": "Mock Bank FR Branch 8",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-9",
+        "display_name": "Mock Bank FR Branch 9",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+    ],
+    "icons": {}
+  },
+  {
+    "country_code" : "FR",
+    "id" : "ob-bank-name-fr-long-branches",
+    "display_name" : "Mock Bank FR",
+    "icon_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/icons/barclays.svg",
+    "logo_uri" : "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/barclays.svg",
+    "bg_color" : "#007EB6",
+    "order": 1,
+    "user_priming": true,
+    "branches": [
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-1",
+        "display_name": "Mock Bank FR Branch 1",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-2",
+        "display_name": "Mock Bank FR Branch 2",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-3",
+        "display_name": "Mock Bank FR Branch 3",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-4",
+        "display_name": "Mock Bank FR Branch 4",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-5",
+        "display_name": "Mock Bank FR Branch 5",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-6",
+        "display_name": "Mock Bank FR Branch 6",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-7",
+        "display_name": "Mock Bank FR Branch 7",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-8",
+        "display_name": "Mock Bank FR Branch 8",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+      {
+        "id": "ob-bank-name-fr-long-branches-branch-9",
+        "display_name": "Mock Bank FR Branch 9",
+        "search_aliases": [
+          "NOLADE21BOR",
+          "21051275"
+        ]
+      },
+    ],
+    "icons": {}
   },
 ]

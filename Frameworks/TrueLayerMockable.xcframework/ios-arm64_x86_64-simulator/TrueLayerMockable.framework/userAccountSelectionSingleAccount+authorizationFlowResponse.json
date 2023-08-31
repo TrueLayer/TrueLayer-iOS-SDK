@@ -1,0 +1,28 @@
+{
+   "authorization_flow": {
+      "actions": {
+         "next": {
+            "type":"user_account_selection",
+            "user_accounts": [
+                {
+                  "id":"userAccount_2",
+                  "provider":{
+                     "country_code":"FR",
+                     "id":"ob-halifax",
+                     "display_name":"Halifax",
+                     "icon_uri":"https://truelayer-provider-assets.s3.amazonaws.com/global/icons/halifax.svg",
+                     "logo_uri":"https://truelayer-provider-assets.s3.amazonaws.com/global/logos/halifax.svg",
+                     "bg_color":"#007EB6",
+                     "availability":{
+                        "recommended_status":"unhealthy"
+                     }
+                  },
+                  "masked_account_identifier": "****1234",
+                  "last_used_at": "2023-01-01T00:00:00.000Z"
+               }
+            ]
+         }
+      }
+   },
+   "status":"authorizing"
+}

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name  = "TrueLayerPaymentsSDK"
-  s.version = "2.6.0"
+  s.version = "2.7.0"
   s.summary = "The official iOS SDK for TrueLayer's open banking."
   s.description = "This SDK provides a complete experience to consume TrueLayer's open banking APIs in a fast, safe and optimized manner."
   s.homepage = "https://github.com/TrueLayer/truelayer-ios-sdk"

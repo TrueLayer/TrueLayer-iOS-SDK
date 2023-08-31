@@ -1,0 +1,23 @@
+{
+  "type": "select",
+  "auto_select_scheme_id": "instant",
+  "schemes": [
+    {
+      "id": "slow-option",
+      "title": "2-3 Days",
+      "description": "It will take a few days for your bank.",
+      "currency": "GBP",
+      "icon": "clock",
+      "enabled": true
+    },
+    {
+      "id": "instant",
+      "title": "Instant Send",
+      "description": "Send your money instantly",
+      "currency": "GBP",
+      "icon": "bolt",
+      "enabled": true
+    }
+  ],
+  "subtitle": "Your bank has some options, they will inform you if there's a fee"
+}

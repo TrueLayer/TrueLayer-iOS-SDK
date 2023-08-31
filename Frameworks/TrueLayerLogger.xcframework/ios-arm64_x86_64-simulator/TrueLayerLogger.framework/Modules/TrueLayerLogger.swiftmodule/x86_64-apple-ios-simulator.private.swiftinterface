@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerLogger
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -21,6 +21,6 @@ import _StringProcessing
   @_spi(TrueLayer) public static func log(type: TrueLayerLogger.LogType = .debug, message: Any?, file: Swift.StaticString = #file, line: Swift.UInt = #line)
   @_spi(TrueLayer) public static func prepareLog(type: TrueLayerLogger.LogType = .debug, message: Any, file: Swift.StaticString, line: Swift.UInt) -> Swift.String
 }
-extension TrueLayerLogger.LogType : Swift.Equatable {}
-extension TrueLayerLogger.LogType : Swift.Hashable {}
-extension TrueLayerLogger.LogType : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerLogger.LogType : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerLogger.LogType : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerLogger.LogType : Swift.RawRepresentable {}

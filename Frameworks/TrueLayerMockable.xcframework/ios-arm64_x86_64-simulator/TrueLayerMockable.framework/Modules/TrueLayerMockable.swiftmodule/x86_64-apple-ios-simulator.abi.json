@@ -369,10 +369,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "HTTPRequest",
-            "printedName": "HTTPRequest",
-            "usr": "s:16TrueLayerNetwork11HTTPRequestP",
-            "mangledName": "$s16TrueLayerNetwork11HTTPRequestP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -383,17 +383,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "URLRequestConvertible",
-            "printedName": "URLRequestConvertible",
-            "usr": "s:16TrueLayerNetwork21URLRequestConvertibleP",
-            "mangledName": "$s16TrueLayerNetwork21URLRequestConvertibleP"
+            "name": "HTTPRequest",
+            "printedName": "HTTPRequest",
+            "usr": "s:16TrueLayerNetwork11HTTPRequestP",
+            "mangledName": "$s16TrueLayerNetwork11HTTPRequestP"
           },
           {
             "kind": "Conformance",
@@ -401,6 +394,13 @@
             "printedName": "RetryableRequest",
             "usr": "s:16TrueLayerNetwork16RetryableRequestP",
             "mangledName": "$s16TrueLayerNetwork16RetryableRequestP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "URLRequestConvertible",
+            "printedName": "URLRequestConvertible",
+            "usr": "s:16TrueLayerNetwork21URLRequestConvertibleP",
+            "mangledName": "$s16TrueLayerNetwork21URLRequestConvertibleP"
           }
         ]
       },
@@ -541,6 +541,86 @@
                     "declKind": "EnumElement",
                     "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO19consentThenRedirectyA2GmF",
                     "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO19consentThenRedirectyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "userAccountSelection",
+                    "printedName": "userAccountSelection",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type) -> TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationFlowResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AuthorizationFlowResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO20userAccountSelectionyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO20userAccountSelectionyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "userAccountSelectionSingleAccount",
+                    "printedName": "userAccountSelectionSingleAccount",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type) -> TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationFlowResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AuthorizationFlowResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO020userAccountSelectioneK0yA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO020userAccountSelectioneK0yA2GmF",
                     "moduleName": "TrueLayerMockable",
                     "declAttributes": [
                       "RawDocComment"
@@ -1028,6 +1108,46 @@
                   },
                   {
                     "kind": "Var",
+                    "name": "schemeSelection",
+                    "printedName": "schemeSelection",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type) -> TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationFlowResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AuthorizationFlowResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO15schemeSelectionyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO15schemeSelectionyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
                     "name": "rawValue",
                     "printedName": "rawValue",
                     "children": [
@@ -1269,6 +1389,46 @@
                     "declKind": "EnumElement",
                     "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO27preselectedProviderBranchesyA2GmF",
                     "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO27preselectedProviderBranchesyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "userSelectedProviderBranchAndSchemes",
+                    "printedName": "userSelectedProviderBranchAndSchemes",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.GetPaymentResponse.Type) -> TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetPaymentResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GetPaymentResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO36userSelectedProviderBranchAndSchemesyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO36userSelectedProviderBranchAndSchemesyA2GmF",
                     "moduleName": "TrueLayerMockable",
                     "declAttributes": [
                       "RawDocComment"
@@ -2342,6 +2502,214 @@
                 "declKind": "Enum",
                 "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO16AdditionalInputsO",
                 "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO16AdditionalInputsO",
+                "moduleName": "TrueLayerMockable",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "enumRawTypeName": "String",
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "RawRepresentable",
+                    "printedName": "RawRepresentable",
+                    "children": [
+                      {
+                        "kind": "TypeWitness",
+                        "name": "RawValue",
+                        "printedName": "RawValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:SY",
+                    "mangledName": "$sSY"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "SchemeSelection",
+                "printedName": "SchemeSelection",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "autoSubmit",
+                    "printedName": "autoSubmit",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.SchemeSelection.Type) -> TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SchemeSelection",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SchemeSelection",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO10autoSubmityA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO10autoSubmityA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "select",
+                    "printedName": "select",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.SchemeSelection.Type) -> TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SchemeSelection",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SchemeSelection",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO6selectyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO6selectyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "rawValue",
+                    "printedName": "rawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO8rawValueSSvp",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO8rawValueSSvp",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO8rawValueSSvg",
+                        "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO8rawValueSSvg",
+                        "moduleName": "TrueLayerMockable",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SchemeSelection",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.SchemeSelection",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO8rawValueAGSgSS_tcfc",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO8rawValueAGSgSS_tcfc",
+                    "moduleName": "TrueLayerMockable",
+                    "implicit": true,
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO",
+                "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO15SchemeSelectionO",
                 "moduleName": "TrueLayerMockable",
                 "declAttributes": [
                   "AccessControl",
@@ -3500,11 +3868,116 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 21,
+      "value": "\"+getMandateResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
+      "kind": "StringLiteral",
+      "offset": 780,
+      "length": 35,
+      "value": "\"+mandateAuthorizationFlowResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
+      "length": 24,
+      "value": "\"+mandateLegalsResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 24,
+      "value": "\"+mandateCancelResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
       "kind": "Dictionary",
       "offset": 984,
       "length": 36,
       "value": "[(\"Content-Type\", \"application\/json\")]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "kind": "StringLiteral",
+      "offset": 1561,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "kind": "StringLiteral",
+      "offset": 1593,
+      "length": 89,
+      "value": "\"File \"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "kind": "StringLiteral",
+      "offset": 1612,
+      "length": 1,
+      "value": "\"\" not found. Make sure the file exists, and the spelling is correct.\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Shared+File.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 24,
+      "value": "\"+miscellaneousResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 2856,
+      "length": 28,
+      "value": "\"+authorizationFlowResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 3565,
+      "length": 21,
+      "value": "\"+getPaymentResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 4048,
+      "length": 26,
+      "value": "\"+paymentProviderResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 4278,
+      "length": 27,
+      "value": "\"+paymentProvidersResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 4628,
+      "length": 17,
+      "value": "\"+legalsResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 5273,
+      "length": 27,
+      "value": "\"+additionalInputsResponse\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
+      "kind": "StringLiteral",
+      "offset": 5583,
+      "length": 26,
+      "value": "\"+schemeSelectionResponse\""
     }
   ]
 }

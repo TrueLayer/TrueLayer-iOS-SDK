@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.7.0] - Aurora
+
+### Added
+
+- Saved accounts selection and removal, for future users who decide to save their account with TrueLayer.
+- Recently used providers are combined into the same section as other providers on the provider selection list.
+- Possibility for the user to select the SEPA scheme when applicable. To enable it set `scheme_selection` is set to `user_selected` when creating the payment.
+- Refinements to the user interface design.
+
 ## [2.6.0] - Rocky
 
 ### Added

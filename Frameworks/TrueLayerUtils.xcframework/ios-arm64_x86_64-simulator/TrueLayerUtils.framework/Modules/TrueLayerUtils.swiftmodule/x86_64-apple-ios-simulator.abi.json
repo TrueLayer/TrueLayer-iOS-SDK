@@ -4859,11 +4859,844 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/theinkedengineer\/Code\/Truelayer\/iOS-SDK\/SDK\/Sources\/Utils\/SVGImageCache.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/BundleInformationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 350,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/BundleInformationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/BundleInformationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/BundleInformationProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/Collection+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/Int+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 669,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NSString+Extensions.swift",
+      "kind": "Array",
+      "offset": 311,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NumberFormatter+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 554,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NumberFormatter+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 912,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NumberFormatter+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGImageCache.swift",
       "kind": "StringLiteral",
       "offset": 902,
       "length": 34,
       "value": "\"com.truelayer.svgImageCacheQueue\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 10,
+      "value": "\"[\\s\n]+\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 400,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1848,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1868,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1905,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1974,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1981,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2010,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2015,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2020,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2083,
+      "length": 2,
+      "value": "97"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2197,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2223,
+      "length": 13,
+      "value": "\"^[0-9A-Z]*$\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2294,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2343,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2719,
+      "length": 115,
+      "value": "\"<html>\n<body>\n\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2781,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2793,
+      "length": 7,
+      "value": "\"<\/br>\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2802,
+      "length": 2,
+      "value": "\"\n<\/body>\n<\/html>\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3414,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "Array",
+      "offset": 3531,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3708,
+      "length": 6,
+      "value": "\"Bold\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/String+SpecialCharacters.swift",
+      "kind": "Dictionary",
+      "offset": 178,
+      "length": 3011,
+      "value": "[(\"Ɓ\", \"B\"), (\"ᶁ\", \"d\"), (\"ᶅ\", \"l\"), (\"ᶉ\", \"r\"), (\"ʋ\", \"v\"), (\"ᶍ\", \"x\"), (\"ᶃ\", \"g\"), (\"Ƒ\", \"F\"), (\"ƙ\", \"k\"), (\"Ɲ\", \"N\"), (\"Ƞ\", \"N\"), (\"ƥ\", \"p\"), (\"Ȥ\", \"Z\"), (\"Ħ\", \"H\"), (\"ƭ\", \"t\"), (\"Ƶ\", \"Z\"), (\"ȴ\", \"l\"), (\"ȼ\", \"c\"), (\"ɀ\", \"z\"), (\"ł\", \"l\"), (\"Ʉ\", \"U\"), (\"Ⱡ\", \"L\"), (\"Ɉ\", \"J\"), (\"Ꝋ\", \"O\"), (\"Ɍ\", \"R\"), (\"Ꝓ\", \"P\"), (\"Ꝗ\", \"Q\"), (\"Ꝛ\", \"R\"), (\"Ꝟ\", \"V\"), (\"ɠ\", \"g\"), (\"ǥ\", \"g\"), (\"Ɽ\", \"R\"), (\"Ŧ\", \"T\"), (\"ɨ\", \"i\"), (\"ⱦ\", \"t\"), (\"ɬ\", \"l\"), (\"ᵮ\", \"f\"), (\"ᶇ\", \"n\"), (\"ᵲ\", \"r\"), (\"ⱴ\", \"v\"), (\"ᵶ\", \"z\"), (\"ⱸ\", \"e\"), (\"ɼ\", \"r\"), (\"ỿ\", \"y\"), (\"ꝁ\", \"k\"), (\"Ƃ\", \"B\"), (\"ᶆ\", \"m\"), (\"ʈ\", \"t\"), (\"Ɗ\", \"D\"), (\"ᶎ\", \"z\"), (\"đ\", \"d\"), (\"ʐ\", \"z\"), (\"ƒ\", \"f\"), (\"ᶖ\", \"i\"), (\"ƚ\", \"l\"), (\"ƞ\", \"n\"), (\"ᶈ\", \"p\"), (\"ʠ\", \"q\"), (\"Ʈ\", \"T\"), (\"Ʋ\", \"V\"), (\"ƶ\", \"z\"), (\"Ȼ\", \"C\"), (\"ȿ\", \"s\"), (\"Ł\", \"L\"), (\"Ƀ\", \"B\"), (\"ꝅ\", \"k\"), (\"ɇ\", \"e\"), (\"ꝉ\", \"l\"), (\"ɋ\", \"q\"), (\"ꝍ\", \"o\"), (\"ɏ\", \"y\"), (\"ꝑ\", \"p\"), (\"ɓ\", \"b\"), (\"ꝕ\", \"p\"), (\"ɗ\", \"d\"), (\"ꝙ\", \"q\"), (\"Ø\", \"O\"), (\"Ᵽ\", \"P\"), (\"Ⱨ\", \"H\"), (\"ɫ\", \"l\"), (\"ᵭ\", \"d\"), (\"ᵱ\", \"p\"), (\"ɳ\", \"n\"), (\"ᵵ\", \"t\"), (\"ᶑ\", \"d\"), (\"ø\", \"o\"), (\"Ȿ\", \"S\"), (\"ᵽ\", \"p\"), (\"Ɀ\", \"Z\"), (\"ƃ\", \"b\"), (\"Ƈ\", \"C\"), (\"ᶀ\", \"b\"), (\"ʉ\", \"u\"), (\"Ƌ\", \"D\"), (\"ᶏ\", \"a\"), (\"ʑ\", \"z\"), (\"Đ\", \"D\"), (\"Ɠ\", \"G\"), (\"ᶂ\", \"f\"), (\"Ɨ\", \"I\"), (\"ʝ\", \"j\"), (\"Ɵ\", \"O\"), (\"ⱬ\", \"z\"), (\"ƫ\", \"t\"), (\"Ƴ\", \"Y\"), (\"ȶ\", \"t\"), (\"Ⱥ\", \"A\"), (\"Ⱦ\", \"T\"), (\"Ꝁ\", \"K\"), (\"ᶊ\", \"s\"), (\"Ꝅ\", \"K\"), (\"Ɇ\", \"E\"), (\"Ꝉ\", \"L\"), (\"Ꝍ\", \"O\"), (\"Ɏ\", \"Y\"), (\"Ꝑ\", \"P\"), (\"Ꝕ\", \"P\"), (\"ɖ\", \"d\"), (\"Ꝙ\", \"Q\"), (\"Ɫ\", \"L\"), (\"ɦ\", \"h\"), (\"ⱳ\", \"w\"), (\"ⱪ\", \"k\"), (\"ᵬ\", \"b\"), (\"Ɱ\", \"M\"), (\"ᵰ\", \"n\"), (\"ɲ\", \"n\"), (\"ᶒ\", \"e\"), (\"ᵴ\", \"s\"), (\"ⱺ\", \"o\"), (\"Ⱬ\", \"Z\"), (\"ɾ\", \"r\"), (\"ƀ\", \"b\"), (\"ʂ\", \"s\"), (\"ᶄ\", \"k\"), (\"ƈ\", \"c\"), (\"ƌ\", \"d\"), (\"Ꝃ\", \"K\"), (\"ᶙ\", \"u\"), (\"Ƙ\", \"K\"), (\"ᶌ\", \"v\"), (\"ȡ\", \"d\"), (\"ⱱ\", \"v\"), (\"ȥ\", \"z\"), (\"Ƥ\", \"P\"), (\"ħ\", \"h\"), (\"Ƭ\", \"T\"), (\"ȵ\", \"n\"), (\"ƴ\", \"y\"), (\"Ⱳ\", \"W\"), (\"Ƚ\", \"L\"), (\"ꝃ\", \"k\"), (\"ɉ\", \"j\"), (\"ꝋ\", \"o\"), (\"ɍ\", \"r\"), (\"ꝓ\", \"p\"), (\"ɕ\", \"c\"), (\"ꝗ\", \"q\"), (\"ⱨ\", \"h\"), (\"ꝛ\", \"r\"), (\"ꝟ\", \"v\"), (\"ⱡ\", \"l\"), (\"ⱥ\", \"a\"), (\"Ǥ\", \"G\"), (\"ŧ\", \"t\"), (\"Ⱪ\", \"K\"), (\"ɭ\", \"l\"), (\"ᵯ\", \"m\"), (\"ɱ\", \"m\"), (\"ᵳ\", \"r\"), (\"ɽ\", \"r\"), (\"Ỿ\", \"Y\")]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/Thread+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 726,
+      "length": 8,
+      "value": "\"XCTest\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "Array",
+      "offset": 321,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "Array",
+      "offset": 414,
+      "length": 12,
+      "value": "[0, 0, 0, 0]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 465,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 495,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 562,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 579,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "Array",
+      "offset": 656,
+      "length": 12,
+      "value": "[0, 0, 0, 0]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 707,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 722,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 737,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 775,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 815,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 820,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "Array",
+      "offset": 857,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1052,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1074,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1080,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1095,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1101,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1132,
+      "length": 7,
+      "value": "\"#%06x\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2720,
+      "length": 3,
+      "value": "\"#\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2964,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3017,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3070,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3123,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3347,
+      "length": 5,
+      "value": "0xF00"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3357,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3362,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3403,
+      "length": 5,
+      "value": "0x0F0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3413,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3418,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3458,
+      "length": 5,
+      "value": "0x00F"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3468,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3485,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3613,
+      "length": 6,
+      "value": "0xF000"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3624,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3630,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3671,
+      "length": 6,
+      "value": "0x0F00"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3682,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3688,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3728,
+      "length": 6,
+      "value": "0x00F0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3739,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3745,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3786,
+      "length": 6,
+      "value": "0x000F"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3803,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3932,
+      "length": 8,
+      "value": "0xFF0000"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3945,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3951,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3993,
+      "length": 8,
+      "value": "0x00FF00"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4006,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4012,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4053,
+      "length": 8,
+      "value": "0x0000FF"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4072,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4090,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4218,
+      "length": 10,
+      "value": "0xFF000000"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4233,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4239,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4281,
+      "length": 10,
+      "value": "0x00FF0000"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4296,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4302,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4343,
+      "length": 10,
+      "value": "0x0000FF00"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4358,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4364,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4406,
+      "length": 10,
+      "value": "0x000000FF"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4427,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 683,
+      "length": 3,
+      "value": "667"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1275,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1281,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1359,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1365,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1418,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1424,
+      "length": 4,
+      "value": "-0.1"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIScreen+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1497,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/URL+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 11,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/URL+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 593,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/URL+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 38,
+      "value": "\"Invalid static URL string: \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/URL+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 666,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 673,
+      "length": 13,
+      "value": "\"about:blank\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
+      "kind": "Array",
+      "offset": 1340,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1435,
+      "length": 119,
+      "value": "\"<HTML><HEAD><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"><\/HEAD><BODY>\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1576,
+      "length": 16,
+      "value": "\"<\/BODY><\/HTML>\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
+      "kind": "Array",
+      "offset": 1916,
+      "length": 2,
+      "value": "[]"
     }
   ]
 }

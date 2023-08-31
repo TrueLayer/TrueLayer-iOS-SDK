@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerMockable
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -78,6 +78,8 @@ extension TrueLayerMockable.File.SinglePayment {
     case providerSelectionSingleCountry
     case providerSelectionMultipleCountries
     case consentThenRedirect
+    case userAccountSelection
+    case userAccountSelectionSingleAccount
     case consentThenAdditionalInputs
     case ibanAdditionalInputs
     case ibanThenUsernamePasswordAdditionalInputs
@@ -90,6 +92,7 @@ extension TrueLayerMockable.File.SinglePayment {
     case redirect
     case wait
     case providerHasInternalServerError
+    case schemeSelection
     public var rawValue: Swift.String {
       get
     }
@@ -100,6 +103,7 @@ extension TrueLayerMockable.File.SinglePayment {
     case authorizationRequired
     case preselectedProvider
     case preselectedProviderBranches
+    case userSelectedProviderBranchAndSchemes
     case wait
     public var rawValue: Swift.String {
       get
@@ -146,6 +150,15 @@ extension TrueLayerMockable.File.SinglePayment {
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
   }
+  public enum SchemeSelection : Swift.String {
+    case autoSubmit
+    case select
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
 }
 extension TrueLayerMockable.File.Mandate.Get : Swift.Equatable {}
 extension TrueLayerMockable.File.Mandate.Get : Swift.Hashable {}
@@ -180,3 +193,6 @@ extension TrueLayerMockable.File.SinglePayment.Legals : Swift.RawRepresentable {
 extension TrueLayerMockable.File.SinglePayment.AdditionalInputs : Swift.Equatable {}
 extension TrueLayerMockable.File.SinglePayment.AdditionalInputs : Swift.Hashable {}
 extension TrueLayerMockable.File.SinglePayment.AdditionalInputs : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.SinglePayment.SchemeSelection : Swift.Equatable {}
+extension TrueLayerMockable.File.SinglePayment.SchemeSelection : Swift.Hashable {}
+extension TrueLayerMockable.File.SinglePayment.SchemeSelection : Swift.RawRepresentable {}
