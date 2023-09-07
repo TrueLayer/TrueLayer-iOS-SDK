@@ -12,7 +12,10 @@
     "type": "bank_transfer",
     "provider_selection": {
       "type": "preselected",
-      "provider_id": "ob-bank-name-de-2"
+      "provider_id": "ob-bank-name-de-2",
+      "scheme_selection": {
+        "type": "user_selected"
+      }
     },
     "beneficiary": {
       "type": "merchant_account",

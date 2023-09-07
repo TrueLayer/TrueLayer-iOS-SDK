@@ -48,6 +48,39 @@
               "recommended_status": "unhealthy"
             }
           },
+          {
+            "id": "ob-bank-name-5",
+            "display_name": "Mock Bank GB 5",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB",
+            "availability": {
+              "recommended_status": "healthy"
+            }
+          },
+          {
+            "id": "ob-bank-name-6",
+            "display_name": "Mock Bank GB 6",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB",
+            "availability": {
+              "recommended_status": "healthy"
+            }
+          },
+          {
+            "id": "ob-bank-name-7",
+            "display_name": "Mock Bank GB 7",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "GB",
+            "availability": {
+              "recommended_status": "healthy"
+            }
+          },
         ]
       }
     }

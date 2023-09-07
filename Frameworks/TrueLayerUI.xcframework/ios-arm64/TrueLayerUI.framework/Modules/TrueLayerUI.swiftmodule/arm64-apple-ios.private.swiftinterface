@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreGraphics
@@ -64,6 +64,8 @@ extension TrueLayerUI.Analytics {
     @_spi(TrueLayer) case providerSelected(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, isFromPreviouslyUsedSection: Swift.Bool)
     @_spi(TrueLayer) case providerSelectionLoaded(includesPreviouslySelectedProviders: Swift.Bool, unavailableProviders: [Swift.String], paymentCurrency: Swift.String)
     @_spi(TrueLayer) case providerSelectionSearch(searchString: Swift.String)
+    @_spi(TrueLayer) case schemeSelectionLoaded(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider, schemeIdentifiers: [TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier])
+    @_spi(TrueLayer) case schemeSelectionSubmitted(schemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier)
     @_spi(TrueLayer) case redirectFlowCompleted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?)
     @_spi(TrueLayer) case sdkDismissed(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider?, result: TrueLayerUI.AuthorizationFlowResult)
     @_spi(TrueLayer) case sdkStarted(presentationStyle: TrueLayerUI.UI.PresentationStyle, contentSizeCategory: UIKit.UIContentSizeCategory)
@@ -118,8 +120,8 @@ public enum Analytics {
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public struct VisualSettings {
-    @_spi(TrueLayer) public let colors: TrueLayerUI.Makeup
-    @_spi(TrueLayer) public init(color: TrueLayerUI.Makeup = UI.MakeupColors(), customFontFamilyName: Swift.String? = nil)
+    @_spi(TrueLayer) public let colors: any TrueLayerUI.Makeup
+    @_spi(TrueLayer) public init(color: any TrueLayerUI.Makeup = UI.MakeupColors(), customFontFamilyName: Swift.String? = nil)
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
@@ -140,10 +142,10 @@ public enum Analytics {
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public struct Dependencies : TrueLayerUI.SomeDependencies {
-    @_spi(TrueLayer) public let dataPersister: TrueLayerUI.DataPersistable
-    @_spi(TrueLayer) public let router: TrueLayerUI.NavigationProvider
-    @_spi(TrueLayer) public let urlOpener: TrueLayerUI.URLOpener
-    @_spi(TrueLayer) public let context: TrueLayerUI.MerchantContext
+    @_spi(TrueLayer) public let dataPersister: any TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable
+    @_spi(TrueLayer) public let router: any TrueLayerUI.NavigationProvider
+    @_spi(TrueLayer) public let urlOpener: any TrueLayerUI.URLOpener
+    @_spi(TrueLayer) public let context: any TrueLayerUI.MerchantContext
     @_spi(TrueLayer) public let networkManager: TrueLayerNetwork.Network.Manager
     @_spi(TrueLayer) public let analyticsManager: TrueLayerUI.Analytics.Manager
     #if compiler(>=5.3) && $EffectfulProp
@@ -156,7 +158,7 @@ public enum Analytics {
       @_spi(TrueLayer) get throws
     }
     #endif
-    @_spi(TrueLayer) public init(requestsManager: TrueLayerAPI.RequestsManager, dataPersister: TrueLayerUI.DataPersistable, router: TrueLayerUI.NavigationProvider, urlOpener: TrueLayerUI.URLOpener, context: TrueLayerUI.MerchantContext, networkManager: TrueLayerNetwork.Network.Manager, analyticsManager: TrueLayerUI.Analytics.Manager)
+    @_spi(TrueLayer) public init(requestsManager: any TrueLayerAPI.RequestsManager, dataPersister: any TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable, router: any TrueLayerUI.NavigationProvider, urlOpener: any TrueLayerUI.URLOpener, context: any TrueLayerUI.MerchantContext, networkManager: TrueLayerNetwork.Network.Manager, analyticsManager: TrueLayerUI.Analytics.Manager)
   }
 }
 @_spi(TrueLayer) public protocol DynamicTypeRetriever {
@@ -166,10 +168,10 @@ public enum Analytics {
 }
 @_spi(TrueLayer) public typealias DataPersistable = TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable
 @_spi(TrueLayer) public protocol SomeDependencies {
-  @_spi(TrueLayer) var dataPersister: TrueLayerUI.DataPersistable { get }
-  @_spi(TrueLayer) var router: TrueLayerUI.NavigationProvider { get }
-  @_spi(TrueLayer) var urlOpener: TrueLayerUI.URLOpener { get }
-  @_spi(TrueLayer) var context: TrueLayerUI.MerchantContext { get }
+  @_spi(TrueLayer) var dataPersister: any TrueLayerCore.CountryPersistable & TrueLayerCore.LongListOptionPersistable { get }
+  @_spi(TrueLayer) var router: any TrueLayerUI.NavigationProvider { get }
+  @_spi(TrueLayer) var urlOpener: any TrueLayerUI.URLOpener { get }
+  @_spi(TrueLayer) var context: any TrueLayerUI.MerchantContext { get }
   @_spi(TrueLayer) var networkManager: TrueLayerNetwork.Network.Manager { get }
   @_spi(TrueLayer) var analyticsManager: TrueLayerUI.Analytics.Manager { get }
   #if compiler(>=5.3) && $EffectfulProp
@@ -200,19 +202,19 @@ public enum Analytics {
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.Router {
-  @_spi(TrueLayer) public func showLoader(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) public func showLoader(dependencies: any TrueLayerUI.SomeDependencies)
   @_spi(TrueLayer) public func hideLoader(completion: TrueLayerUI.Router.Completion? = nil)
 }
 @_spi(TrueLayer) public protocol NavigationProvider {
   @_spi(TrueLayer) var topViewController: UIKit.UIViewController { get }
   @_spi(TrueLayer) init(on rootViewController: UIKit.UIViewController)
-  @_spi(TrueLayer) func start<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
-  @_spi(TrueLayer) func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
+  @_spi(TrueLayer) func start<R, VM>(identifier: R, viewModel: VM, dependencies: any TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
+  @_spi(TrueLayer) func show<R, VM>(identifier: R, viewModel: VM, dependencies: any TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) func show(alertController: UIKit.UIAlertController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   @_spi(TrueLayer) func popTo<R>(identifier: R, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?) where R : Swift.RawRepresentable, R.RawValue == Swift.String
   @_spi(TrueLayer) func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
   @_spi(TrueLayer) func hideTopViewController(animated: Swift.Bool, completion: TrueLayerUI.Router.Completion?)
-  @_spi(TrueLayer) func showLoader(dependencies: TrueLayerUI.SomeDependencies)
+  @_spi(TrueLayer) func showLoader(dependencies: any TrueLayerUI.SomeDependencies)
   @_spi(TrueLayer) func hideLoader(completion: TrueLayerUI.Router.Completion?)
   @_spi(TrueLayer) func dismissSDK(then closure: (() -> Swift.Void)?)
 }
@@ -228,9 +230,9 @@ public enum Analytics {
     @_spi(TrueLayer) get
   }
   @_spi(TrueLayer) public init(on rootViewController: UIKit.UIViewController)
-  @_spi(TrueLayer) public func start<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
+  @_spi(TrueLayer) public func start<R, VM>(identifier: R, viewModel: VM, dependencies: any TrueLayerUI.SomeDependencies) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
-  public func show<R, VM>(identifier: R, viewModel: VM, dependencies: TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
+  public func show<R, VM>(identifier: R, viewModel: VM, dependencies: any TrueLayerUI.SomeDependencies, presentationStyle: TrueLayerUI.UI.PresentationStyle, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil) where R : Swift.RawRepresentable, VM : TrueLayerUI.SomeViewModel, R.RawValue == Swift.String
   @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
   public func show(alertController: UIKit.UIAlertController, animated: Swift.Bool = true, completion: TrueLayerUI.Router.Completion? = nil)
   @_spi(TrueLayer) @available(iOSApplicationExtension, unavailable)
@@ -246,27 +248,29 @@ public enum Analytics {
 @_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
 @_spi(TrueLayer) extension TrueLayerUI.UI.SDKRoot {
   @_spi(TrueLayer) public struct ViewModel : TrueLayerUI.SomeViewModel {
-    @_spi(TrueLayer) public init(customizedUIElements: [Swift.String : Swift.String], dynamicTypeRetriever: TrueLayerUI.DynamicTypeRetriever)
+    @_spi(TrueLayer) public init(customizedUIElements: [Swift.String : Swift.String], dynamicTypeRetriever: any TrueLayerUI.DynamicTypeRetriever)
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
   @_spi(TrueLayer) public enum Route : Swift.String {
     @_spi(TrueLayer) case activityIndicator
     @_spi(TrueLayer) case paymentConsent
-    @_spi(TrueLayer) case paymentSignupPlusExplanation
+    @_spi(TrueLayer) case bottomSheet
+    @_spi(TrueLayer) case howDoesThisWork
     @_spi(TrueLayer) case mandateConsent
     @_spi(TrueLayer) case countrySelection
     @_spi(TrueLayer) case mandateDetails
-    @_spi(TrueLayer) case mandateSecurity
     @_spi(TrueLayer) case singleChoiceListAdditionalInputs
     @_spi(TrueLayer) case textInputsAdditionalInputs
     @_spi(TrueLayer) case textWithImageAdditionalInputs
+    @_spi(TrueLayer) case userAccountSelection
     @_spi(TrueLayer) case providerSelection
     @_spi(TrueLayer) case branchSelection
     @_spi(TrueLayer) case zoomedImage
     @_spi(TrueLayer) case sdkRoot
     @_spi(TrueLayer) case wait
     @_spi(TrueLayer) case userPriming
+    @_spi(TrueLayer) case schemeSelection
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
@@ -323,6 +327,6 @@ public enum Analytics {
 }
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
 extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}
-extension TrueLayerUI.UI.Route : Swift.Equatable {}
-extension TrueLayerUI.UI.Route : Swift.Hashable {}
-extension TrueLayerUI.UI.Route : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.RawRepresentable {}

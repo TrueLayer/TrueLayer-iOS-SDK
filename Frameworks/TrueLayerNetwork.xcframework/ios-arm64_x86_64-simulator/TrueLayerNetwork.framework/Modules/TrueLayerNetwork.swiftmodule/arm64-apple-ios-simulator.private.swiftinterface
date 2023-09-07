@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerNetwork
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -87,8 +87,8 @@ import _StringProcessing
 }
 @_spi(TrueLayer) public struct Empty : Swift.Codable {
   @_spi(TrueLayer) public static let value: TrueLayerNetwork.Empty
-  @_spi(TrueLayer) public func encode(to encoder: Swift.Encoder) throws
-  @_spi(TrueLayer) public init(from decoder: Swift.Decoder) throws
+  @_spi(TrueLayer) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP {
   @_spi(TrueLayer) public struct Header : Swift.Equatable {
@@ -282,11 +282,11 @@ import _StringProcessing
 @_spi(TrueLayer) extension TrueLayerNetwork.Network {
   @_spi(TrueLayer) public enum Error : Swift.Error {
     @_spi(TrueLayer) case clientError(_: Swift.Int)
-    @_spi(TrueLayer) case validation(_: Swift.Decodable)
+    @_spi(TrueLayer) case validation(_: any Swift.Decodable)
     @_spi(TrueLayer) case failedToEncode
     @_spi(TrueLayer) case failedToDecode(_: Swift.String)
     @_spi(TrueLayer) case forbidden
-    @_spi(TrueLayer) case generic(_: Swift.Error)
+    @_spi(TrueLayer) case generic(_: any Swift.Error)
     @_spi(TrueLayer) case noInternetConnection
     @_spi(TrueLayer) case requestTimedOut
     @_spi(TrueLayer) case resourceNotFound
@@ -407,7 +407,7 @@ extension TrueLayerNetwork.Network {
     @_spi(TrueLayer) @objc override final public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
     @_spi(TrueLayer) @objc override final public func startLoading()
     @_spi(TrueLayer) @objc override final public func stopLoading()
-    @_spi(TrueLayer) @objc override dynamic public init(request: Foundation.URLRequest, cachedResponse: Foundation.CachedURLResponse?, client: Foundation.URLProtocolClient?)
+    @_spi(TrueLayer) @objc override dynamic public init(request: Foundation.URLRequest, cachedResponse: Foundation.CachedURLResponse?, client: (any Foundation.URLProtocolClient)?)
     @_spi(TrueLayer) @objc deinit
   }
 }
@@ -433,18 +433,18 @@ extension TrueLayerNetwork.RetryableRequest {
   @_spi(TrueLayer) public typealias Path = [Swift.String]
   @_spi(TrueLayer) public typealias QueryItems = [Swift.String : Swift.String]
 }
-extension TrueLayerNetwork.Network.MediaType : Swift.Equatable {}
-extension TrueLayerNetwork.Network.MediaType : Swift.Hashable {}
-extension TrueLayerNetwork.Network.MediaType : Swift.RawRepresentable {}
-extension TrueLayerNetwork.Network.HTTP.Method : Swift.Equatable {}
-extension TrueLayerNetwork.Network.HTTP.Method : Swift.Hashable {}
-extension TrueLayerNetwork.Network.HTTP.Method : Swift.RawRepresentable {}
-extension TrueLayerNetwork.Network.URL.Scheme : Swift.Equatable {}
-extension TrueLayerNetwork.Network.URL.Scheme : Swift.Hashable {}
-extension TrueLayerNetwork.Network.URL.Scheme : Swift.RawRepresentable {}
-extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.Equatable {}
-extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.Hashable {}
-extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.RawRepresentable {}
-extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.Equatable {}
-extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.Hashable {}
-extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.MediaType : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.MediaType : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.MediaType : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Method : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Method : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Method : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.URL.Scheme : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.URL.Scheme : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.URL.Scheme : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock.HTTPStatusCode : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock.HTTPVersion : Swift.RawRepresentable {}

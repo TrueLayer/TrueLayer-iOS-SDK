@@ -1,0 +1,10 @@
+{
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "scheme_selection"
+      }
+    }
+  },
+  "status": "authorizing"
+}

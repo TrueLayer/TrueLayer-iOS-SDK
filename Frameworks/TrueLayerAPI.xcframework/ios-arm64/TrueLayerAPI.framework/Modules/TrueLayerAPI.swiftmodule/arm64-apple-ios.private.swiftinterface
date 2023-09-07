@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerAPI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -62,7 +62,7 @@ import _StringProcessing
   @_spi(TrueLayer) public struct BadRequest : Swift.Decodable, Swift.Equatable {
     @_spi(TrueLayer) public let errors: [Swift.String : [Swift.String]]
     @_spi(TrueLayer) public static func == (a: TrueLayerAPI.API.Payments.Models.Response.Shared.BadRequest, b: TrueLayerAPI.API.Payments.Models.Response.Shared.BadRequest) -> Swift.Bool
-    @_spi(TrueLayer) public init(from decoder: Swift.Decoder) throws
+    @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
   }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Models.Response.Shared.BadRequest : TrueLayerAPI.Normalizable {
@@ -75,7 +75,7 @@ import _StringProcessing
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
   @_spi(TrueLayer) public struct Mandate : TrueLayerAPI.RequestsManager {
-    @_spi(TrueLayer) public init(using configuration: TrueLayerAPI.RequestsManagerConfigurationProvider)
+    @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getMandate() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.Information
     #endif
@@ -92,6 +92,9 @@ import _StringProcessing
     @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
     #endif
     #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
     #endif
     #if compiler(>=5.3) && $AsyncAwait
@@ -99,6 +102,15 @@ import _StringProcessing
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func cancelMandate() async throws
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitUserAccountSelection(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitNewUserAccountSelection() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func deleteUserAccount(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
     #endif
   }
 }
@@ -121,7 +133,7 @@ import _StringProcessing
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
   @_spi(TrueLayer) public struct SinglePayment : TrueLayerAPI.RequestsManager {
-    @_spi(TrueLayer) public init(using configuration: TrueLayerAPI.RequestsManagerConfigurationProvider)
+    @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getStatus() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Information
     #endif
@@ -167,6 +179,21 @@ import _StringProcessing
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func submitForm(inputs: [Swift.String : Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitUserAccountSelection(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitNewUserAccountSelection() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func deleteUserAccount(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getSchemeSelectionType(currency: Swift.String, schemes: [Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func submitScheme(_ schemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    #endif
   }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API {
@@ -186,8 +213,8 @@ import _StringProcessing
     }
   }
 }
-extension TrueLayerAPI.API.Environment : Swift.Equatable {}
-extension TrueLayerAPI.API.Environment : Swift.Hashable {}
-extension TrueLayerAPI.API.URL.Subdomain : Swift.Equatable {}
-extension TrueLayerAPI.API.URL.Subdomain : Swift.Hashable {}
-extension TrueLayerAPI.API.URL.Subdomain : Swift.RawRepresentable {}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Environment : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Environment : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerAPI.API.URL.Subdomain : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerAPI.API.URL.Subdomain : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerAPI.API.URL.Subdomain : Swift.RawRepresentable {}

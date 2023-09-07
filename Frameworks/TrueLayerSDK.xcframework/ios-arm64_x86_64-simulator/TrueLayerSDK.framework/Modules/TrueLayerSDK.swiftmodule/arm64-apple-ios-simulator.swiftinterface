@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -213,7 +213,7 @@ extension TrueLayerSDK.TrueLayer.Payments {
 }
 extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers final public class Manager {
-    final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), additionalConfiguration: [TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String] = [:])
+    final public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: any TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), additionalConfiguration: [TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String] = [:])
     final public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
     #if compiler(>=5.3) && $AsyncAwait
     final public func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
@@ -241,7 +241,7 @@ extension UIKit.UIColor {
   convenience public init(lightAppearance: UIKit.UIColor, darkAppearance: UIKit.UIColor)
 }
 public protocol VisualSettingsProvider {
-  var colors: TrueLayerSDK.ColorProvider { get }
+  var colors: any TrueLayerSDK.ColorProvider { get }
   @available(*, deprecated, renamed: "customFontFamilyName", message: "Use customFontFamilyName instead.")
   var fontFamilyName: Swift.String { get }
   var customFontFamilyName: Swift.String? { get }
@@ -257,7 +257,7 @@ extension TrueLayerSDK.VisualSettingsProvider {
 public protocol ColorProvider : TrueLayerSDK.AccessoryColor, TrueLayerSDK.BackgroundColor, TrueLayerSDK.ContentColor {
 }
 public struct DefaultVisualSettings : TrueLayerSDK.VisualSettingsProvider {
-  public let colors: TrueLayerSDK.ColorProvider
+  public let colors: any TrueLayerSDK.ColorProvider
   public let customFontFamilyName: Swift.String?
   public init()
 }
