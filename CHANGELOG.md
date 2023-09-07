@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. To know bet
 
 - Saved accounts selection and removal, for future users who decide to save their account with TrueLayer.
 - Recently used providers are combined into the same section as other providers on the provider selection list.
-- Possibility for the user to select the SEPA scheme when applicable. To enable it set `scheme_selection` is set to `user_selected` when creating the payment.
+- Possibility for the user to select the SEPA scheme when applicable. To enable it set `scheme_selection` is set to `user_selected` when creating the payment. Please refer to the [Create Payment](https://docs.truelayer.com/reference/create-payment) documentation for more information.
 - Refinements to the user interface design.
 
 ## [2.6.0] - Rocky
