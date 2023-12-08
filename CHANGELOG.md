@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [2.7.1] - Tusk
+
+### Fixed
+
+- Removed requirement for thread locking to prevent possible crashes related to a semaphore not releasing in time during de-initialisation.
+- Fixed some screens being retained after the payment processing is completed.
+
 ## [2.7.0] - Aurora
 
 ### Added

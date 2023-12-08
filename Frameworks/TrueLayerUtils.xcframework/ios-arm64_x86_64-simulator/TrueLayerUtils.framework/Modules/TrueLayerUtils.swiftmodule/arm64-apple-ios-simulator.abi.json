@@ -1213,48 +1213,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -1300,39 +1291,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -1620,7 +1620,9 @@
         "objc_name": "NSBundle",
         "declAttributes": [
           "ObjC",
+          "SynthesizedProtocol",
           "NonSendable",
+          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1630,6 +1632,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1852,10 +1861,14 @@
         "objc_name": "OS_dispatch_queue",
         "declAttributes": [
           "ObjC",
+          "SynthesizedProtocol",
+          "Sendable",
+          "HasMissingDesignatedInitializers",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)OS_dispatch_object",
         "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "Dispatch.DispatchObject",
@@ -1863,6 +1876,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2377,6 +2397,16 @@
         "usr": "s:10Foundation6LocaleV",
         "mangledName": "$s10Foundation6LocaleV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -2392,6 +2422,20 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocaleInformationProvider",
+            "printedName": "LocaleInformationProvider",
+            "usr": "s:14TrueLayerUtils25LocaleInformationProviderP",
+            "mangledName": "$s14TrueLayerUtils25LocaleInformationProviderP"
           },
           {
             "kind": "Conformance",
@@ -2417,17 +2461,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LocaleInformationProvider",
-            "printedName": "LocaleInformationProvider",
-            "usr": "s:14TrueLayerUtils25LocaleInformationProviderP",
-            "mangledName": "$s14TrueLayerUtils25LocaleInformationProviderP"
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSLocale",
+                    "printedName": "Foundation.NSLocale",
+                    "usr": "c:objc(cs)NSLocale"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
@@ -2449,28 +2501,6 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSLocale",
-                    "printedName": "Foundation.NSLocale",
-                    "usr": "c:objc(cs)NSLocale"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
@@ -3738,135 +3768,22 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Thread",
-        "printedName": "Thread",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "isRunningXCTest",
-            "printedName": "isRunningXCTest",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So8NSThreadC14TrueLayerUtilsE15isRunningXCTestSbvp",
-            "mangledName": "$sSo8NSThreadC14TrueLayerUtilsE15isRunningXCTestSbvp",
-            "moduleName": "TrueLayerUtils",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "TrueLayer"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So8NSThreadC14TrueLayerUtilsE15isRunningXCTestSbvg",
-                "mangledName": "$sSo8NSThreadC14TrueLayerUtilsE15isRunningXCTestSbvg",
-                "moduleName": "TrueLayerUtils",
-                "isFromExtension": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)NSThread",
-        "moduleName": "Foundation",
-        "isOpen": true,
-        "objc_name": "NSThread",
-        "declAttributes": [
-          "ObjC",
-          "NonSendable",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "TimeZone",
         "printedName": "TimeZone",
         "declKind": "Struct",
         "usr": "s:10Foundation8TimeZoneV",
         "mangledName": "$s10Foundation8TimeZoneV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -3882,28 +3799,6 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSTimeZone",
-                    "printedName": "Foundation.NSTimeZone",
-                    "usr": "c:objc(cs)NSTimeZone"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -3942,6 +3837,42 @@
           },
           {
             "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSTimeZone",
+                    "printedName": "Foundation.NSTimeZone",
+                    "usr": "c:objc(cs)NSTimeZone"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -3961,20 +3892,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           }
         ]
       },
@@ -4593,6 +4510,16 @@
         "usr": "s:10Foundation3URLV",
         "mangledName": "$s10Foundation3URLV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -4847,6 +4774,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -5095,13 +5029,6 @@
       "offset": 178,
       "length": 3011,
       "value": "[(\"Ɓ\", \"B\"), (\"ᶁ\", \"d\"), (\"ᶅ\", \"l\"), (\"ᶉ\", \"r\"), (\"ʋ\", \"v\"), (\"ᶍ\", \"x\"), (\"ᶃ\", \"g\"), (\"Ƒ\", \"F\"), (\"ƙ\", \"k\"), (\"Ɲ\", \"N\"), (\"Ƞ\", \"N\"), (\"ƥ\", \"p\"), (\"Ȥ\", \"Z\"), (\"Ħ\", \"H\"), (\"ƭ\", \"t\"), (\"Ƶ\", \"Z\"), (\"ȴ\", \"l\"), (\"ȼ\", \"c\"), (\"ɀ\", \"z\"), (\"ł\", \"l\"), (\"Ʉ\", \"U\"), (\"Ⱡ\", \"L\"), (\"Ɉ\", \"J\"), (\"Ꝋ\", \"O\"), (\"Ɍ\", \"R\"), (\"Ꝓ\", \"P\"), (\"Ꝗ\", \"Q\"), (\"Ꝛ\", \"R\"), (\"Ꝟ\", \"V\"), (\"ɠ\", \"g\"), (\"ǥ\", \"g\"), (\"Ɽ\", \"R\"), (\"Ŧ\", \"T\"), (\"ɨ\", \"i\"), (\"ⱦ\", \"t\"), (\"ɬ\", \"l\"), (\"ᵮ\", \"f\"), (\"ᶇ\", \"n\"), (\"ᵲ\", \"r\"), (\"ⱴ\", \"v\"), (\"ᵶ\", \"z\"), (\"ⱸ\", \"e\"), (\"ɼ\", \"r\"), (\"ỿ\", \"y\"), (\"ꝁ\", \"k\"), (\"Ƃ\", \"B\"), (\"ᶆ\", \"m\"), (\"ʈ\", \"t\"), (\"Ɗ\", \"D\"), (\"ᶎ\", \"z\"), (\"đ\", \"d\"), (\"ʐ\", \"z\"), (\"ƒ\", \"f\"), (\"ᶖ\", \"i\"), (\"ƚ\", \"l\"), (\"ƞ\", \"n\"), (\"ᶈ\", \"p\"), (\"ʠ\", \"q\"), (\"Ʈ\", \"T\"), (\"Ʋ\", \"V\"), (\"ƶ\", \"z\"), (\"Ȼ\", \"C\"), (\"ȿ\", \"s\"), (\"Ł\", \"L\"), (\"Ƀ\", \"B\"), (\"ꝅ\", \"k\"), (\"ɇ\", \"e\"), (\"ꝉ\", \"l\"), (\"ɋ\", \"q\"), (\"ꝍ\", \"o\"), (\"ɏ\", \"y\"), (\"ꝑ\", \"p\"), (\"ɓ\", \"b\"), (\"ꝕ\", \"p\"), (\"ɗ\", \"d\"), (\"ꝙ\", \"q\"), (\"Ø\", \"O\"), (\"Ᵽ\", \"P\"), (\"Ⱨ\", \"H\"), (\"ɫ\", \"l\"), (\"ᵭ\", \"d\"), (\"ᵱ\", \"p\"), (\"ɳ\", \"n\"), (\"ᵵ\", \"t\"), (\"ᶑ\", \"d\"), (\"ø\", \"o\"), (\"Ȿ\", \"S\"), (\"ᵽ\", \"p\"), (\"Ɀ\", \"Z\"), (\"ƃ\", \"b\"), (\"Ƈ\", \"C\"), (\"ᶀ\", \"b\"), (\"ʉ\", \"u\"), (\"Ƌ\", \"D\"), (\"ᶏ\", \"a\"), (\"ʑ\", \"z\"), (\"Đ\", \"D\"), (\"Ɠ\", \"G\"), (\"ᶂ\", \"f\"), (\"Ɨ\", \"I\"), (\"ʝ\", \"j\"), (\"Ɵ\", \"O\"), (\"ⱬ\", \"z\"), (\"ƫ\", \"t\"), (\"Ƴ\", \"Y\"), (\"ȶ\", \"t\"), (\"Ⱥ\", \"A\"), (\"Ⱦ\", \"T\"), (\"Ꝁ\", \"K\"), (\"ᶊ\", \"s\"), (\"Ꝅ\", \"K\"), (\"Ɇ\", \"E\"), (\"Ꝉ\", \"L\"), (\"Ꝍ\", \"O\"), (\"Ɏ\", \"Y\"), (\"Ꝑ\", \"P\"), (\"Ꝕ\", \"P\"), (\"ɖ\", \"d\"), (\"Ꝙ\", \"Q\"), (\"Ɫ\", \"L\"), (\"ɦ\", \"h\"), (\"ⱳ\", \"w\"), (\"ⱪ\", \"k\"), (\"ᵬ\", \"b\"), (\"Ɱ\", \"M\"), (\"ᵰ\", \"n\"), (\"ɲ\", \"n\"), (\"ᶒ\", \"e\"), (\"ᵴ\", \"s\"), (\"ⱺ\", \"o\"), (\"Ⱬ\", \"Z\"), (\"ɾ\", \"r\"), (\"ƀ\", \"b\"), (\"ʂ\", \"s\"), (\"ᶄ\", \"k\"), (\"ƈ\", \"c\"), (\"ƌ\", \"d\"), (\"Ꝃ\", \"K\"), (\"ᶙ\", \"u\"), (\"Ƙ\", \"K\"), (\"ᶌ\", \"v\"), (\"ȡ\", \"d\"), (\"ⱱ\", \"v\"), (\"ȥ\", \"z\"), (\"Ƥ\", \"P\"), (\"ħ\", \"h\"), (\"Ƭ\", \"T\"), (\"ȵ\", \"n\"), (\"ƴ\", \"y\"), (\"Ⱳ\", \"W\"), (\"Ƚ\", \"L\"), (\"ꝃ\", \"k\"), (\"ɉ\", \"j\"), (\"ꝋ\", \"o\"), (\"ɍ\", \"r\"), (\"ꝓ\", \"p\"), (\"ɕ\", \"c\"), (\"ꝗ\", \"q\"), (\"ⱨ\", \"h\"), (\"ꝛ\", \"r\"), (\"ꝟ\", \"v\"), (\"ⱡ\", \"l\"), (\"ⱥ\", \"a\"), (\"Ǥ\", \"G\"), (\"ŧ\", \"t\"), (\"Ⱪ\", \"K\"), (\"ɭ\", \"l\"), (\"ᵯ\", \"m\"), (\"ɱ\", \"m\"), (\"ᵳ\", \"r\"), (\"ɽ\", \"r\"), (\"Ỿ\", \"Y\")]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/Thread+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 726,
-      "length": 8,
-      "value": "\"XCTest\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/UIColor+Extensions.swift",
