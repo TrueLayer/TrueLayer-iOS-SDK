@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/TrueLayerAPI-Swift.h</key>
 		<data>
-		lw6G2+apSNGZsc0a5blGAhnZjdw=
+		nmlhxSQ7WXAt9OfUARL4Qg5EsLU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gBKSdzQaxT9WwMYovycrVF768CM=
+		wgSSx8/wKb8t3DXLemK28/E37VQ=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ztYdJ3pwYpdDaI+fNIURkpqRRJk=
+		wO/+cZRuAMNAZGbbvOHbd1b37rs=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/WfXT4OQ8I+HfA4Q+cCzjDT0KJo=
+		zqvmGhX4Q2HL/gkfXHHCskkpMog=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/uMN/n0TJJNDtufpNJ/iTN100/k=
+		7OZ/Arl3q4xL7P7fFPSd4qFNLu0=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/cb254vBCu3fsMyKTTB2iP1YH0w=
+		Vn27JglkCAlORGK+jUxcExpXUrM=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3HX3pRxnd7u46/gOQBZwEHSSFP8=
+		+Hif6MsV4a0YUl6xn+okOCIyQFs=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ASRW9mmDIMLReOi6HeyxNvUAo9M=
+		BCcTKceX5Qnb4wZPlmMF8RNVrwY=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UBvcXLVQH2LLrIyJ/GmR1B5Oi+I=
+		ausnmwYBMOtmeMnORbVz2BMZkGs=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ixeAtYiL+WKnjr9jxpXFRT2VSUk=
+		tc/dfhLc0sdR3pT+8FSqpQfI/+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCtF57p4Chx4r9kioE4v1oVX/3RnsDhtJ4Z0hieo9HQ=
+			jo+rFO+/ImkkJKYiRhdRLs1wPcdj/gUrVldvmJ9zNgQ=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -77,28 +77,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iqr2piaY4cicKctDJP8Yk9VuZGbAT19s7StlAuyQE+o=
+			ryoeWbuM2Ej6CGjVuhTf9JMhLDCgADgY6a+x7dTCv0E=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RkKbGQ7o/iJodZ2psKPNrRIM5mHadetlM7hn8llbY5s=
+			lycsMMgi1HHprS5wxWE+xcXLELSI0gqVY3PAMl28apU=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WuvQph6/uUAjxVuvBDMa/oU5gmIiFLrq6fK9YxFULyE=
+			n3FgdMachrMcSVOuzi1b7B6OZAOWssLCAMt1HLreYE8=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VD71pgE7Rj6Z5yNcKzHOx4Q9nfjC54gdsVZ54aF/SC4=
+			tTwAi1Y9W+uOMKRUX51MN0PK/YDACWtGlffEvalrGPI=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -112,28 +112,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			USKkqCEQUSU0SRqW+6ykVgv9ZM4EgEx1enjrBBZc8Pg=
+			2O/uYW4KhxeTl9RTa21vn3PCF3kWa4PZs2s6vM6UOSY=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PxVtE535FLa+OXR0LwOq2U9k40gW7TlF22Bq5EFZdtI=
+			ssLkkqvjgb2xwYdvq9cqp2UfM43bWCgEW7ociPxlVhU=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aSasufjapPW2KUYIdNqrl3cSyMnyiNH0RqqDSLX/pYM=
+			fzWW7UAGkDyVOn9vY4YfHHf1geJ5tLTglXS4iutC+10=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57IVDak8WsM9LdpKvOo2xTc6YtlzepxzUs4rnpcS78g=
+			Jmd8kuBigFslpXZ5v601Hcd7kMAo3EL1PVUe/laViw0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

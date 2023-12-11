@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerUtils
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -8,6 +8,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_spi(TrueLayer) extension Swift.Array {
   @_spi(TrueLayer) public func appending(_ newElement: Element) -> Swift.Array<Element>
 }
@@ -85,11 +86,6 @@ extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
   @_spi(TrueLayer) public func attributedStringWithDynamicFontAndHTML(baseFont: UIKit.UIFont, boldFont: UIKit.UIFont) -> Foundation.NSAttributedString?
 }
 @_spi(TrueLayer) public func mainThread(_ closure: () -> Swift.Void)
-@_spi(TrueLayer) extension Foundation.Thread {
-  @_spi(TrueLayer) public var isRunningXCTest: Swift.Bool {
-    @_spi(TrueLayer) get
-  }
-}
 public protocol TimezoneInformationProvider {
   var identifier: Swift.String { get }
 }

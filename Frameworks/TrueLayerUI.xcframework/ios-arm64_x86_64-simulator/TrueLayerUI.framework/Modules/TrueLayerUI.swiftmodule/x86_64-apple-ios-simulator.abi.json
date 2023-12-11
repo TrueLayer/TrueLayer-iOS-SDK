@@ -12969,6 +12969,34 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
         "kind": "TypeDecl",
         "name": "UIDevice",
         "printedName": "UIDevice",
@@ -13485,6 +13513,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -13569,6 +13604,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -13652,6 +13694,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -16072,35 +16121,35 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextInputs\/View+TextInputsAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 3587,
+      "offset": 3617,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextInputs\/View+TextInputsAdditionalInputs.swift",
       "kind": "BooleanLiteral",
-      "offset": 3748,
+      "offset": 3778,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextInputs\/View+TextInputsAdditionalInputs.swift",
       "kind": "FloatLiteral",
-      "offset": 4089,
+      "offset": 4119,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextInputs\/View+TextInputsAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 5108,
+      "offset": 5138,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextInputs\/View+TextInputsAdditionalInputs.swift",
       "kind": "BooleanLiteral",
-      "offset": 7596,
+      "offset": 7626,
       "length": 4,
       "value": "true"
     },
@@ -16177,49 +16226,49 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4181,
+      "offset": 4210,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 4665,
+      "offset": 4694,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 5461,
+      "offset": 5490,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 5681,
+      "offset": 5710,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 5694,
+      "offset": 5723,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "BooleanLiteral",
-      "offset": 8333,
+      "offset": 8362,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/TextWithImage\/View+TextWithImageAdditionalInputs.swift",
       "kind": "IntegerLiteral",
-      "offset": 9805,
+      "offset": 9876,
       "length": 1,
       "value": "2"
     },
@@ -17381,28 +17430,28 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/View+MandateConsent.swift",
       "kind": "IntegerLiteral",
-      "offset": 4569,
+      "offset": 4598,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/View+MandateConsent.swift",
       "kind": "IntegerLiteral",
-      "offset": 5710,
+      "offset": 5739,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/View+MandateConsent.swift",
       "kind": "BooleanLiteral",
-      "offset": 5792,
+      "offset": 5821,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/ViewController+MandateConsent.swift",
       "kind": "BooleanLiteral",
-      "offset": 2910,
+      "offset": 2960,
       "length": 5,
       "value": "false"
     },
@@ -17416,7 +17465,7 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Payment\/View+PaymentConsent.swift",
       "kind": "BooleanLiteral",
-      "offset": 8242,
+      "offset": 8271,
       "length": 5,
       "value": "false"
     },
@@ -18767,77 +18816,77 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 6960,
+      "offset": 7049,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 6985,
+      "offset": 7074,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 18350,
+      "offset": 18439,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 18696,
+      "offset": 18785,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 19687,
+      "offset": 19776,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 24649,
+      "offset": 24738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 26569,
+      "offset": 26658,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 27643,
+      "offset": 27732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 28729,
+      "offset": 28818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 29792,
+      "offset": 29881,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Logic+UI.swift",
       "kind": "BooleanLiteral",
-      "offset": 30779,
+      "offset": 30868,
       "length": 5,
       "value": "false"
     },
@@ -18885,92 +18934,78 @@
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1605,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 1708,
-      "length": 28,
-      "value": "\"com.truelayer.routingQueue\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 4359,
+      "offset": 3985,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 5326,
+      "offset": 4897,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6101,
+      "offset": 5672,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6933,
+      "offset": 6504,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 8049,
+      "offset": 7620,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 8816,
+      "offset": 8387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 9267,
+      "offset": 8838,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 9781,
+      "offset": 9420,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 10695,
+      "offset": 10408,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 12808,
+      "offset": 12330,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Navigation\/Router.swift",
       "kind": "IntegerLiteral",
-      "offset": 13795,
+      "offset": 13030,
       "length": 1,
       "value": "1"
     },
@@ -19187,28 +19222,28 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Root\/Logic+SDKRoot.swift",
       "kind": "BooleanLiteral",
-      "offset": 7814,
+      "offset": 7930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Root\/Logic+SDKRoot.swift",
       "kind": "BooleanLiteral",
-      "offset": 8113,
+      "offset": 8229,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Root\/Logic+SDKRoot.swift",
       "kind": "BooleanLiteral",
-      "offset": 10140,
+      "offset": 10256,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/Root\/Logic+SDKRoot.swift",
       "kind": "BooleanLiteral",
-      "offset": 11368,
+      "offset": 11484,
       "length": 4,
       "value": "true"
     },
@@ -19299,70 +19334,70 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "Dictionary",
-      "offset": 7001,
+      "offset": 7055,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "StringLiteral",
-      "offset": 7135,
+      "offset": 7189,
       "length": 8,
       "value": "\"select\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "IntegerLiteral",
-      "offset": 7602,
+      "offset": 7656,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 8944,
+      "offset": 8998,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 8971,
+      "offset": 9025,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 15381,
+      "offset": 15435,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 15745,
+      "offset": 15799,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 16966,
+      "offset": 17020,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 17018,
+      "offset": 17072,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/UI\/SinglePayment\/Logic+SinglePaymentManageAuthorizationFlow.swift",
       "kind": "Array",
-      "offset": 17291,
+      "offset": 17345,
       "length": 2,
       "value": "[]"
     },
@@ -19925,6 +19960,174 @@
       "offset": 4042,
       "length": 2,
       "value": "12"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 906,
+      "length": 17,
+      "value": "\"flags\/square\/at\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 17,
+      "value": "\"flags\/square\/au\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1226,
+      "length": 17,
+      "value": "\"flags\/square\/be\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1386,
+      "length": 17,
+      "value": "\"flags\/square\/de\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1546,
+      "length": 17,
+      "value": "\"flags\/square\/dk\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1706,
+      "length": 17,
+      "value": "\"flags\/square\/es\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1866,
+      "length": 17,
+      "value": "\"flags\/square\/fi\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2026,
+      "length": 17,
+      "value": "\"flags\/square\/fr\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2186,
+      "length": 17,
+      "value": "\"flags\/square\/gb\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2346,
+      "length": 17,
+      "value": "\"flags\/square\/ie\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2506,
+      "length": 17,
+      "value": "\"flags\/square\/it\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2666,
+      "length": 17,
+      "value": "\"flags\/square\/lt\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2826,
+      "length": 17,
+      "value": "\"flags\/square\/nl\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2986,
+      "length": 17,
+      "value": "\"flags\/square\/no\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3146,
+      "length": 17,
+      "value": "\"flags\/square\/pl\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3306,
+      "length": 17,
+      "value": "\"flags\/square\/pt\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3466,
+      "length": 17,
+      "value": "\"flags\/square\/ro\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3626,
+      "length": 17,
+      "value": "\"flags\/square\/se\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3786,
+      "length": 17,
+      "value": "\"flags\/square\/us\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3950,
+      "length": 12,
+      "value": "\"back_arrow\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4103,
+      "length": 18,
+      "value": "\"bank_placeholder\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4268,
+      "length": 21,
+      "value": "\"generic_placeholder\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4433,
+      "length": 20,
+      "value": "\"tl_logo_connecting\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Library\/Developer\/Xcode\/DerivedData\/SDK-agjizrphfyairwfhkezckhjivlbc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4616,
+      "length": 30,
+      "value": "\"tl_logo_connecting_regulated\""
     }
   ]
 }
