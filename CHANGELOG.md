@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. To know bet
 ### Changed
 - Updated `TrueLayer.Payments.Models.Mandate.Error` and `TrueLayer.Payments.Models.SinglePayment.Error` cases. These more accurately match errors received from the TrueLayer Payments API V3.
 - Merchant logo now appears on the right on the consent screen.
+- The `configure` method is now `async`.
 
 ### Removed
 
