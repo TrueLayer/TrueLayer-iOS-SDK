@@ -19,7 +19,8 @@ let package = Package(
               "TrueLayerNetwork",
               "TrueLayerLogger",
               "TrueLayerUtils",
-              "TrueLayerObjectiveC"
+              "TrueLayerObjectiveC",
+              "TrueLayerArchitecture"
             ]
         ),
     ],
@@ -27,6 +28,10 @@ let package = Package(
       .binaryTarget(
         name: "TrueLayerSDK",
         path: "Frameworks/TrueLayerSDK.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerArchitecture",
+        path: "Frameworks/TrueLayerArchitecture.xcframework"
       ),
       .binaryTarget(
         name: "TrueLayerUI",

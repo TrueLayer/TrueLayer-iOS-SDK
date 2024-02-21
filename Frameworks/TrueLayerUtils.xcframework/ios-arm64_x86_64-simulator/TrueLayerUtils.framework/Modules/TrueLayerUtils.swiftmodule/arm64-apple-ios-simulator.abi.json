@@ -449,6 +449,27 @@
         "kind": "TypeDecl",
         "name": "Utils",
         "printedName": "Utils",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "SVGImageCache",
+            "printedName": "SVGImageCache",
+            "declKind": "Class",
+            "usr": "s:14TrueLayerUtils0C0O13SVGImageCacheC",
+            "mangledName": "$s14TrueLayerUtils0C0O13SVGImageCacheC",
+            "moduleName": "TrueLayerUtils",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "hasMissingDesignatedInitializers": true
+          }
+        ],
         "declKind": "Enum",
         "usr": "s:14TrueLayerUtils0C0O",
         "mangledName": "$s14TrueLayerUtils0C0O",
@@ -2943,6 +2964,46 @@
               "TrueLayer"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "formatted",
+            "printedName": "formatted(value:currency:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So17NSNumberFormatterC14TrueLayerUtilsE9formatted5value8currencySSSd_SStFZ",
+            "mangledName": "$sSo17NSNumberFormatterC14TrueLayerUtilsE9formatted5value8currencySSSd_SStFZ",
+            "moduleName": "TrueLayerUtils",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -4639,7 +4700,7 @@
           {
             "kind": "Function",
             "name": "load",
-            "printedName": "load(svgURL:urlSession:)",
+            "printedName": "load(svgURL:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4651,18 +4712,11 @@
                 "name": "URL",
                 "printedName": "Foundation.URL",
                 "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URLSession",
-                "printedName": "Foundation.URLSession",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSURLSession"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So9WKWebViewC14TrueLayerUtilsE4load6svgURL10urlSessiony10Foundation0H0V_So12NSURLSessionCtF",
-            "mangledName": "$sSo9WKWebViewC14TrueLayerUtilsE4load6svgURL10urlSessiony10Foundation0H0V_So12NSURLSessionCtF",
+            "usr": "s:So9WKWebViewC14TrueLayerUtilsE4load6svgURLy10Foundation0H0V_tF",
+            "mangledName": "$sSo9WKWebViewC14TrueLayerUtilsE4load6svgURLy10Foundation0H0V_tF",
             "moduleName": "TrueLayerUtils",
             "declAttributes": [
               "Custom",
@@ -4844,28 +4898,357 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NumberFormatter+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 550,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NumberFormatter+Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 912,
+      "offset": 1421,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/NumberFormatter+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 1015,
+      "offset": 1524,
       "length": 2,
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 1341,
+      "length": 63,
+      "value": "\"<div style=\"width: 100%; height: 100%;\">\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 2,
+      "value": "\"<\/div>\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 1820,
+      "length": 6,
+      "value": "\"<svg\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2548,
+      "length": 8,
+      "value": "\"<\/svg>\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "Dictionary",
+      "offset": 2685,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "Dictionary",
+      "offset": 2732,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2762,
+      "length": 9,
+      "value": "\"viewBox\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2790,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2815,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2881,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2893,
+      "length": 6,
+      "value": "\"100%\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2947,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 2960,
+      "length": 6,
+      "value": "\"100%\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3014,
+      "length": 3,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3022,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3073,
+      "length": 3,
+      "value": "\"y\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3081,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3100,
+      "length": 9,
+      "value": "\"viewBox\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3113,
+      "length": 40,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3123,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3133,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3142,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3152,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3195,
+      "length": 3,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3232,
+      "length": 3,
+      "value": "\"y\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3249,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3261,
+      "length": 6,
+      "value": "\"100%\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3280,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3292,
+      "length": 6,
+      "value": "\"100%\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3419,
+      "length": 9,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3427,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3488,
+      "length": 12,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3496,
+      "length": 1,
+      "value": "\"=\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3561,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3572,
+      "length": 7,
+      "value": "\"&amp;\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3619,
+      "length": 3,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3630,
+      "length": 6,
+      "value": "\"&lt;\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3676,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3687,
+      "length": 6,
+      "value": "\"&gt;\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3733,
+      "length": 3,
+      "value": "\"'\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3744,
+      "length": 8,
+      "value": "\"&apos;\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3792,
+      "length": 4,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3804,
+      "length": 8,
+      "value": "\"&quot;\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3830,
+      "length": 4,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3860,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGDownloader.swift",
+      "kind": "StringLiteral",
+      "offset": 3921,
+      "length": 5,
+      "value": "\"svg\""
+    },
+    {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/SVGImageCache.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 950,
       "length": 34,
       "value": "\"com.truelayer.svgImageCacheQueue\""
     },
@@ -5593,35 +5976,35 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 552,
       "length": 13,
       "value": "\"about:blank\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
       "kind": "Array",
-      "offset": 1340,
+      "offset": 1227,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 1435,
+      "offset": 1322,
       "length": 119,
       "value": "\"<HTML><HEAD><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"><\/HEAD><BODY>\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 1576,
+      "offset": 1463,
       "length": 16,
       "value": "\"<\/BODY><\/HTML>\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Utils\/WKWebView+Extensions.swift",
       "kind": "Array",
-      "offset": 1916,
+      "offset": 1803,
       "length": 2,
       "value": "[]"
     }

@@ -12255,7 +12255,7 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/URLSession+Extensions.swift",
       "kind": "FloatLiteral",
-      "offset": 1207,
+      "offset": 1262,
       "length": 3,
       "value": "0.2"
     },
@@ -12480,97 +12480,104 @@
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
       "offset": 7467,
-      "length": 1463,
+      "length": 82,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
-      "offset": 7548,
-      "length": 71,
-      "value": "\"Server responded with \""
+      "offset": 7557,
+      "length": 180,
+      "value": "\"  Server responded with:\n  - URL: \""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
-      "offset": 7618,
-      "length": 2,
+      "offset": 7659,
+      "length": 1,
+      "value": "\"\n  - Body: \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
+      "kind": "StringLiteral",
+      "offset": 7725,
+      "length": 1332,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8348,
+      "offset": 8473,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8358,
+      "offset": 8483,
       "length": 3,
       "value": "499"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
-      "offset": 8407,
+      "offset": 8532,
       "length": 31,
       "value": "\"Bad request. Got back \""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
-      "offset": 8437,
+      "offset": 8562,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8460,
+      "offset": 8585,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8537,
+      "offset": 8662,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8621,
+      "offset": 8746,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8760,
+      "offset": 8885,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
-      "offset": 8770,
+      "offset": 8895,
       "length": 3,
       "value": "599"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
-      "offset": 8819,
+      "offset": 8944,
       "length": 34,
       "value": "\"Server crashed. Got back \""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
-      "offset": 8852,
+      "offset": 8977,
       "length": 2,
       "value": "\"\""
     },

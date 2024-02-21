@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerAPI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -78,7 +78,7 @@ import _SwiftConcurrencyShims
   @_spi(TrueLayer) public struct Mandate : TrueLayerAPI.RequestsManager {
     @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getMandate() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.Information
+    @_spi(TrueLayer) public func getMandateInformation() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.Information
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
@@ -91,9 +91,6 @@ import _SwiftConcurrencyShims
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
@@ -119,27 +116,47 @@ import _SwiftConcurrencyShims
 }
 @_spi(TrueLayer) public protocol RequestsManagerConfigurationProvider {
   @_spi(TrueLayer) var networkManager: TrueLayerNetwork.Network.Manager { get }
-  @_spi(TrueLayer) var paymentID: Swift.String { get }
+  @_spi(TrueLayer) var paymentIdentifier: Swift.String { get }
   @_spi(TrueLayer) var paymentToken: TrueLayerAPI.API.PaymentToken { get }
   @_spi(TrueLayer) var environment: TrueLayerAPI.API.Environment { get }
   @_spi(TrueLayer) var redirectURL: Foundation.URL { get }
 }
 @_spi(TrueLayer) public struct RequestsManagerConfiguration : TrueLayerAPI.RequestsManagerConfigurationProvider {
   @_spi(TrueLayer) public let networkManager: TrueLayerNetwork.Network.Manager
-  @_spi(TrueLayer) public let paymentID: Swift.String
+  @_spi(TrueLayer) public let paymentIdentifier: Swift.String
   @_spi(TrueLayer) public let paymentToken: TrueLayerAPI.API.PaymentToken
   @_spi(TrueLayer) public let environment: TrueLayerAPI.API.Environment
   @_spi(TrueLayer) public let redirectURL: Foundation.URL
-  @_spi(TrueLayer) public init(networkManager: TrueLayerNetwork.Network.Manager, paymentID: Swift.String, paymentToken: TrueLayerAPI.API.PaymentToken, environment: TrueLayerAPI.API.Environment, redirectURL: Foundation.URL)
+  @_spi(TrueLayer) public init(networkManager: TrueLayerNetwork.Network.Manager, paymentIdentifier: Swift.String, paymentToken: TrueLayerAPI.API.PaymentToken, environment: TrueLayerAPI.API.Environment, redirectURL: Foundation.URL)
+}
+@_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
+  @_spi(TrueLayer) public struct Shared : TrueLayerAPI.RequestsManager {
+    @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getLastUsedProviders(userIdentifier: Swift.String, paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier]
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getUserPriming(providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming.Status
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
+    #endif
+  }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
   @_spi(TrueLayer) public struct SinglePayment : TrueLayerAPI.RequestsManager {
     @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getStatus() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Information
+    @_spi(TrueLayer) public func getPaymentInformation() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Information
     #endif
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func pollPaymentStatus() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
+    @_spi(TrueLayer) public func pollPaymentStatus(shouldEndPollingPrematurely: @escaping (TrueLayerCore.Core.Payments.Models.SinglePayment.Status) -> Swift.Bool) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
@@ -150,23 +167,9 @@ import _SwiftConcurrencyShims
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func submitConsent() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     #endif
+    #warning("Moved to shared")
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getLastUsedProviders(userIdentifier: Swift.String, paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier]
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getUserPriming(providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming.Status
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func cancelPayment() async throws

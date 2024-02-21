@@ -1,0 +1,274 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerArchitecture
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_spi(TrueLayer) import TrueLayerLogger
+@_spi(TrueLayer) import TrueLayerUtils
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol Action {
+}
+@_spi(TrueLayer) public struct Context<TypedState, TypedDependencies> where TypedState : TrueLayerArchitecture.State, TypedDependencies : TrueLayerArchitecture.Dependencies {
+  @_spi(TrueLayer) public let dependencies: TypedDependencies
+  @_spi(TrueLayer) public let genericExecute: TrueLayerArchitecture.GenericExecutor
+  @_spi(TrueLayer) public var state: TypedState {
+    @_spi(TrueLayer) get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public init(dependencies: TypedDependencies, getState: @escaping () -> TypedState, execute: @escaping TrueLayerArchitecture.GenericExecutor)
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public func execute(_ action: any TrueLayerArchitecture.StateUpdater) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public func execute(_ action: any TrueLayerArchitecture.SideEffect) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public func execute<A>(_ action: A) async throws -> A.ReturnValue where A : TrueLayerArchitecture.ReturningSideEffect
+  #endif
+}
+@_spi(TrueLayer) extension TrueLayerArchitecture.Context : TrueLayerArchitecture.GenericContext {
+  @_spi(TrueLayer) public var genericDependencies: any TrueLayerArchitecture.Dependencies {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var genericState: any TrueLayerArchitecture.State {
+    @_spi(TrueLayer) get
+  }
+}
+@_spi(TrueLayer) public protocol GenericContext {
+  @_spi(TrueLayer) var genericDependencies: any TrueLayerArchitecture.Dependencies { get }
+  @_spi(TrueLayer) var genericState: any TrueLayerArchitecture.State { get }
+}
+@_spi(TrueLayer) public protocol Dependencies : AnyObject {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) init(_ executor: @escaping TrueLayerArchitecture.GenericExecutor, state: @escaping TrueLayerArchitecture.StateGetter)
+  #endif
+}
+@_spi(TrueLayer) public protocol ReturningSideEffect : TrueLayerArchitecture.AnySideEffect {
+  associatedtype TypedState : TrueLayerArchitecture.State
+  associatedtype TypedDependencies : TrueLayerArchitecture.Dependencies
+  associatedtype ReturnValue
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) func execute(context: TrueLayerArchitecture.Context<Self.TypedState, Self.TypedDependencies>) async throws -> Self.ReturnValue
+  #endif
+}
+@_spi(TrueLayer) extension TrueLayerArchitecture.ReturningSideEffect {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public func genericExecute(_ context: any TrueLayerArchitecture.GenericContext) async throws -> Any
+  #endif
+}
+@_spi(TrueLayer) public protocol SideEffect : TrueLayerArchitecture.AnySideEffect {
+  associatedtype TypedState : TrueLayerArchitecture.State
+  associatedtype TypedDependencies : TrueLayerArchitecture.Dependencies
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) func execute(context: TrueLayerArchitecture.Context<Self.TypedState, Self.TypedDependencies>) async throws
+  #endif
+}
+@_spi(TrueLayer) public protocol AnySideEffect : TrueLayerArchitecture.Action {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) func genericExecute(_ context: any TrueLayerArchitecture.GenericContext) async throws -> Any
+  #endif
+}
+@_spi(TrueLayer) extension TrueLayerArchitecture.SideEffect {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public func genericExecute(_ context: any TrueLayerArchitecture.GenericContext) async throws -> Any
+  #endif
+}
+@_spi(TrueLayer) public protocol State {
+  @_spi(TrueLayer) init()
+}
+@_spi(TrueLayer) public protocol StateUpdater : TrueLayerArchitecture.Action {
+  associatedtype TypedState : TrueLayerArchitecture.State
+  @_spi(TrueLayer) func updateState(_ state: inout Self.TypedState)
+}
+@_spi(TrueLayer) @_hasMissingDesignatedInitializers public class ActionlessStore<TypedState> where TypedState : TrueLayerArchitecture.State {
+  @_spi(TrueLayer) public var state: TypedState {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) @discardableResult
+  public func genericExecutor(_ action: any TrueLayerArchitecture.Action) async throws -> Any
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) public func execute(_ action: some StateUpdater) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) @discardableResult
+  public func execute(_ action: some AnySideEffect) async throws -> Any
+  #endif
+  @_spi(TrueLayer) @discardableResult
+  public func subscribe(_ action: @escaping TrueLayerArchitecture.ListenerAction<TypedState>) -> TrueLayerArchitecture.StoreUnsubscribe
+  @_spi(TrueLayer) @objc deinit
+}
+@_spi(TrueLayer) @_hasMissingDesignatedInitializers public class Store<TypedState, TypedDependencies> : TrueLayerArchitecture.ActionlessStore<TypedState> where TypedState : TrueLayerArchitecture.State, TypedDependencies : TrueLayerArchitecture.Dependencies {
+  @_spi(TrueLayer) public typealias DependenciesInitializer = (_ dispatch: @escaping TrueLayerArchitecture.GenericExecutor, _ getState: @escaping () -> TypedState) -> TypedDependencies
+  @_spi(TrueLayer) public var dependencies: TypedDependencies!
+  @_spi(TrueLayer) public var context: TrueLayerArchitecture.Context<TypedState, TypedDependencies>! {
+    get
+  }
+  @_spi(TrueLayer) public init()
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) override public func genericExecutor(_ action: any TrueLayerArchitecture.Action) async throws -> Any
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) override public func execute(_ action: some StateUpdater) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) @discardableResult
+  override public func execute(_ action: some AnySideEffect) async throws -> Any
+  #endif
+  @_spi(TrueLayer) override public func subscribe(_ action: @escaping TrueLayerArchitecture.ListenerAction<TypedState>) -> TrueLayerArchitecture.StoreUnsubscribe
+  @_spi(TrueLayer) @objc deinit
+}
+@_spi(TrueLayer) public typealias StoreUnsubscribe = () -> Swift.Void
+#if compiler(>=5.3) && $AsyncAwait
+@_spi(TrueLayer) public typealias GenericExecutor = (_ action: any TrueLayerArchitecture.Action) async throws -> Any
+#endif
+@_spi(TrueLayer) public typealias StateGetter = () -> any TrueLayerArchitecture.State
+@_spi(TrueLayer) public typealias ListenerAction<S> = (_ oldState: S, _ newState: S) -> Swift.Void where S : TrueLayerArchitecture.State
+public protocol Routable : AnyObject {
+  var routeIdentifier: TrueLayerArchitecture.RouteIdentifier { get }
+  var navigationConfiguration: [TrueLayerArchitecture.RoutingRequest : any TrueLayerArchitecture.RoutingInstruction] { get }
+}
+@_Concurrency.MainActor public class Router {
+  @_Concurrency.MainActor final public let merchantRootViewController: UIKit.UIViewController
+  @_Concurrency.MainActor public var _topViewController: UIKit.UIViewController {
+    get
+  }
+  nonisolated public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor public func start(on viewController: UIKit.UIViewController, animated: Swift.Bool = false)
+  @_Concurrency.MainActor public func show<Route>(routeIdentifier: Route, context: Any? = nil, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
+  @_Concurrency.MainActor public func hide<Route>(routeIdentifier: Route, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
+  @_Concurrency.MainActor public func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true)
+  @_Concurrency.MainActor public func popTopViewController(animated: Swift.Bool = true)
+  @objc deinit
+}
+public typealias RoutingCompletion = () -> Swift.Void
+public typealias ViewControllerProvider = (_ context: Any?) -> UIKit.UIViewController
+public typealias RouteIdentifier = Swift.String
+public typealias RoutableViewController = UIKit.UIViewController & TrueLayerArchitecture.Routable
+public protocol RoutingInstruction {
+}
+public enum ForwardRoutingInstruction : TrueLayerArchitecture.RoutingInstruction {
+  case push(TrueLayerArchitecture.ViewControllerProvider)
+  case present(TrueLayerArchitecture.ViewControllerProvider)
+}
+public enum BackwardRoutingInstruction : TrueLayerArchitecture.RoutingInstruction {
+  case pop
+  case dismiss
+  public static func == (a: TrueLayerArchitecture.BackwardRoutingInstruction, b: TrueLayerArchitecture.BackwardRoutingInstruction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RoutingRequest : Swift.Hashable {
+  public static func show<Route>(_ route: Route) -> TrueLayerArchitecture.RoutingRequest where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
+  public static func hide<Route>(_ route: Route) -> TrueLayerArchitecture.RoutingRequest where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TrueLayerArchitecture.RoutingRequest, b: TrueLayerArchitecture.RoutingRequest) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol TLLocalState {
+}
+public protocol TLModelledView : TrueLayerArchitecture.TLSimpleView {
+  associatedtype VM : TrueLayerArchitecture.TLViewModel
+  var viewModel: Self.VM? { get set }
+  func update(oldViewModel: Self.VM?)
+}
+extension TrueLayerArchitecture.TLModelledView {
+  public var viewModelKey: Swift.UnsafeRawPointer {
+    get
+  }
+  public var viewModel: Self.VM? {
+    get
+    set
+  }
+  public func update()
+}
+public protocol TLSimpleView : AnyObject {
+  func setup()
+  func style()
+  func update()
+  func layout()
+}
+@_spi(TrueLayer) public protocol TLStatefulViewModel : TrueLayerArchitecture.TLViewModel {
+  associatedtype TypedState : TrueLayerArchitecture.State
+  @_spi(TrueLayer) init?(state: Self.TypedState)
+}
+@_spi(TrueLayer) public protocol TLStatefulViewModelWithLocalState : TrueLayerArchitecture.TLStatefulViewModel {
+  associatedtype TypedLocalState : TrueLayerArchitecture.TLLocalState
+  associatedtype S where Self.S == Self.TypedState
+  @_spi(TrueLayer) init?(state: Self.S?, localState: Self.TypedLocalState)
+}
+@_spi(TrueLayer) extension TrueLayerArchitecture.TLStatefulViewModelWithLocalState {
+  @_spi(TrueLayer) public init?(state: Self.TypedState)
+}
+@_spi(TrueLayer) @_Concurrency.MainActor(unsafe) open class TLViewController<V> : UIKit.UIViewController, UIKit.UINavigationControllerDelegate where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var store: TrueLayerArchitecture.ActionlessStore<V.VM.TypedState>
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var state: V.VM.TypedState {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var rootView: V {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var viewModel: V.VM? {
+    @_spi(TrueLayer) get
+    @_spi(TrueLayer) set
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public init(store: TrueLayerArchitecture.ActionlessStore<V.VM.TypedState>)
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) open func setup()
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func dispatch(_ action: any TrueLayerArchitecture.Action) async throws -> Any
+  #endif
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder _: Foundation.NSCoder)
+  @_spi(TrueLayer) @objc deinit
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) open func update(with state: V.VM.TypedState)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) open func trackLoadedAnalytics() async
+  #endif
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) open func setupInteractions()
+}
+@_spi(TrueLayer) public protocol TLModelledViewWithViewController : TrueLayerArchitecture.TLModelledView where Self.VM : TrueLayerArchitecture.TLStatefulViewModel {
+  @_spi(TrueLayer) var viewController: UIKit.UIViewController? { get set }
+}
+@_spi(TrueLayer) extension TrueLayerArchitecture.TLModelledViewWithViewController {
+  @_spi(TrueLayer) public var viewControllerKey: Swift.UnsafeRawPointer {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var navigationBar: UIKit.UINavigationBar? {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var navigationItem: UIKit.UINavigationItem? {
+    @_spi(TrueLayer) get
+  }
+  @_spi(TrueLayer) public var viewController: UIKit.UIViewController? {
+    @_spi(TrueLayer) get
+    @_spi(TrueLayer) set
+  }
+}
+@_spi(TrueLayer) @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TLViewControllerWithLocalState<V> : TrueLayerArchitecture.TLViewController<V> where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var localState: V.VM.TypedLocalState {
+    @_spi(TrueLayer) get
+    @_spi(TrueLayer) set
+  }
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public init(store: TrueLayerArchitecture.ActionlessStore<V.VM.TypedState>, localState: V.VM.TypedLocalState)
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder _: Foundation.NSCoder)
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) override public init(store: TrueLayerArchitecture.ActionlessStore<V.VM.TypedState>)
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) override open func update(with state: V.VM.TypedState)
+  @_spi(TrueLayer) @objc deinit
+}
+public protocol TLViewModel {
+}
+extension TrueLayerArchitecture.Router : Swift.Sendable {}
+extension TrueLayerArchitecture.BackwardRoutingInstruction : Swift.Equatable {}
+extension TrueLayerArchitecture.BackwardRoutingInstruction : Swift.Hashable {}

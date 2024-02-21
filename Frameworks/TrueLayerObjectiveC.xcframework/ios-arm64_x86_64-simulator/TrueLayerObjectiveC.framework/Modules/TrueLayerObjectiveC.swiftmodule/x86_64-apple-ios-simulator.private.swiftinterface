@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerObjectiveC
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -26,6 +26,11 @@ import _SwiftConcurrencyShims
   case serverError
   case unexpectedBehavior
   case userCanceled
+  case providerError
+  case providerRejected
+  case invalidRequest
+  case invalidSortCode
+  case unknownError
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -56,20 +61,26 @@ import _SwiftConcurrencyShims
     get
   }
 }
-@objc public enum TrueLayerMandateUseCase : Swift.Int {
-  case send
-  case signupPlus
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc public enum TrueLayerSinglePaymentError : Swift.Int, Swift.Error {
   case authorizationFailed
   case connectionIssues
   case generic
+  case blocked
+  case invalidAccountDetails
+  case invalidAccountHolderName
   case invalidToken
+  case invalidCredentials
+  case invalidRemitterAccount
+  case invalidRequest
+  case invalidSortCode
+  case insufficientFunds
+  case notAuthorized
+  case paymentLimitExceeded
+  case providerError
+  case providerExpired
+  case providerRejected
+  case unknownError
+  case userCanceledAtProvider
   case invalidRedirectURI
   case paymentExpired
   case paymentNotFound
@@ -107,15 +118,6 @@ import _SwiftConcurrencyShims
   case executed
   case settled
   case failed
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum TrueLayerSinglePaymentUseCase : Swift.Int {
-  case send
-  case signupPlus
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -177,10 +179,14 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class TrueLayerPaymentsManager : ObjectiveC.NSObject {
-  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettings?, additionalConfiguration: [Swift.String : Swift.String])
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettings?, additionalConfiguration: [Swift.String : Swift.String]) async
+  #endif
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
-  @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void) async
+  #endif
   @objc public static func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
@@ -198,7 +204,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc final public class TrueLayerSinglePaymentPreferences : ObjectiveC.NSObject {
-  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil, useCase: TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase = .send)
+  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
@@ -218,9 +224,6 @@ extension TrueLayerObjectiveC.TrueLayerMandateState : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.RawRepresentable {}
-extension TrueLayerObjectiveC.TrueLayerMandateUseCase : Swift.Equatable {}
-extension TrueLayerObjectiveC.TrueLayerMandateUseCase : Swift.Hashable {}
-extension TrueLayerObjectiveC.TrueLayerMandateUseCase : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.RawRepresentable {}
@@ -230,9 +233,6 @@ extension TrueLayerObjectiveC.TrueLayerSinglePaymentState : Swift.RawRepresentab
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentStatus : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentStatus : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentStatus : Swift.RawRepresentable {}
-extension TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase : Swift.Equatable {}
-extension TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase : Swift.Hashable {}
-extension TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerEnvironment : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerEnvironment : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerEnvironment : Swift.RawRepresentable {}

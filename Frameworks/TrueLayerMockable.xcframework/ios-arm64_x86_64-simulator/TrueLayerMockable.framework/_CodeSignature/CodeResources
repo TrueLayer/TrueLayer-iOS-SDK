@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/TrueLayerMockable-Swift.h</key>
 		<data>
-		oHZqCS1HpEab1WHa8sRHYqXoVc0=
+		/ZUNm/vHPiPTlM6YBhjVYpBG3dU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/t/wUyBdrNMuW4EOoWCl9jRbaRM=
+		DdPGWHGd58jl3AfcJ5mH5XUzjRY=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kaasrtQvGI4z3w5K4YNNZefGj8A=
+		eDPN8dEN647h86pCQGMDuP29aQE=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YTxZa8Jd9SzblwPZ0E3Xpeiu0LY=
+		B7YHtqS8cDVLquwqXiGV3D6Uvmw=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yzK1eKEFDskmYUfRVGh31jmwwek=
+		qvPV3YXZBQi52Jc7j0Ty2e75P1A=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gF7FSA5axNes4MiMPxYdmD6sRK8=
+		Chiqw6yLFLvFJVcrlt2XCdsVOGM=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		skOl+EZUj4eGYlprQnyHVKGQVSI=
+		MFVTVD42wjTzi5IATa9/HbwnXQ4=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kaasrtQvGI4z3w5K4YNNZefGj8A=
+		eDPN8dEN647h86pCQGMDuP29aQE=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4a8a3LV23HJE2QUdkQ/v1/1I/WM=
+		5SEglu4Qh6qwvIuo5RQvpPAVCWk=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iHKhySB7iroz4z/sfosAaitHx58=
+		KZxTXpugDuc3ErZiFUjFYhKXhmQ=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VEbsWKU1bAEtIZONzniRlGhSR2A=
+		tUeWwWVHsnqTytNjH/dMhelCO68=
 		</data>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ge39AFfOLK/ycKfOgy3NunsKE4Y=
+		8lc3szSE0REJ2BMhYs6e1gj2lDU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,6 +147,10 @@
 		<key>preselectedProviderBranches+getPaymentResponse.json</key>
 		<data>
 		k39/WUIn+3QTIaTsPk5C+Bf8Ogk=
+		</data>
+		<key>preselectedProviderSignupPlus+getPaymentResponse.json</key>
+		<data>
+		+2YZKBww60GAazEFmuDI2nuXfME=
 		</data>
 		<key>providerHasInternalServerError+authorizationFlowResponse.json</key>
 		<data>
@@ -259,77 +263,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f+CWgOdFBbN+lNk6byvCdlq0oa/JZTBOm6uKI1VgJU0=
+			Wrwv8Dc/SJPsW/y0OfC9bf6Y5t2B+U/5BtelNarAVMs=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3rHUuXzUjDq8k2fELgAxA23xBFf2LNstoMAb39DeFHE=
+			AQ9d6q+BnzigqU7LcqbK6O/iCwp0MHPlvoHrEzGZ8CE=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4/Ws+n3SzSVUJ9XgeOz+D1w6QXAeTvTFl/G8zDSBqKA=
+			gXI179ODgoFxoY9URjUmF8znZ5akDRS8oguyVx/eb70=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4G5hCIVyc9EIthErQP6Kig2ZV1Ht/9H7WN1IPz1+WMo=
+			hm7fd2xtypS1q5J/VneWVsHwT39K41vDrnS1ZCAeQH4=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vn4sVFDH7yM+b3e7wv0DUZMZHtr0Nw8WrFhkplK6DSI=
+			gEOF8Wv6qqBTL2TWs/n7uAeoXryUIXhBas2/9gGLIo4=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BWSmrCsaORP0N869C2dSdg3XFff7hUtFlgTQussWlWk=
+			2OsJxVkCs6xy/Y0x1HB5UokxMUP98K69UvwXNHVpy1A=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3rHUuXzUjDq8k2fELgAxA23xBFf2LNstoMAb39DeFHE=
+			AQ9d6q+BnzigqU7LcqbK6O/iCwp0MHPlvoHrEzGZ8CE=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y9VsbmYi7XlgtljH+jhUNB5QyMFJAcXNqqUOdA9Vhs8=
+			wP1pDTr9YeZ9L5fnJYr10KRNZVvBSZG1bcRnVMSskdE=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qjvv6bQFNN/EEcjmKj4uiVO69cSFwlGm/zbTM8h73p4=
+			N/AIWp0JjlyoT9QMDKRRVduqF8U5xbPi5t3OD1gFUTo=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+4GhgF8O1/ExCeSp4gjytNRYYM4wR+13jKRZGBIIFV0=
+			t7cCsXVXnPi/kyZFqpj/ZhGjhJE+ibbeJe8VyEPTPyk=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerMockable.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4zl01j1/UodrS9KnvqUAZgKSlsn3jpAtr0R3iNHMQk=
+			CusekdziKXenN6HpkebLCVe47oMYdmWa/saAaNy8bw8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -498,6 +502,13 @@
 			<key>hash2</key>
 			<data>
 			QgxHq3OH4MLuiadDaRt91J3+e0EohG7AT6J8voDsP50=
+			</data>
+		</dict>
+		<key>preselectedProviderSignupPlus+getPaymentResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SaiSk3jLnJdi9VqPv4AV+yIXM3WsOKXfcceSCGvhgXs=
 			</data>
 		</dict>
 		<key>providerHasInternalServerError+authorizationFlowResponse.json</key>

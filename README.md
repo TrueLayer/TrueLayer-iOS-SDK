@@ -5,7 +5,7 @@ The SDK presents native screens that allow your users to select their bank and c
 
 The Android version of the SDK can be found [here](https://docs.truelayer.com/docs/android-sdk-for-payments-v3).
 
-**Note: If you are migrating from the beta version of the iOS SDK, checkout this [Migration Guide](docs/Migration%20Guide.md).**
+**Note: If you are migrating from the beta version of the iOS SDK, checkout this [Migration Guide](docs/MIGRATION%20GUIDE.md).**
 
 ## Table of Contents
 
@@ -38,7 +38,11 @@ To install the SDK using Swift Package Manager:
 
 ### CocoaPods
 
-`pod 'TrueLayerPaymentsSDK'`
+ To install the SDK via Cocoapods, specify `TrueLayerPaymentsSDK` in your Podfile:
+
+```
+pod 'TrueLayerPaymentsSDK'
+```
 
 ## Setup
 
@@ -73,8 +77,10 @@ The iOS SDK has the following requirements:
 
 2. Configure the SDK with the given environment:
 
-        TrueLayer.Payments.manager.configure(environment: .sandbox)
-        
+        Task {
+          await TrueLayer.Payments.manager.configure(environment: .sandbox)
+        }
+
 3. Checkout [Documentation](docs/DOCUMENTATION.md)
 
 ### Styling

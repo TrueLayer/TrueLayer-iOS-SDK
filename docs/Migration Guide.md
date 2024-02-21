@@ -1,7 +1,34 @@
 # TrueLayer iOS SDK Migration Guide
 
+- [Migrating from 2.x to 3.x](#migrating-from-2x-to-3x)
 - [Migrating from 1.x to 2.x](#migrating-from-1x-to-2x)
 - [Migrating from beta to 2.x](#migrating-from-beta-to-2x)
+
+## Migrating from 2.x to 3.x
+
+### Configuring the SDK
+
+Previously:
+
+```
+TrueLayer.Payments.manager.configure(environment: .sandbox)
+```
+
+Now:
+
+```
+await TrueLayer.Payments.manager.configure(environment: .sandbox)
+```
+
+### Result Screen
+
+In the `Preferences` object, `shouldShowResultScreen` is set to `true` by default. This tells the TrueLayer SDK to display the result of a payment or mandate at the end of the authorization flow. This screen automatically refreshes until the payment is creditable, or until a maximum timeout is reached (customizable by setting `maximumResultScreenTimeout`). By default this timeout is 10 seconds, and cannot be set longer (the SDK will use 10s if you pass a greater value).
+
+It is recommended to re-invoke `processSinglePayment` or `processMandate` once the user is re-directed from their bank back to your application. Some banks require further input from the user, which the SDK can display. If there are no further inputs required, the SDK will either return a payment result to your app (`shouldShowResultScreen` is `false`), or show a result screen (`shouldShowResultScreen` is `true`).
+
+### Failure Reasons
+
+There are more failure reasons to handle in 3.0.0. Please see [DOCUMENTATION](../DOCUMENTATION.md) for a list of available reasons.
 
 ## Migrating from 1.x to 2.x
 
