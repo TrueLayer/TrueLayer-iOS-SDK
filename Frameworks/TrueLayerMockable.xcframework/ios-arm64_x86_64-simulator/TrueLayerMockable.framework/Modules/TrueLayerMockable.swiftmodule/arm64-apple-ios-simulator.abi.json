@@ -1356,6 +1356,46 @@
                   },
                   {
                     "kind": "Var",
+                    "name": "preselectedProviderSignupPlus",
+                    "printedName": "preselectedProviderSignupPlus",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.GetPaymentResponse.Type) -> TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetPaymentResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GetPaymentResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.GetPaymentResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO29preselectedProviderSignupPlusyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO03GetF8ResponseO29preselectedProviderSignupPlusyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
                     "name": "preselectedProviderBranches",
                     "printedName": "preselectedProviderBranches",
                     "children": [
@@ -3940,42 +3980,42 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3680,
       "length": 21,
       "value": "\"+getPaymentResponse\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
       "kind": "StringLiteral",
-      "offset": 4048,
+      "offset": 4163,
       "length": 26,
       "value": "\"+paymentProviderResponse\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
       "kind": "StringLiteral",
-      "offset": 4278,
+      "offset": 4393,
       "length": 27,
       "value": "\"+paymentProvidersResponse\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
       "kind": "StringLiteral",
-      "offset": 4628,
+      "offset": 4743,
       "length": 17,
       "value": "\"+legalsResponse\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
       "kind": "StringLiteral",
-      "offset": 5273,
+      "offset": 5388,
       "length": 27,
       "value": "\"+additionalInputsResponse\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
       "kind": "StringLiteral",
-      "offset": 5583,
+      "offset": 5698,
       "length": 26,
       "value": "\"+schemeSelectionResponse\""
     }

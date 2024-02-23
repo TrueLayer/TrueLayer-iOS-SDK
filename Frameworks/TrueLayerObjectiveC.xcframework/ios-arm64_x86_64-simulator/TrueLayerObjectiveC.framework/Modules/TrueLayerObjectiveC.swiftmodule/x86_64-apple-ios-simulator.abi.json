@@ -612,6 +612,216 @@
             "fixedbinaryorder": 13
           },
           {
+            "kind": "Var",
+            "name": "providerError",
+            "printedName": "providerError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorProviderError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO08providerE0yA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "providerRejected",
+            "printedName": "providerRejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorProviderRejected",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO16providerRejectedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "invalidRequest",
+            "printedName": "invalidRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorInvalidRequest",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO14invalidRequestyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSortCode",
+            "printedName": "invalidSortCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorInvalidSortCode",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO15invalidSortCodeyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorUnknownError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO07unknownE0yA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -1393,231 +1603,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TrueLayerMandateUseCase",
-        "printedName": "TrueLayerMandateUseCase",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "send",
-            "printedName": "send",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateUseCase.Type) -> TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerMandateUseCase",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrueLayerMandateUseCase",
-                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase@TrueLayerMandateUseCaseSend",
-            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO4sendyA2CmF",
-            "moduleName": "TrueLayerObjectiveC",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "signupPlus",
-            "printedName": "signupPlus",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateUseCase.Type) -> TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerMandateUseCase",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrueLayerMandateUseCase",
-                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase@TrueLayerMandateUseCaseSignupPlus",
-            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO10signupPlusyA2CmF",
-            "moduleName": "TrueLayerObjectiveC",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerMandateUseCase",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateUseCase",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueACSgSi_tcfc",
-            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueACSgSi_tcfc",
-            "moduleName": "TrueLayerObjectiveC",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivp",
-            "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivp",
-            "moduleName": "TrueLayerObjectiveC",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivg",
-                "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO8rawValueSivg",
-                "moduleName": "TrueLayerObjectiveC",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateUseCase",
-        "mangledName": "$s19TrueLayerObjectiveC0aB14MandateUseCaseO",
-        "moduleName": "TrueLayerObjectiveC",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerObjectiveC"
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerSDK",
-        "printedName": "TrueLayerSDK",
-        "declKind": "Import",
-        "moduleName": "TrueLayerObjectiveC"
-      },
-      {
-        "kind": "TypeDecl",
         "name": "TrueLayerSinglePaymentError",
         "printedName": "TrueLayerSinglePaymentError",
         "children": [
@@ -1749,6 +1734,132 @@
           },
           {
             "kind": "Var",
+            "name": "blocked",
+            "printedName": "blocked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorBlocked",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO7blockedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "invalidAccountDetails",
+            "printedName": "invalidAccountDetails",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidAccountDetails",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO21invalidAccountDetailsyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "invalidAccountHolderName",
+            "printedName": "invalidAccountHolderName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidAccountHolderName",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO24invalidAccountHolderNameyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
             "name": "invalidToken",
             "printedName": "invalidToken",
             "children": [
@@ -1787,7 +1898,511 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "invalidCredentials",
+            "printedName": "invalidCredentials",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidCredentials",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO18invalidCredentialsyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "invalidRemitterAccount",
+            "printedName": "invalidRemitterAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidRemitterAccount",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO22invalidRemitterAccountyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "invalidRequest",
+            "printedName": "invalidRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidRequest",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO14invalidRequestyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSortCode",
+            "printedName": "invalidSortCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidSortCode",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO15invalidSortCodeyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "insufficientFunds",
+            "printedName": "insufficientFunds",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInsufficientFunds",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO17insufficientFundsyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "notAuthorized",
+            "printedName": "notAuthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorNotAuthorized",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO13notAuthorizedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "paymentLimitExceeded",
+            "printedName": "paymentLimitExceeded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorPaymentLimitExceeded",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO20paymentLimitExceededyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "providerError",
+            "printedName": "providerError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorProviderError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO08providerF0yA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "providerExpired",
+            "printedName": "providerExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorProviderExpired",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO15providerExpiredyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "providerRejected",
+            "printedName": "providerRejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorProviderRejected",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO16providerRejectedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorUnknownError",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO07unknownF0yA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "userCanceledAtProvider",
+            "printedName": "userCanceledAtProvider",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorUserCanceledAtProvider",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO22userCanceledAtProvideryA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -1829,7 +2444,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -1871,7 +2486,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -1913,7 +2528,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -1955,7 +2570,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -1997,7 +2612,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -2039,7 +2654,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -2081,7 +2696,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -2123,7 +2738,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 26
           },
           {
             "kind": "Var",
@@ -2165,7 +2780,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 27
           },
           {
             "kind": "Constructor",
@@ -3060,231 +3675,6 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TrueLayerObjectiveC"
-      },
-      {
-        "kind": "Import",
-        "name": "TrueLayerSDK",
-        "printedName": "TrueLayerSDK",
-        "declKind": "Import",
-        "moduleName": "TrueLayerObjectiveC"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TrueLayerSinglePaymentUseCase",
-        "printedName": "TrueLayerSinglePaymentUseCase",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "send",
-            "printedName": "send",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerSinglePaymentUseCase",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrueLayerSinglePaymentUseCase",
-                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase@TrueLayerSinglePaymentUseCaseSend",
-            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO4sendyA2CmF",
-            "moduleName": "TrueLayerObjectiveC",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "signupPlus",
-            "printedName": "signupPlus",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerSinglePaymentUseCase",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrueLayerSinglePaymentUseCase",
-                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase@TrueLayerSinglePaymentUseCaseSignupPlus",
-            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO10signupPlusyA2CmF",
-            "moduleName": "TrueLayerObjectiveC",
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerSinglePaymentUseCase",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueACSgSi_tcfc",
-            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueACSgSi_tcfc",
-            "moduleName": "TrueLayerObjectiveC",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivp",
-            "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivp",
-            "moduleName": "TrueLayerObjectiveC",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivg",
-                "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO8rawValueSivg",
-                "moduleName": "TrueLayerObjectiveC",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase",
-        "mangledName": "$s19TrueLayerObjectiveC0aB20SinglePaymentUseCaseO",
-        "moduleName": "TrueLayerObjectiveC",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -6648,11 +7038,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)configureWithEnvironment:visualSettings:additionalConfiguration:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC9configure11environment14visualSettings23additionalConfigurationyAA0aB11EnvironmentO_AA0ab6VisualI0CSgSDyS2SGtFZ",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)configureWithEnvironment:visualSettings:additionalConfiguration:completionHandler:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC9configure11environment14visualSettings23additionalConfigurationyAA0aB11EnvironmentO_AA0ab6VisualI0CSgSDyS2SGtYaFZ",
             "moduleName": "TrueLayerObjectiveC",
             "static": true,
-            "objc_name": "configureWithEnvironment:visualSettings:additionalConfiguration:",
+            "objc_name": "configureWithEnvironment:visualSettings:additionalConfiguration:completionHandler:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -6855,11 +7245,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)processMandateWithContext:success:failure:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC14processMandate7context7success7failureyAA0abG7ContextC_yAA0abG5StateOcyAA0abG5ErrorOctFZ",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)processMandateWithContext:success:failure:completionHandler:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC14processMandate7context7success7failureyAA0abG7ContextC_yAA0abG5StateOcyAA0abG5ErrorOctYaFZ",
             "moduleName": "TrueLayerObjectiveC",
             "static": true,
-            "objc_name": "processMandateWithContext:success:failure:",
+            "objc_name": "processMandateWithContext:success:failure:completionHandler:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -7566,7 +7956,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(presentationStyle:preferredCountryCode:useCase:)",
+            "printedName": "init(presentationStyle:preferredCountryCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7594,20 +7984,13 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TrueLayerSinglePaymentUseCase",
-                "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentUseCase",
-                "hasDefaultArg": true,
-                "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentUseCase"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:useCase:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCode7useCaseAcA0ab12PresentationH0C_SSSgAA0abde3UseM0Otcfc",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCodeAcA0ab12PresentationH0C_SSSgtcfc",
             "moduleName": "TrueLayerObjectiveC",
-            "objc_name": "initWithPresentationStyle:preferredCountryCode:useCase:",
+            "objc_name": "initWithPresentationStyle:preferredCountryCode:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -8250,6 +8633,41 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
+      "offset": 1562,
+      "length": 13,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1625,
+      "length": 16,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1711,
+      "length": 14,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1803,
+      "length": 15,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1875,
+      "length": 12,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
       "offset": 416,
       "length": 16,
       "value": "1"
@@ -8339,6 +8757,41 @@
       "value": "13"
     },
     {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1562,
+      "length": 13,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1625,
+      "length": 16,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1711,
+      "length": 14,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1803,
+      "length": 15,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1875,
+      "length": 12,
+      "value": "18"
+    },
+    {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateState.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
@@ -8409,18 +8862,193 @@
       "value": "4"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/UseCase\/TrueLayerMandateUseCase.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 345,
-      "length": 10,
+      "offset": 395,
+      "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/UseCase\/TrueLayerMandateUseCase.swift",
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 345,
-      "length": 10,
-      "value": "1"
+      "offset": 496,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 632,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 21,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 24,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 975,
+      "length": 12,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1085,
+      "length": 18,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1216,
+      "length": 22,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1308,
+      "length": 14,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1400,
+      "length": 15,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1515,
+      "length": 17,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1643,
+      "length": 13,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1732,
+      "length": 20,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1831,
+      "length": 13,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1956,
+      "length": 15,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2021,
+      "length": 16,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2113,
+      "length": 12,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2229,
+      "length": 22,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2323,
+      "length": 18,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2430,
+      "length": 14,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2568,
+      "length": 15,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2636,
+      "length": 15,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2705,
+      "length": 15,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2801,
+      "length": 16,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2893,
+      "length": 11,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3008,
+      "length": 18,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3072,
+      "length": 12,
+      "value": "27"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
@@ -8439,156 +9067,177 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 598,
-      "length": 12,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 682,
-      "length": 18,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 789,
-      "length": 14,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 927,
-      "length": 15,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 995,
-      "length": 15,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1064,
-      "length": 15,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 16,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1252,
-      "length": 11,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1367,
-      "length": 18,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1431,
-      "length": 12,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 16,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 496,
+      "offset": 632,
       "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 598,
-      "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 682,
-      "length": 18,
+      "offset": 745,
+      "length": 21,
       "value": "4"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
-      "length": 14,
+      "offset": 856,
+      "length": 24,
       "value": "5"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 927,
-      "length": 15,
+      "offset": 975,
+      "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 995,
-      "length": 15,
+      "offset": 1085,
+      "length": 18,
       "value": "7"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1064,
-      "length": 15,
+      "offset": 1216,
+      "length": 22,
       "value": "8"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 16,
+      "offset": 1308,
+      "length": 14,
       "value": "9"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1252,
-      "length": 11,
+      "offset": 1400,
+      "length": 15,
       "value": "10"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1367,
-      "length": 18,
+      "offset": 1515,
+      "length": 17,
       "value": "11"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1431,
-      "length": 12,
+      "offset": 1643,
+      "length": 13,
       "value": "12"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1732,
+      "length": 20,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1831,
+      "length": 13,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1956,
+      "length": 15,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2021,
+      "length": 16,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2113,
+      "length": 12,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2229,
+      "length": 22,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2323,
+      "length": 18,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2430,
+      "length": 14,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2568,
+      "length": 15,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2636,
+      "length": 15,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2705,
+      "length": 15,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2801,
+      "length": 16,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2893,
+      "length": 11,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3008,
+      "length": 18,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3072,
+      "length": 12,
+      "value": "27"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
@@ -8715,20 +9364,6 @@
       "offset": 864,
       "length": 6,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/UseCase\/TrueLayerSinglePaymentUseCase.swift",
-      "kind": "IntegerLiteral",
-      "offset": 351,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/UseCase\/TrueLayerSinglePaymentUseCase.swift",
-      "kind": "IntegerLiteral",
-      "offset": 351,
-      "length": 10,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",
@@ -8782,7 +9417,7 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerPaymentsManager.swift",
       "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 1292,
       "length": 12,
       "value": "\"ObjectiveC\""
     },

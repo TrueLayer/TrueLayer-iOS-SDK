@@ -311,7 +311,7 @@
           {
             "kind": "Function",
             "name": "prepareLog",
-            "printedName": "prepareLog(type:message:file:line:)",
+            "printedName": "prepareLog(type:message:file:line:dateProvider:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -342,16 +342,70 @@
                 "name": "UInt",
                 "printedName": "Swift.UInt",
                 "usr": "s:Su"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Foundation.Date",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:15TrueLayerLogger0C0O10prepareLog4type7message4file4lineSSAA0E4TypeO_yps12StaticStringVSutFZ",
-            "mangledName": "$s15TrueLayerLogger0C0O10prepareLog4type7message4file4lineSSAA0E4TypeO_yps12StaticStringVSutFZ",
+            "usr": "s:15TrueLayerLogger0C0O10prepareLog4type7message4file4line12dateProviderSSAA0E4TypeO_yps12StaticStringVSu10Foundation4DateVyXEtFZ",
+            "mangledName": "$s15TrueLayerLogger0C0O10prepareLog4type7message4file4line12dateProviderSSAA0E4TypeO_yps12StaticStringVSu10Foundation4DateVyXEtFZ",
             "moduleName": "TrueLayerLogger",
             "static": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readableDateTime",
+            "printedName": "readableDateTime(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15TrueLayerLogger0C0O16readableDateTime4fromSS10Foundation0E0V_tFZ",
+            "mangledName": "$s15TrueLayerLogger0C0O16readableDateTime4fromSS10Foundation0E0V_tFZ",
+            "moduleName": "TrueLayerLogger",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -408,35 +462,42 @@
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 897,
-      "length": 125,
-      "value": "\"===== LOG START =====\nFrom: \""
+      "offset": 940,
+      "length": 169,
+      "value": "\"===== LOG START =====\n\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 1015,
+      "length": 1,
+      "value": "\": From: \""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 1030,
       "length": 1,
       "value": "\", line \""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 958,
+      "offset": 1044,
       "length": 1,
-      "value": "\"\n\""
+      "value": "\":\n\""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 979,
+      "offset": 1066,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
       "kind": "StringLiteral",
-      "offset": 990,
+      "offset": 1077,
       "length": 5,
       "value": "\"\n===== END LOG =====\""
     }

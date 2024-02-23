@@ -1,0 +1,36 @@
+{
+  "id": "60c0a60ed8d7-4e5b-ac79-401b1d8a8633",
+  "amount_in_minor": 1,
+  "currency": "GBP",
+  "user": {
+    "id": "f9b48c9d-176b-46dd-b2da-fe1a2b77350c",
+    "name": "Remi Terr",
+    "email": "remi.terr@aol.com",
+    "phone": "+44777777777"
+  },
+  "payment_method": {
+    "type": "bank_transfer",
+    "provider_selection": {
+      "type": "preselected",
+      "provider_id": "someProviderID"
+    },
+    "beneficiary": {
+      "type": "merchant_account",
+      "merchant_account_id": "string",
+      "account_holder_name": "someMerchantName"
+    }
+  },
+  "created_at": "string",
+  "status": "authorization_required",
+  "authorization_flow": {
+    "configuration": {
+      "provider_selection": {},
+      "redirect": {
+        "return_uri": "string"
+      }
+    }
+  },
+  "related_products": {
+    "signup_plus": {}
+  }
+}

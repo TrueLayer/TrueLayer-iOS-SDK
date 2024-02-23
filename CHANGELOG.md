@@ -1,6 +1,22 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.0.0] - Horizon
+
+### Added
+- `shouldShowResultScreen` to `SinglePayment` and `Mandate` `Preferences` objects (default value is `true`). When this is enabled, a result screen is displayed at the end of the payment flow. When the user is redirected back from the bank, it is recommended to re-invoke the TrueLayer SDK to display the result screen, to show the user the status of their payment or mandate.
+- `maximumResultScreenTimeout` to `SinglePayment` and `Mandate` `Preferences` objects. This is the maximum timeout for the payment or mandate result screen, until a final status. Once reached, the user is shown a button to dismiss the SDK and return to your app.
+- Italian localisations for text displayed to the user.
+
+### Changed
+- Updated `TrueLayer.Payments.Models.Mandate.Error` and `TrueLayer.Payments.Models.SinglePayment.Error` cases. These more accurately match errors received from the TrueLayer Payments API V3.
+- Merchant logo now appears on the right on the consent screen.
+- The `configure` method is now `async`.
+
+### Removed
+
+- `useCase` from `TrueLayer.Payments.Models.SinglePayment.Preferences`. To enable Signup+ for a payment, refer to the API documentation when creating a payment.
+
 ## [2.7.1] - Tusk
 
 ### Fixed

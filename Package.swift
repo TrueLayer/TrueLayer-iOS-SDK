@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -19,7 +19,8 @@ let package = Package(
               "TrueLayerNetwork",
               "TrueLayerLogger",
               "TrueLayerUtils",
-              "TrueLayerObjectiveC"
+              "TrueLayerObjectiveC",
+              "TrueLayerArchitecture"
             ]
         ),
     ],
@@ -27,6 +28,10 @@ let package = Package(
       .binaryTarget(
         name: "TrueLayerSDK",
         path: "Frameworks/TrueLayerSDK.xcframework"
+      ),
+      .binaryTarget(
+        name: "TrueLayerArchitecture",
+        path: "Frameworks/TrueLayerArchitecture.xcframework"
       ),
       .binaryTarget(
         name: "TrueLayerUI",
