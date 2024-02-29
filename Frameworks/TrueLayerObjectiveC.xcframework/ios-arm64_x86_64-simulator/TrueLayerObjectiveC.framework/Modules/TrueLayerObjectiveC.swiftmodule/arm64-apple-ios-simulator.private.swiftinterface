@@ -175,7 +175,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc final public class TrueLayerMandatePreferences : ObjectiveC.NSObject {
-  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle)
+  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, shouldShowResultScreen: Swift.Bool = true, maximumResultScreenTimeout: Foundation.NSNumber?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class TrueLayerPaymentsManager : ObjectiveC.NSObject {
@@ -184,9 +184,7 @@ import _SwiftConcurrencyShims
   #endif
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
-  #if compiler(>=5.3) && $AsyncAwait
-  @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void) async
-  #endif
+  @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
   @objc public static func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
@@ -204,7 +202,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc final public class TrueLayerSinglePaymentPreferences : ObjectiveC.NSObject {
-  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil)
+  @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil, shouldShowResultScreen: Swift.Bool = true, maximumResultScreenTimeout: Foundation.NSNumber?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {
