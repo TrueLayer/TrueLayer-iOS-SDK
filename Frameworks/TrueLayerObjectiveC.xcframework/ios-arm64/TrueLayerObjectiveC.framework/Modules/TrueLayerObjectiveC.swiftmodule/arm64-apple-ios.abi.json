@@ -6847,7 +6847,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(presentationStyle:)",
+            "printedName": "init(presentationStyle:shouldShowResultScreen:maximumResultScreenTimeout:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6860,13 +6860,34 @@
                 "name": "TrueLayerPresentationStyle",
                 "printedName": "TrueLayerObjectiveC.TrueLayerPresentationStyle",
                 "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPresentationStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences(im)initWithPresentationStyle:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB18MandatePreferencesC17presentationStyleAcA0ab12PresentationG0C_tcfc",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerMandatePreferences(im)initWithPresentationStyle:shouldShowResultScreen:maximumResultScreenTimeout:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18MandatePreferencesC17presentationStyle22shouldShowResultScreen07maximumjK7TimeoutAcA0ab12PresentationG0C_SbSo8NSNumberCSgtcfc",
             "moduleName": "TrueLayerObjectiveC",
-            "objc_name": "initWithPresentationStyle:",
+            "objc_name": "initWithPresentationStyle:shouldShowResultScreen:maximumResultScreenTimeout:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -7245,11 +7266,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)processMandateWithContext:success:failure:completionHandler:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC14processMandate7context7success7failureyAA0abG7ContextC_yAA0abG5StateOcyAA0abG5ErrorOctYaFZ",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerPaymentsManager(cm)processMandateWithContext:success:failure:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB15PaymentsManagerC14processMandate7context7success7failureyAA0abG7ContextC_yAA0abG5StateOcyAA0abG5ErrorOctFZ",
             "moduleName": "TrueLayerObjectiveC",
             "static": true,
-            "objc_name": "processMandateWithContext:success:failure:completionHandler:",
+            "objc_name": "processMandateWithContext:success:failure:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -7956,7 +7977,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(presentationStyle:preferredCountryCode:)",
+            "printedName": "init(presentationStyle:preferredCountryCode:shouldShowResultScreen:maximumResultScreenTimeout:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7984,13 +8005,34 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:",
-            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCodeAcA0ab12PresentationH0C_SSSgtcfc",
+            "usr": "c:@M@TrueLayerObjectiveC@objc(cs)TrueLayerSinglePaymentPreferences(im)initWithPresentationStyle:preferredCountryCode:shouldShowResultScreen:maximumResultScreenTimeout:",
+            "mangledName": "$s19TrueLayerObjectiveC0aB24SinglePaymentPreferencesC17presentationStyle20preferredCountryCode22shouldShowResultScreen07maximumnO7TimeoutAcA0ab12PresentationH0C_SSSgSbSo8NSNumberCSgtcfc",
             "moduleName": "TrueLayerObjectiveC",
-            "objc_name": "initWithPresentationStyle:preferredCountryCode:",
+            "objc_name": "initWithPresentationStyle:preferredCountryCode:shouldShowResultScreen:maximumResultScreenTimeout:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -9409,6 +9451,13 @@
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
+      "kind": "BooleanLiteral",
+      "offset": 965,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 27,
@@ -9434,6 +9483,13 @@
       "offset": 64,
       "length": 29,
       "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentContext\""
+    },
+    {
+      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1347,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",

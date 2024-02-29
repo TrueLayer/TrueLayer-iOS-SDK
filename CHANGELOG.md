@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.0.1] - Beetle
+
+### Added
+- `shouldShowResultScreen` to `@objc TrueLayerSinglePaymentPreferences` and `@objc TrueLayerMandatePreferences` objects (default value is `true`). When this is enabled, a result screen is displayed at the end of the payment flow. When the user is redirected back from the bank, it is recommended to re-invoke the TrueLayer SDK to display the result screen, to show the user the status of their payment or mandate.
+- `maximumResultScreenTimeout` to `@objc TrueLayerSinglePaymentPreferences` and `@objc TrueLayerMandatePreferences` objects. This is the maximum timeout for the payment or mandate result screen, until a final status. Once reached, the user is shown a button to dismiss the SDK and return to your app.
+
 ## [3.0.0] - Horizon
 
 ### Added

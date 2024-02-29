@@ -450,6 +450,7 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateError, open) {
 static NSString * _Nonnull const TrueLayerMandateErrorDomain = @"TrueLayerObjectiveC.TrueLayerMandateError";
 
 @class TrueLayerPresentationStyle;
+@class NSNumber;
 
 /// A set of preferences that can be applied to a mandate.
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC27TrueLayerMandatePreferences")
@@ -457,7 +458,11 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC27TrueLayerMandatePreferences")
 /// Creates a new instance of Preferences. All values default to <code>nil</code>.
 /// \param presentationStyle The presentation style of the SDK.
 ///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle OBJC_DESIGNATED_INITIALIZER;
+/// \param shouldShowResultScreen Whether the TrueLayer SDK should show the mandate result screen.
+///
+/// \param maximumResultScreenTimeout The maximum timeout for refreshing the mandate result screen.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle shouldShowResultScreen:(BOOL)shouldShowResultScreen maximumResultScreenTimeout:(NSNumber * _Nullable)maximumResultScreenTimeout OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -541,7 +546,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param failure a completion handler to execute in case of failure.
 ///
-+ (void)processMandateWithContext:(TrueLayerMandateContext * _Nonnull)context success:(void (^ _Nonnull)(enum TrueLayerMandateState))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure completionHandler:(void (^ _Nonnull)(void))completionHandler;
++ (void)processMandateWithContext:(TrueLayerMandateContext * _Nonnull)context success:(void (^ _Nonnull)(enum TrueLayerMandateState))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
 /// Fetches the status of a mandate given its identifier and security token.
 /// \param mandateIdentifier The unique identifier of the mandate.
 ///
@@ -669,7 +674,11 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC33TrueLayerSinglePaymentPreferences")
 ///
 /// \param preferredCountryCode The preferred country to use when displaying the providers.
 ///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
+/// \param shouldShowResultScreen Whether the TrueLayer SDK should show the payment result screen.
+///
+/// \param maximumResultScreenTimeout The maximum timeout for refreshing the payment result screen.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode shouldShowResultScreen:(BOOL)shouldShowResultScreen maximumResultScreenTimeout:(NSNumber * _Nullable)maximumResultScreenTimeout OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1197,6 +1206,7 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateError, open) {
 static NSString * _Nonnull const TrueLayerMandateErrorDomain = @"TrueLayerObjectiveC.TrueLayerMandateError";
 
 @class TrueLayerPresentationStyle;
+@class NSNumber;
 
 /// A set of preferences that can be applied to a mandate.
 SWIFT_CLASS("_TtC19TrueLayerObjectiveC27TrueLayerMandatePreferences")
@@ -1204,7 +1214,11 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC27TrueLayerMandatePreferences")
 /// Creates a new instance of Preferences. All values default to <code>nil</code>.
 /// \param presentationStyle The presentation style of the SDK.
 ///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle OBJC_DESIGNATED_INITIALIZER;
+/// \param shouldShowResultScreen Whether the TrueLayer SDK should show the mandate result screen.
+///
+/// \param maximumResultScreenTimeout The maximum timeout for refreshing the mandate result screen.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle shouldShowResultScreen:(BOOL)shouldShowResultScreen maximumResultScreenTimeout:(NSNumber * _Nullable)maximumResultScreenTimeout OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1288,7 +1302,7 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC24TrueLayerPaymentsManager")
 ///
 /// \param failure a completion handler to execute in case of failure.
 ///
-+ (void)processMandateWithContext:(TrueLayerMandateContext * _Nonnull)context success:(void (^ _Nonnull)(enum TrueLayerMandateState))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure completionHandler:(void (^ _Nonnull)(void))completionHandler;
++ (void)processMandateWithContext:(TrueLayerMandateContext * _Nonnull)context success:(void (^ _Nonnull)(enum TrueLayerMandateState))success failure:(void (^ _Nonnull)(enum TrueLayerMandateError))failure;
 /// Fetches the status of a mandate given its identifier and security token.
 /// \param mandateIdentifier The unique identifier of the mandate.
 ///
@@ -1416,7 +1430,11 @@ SWIFT_CLASS("_TtC19TrueLayerObjectiveC33TrueLayerSinglePaymentPreferences")
 ///
 /// \param preferredCountryCode The preferred country to use when displaying the providers.
 ///
-- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode OBJC_DESIGNATED_INITIALIZER;
+/// \param shouldShowResultScreen Whether the TrueLayer SDK should show the payment result screen.
+///
+/// \param maximumResultScreenTimeout The maximum timeout for refreshing the payment result screen.
+///
+- (nonnull instancetype)initWithPresentationStyle:(TrueLayerPresentationStyle * _Nonnull)presentationStyle preferredCountryCode:(NSString * _Nullable)preferredCountryCode shouldShowResultScreen:(BOOL)shouldShowResultScreen maximumResultScreenTimeout:(NSNumber * _Nullable)maximumResultScreenTimeout OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
