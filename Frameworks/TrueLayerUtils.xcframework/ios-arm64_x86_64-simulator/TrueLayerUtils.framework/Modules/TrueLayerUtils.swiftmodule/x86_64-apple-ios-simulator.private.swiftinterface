@@ -48,6 +48,32 @@ extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
 #if compiler(>=5.3) && $AsyncAwait
 @_spi(TrueLayer) public typealias AsyncInteraction = () async -> Swift.Void
 #endif
+@_hasMissingDesignatedInitializers public class IsoCountryCodes {
+  public class func find(key: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByName(_ name: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByNumeric(_ numeric: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByCurrency(_ currency: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
+  public class func searchByCallingCode(_ calllingCode: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
+  @objc deinit
+}
+public struct IsoCountryInfo {
+  public let name: Swift.String
+  public let numeric: Swift.String
+  public let alpha2: Swift.String
+  public let alpha3: Swift.String
+  public let calling: Swift.String
+  public let currency: Swift.String
+  public let continent: Swift.String
+  public var flag: Swift.String? {
+    get
+  }
+  public var fractionDigits: Swift.Int
+}
+@_hasMissingDesignatedInitializers public class IsoCountries {
+  public class func flag(countryCode: Swift.String) -> Swift.String?
+  public static let allCountries: [TrueLayerUtils.IsoCountryInfo]
+  @objc deinit
+}
 public protocol LocaleInformationProvider {
   static var preferredLanguages: [Swift.String] { get }
   var preferredLanguages: [Swift.String] { get }
@@ -84,6 +110,9 @@ extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
   @_spi(TrueLayer) public func normalized() -> Swift.String
   @_spi(TrueLayer) public mutating func normalize()
   @_spi(TrueLayer) public func matches(_ regex: Swift.String) -> Swift.Bool
+  @_spi(TrueLayer) public func containsCaseDiacriticInsensitive(_ other: Swift.String) -> Swift.Bool
+  @_spi(TrueLayer) public func startsCaseDiacriticInsensitive(with: Swift.String) -> Swift.Bool
+  @_spi(TrueLayer) public func distanceCaseDiacriticInsensitiveFromStart(to: Swift.String) -> Swift.Int?
 }
 @_spi(TrueLayer) extension Swift.String {
   @_spi(TrueLayer) public func isValidIBAN() -> Swift.Bool

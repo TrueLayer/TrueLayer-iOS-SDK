@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.1.0] - ResultShown
+
+### Added 
+- `resultShown` to `processSinglePayment` and `processMandate` completion handlers. This `enum` informs which result was shown on the result screen, if it was shown (`shouldShowResultScreen` is set to `true`.) If not, `ResultShown.noneShown` will be returned.
+- Search for countries by their 2 and 3-letter country codes.
+- Error shown for additional inputs when no options are available.
+
+### Changed
+- New `processSinglePayment` and `processMandate` methods. The object returned in the completion handler is now of type `TrueLayer.Payments.Models.SinglePayment.ProcessResult` and `TrueLayer.Payments.Models.Mandate.ProcessResult`. These are `enum`s with associated objects that contain `state` and `error` properties, as you would access previously. 
+- Improved branch searching to better match intended branch names.
+- Default colours for the primary and secondary buttons.
+
 ## [3.0.1] - Beetle
 
 ### Added
@@ -17,7 +29,6 @@ All notable changes to this project will be documented in this file. To know bet
 ### Changed
 - Updated `TrueLayer.Payments.Models.Mandate.Error` and `TrueLayer.Payments.Models.SinglePayment.Error` cases. These more accurately match errors received from the TrueLayer Payments API V3.
 - Merchant logo now appears on the right on the consent screen.
-- The `configure` method is now `async`.
 
 ### Removed
 
@@ -94,11 +105,9 @@ All notable changes to this project will be documented in this file. To know bet
 
 - Added support for `Objective-C` via `Swift Package Manager`.
 
-## [2.1.0] - Old School
+## [2.1.0] - Road to RN
 
-### Added
-
-- Added support for `Objective-C` via `Cocoapods`. 
+Internal work was done to enable support for react native.
 
 ## [2.0.0] - Boomerang
 

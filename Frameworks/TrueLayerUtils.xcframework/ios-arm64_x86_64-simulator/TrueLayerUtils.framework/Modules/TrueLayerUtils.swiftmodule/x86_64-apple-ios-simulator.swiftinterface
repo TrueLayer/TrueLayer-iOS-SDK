@@ -21,6 +21,32 @@ extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class IsoCountryCodes {
+  public class func find(key: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByName(_ name: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByNumeric(_ numeric: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByCurrency(_ currency: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
+  public class func searchByCallingCode(_ calllingCode: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
+  @objc deinit
+}
+public struct IsoCountryInfo {
+  public let name: Swift.String
+  public let numeric: Swift.String
+  public let alpha2: Swift.String
+  public let alpha3: Swift.String
+  public let calling: Swift.String
+  public let currency: Swift.String
+  public let continent: Swift.String
+  public var flag: Swift.String? {
+    get
+  }
+  public var fractionDigits: Swift.Int
+}
+@_hasMissingDesignatedInitializers public class IsoCountries {
+  public class func flag(countryCode: Swift.String) -> Swift.String?
+  public static let allCountries: [TrueLayerUtils.IsoCountryInfo]
+  @objc deinit
+}
 public protocol LocaleInformationProvider {
   static var preferredLanguages: [Swift.String] { get }
   var preferredLanguages: [Swift.String] { get }

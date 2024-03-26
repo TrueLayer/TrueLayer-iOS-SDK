@@ -66,7 +66,7 @@ Finally, your app should setup a payment. Once the payment has been setup, it is
 The iOS SDK has the following requirements:
 
 - Xcode 14.x
-- Swift 5.9
+- Swift 5.7
 - iOS 14.0
 
 ## How to Use the SDK
@@ -78,7 +78,7 @@ The iOS SDK has the following requirements:
 2. Configure the SDK with the given environment:
 
         Task {
-          await TrueLayer.Payments.manager.configure(environment: .sandbox)
+          TrueLayer.Payments.manager.configure(environment: .sandbox)
         }
 
 3. Checkout [Documentation](docs/DOCUMENTATION.md)

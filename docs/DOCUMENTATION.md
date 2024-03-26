@@ -15,14 +15,19 @@ TrueLayer.Payments.manager.processSinglePayment(
     token: // Your resource token,
     redirectURL: // Your redirect URL
     preferences: // Your possible preferences like type of presentation and country code.
-  )) { result in
-    switch result {
-      case .success(let result):
+  )) { processResult in
+    switch processResult.result {
+      case .success(let success):
         // Handle `TrueLayer.Payments.Models.SinglePayment.State`.
+        print(success.state)
 
-      case .failure(let error):
+      case .failure(let failure):
         // Handle `TrueLayer.Payments.Models.SinglePayment.Error`.
+        print(failure.error)
     }
+    
+    // Handle `resultShown`.
+    print(processResult.resultShown)
 }
 ```
 
@@ -113,14 +118,19 @@ TrueLayer.Payments.manager.processMandate(
     token: // Your resource token,
     redirectURL: // Your redirect URL
     preferences: // Your possible preferences like type of presentation and country code.
-  )) { result in
-    switch result {
-      case .success(let result):
+  )) { processResult in
+    switch processResult.result {
+      case .success(let success):
         // Handle `TrueLayer.Payments.Models.Mandate.State`.
+        print(success.state)
 
-      case .failure(let error):
+      case .failure(let failure):
         // Handle `TrueLayer.Payments.Models.Mandate.Error`.
+        print(failure.error)
     }
+    
+    // Handle `resultShown`.
+    print(processResult.resultShown)
 }
 ```
 
