@@ -997,7 +997,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Decoder",
-                                    "printedName": "Swift.Decoder",
+                                    "printedName": "any Swift.Decoder",
                                     "usr": "s:s7DecoderP"
                                   }
                                 ],
@@ -3494,7 +3494,7 @@
                                               {
                                                 "kind": "TypeNominal",
                                                 "name": "Decoder",
-                                                "printedName": "Swift.Decoder",
+                                                "printedName": "any Swift.Decoder",
                                                 "usr": "s:s7DecoderP"
                                               }
                                             ],
@@ -3522,7 +3522,7 @@
                                               {
                                                 "kind": "TypeNominal",
                                                 "name": "Encoder",
-                                                "printedName": "Swift.Encoder",
+                                                "printedName": "any Swift.Encoder",
                                                 "usr": "s:s7EncoderP"
                                               }
                                             ],
@@ -14983,7 +14983,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ],
@@ -15084,7 +15084,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Encoder",
-                                "printedName": "Swift.Encoder",
+                                "printedName": "any Swift.Encoder",
                                 "usr": "s:s7EncoderP"
                               }
                             ],
@@ -15204,7 +15204,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Decoder",
-                                    "printedName": "Swift.Decoder",
+                                    "printedName": "any Swift.Decoder",
                                     "usr": "s:s7DecoderP"
                                   }
                                 ],
@@ -15232,7 +15232,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Encoder",
-                                    "printedName": "Swift.Encoder",
+                                    "printedName": "any Swift.Encoder",
                                     "usr": "s:s7EncoderP"
                                   }
                                 ],
@@ -18784,7 +18784,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Decoder",
-                                    "printedName": "Swift.Decoder",
+                                    "printedName": "any Swift.Decoder",
                                     "usr": "s:s7DecoderP"
                                   }
                                 ],
@@ -18812,7 +18812,7 @@
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Encoder",
-                                    "printedName": "Swift.Encoder",
+                                    "printedName": "any Swift.Encoder",
                                     "usr": "s:s7EncoderP"
                                   }
                                 ],
@@ -21139,6 +21139,7 @@
         "genericSig": "<τ_0_0>",
         "sugared_genericSig": "<Element>",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -22217,298 +22218,11 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Mandate\/ResultShown+MandateCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 997,
-      "length": 9,
-      "value": "\"revoked\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "Dictionary",
-      "offset": 967,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1618,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1691,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2005,
-      "length": 10,
-      "value": "\"<\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2013,
-      "length": 1,
-      "value": "\">\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2249,
-      "length": 11,
-      "value": "\"<\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ActionableCopy+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2258,
-      "length": 1,
-      "value": "\">\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/BadRequest+SharedCoreModels.swift",
-      "kind": "Dictionary",
-      "offset": 924,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/BadRequest+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1155,
-      "length": 3,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/BadRequest+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1298,
-      "length": 8,
-      "value": "\"inputs\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/BadRequest+SharedCoreModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1343,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/BadRequest+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1569,
-      "length": 21,
-      "value": "\"redirect.return_uri\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Country+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 667,
-      "length": 71,
-      "value": "\"https:\/\/payment.truelayer.com\/assets\/country\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Country+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 733,
-      "length": 1,
-      "value": "\".png\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3249,
-      "length": 16,
-      "value": "\"lastUsed-\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3264,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3387,
-      "length": 11,
-      "value": "\"lastUsed-\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3406,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 4385,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 4618,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/Provider+SharedCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 4859,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ProviderSelection+SharedCoreModels.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1736,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/Shared\/ProviderSelection+SharedCoreModels.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1806,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/AdditionalInput\/SingleChoiceList+AdditionalInputsCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3109,
-      "length": 20,
-      "value": "\"recentlyUsed-\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/AdditionalInput\/SingleChoiceList+AdditionalInputsCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3128,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/AdditionalInput\/SingleChoiceList+AdditionalInputsCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3259,
-      "length": 15,
-      "value": "\"recentlyUsed-\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/AdditionalInput\/SingleChoiceList+AdditionalInputsCoreModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3282,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/ResultShown+SinglePaymentCoreModels.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1194,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/SchemeSelection+SinglePaymentCoreModels.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/SchemeSelection+SinglePaymentCoreModels.swift",
       "kind": "BooleanLiteral",
       "offset": 685,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 238,
-      "length": 20,
-      "value": "\"com.truelayer.core\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "StringLiteral",
-      "offset": 652,
-      "length": 41,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "StringLiteral",
-      "offset": 674,
-      "length": 1,
-      "value": "\"|\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "StringLiteral",
-      "offset": 692,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "Array",
-      "offset": 870,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1219,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1307,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "StringLiteral",
-      "offset": 1748,
-      "length": 41,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "StringLiteral",
-      "offset": 1770,
-      "length": 1,
-      "value": "\"|\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "StringLiteral",
-      "offset": 1788,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "Array",
-      "offset": 1894,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Core\/Storage\/UserDefaults+LongListOptionPersistable.swift",
-      "kind": "Array",
-      "offset": 1924,
-      "length": 2,
-      "value": "[]"
     }
   ]
 }

@@ -432,74 +432,32 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
       "kind": "StringLiteral",
       "offset": 156,
       "length": 8,
       "value": "\"ℹ️\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 5,
       "value": "\"❌\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
       "kind": "StringLiteral",
       "offset": 156,
       "length": 8,
       "value": "\"ℹ️\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Logger\/LogType.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 5,
       "value": "\"❌\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 940,
-      "length": 169,
-      "value": "\"===== LOG START =====\n\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1015,
-      "length": 1,
-      "value": "\": From: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1030,
-      "length": 1,
-      "value": "\", line \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1044,
-      "length": 1,
-      "value": "\":\n\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1066,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Logger\/Logger.swift",
-      "kind": "StringLiteral",
-      "offset": 1077,
-      "length": 5,
-      "value": "\"\n===== END LOG =====\""
     }
   ]
 }

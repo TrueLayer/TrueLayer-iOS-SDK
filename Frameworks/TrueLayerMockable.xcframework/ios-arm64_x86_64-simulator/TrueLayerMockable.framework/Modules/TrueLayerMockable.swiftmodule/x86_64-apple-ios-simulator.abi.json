@@ -3908,116 +3908,11 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
-      "kind": "StringLiteral",
-      "offset": 281,
-      "length": 21,
-      "value": "\"+getMandateResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
-      "kind": "StringLiteral",
-      "offset": 780,
-      "length": 35,
-      "value": "\"+mandateAuthorizationFlowResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
-      "kind": "StringLiteral",
-      "offset": 1138,
-      "length": 24,
-      "value": "\"+mandateLegalsResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mandate+File.swift",
-      "kind": "StringLiteral",
-      "offset": 1394,
-      "length": 24,
-      "value": "\"+mandateCancelResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
       "kind": "Dictionary",
       "offset": 984,
       "length": 36,
       "value": "[(\"Content-Type\", \"application\/json\")]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
-      "kind": "StringLiteral",
-      "offset": 1561,
-      "length": 6,
-      "value": "\"json\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
-      "kind": "StringLiteral",
-      "offset": 1593,
-      "length": 89,
-      "value": "\"File \"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
-      "kind": "StringLiteral",
-      "offset": 1612,
-      "length": 1,
-      "value": "\"\" not found. Make sure the file exists, and the spelling is correct.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/Shared+File.swift",
-      "kind": "StringLiteral",
-      "offset": 452,
-      "length": 24,
-      "value": "\"+miscellaneousResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 2856,
-      "length": 28,
-      "value": "\"+authorizationFlowResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 3680,
-      "length": 21,
-      "value": "\"+getPaymentResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 4163,
-      "length": 26,
-      "value": "\"+paymentProviderResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 4393,
-      "length": 27,
-      "value": "\"+paymentProvidersResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 4743,
-      "length": 17,
-      "value": "\"+legalsResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 5388,
-      "length": 27,
-      "value": "\"+additionalInputsResponse\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Mockable\/SinglePayment+File.swift",
-      "kind": "StringLiteral",
-      "offset": 5698,
-      "length": 26,
-      "value": "\"+schemeSelectionResponse\""
     }
   ]
 }
