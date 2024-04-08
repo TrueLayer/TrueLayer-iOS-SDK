@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerCore
 import Foundation
 import Swift
 @_spi(TrueLayer) import TrueLayerUtils
@@ -149,6 +148,17 @@ import _SwiftConcurrencyShims
     }
   }
 }
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Mandate {
+  @_spi(TrueLayer) public enum ResultShown : Swift.Equatable {
+    @_spi(TrueLayer) case noneShown
+    @_spi(TrueLayer) case success
+    @_spi(TrueLayer) case initiated
+    @_spi(TrueLayer) case noneInvalidState
+    @_spi(TrueLayer) case error(reason: TrueLayerCore.Core.Payments.Models.Mandate.FailureReason?)
+    @_spi(TrueLayer) public init(mandateInformation: TrueLayerCore.Core.Payments.Models.Mandate.Information)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Mandate.ResultShown, b: TrueLayerCore.Core.Payments.Models.Mandate.ResultShown) -> Swift.Bool
+  }
+}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models {
   @_spi(TrueLayer) public enum PaymentType {
     @_spi(TrueLayer) case singlePayment(identifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier)
@@ -285,6 +295,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public var isConnectionNotHealthy: Swift.Bool {
       @_spi(TrueLayer) get
     }
+    @_spi(TrueLayer) public let normalizedDisplayName: Swift.String
+    @_spi(TrueLayer) public let normalizedSearchTokens: [Swift.String]
     @_spi(TrueLayer) public init(id: Swift.String, displayName: Swift.String, country: TrueLayerCore.Core.Payments.Models.Shared.Country, aliases: [Swift.String], isConnectionHealthy: Swift.Bool, schemeIdentifiers: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier], logoURI: Foundation.URL?, iconURI: Foundation.URL?)
     @_spi(TrueLayer) public func addLastUsedPrefix() -> TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier
     @_spi(TrueLayer) public func cleanID() -> TrueLayerCore.Core.Payments.Models.Shared.Provider.ID
@@ -314,6 +326,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public let id: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch.Identifier
     @_spi(TrueLayer) public let displayName: Swift.String
     @_spi(TrueLayer) public let searchAliases: [Swift.String]
+    @_spi(TrueLayer) public let normalizedDisplayName: Swift.String
+    @_spi(TrueLayer) public let normalizedSearchTokens: [Swift.String]
     @_spi(TrueLayer) public init(id: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch.Identifier, displayName: Swift.String, searchAliases: [Swift.String])
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch, b: TrueLayerCore.Core.Payments.Models.Shared.Provider.Branch) -> Swift.Bool
   }
@@ -596,6 +610,17 @@ import _SwiftConcurrencyShims
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.Method {
   @_spi(TrueLayer) public enum BankTransfer {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
+  @_spi(TrueLayer) public enum ResultShown : Swift.Equatable {
+    @_spi(TrueLayer) case noneShown
+    @_spi(TrueLayer) case success
+    @_spi(TrueLayer) case initiated
+    @_spi(TrueLayer) case noneInvalidState
+    @_spi(TrueLayer) case error(reason: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason?)
+    @_spi(TrueLayer) public init(singlePaymentInformation: TrueLayerCore.Core.Payments.Models.SinglePayment.Information)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ResultShown, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ResultShown) -> Swift.Bool
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {

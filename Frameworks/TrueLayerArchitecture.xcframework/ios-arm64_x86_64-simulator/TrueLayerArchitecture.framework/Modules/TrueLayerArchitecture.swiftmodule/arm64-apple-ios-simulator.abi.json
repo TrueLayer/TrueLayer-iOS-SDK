@@ -88,7 +88,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TrueLayerArchitecture.Action) async throws -> Any",
+                "printedName": "(any TrueLayerArchitecture.Action) async throws -> Any",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -98,7 +98,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Action",
-                    "printedName": "TrueLayerArchitecture.Action",
+                    "printedName": "any TrueLayerArchitecture.Action",
                     "usr": "s:21TrueLayerArchitecture6ActionP"
                   }
                 ]
@@ -127,7 +127,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerArchitecture.Action) async throws -> Any",
+                    "printedName": "(any TrueLayerArchitecture.Action) async throws -> Any",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -137,7 +137,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Action",
-                        "printedName": "TrueLayerArchitecture.Action",
+                        "printedName": "any TrueLayerArchitecture.Action",
                         "usr": "s:21TrueLayerArchitecture6ActionP"
                       }
                     ]
@@ -252,7 +252,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TrueLayerArchitecture.Action) async throws -> Any",
+                "printedName": "(any TrueLayerArchitecture.Action) async throws -> Any",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -262,7 +262,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Action",
-                    "printedName": "TrueLayerArchitecture.Action",
+                    "printedName": "any TrueLayerArchitecture.Action",
                     "usr": "s:21TrueLayerArchitecture6ActionP"
                   }
                 ]
@@ -295,7 +295,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "StateUpdater",
-                "printedName": "TrueLayerArchitecture.StateUpdater",
+                "printedName": "any TrueLayerArchitecture.StateUpdater",
                 "usr": "s:21TrueLayerArchitecture12StateUpdaterP"
               }
             ],
@@ -326,7 +326,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "SideEffect",
-                "printedName": "TrueLayerArchitecture.SideEffect",
+                "printedName": "any TrueLayerArchitecture.SideEffect",
                 "usr": "s:21TrueLayerArchitecture10SideEffectP"
               }
             ],
@@ -384,7 +384,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dependencies",
-                "printedName": "TrueLayerArchitecture.Dependencies",
+                "printedName": "any TrueLayerArchitecture.Dependencies",
                 "usr": "s:21TrueLayerArchitecture12DependenciesP"
               }
             ],
@@ -408,7 +408,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dependencies",
-                    "printedName": "TrueLayerArchitecture.Dependencies",
+                    "printedName": "any TrueLayerArchitecture.Dependencies",
                     "usr": "s:21TrueLayerArchitecture12DependenciesP"
                   }
                 ],
@@ -434,7 +434,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "State",
-                "printedName": "TrueLayerArchitecture.State",
+                "printedName": "any TrueLayerArchitecture.State",
                 "usr": "s:21TrueLayerArchitecture5StateP"
               }
             ],
@@ -458,7 +458,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "State",
-                    "printedName": "TrueLayerArchitecture.State",
+                    "printedName": "any TrueLayerArchitecture.State",
                     "usr": "s:21TrueLayerArchitecture5StateP"
                   }
                 ],
@@ -513,7 +513,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dependencies",
-                "printedName": "TrueLayerArchitecture.Dependencies",
+                "printedName": "any TrueLayerArchitecture.Dependencies",
                 "usr": "s:21TrueLayerArchitecture12DependenciesP"
               }
             ],
@@ -534,7 +534,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dependencies",
-                    "printedName": "TrueLayerArchitecture.Dependencies",
+                    "printedName": "any TrueLayerArchitecture.Dependencies",
                     "usr": "s:21TrueLayerArchitecture12DependenciesP"
                   }
                 ],
@@ -561,7 +561,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "State",
-                "printedName": "TrueLayerArchitecture.State",
+                "printedName": "any TrueLayerArchitecture.State",
                 "usr": "s:21TrueLayerArchitecture5StateP"
               }
             ],
@@ -582,7 +582,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "State",
-                    "printedName": "TrueLayerArchitecture.State",
+                    "printedName": "any TrueLayerArchitecture.State",
                     "usr": "s:21TrueLayerArchitecture5StateP"
                   }
                 ],
@@ -639,7 +639,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TrueLayerArchitecture.Action) async throws -> Any",
+                "printedName": "(any TrueLayerArchitecture.Action) async throws -> Any",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -649,7 +649,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Action",
-                    "printedName": "TrueLayerArchitecture.Action",
+                    "printedName": "any TrueLayerArchitecture.Action",
                     "usr": "s:21TrueLayerArchitecture6ActionP"
                   }
                 ]
@@ -657,12 +657,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> TrueLayerArchitecture.State",
+                "printedName": "() -> any TrueLayerArchitecture.State",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "State",
-                    "printedName": "TrueLayerArchitecture.State",
+                    "printedName": "any TrueLayerArchitecture.State",
                     "usr": "s:21TrueLayerArchitecture5StateP"
                   },
                   {
@@ -817,7 +817,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GenericContext",
-                "printedName": "TrueLayerArchitecture.GenericContext",
+                "printedName": "any TrueLayerArchitecture.GenericContext",
                 "usr": "s:21TrueLayerArchitecture14GenericContextP"
               }
             ],
@@ -968,7 +968,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GenericContext",
-                "printedName": "TrueLayerArchitecture.GenericContext",
+                "printedName": "any TrueLayerArchitecture.GenericContext",
                 "usr": "s:21TrueLayerArchitecture14GenericContextP"
               }
             ],
@@ -1037,7 +1037,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "GenericContext",
-                "printedName": "TrueLayerArchitecture.GenericContext",
+                "printedName": "any TrueLayerArchitecture.GenericContext",
                 "usr": "s:21TrueLayerArchitecture14GenericContextP"
               }
             ],
@@ -1276,7 +1276,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Action",
-                "printedName": "TrueLayerArchitecture.Action",
+                "printedName": "any TrueLayerArchitecture.Action",
                 "usr": "s:21TrueLayerArchitecture6ActionP"
               }
             ],
@@ -1718,7 +1718,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Action",
-                "printedName": "TrueLayerArchitecture.Action",
+                "printedName": "any TrueLayerArchitecture.Action",
                 "usr": "s:21TrueLayerArchitecture6ActionP"
               }
             ],
@@ -1957,7 +1957,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[TrueLayerArchitecture.RoutingRequest : TrueLayerArchitecture.RoutingInstruction]",
+                "printedName": "[TrueLayerArchitecture.RoutingRequest : any TrueLayerArchitecture.RoutingInstruction]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1968,7 +1968,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "RoutingInstruction",
-                    "printedName": "TrueLayerArchitecture.RoutingInstruction",
+                    "printedName": "any TrueLayerArchitecture.RoutingInstruction",
                     "usr": "s:21TrueLayerArchitecture18RoutingInstructionP"
                   }
                 ],
@@ -1989,7 +1989,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[TrueLayerArchitecture.RoutingRequest : TrueLayerArchitecture.RoutingInstruction]",
+                    "printedName": "[TrueLayerArchitecture.RoutingRequest : any TrueLayerArchitecture.RoutingInstruction]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2000,7 +2000,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "RoutingInstruction",
-                        "printedName": "TrueLayerArchitecture.RoutingInstruction",
+                        "printedName": "any TrueLayerArchitecture.RoutingInstruction",
                         "usr": "s:21TrueLayerArchitecture18RoutingInstructionP"
                       }
                     ],
@@ -2060,9 +2060,9 @@
             "mangledName": "$s21TrueLayerArchitecture6RouterC26merchantRootViewControllerSo06UIViewH0Cvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
-              "Custom",
               "Final",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -3835,8 +3835,8 @@
             "mangledName": "$s21TrueLayerArchitecture16TLViewControllerC5storeAA15ActionlessStoreCy2VM_10TypedStateQZGvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4058,8 +4058,8 @@
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "HasInitialValue",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4352,7 +4352,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Action",
-                "printedName": "TrueLayerArchitecture.Action",
+                "printedName": "any TrueLayerArchitecture.Action",
                 "usr": "s:21TrueLayerArchitecture6ActionP"
               }
             ],
@@ -4801,6 +4801,9 @@
                 "sugared_genericSig": "<Self where Self : TrueLayerArchitecture.TLModelledViewWithViewController>",
                 "protocolReq": true,
                 "implicit": true,
+                "declAttributes": [
+                  "SPIAccessControl"
+                ],
                 "spi_group_names": [
                   "TrueLayer"
                 ],
@@ -5113,6 +5116,9 @@
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController>",
                 "sugared_genericSig": "<Self where Self : TrueLayerArchitecture.TLModelledViewWithViewController>",
                 "implicit": true,
+                "declAttributes": [
+                  "SPIAccessControl"
+                ],
                 "isFromExtension": true,
                 "spi_group_names": [
                   "TrueLayer"
@@ -5190,8 +5196,8 @@
             "mangledName": "$s21TrueLayerArchitecture30TLViewControllerWithLocalStateC05localH02VM_05TypedgH0QZvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "spi_group_names": [
@@ -5578,375 +5584,60 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/ReturningSideEffect.swift",
-      "kind": "StringLiteral",
-      "offset": 879,
-      "length": 75,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/ReturningSideEffect.swift",
-      "kind": "StringLiteral",
-      "offset": 907,
-      "length": 3,
-      "value": "\" but got \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/ReturningSideEffect.swift",
-      "kind": "StringLiteral",
-      "offset": 944,
-      "length": 7,
-      "value": "\" instead.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/SideEffect.swift",
-      "kind": "StringLiteral",
-      "offset": 955,
-      "length": 75,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/SideEffect.swift",
-      "kind": "StringLiteral",
-      "offset": 983,
-      "length": 3,
-      "value": "\" but got \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/SideEffect.swift",
-      "kind": "StringLiteral",
-      "offset": 1020,
-      "length": 7,
-      "value": "\" instead.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/StateUpdater.swift",
-      "kind": "StringLiteral",
-      "offset": 570,
-      "length": 43,
-      "value": "\"Method invoked with the wrong state type.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 399,
-      "length": 94,
-      "value": "\"This should not be invoked, as PartialStore should never be used directly. Use Store instead\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 574,
-      "length": 94,
-      "value": "\"This should not be invoked, as PartialStore should never be used directly. Use Store instead\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 785,
-      "length": 94,
-      "value": "\"This should not be invoked, as PartialStore should never be used directly. Use Store instead\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 1016,
-      "length": 94,
-      "value": "\"This should not be invoked, as PartialStore should never be used directly. Use Store instead\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
       "kind": "Dictionary",
       "offset": 1959,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 2710,
-      "length": 75,
-      "value": "\"The parameter cannot implement both the state updater and the side effect\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 3002,
-      "length": 21,
-      "value": "\"Unknown Action type\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 3274,
-      "length": 63,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 3302,
-      "length": 3,
-      "value": "\" but got \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 3327,
-      "length": 7,
-      "value": "\" instead.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
       "kind": "StringLiteral",
       "offset": 1464,
       "length": 5,
       "value": "\"TrueLayerArchitecture.Store\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 1085,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 1731,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 2019,
-      "length": 55,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 2040,
-      "length": 2,
-      "value": "\" is not a RoutableViewController.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 2249,
-      "length": 73,
-      "value": "\"Displaying of \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 2282,
-      "length": 2,
-      "value": "\" is not handled by \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 2321,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 2907,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 3199,
-      "length": 55,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 3220,
-      "length": 2,
-      "value": "\" is not a RoutableViewController.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 3546,
-      "length": 69,
-      "value": "\"Hiding of \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 3575,
-      "length": 2,
-      "value": "\" is not handled by \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 3614,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 4279,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 4554,
-      "length": 88,
-      "value": "\"Cannot satisfy your request as \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 4606,
-      "length": 2,
-      "value": "\" is not part of a navigation stack.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 4789,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 5061,
-      "length": 88,
-      "value": "\"Cannot satisfy your request as \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 5113,
-      "length": 2,
-      "value": "\" is not part of a navigation stack.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 5739,
-      "length": 91,
-      "value": "\"Cannot satisfy your request as \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 5794,
-      "length": 2,
-      "value": "\" is not part of a navigation stack.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 6483,
-      "length": 91,
-      "value": "\"Cannot satisfy your request as \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
-      "kind": "StringLiteral",
-      "offset": 6538,
-      "length": 2,
-      "value": "\" is not part of a navigation stack.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLModelledView.swift",
-      "kind": "StringLiteral",
-      "offset": 693,
-      "length": 32,
-      "value": "\"tlmodellableview_viewmodel_key\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLModelledView.swift",
-      "kind": "StringLiteral",
-      "offset": 1224,
-      "length": 79,
-      "value": "\"You should not use \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLModelledView.swift",
-      "kind": "StringLiteral",
-      "offset": 1256,
-      "length": 2,
-      "value": "\" in a ModellableView. Change the model instead\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLStatefulViewModelWithLocalState.swift",
-      "kind": "StringLiteral",
-      "offset": 526,
-      "length": 71,
-      "value": "\"Use `init?(state: TypedState?, localState: TypedLocalState)` instead.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2334,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2415,
-      "length": 23,
-      "value": "\"Deinitialized \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2437,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3017,
-      "length": 14,
-      "value": "\"implement me\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 16,
       "value": "\"TrueLayerArchitecture.TLViewController\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewControllerModelledView.swift",
-      "kind": "StringLiteral",
-      "offset": 377,
-      "length": 35,
-      "value": "\"tlmodelledview_viewcontroller_key\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewControllerWithLocalState.swift",
-      "kind": "StringLiteral",
-      "offset": 578,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewControllerWithLocalState.swift",
-      "kind": "StringLiteral",
-      "offset": 705,
-      "length": 80,
-      "value": "\"Use `init(store: Store<V.VM.S, D>, localState: V.VM.TypedLocalState)` instead.\""
     }
   ]
 }

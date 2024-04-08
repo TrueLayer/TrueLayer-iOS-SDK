@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerUtils
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUtils
 import Foundation
 import Swift
 import UIKit
@@ -20,6 +19,32 @@ extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
   public var version: Swift.String {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class IsoCountryCodes {
+  public class func find(key: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByName(_ name: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByNumeric(_ numeric: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  public class func searchByCurrency(_ currency: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
+  public class func searchByCallingCode(_ calllingCode: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
+  @objc deinit
+}
+public struct IsoCountryInfo {
+  public let name: Swift.String
+  public let numeric: Swift.String
+  public let alpha2: Swift.String
+  public let alpha3: Swift.String
+  public let calling: Swift.String
+  public let currency: Swift.String
+  public let continent: Swift.String
+  public var flag: Swift.String? {
+    get
+  }
+  public var fractionDigits: Swift.Int
+}
+@_hasMissingDesignatedInitializers public class IsoCountries {
+  public class func flag(countryCode: Swift.String) -> Swift.String?
+  public static let allCountries: [TrueLayerUtils.IsoCountryInfo]
+  @objc deinit
 }
 public protocol LocaleInformationProvider {
   static var preferredLanguages: [Swift.String] { get }

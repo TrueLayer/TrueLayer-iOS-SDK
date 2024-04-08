@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrueLayerObjectiveC
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerObjectiveC
 import Foundation
 import Swift
 import TrueLayerSDK
@@ -40,6 +39,20 @@ import _SwiftConcurrencyShims
     get
   }
 }
+@objc public enum TrueLayerMandateResultShown : Swift.Int {
+  case noneShown
+  case noneInvalidState
+  case success
+  case initiated
+  case authorizationFailed
+  case expired
+  case genericFailed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc public enum TrueLayerMandateState : Swift.Int {
   case authorized
   case redirect
@@ -48,6 +61,16 @@ import _SwiftConcurrencyShims
   public var rawValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers @objc final public class TrueLayerProcessMandateFailure : ObjectiveC.NSObject {
+  @objc final public let error: TrueLayerObjectiveC.TrueLayerMandateError
+  @objc final public let resultShown: TrueLayerObjectiveC.TrueLayerMandateResultShown
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class TrueLayerProcessMandateSuccess : ObjectiveC.NSObject {
+  @objc final public let state: TrueLayerObjectiveC.TrueLayerMandateState
+  @objc final public let resultShown: TrueLayerObjectiveC.TrueLayerMandateResultShown
+  @objc deinit
 }
 @objc public enum TrueLayerMandateStatus : Swift.Int {
   case authorizationRequired
@@ -95,6 +118,34 @@ import _SwiftConcurrencyShims
   public static var _nsErrorDomain: Swift.String {
     get
   }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class TrueLayerProcessSinglePaymentFailure : ObjectiveC.NSObject {
+  @objc final public let error: TrueLayerObjectiveC.TrueLayerSinglePaymentError
+  @objc final public let resultShown: TrueLayerObjectiveC.TrueLayerSinglePaymentResultShown
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class TrueLayerProcessSinglePaymentSuccess : ObjectiveC.NSObject {
+  @objc final public let state: TrueLayerObjectiveC.TrueLayerSinglePaymentState
+  @objc final public let resultShown: TrueLayerObjectiveC.TrueLayerSinglePaymentResultShown
+  @objc deinit
+}
+@objc public enum TrueLayerSinglePaymentResultShown : Swift.Int {
+  case noneShown
+  case noneInvalidState
+  case success
+  case initiated
+  case insufficientFunds
+  case paymentLimitExceeded
+  case userCanceledAtProvider
+  case authorizationFailed
+  case expired
+  case invalidAccountDetails
+  case genericFailed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -182,8 +233,10 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $AsyncAwait
   @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettings?, additionalConfiguration: [Swift.String : Swift.String]) async
   #endif
+  @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, onSuccess: @escaping (TrueLayerObjectiveC.TrueLayerProcessSinglePaymentSuccess) -> Swift.Void, onFailure: @escaping (TrueLayerObjectiveC.TrueLayerProcessSinglePaymentFailure) -> Swift.Void)
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
+  @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, onSuccess: @escaping (TrueLayerObjectiveC.TrueLayerProcessMandateSuccess) -> Swift.Void, onFailure: @escaping (TrueLayerObjectiveC.TrueLayerProcessMandateFailure) -> Swift.Void)
   @objc public static func processMandate(context: TrueLayerObjectiveC.TrueLayerMandateContext, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
   @objc public static func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerMandateStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerMandateError) -> Swift.Void)
   @objc override dynamic public init()
@@ -216,6 +269,9 @@ import _SwiftConcurrencyShims
 extension TrueLayerObjectiveC.TrueLayerMandateError : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerMandateError : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerMandateError : Swift.RawRepresentable {}
+extension TrueLayerObjectiveC.TrueLayerMandateResultShown : Swift.Equatable {}
+extension TrueLayerObjectiveC.TrueLayerMandateResultShown : Swift.Hashable {}
+extension TrueLayerObjectiveC.TrueLayerMandateResultShown : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerMandateState : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerMandateState : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerMandateState : Swift.RawRepresentable {}
@@ -225,6 +281,9 @@ extension TrueLayerObjectiveC.TrueLayerMandateStatus : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentError : Swift.RawRepresentable {}
+extension TrueLayerObjectiveC.TrueLayerSinglePaymentResultShown : Swift.Equatable {}
+extension TrueLayerObjectiveC.TrueLayerSinglePaymentResultShown : Swift.Hashable {}
+extension TrueLayerObjectiveC.TrueLayerSinglePaymentResultShown : Swift.RawRepresentable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentState : Swift.Equatable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentState : Swift.Hashable {}
 extension TrueLayerObjectiveC.TrueLayerSinglePaymentState : Swift.RawRepresentable {}

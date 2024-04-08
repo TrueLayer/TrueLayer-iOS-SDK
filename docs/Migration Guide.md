@@ -1,8 +1,101 @@
 # TrueLayer iOS SDK Migration Guide
 
+- [Migrating from 3.0.x to 3.1.0](#migrating-from-30x-to-301)
 - [Migrating from 2.x to 3.x](#migrating-from-2x-to-3x)
 - [Migrating from 1.x to 2.x](#migrating-from-1x-to-2x)
 - [Migrating from beta to 2.x](#migrating-from-beta-to-2x)
+
+## Migrating from 3.0.x to 3.1.0
+
+Previously:
+
+```
+TrueLayer.Payments.manager.processSinglePayment(
+  context: TrueLayer.Payments.Models.SinglePayment.Context(
+    identifier: // Your payment ID,
+    token: // Your resource token,
+    redirectURL: // Your redirect URL
+    preferences: // Your possible preferences like type of presentation and country code.
+  )) { result in
+    switch result {
+      case .success(let result):
+        // Handle `TrueLayer.Payments.Models.SinglePayment.State`.
+
+      case .failure(let error):
+        // Handle `TrueLayer.Payments.Models.SinglePayment.Error`.
+    }
+}
+```
+
+Now:
+
+```
+TrueLayer.Payments.manager.processSinglePayment(
+  context: TrueLayer.Payments.Models.SinglePayment.Context(
+    identifier: // Your payment ID,
+    token: // Your resource token,
+    redirectURL: // Your redirect URL
+    preferences: // Your possible preferences like type of presentation and country code.
+  )) { processResult in
+    switch processResult.result {
+      case .success(let success):
+        // Handle `TrueLayer.Payments.Models.SinglePayment.State`.
+        print(success.state)
+
+      case .failure(let failure):
+        // Handle `TrueLayer.Payments.Models.SinglePayment.Error`.
+        print(failure.error)
+    }
+    
+    // Handle `resultShown`.
+    print(processResult.resultShown)
+}
+```
+
+Previously:
+
+```
+TrueLayer.Payments.manager.processMandate(
+  context: TrueLayer.Payments.Models.Mandate.Context(
+    identifier: // Your mandate ID,
+    token: // Your resource token,
+    redirectURL: // Your redirect URL
+    preferences: // Your possible preferences like type of presentation and country code.
+  )) { result in
+    switch result {
+      case .success(let result):
+        // Handle `TrueLayer.Payments.Models.Mandate.State`.
+
+      case .failure(let error):
+        // Handle `TrueLayer.Payments.Models.Mandate.Error`.
+    }
+}
+```
+
+Now:
+
+```
+TrueLayer.Payments.manager.processMandate(
+  context: TrueLayer.Payments.Models.Mandate.Context(
+    identifier: // Your mandate ID,
+    token: // Your resource token,
+    redirectURL: // Your redirect URL
+    preferences: // Your possible preferences like type of presentation and country code.
+  )) { processResult in
+    switch processResult.result {
+      case .success(let success):
+        // Handle `TrueLayer.Payments.Models.Mandate.State`.
+        print(success.state)
+
+      case .failure(let failure):
+        // Handle `TrueLayer.Payments.Models.Mandate.Error`.
+        print(failure.error)
+    }
+    
+    // Handle `resultShown`.
+    print(processResult.resultShown)
+}
+```
 
 ## Migrating from 2.x to 3.x
 

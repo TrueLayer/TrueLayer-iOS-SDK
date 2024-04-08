@@ -1543,7 +1543,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -1571,7 +1571,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3482,6 +3482,42 @@
                 ]
               },
               {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TrueLayerNetwork.Network.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MediaType",
+                        "printedName": "TrueLayerNetwork.Network.MediaType",
+                        "usr": "s:16TrueLayerNetwork0C0O9MediaTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16TrueLayerNetwork0C0O9MediaTypeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s16TrueLayerNetwork0C0O9MediaTypeO8rawValueAESgSS_tcfc",
+                "moduleName": "TrueLayerNetwork",
+                "implicit": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "init_kind": "Designated"
+              },
+              {
                 "kind": "Var",
                 "name": "rawValue",
                 "printedName": "rawValue",
@@ -3525,42 +3561,6 @@
                     "accessorKind": "get"
                   }
                 ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "TrueLayerNetwork.Network.MediaType?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MediaType",
-                        "printedName": "TrueLayerNetwork.Network.MediaType",
-                        "usr": "s:16TrueLayerNetwork0C0O9MediaTypeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:16TrueLayerNetwork0C0O9MediaTypeO8rawValueAESgSS_tcfc",
-                "mangledName": "$s16TrueLayerNetwork0C0O9MediaTypeO8rawValueAESgSS_tcfc",
-                "moduleName": "TrueLayerNetwork",
-                "implicit": true,
-                "spi_group_names": [
-                  "TrueLayer"
-                ],
-                "init_kind": "Designated"
               }
             ],
             "declKind": "Enum",
@@ -3684,12 +3684,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerNetwork.Network.Error.Type) -> (Swift.Decodable) -> TrueLayerNetwork.Network.Error",
+                    "printedName": "(TrueLayerNetwork.Network.Error.Type) -> (any Swift.Decodable) -> TrueLayerNetwork.Network.Error",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Decodable) -> TrueLayerNetwork.Network.Error",
+                        "printedName": "(any Swift.Decodable) -> TrueLayerNetwork.Network.Error",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -3700,7 +3700,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Decodable",
-                            "printedName": "Swift.Decodable",
+                            "printedName": "any Swift.Decodable",
                             "usr": "s:Se"
                           }
                         ]
@@ -3882,12 +3882,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(TrueLayerNetwork.Network.Error.Type) -> (Swift.Error) -> TrueLayerNetwork.Network.Error",
+                    "printedName": "(TrueLayerNetwork.Network.Error.Type) -> (any Swift.Error) -> TrueLayerNetwork.Network.Error",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error) -> TrueLayerNetwork.Network.Error",
+                        "printedName": "(any Swift.Error) -> TrueLayerNetwork.Network.Error",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -3898,7 +3898,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -7812,6 +7812,9 @@
                         "mangledName": "$s16TrueLayerNetwork0C0O4HTTPO7HeadersVySSSgAE6HeaderV3KeyOciM",
                         "moduleName": "TrueLayerNetwork",
                         "implicit": true,
+                        "declAttributes": [
+                          "SPIAccessControl"
+                        ],
                         "spi_group_names": [
                           "TrueLayer"
                         ],
@@ -8385,6 +8388,42 @@
                     ]
                   },
                   {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TrueLayerNetwork.Network.HTTP.Method?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Method",
+                            "printedName": "TrueLayerNetwork.Network.HTTP.Method",
+                            "usr": "s:16TrueLayerNetwork0C0O4HTTPO6MethodO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:16TrueLayerNetwork0C0O4HTTPO6MethodO8rawValueAGSgSS_tcfc",
+                    "mangledName": "$s16TrueLayerNetwork0C0O4HTTPO6MethodO8rawValueAGSgSS_tcfc",
+                    "moduleName": "TrueLayerNetwork",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "init_kind": "Designated"
+                  },
+                  {
                     "kind": "Var",
                     "name": "rawValue",
                     "printedName": "rawValue",
@@ -8428,42 +8467,6 @@
                         "accessorKind": "get"
                       }
                     ]
-                  },
-                  {
-                    "kind": "Constructor",
-                    "name": "init",
-                    "printedName": "init(rawValue:)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "TrueLayerNetwork.Network.HTTP.Method?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Method",
-                            "printedName": "TrueLayerNetwork.Network.HTTP.Method",
-                            "usr": "s:16TrueLayerNetwork0C0O4HTTPO6MethodO"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Constructor",
-                    "usr": "s:16TrueLayerNetwork0C0O4HTTPO6MethodO8rawValueAGSgSS_tcfc",
-                    "mangledName": "$s16TrueLayerNetwork0C0O4HTTPO6MethodO8rawValueAGSgSS_tcfc",
-                    "moduleName": "TrueLayerNetwork",
-                    "implicit": true,
-                    "spi_group_names": [
-                      "TrueLayer"
-                    ],
-                    "init_kind": "Designated"
                   }
                 ],
                 "declKind": "Enum",
@@ -8629,6 +8632,42 @@
                     ]
                   },
                   {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TrueLayerNetwork.Network.URL.Scheme?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Scheme",
+                            "printedName": "TrueLayerNetwork.Network.URL.Scheme",
+                            "usr": "s:16TrueLayerNetwork0C0O3URLO6SchemeO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:16TrueLayerNetwork0C0O3URLO6SchemeO8rawValueAGSgSS_tcfc",
+                    "mangledName": "$s16TrueLayerNetwork0C0O3URLO6SchemeO8rawValueAGSgSS_tcfc",
+                    "moduleName": "TrueLayerNetwork",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "init_kind": "Designated"
+                  },
+                  {
                     "kind": "Var",
                     "name": "rawValue",
                     "printedName": "rawValue",
@@ -8672,42 +8711,6 @@
                         "accessorKind": "get"
                       }
                     ]
-                  },
-                  {
-                    "kind": "Constructor",
-                    "name": "init",
-                    "printedName": "init(rawValue:)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "TrueLayerNetwork.Network.URL.Scheme?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Scheme",
-                            "printedName": "TrueLayerNetwork.Network.URL.Scheme",
-                            "usr": "s:16TrueLayerNetwork0C0O3URLO6SchemeO"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Constructor",
-                    "usr": "s:16TrueLayerNetwork0C0O3URLO6SchemeO8rawValueAGSgSS_tcfc",
-                    "mangledName": "$s16TrueLayerNetwork0C0O3URLO6SchemeO8rawValueAGSgSS_tcfc",
-                    "moduleName": "TrueLayerNetwork",
-                    "implicit": true,
-                    "spi_group_names": [
-                      "TrueLayer"
-                    ],
-                    "init_kind": "Designated"
                   }
                 ],
                 "declKind": "Enum",
@@ -9662,6 +9665,42 @@
                     ]
                   },
                   {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TrueLayerNetwork.Network.Mock.HTTPStatusCode?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "HTTPStatusCode",
+                            "printedName": "TrueLayerNetwork.Network.Mock.HTTPStatusCode",
+                            "usr": "s:16TrueLayerNetwork0C0O4MockO14HTTPStatusCodeO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:16TrueLayerNetwork0C0O4MockO14HTTPStatusCodeO8rawValueAGSgSi_tcfc",
+                    "mangledName": "$s16TrueLayerNetwork0C0O4MockO14HTTPStatusCodeO8rawValueAGSgSi_tcfc",
+                    "moduleName": "TrueLayerNetwork",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "init_kind": "Designated"
+                  },
+                  {
                     "kind": "Var",
                     "name": "rawValue",
                     "printedName": "rawValue",
@@ -9705,42 +9744,6 @@
                         "accessorKind": "get"
                       }
                     ]
-                  },
-                  {
-                    "kind": "Constructor",
-                    "name": "init",
-                    "printedName": "init(rawValue:)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "TrueLayerNetwork.Network.Mock.HTTPStatusCode?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "HTTPStatusCode",
-                            "printedName": "TrueLayerNetwork.Network.Mock.HTTPStatusCode",
-                            "usr": "s:16TrueLayerNetwork0C0O4MockO14HTTPStatusCodeO"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Constructor",
-                    "usr": "s:16TrueLayerNetwork0C0O4MockO14HTTPStatusCodeO8rawValueAGSgSi_tcfc",
-                    "mangledName": "$s16TrueLayerNetwork0C0O4MockO14HTTPStatusCodeO8rawValueAGSgSi_tcfc",
-                    "moduleName": "TrueLayerNetwork",
-                    "implicit": true,
-                    "spi_group_names": [
-                      "TrueLayer"
-                    ],
-                    "init_kind": "Designated"
                   }
                 ],
                 "declKind": "Enum",
@@ -9841,6 +9844,42 @@
                     ]
                   },
                   {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TrueLayerNetwork.Network.Mock.HTTPVersion?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "HTTPVersion",
+                            "printedName": "TrueLayerNetwork.Network.Mock.HTTPVersion",
+                            "usr": "s:16TrueLayerNetwork0C0O4MockO11HTTPVersionO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:16TrueLayerNetwork0C0O4MockO11HTTPVersionO8rawValueAGSgSS_tcfc",
+                    "mangledName": "$s16TrueLayerNetwork0C0O4MockO11HTTPVersionO8rawValueAGSgSS_tcfc",
+                    "moduleName": "TrueLayerNetwork",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "init_kind": "Designated"
+                  },
+                  {
                     "kind": "Var",
                     "name": "rawValue",
                     "printedName": "rawValue",
@@ -9884,42 +9923,6 @@
                         "accessorKind": "get"
                       }
                     ]
-                  },
-                  {
-                    "kind": "Constructor",
-                    "name": "init",
-                    "printedName": "init(rawValue:)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "TrueLayerNetwork.Network.Mock.HTTPVersion?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "HTTPVersion",
-                            "printedName": "TrueLayerNetwork.Network.Mock.HTTPVersion",
-                            "usr": "s:16TrueLayerNetwork0C0O4MockO11HTTPVersionO"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Constructor",
-                    "usr": "s:16TrueLayerNetwork0C0O4MockO11HTTPVersionO8rawValueAGSgSS_tcfc",
-                    "mangledName": "$s16TrueLayerNetwork0C0O4MockO11HTTPVersionO8rawValueAGSgSS_tcfc",
-                    "moduleName": "TrueLayerNetwork",
-                    "implicit": true,
-                    "spi_group_names": [
-                      "TrueLayer"
-                    ],
-                    "init_kind": "Designated"
                   }
                 ],
                 "declKind": "Enum",
@@ -10723,12 +10726,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Foundation.URLProtocolClient?",
+                        "printedName": "(any Foundation.URLProtocolClient)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "URLProtocolClient",
-                            "printedName": "Foundation.URLProtocolClient",
+                            "printedName": "any Foundation.URLProtocolClient",
                             "usr": "c:objc(pl)NSURLProtocolClient"
                           }
                         ],
@@ -11217,1712 +11220,606 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DataRequest\/DataRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 480,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DataRequest\/DataRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 593,
-      "length": 47,
-      "value": "\"DataRequest: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DataRequest\/DataRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 632,
-      "length": 275,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "Dictionary",
-      "offset": 1643,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2347,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2376,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2812,
-      "length": 69,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2838,
-      "length": 7,
-      "value": "\" REQUEST to \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 2873,
-      "length": 2262,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3384,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3424,
-      "length": 14,
-      "value": "\"Content-Type\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3857,
-      "length": 17,
-      "value": "\"Bearer \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3873,
-      "length": 24,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 3896,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 4235,
-      "length": 26,
-      "value": "\"X-TRUELAYER-SDK-APP-NAME\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 4359,
-      "length": 57,
-      "value": "\"truelayer-ios-payment-sdk\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 4415,
-      "length": 24,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/DecodableRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 4438,
-      "length": 10,
-      "value": "\"TL-Agent\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 751,
-      "length": 24,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 764,
-      "length": 1,
-      "value": "\": \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 774,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "Array",
       "offset": 993,
       "length": 25,
       "value": "[\"br\", \"gzip\", \"deflate\"]"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "IntegerLiteral",
       "offset": 1199,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1472,
       "length": 14,
       "value": "\"TrueLayerSDK\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1666,
       "length": 160,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1691,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1720,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 1,
       "value": "\"; build:\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1776,
       "length": 1,
       "value": "\"; \""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1813,
       "length": 1,
       "value": "\") \""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1825,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 4384,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 4490,
-      "length": 69,
-      "value": "\"Basic \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 4504,
-      "length": 25,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 4516,
-      "length": 1,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 4528,
-      "length": 31,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 4558,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 5272,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 5372,
-      "length": 17,
-      "value": "\"Bearer \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 5388,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 7161,
-      "length": 46,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 7173,
-      "length": 1,
-      "value": "\";q=\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "FloatLiteral",
-      "offset": 7178,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "FloatLiteral",
-      "offset": 7201,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 7206,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 7232,
-      "length": 4,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Headers+HTTP.swift",
-      "kind": "Array",
-      "offset": 889,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Headers+HTTP.swift",
-      "kind": "StringLiteral",
-      "offset": 4313,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 1765,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 7,
       "value": "\"Token\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9579,
-      "length": 6,
-      "value": "\"A-IM\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9626,
-      "length": 8,
-      "value": "\"Accept\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9682,
-      "length": 16,
-      "value": "\"Accept-Charset\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9747,
-      "length": 17,
-      "value": "\"Accept-Datetime\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9813,
-      "length": 17,
-      "value": "\"Accept-Encoding\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9879,
-      "length": 17,
-      "value": "\"Accept-Language\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 9957,
-      "length": 31,
-      "value": "\"Access-Control-Request-Method\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10050,
-      "length": 32,
-      "value": "\"Access-Control-Request-Headers\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10246,
-      "length": 15,
-      "value": "\"Cache-Control\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10306,
-      "length": 12,
-      "value": "\"Connection\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10368,
-      "length": 18,
-      "value": "\"Content-Encoding\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10434,
-      "length": 16,
-      "value": "\"Content-Length\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10495,
-      "length": 13,
-      "value": "\"Content-MD5\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10554,
-      "length": 14,
-      "value": "\"Content-Type\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10609,
-      "length": 8,
-      "value": "\"Cookie\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10656,
-      "length": 6,
-      "value": "\"Date\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10703,
-      "length": 8,
-      "value": "\"Expect\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10755,
-      "length": 11,
-      "value": "\"Forwarded\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10805,
-      "length": 6,
-      "value": "\"From\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10850,
-      "length": 6,
-      "value": "\"Host\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10904,
-      "length": 16,
-      "value": "\"HTTP2-Settings\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 10962,
-      "length": 10,
-      "value": "\"If-Match\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11022,
-      "length": 19,
-      "value": "\"If-Modified-Since\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11087,
-      "length": 15,
-      "value": "\"If-None-Match\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11144,
-      "length": 10,
-      "value": "\"If-Range\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11206,
-      "length": 21,
-      "value": "\"If-Unmodified-Since\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11273,
-      "length": 14,
-      "value": "\"Max-Forwards\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11328,
-      "length": 8,
-      "value": "\"Origin\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11377,
-      "length": 8,
-      "value": "\"Pragma\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11426,
-      "length": 8,
-      "value": "\"Prefer\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11487,
-      "length": 21,
-      "value": "\"Proxy-Authorization\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11548,
-      "length": 7,
-      "value": "\"Range\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11597,
-      "length": 9,
-      "value": "\"Referer\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11643,
-      "length": 4,
-      "value": "\"TE\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11689,
-      "length": 9,
-      "value": "\"Trailer\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11749,
-      "length": 19,
-      "value": "\"Transfer-Encoding\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11812,
-      "length": 12,
-      "value": "\"User-Agent\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11866,
-      "length": 9,
-      "value": "\"Upgrade\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11913,
-      "length": 5,
-      "value": "\"Via\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 11960,
-      "length": 9,
-      "value": "\"Warning\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 166,
       "length": 24,
       "value": "\"application\/javascript\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 17,
       "value": "\"application\/pdf\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 17,
       "value": "\"application\/sql\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 26,
       "value": "\"application\/vnd.api+json\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 17,
       "value": "\"application\/xml\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 17,
       "value": "\"application\/zip\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 12,
       "value": "\"audio\/mpeg\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 11,
       "value": "\"audio\/ogg\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 935,
       "length": 12,
       "value": "\"image\/avif\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1069,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 11,
       "value": "\"image\/png\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1176,
       "length": 15,
       "value": "\"image\/svg+xml\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1242,
       "length": 21,
       "value": "\"multipart\/form-data\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1301,
       "length": 10,
       "value": "\"text\/css\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1349,
       "length": 10,
       "value": "\"text\/csv\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1399,
       "length": 11,
       "value": "\"text\/html\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1448,
       "length": 10,
       "value": "\"text\/xml\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 166,
       "length": 24,
       "value": "\"application\/javascript\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 17,
       "value": "\"application\/pdf\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 17,
       "value": "\"application\/sql\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 26,
       "value": "\"application\/vnd.api+json\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 17,
       "value": "\"application\/xml\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 17,
       "value": "\"application\/zip\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 12,
       "value": "\"audio\/mpeg\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 11,
       "value": "\"audio\/ogg\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 935,
       "length": 12,
       "value": "\"image\/avif\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1069,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 11,
       "value": "\"image\/png\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1176,
       "length": 15,
       "value": "\"image\/svg+xml\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1242,
       "length": 21,
       "value": "\"multipart\/form-data\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1301,
       "length": 10,
       "value": "\"text\/css\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1349,
       "length": 10,
       "value": "\"text\/csv\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1399,
       "length": 11,
       "value": "\"text\/html\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1448,
       "length": 10,
       "value": "\"text\/xml\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 119,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 119,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/PollableDecodableRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 506,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/PollableDecodableRequest.swift",
-      "kind": "FloatLiteral",
-      "offset": 556,
-      "length": 3,
-      "value": "2.5"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 131,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 20,
-      "value": "\"CFBundleIdentifier\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 400,
-      "length": 20,
-      "value": "\"CFBundleExecutable\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 715,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 910,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1093,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1254,
-      "length": 50,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1277,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1303,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1468,
-      "length": 73,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1492,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1516,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1540,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 1727,
-      "length": 5,
-      "value": "\"iOS\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/URLSession+Extensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 1262,
-      "length": 3,
-      "value": "0.2"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/HTTPRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1493,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
       "offset": 407,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
       "offset": 1140,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 1271,
-      "length": 22,
-      "value": "\"Executing \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 1292,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 1560,
-      "length": 61,
-      "value": "\"Retry number \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 1592,
-      "length": 3,
-      "value": "\" for \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 1619,
-      "length": 1,
-      "value": "\".\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "FloatLiteral",
-      "offset": 1711,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "FloatLiteral",
-      "offset": 1816,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1855,
-      "length": 13,
-      "value": "1000000000"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1969,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2206,
-      "length": 62,
-      "value": "\"Expected \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2239,
-      "length": 3,
-      "value": "\" but got empty data instead.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2587,
-      "length": 169,
-      "value": "\"Failed to decode \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2663,
-      "length": 4,
-      "value": "\" into \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2692,
-      "length": 5,
-      "value": "\"\nError Message: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2744,
-      "length": 4139,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 2850,
-      "length": 24,
-      "value": "\"Data format not valid.\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3527,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4826,
-      "length": 13,
-      "value": "1000000000"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4923,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 5359,
-      "length": 26,
-      "value": "\"Fetching data \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 5384,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 6342,
-      "length": 70,
-      "value": "\"Was expecting HTTPURLResponse but got \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 6402,
-      "length": 7,
-      "value": "\" instead)\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 6889,
-      "length": 199,
-      "value": "\"  Server responded with error body:\n  - URL: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7006,
-      "length": 1,
-      "value": "\"\n  - Body: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7074,
-      "length": 200,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7282,
-      "length": 199,
-      "value": "\"  Server responded with error body:\n  - URL: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7399,
-      "length": 1,
-      "value": "\"\n  - Body: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7467,
-      "length": 82,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7557,
-      "length": 180,
-      "value": "\"  Server responded with:\n  - URL: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7659,
-      "length": 1,
-      "value": "\"\n  - Body: \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 7725,
-      "length": 1332,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8473,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8483,
-      "length": 3,
-      "value": "499"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 8532,
-      "length": 31,
-      "value": "\"Bad request. Got back \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 8562,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8585,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8662,
-      "length": 3,
-      "value": "404"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8746,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8885,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8895,
-      "length": 3,
-      "value": "599"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 8944,
-      "length": 34,
-      "value": "\"Server crashed. Got back \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
-      "kind": "StringLiteral",
-      "offset": 8977,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 568,
       "length": 3,
       "value": "450"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 692,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 909,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 568,
       "length": 3,
       "value": "450"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 692,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 909,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 568,
       "length": 3,
       "value": "450"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 692,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 909,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPVersion+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPVersion+MockNetwork.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 10,
       "value": "\"HTTP\/1.1\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPVersion+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPVersion+MockNetwork.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 10,
       "value": "\"HTTP\/1.1\""
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/ServerResponse+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/ServerResponse+MockNetwork.swift",
       "kind": "Dictionary",
       "offset": 815,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
       "kind": "Array",
       "offset": 440,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
       "kind": "BooleanLiteral",
       "offset": 680,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
+      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 866,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "BooleanLiteral",
-      "offset": 972,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1348,
-      "length": 146,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1372,
-      "length": 1,
-      "value": "\" - Searching for:\n\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1439,
-      "length": 1,
-      "value": "\" - \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1482,
-      "length": 896,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1928,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2130,
-      "length": 17,
-      "value": "\"MockURLProtocol\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2155,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2384,
-      "length": 153,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2410,
-      "length": 1,
-      "value": "\" - Could NOT find:\n\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2480,
-      "length": 1,
-      "value": "\" - \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2523,
-      "length": 77,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2608,
-      "length": 138,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2632,
-      "length": 1,
-      "value": "\" - Found:\n\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2691,
-      "length": 1,
-      "value": "\" - \""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2734,
-      "length": 1073,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3351,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3418,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3458,
-      "length": 3,
-      "value": "\"*\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3471,
-      "length": 3,
-      "value": "\"*\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 3702,
-      "length": 20,
-      "value": "\"payments-analytics\""
-    },
-    {
-      "filePath": "\/Users\/daven.gomes\/Developer\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/RetryableRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 231,
-      "length": 1,
-      "value": "3"
     }
   ]
 }
