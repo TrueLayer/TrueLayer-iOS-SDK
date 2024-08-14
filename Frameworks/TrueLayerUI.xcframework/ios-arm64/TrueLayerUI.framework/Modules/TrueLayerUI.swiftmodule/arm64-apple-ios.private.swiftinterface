@@ -25,16 +25,6 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
-@_spi(TrueLayer) public protocol DeviceInformationProvider {
-  @_spi(TrueLayer) var model: Swift.String { get }
-  @_spi(TrueLayer) var systemVersion: Swift.String { get }
-  @_spi(TrueLayer) var deviceType: Swift.String? { get }
-}
-@_spi(TrueLayer) extension UIKit.UIDevice : TrueLayerUI.DeviceInformationProvider {
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var deviceType: Swift.String? {
-    @_spi(TrueLayer) get
-  }
-}
 extension TrueLayerUI.Analytics {
   public enum Environment {
     case development
@@ -92,6 +82,7 @@ extension TrueLayerUI.Analytics {
     @_spi(TrueLayer) case userAccountSelected(_: TrueLayerCore.Core.Payments.Models.Shared.UserAccount)
     @_spi(TrueLayer) case userAccountSelectedNewAccount
     @_spi(TrueLayer) case userAccountDeleteAccount(_: TrueLayerCore.Core.Payments.Models.Shared.UserAccount)
+    @_spi(TrueLayer) case fallbackWebViewLoaded
   }
 }
 extension TrueLayerUI.Analytics {
@@ -110,10 +101,12 @@ extension TrueLayerUI.Analytics {
 }
 public enum Analytics {
 }
-@_spi(TrueLayer) public protocol ScreenInformationProvider {
-  @_spi(TrueLayer) var bounds: CoreFoundation.CGRect { get }
+@_spi(TrueLayer) extension UIKit.UIDevice : TrueLayerUtils.DeviceInformationProvider {
+  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public var deviceType: Swift.String? {
+    @_spi(TrueLayer) get
+  }
 }
-@_spi(TrueLayer) extension UIKit.UIScreen : TrueLayerUI.ScreenInformationProvider {
+@_spi(TrueLayer) extension UIKit.UIScreen : TrueLayerUtils.ScreenInformationProvider {
 }
 @_spi(TrueLayer) public protocol SDKSideEffect : TrueLayerArchitecture.SideEffect where Self.TypedDependencies == TrueLayerUI.SDKDependencies, Self.TypedState == TrueLayerUI.SDKState {
 }
@@ -371,6 +364,7 @@ public enum Analytics {
     @_spi(TrueLayer) case userPriming
     @_spi(TrueLayer) case schemeSelection
     @_spi(TrueLayer) case resultScreen
+    @_spi(TrueLayer) case webView
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {

@@ -3707,6 +3707,46 @@
                   },
                   {
                     "kind": "Var",
+                    "name": "merchantConfigurationFallback",
+                    "printedName": "merchantConfigurationFallback",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.Shared.Miscellaneous.Type) -> TrueLayerMockable.File.Shared.Miscellaneous",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Miscellaneous",
+                            "printedName": "TrueLayerMockable.File.Shared.Miscellaneous",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO13MiscellaneousO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.Shared.Miscellaneous.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Miscellaneous",
+                                "printedName": "TrueLayerMockable.File.Shared.Miscellaneous",
+                                "usr": "s:17TrueLayerMockable4FileO6SharedO13MiscellaneousO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO13MiscellaneousO29merchantConfigurationFallbackyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO13MiscellaneousO29merchantConfigurationFallbackyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
                     "name": "recentlyUsedProviders",
                     "printedName": "recentlyUsedProviders",
                     "children": [
@@ -3867,6 +3907,334 @@
                     "mangledName": "$sSY"
                   }
                 ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Fallback",
+                "printedName": "Fallback",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "success",
+                    "printedName": "success",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.Shared.Fallback.Type) -> TrueLayerMockable.File.Shared.Fallback",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Fallback",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Fallback",
+                                "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                                "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO7successyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO7successyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "failure",
+                    "printedName": "failure",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.Shared.Fallback.Type) -> TrueLayerMockable.File.Shared.Fallback",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Fallback",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Fallback",
+                                "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                                "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO7failureyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO7failureyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "successRedirect",
+                    "printedName": "successRedirect",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.Shared.Fallback.Type) -> TrueLayerMockable.File.Shared.Fallback",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Fallback",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Fallback",
+                                "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                                "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO15successRedirectyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO15successRedirectyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "openInBrowser",
+                    "printedName": "openInBrowser",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.Shared.Fallback.Type) -> TrueLayerMockable.File.Shared.Fallback",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Fallback",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Fallback",
+                                "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                                "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO13openInBrowseryA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO13openInBrowseryA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "unknown",
+                    "printedName": "unknown",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.Shared.Fallback.Type) -> TrueLayerMockable.File.Shared.Fallback",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Fallback",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Fallback",
+                                "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                                "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO7unknownyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO7unknownyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "rawValue",
+                    "printedName": "rawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO8rawValueSSvp",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO8rawValueSSvp",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO8rawValueSSvg",
+                        "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO8rawValueSSvg",
+                        "moduleName": "TrueLayerMockable",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "TrueLayerMockable.File.Shared.Fallback?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Fallback",
+                            "printedName": "TrueLayerMockable.File.Shared.Fallback",
+                            "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO8rawValueAGSgSS_tcfc",
+                    "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO8rawValueAGSgSS_tcfc",
+                    "moduleName": "TrueLayerMockable",
+                    "implicit": true,
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:17TrueLayerMockable4FileO6SharedO8FallbackO",
+                "mangledName": "$s17TrueLayerMockable4FileO6SharedO8FallbackO",
+                "moduleName": "TrueLayerMockable",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "enumRawTypeName": "String",
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "RawRepresentable",
+                    "printedName": "RawRepresentable",
+                    "children": [
+                      {
+                        "kind": "TypeWitness",
+                        "name": "RawValue",
+                        "printedName": "RawValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:SY",
+                    "mangledName": "$sSY"
+                  }
+                ]
               }
             ],
             "declKind": "Enum",
@@ -3908,7 +4276,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
       "kind": "Dictionary",
       "offset": 984,
       "length": 36,

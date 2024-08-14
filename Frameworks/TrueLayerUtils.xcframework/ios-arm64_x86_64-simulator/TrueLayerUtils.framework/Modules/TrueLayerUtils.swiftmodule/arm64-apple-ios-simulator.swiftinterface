@@ -20,6 +20,26 @@ extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
     get
   }
 }
+public protocol LocaleInformationProvider {
+  static var preferredLanguages: [Swift.String] { get }
+  var preferredLanguages: [Swift.String] { get }
+  var languageCode: Swift.String? { get }
+  var deviceRegion: Swift.String? { get }
+  var deviceLanguage: Swift.String? { get }
+}
+extension TrueLayerUtils.LocaleInformationProvider {
+  public var preferredLanguages: [Swift.String] {
+    get
+  }
+}
+extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
+  public var deviceRegion: Swift.String? {
+    get
+  }
+  public var deviceLanguage: Swift.String? {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class IsoCountryCodes {
   public class func find(key: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
   public class func searchByName(_ name: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
@@ -45,18 +65,6 @@ public struct IsoCountryInfo {
   public class func flag(countryCode: Swift.String) -> Swift.String?
   public static let allCountries: [TrueLayerUtils.IsoCountryInfo]
   @objc deinit
-}
-public protocol LocaleInformationProvider {
-  static var preferredLanguages: [Swift.String] { get }
-  var preferredLanguages: [Swift.String] { get }
-  var languageCode: Swift.String? { get }
-}
-extension TrueLayerUtils.LocaleInformationProvider {
-  public var preferredLanguages: [Swift.String] {
-    get
-  }
-}
-extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
 }
 public protocol TimezoneInformationProvider {
   var identifier: Swift.String { get }

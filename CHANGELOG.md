@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.2.0] - HPP Fallback
+
+### Added 
+- Support for falling back to displaying the HPP web view — so that if, for any reason, the native SDK flow is not available, the payment can still continue.
+
 ## [3.1.0] - ResultShown
 
 ### Added 
