@@ -65,7 +65,20 @@ extension TrueLayerMockable.File.Shared {
   public enum Miscellaneous : Swift.String {
     case merchantConfiguration
     case merchantConfigurationRegulated
+    case merchantConfigurationFallback
     case recentlyUsedProviders
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+  public enum Fallback : Swift.String {
+    case success
+    case failure
+    case successRedirect
+    case openInBrowser
+    case unknown
     public var rawValue: Swift.String {
       get
     }
@@ -176,6 +189,9 @@ extension TrueLayerMockable.File.Mandate.Cancel : Swift.RawRepresentable {}
 extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.Equatable {}
 extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.Hashable {}
 extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Shared.Fallback : Swift.Equatable {}
+extension TrueLayerMockable.File.Shared.Fallback : Swift.Hashable {}
+extension TrueLayerMockable.File.Shared.Fallback : Swift.RawRepresentable {}
 extension TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse : Swift.Equatable {}
 extension TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse : Swift.Hashable {}
 extension TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse : Swift.RawRepresentable {}

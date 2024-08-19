@@ -1,0 +1,8 @@
+{
+  "name": "Some Merchant Name",
+  "logo_uri": "https://truelayer-client-logos.s3-eu-west-1.amazonaws.com/637795100726696466.png",
+  "regulated": false,
+  "fallback": {
+    "fallback_url": "javascript:(function() { window.webkit.messageHandlers.toggleMessageHandler.postMessage({ \"message\": \"{ \\\"type\\\" : \\\"failure\\\", \\\"failure_reason\\\" : \\\"no_internet\\\", \\\"failure_details\\\" : { \\\"api_failure_reason\\\" : \\\"authorization_failed\\\" }, \\\"result_shown\\\" : \\\"insufficient_funds\\\"  }\" }); })()"
+  }
+}

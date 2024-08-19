@@ -104,6 +104,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case providerRejected
     @_spi(TrueLayer) case internalServerError
     @_spi(TrueLayer) case expired
+    @_spi(TrueLayer) case userCanceledAtProvider
+    @_spi(TrueLayer) case invalidAccountDetails
     @_spi(TrueLayer) case other(reason: Swift.String)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Mandate.FailureReason, b: TrueLayerCore.Core.Payments.Models.Mandate.FailureReason) -> Swift.Bool
   }
@@ -250,7 +252,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public let name: Swift.String
     @_spi(TrueLayer) public let logoURI: Foundation.URL
     @_spi(TrueLayer) public let isRegulated: Swift.Bool
-    @_spi(TrueLayer) public init(name: Swift.String, logoURI: Foundation.URL, isRegulated: Swift.Bool)
+    @_spi(TrueLayer) public let fallbackURL: Foundation.URL?
+    @_spi(TrueLayer) public init(name: Swift.String, logoURI: Foundation.URL, isRegulated: Swift.Bool, fallbackURL: Foundation.URL?)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.Merchant, b: TrueLayerCore.Core.Payments.Models.Shared.Merchant) -> Swift.Bool
   }
 }

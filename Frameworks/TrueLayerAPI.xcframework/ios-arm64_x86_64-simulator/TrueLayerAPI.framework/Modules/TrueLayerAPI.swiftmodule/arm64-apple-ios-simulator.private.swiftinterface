@@ -11,15 +11,17 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_spi(TrueLayer) extension TrueLayerAPI.API {
-  @_spi(TrueLayer) public enum Environment {
+  @_spi(TrueLayer) public enum Environment : Swift.Codable {
     @_spi(TrueLayer) case development
     @_spi(TrueLayer) case production
     @_spi(TrueLayer) case sandbox
     @_spi(TrueLayer) public static func == (a: TrueLayerAPI.API.Environment, b: TrueLayerAPI.API.Environment) -> Swift.Bool
     @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public func encode(to encoder: any Swift.Encoder) throws
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
+    @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
   }
 }
 @_spi(TrueLayer) public enum API {
@@ -89,9 +91,6 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
     #endif
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
     #endif
     #if compiler(>=5.3) && $AsyncAwait
@@ -135,7 +134,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
     #endif
     #if compiler(>=5.3) && $AsyncAwait
-    @_spi(TrueLayer) public func getMerchantConfiguration() async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
+    @_spi(TrueLayer) public func getMerchantConfiguration(redirectURI: Foundation.URL, deviceInformationProvider: any TrueLayerUtils.DeviceInformationProvider, screenInformationProvider: any TrueLayerUtils.ScreenInformationProvider, bundleInformationProvider: any TrueLayerUtils.BundleInformationProvider, localeInformationProvider: any TrueLayerUtils.LocaleInformationProvider, resourceType: Swift.String, integrationType: Swift.String, integrationVersion: Swift.String, sdkVersion: Swift.String, isResultScreenEnabled: Swift.Bool?) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
     #endif
     #if compiler(>=5.3) && $AsyncAwait
     @_spi(TrueLayer) public func getLastUsedProviders(userIdentifier: Swift.String, paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier]

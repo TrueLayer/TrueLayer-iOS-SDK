@@ -5584,56 +5584,56 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
       "kind": "Dictionary",
       "offset": 1959,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
       "kind": "StringLiteral",
       "offset": 1464,
       "length": 5,
       "value": "\"TrueLayerArchitecture.Store\""
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 1085,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 1731,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 2907,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 4279,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 4789,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
       "kind": "StringLiteral",
       "offset": 121,
       "length": 16,

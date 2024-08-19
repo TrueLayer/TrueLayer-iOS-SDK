@@ -11530,6 +11530,92 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "userCanceledAtProvider",
+                            "printedName": "userCanceledAtProvider",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerCore.Core.Payments.Models.Mandate.FailureReason.Type) -> TrueLayerCore.Core.Payments.Models.Mandate.FailureReason",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "FailureReason",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.FailureReason",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.FailureReason.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "FailureReason",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.FailureReason",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO22userCanceledAtProvideryA2KmF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO22userCanceledAtProvideryA2KmF",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "invalidAccountDetails",
+                            "printedName": "invalidAccountDetails",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerCore.Core.Payments.Models.Mandate.FailureReason.Type) -> TrueLayerCore.Core.Payments.Models.Mandate.FailureReason",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "FailureReason",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.FailureReason",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.FailureReason.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "FailureReason",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.FailureReason",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO21invalidAccountDetailsyA2KmF",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO13FailureReasonO21invalidAccountDetailsyA2KmF",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
                             "name": "other",
                             "printedName": "other",
                             "children": [
@@ -15502,9 +15588,76 @@
                             ]
                           },
                           {
+                            "kind": "Var",
+                            "name": "fallbackURL",
+                            "printedName": "fallbackURL",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Foundation.URL?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "URL",
+                                    "printedName": "Foundation.URL",
+                                    "usr": "s:10Foundation3URLV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11fallbackURL10Foundation0I0VSgvp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11fallbackURL10Foundation0I0VSgvp",
+                            "moduleName": "TrueLayerCore",
+                            "declAttributes": [
+                              "HasStorage",
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "isLet": true,
+                            "hasStorage": true,
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Optional",
+                                    "printedName": "Foundation.URL?",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "URL",
+                                        "printedName": "Foundation.URL",
+                                        "usr": "s:10Foundation3URLV"
+                                      }
+                                    ],
+                                    "usr": "s:Sq"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11fallbackURL10Foundation0I0VSgvg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV11fallbackURL10Foundation0I0VSgvg",
+                                "moduleName": "TrueLayerCore",
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
+                          },
+                          {
                             "kind": "Constructor",
                             "name": "init",
-                            "printedName": "init(name:logoURI:isRegulated:)",
+                            "printedName": "init(name:logoURI:isRegulated:fallbackURL:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -15529,11 +15682,25 @@
                                 "name": "Bool",
                                 "printedName": "Swift.Bool",
                                 "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Foundation.URL?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "URL",
+                                    "printedName": "Foundation.URL",
+                                    "usr": "s:10Foundation3URLV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               }
                             ],
                             "declKind": "Constructor",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURI11isRegulatedAKSS_10Foundation3URLVSbtcfc",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURI11isRegulatedAKSS_10Foundation3URLVSbtcfc",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURI11isRegulated11fallbackURLAKSS_10Foundation0N0VSbARSgtcfc",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8MerchantV4name7logoURI11isRegulated11fallbackURLAKSS_10Foundation0N0VSbARSgtcfc",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "AccessControl",
@@ -22218,7 +22385,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/lukasz.franieczek\/development\/source\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/SchemeSelection+SinglePaymentCoreModels.swift",
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Core\/Payments\/Models\/SinglePayment\/SchemeSelection+SinglePaymentCoreModels.swift",
       "kind": "BooleanLiteral",
       "offset": 685,
       "length": 5,

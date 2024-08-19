@@ -8,14 +8,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_spi(TrueLayer) extension Swift.Array {
-  @_spi(TrueLayer) public func appending(_ newElement: Element) -> Swift.Array<Element>
-}
-@_spi(TrueLayer) extension Swift.Bool {
-  @_spi(TrueLayer) public var isFalse: Swift.Bool {
-    @_spi(TrueLayer) get
-  }
-}
 public protocol BundleInformationProvider {
   var name: Swift.String { get }
   var version: Swift.String { get }
@@ -26,6 +18,42 @@ extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
   }
   public var version: Swift.String {
     get
+  }
+}
+@_spi(TrueLayer) public protocol DeviceInformationProvider {
+  @_spi(TrueLayer) var model: Swift.String { get }
+  @_spi(TrueLayer) var systemVersion: Swift.String { get }
+  @_spi(TrueLayer) var deviceType: Swift.String? { get }
+}
+public protocol LocaleInformationProvider {
+  static var preferredLanguages: [Swift.String] { get }
+  var preferredLanguages: [Swift.String] { get }
+  var languageCode: Swift.String? { get }
+  var deviceRegion: Swift.String? { get }
+  var deviceLanguage: Swift.String? { get }
+}
+extension TrueLayerUtils.LocaleInformationProvider {
+  public var preferredLanguages: [Swift.String] {
+    get
+  }
+}
+extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
+  public var deviceRegion: Swift.String? {
+    get
+  }
+  public var deviceLanguage: Swift.String? {
+    get
+  }
+}
+@_spi(TrueLayer) public protocol ScreenInformationProvider {
+  @_spi(TrueLayer) var bounds: CoreFoundation.CGRect { get }
+}
+@_spi(TrueLayer) extension Swift.Array {
+  @_spi(TrueLayer) public func appending(_ newElement: Element) -> Swift.Array<Element>
+}
+@_spi(TrueLayer) extension Swift.Bool {
+  @_spi(TrueLayer) public var isFalse: Swift.Bool {
+    @_spi(TrueLayer) get
   }
 }
 @_spi(TrueLayer) extension Swift.Collection {
@@ -72,18 +100,6 @@ public struct IsoCountryInfo {
   public class func flag(countryCode: Swift.String) -> Swift.String?
   public static let allCountries: [TrueLayerUtils.IsoCountryInfo]
   @objc deinit
-}
-public protocol LocaleInformationProvider {
-  static var preferredLanguages: [Swift.String] { get }
-  var preferredLanguages: [Swift.String] { get }
-  var languageCode: Swift.String? { get }
-}
-extension TrueLayerUtils.LocaleInformationProvider {
-  public var preferredLanguages: [Swift.String] {
-    get
-  }
-}
-extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
 }
 @_spi(TrueLayer) extension Foundation.NSAttributedString {
   @_spi(TrueLayer) public func addingAttributes(_ attributes: [Foundation.NSAttributedString.Key : Any], to substring: Swift.String) -> Foundation.NSAttributedString
