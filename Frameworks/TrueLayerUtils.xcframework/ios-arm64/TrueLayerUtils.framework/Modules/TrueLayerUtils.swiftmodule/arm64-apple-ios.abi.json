@@ -4655,7 +4655,7 @@
           {
             "kind": "Function",
             "name": "attributedStringWithDynamicFontAndHTML",
-            "printedName": "attributedStringWithDynamicFontAndHTML(baseFont:boldFont:)",
+            "printedName": "attributedStringWithDynamicFontAndHTML(baseFont:boldFont:overrideColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4682,11 +4682,26 @@
                 "name": "UIFont",
                 "printedName": "UIKit.UIFont",
                 "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:SS14TrueLayerUtilsE38attributedStringWithDynamicFontAndHTML04baseH004boldH0So012NSAttributedE0CSgSo6UIFontC_AItF",
-            "mangledName": "$sSS14TrueLayerUtilsE38attributedStringWithDynamicFontAndHTML04baseH004boldH0So012NSAttributedE0CSgSo6UIFontC_AItF",
+            "usr": "s:SS14TrueLayerUtilsE38attributedStringWithDynamicFontAndHTML04baseH004boldH013overrideColorSo012NSAttributedE0CSgSo6UIFontC_AJSo7UIColorCSgtF",
+            "mangledName": "$sSS14TrueLayerUtilsE38attributedStringWithDynamicFontAndHTML04baseH004boldH013overrideColorSo012NSAttributedE0CSgSo6UIFontC_AJSo7UIColorCSgtF",
             "moduleName": "TrueLayerUtils",
             "declAttributes": [
               "AccessControl",
