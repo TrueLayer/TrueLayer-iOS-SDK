@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.2.1] - Formatting & Other Fixes
+
+### Fixed
+- All payment amount labels are now formatted to always display the quota with two decimal places (e.g. $1.00 instead of $1).
+- The detail label for "you're sending" is now formatted to include both the beneficiary name and the merchant name when possible — unless both are the same, or this data is missing.
+- The navigation bars in the SDK now behave correctly when an app is using global navigation bar style overrides using the `UIAppearance` API.
+- Fixed a crash for several mandate-related APIs.
+
 ## [3.2.0] - HPP Fallback
 
 ### Added 

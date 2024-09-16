@@ -23678,952 +23678,952 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8712,
+      "offset": 8959,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8727,
+      "offset": 8974,
       "length": 32,
       "value": "\"screen.confirmPayment.subtitle\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8848,
+      "offset": 9095,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8863,
+      "offset": 9110,
       "length": 29,
       "value": "\"screen.confirmPayment.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9036,
+      "offset": 9283,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9051,
+      "offset": 9298,
       "length": 34,
       "value": "\"screen.confirmPayment.alert.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9161,
+      "offset": 9408,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9176,
+      "offset": 9423,
       "length": 36,
       "value": "\"screen.confirmPayment.alert.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9293,
+      "offset": 9540,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9308,
+      "offset": 9555,
       "length": 35,
       "value": "\"screen.confirmPayment.alert.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9465,
+      "offset": 9712,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9480,
+      "offset": 9727,
       "length": 39,
       "value": "\"screen.confirmPayment.continue.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10299,
+      "offset": 10546,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10314,
+      "offset": 10561,
       "length": 48,
       "value": "\"screen.consent.components.information.fca.info\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10515,
+      "offset": 10762,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10530,
+      "offset": 10777,
       "length": 61,
       "value": "\"screen.consent.components.information.howDoesThisWork.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10742,
+      "offset": 10989,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10757,
+      "offset": 11004,
       "length": 37,
       "value": "\"screen.consent.mandate.cancellation\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11156,
+      "offset": 11403,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11171,
+      "offset": 11418,
       "length": 39,
       "value": "\"screen.consent.mandate.paymentDetails\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11648,
+      "offset": 11895,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11663,
+      "offset": 11910,
       "length": 30,
       "value": "\"screen.consent.mandate.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11771,
+      "offset": 12018,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11786,
+      "offset": 12033,
       "length": 30,
       "value": "\"screen.consent.mandate.today\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11961,
+      "offset": 12208,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11976,
+      "offset": 12223,
       "length": 49,
       "value": "\"screen.consent.mandate.bulletList.cancelAnyTime\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12138,
+      "offset": 12385,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12153,
+      "offset": 12400,
       "length": 47,
       "value": "\"screen.consent.mandate.bulletList.connectOnce\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12310,
+      "offset": 12557,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12325,
+      "offset": 12572,
       "length": 49,
       "value": "\"screen.consent.mandate.bulletList.fcaAuthorized\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12509,
+      "offset": 12756,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12524,
+      "offset": 12771,
       "length": 40,
       "value": "\"screen.consent.mandate.continue.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12731,
+      "offset": 12978,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12746,
+      "offset": 12993,
       "length": 42,
       "value": "\"screen.consent.mandate.details.fca.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13230,
+      "offset": 13477,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13245,
+      "offset": 13492,
       "length": 53,
       "value": "\"screen.consent.mandate.details.howDoesThisWork.info\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13604,
+      "offset": 13851,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13619,
+      "offset": 13866,
       "length": 46,
       "value": "\"screen.consent.mandate.details.security.info\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13752,
+      "offset": 13999,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13767,
+      "offset": 14014,
       "length": 47,
       "value": "\"screen.consent.mandate.details.security.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17160,
+      "offset": 17407,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17175,
+      "offset": 17422,
       "length": 45,
       "value": "\"screen.consent.send.howDoesThisWork.body.eu\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17665,
+      "offset": 17912,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17680,
+      "offset": 17927,
       "length": 45,
       "value": "\"screen.consent.send.howDoesThisWork.body.uk\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18482,
+      "offset": 18729,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18497,
+      "offset": 18744,
       "length": 48,
       "value": "\"screen.consent.signupPlus.howDoesThisWork.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18693,
+      "offset": 18940,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18708,
+      "offset": 18955,
       "length": 31,
       "value": "\"screen.countrySelection.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18876,
+      "offset": 19123,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18891,
+      "offset": 19138,
       "length": 40,
       "value": "\"screen.countrySelection.noResults.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19020,
+      "offset": 19267,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19035,
+      "offset": 19282,
       "length": 41,
       "value": "\"screen.countrySelection.noResults.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19200,
+      "offset": 19447,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19215,
+      "offset": 19462,
       "length": 47,
       "value": "\"screen.countrySelection.searchBar.placeholder\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19424,
+      "offset": 19671,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19439,
+      "offset": 19686,
       "length": 31,
       "value": "\"screen.mandate.details.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19883,
+      "offset": 20130,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19898,
+      "offset": 20145,
       "length": 30,
       "value": "\"screen.mandate.details.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20339,
+      "offset": 20586,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20354,
+      "offset": 20601,
       "length": 39,
       "value": "\"screen.mandate.howItWorks.connectOnce\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20497,
+      "offset": 20744,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20512,
+      "offset": 20759,
       "length": 38,
       "value": "\"screen.mandate.howItWorks.editRemove\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20723,
+      "offset": 20970,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20738,
+      "offset": 20985,
       "length": 35,
       "value": "\"screen.mandate.howItWorks.infoBox\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20880,
+      "offset": 21127,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20895,
+      "offset": 21142,
       "length": 34,
       "value": "\"screen.mandate.howItWorks.noCard\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21014,
+      "offset": 21261,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21029,
+      "offset": 21276,
       "length": 33,
       "value": "\"screen.mandate.howItWorks.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21198,
+      "offset": 21445,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21213,
+      "offset": 21460,
       "length": 32,
       "value": "\"screen.providerSelection.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21422,
+      "offset": 21669,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21437,
+      "offset": 21684,
       "length": 58,
       "value": "\"screen.providerSelection.cell.error.providerNotAvailable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21622,
+      "offset": 21869,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21637,
+      "offset": 21884,
       "length": 38,
       "value": "\"screen.providerSelection.error.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21789,
+      "offset": 22036,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21804,
+      "offset": 22051,
       "length": 46,
       "value": "\"screen.providerSelection.error.cancel.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21979,
+      "offset": 22226,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21994,
+      "offset": 22241,
       "length": 48,
       "value": "\"screen.providerSelection.error.tryAgain.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22499,
+      "offset": 22746,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22514,
+      "offset": 22761,
       "length": 41,
       "value": "\"screen.providerSelection.noResults.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22641,
+      "offset": 22888,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22656,
+      "offset": 22903,
       "length": 42,
       "value": "\"screen.providerSelection.noResults.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22822,
+      "offset": 23069,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22837,
+      "offset": 23084,
       "length": 48,
       "value": "\"screen.providerSelection.searchBar.placeholder\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23412,
+      "offset": 23659,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23427,
+      "offset": 23674,
       "length": 63,
       "value": "\"screen.providerSelection.section.allBanks.singleCountry.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23702,
+      "offset": 23949,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23717,
+      "offset": 23964,
       "length": 67,
       "value": "\"screen.providerSelection.section.filtered.multipleCountries.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23931,
+      "offset": 24178,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23946,
+      "offset": 24193,
       "length": 63,
       "value": "\"screen.providerSelection.section.filtered.singleCountry.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 24159,
+      "offset": 24406,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 24174,
+      "offset": 24421,
       "length": 55,
       "value": "\"screen.providerSelection.section.previouslyUsed.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25356,
+      "offset": 25603,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25371,
+      "offset": 25618,
       "length": 35,
       "value": "\"screen.result.mandate.title.error\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25779,
+      "offset": 26026,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25794,
+      "offset": 26041,
       "length": 39,
       "value": "\"screen.result.payment.button.continue\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25918,
+      "offset": 26165,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25933,
+      "offset": 26180,
       "length": 37,
       "value": "\"screen.result.payment.button.goBack\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 27392,
+      "offset": 27639,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 27407,
+      "offset": 27654,
       "length": 43,
       "value": "\"screen.result.payment.subtitle.inProgress\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30513,
+      "offset": 30760,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30528,
+      "offset": 30775,
       "length": 37,
       "value": "\"screen.result.payment.title.allDone\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30676,
+      "offset": 30923,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30691,
+      "offset": 30938,
       "length": 49,
       "value": "\"screen.result.payment.title.authorizationFailed\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30828,
+      "offset": 31075,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30843,
+      "offset": 31090,
       "length": 38,
       "value": "\"screen.result.payment.title.canceled\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30978,
+      "offset": 31225,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30993,
+      "offset": 31240,
       "length": 37,
       "value": "\"screen.result.payment.title.generic\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31123,
+      "offset": 31370,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31138,
+      "offset": 31385,
       "length": 40,
       "value": "\"screen.result.payment.title.inProgress\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31285,
+      "offset": 31532,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31300,
+      "offset": 31547,
       "length": 47,
       "value": "\"screen.result.payment.title.insufficientFunds\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31454,
+      "offset": 31701,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31469,
+      "offset": 31716,
       "length": 43,
       "value": "\"screen.result.payment.title.limitExceeded\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31622,
+      "offset": 31869,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31637,
+      "offset": 31884,
       "length": 44,
       "value": "\"screen.result.payment.title.sessionExpired\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31877,
+      "offset": 32124,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31892,
+      "offset": 32139,
       "length": 33,
       "value": "\"screen.schemeSelection.subtitle\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32014,
+      "offset": 32261,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32029,
+      "offset": 32276,
       "length": 30,
       "value": "\"screen.schemeSelection.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32416,
+      "offset": 32663,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32431,
+      "offset": 32678,
       "length": 43,
       "value": "\"screen.userAccountSelection.sectionHeader\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32581,
+      "offset": 32828,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32596,
+      "offset": 32843,
       "length": 49,
       "value": "\"screen.userAccountSelection.useDifferentAccount\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32776,
+      "offset": 33023,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32791,
+      "offset": 33038,
       "length": 35,
       "value": "\"screen.userPriming.doneThisButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32952,
+      "offset": 33199,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32967,
+      "offset": 33214,
       "length": 21,
       "value": "\"screen.wait.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33230,
+      "offset": 33477,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33245,
+      "offset": 33492,
       "length": 36,
       "value": "\"screen.wait.timeout.dialog.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33378,
+      "offset": 33625,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33393,
+      "offset": 33640,
       "length": 34,
       "value": "\"screen.wait.timeout.dialog.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33558,
+      "offset": 33805,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33573,
+      "offset": 33820,
       "length": 47,
       "value": "\"screen.wait.timeout.dialog.button.keepwaiting\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33706,
+      "offset": 33953,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33721,
+      "offset": 33968,
       "length": 41,
       "value": "\"screen.wait.timeout.dialog.button.leave\""
     },

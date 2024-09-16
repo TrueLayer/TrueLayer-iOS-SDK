@@ -133,7 +133,7 @@ public struct IsoCountryInfo {
   @_spi(TrueLayer) public func isValidIBAN() -> Swift.Bool
 }
 @_spi(TrueLayer) extension Swift.String {
-  @_spi(TrueLayer) public func attributedStringWithDynamicFontAndHTML(baseFont: UIKit.UIFont, boldFont: UIKit.UIFont) -> Foundation.NSAttributedString?
+  @_spi(TrueLayer) public func attributedStringWithDynamicFontAndHTML(baseFont: UIKit.UIFont, boldFont: UIKit.UIFont, overrideColor: UIKit.UIColor? = nil) -> Foundation.NSAttributedString?
 }
 @_spi(TrueLayer) public func mainThread(_ closure: () -> Swift.Void)
 public protocol TimezoneInformationProvider {
