@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.2.2] - Accessibility & QoL
+
+### Added
+- A new system of coordinating presented `UIViewController`s that would try to detect and prevent interference with the normal TrueLayer navigation flow. (Generally, the client app should not present external view controllers while the TrueLayer SDK is running. Failing to do so would previously lead to crashes; the new system aims to instead gracefully stop the SDK flow and alert the developer about a mistake on their part.)
+
+### Changed
+- Improved the accessibility experience, especially when using VoiceOver
+- Rebuilt the codebase for iOS 18 and the new Apple devices
+
 ## [3.2.1] - Formatting & Other Fixes
 
 ### Fixed
