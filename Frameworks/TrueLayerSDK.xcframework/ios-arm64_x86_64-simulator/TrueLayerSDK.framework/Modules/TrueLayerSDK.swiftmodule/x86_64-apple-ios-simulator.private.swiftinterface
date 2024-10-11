@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Swift
 @_spi(TrueLayer) import TrueLayerAPI
@@ -272,21 +273,15 @@ extension TrueLayerSDK.TrueLayer.Payments {
 }
 extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers public class Manager {
-    #if compiler(>=5.3) && $AsyncAwait
     public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: any TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), additionalConfiguration: [TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String] = [:]) async
-    #endif
     public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.ProcessResult) -> Swift.Void)?)
     @available(*, deprecated, message: "Use `processSinglePayment` with `TrueLayer.Payments.Models.SinglePayment.ProcessResult` in the completion handler.")
     public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
-    #if compiler(>=5.3) && $AsyncAwait
     public func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
-    #endif
     public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.Models.Mandate.ProcessResult) -> Swift.Void)?)
     @available(*, deprecated, message: "Use `processMandate` with `TrueLayer.Payments.Models.Mandate.ProcessResult` in the completion handler.")
     public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error>) -> Swift.Void)?)
-    #if compiler(>=5.3) && $AsyncAwait
     public func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status
-    #endif
     @objc deinit
   }
 }

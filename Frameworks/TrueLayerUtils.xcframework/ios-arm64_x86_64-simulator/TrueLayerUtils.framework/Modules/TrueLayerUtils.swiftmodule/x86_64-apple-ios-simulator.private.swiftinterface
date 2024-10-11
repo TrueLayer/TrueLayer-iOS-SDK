@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUtils
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Swift
 import UIKit
@@ -68,13 +69,9 @@ extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
   @_spi(TrueLayer) public func between(_ low: Swift.Int, and high: Swift.Int) -> Swift.Bool
 }
 @_spi(TrueLayer) public typealias CustomInteraction<T> = (T) -> Swift.Void
-#if compiler(>=5.3) && $AsyncAwait
 @_spi(TrueLayer) public typealias CustomAsyncInteraction<T> = (T) async -> Swift.Void
-#endif
 @_spi(TrueLayer) public typealias Interaction = () -> Swift.Void
-#if compiler(>=5.3) && $AsyncAwait
 @_spi(TrueLayer) public typealias AsyncInteraction = () async -> Swift.Void
-#endif
 @_hasMissingDesignatedInitializers public class IsoCountryCodes {
   public class func find(key: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
   public class func searchByName(_ name: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
@@ -153,24 +150,24 @@ extension Foundation.TimeZone : TrueLayerUtils.TimezoneInformationProvider {
   @_spi(TrueLayer) convenience public init(hex code: Swift.String) throws
 }
 @_spi(TrueLayer) extension UIKit.UIScreen {
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var relativeWidth: CoreFoundation.CGFloat {
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public static var relativeWidth: CoreFoundation.CGFloat {
     @_spi(TrueLayer) get
   }
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var relativeHeight: CoreFoundation.CGFloat {
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public static var relativeHeight: CoreFoundation.CGFloat {
     @_spi(TrueLayer) get
   }
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var portraitWidth: CoreFoundation.CGFloat {
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public static var portraitWidth: CoreFoundation.CGFloat {
     @_spi(TrueLayer) get
   }
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public static var isShortScreen: Swift.Bool {
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public static var isShortScreen: Swift.Bool {
     @_spi(TrueLayer) get
   }
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func changeBrightness(to value: CoreFoundation.CGFloat)
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public func changeBrightness(to value: CoreFoundation.CGFloat)
 }
 @_spi(TrueLayer) extension Foundation.URL {
   @_spi(TrueLayer) public init(staticString string: Swift.StaticString)
 }
 @_spi(TrueLayer) extension WebKit.WKWebView {
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func load(svgURL: Foundation.URL)
-  @_spi(TrueLayer) @_Concurrency.MainActor(unsafe) public func loadEmptyPage()
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public func load(svgURL: Foundation.URL)
+  @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public func loadEmptyPage()
 }

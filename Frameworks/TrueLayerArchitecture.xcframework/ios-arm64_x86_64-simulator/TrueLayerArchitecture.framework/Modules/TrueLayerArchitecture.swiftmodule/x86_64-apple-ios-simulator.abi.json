@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TrueLayerArchitecture",
+    "printedName": "TrueLayerArchitecture",
     "children": [
       {
         "kind": "TypeDecl",
@@ -15,6 +15,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -493,6 +509,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "GenericContext",
             "printedName": "GenericContext",
             "usr": "s:21TrueLayerArchitecture14GenericContextP",
@@ -612,6 +642,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -699,6 +745,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -854,6 +916,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AnySideEffect",
             "printedName": "AnySideEffect",
             "usr": "s:21TrueLayerArchitecture13AnySideEffectP",
@@ -1005,6 +1081,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AnySideEffect",
             "printedName": "AnySideEffect",
             "usr": "s:21TrueLayerArchitecture13AnySideEffectP",
@@ -1072,6 +1162,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Action",
             "printedName": "Action",
             "usr": "s:21TrueLayerArchitecture6ActionP",
@@ -1123,6 +1227,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1191,6 +1311,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Action",
@@ -1440,7 +1574,23 @@
         "spi_group_names": [
           "TrueLayer"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1893,6 +2043,64 @@
         "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "TrueLayerArchitecture.ActionlessStore<τ_0_0>"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerArchitecture"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Presentable",
+        "printedName": "Presentable",
+        "declKind": "Protocol",
+        "usr": "s:21TrueLayerArchitecture11PresentableP",
+        "mangledName": "$s21TrueLayerArchitecture11PresentableP",
+        "moduleName": "TrueLayerArchitecture",
+        "genericSig": "<τ_0_0 : UIKit.UIViewController>",
+        "sugared_genericSig": "<Self : UIKit.UIViewController>",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2029,6 +2237,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2061,8 +2285,8 @@
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "Final",
-              "HasStorage",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -2411,6 +2635,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -2442,6 +2680,22 @@
         "moduleName": "TrueLayerArchitecture",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2599,6 +2853,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "RoutingInstruction",
@@ -2793,6 +3061,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2995,6 +3277,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -3027,6 +3323,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3399,6 +3711,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TLSimpleView",
             "printedName": "TLSimpleView",
             "usr": "s:21TrueLayerArchitecture12TLSimpleViewP",
@@ -3524,6 +3850,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3609,6 +3951,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "TLViewModel",
@@ -3765,6 +4121,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TLStatefulViewModel",
             "printedName": "TLStatefulViewModel",
             "usr": "s:21TrueLayerArchitecture19TLStatefulViewModelP",
@@ -3835,8 +4205,9 @@
             "mangledName": "$s21TrueLayerArchitecture16TLViewControllerC5storeAA15ActionlessStoreCy2VM_10TypedStateQZGvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -3953,6 +4324,7 @@
             "mangledName": "$s21TrueLayerArchitecture16TLViewControllerC5state2VM_10TypedStateQZvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4001,6 +4373,7 @@
             "mangledName": "$s21TrueLayerArchitecture16TLViewControllerC8rootViewxvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4058,8 +4431,9 @@
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4183,6 +4557,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override",
@@ -4232,6 +4607,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4264,6 +4640,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -4302,6 +4679,78 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TrueLayerArchitecture16TLViewControllerC7present_8animated10completionySo06UIViewE0C_SbyycSgtF",
+            "mangledName": "$s21TrueLayerArchitecture16TLViewControllerC7present_8animated10completionySo06UIViewE0C_SbyycSgtF",
+            "moduleName": "TrueLayerArchitecture",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController>",
+            "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "presentViewController:animated:completion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -4330,6 +4779,7 @@
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4363,6 +4813,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4417,6 +4868,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl",
@@ -4451,6 +4903,7 @@
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4479,6 +4932,35 @@
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleSDKNavigationInterference",
+            "printedName": "handleSDKNavigationInterference()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TrueLayerArchitecture16TLViewControllerC31handleSDKNavigationInterferenceyyYaF",
+            "mangledName": "$s21TrueLayerArchitecture16TLViewControllerC31handleSDKNavigationInterferenceyyYaF",
+            "moduleName": "TrueLayerArchitecture",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController>",
+            "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -4506,6 +4988,7 @@
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -4574,6 +5057,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -4591,6 +5075,7 @@
         "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController>",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "SPIAccessControl"
@@ -4605,6 +5090,27 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Presentable",
+            "printedName": "Presentable",
+            "usr": "s:21TrueLayerArchitecture11PresentableP",
+            "mangledName": "$s21TrueLayerArchitecture11PresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5144,6 +5650,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TLModelledView",
             "printedName": "TLModelledView",
             "usr": "s:21TrueLayerArchitecture14TLModelledViewP",
@@ -5196,8 +5716,9 @@
             "mangledName": "$s21TrueLayerArchitecture30TLViewControllerWithLocalStateC05localH02VM_05TypedgH0QZvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "spi_group_names": [
@@ -5325,6 +5846,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController, τ_0_0.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5377,6 +5899,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -5426,6 +5949,7 @@
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -5460,6 +5984,7 @@
             "overriding": true,
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -5478,6 +6003,7 @@
         "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "SPIAccessControl"
@@ -5494,6 +6020,27 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Presentable",
+            "printedName": "Presentable",
+            "usr": "s:21TrueLayerArchitecture11PresentableP",
+            "mangledName": "$s21TrueLayerArchitecture11PresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5577,6 +6124,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       }
     ],
@@ -5589,13 +6152,6 @@
       "offset": 1959,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 1464,
-      "length": 5,
-      "value": "\"TrueLayerArchitecture.Store\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
@@ -5631,13 +6187,6 @@
       "offset": 4789,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/UI\/TLViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 121,
-      "length": 16,
-      "value": "\"TrueLayerArchitecture.TLViewController\""
     }
   ]
 }

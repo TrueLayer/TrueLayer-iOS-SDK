@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TrueLayerCore",
+    "printedName": "TrueLayerCore",
     "children": [
       {
         "kind": "Import",
@@ -216,6 +216,20 @@
                               "TrueLayer"
                             ],
                             "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
                               {
                                 "kind": "Conformance",
                                 "name": "Equatable",
@@ -734,6 +748,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -1028,6 +1056,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -1275,6 +1317,20 @@
                                   "TrueLayer"
                                 ],
                                 "conformances": [
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
                                   {
                                     "kind": "Conformance",
                                     "name": "Equatable",
@@ -1797,6 +1853,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -2112,6 +2182,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -2312,6 +2396,20 @@
                                   "TrueLayer"
                                 ],
                                 "conformances": [
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
                                   {
                                     "kind": "Conformance",
                                     "name": "Equatable",
@@ -2538,6 +2636,20 @@
                                   "TrueLayer"
                                 ],
                                 "conformances": [
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
                                   {
                                     "kind": "Conformance",
                                     "name": "Equatable",
@@ -3587,6 +3699,20 @@
                                         "conformances": [
                                           {
                                             "kind": "Conformance",
+                                            "name": "Copyable",
+                                            "printedName": "Copyable",
+                                            "usr": "s:s8CopyableP",
+                                            "mangledName": "$ss8CopyableP"
+                                          },
+                                          {
+                                            "kind": "Conformance",
+                                            "name": "Escapable",
+                                            "printedName": "Escapable",
+                                            "usr": "s:s9EscapableP",
+                                            "mangledName": "$ss9EscapableP"
+                                          },
+                                          {
+                                            "kind": "Conformance",
                                             "name": "Decodable",
                                             "printedName": "Decodable",
                                             "usr": "s:Se",
@@ -3624,6 +3750,20 @@
                                     "conformances": [
                                       {
                                         "kind": "Conformance",
+                                        "name": "Copyable",
+                                        "printedName": "Copyable",
+                                        "usr": "s:s8CopyableP",
+                                        "mangledName": "$ss8CopyableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
+                                        "name": "Escapable",
+                                        "printedName": "Escapable",
+                                        "usr": "s:s9EscapableP",
+                                        "mangledName": "$ss9EscapableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
                                         "name": "Equatable",
                                         "printedName": "Equatable",
                                         "usr": "s:SQ",
@@ -3645,6 +3785,20 @@
                                   "TrueLayer"
                                 ],
                                 "conformances": [
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
                                   {
                                     "kind": "Conformance",
                                     "name": "Equatable",
@@ -4753,6 +4907,20 @@
                                     "conformances": [
                                       {
                                         "kind": "Conformance",
+                                        "name": "Copyable",
+                                        "printedName": "Copyable",
+                                        "usr": "s:s8CopyableP",
+                                        "mangledName": "$ss8CopyableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
+                                        "name": "Escapable",
+                                        "printedName": "Escapable",
+                                        "usr": "s:s9EscapableP",
+                                        "mangledName": "$ss9EscapableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
                                         "name": "Hashable",
                                         "printedName": "Hashable",
                                         "usr": "s:SH",
@@ -4961,6 +5129,20 @@
                                     "conformances": [
                                       {
                                         "kind": "Conformance",
+                                        "name": "Copyable",
+                                        "printedName": "Copyable",
+                                        "usr": "s:s8CopyableP",
+                                        "mangledName": "$ss8CopyableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
+                                        "name": "Escapable",
+                                        "printedName": "Escapable",
+                                        "usr": "s:s9EscapableP",
+                                        "mangledName": "$ss9EscapableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
                                         "name": "Equatable",
                                         "printedName": "Equatable",
                                         "usr": "s:SQ",
@@ -4982,6 +5164,20 @@
                                   "TrueLayer"
                                 ],
                                 "conformances": [
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
                                   {
                                     "kind": "Conformance",
                                     "name": "Equatable",
@@ -5415,6 +5611,20 @@
                                     "conformances": [
                                       {
                                         "kind": "Conformance",
+                                        "name": "Copyable",
+                                        "printedName": "Copyable",
+                                        "usr": "s:s8CopyableP",
+                                        "mangledName": "$ss8CopyableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
+                                        "name": "Escapable",
+                                        "printedName": "Escapable",
+                                        "usr": "s:s9EscapableP",
+                                        "mangledName": "$ss9EscapableP"
+                                      },
+                                      {
+                                        "kind": "Conformance",
                                         "name": "Equatable",
                                         "printedName": "Equatable",
                                         "usr": "s:SQ",
@@ -5438,6 +5648,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -5457,6 +5681,22 @@
                             "isFromExtension": true,
                             "spi_group_names": [
                               "TrueLayer"
+                            ],
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              }
                             ]
                           }
                         ],
@@ -5471,6 +5711,22 @@
                         "isFromExtension": true,
                         "spi_group_names": [
                           "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
                         ]
                       },
                       {
@@ -6215,6 +6471,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -6346,6 +6616,22 @@
                             "isFromExtension": true,
                             "spi_group_names": [
                               "TrueLayer"
+                            ],
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              }
                             ]
                           }
                         ],
@@ -6362,6 +6648,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -6683,6 +6983,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -7529,6 +7843,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -7552,6 +7880,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -7572,6 +7914,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -7933,6 +8289,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -8878,6 +9248,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -9243,6 +9627,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -9269,6 +9667,22 @@
                     "isFromExtension": true,
                     "spi_group_names": [
                       "TrueLayer"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   },
                   {
@@ -9534,6 +9948,20 @@
                               "TrueLayer"
                             ],
                             "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
                               {
                                 "kind": "Conformance",
                                 "name": "Equatable",
@@ -9847,6 +10275,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -10036,6 +10478,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -10057,6 +10513,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -10804,6 +11274,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -11024,6 +11508,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -11342,6 +11840,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -11726,6 +12238,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -12709,6 +13235,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -12905,6 +13445,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Hashable",
                                     "printedName": "Hashable",
                                     "usr": "s:SH",
@@ -12957,6 +13511,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -12978,6 +13546,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -13301,6 +13883,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -13320,6 +13916,22 @@
                     "isFromExtension": true,
                     "spi_group_names": [
                       "TrueLayer"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   },
                   {
@@ -13562,6 +14174,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -13990,6 +14616,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -14709,6 +15349,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -14732,6 +15386,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -14753,6 +15421,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -15349,6 +16031,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Decodable",
                                 "printedName": "Decodable",
                                 "usr": "s:Se",
@@ -15377,6 +16073,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Identifiable",
@@ -15762,6 +16472,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -15976,6 +16700,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -16341,6 +17079,22 @@
                         "isFromExtension": true,
                         "spi_group_names": [
                           "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
                         ]
                       },
                       {
@@ -17686,6 +18440,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Equatable",
                                 "printedName": "Equatable",
                                 "usr": "s:SQ",
@@ -18084,6 +18852,20 @@
                               "TrueLayer"
                             ],
                             "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
                               {
                                 "kind": "Conformance",
                                 "name": "Equatable",
@@ -18602,6 +19384,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -18764,6 +19560,20 @@
                                 "conformances": [
                                   {
                                     "kind": "Conformance",
+                                    "name": "Copyable",
+                                    "printedName": "Copyable",
+                                    "usr": "s:s8CopyableP",
+                                    "mangledName": "$ss8CopyableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
+                                    "name": "Escapable",
+                                    "printedName": "Escapable",
+                                    "usr": "s:s9EscapableP",
+                                    "mangledName": "$ss9EscapableP"
+                                  },
+                                  {
+                                    "kind": "Conformance",
                                     "name": "Equatable",
                                     "printedName": "Equatable",
                                     "usr": "s:SQ",
@@ -18785,6 +19595,20 @@
                               "TrueLayer"
                             ],
                             "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
                               {
                                 "kind": "Conformance",
                                 "name": "Equatable",
@@ -19045,6 +19869,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Decodable",
                                 "printedName": "Decodable",
                                 "usr": "s:Se",
@@ -19080,6 +19918,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Identifiable",
@@ -19468,6 +20320,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -19726,6 +20592,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -19745,6 +20625,22 @@
                     "isFromExtension": true,
                     "spi_group_names": [
                       "TrueLayer"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   },
                   {
@@ -19937,6 +20833,22 @@
                     "isFromExtension": true,
                     "spi_group_names": [
                       "TrueLayer"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   }
                 ],
@@ -19951,6 +20863,22 @@
                 "isFromExtension": true,
                 "spi_group_names": [
                   "TrueLayer"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -19964,6 +20892,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -19978,6 +20922,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -20260,6 +21220,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -20357,6 +21333,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -20498,6 +21490,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -20526,6 +21534,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "RawRepresentable",
@@ -20811,6 +21833,9 @@
             "moduleName": "TrueLayerCore",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "spi_group_names": [
               "TrueLayer"
             ],
@@ -20862,6 +21887,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -21317,6 +22356,20 @@
             "printedName": "_DestructorSafeContainer",
             "usr": "s:s24_DestructorSafeContainerP",
             "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -22308,6 +23361,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
