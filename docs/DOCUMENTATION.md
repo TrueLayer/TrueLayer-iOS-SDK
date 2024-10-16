@@ -52,7 +52,7 @@ When the user is redirected back to your app from their bank app or website, it 
 | ------------- | ------------- 
 | `.executed` | The bank confirmed the payment.
 | `.authorized` | The user authorized the payment with the bank.
-| `.redirect` | The user has been redirected to the bank to authorize the payment.
+| `.redirect` | (Deprecated) The user has been redirected to the bank to authorize the payment.
 | `.settled` | The funds have reached the destination.
 | `.wait` | The SDK flow is complete, but a decoupled authorisation action is still pending with the user and/or the bank.
 
@@ -152,7 +152,7 @@ The parameters used in `TrueLayer.Payments.Models.Mandate.Context` are explained
 | `TrueLayer.Payments.Models.Mandate.State` | Description |
 | ------------- | ------------- 
 | `.authorized` | The user authorized the mandate with the bank.
-| `.redirect` | The user has been redirected to the bank to authorize the mandate.
+| `.redirect` | (Deprecated) The user has been redirected to the bank to authorize the mandate.
 
 #### Error
 

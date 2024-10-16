@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TrueLayerSDK",
+    "printedName": "TrueLayerSDK",
     "children": [
       {
         "kind": "Import",
@@ -107,6 +107,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -580,6 +594,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -896,7 +924,23 @@
                         "declAttributes": [
                           "AccessControl"
                         ],
-                        "isFromExtension": true
+                        "isFromExtension": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeDecl",
@@ -2109,6 +2153,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Error",
                             "printedName": "Error",
                             "usr": "s:s5ErrorP",
@@ -2209,7 +2267,23 @@
                           "AccessControl",
                           "RawDocComment"
                         ],
-                        "isFromExtension": true
+                        "isFromExtension": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeDecl",
@@ -2274,6 +2348,22 @@
                             "declAttributes": [
                               "AccessControl",
                               "RawDocComment"
+                            ],
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              }
                             ]
                           },
                           {
@@ -2336,6 +2426,20 @@
                               "RawDocComment"
                             ],
                             "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
                               {
                                 "kind": "Conformance",
                                 "name": "Error",
@@ -2479,7 +2583,23 @@
                           "AccessControl",
                           "RawDocComment"
                         ],
-                        "isFromExtension": true
+                        "isFromExtension": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeDecl",
@@ -3002,6 +3122,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -3328,6 +3462,20 @@
                         ],
                         "isFromExtension": true,
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -3698,6 +3846,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Hashable",
                             "printedName": "Hashable",
                             "usr": "s:SH",
@@ -3721,7 +3883,23 @@
                       "AccessControl",
                       "RawDocComment"
                     ],
-                    "isFromExtension": true
+                    "isFromExtension": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
+                    ]
                   },
                   {
                     "kind": "TypeDecl",
@@ -3967,7 +4145,23 @@
                         "declAttributes": [
                           "AccessControl"
                         ],
-                        "isFromExtension": true
+                        "isFromExtension": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeDecl",
@@ -4820,6 +5014,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Error",
                             "printedName": "Error",
                             "usr": "s:s5ErrorP",
@@ -4905,7 +5113,23 @@
                           "AccessControl",
                           "RawDocComment"
                         ],
-                        "isFromExtension": true
+                        "isFromExtension": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeDecl",
@@ -4970,6 +5194,22 @@
                             "declAttributes": [
                               "AccessControl",
                               "RawDocComment"
+                            ],
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              }
                             ]
                           },
                           {
@@ -5032,6 +5272,20 @@
                               "RawDocComment"
                             ],
                             "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
                               {
                                 "kind": "Conformance",
                                 "name": "Error",
@@ -5175,7 +5429,23 @@
                           "AccessControl",
                           "RawDocComment"
                         ],
-                        "isFromExtension": true
+                        "isFromExtension": true,
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
+                        ]
                       },
                       {
                         "kind": "TypeDecl",
@@ -5550,6 +5820,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Equatable",
                             "printedName": "Equatable",
                             "usr": "s:SQ",
@@ -5756,6 +6040,20 @@
                         ],
                         "isFromExtension": true,
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "Equatable",
@@ -6086,6 +6384,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Hashable",
                             "printedName": "Hashable",
                             "usr": "s:SH",
@@ -6109,7 +6421,23 @@
                       "AccessControl",
                       "RawDocComment"
                     ],
-                    "isFromExtension": true
+                    "isFromExtension": true,
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
+                    ]
                   }
                 ],
                 "declKind": "Enum",
@@ -6120,7 +6448,23 @@
                   "AccessControl",
                   "RawDocComment"
                 ],
-                "isFromExtension": true
+                "isFromExtension": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
               },
               {
                 "kind": "TypeDecl",
@@ -6298,6 +6642,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "Equatable",
                         "printedName": "Equatable",
                         "usr": "s:SQ",
@@ -6343,7 +6701,23 @@
                   "AccessControl",
                   "RawDocComment"
                 ],
-                "isFromExtension": true
+                "isFromExtension": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
               },
               {
                 "kind": "TypeDecl",
@@ -6729,7 +7103,23 @@
                   "RawDocComment"
                 ],
                 "isFromExtension": true,
-                "hasMissingDesignatedInitializers": true
+                "hasMissingDesignatedInitializers": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
               }
             ],
             "declKind": "Enum",
@@ -6740,7 +7130,23 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "isFromExtension": true
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -6860,6 +7266,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -6875,6 +7295,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7282,6 +7718,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -7299,6 +7751,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "AccessoryColor",
@@ -7464,6 +7930,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "VisualSettingsProvider",
@@ -7842,6 +8322,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -8302,6 +8798,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -8495,6 +9007,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -8566,6 +9094,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",

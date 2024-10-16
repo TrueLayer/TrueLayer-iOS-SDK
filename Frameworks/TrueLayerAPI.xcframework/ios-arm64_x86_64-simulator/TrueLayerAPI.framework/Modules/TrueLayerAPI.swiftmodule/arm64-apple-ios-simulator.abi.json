@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TrueLayerAPI",
+    "printedName": "TrueLayerAPI",
     "children": [
       {
         "kind": "Import",
@@ -456,6 +456,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -519,6 +533,22 @@
                             "isFromExtension": true,
                             "spi_group_names": [
                               "TrueLayer"
+                            ],
+                            "conformances": [
+                              {
+                                "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              }
                             ]
                           }
                         ],
@@ -533,6 +563,22 @@
                         "isFromExtension": true,
                         "spi_group_names": [
                           "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
                         ]
                       },
                       {
@@ -550,6 +596,22 @@
                         "isFromExtension": true,
                         "spi_group_names": [
                           "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
                         ]
                       },
                       {
@@ -762,6 +824,20 @@
                             "conformances": [
                               {
                                 "kind": "Conformance",
+                                "name": "Copyable",
+                                "printedName": "Copyable",
+                                "usr": "s:s8CopyableP",
+                                "mangledName": "$ss8CopyableP"
+                              },
+                              {
+                                "kind": "Conformance",
+                                "name": "Escapable",
+                                "printedName": "Escapable",
+                                "usr": "s:s9EscapableP",
+                                "mangledName": "$ss9EscapableP"
+                              },
+                              {
+                                "kind": "Conformance",
                                 "name": "Decodable",
                                 "printedName": "Decodable",
                                 "usr": "s:Se",
@@ -810,6 +886,22 @@
                         "isFromExtension": true,
                         "spi_group_names": [
                           "TrueLayer"
+                        ],
+                        "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          }
                         ]
                       }
                     ],
@@ -824,6 +916,22 @@
                     "isFromExtension": true,
                     "spi_group_names": [
                       "TrueLayer"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   }
                 ],
@@ -838,6 +946,22 @@
                 "isFromExtension": true,
                 "spi_group_names": [
                   "TrueLayer"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               },
               {
@@ -1191,6 +1315,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "RequestsManager",
                             "printedName": "RequestsManager",
                             "usr": "s:12TrueLayerAPI15RequestsManagerP",
@@ -1486,6 +1624,20 @@
                           "TrueLayer"
                         ],
                         "conformances": [
+                          {
+                            "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
                           {
                             "kind": "Conformance",
                             "name": "RequestsManager",
@@ -2053,6 +2205,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "RequestsManager",
                             "printedName": "RequestsManager",
                             "usr": "s:12TrueLayerAPI15RequestsManagerP",
@@ -2072,6 +2238,22 @@
                     "isFromExtension": true,
                     "spi_group_names": [
                       "TrueLayer"
+                    ],
+                    "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      }
                     ]
                   }
                 ],
@@ -2086,6 +2268,22 @@
                 "isFromExtension": true,
                 "spi_group_names": [
                   "TrueLayer"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -2100,6 +2298,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -2377,6 +2591,20 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
@@ -2426,6 +2654,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -2440,6 +2684,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2510,6 +2770,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -2962,6 +3236,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3253,6 +3543,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3583,6 +3889,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "RequestsManagerConfigurationProvider",
@@ -4210,20 +4530,6 @@
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
-      "kind": "StringLiteral",
-      "offset": 685,
-      "length": 17,
-      "value": "\"text_with_image\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/SubmitUserAccount+SharedRequestModels.swift",
-      "kind": "StringLiteral",
-      "offset": 324,
-      "length": 17,
-      "value": "\"user_account_id\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/SubmitUserAccount+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 324,
@@ -4243,27 +4549,6 @@
       "offset": 2620,
       "length": 24,
       "value": "\"user_account_selection\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2526,
-      "length": 20,
-      "value": "\"provider_selection\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2620,
-      "length": 24,
-      "value": "\"user_account_selection\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3412,
-      "length": 24,
-      "value": "\"authorization_required\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
@@ -4289,44 +4574,9 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 1190,
-      "length": 18,
-      "value": "\"merchant_account\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1238,
-      "length": 18,
-      "value": "\"external_account\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
-      "kind": "StringLiteral",
       "offset": 3589,
       "length": 26,
       "value": "\"sort_code_account_number\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3589,
-      "length": 26,
-      "value": "\"sort_code_account_number\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1968,
-      "length": 15,
-      "value": "\"user_selected\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2009,
-      "length": 13,
-      "value": "\"preselected\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
@@ -4352,13 +4602,6 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3090,
-      "length": 17,
-      "value": "\"text_with_image\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
-      "kind": "StringLiteral",
       "offset": 9192,
       "length": 16,
       "value": "\"account_number\""
@@ -4369,27 +4612,6 @@
       "offset": 9640,
       "length": 11,
       "value": "\"sort_code\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9192,
-      "length": 16,
-      "value": "\"account_number\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 9640,
-      "length": 11,
-      "value": "\"sort_code\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 681,
-      "length": 6,
-      "value": "\"next\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
@@ -4415,37 +4637,9 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2768,
-      "length": 6,
-      "value": "\"next\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2821,
-      "length": 5,
-      "value": "\"uri\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
-      "kind": "StringLiteral",
       "offset": 6818,
       "length": 24,
       "value": "\"authorization_required\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 6818,
-      "length": 24,
-      "value": "\"authorization_required\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3270,
-      "length": 4,
-      "value": "\"id\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
@@ -4460,13 +4654,6 @@
       "offset": 3813,
       "length": 15,
       "value": "\"bank_transfer\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/SchemeSelection+SinglePaymentResponseModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1749,
-      "length": 13,
-      "value": "\"auto-submit\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/SchemeSelection+SinglePaymentResponseModels.swift",
@@ -4663,20 +4850,6 @@
       "offset": 3135,
       "length": 11,
       "value": "\"someToken\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
-      "kind": "StringLiteral",
-      "offset": 323,
-      "length": 9,
-      "value": "\"payment\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
-      "kind": "StringLiteral",
-      "offset": 352,
-      "length": 9,
-      "value": "\"mandate\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
@@ -4922,13 +5095,6 @@
       "offset": 1569,
       "length": 11,
       "value": "\"someToken\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",
-      "kind": "StringLiteral",
-      "offset": 825,
-      "length": 25,
-      "value": "\"payments-experience-api\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",

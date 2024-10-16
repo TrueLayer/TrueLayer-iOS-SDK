@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TrueLayerUI",
+    "printedName": "TrueLayerUI",
     "children": [
       {
         "kind": "Import",
@@ -114,6 +114,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -909,6 +923,23 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1272,6 +1303,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -4190,6 +4235,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -4382,6 +4443,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -4450,7 +4525,23 @@
               "AccessControl"
             ],
             "isFromExtension": true,
-            "hasMissingDesignatedInitializers": true
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -4460,6 +4551,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4526,6 +4633,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SideEffect",
             "printedName": "SideEffect",
             "usr": "s:21TrueLayerArchitecture10SideEffectP",
@@ -4567,6 +4688,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReturningSideEffect",
             "printedName": "ReturningSideEffect",
             "usr": "s:21TrueLayerArchitecture19ReturningSideEffectP",
@@ -4606,6 +4741,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "StateUpdater",
@@ -4942,6 +5091,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Dependencies",
@@ -6893,6 +7056,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -7157,6 +7336,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -7299,6 +7494,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -8238,6 +8449,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -9007,6 +9234,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -9570,6 +9813,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -10804,6 +11063,22 @@
                 "isFromExtension": true,
                 "spi_group_names": [
                   "TrueLayer"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -10818,6 +11093,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -10833,6 +11124,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "State",
@@ -10911,6 +11216,20 @@
           "TrueLayer"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Accessory",
@@ -11155,6 +11474,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11429,6 +11764,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11550,6 +11901,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11632,8 +11999,9 @@
             "moduleName": "TrueLayerUI",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -11786,9 +12154,44 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessibilityPerformEscape",
+            "printedName": "accessibilityPerformEscape()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11TrueLayerUI30TLViewControllerWithLocalStateC26accessibilityPerformEscapeSbyF",
+            "mangledName": "$s11TrueLayerUI30TLViewControllerWithLocalStateC26accessibilityPerformEscapeSbyF",
+            "moduleName": "TrueLayerUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController, τ_0_0.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
+            "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
+            "overriding": true,
+            "objc_name": "accessibilityPerformEscape",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
             ],
             "spi_group_names": [
               "TrueLayer"
@@ -11813,6 +12216,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController, τ_0_0.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
             "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -11867,6 +12271,7 @@
             "overriding": true,
             "implicit": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -11920,6 +12325,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -11969,6 +12375,7 @@
             "overriding": true,
             "implicit": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -11985,6 +12392,7 @@
         "genericSig": "<τ_0_0 where τ_0_0 : UIKit.UIView, τ_0_0 : TrueLayerArchitecture.TLModelledViewWithViewController, τ_0_0.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
         "sugared_genericSig": "<V where V : UIKit.UIView, V : TrueLayerArchitecture.TLModelledViewWithViewController, V.VM : TrueLayerArchitecture.TLStatefulViewModelWithLocalState>",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "SPIAccessControl"
@@ -12002,6 +12410,356 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Presentable",
+            "printedName": "Presentable",
+            "usr": "s:21TrueLayerArchitecture11PresentableP",
+            "mangledName": "$s21TrueLayerArchitecture11PresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TLNavigationController",
+        "printedName": "TLNavigationController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(navigationBarClass:toolbarClass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TLNavigationController",
+                "printedName": "TrueLayerUI.TLNavigationController",
+                "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AnyObject.Type)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AnyObject.Type)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "any AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController(im)initWithNavigationBarClass:toolbarClass:",
+            "mangledName": "$s11TrueLayerUI22TLNavigationControllerC18navigationBarClass07toolbarH0ACyXlXpSg_AFtcfc",
+            "moduleName": "TrueLayerUI",
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "5.0",
+            "objc_name": "initWithNavigationBarClass:toolbarClass:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "Available"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rootViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TLNavigationController",
+                "printedName": "TrueLayerUI.TLNavigationController",
+                "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController(im)initWithRootViewController:",
+            "mangledName": "$s11TrueLayerUI22TLNavigationControllerC08rootViewE0ACSo06UIViewE0C_tcfc",
+            "moduleName": "TrueLayerUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithRootViewController:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TLNavigationController",
+                "printedName": "TrueLayerUI.TLNavigationController",
+                "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController(im)initWithNibName:bundle:",
+            "mangledName": "$s11TrueLayerUI22TLNavigationControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "TrueLayerUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TrueLayerUI.TLNavigationController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TLNavigationController",
+                    "printedName": "TrueLayerUI.TLNavigationController",
+                    "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController(im)initWithCoder:",
+            "mangledName": "$s11TrueLayerUI22TLNavigationControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "TrueLayerUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TrueLayerUI@objc(cs)TLNavigationController",
+        "mangledName": "$s11TrueLayerUI22TLNavigationControllerC",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "TrueLayer"
+        ],
+        "superclassUsr": "c:objc(cs)UINavigationController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UINavigationController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Presentable",
+            "printedName": "Presentable",
+            "usr": "s:21TrueLayerArchitecture11PresentableP",
+            "mangledName": "$s21TrueLayerArchitecture11PresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -14344,6 +15102,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -15017,6 +15791,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Makeup",
                 "printedName": "Makeup",
                 "usr": "s:11TrueLayerUI6MakeupP",
@@ -15071,6 +15859,7 @@
                     "mangledName": "$s11TrueLayerUI0C0O7SDKRootO4ViewC5setupyyF",
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
+                      "Preconcurrency",
                       "Custom",
                       "Final",
                       "AccessControl",
@@ -15097,6 +15886,7 @@
                     "mangledName": "$s11TrueLayerUI0C0O7SDKRootO4ViewC5styleyyF",
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
+                      "Preconcurrency",
                       "Custom",
                       "Final",
                       "AccessControl"
@@ -15122,6 +15912,7 @@
                     "mangledName": "$s11TrueLayerUI0C0O7SDKRootO4ViewC6layoutyyF",
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
+                      "Preconcurrency",
                       "Custom",
                       "Final",
                       "AccessControl"
@@ -15161,6 +15952,7 @@
                     "mangledName": "$s11TrueLayerUI0C0O7SDKRootO4ViewC6update03oldE5ModelyAE0eH0VSg_tF",
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
+                      "Preconcurrency",
                       "Custom",
                       "Final",
                       "AccessControl"
@@ -15198,6 +15990,7 @@
                     "declAttributes": [
                       "Dynamic",
                       "ObjC",
+                      "Preconcurrency",
                       "Custom",
                       "Override"
                     ],
@@ -15242,6 +16035,7 @@
                     "declAttributes": [
                       "Dynamic",
                       "ObjC",
+                      "Preconcurrency",
                       "Custom",
                       "Required"
                     ],
@@ -15256,6 +16050,7 @@
                 "mangledName": "$s11TrueLayerUI0C0O7SDKRootO4ViewC",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
+                  "Preconcurrency",
                   "Custom",
                   "Final",
                   "AccessControl",
@@ -15279,6 +16074,20 @@
                     "printedName": "TLModelledViewWithViewController",
                     "usr": "s:21TrueLayerArchitecture018TLModelledViewWithE10ControllerP",
                     "mangledName": "$s21TrueLayerArchitecture018TLModelledViewWithE10ControllerP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -15406,6 +16215,7 @@
                     "declAttributes": [
                       "Final",
                       "ObjC",
+                      "Preconcurrency",
                       "Custom",
                       "AccessControl",
                       "Override"
@@ -15433,6 +16243,35 @@
                     "overriding": true,
                     "declAttributes": [
                       "Final",
+                      "Preconcurrency",
+                      "Custom",
+                      "AccessControl",
+                      "Override"
+                    ],
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "handleSDKNavigationInterference",
+                    "printedName": "handleSDKNavigationInterference()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:11TrueLayerUI0C0O7SDKRootO14ViewControllerC31handleSDKNavigationInterferenceyyYaF",
+                    "mangledName": "$s11TrueLayerUI0C0O7SDKRootO14ViewControllerC31handleSDKNavigationInterferenceyyYaF",
+                    "moduleName": "TrueLayerUI",
+                    "overriding": true,
+                    "declAttributes": [
+                      "Final",
+                      "Preconcurrency",
                       "Custom",
                       "AccessControl",
                       "Override"
@@ -15481,6 +16320,7 @@
                     "overriding": true,
                     "implicit": true,
                     "declAttributes": [
+                      "Preconcurrency",
                       "Custom",
                       "Override"
                     ],
@@ -15525,6 +16365,7 @@
                     "declAttributes": [
                       "Dynamic",
                       "ObjC",
+                      "Preconcurrency",
                       "Custom",
                       "Required"
                     ],
@@ -15566,6 +16407,7 @@
                     "overriding": true,
                     "implicit": true,
                     "declAttributes": [
+                      "Preconcurrency",
                       "Custom",
                       "Override"
                     ],
@@ -15606,6 +16448,7 @@
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
                       "Final",
+                      "Preconcurrency",
                       "Custom",
                       "AccessControl"
                     ],
@@ -15673,6 +16516,7 @@
                     "moduleName": "TrueLayerUI",
                     "declAttributes": [
                       "Final",
+                      "Preconcurrency",
                       "Custom",
                       "AccessControl"
                     ],
@@ -15714,6 +16558,7 @@
                 "mangledName": "$s11TrueLayerUI0C0O7SDKRootO14ViewControllerC",
                 "moduleName": "TrueLayerUI",
                 "declAttributes": [
+                  "Preconcurrency",
                   "Custom",
                   "Final",
                   "AccessControl"
@@ -15735,10 +16580,24 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
-                    "name": "Routable",
-                    "printedName": "Routable",
-                    "usr": "s:21TrueLayerArchitecture8RoutableP",
-                    "mangledName": "$s21TrueLayerArchitecture8RoutableP"
+                    "name": "Presentable",
+                    "printedName": "Presentable",
+                    "usr": "s:21TrueLayerArchitecture11PresentableP",
+                    "mangledName": "$s21TrueLayerArchitecture11PresentableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -15802,6 +16661,13 @@
                     "printedName": "UITraitChangeObservable",
                     "usr": "s:5UIKit23UITraitChangeObservableP",
                     "mangledName": "$s5UIKit23UITraitChangeObservableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Routable",
+                    "printedName": "Routable",
+                    "usr": "s:21TrueLayerArchitecture8RoutableP",
+                    "mangledName": "$s21TrueLayerArchitecture8RoutableP"
                   }
                 ]
               },
@@ -15926,6 +16792,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "TLLocalState",
                         "printedName": "TLLocalState",
                         "usr": "s:21TrueLayerArchitecture12TLLocalStateP",
@@ -15946,6 +16826,20 @@
                   "TrueLayer"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "TLStatefulViewModelWithLocalState",
@@ -16024,6 +16918,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -16154,6 +17064,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -17058,6 +17984,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -17191,6 +18131,20 @@
                       "TrueLayer"
                     ],
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "SDKSideEffect",
@@ -17335,6 +18289,20 @@
                       "TrueLayer"
                     ],
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "SDKSideEffect",
@@ -17507,6 +18475,20 @@
                     "conformances": [
                       {
                         "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
+                      {
+                        "kind": "Conformance",
                         "name": "SDKSideEffect",
                         "printedName": "SDKSideEffect",
                         "usr": "s:11TrueLayerUI13SDKSideEffectP",
@@ -17573,6 +18555,22 @@
                 ],
                 "spi_group_names": [
                   "TrueLayer"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
                 ]
               }
             ],
@@ -17586,6 +18584,22 @@
             "isFromExtension": true,
             "spi_group_names": [
               "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -18981,6 +19995,9 @@
                     "moduleName": "TrueLayerUI",
                     "static": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Nonisolated"
+                    ],
                     "spi_group_names": [
                       "TrueLayer"
                     ],
@@ -19032,6 +20049,20 @@
                   "TrueLayer"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Hashable",
@@ -19715,6 +20746,9 @@
                     "moduleName": "TrueLayerUI",
                     "static": true,
                     "implicit": true,
+                    "declAttributes": [
+                      "Nonisolated"
+                    ],
                     "spi_group_names": [
                       "TrueLayer"
                     ],
@@ -19766,6 +20800,20 @@
                   "TrueLayer"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Hashable",
@@ -19849,6 +20897,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Error",
                 "printedName": "Error",
                 "usr": "s:s5ErrorP",
@@ -19889,6 +20951,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -21324,6 +22402,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -21387,6 +22481,22 @@
         ],
         "spi_group_names": [
           "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -21834,13 +22944,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TrueLayerUI"
-      },
-      {
-        "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
         "declKind": "Import",
@@ -22235,6 +23338,7 @@
             "mangledName": "$sSo8UIDeviceC11TrueLayerUIE10deviceTypeSSSgvp",
             "moduleName": "TrueLayerUI",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -22284,6 +23388,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIDevice",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22297,6 +23402,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22366,6 +23485,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIScreen",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22379,6 +23499,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22471,6 +23605,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -22508,6 +23656,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -22522,6 +23684,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UINavigationController",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22537,6 +23700,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22613,6 +23790,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UITabBarController",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22628,6 +23806,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22704,6 +23896,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIViewController",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22718,6 +23911,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22810,6 +24017,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -22840,6 +24061,7 @@
             "mangledName": "$sSo13UIApplicationC11TrueLayerUIE4openyy10Foundation3URLVF",
             "moduleName": "TrueLayerUI",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -22857,6 +24079,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIApplication",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22871,6 +24094,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -23118,42 +24355,42 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 590,
+      "offset": 591,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 605,
+      "offset": 606,
       "length": 21,
       "value": "\"alert.abort.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 718,
+      "offset": 717,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 733,
+      "offset": 732,
       "length": 30,
       "value": "\"alert.abort.noContinueButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 848,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 863,
       "length": 19,
       "value": "\"alert.abort.title\""
     },
@@ -23174,1472 +24411,1458 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1248,
+      "offset": 1266,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1263,
+      "offset": 1281,
       "length": 36,
       "value": "\"alert.accountSelection.delete.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1406,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
+      "offset": 1421,
       "length": 44,
       "value": "\"alert.accountSelection.delete.cancelButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1530,
+      "offset": 1554,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 1569,
       "length": 44,
       "value": "\"alert.accountSelection.delete.removeButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 1702,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1717,
       "length": 37,
       "value": "\"alert.accountSelection.delete.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1850,
+      "offset": 1877,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1865,
+      "offset": 1892,
       "length": 27,
       "value": "\"alert.action.goBackButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1972,
+      "offset": 2010,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 2025,
       "length": 26,
       "value": "\"alert.action.retryButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2240,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2255,
       "length": 27,
       "value": "\"alert.cancel.mandate.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2331,
+      "offset": 2369,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2346,
+      "offset": 2384,
       "length": 28,
       "value": "\"alert.cancel.mandate.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2525,
+      "offset": 2586,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2540,
+      "offset": 2601,
       "length": 30,
       "value": "\"alert.cancelFallback.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2654,
+      "offset": 2719,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2669,
+      "offset": 2734,
       "length": 31,
       "value": "\"alert.cancelFallback.noButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2781,
+      "offset": 2859,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2796,
+      "offset": 2874,
       "length": 28,
       "value": "\"alert.cancelFallback.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2906,
+      "offset": 2988,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 2921,
+      "offset": 3003,
       "length": 32,
       "value": "\"alert.cancelFallback.yesButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3129,
+      "offset": 3233,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3144,
+      "offset": 3248,
       "length": 29,
       "value": "\"alert.generic.error.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3251,
+      "offset": 3356,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3371,
       "length": 27,
       "value": "\"alert.generic.error.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3528,
+      "offset": 3651,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3543,
+      "offset": 3666,
       "length": 29,
       "value": "\"alert.network.error.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3658,
+      "offset": 3782,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3673,
+      "offset": 3797,
       "length": 27,
       "value": "\"alert.network.error.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3833,
+      "offset": 3957,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 3848,
+      "offset": 3972,
       "length": 37,
       "value": "\"alert.providerDowntime.goBackButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4236,
+      "offset": 4412,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4251,
+      "offset": 4427,
       "length": 30,
       "value": "\"alert.providerDowntime.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4475,
+      "offset": 4669,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4490,
+      "offset": 4684,
       "length": 28,
       "value": "\"alert.server.error.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4603,
+      "offset": 4797,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4618,
+      "offset": 4812,
       "length": 26,
       "value": "\"alert.server.error.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4795,
+      "offset": 4989,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4810,
+      "offset": 5004,
       "length": 22,
       "value": "\"legal.headline.right\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 4986,
+      "offset": 5178,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5001,
+      "offset": 5193,
       "length": 36,
       "value": "\"screen.additionalInput.actionTitle\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5123,
+      "offset": 5320,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5138,
+      "offset": 5335,
       "length": 35,
       "value": "\"screen.additionalInput.isRequired\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5251,
+      "offset": 5448,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5266,
+      "offset": 5463,
       "length": 30,
       "value": "\"screen.additionalInput.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5490,
+      "offset": 5707,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5505,
+      "offset": 5722,
       "length": 52,
       "value": "\"screen.additionalInput.branch.selection.view.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5704,
+      "offset": 5927,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 5719,
+      "offset": 5942,
       "length": 35,
       "value": "\"screen.additionalInput.form.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6168,
+      "offset": 6409,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6183,
+      "offset": 6424,
       "length": 48,
       "value": "\"screen.additionalInput.form.input.ibanNotValid\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6806,
+      "offset": 7054,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 6821,
+      "offset": 7069,
       "length": 44,
       "value": "\"screen.additionalInput.form.input.required\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7004,
+      "offset": 7275,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7019,
+      "offset": 7290,
       "length": 41,
       "value": "\"screen.additionalInput.noDataView.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7185,
+      "offset": 7453,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7200,
+      "offset": 7468,
       "length": 42,
       "value": "\"screen.additionalInput.placeholder.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7357,
+      "offset": 7626,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7372,
+      "offset": 7641,
       "length": 50,
       "value": "\"screen.additionalInput.placeholder.numeric.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7557,
+      "offset": 7840,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7572,
+      "offset": 7855,
       "length": 42,
       "value": "\"screen.additionalInput.radioSelect.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7735,
+      "offset": 8016,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7750,
+      "offset": 8031,
       "length": 55,
       "value": "\"screen.additionalInput.radioSelect.actionButton.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7972,
+      "offset": 8252,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 7987,
+      "offset": 8267,
       "length": 50,
       "value": "\"screen.additionalInput.select.search.placeholder\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8306,
+      "offset": 8592,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8321,
+      "offset": 8607,
       "length": 71,
       "value": "\"screen.additionalInputs.singleChoiceList.section.previouslyUsed.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8544,
+      "offset": 8831,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8559,
+      "offset": 8846,
       "length": 28,
       "value": "\"screen.confirmPayment.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8959,
+      "offset": 9261,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 8974,
+      "offset": 9276,
       "length": 32,
       "value": "\"screen.confirmPayment.subtitle\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9095,
+      "offset": 9397,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9110,
+      "offset": 9412,
       "length": 29,
       "value": "\"screen.confirmPayment.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9283,
+      "offset": 9615,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9298,
+      "offset": 9630,
       "length": 34,
       "value": "\"screen.confirmPayment.alert.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9408,
+      "offset": 9740,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9423,
+      "offset": 9755,
       "length": 36,
       "value": "\"screen.confirmPayment.alert.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9540,
+      "offset": 9871,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9555,
+      "offset": 9886,
       "length": 35,
       "value": "\"screen.confirmPayment.alert.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9712,
+      "offset": 10050,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 9727,
+      "offset": 10065,
       "length": 39,
       "value": "\"screen.confirmPayment.continue.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10546,
+      "offset": 10922,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10561,
+      "offset": 10937,
       "length": 48,
       "value": "\"screen.consent.components.information.fca.info\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10762,
+      "offset": 11140,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10777,
+      "offset": 11155,
       "length": 61,
       "value": "\"screen.consent.components.information.howDoesThisWork.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 10989,
+      "offset": 11367,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11004,
+      "offset": 11382,
       "length": 37,
       "value": "\"screen.consent.mandate.cancellation\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11403,
+      "offset": 11781,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11418,
+      "offset": 11796,
       "length": 39,
       "value": "\"screen.consent.mandate.paymentDetails\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11895,
+      "offset": 12273,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 11910,
+      "offset": 12288,
       "length": 30,
       "value": "\"screen.consent.mandate.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12018,
+      "offset": 12396,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12033,
+      "offset": 12411,
       "length": 30,
       "value": "\"screen.consent.mandate.today\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12208,
+      "offset": 12586,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12223,
+      "offset": 12601,
       "length": 49,
       "value": "\"screen.consent.mandate.bulletList.cancelAnyTime\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12385,
+      "offset": 12763,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12400,
+      "offset": 12778,
       "length": 47,
       "value": "\"screen.consent.mandate.bulletList.connectOnce\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12557,
+      "offset": 12935,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12572,
+      "offset": 12950,
       "length": 49,
       "value": "\"screen.consent.mandate.bulletList.fcaAuthorized\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12756,
+      "offset": 13134,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12771,
+      "offset": 13149,
       "length": 40,
       "value": "\"screen.consent.mandate.continue.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12978,
+      "offset": 13356,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 12993,
+      "offset": 13371,
       "length": 42,
       "value": "\"screen.consent.mandate.details.fca.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13477,
+      "offset": 13855,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13492,
+      "offset": 13870,
       "length": 53,
       "value": "\"screen.consent.mandate.details.howDoesThisWork.info\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13851,
+      "offset": 14229,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13866,
+      "offset": 14244,
       "length": 46,
       "value": "\"screen.consent.mandate.details.security.info\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 13999,
+      "offset": 14377,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 14014,
+      "offset": 14392,
       "length": 47,
       "value": "\"screen.consent.mandate.details.security.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17407,
+      "offset": 17815,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17422,
+      "offset": 17830,
       "length": 45,
       "value": "\"screen.consent.send.howDoesThisWork.body.eu\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17912,
+      "offset": 18374,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 17927,
+      "offset": 18389,
       "length": 45,
       "value": "\"screen.consent.send.howDoesThisWork.body.uk\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18729,
+      "offset": 19227,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18744,
+      "offset": 19242,
       "length": 48,
       "value": "\"screen.consent.signupPlus.howDoesThisWork.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18940,
+      "offset": 19443,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 18955,
+      "offset": 19458,
       "length": 31,
       "value": "\"screen.countrySelection.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19123,
+      "offset": 19635,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19138,
+      "offset": 19650,
       "length": 40,
       "value": "\"screen.countrySelection.noResults.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19267,
+      "offset": 19781,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19282,
+      "offset": 19796,
       "length": 41,
       "value": "\"screen.countrySelection.noResults.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19447,
+      "offset": 19961,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19462,
+      "offset": 19976,
       "length": 47,
       "value": "\"screen.countrySelection.searchBar.placeholder\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19671,
+      "offset": 20185,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 19686,
+      "offset": 20200,
       "length": 31,
       "value": "\"screen.mandate.details.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20130,
+      "offset": 20644,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20145,
+      "offset": 20659,
       "length": 30,
       "value": "\"screen.mandate.details.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20586,
+      "offset": 21100,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20601,
+      "offset": 21115,
       "length": 39,
       "value": "\"screen.mandate.howItWorks.connectOnce\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20744,
+      "offset": 21258,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20759,
+      "offset": 21273,
       "length": 38,
       "value": "\"screen.mandate.howItWorks.editRemove\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20970,
+      "offset": 21484,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 20985,
+      "offset": 21499,
       "length": 35,
       "value": "\"screen.mandate.howItWorks.infoBox\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21127,
+      "offset": 21641,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21142,
+      "offset": 21656,
       "length": 34,
       "value": "\"screen.mandate.howItWorks.noCard\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21261,
+      "offset": 21775,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21276,
+      "offset": 21790,
       "length": 33,
       "value": "\"screen.mandate.howItWorks.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21445,
+      "offset": 21974,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21460,
+      "offset": 21989,
       "length": 32,
       "value": "\"screen.providerSelection.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21669,
+      "offset": 22207,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21684,
+      "offset": 22222,
       "length": 58,
       "value": "\"screen.providerSelection.cell.error.providerNotAvailable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21869,
+      "offset": 22408,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 21884,
+      "offset": 22423,
       "length": 38,
       "value": "\"screen.providerSelection.error.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22036,
+      "offset": 22578,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22051,
+      "offset": 22593,
       "length": 46,
       "value": "\"screen.providerSelection.error.cancel.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22226,
+      "offset": 22788,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22241,
+      "offset": 22803,
       "length": 48,
       "value": "\"screen.providerSelection.error.tryAgain.button\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22746,
+      "offset": 23319,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22761,
+      "offset": 23334,
       "length": 41,
       "value": "\"screen.providerSelection.noResults.body\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22888,
+      "offset": 23467,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 22903,
+      "offset": 23482,
       "length": 42,
       "value": "\"screen.providerSelection.noResults.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23069,
+      "offset": 23648,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23084,
+      "offset": 23663,
       "length": 48,
       "value": "\"screen.providerSelection.searchBar.placeholder\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23659,
+      "offset": 24247,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23674,
+      "offset": 24262,
       "length": 63,
       "value": "\"screen.providerSelection.section.allBanks.singleCountry.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23949,
+      "offset": 24545,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 23964,
+      "offset": 24560,
       "length": 67,
       "value": "\"screen.providerSelection.section.filtered.multipleCountries.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 24178,
+      "offset": 24780,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 24193,
+      "offset": 24795,
       "length": 63,
       "value": "\"screen.providerSelection.section.filtered.singleCountry.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 24406,
+      "offset": 25014,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 24421,
+      "offset": 25029,
       "length": 55,
       "value": "\"screen.providerSelection.section.previouslyUsed.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25603,
+      "offset": 26220,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 25618,
+      "offset": 26235,
       "length": 35,
       "value": "\"screen.result.mandate.title.error\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 26026,
+      "offset": 26642,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 26041,
+      "offset": 26657,
       "length": 39,
       "value": "\"screen.result.payment.button.continue\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 26165,
+      "offset": 26781,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 26180,
+      "offset": 26796,
       "length": 37,
       "value": "\"screen.result.payment.button.goBack\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 27639,
+      "offset": 28334,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 27654,
+      "offset": 28349,
       "length": 43,
       "value": "\"screen.result.payment.subtitle.inProgress\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30760,
+      "offset": 31742,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30775,
+      "offset": 31757,
       "length": 37,
       "value": "\"screen.result.payment.title.allDone\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30923,
+      "offset": 31913,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 30938,
+      "offset": 31928,
       "length": 49,
       "value": "\"screen.result.payment.title.authorizationFailed\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31075,
+      "offset": 32068,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31090,
+      "offset": 32083,
       "length": 38,
       "value": "\"screen.result.payment.title.canceled\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31225,
+      "offset": 32227,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31240,
+      "offset": 32242,
       "length": 37,
       "value": "\"screen.result.payment.title.generic\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31370,
+      "offset": 32375,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31385,
+      "offset": 32390,
       "length": 40,
       "value": "\"screen.result.payment.title.inProgress\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31532,
+      "offset": 32545,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31547,
+      "offset": 32560,
       "length": 47,
       "value": "\"screen.result.payment.title.insufficientFunds\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31701,
+      "offset": 32720,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31716,
+      "offset": 32735,
       "length": 43,
       "value": "\"screen.result.payment.title.limitExceeded\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31869,
+      "offset": 32892,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 31884,
+      "offset": 32907,
       "length": 44,
       "value": "\"screen.result.payment.title.sessionExpired\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32124,
+      "offset": 33169,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32139,
+      "offset": 33184,
       "length": 33,
       "value": "\"screen.schemeSelection.subtitle\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32261,
+      "offset": 33322,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32276,
+      "offset": 33337,
       "length": 30,
       "value": "\"screen.schemeSelection.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32663,
+      "offset": 33743,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32678,
+      "offset": 33758,
       "length": 43,
       "value": "\"screen.userAccountSelection.sectionHeader\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32828,
+      "offset": 33912,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 32843,
+      "offset": 33927,
       "length": 49,
       "value": "\"screen.userAccountSelection.useDifferentAccount\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33023,
+      "offset": 34107,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33038,
+      "offset": 34122,
       "length": 35,
       "value": "\"screen.userPriming.doneThisButton\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33199,
+      "offset": 34290,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33214,
+      "offset": 34305,
       "length": 21,
       "value": "\"screen.wait.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33477,
+      "offset": 34602,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33492,
+      "offset": 34617,
       "length": 36,
       "value": "\"screen.wait.timeout.dialog.message\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33625,
+      "offset": 34767,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33640,
+      "offset": 34782,
       "length": 34,
       "value": "\"screen.wait.timeout.dialog.title\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33805,
+      "offset": 34948,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33820,
+      "offset": 34963,
       "length": 47,
       "value": "\"screen.wait.timeout.dialog.button.keepwaiting\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33953,
+      "offset": 35100,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Derived\/Sources\/TuistStrings+TrueLayerUI.swift",
       "kind": "StringLiteral",
-      "offset": 33968,
+      "offset": 35115,
       "length": 41,
       "value": "\"screen.wait.timeout.dialog.button.leave\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3202,
-      "length": 28,
-      "value": "\"continueFooterActionButton\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 3331,
-      "length": 40,
-      "value": "\"continueFooterLegalsActionableTextView\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AccessibilityIdentifier+UI.swift",
@@ -24661,48 +25884,6 @@
       "offset": 416,
       "length": 3,
       "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
-      "kind": "StringLiteral",
-      "offset": 235,
-      "length": 13,
-      "value": "\"branch-name\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
-      "kind": "StringLiteral",
-      "offset": 327,
-      "length": 15,
-      "value": "\"remitter-iban\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
-      "kind": "StringLiteral",
-      "offset": 434,
-      "length": 8,
-      "value": "\"psu-id\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
-      "kind": "StringLiteral",
-      "offset": 534,
-      "length": 14,
-      "value": "\"psu-password\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
-      "kind": "StringLiteral",
-      "offset": 705,
-      "length": 22,
-      "value": "\"sca_method_selection\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
-      "kind": "StringLiteral",
-      "offset": 835,
-      "length": 19,
-      "value": "\"otp_authorization\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/AdditionalInputs\/CustomKey+AdditionalInputs.swift",
@@ -24775,13 +25956,6 @@
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Event+AnalyticsRequestModels.swift",
-      "kind": "StringLiteral",
-      "offset": 5588,
-      "length": 9,
-      "value": "\"payment\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Analytics\/Manager+Analytics.swift",
       "kind": "StringLiteral",
       "offset": 347,
@@ -24845,20 +26019,6 @@
       "value": "\"https:\/\/truelayer.com\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/BottomSheet\/Information\/View+BottomSheetInformation.swift",
-      "kind": "StringLiteral",
-      "offset": 113,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Components\/Information\/View+ConsentInformation.swift",
-      "kind": "StringLiteral",
-      "offset": 120,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/Details\/Header\/View+MandateDetailsHeader.swift",
       "kind": "IntegerLiteral",
       "offset": 305,
@@ -24866,32 +26026,11 @@
       "value": "64"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/Details\/Header\/View+MandateDetailsHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 159,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/Limits\/View+MandateLimits.swift",
-      "kind": "StringLiteral",
-      "offset": 112,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Consent\/Mandate\/View+MandateConsent.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 40,
       "value": "\"com.truelayer.mandateConsent.learnMore\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/SearchBar+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 168,
-      "length": 9,
-      "value": "\"TrueLayerUI.SearchBar\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/Cell\/Primary\/View+PrimaryTableCell.swift",
@@ -24915,27 +26054,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/EmptyState\/View+TableEmptyState.swift",
-      "kind": "StringLiteral",
-      "offset": 113,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/SearchController\/SearchController+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 173,
-      "length": 16,
-      "value": "\"TrueLayerUI.SearchController\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/SearchController\/SearchController+UI.swift",
-      "kind": "StringLiteral",
-      "offset": 173,
-      "length": 16,
-      "value": "\"TrueLayerUI.SearchController\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/Table\/View+Table.swift",
       "kind": "BooleanLiteral",
       "offset": 1204,
@@ -24955,13 +26073,6 @@
       "offset": 365,
       "length": 2,
       "value": "64"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/TransactionPartiesImages\/View+TransactionPartiesImages.swift",
-      "kind": "StringLiteral",
-      "offset": 205,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Custom\/ViewHeader\/View+ViewHeader.swift",
@@ -24985,39 +26096,11 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ActionableTextView\/ActionableTextView+DesignComponents.swift",
-      "kind": "StringLiteral",
-      "offset": 202,
-      "length": 18,
-      "value": "\"TrueLayerUI.ActionableTextView\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/Banner\/View+Banner.swift",
       "kind": "IntegerLiteral",
       "offset": 248,
       "length": 2,
       "value": "18"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/Button\/Secondary+Button.swift",
-      "kind": "StringLiteral",
-      "offset": 204,
-      "length": 9,
-      "value": "\"TrueLayerUI.Secondary\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/Button\/Textual+Button.swift",
-      "kind": "StringLiteral",
-      "offset": 202,
-      "length": 7,
-      "value": "\"TrueLayerUI.Textual\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/View+ContinueFooter.swift",
-      "kind": "StringLiteral",
-      "offset": 160,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/ContinueFooter\/ViewModel+ContinueFooter.swift",
@@ -25067,13 +26150,6 @@
       "offset": 700,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/RemoteImage\/Web+RemoteImage.swift",
-      "kind": "StringLiteral",
-      "offset": 243,
-      "length": 3,
-      "value": "\"TrueLayerUI.SVG\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/DesignComponents\/TextField\/View+TextField.swift",
@@ -25132,95 +26208,11 @@
       "value": "32"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/UserPriming\/Step\/View+UserPrimingStep.swift",
-      "kind": "StringLiteral",
-      "offset": 145,
-      "length": 4,
-      "value": "\"TrueLayerUI.View\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/UserPriming\/View+UserPriming.swift",
       "kind": "IntegerLiteral",
       "offset": 1263,
       "length": 2,
       "value": "26"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 196,
-      "length": 23,
-      "value": "\"checkmark.circle.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 241,
-      "length": 14,
-      "value": "\"chevron.left\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 288,
-      "length": 12,
-      "value": "\"clock.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 319,
-      "length": 10,
-      "value": "\"doc.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 357,
-      "length": 18,
-      "value": "\"info.circle.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 390,
-      "length": 11,
-      "value": "\"lock.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 424,
-      "length": 26,
-      "value": "\"questionmark.circle.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 481,
-      "length": 24,
-      "value": "\"shield.lefthalf.filled\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 531,
-      "length": 23,
-      "value": "\"checkmark.shield.fill\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 7,
-      "value": "\"xmark\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
-      "kind": "StringLiteral",
-      "offset": 616,
-      "length": 19,
-      "value": "\"xmark.circle.fill\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Utils\/SFSymbol.swift",
@@ -25351,41 +26343,6 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
       "kind": "StringLiteral",
-      "offset": 1257,
-      "length": 16,
-      "value": "\"payment_status\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 1302,
-      "length": 16,
-      "value": "\"failure_reason\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 1347,
-      "length": 17,
-      "value": "\"failure_details\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 1412,
-      "length": 20,
-      "value": "\"api_failure_reason\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 1459,
-      "length": 14,
-      "value": "\"result_shown\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
       "offset": 5128,
       "length": 20,
       "value": "\"insufficient_funds\""
@@ -25424,55 +26381,6 @@
       "offset": 5811,
       "length": 31,
       "value": "\"invalid_generic_without_retry\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 5128,
-      "length": 20,
-      "value": "\"insufficient_funds\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 5248,
-      "length": 24,
-      "value": "\"payment_limit_exceeded\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 5381,
-      "length": 27,
-      "value": "\"user_canceled_at_provider\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 5501,
-      "length": 22,
-      "value": "\"authorization_failed\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 5685,
-      "length": 25,
-      "value": "\"invalid_account_details\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 5811,
-      "length": 31,
-      "value": "\"invalid_generic_without_retry\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 8214,
-      "length": 24,
-      "value": "\"authorization_required\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
@@ -25561,282 +26469,9 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
       "kind": "StringLiteral",
-      "offset": 9532,
-      "length": 13,
-      "value": "\"no_internet\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 9620,
-      "length": 14,
-      "value": "\"user_aborted\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 9768,
-      "length": 38,
-      "value": "\"user_aborted_temporarily_unavailable\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 9939,
-      "length": 39,
-      "value": "\"user_aborted_failed_to_notify_backend\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10009,
-      "length": 21,
-      "value": "\"communication_issue\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10163,
-      "length": 16,
-      "value": "\"payment_failed\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10277,
-      "length": 16,
-      "value": "\"wait_abandoned\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10405,
-      "length": 20,
-      "value": "\"wait_token_expired\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10544,
-      "length": 33,
-      "value": "\"processor_context_not_available\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10685,
-      "length": 18,
-      "value": "\"invalid_resource\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 10917,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
       "offset": 12108,
       "length": 20,
       "value": "\"api_failure_reason\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 12108,
-      "length": 20,
-      "value": "\"api_failure_reason\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 12676,
-      "length": 22,
-      "value": "\"authorization_failed\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 12850,
-      "length": 9,
-      "value": "\"blocked\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 13168,
-      "length": 10,
-      "value": "\"canceled\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 13298,
-      "length": 22,
-      "value": "\"constraint_violation\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 13466,
-      "length": 9,
-      "value": "\"expired\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 13598,
-      "length": 20,
-      "value": "\"insufficient_funds\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 13726,
-      "length": 23,
-      "value": "\"internal_server_error\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 13878,
-      "length": 25,
-      "value": "\"invalid_account_details\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14023,
-      "length": 29,
-      "value": "\"invalid_account_holder_name\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14180,
-      "length": 29,
-      "value": "\"invalid_beneficiary_account\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14331,
-      "length": 21,
-      "value": "\"invalid_credentials\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14514,
-      "length": 23,
-      "value": "\"invalid_mandate_state\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14658,
-      "length": 13,
-      "value": "\"invalid_otp\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14812,
-      "length": 26,
-      "value": "\"invalid_remitter_account\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 14928,
-      "length": 17,
-      "value": "\"invalid_request\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15044,
-      "length": 19,
-      "value": "\"invalid_sort_code\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15146,
-      "length": 17,
-      "value": "\"mandate_revoked\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15293,
-      "length": 16,
-      "value": "\"not_authorized\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15411,
-      "length": 24,
-      "value": "\"payment_limit_exceeded\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15533,
-      "length": 16,
-      "value": "\"provider_error\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15682,
-      "length": 18,
-      "value": "\"provider_expired\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15805,
-      "length": 19,
-      "value": "\"provider_rejected\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 15905,
-      "length": 10,
-      "value": "\"rejected\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 16026,
-      "length": 20,
-      "value": "\"scheme_unavailable\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 16121,
-      "length": 15,
-      "value": "\"unknown_error\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 16268,
-      "length": 27,
-      "value": "\"user_canceled_at_provider\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",
-      "kind": "StringLiteral",
-      "offset": 16398,
-      "length": 23,
-      "value": "\"verification_declined\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/WebView\/HPPMessage+WebView.swift",

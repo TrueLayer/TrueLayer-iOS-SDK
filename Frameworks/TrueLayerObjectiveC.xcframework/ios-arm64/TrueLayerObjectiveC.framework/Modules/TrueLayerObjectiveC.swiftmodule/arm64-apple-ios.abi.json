@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "TrueLayerObjectiveC",
+    "printedName": "TrueLayerObjectiveC",
     "children": [
       {
         "kind": "Import",
@@ -948,6 +948,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1404,6 +1418,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1629,6 +1657,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1826,6 +1868,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2038,6 +2094,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2401,6 +2471,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3761,6 +3845,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3988,6 +4086,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4198,6 +4310,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4805,6 +4931,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5154,6 +5294,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5548,6 +5702,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5771,6 +5939,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6183,6 +6365,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6932,6 +7128,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7834,6 +8044,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8281,6 +8505,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8644,6 +8882,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8805,6 +9057,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9398,6 +9664,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9543,6 +9823,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9908,6 +10202,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10084,6 +10392,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10530,6 +10852,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10710,174 +11046,6 @@
       "value": "18"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 416,
-      "length": 16,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 517,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 619,
-      "length": 12,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 703,
-      "length": 18,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 757,
-      "length": 14,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 895,
-      "length": 15,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 963,
-      "length": 15,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1032,
-      "length": 15,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1115,
-      "length": 7,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1201,
-      "length": 16,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1293,
-      "length": 11,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1407,
-      "length": 18,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1471,
-      "length": 12,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1562,
-      "length": 13,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1625,
-      "length": 16,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1711,
-      "length": 14,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1803,
-      "length": 15,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1875,
-      "length": 12,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 157,
-      "length": 16,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 181,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 196,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 213,
-      "length": 19,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 240,
-      "length": 7,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 255,
-      "length": 13,
-      "value": "6"
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 157,
@@ -10925,55 +11093,6 @@
       "offset": 409,
       "length": 8,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 409,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerProcessMandateFailure.swift",
-      "kind": "StringLiteral",
-      "offset": 118,
-      "length": 30,
-      "value": "\"TrueLayerObjectiveC.TrueLayerProcessMandateFailure\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerProcessMandateSuccess.swift",
-      "kind": "StringLiteral",
-      "offset": 118,
-      "length": 30,
-      "value": "\"TrueLayerObjectiveC.TrueLayerProcessMandateSuccess\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 419,
-      "length": 11,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 532,
-      "length": 10,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 652,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 772,
-      "length": 6,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
@@ -11193,279 +11312,6 @@
       "value": "27"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 16,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 496,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 632,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 745,
-      "length": 21,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 856,
-      "length": 24,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 975,
-      "length": 12,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1085,
-      "length": 18,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1216,
-      "length": 22,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1308,
-      "length": 14,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1400,
-      "length": 15,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1515,
-      "length": 17,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1643,
-      "length": 13,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1732,
-      "length": 20,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1831,
-      "length": 13,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1956,
-      "length": 15,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2021,
-      "length": 16,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2113,
-      "length": 12,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2229,
-      "length": 22,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2323,
-      "length": 18,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2430,
-      "length": 14,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2568,
-      "length": 15,
-      "value": "21"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2636,
-      "length": 15,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2705,
-      "length": 15,
-      "value": "23"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2801,
-      "length": 16,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2893,
-      "length": 11,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3008,
-      "length": 18,
-      "value": "26"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3072,
-      "length": 12,
-      "value": "27"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerProcessSinglePaymentFailure.swift",
-      "kind": "StringLiteral",
-      "offset": 122,
-      "length": 36,
-      "value": "\"TrueLayerObjectiveC.TrueLayerProcessSinglePaymentFailure\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerProcessSinglePaymentSuccess.swift",
-      "kind": "StringLiteral",
-      "offset": 125,
-      "length": 36,
-      "value": "\"TrueLayerObjectiveC.TrueLayerProcessSinglePaymentSuccess\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 163,
-      "length": 16,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 187,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 202,
-      "length": 9,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 219,
-      "length": 17,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 20,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 272,
-      "length": 22,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 302,
-      "length": 19,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 329,
-      "length": 7,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 344,
-      "length": 21,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 373,
-      "length": 13,
-      "value": "10"
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 163,
@@ -11564,69 +11410,6 @@
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 283,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 470,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 533,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 638,
-      "length": 4,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 425,
-      "length": 11,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 538,
-      "length": 10,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 636,
-      "length": 8,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 744,
-      "length": 7,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 864,
-      "length": 6,
-      "value": "5"
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 425,
@@ -11667,41 +11450,6 @@
       "offset": 230,
       "length": 10,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 230,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerColors.swift",
-      "kind": "StringLiteral",
-      "offset": 1622,
-      "length": 25,
-      "value": "\"TrueLayerObjectiveC.TrueLayerBackgroundColors\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerColors.swift",
-      "kind": "StringLiteral",
-      "offset": 6279,
-      "length": 22,
-      "value": "\"TrueLayerObjectiveC.TrueLayerContentColors\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerColors.swift",
-      "kind": "StringLiteral",
-      "offset": 11677,
-      "length": 24,
-      "value": "\"TrueLayerObjectiveC.TrueLayerAccessoryColors\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandateContext.swift",
-      "kind": "StringLiteral",
-      "offset": 64,
-      "length": 23,
-      "value": "\"TrueLayerObjectiveC.TrueLayerMandateContext\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
@@ -11711,39 +11459,11 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
-      "kind": "StringLiteral",
-      "offset": 123,
-      "length": 27,
-      "value": "\"TrueLayerObjectiveC.TrueLayerMandatePreferences\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerPresentationStyle.swift",
-      "kind": "StringLiteral",
-      "offset": 53,
-      "length": 26,
-      "value": "\"TrueLayerObjectiveC.TrueLayerPresentationStyle\""
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentContext.swift",
-      "kind": "StringLiteral",
-      "offset": 64,
-      "length": 29,
-      "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentContext\""
-    },
-    {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
       "kind": "BooleanLiteral",
       "offset": 1347,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 33,
-      "value": "\"TrueLayerObjectiveC.TrueLayerSinglePaymentPreferences\""
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerVisualSettings.swift",
