@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.8.0] - Manual Redirect Retry
+
+### Changed
+- Some bank apps don't work very well, so when a user is redirect from the SDK to a banking app of their choice, oftentimes they would get stuck. There's a new system in place where the SDK will attempt to reload the payment to then allow the user to try tapping the "Go to bank" button again. 
+
+Implementation-wise, this means : 
+1. The SDK is only created, configured, and presented once per payment, and that same SDK instance is used start-to-finish until the payment fails or succeeds.
+2. The `.redirect` case is no longer sent by the SDK for the client app to handle, and is deprecated. 
+
+Other than that, your previous SDK configuration/handling code should remain fully compatible without a need for any updates.
+
 ## [3.2.2] - Accessibility & QoL
 
 ### Added

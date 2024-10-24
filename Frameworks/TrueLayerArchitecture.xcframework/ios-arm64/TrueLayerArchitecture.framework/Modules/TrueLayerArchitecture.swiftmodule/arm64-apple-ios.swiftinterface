@@ -22,7 +22,7 @@ public protocol Routable : AnyObject {
     get
   }
   nonisolated public init(rootViewController: UIKit.UIViewController)
-  @_Concurrency.MainActor public func start(on viewController: UIKit.UIViewController, animated: Swift.Bool = false)
+  @_Concurrency.MainActor public func start(on viewController: UIKit.UIViewController, animated: Swift.Bool = false, onRestart: @escaping @_Concurrency.MainActor (UIKit.UIViewController) -> Swift.Void = { _ in })
   @_Concurrency.MainActor public func show<Route>(routeIdentifier: Route, context: Any? = nil, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
   @_Concurrency.MainActor public func hide<Route>(routeIdentifier: Route, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
   @_Concurrency.MainActor public func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true)
