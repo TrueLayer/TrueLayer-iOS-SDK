@@ -159,6 +159,25 @@ public enum Analytics {
   @_spi(TrueLayer) public func shouldShowBranchSelection(paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) -> Swift.Bool
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
+  @_spi(TrueLayer) public struct HandleRedirectURLState {
+    @_spi(TrueLayer) public enum State {
+      @_spi(TrueLayer) case notHandled
+      @_spi(TrueLayer) case handling
+      @_spi(TrueLayer) case handled
+      @_spi(TrueLayer) case expectingRedirectRetry
+      @_spi(TrueLayer) case fallbackHPPRetry
+      @_spi(TrueLayer) public static func == (a: TrueLayerUI.SDKState.HandleRedirectURLState.State, b: TrueLayerUI.SDKState.HandleRedirectURLState.State) -> Swift.Bool
+      @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+      @_spi(TrueLayer) public var hashValue: Swift.Int {
+        @_spi(TrueLayer) get
+      }
+    }
+    @_spi(TrueLayer) public var state: TrueLayerUI.SDKState.HandleRedirectURLState.State
+    @_spi(TrueLayer) public var fallbackHPPDidPerformRedirectRetry: Swift.Bool
+    @_spi(TrueLayer) public init(state: TrueLayerUI.SDKState.HandleRedirectURLState.State, fallbackHPPDidPerformRedirectRetry: Swift.Bool = false)
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.SDKState {
   @_spi(TrueLayer) public struct LocalisationState {
     @_spi(TrueLayer) public var additionalInputsLocalizations: [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization]
     @_spi(TrueLayer) public var legalCopy: TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy?
@@ -211,6 +230,7 @@ public enum Analytics {
   @_spi(TrueLayer) public var singlePaymentInformation: TrueLayerUI.SDKState.SinglePayment
   @_spi(TrueLayer) public var mandateInformation: TrueLayerUI.SDKState.Mandate
   @_spi(TrueLayer) public var localisation: TrueLayerUI.SDKState.LocalisationState
+  @_spi(TrueLayer) public var handleRedirectState: TrueLayerUI.SDKState.HandleRedirectURLState
   @_spi(TrueLayer) public init()
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
@@ -328,6 +348,7 @@ public enum Analytics {
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func trackLoadedAnalytics() async
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func handleSDKNavigationInterference() async
+    @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func restartPayment()
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>, localState: TrueLayerUI.UI.SDKRoot.ViewModel.LocalState)
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder __argument1: Foundation.NSCoder)
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>)
@@ -372,6 +393,7 @@ public enum Analytics {
     @_spi(TrueLayer) case schemeSelection
     @_spi(TrueLayer) case resultScreen
     @_spi(TrueLayer) case webView
+    @_spi(TrueLayer) case awaitRedirectResponse
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
@@ -497,6 +519,8 @@ public enum Analytics {
 }
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
 extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerUI.SDKState.HandleRedirectURLState.State : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerUI.SDKState.HandleRedirectURLState.State : Swift.Hashable {}
 @_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.Equatable {}
 @_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.Hashable {}
 @_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.RawRepresentable {}

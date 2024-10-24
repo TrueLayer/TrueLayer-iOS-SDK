@@ -6099,6 +6099,105 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "handleRedirectState",
+            "printedName": "handleRedirectState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HandleRedirectURLState",
+                "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState",
+                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvp",
+            "mangledName": "$s11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvp",
+            "moduleName": "TrueLayerUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HandleRedirectURLState",
+                    "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvg",
+                "mangledName": "$s11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvg",
+                "moduleName": "TrueLayerUI",
+                "implicit": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HandleRedirectURLState",
+                    "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvs",
+                "mangledName": "$s11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvs",
+                "moduleName": "TrueLayerUI",
+                "implicit": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvM",
+                "mangledName": "$s11TrueLayerUI8SDKStateV19handleRedirectStateAC06HandleF8URLStateVvM",
+                "moduleName": "TrueLayerUI",
+                "implicit": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -7052,6 +7151,626 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "HandleRedirectURLState",
+            "printedName": "HandleRedirectURLState",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "State",
+                "printedName": "State",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "notHandled",
+                    "printedName": "notHandled",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerUI.SDKState.HandleRedirectURLState.State.Type) -> TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                            "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO10notHandledyA2GmF",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO10notHandledyA2GmF",
+                    "moduleName": "TrueLayerUI",
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "handling",
+                    "printedName": "handling",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerUI.SDKState.HandleRedirectURLState.State.Type) -> TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                            "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO8handlingyA2GmF",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO8handlingyA2GmF",
+                    "moduleName": "TrueLayerUI",
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "handled",
+                    "printedName": "handled",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerUI.SDKState.HandleRedirectURLState.State.Type) -> TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                            "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO7handledyA2GmF",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO7handledyA2GmF",
+                    "moduleName": "TrueLayerUI",
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "expectingRedirectRetry",
+                    "printedName": "expectingRedirectRetry",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerUI.SDKState.HandleRedirectURLState.State.Type) -> TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                            "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO09expectingF5RetryyA2GmF",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO09expectingF5RetryyA2GmF",
+                    "moduleName": "TrueLayerUI",
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "fallbackHPPRetry",
+                    "printedName": "fallbackHPPRetry",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerUI.SDKState.HandleRedirectURLState.State.Type) -> TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                            "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "State",
+                                "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO16fallbackHPPRetryyA2GmF",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO16fallbackHPPRetryyA2GmF",
+                    "moduleName": "TrueLayerUI",
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ]
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "==",
+                    "printedName": "==(_:_:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO2eeoiySbAG_AGtFZ",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO2eeoiySbAG_AGtFZ",
+                    "moduleName": "TrueLayerUI",
+                    "static": true,
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "hashValue",
+                    "printedName": "hashValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO9hashValueSivp",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO9hashValueSivp",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO9hashValueSivg",
+                        "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO9hashValueSivg",
+                        "moduleName": "TrueLayerUI",
+                        "implicit": true,
+                        "spi_group_names": [
+                          "TrueLayer"
+                        ],
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "hash",
+                    "printedName": "hash(into:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hasher",
+                        "printedName": "Swift.Hasher",
+                        "paramValueOwnership": "InOut",
+                        "usr": "s:s6HasherV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO4hash4intoys6HasherVz_tF",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO4hash4intoys6HasherVz_tF",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO",
+                "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "state",
+                "printedName": "state",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvp",
+                "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvg",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                        "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvs",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvs",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvM",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5stateAE5StateOvM",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fallbackHPPDidPerformRedirectRetry",
+                "printedName": "fallbackHPPDidPerformRedirectRetry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvp",
+                "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvp",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvg",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvg",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvs",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvs",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvM",
+                    "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV021fallbackHPPDidPerformF5RetrySbvM",
+                    "moduleName": "TrueLayerUI",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(state:fallbackHPPDidPerformRedirectRetry:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HandleRedirectURLState",
+                    "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "TrueLayerUI.SDKState.HandleRedirectURLState.State",
+                    "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5state021fallbackHPPDidPerformF5RetryA2E5StateO_Sbtcfc",
+                "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV5state021fallbackHPPDidPerformF5RetryA2E5StateO_Sbtcfc",
+                "moduleName": "TrueLayerUI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11TrueLayerUI8SDKStateV22HandleRedirectURLStateV",
+            "mangledName": "$s11TrueLayerUI8SDKStateV22HandleRedirectURLStateV",
+            "moduleName": "TrueLayerUI",
+            "declAttributes": [
+              "AccessControl"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -12827,6 +13546,104 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerArchitecture",
         "printedName": "TrueLayerArchitecture",
         "declKind": "Import",
@@ -13498,6 +14315,33 @@
         "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
         "declKind": "Import",
         "moduleName": "TrueLayerUI",
         "declAttributes": [
@@ -16282,6 +17126,32 @@
                     "funcSelfKind": "NonMutating"
                   },
                   {
+                    "kind": "Function",
+                    "name": "restartPayment",
+                    "printedName": "restartPayment()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:11TrueLayerUI0C0O7SDKRootO14ViewControllerC14restartPaymentyyF",
+                    "mangledName": "$s11TrueLayerUI0C0O7SDKRootO14ViewControllerC14restartPaymentyyF",
+                    "moduleName": "TrueLayerUI",
+                    "declAttributes": [
+                      "Preconcurrency",
+                      "Custom",
+                      "Final",
+                      "AccessControl"
+                    ],
+                    "spi_group_names": [
+                      "TrueLayer"
+                    ],
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
                     "kind": "Constructor",
                     "name": "init",
                     "printedName": "init(store:localState:)",
@@ -17882,6 +18752,46 @@
                 "declKind": "EnumElement",
                 "usr": "s:11TrueLayerUI0C0O5RouteO7webViewyA2EmF",
                 "mangledName": "$s11TrueLayerUI0C0O5RouteO7webViewyA2EmF",
+                "moduleName": "TrueLayerUI",
+                "spi_group_names": [
+                  "TrueLayer"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "awaitRedirectResponse",
+                "printedName": "awaitRedirectResponse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerUI.UI.Route.Type) -> TrueLayerUI.UI.Route",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "TrueLayerUI.UI.Route",
+                        "usr": "s:11TrueLayerUI0C0O5RouteO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerUI.UI.Route.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Route",
+                            "printedName": "TrueLayerUI.UI.Route",
+                            "usr": "s:11TrueLayerUI0C0O5RouteO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11TrueLayerUI0C0O5RouteO21awaitRedirectResponseyA2EmF",
+                "mangledName": "$s11TrueLayerUI0C0O5RouteO21awaitRedirectResponseyA2EmF",
                 "moduleName": "TrueLayerUI",
                 "spi_group_names": [
                   "TrueLayer"
@@ -26010,6 +26920,13 @@
       "offset": 1154,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Architecture\/State\/HandleRedirectURL+SDKState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 374,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/UI\/Architecture\/State\/MerchantPreferences+SDKState.swift",

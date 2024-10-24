@@ -3271,7 +3271,9 @@
                             "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO8redirectyA2KmF",
                             "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO8redirectyA2KmF",
                             "moduleName": "TrueLayerSDK",
+                            "deprecated": true,
                             "declAttributes": [
+                              "Available",
                               "RawDocComment"
                             ]
                           },
@@ -5929,7 +5931,9 @@
                             "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5StateO8redirectyA2KmF",
                             "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5StateO8redirectyA2KmF",
                             "moduleName": "TrueLayerSDK",
+                            "deprecated": true,
                             "declAttributes": [
+                              "Available",
                               "RawDocComment"
                             ]
                           },
@@ -7337,6 +7341,16 @@
         "kind": "Import",
         "name": "TrueLayerCore",
         "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerLogger",
+        "printedName": "TrueLayerLogger",
         "declKind": "Import",
         "moduleName": "TrueLayerSDK",
         "declAttributes": [
@@ -9188,30 +9202,44 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
-      "offset": 471,
+      "offset": 511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 1577,
+      "offset": 2046,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 9132,
+      "offset": 9601,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9626,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 9825,
+      "offset": 10343,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10368,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",

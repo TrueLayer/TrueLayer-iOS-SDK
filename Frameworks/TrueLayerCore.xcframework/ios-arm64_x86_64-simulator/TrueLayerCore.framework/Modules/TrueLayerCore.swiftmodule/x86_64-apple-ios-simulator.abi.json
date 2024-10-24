@@ -585,6 +585,69 @@
                               },
                               {
                                 "kind": "Var",
+                                "name": "consentRedirectRetry",
+                                "printedName": "consentRedirectRetry",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step.Type) -> (Foundation.URL) -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(Foundation.URL) -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "Step",
+                                            "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step",
+                                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO4StepO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "Tuple",
+                                            "printedName": "(url: Foundation.URL)",
+                                            "children": [
+                                              {
+                                                "kind": "TypeNominal",
+                                                "name": "URL",
+                                                "printedName": "Foundation.URL",
+                                                "usr": "s:10Foundation3URLV"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "Step",
+                                            "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step",
+                                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO4StepO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO4StepO20consentRedirectRetryyAM10Foundation3URLV_tcAMmF",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO4StepO20consentRedirectRetryyAM10Foundation3URLV_tcAMmF",
+                                "moduleName": "TrueLayerCore",
+                                "declAttributes": [
+                                  "RawDocComment"
+                                ],
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ]
+                              },
+                              {
+                                "kind": "Var",
                                 "name": "wait",
                                 "printedName": "wait",
                                 "children": [
@@ -9376,49 +9439,6 @@
                           },
                           {
                             "kind": "Var",
-                            "name": "redirect",
-                            "printedName": "redirect",
-                            "children": [
-                              {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(TrueLayerCore.Core.Payments.Models.SinglePayment.State.Type) -> TrueLayerCore.Core.Payments.Models.SinglePayment.State",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "State",
-                                    "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.State",
-                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Metatype",
-                                    "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.State.Type",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "State",
-                                        "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.State",
-                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            "declKind": "EnumElement",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO8redirectyA2KmF",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO8redirectyA2KmF",
-                            "moduleName": "TrueLayerCore",
-                            "declAttributes": [
-                              "RawDocComment"
-                            ],
-                            "spi_group_names": [
-                              "TrueLayer"
-                            ]
-                          },
-                          {
-                            "kind": "Var",
                             "name": "settled",
                             "printedName": "settled",
                             "children": [
@@ -9610,6 +9630,72 @@
                               "TrueLayer"
                             ],
                             "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "allCases",
+                            "printedName": "allCases",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[TrueLayerCore.Core.Payments.Models.SinglePayment.State]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "State",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.State",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO8allCasesSayAKGvpZ",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO8allCasesSayAKGvpZ",
+                            "moduleName": "TrueLayerCore",
+                            "static": true,
+                            "implicit": true,
+                            "declAttributes": [
+                              "Nonisolated"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Array",
+                                    "printedName": "[TrueLayerCore.Core.Payments.Models.SinglePayment.State]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "State",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.State",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
+                                      }
+                                    ],
+                                    "usr": "s:Sa"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO8allCasesSayAKGvgZ",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO8allCasesSayAKGvgZ",
+                                "moduleName": "TrueLayerCore",
+                                "static": true,
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
                           }
                         ],
                         "declKind": "Enum",
@@ -9652,6 +9738,36 @@
                             "printedName": "Hashable",
                             "usr": "s:SH",
                             "mangledName": "$sSH"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "CaseIterable",
+                            "printedName": "CaseIterable",
+                            "children": [
+                              {
+                                "kind": "TypeWitness",
+                                "name": "AllCases",
+                                "printedName": "AllCases",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Array",
+                                    "printedName": "[TrueLayerCore.Core.Payments.Models.SinglePayment.State]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "State",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.State",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
+                                      }
+                                    ],
+                                    "usr": "s:Sa"
+                                  }
+                                ]
+                              }
+                            ],
+                            "usr": "s:s12CaseIterableP",
+                            "mangledName": "$ss12CaseIterableP"
                           }
                         ]
                       }
@@ -10173,6 +10289,69 @@
                                 "declKind": "EnumElement",
                                 "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO17AuthorizationFlowV4StepO8redirectyAM10Foundation3URLV_tcAMmF",
                                 "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO17AuthorizationFlowV4StepO8redirectyAM10Foundation3URLV_tcAMmF",
+                                "moduleName": "TrueLayerCore",
+                                "declAttributes": [
+                                  "RawDocComment"
+                                ],
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ]
+                              },
+                              {
+                                "kind": "Var",
+                                "name": "consentRedirectRetry",
+                                "printedName": "consentRedirectRetry",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "(TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step.Type) -> (Foundation.URL) -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step",
+                                    "children": [
+                                      {
+                                        "kind": "TypeFunc",
+                                        "name": "Function",
+                                        "printedName": "(Foundation.URL) -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "Step",
+                                            "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step",
+                                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO17AuthorizationFlowV4StepO"
+                                          },
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "Tuple",
+                                            "printedName": "(url: Foundation.URL)",
+                                            "children": [
+                                              {
+                                                "kind": "TypeNominal",
+                                                "name": "URL",
+                                                "printedName": "Foundation.URL",
+                                                "usr": "s:10Foundation3URLV"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Metatype",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step.Type",
+                                        "children": [
+                                          {
+                                            "kind": "TypeNominal",
+                                            "name": "Step",
+                                            "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step",
+                                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO17AuthorizationFlowV4StepO"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "declKind": "EnumElement",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO17AuthorizationFlowV4StepO20consentRedirectRetryyAM10Foundation3URLV_tcAMmF",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO17AuthorizationFlowV4StepO20consentRedirectRetryyAM10Foundation3URLV_tcAMmF",
                                 "moduleName": "TrueLayerCore",
                                 "declAttributes": [
                                   "RawDocComment"
@@ -11344,49 +11523,6 @@
                             ]
                           },
                           {
-                            "kind": "Var",
-                            "name": "redirect",
-                            "printedName": "redirect",
-                            "children": [
-                              {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(TrueLayerCore.Core.Payments.Models.Mandate.State.Type) -> TrueLayerCore.Core.Payments.Models.Mandate.State",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "State",
-                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.State",
-                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO"
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Metatype",
-                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.State.Type",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "State",
-                                        "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.State",
-                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            "declKind": "EnumElement",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO8redirectyA2KmF",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO8redirectyA2KmF",
-                            "moduleName": "TrueLayerCore",
-                            "declAttributes": [
-                              "RawDocComment"
-                            ],
-                            "spi_group_names": [
-                              "TrueLayer"
-                            ]
-                          },
-                          {
                             "kind": "Function",
                             "name": "==",
                             "printedName": "==(_:_:)",
@@ -11493,6 +11629,72 @@
                               "TrueLayer"
                             ],
                             "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "allCases",
+                            "printedName": "allCases",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[TrueLayerCore.Core.Payments.Models.Mandate.State]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "State",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.State",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ],
+                            "declKind": "Var",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO8allCasesSayAKGvpZ",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO8allCasesSayAKGvpZ",
+                            "moduleName": "TrueLayerCore",
+                            "static": true,
+                            "implicit": true,
+                            "declAttributes": [
+                              "Nonisolated"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "accessors": [
+                              {
+                                "kind": "Accessor",
+                                "name": "Get",
+                                "printedName": "Get()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Array",
+                                    "printedName": "[TrueLayerCore.Core.Payments.Models.Mandate.State]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "State",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.State",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO"
+                                      }
+                                    ],
+                                    "usr": "s:Sa"
+                                  }
+                                ],
+                                "declKind": "Accessor",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO8allCasesSayAKGvgZ",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO8allCasesSayAKGvgZ",
+                                "moduleName": "TrueLayerCore",
+                                "static": true,
+                                "implicit": true,
+                                "spi_group_names": [
+                                  "TrueLayer"
+                                ],
+                                "accessorKind": "get"
+                              }
+                            ]
                           }
                         ],
                         "declKind": "Enum",
@@ -11535,6 +11737,36 @@
                             "printedName": "Hashable",
                             "usr": "s:SH",
                             "mangledName": "$sSH"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "CaseIterable",
+                            "printedName": "CaseIterable",
+                            "children": [
+                              {
+                                "kind": "TypeWitness",
+                                "name": "AllCases",
+                                "printedName": "AllCases",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Array",
+                                    "printedName": "[TrueLayerCore.Core.Payments.Models.Mandate.State]",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "State",
+                                        "printedName": "TrueLayerCore.Core.Payments.Models.Mandate.State",
+                                        "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO7MandateO5StateO"
+                                      }
+                                    ],
+                                    "usr": "s:Sa"
+                                  }
+                                ]
+                              }
+                            ],
+                            "usr": "s:s12CaseIterableP",
+                            "mangledName": "$ss12CaseIterableP"
                           }
                         ]
                       },

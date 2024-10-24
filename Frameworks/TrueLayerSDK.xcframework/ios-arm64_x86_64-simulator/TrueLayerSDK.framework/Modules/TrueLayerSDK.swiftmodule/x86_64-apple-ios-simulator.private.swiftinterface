@@ -7,6 +7,7 @@ import Swift
 @_spi(TrueLayer) import TrueLayerAPI
 @_spi(TrueLayer) import TrueLayerArchitecture
 @_spi(TrueLayer) import TrueLayerCore
+@_spi(TrueLayer) import TrueLayerLogger
 @_spi(TrueLayer) import TrueLayerNetwork
 @_spi(TrueLayer) import TrueLayerUI
 @_spi(TrueLayer) import TrueLayerUtils
@@ -112,6 +113,7 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public enum State {
     case authorized
+    @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
     case redirect
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
@@ -217,6 +219,7 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public enum State {
     case authorized
     case executed
+    @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
     case redirect
     case settled
     case wait
@@ -273,6 +276,7 @@ extension TrueLayerSDK.TrueLayer.Payments {
 }
 extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers public class Manager {
+    @objc deinit
     public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: any TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), additionalConfiguration: [TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String] = [:]) async
     public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.ProcessResult) -> Swift.Void)?)
     @available(*, deprecated, message: "Use `processSinglePayment` with `TrueLayer.Payments.Models.SinglePayment.ProcessResult` in the completion handler.")
@@ -282,7 +286,6 @@ extension TrueLayerSDK.TrueLayer.Payments {
     @available(*, deprecated, message: "Use `processMandate` with `TrueLayer.Payments.Models.Mandate.ProcessResult` in the completion handler.")
     public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error>) -> Swift.Void)?)
     public func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status
-    @objc deinit
   }
 }
 extension TrueLayerSDK.TrueLayer {

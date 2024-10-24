@@ -56,6 +56,7 @@ import _SwiftConcurrencyShims
 }
 @objc public enum TrueLayerMandateState : Swift.Int {
   case authorized
+  @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
   case redirect
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -154,6 +155,7 @@ import _SwiftConcurrencyShims
 @objc public enum TrueLayerSinglePaymentState : Swift.Int {
   case authorized
   case executed
+  @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
   case redirect
   case settled
   case wait

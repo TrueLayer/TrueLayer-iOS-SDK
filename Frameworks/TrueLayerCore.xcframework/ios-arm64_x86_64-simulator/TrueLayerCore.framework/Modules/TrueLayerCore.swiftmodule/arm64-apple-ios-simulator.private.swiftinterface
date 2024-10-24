@@ -48,6 +48,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case userAccountSelection(userAccounts: [TrueLayerCore.Core.Payments.Models.Shared.UserAccount])
     @_spi(TrueLayer) case providerSelection(providers: [TrueLayerCore.Core.Payments.Models.Shared.Provider])
     @_spi(TrueLayer) case redirect(uri: Foundation.URL)
+    @_spi(TrueLayer) case consentRedirectRetry(url: Foundation.URL)
     @_spi(TrueLayer) case consent
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step, b: TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Step) -> Swift.Bool
   }
@@ -79,11 +80,14 @@ import _SwiftConcurrencyShims
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Mandate {
-  @_spi(TrueLayer) public enum State {
+  @_spi(TrueLayer) public enum State : Swift.CaseIterable {
     @_spi(TrueLayer) case authorized
-    @_spi(TrueLayer) case redirect
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Mandate.State, b: TrueLayerCore.Core.Payments.Models.Mandate.State) -> Swift.Bool
     @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public typealias AllCases = [TrueLayerCore.Core.Payments.Models.Mandate.State]
+    @_spi(TrueLayer) nonisolated public static var allCases: [TrueLayerCore.Core.Payments.Models.Mandate.State] {
+      @_spi(TrueLayer) get
+    }
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -569,6 +573,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case additionalInputs(inputs: [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.`Type`])
     @_spi(TrueLayer) case providerSelection(providers: [TrueLayerCore.Core.Payments.Models.Shared.Provider])
     @_spi(TrueLayer) case redirect(url: Foundation.URL)
+    @_spi(TrueLayer) case consentRedirectRetry(url: Foundation.URL)
     @_spi(TrueLayer) case wait(displayMessage: Swift.String?)
     @_spi(TrueLayer) case schemeSelection
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step, b: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step) -> Swift.Bool
@@ -690,14 +695,17 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case other(reason: Swift.String)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason, b: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason) -> Swift.Bool
   }
-  @_spi(TrueLayer) public enum State {
+  @_spi(TrueLayer) public enum State : Swift.CaseIterable {
     @_spi(TrueLayer) case authorized
     @_spi(TrueLayer) case executed
-    @_spi(TrueLayer) case redirect
     @_spi(TrueLayer) case settled
     @_spi(TrueLayer) case wait
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.State, b: TrueLayerCore.Core.Payments.Models.SinglePayment.State) -> Swift.Bool
     @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(TrueLayer) public typealias AllCases = [TrueLayerCore.Core.Payments.Models.SinglePayment.State]
+    @_spi(TrueLayer) nonisolated public static var allCases: [TrueLayerCore.Core.Payments.Models.SinglePayment.State] {
+      @_spi(TrueLayer) get
+    }
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }

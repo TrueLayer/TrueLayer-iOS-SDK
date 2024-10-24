@@ -2257,6 +2257,16 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerLogger",
+        "printedName": "TrueLayerLogger",
+        "declKind": "Import",
+        "moduleName": "TrueLayerArchitecture",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2390,7 +2400,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(on:animated:)",
+            "printedName": "start(on:animated:onRestart:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2409,11 +2419,30 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIViewController) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TrueLayerArchitecture6RouterC5start2on8animatedySo16UIViewControllerC_SbtF",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC5start2on8animatedySo16UIViewControllerC_SbtF",
+            "usr": "s:21TrueLayerArchitecture6RouterC5start2on8animated0F7RestartySo16UIViewControllerC_SbyAIScMYcctF",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC5start2on8animated0F7RestartySo16UIViewControllerC_SbyAIScMYcctF",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "Custom",
@@ -6156,35 +6185,35 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 1085,
+      "offset": 1773,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 1731,
+      "offset": 2761,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 2907,
+      "offset": 3937,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 4279,
+      "offset": 5309,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 4789,
+      "offset": 5819,
       "length": 4,
       "value": "true"
     }

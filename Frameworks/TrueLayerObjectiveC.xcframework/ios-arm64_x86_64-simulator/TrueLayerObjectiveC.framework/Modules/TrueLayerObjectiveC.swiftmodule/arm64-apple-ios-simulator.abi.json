@@ -1565,7 +1565,9 @@
             "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState@TrueLayerMandateStateRedirect",
             "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO8redirectyA2CmF",
             "moduleName": "TrueLayerObjectiveC",
+            "deprecated": true,
             "declAttributes": [
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -5120,7 +5122,9 @@
             "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateRedirect",
             "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8redirectyA2CmF",
             "moduleName": "TrueLayerObjectiveC",
+            "deprecated": true,
             "declAttributes": [
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -11090,7 +11094,7 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateState.swift",
       "kind": "IntegerLiteral",
-      "offset": 409,
+      "offset": 552,
       "length": 8,
       "value": "1"
     },
@@ -11391,21 +11395,21 @@
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
       "kind": "IntegerLiteral",
-      "offset": 470,
+      "offset": 613,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
       "kind": "IntegerLiteral",
-      "offset": 533,
+      "offset": 676,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
       "kind": "IntegerLiteral",
-      "offset": 638,
+      "offset": 781,
       "length": 4,
       "value": "4"
     },
