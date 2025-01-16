@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerMockable
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
@@ -14,6 +14,16 @@ import _SwiftConcurrencyShims
   }
   @objc override dynamic public init()
   @objc deinit
+}
+extension TrueLayerMockable.File.Shared.AIS {
+  public enum Legals : Swift.String {
+    case modalSmallPrint
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
 }
 extension TrueLayerMockable.File.Mandate {
   public enum Get : Swift.String {
@@ -62,6 +72,16 @@ extension TrueLayerMockable.File {
   public enum Shared {
   }
 }
+extension TrueLayerMockable.File.Shared.PIS {
+  public enum Legals : Swift.String {
+    case textWithHowItWorks
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
 extension TrueLayerMockable.File.Shared {
   public enum Miscellaneous : Swift.String {
     case merchantConfiguration
@@ -87,11 +107,18 @@ extension TrueLayerMockable.File.Shared {
     public typealias RawValue = Swift.String
   }
 }
+extension TrueLayerMockable.File.Shared {
+  public enum AIS {
+  }
+  public enum PIS {
+  }
+}
 extension TrueLayerMockable.File.SinglePayment {
   public enum AuthorizationFlowResponse : Swift.String {
     case providerSelectionSingleCountry
     case providerSelectionMultipleCountries
     case consentThenRedirect
+    case syntheticConsentAISPIS
     case userAccountSelection
     case userAccountSelectionSingleAccount
     case consentThenAdditionalInputs
@@ -107,6 +134,8 @@ extension TrueLayerMockable.File.SinglePayment {
     case wait
     case providerHasInternalServerError
     case schemeSelection
+    case accountSelectionAdditionalInputs
+    case usernamePasswordAdditionalInputs
     public var rawValue: Swift.String {
       get
     }
@@ -175,6 +204,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public typealias RawValue = Swift.String
   }
 }
+extension TrueLayerMockable.File.Shared.AIS.Legals : Swift.Equatable {}
+extension TrueLayerMockable.File.Shared.AIS.Legals : Swift.Hashable {}
+extension TrueLayerMockable.File.Shared.AIS.Legals : Swift.RawRepresentable {}
 extension TrueLayerMockable.File.Mandate.Get : Swift.Equatable {}
 extension TrueLayerMockable.File.Mandate.Get : Swift.Hashable {}
 extension TrueLayerMockable.File.Mandate.Get : Swift.RawRepresentable {}
@@ -187,6 +219,9 @@ extension TrueLayerMockable.File.Mandate.Legals : Swift.RawRepresentable {}
 extension TrueLayerMockable.File.Mandate.Cancel : Swift.Equatable {}
 extension TrueLayerMockable.File.Mandate.Cancel : Swift.Hashable {}
 extension TrueLayerMockable.File.Mandate.Cancel : Swift.RawRepresentable {}
+extension TrueLayerMockable.File.Shared.PIS.Legals : Swift.Equatable {}
+extension TrueLayerMockable.File.Shared.PIS.Legals : Swift.Hashable {}
+extension TrueLayerMockable.File.Shared.PIS.Legals : Swift.RawRepresentable {}
 extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.Equatable {}
 extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.Hashable {}
 extension TrueLayerMockable.File.Shared.Miscellaneous : Swift.RawRepresentable {}

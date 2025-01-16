@@ -11688,350 +11688,350 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "Array",
       "offset": 993,
       "length": 25,
       "value": "[\"br\", \"gzip\", \"deflate\"]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "IntegerLiteral",
       "offset": 1199,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1472,
       "length": 14,
       "value": "\"TrueLayerSDK\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1666,
       "length": 160,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1691,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1720,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 1,
       "value": "\"; build:\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1776,
       "length": 1,
       "value": "\"; \""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1813,
       "length": 1,
       "value": "\") \""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 1825,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 4384,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Header+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 5272,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 1765,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/HTTPHeader\/Key+HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 7,
       "value": "\"Token\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 166,
       "length": 24,
       "value": "\"application\/javascript\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 17,
       "value": "\"application\/pdf\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 17,
       "value": "\"application\/sql\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 26,
       "value": "\"application\/vnd.api+json\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 17,
       "value": "\"application\/xml\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 17,
       "value": "\"application\/zip\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 12,
       "value": "\"audio\/mpeg\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 11,
       "value": "\"audio\/ogg\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 935,
       "length": 12,
       "value": "\"image\/avif\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1069,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 11,
       "value": "\"image\/png\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1176,
       "length": 15,
       "value": "\"image\/svg+xml\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1242,
       "length": 21,
       "value": "\"multipart\/form-data\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1301,
       "length": 10,
       "value": "\"text\/css\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1349,
       "length": 10,
       "value": "\"text\/csv\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1399,
       "length": 11,
       "value": "\"text\/html\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/MediaType+Network.swift",
       "kind": "StringLiteral",
       "offset": 1448,
       "length": 10,
       "value": "\"text\/xml\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 119,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/DecodableRequest\/Method+HTTP.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/Bundle+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 131,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "StringLiteral",
       "offset": 407,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
       "kind": "IntegerLiteral",
       "offset": 1140,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 352,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 568,
       "length": 3,
       "value": "450"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 692,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPStatusCode+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 909,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPVersion+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/HTTPVersion+MockNetwork.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 10,
       "value": "\"HTTP\/1.1\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/ServerResponse+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/ServerResponse+MockNetwork.swift",
       "kind": "Dictionary",
       "offset": 815,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
       "kind": "Array",
       "offset": 440,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
       "kind": "BooleanLiteral",
       "offset": 680,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/Network\/Mock\/URLProtocol+MockNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 866,
       "length": 1,

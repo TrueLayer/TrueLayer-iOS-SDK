@@ -1548,6 +1548,70 @@
                           },
                           {
                             "kind": "Function",
+                            "name": "getAISLegalCopy",
+                            "printedName": "getAISLegalCopy(providerCountryCode:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AISLegals",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.AISLegals",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9AISLegalsV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV15getAISLegalCopy19providerCountryCode0aB4Core0N0OADO6ModelsOAJO9AISLegalsVSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV15getAISLegalCopy19providerCountryCode0aB4Core0N0OADO6ModelsOAJO9AISLegalsVSS_tYaKF",
+                            "moduleName": "TrueLayerAPI",
+                            "declAttributes": [
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "throwing": true,
+                            "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Function",
+                            "name": "getPISLegalCopy",
+                            "printedName": "getPISLegalCopy(providerCountryCode:)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PISLegals",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.PISLegals",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "declKind": "Func",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV15getPISLegalCopy19providerCountryCode0aB4Core0N0OADO6ModelsOAJO9PISLegalsVSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV15getPISLegalCopy19providerCountryCode0aB4Core0N0OADO6ModelsOAJO9PISLegalsVSS_tYaKF",
+                            "moduleName": "TrueLayerAPI",
+                            "declAttributes": [
+                              "AccessControl",
+                              "RawDocComment"
+                            ],
+                            "spi_group_names": [
+                              "TrueLayer"
+                            ],
+                            "throwing": true,
+                            "funcSelfKind": "NonMutating"
+                          },
+                          {
+                            "kind": "Function",
                             "name": "getUserPriming",
                             "printedName": "getUserPriming(providerIdentifier:)",
                             "children": [
@@ -1763,12 +1827,12 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV18startAuthorization0aB4Core0K0OADO6ModelsOAJO0J4FlowO6StatusOyYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV18startAuthorization0aB4Core0K0OADO6ModelsOAJO0J4FlowO6StatusOyYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV18startAuthorization0aB4Core0K0OADO6ModelsOAJO0J4FlowV6StatusOyYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV18startAuthorization0aB4Core0K0OADO6ModelsOAJO0J4FlowV6StatusOyYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -1789,7 +1853,7 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -1799,8 +1863,8 @@
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV23submitProviderSelectiony0aB4Core0L0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSSYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV23submitProviderSelectiony0aB4Core0L0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSSYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV23submitProviderSelectiony0aB4Core0L0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSSYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV23submitProviderSelectiony0aB4Core0L0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSSYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -1821,12 +1885,12 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV13submitConsent0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowO6StatusOyYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV13submitConsent0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowO6StatusOyYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV13submitConsent0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowV6StatusOyYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV13submitConsent0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowV6StatusOyYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -1909,7 +1973,7 @@
                                     "kind": "TypeNominal",
                                     "name": "HelpText",
                                     "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.HelpText",
-                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO8HelpTextV"
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV16AdditionalInputsO8HelpTextV"
                                   }
                                 ],
                                 "usr": "s:Sa"
@@ -1922,8 +1986,8 @@
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV27getAdditionalInputsHelpText4withSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO0jK0O0lM0VGSS_tYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV27getAdditionalInputsHelpText4withSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO0jK0O0lM0VGSS_tYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV27getAdditionalInputsHelpText4withSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowV0jK0O0lM0VGSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV27getAdditionalInputsHelpText4withSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowV0jK0O0lM0VGSS_tYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -1949,7 +2013,7 @@
                                     "kind": "TypeNominal",
                                     "name": "Localization",
                                     "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization",
-                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO16AdditionalInputsO12LocalizationV"
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV16AdditionalInputsO12LocalizationV"
                                   }
                                 ],
                                 "usr": "s:Sa"
@@ -1962,8 +2026,8 @@
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizations11countryCodeSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO0jK0O12LocalizationVGSS_tYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizations11countryCodeSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO0jK0O12LocalizationVGSS_tYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizations11countryCodeSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowV0jK0O12LocalizationVGSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV32getAdditionalInputsLocalizations11countryCodeSay0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowV0jK0O12LocalizationVGSS_tYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -1978,13 +2042,13 @@
                           {
                             "kind": "Function",
                             "name": "submitForm",
-                            "printedName": "submitForm(inputs:)",
+                            "printedName": "submitForm(inputs:adjacent:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -2005,11 +2069,25 @@
                                   }
                                 ],
                                 "usr": "s:SD"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.Adjacent?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Adjacent",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.Adjacent",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO8AdjacentV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV10submitForm6inputs0aB4Core0L0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSDyS2SG_tYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV10submitForm6inputs0aB4Core0L0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSDyS2SG_tYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV10submitForm6inputs8adjacent0aB4Core0M0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSDyS2SG_AT6SharedO8AdjacentVSgtYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV10submitForm6inputs8adjacent0aB4Core0M0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSDyS2SG_AT6SharedO8AdjacentVSgtYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -2030,7 +2108,7 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -2040,8 +2118,8 @@
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV26submitUserAccountSelection04userK2ID0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSS_tYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV26submitUserAccountSelection04userK2ID0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSS_tYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV26submitUserAccountSelection04userK2ID0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV26submitUserAccountSelection04userK2ID0aB4Core0O0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSS_tYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -2062,12 +2140,12 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV29submitNewUserAccountSelection0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowO6StatusOyYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV29submitNewUserAccountSelection0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowO6StatusOyYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV29submitNewUserAccountSelection0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowV6StatusOyYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV29submitNewUserAccountSelection0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowV6StatusOyYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -2088,7 +2166,7 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -2098,8 +2176,8 @@
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV17deleteUserAccount04userK2ID0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSS_tYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV17deleteUserAccount04userK2ID0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSS_tYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV17deleteUserAccount04userK2ID0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSS_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV17deleteUserAccount04userK2ID0aB4Core0N0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSS_tYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -2166,7 +2244,7 @@
                                 "kind": "TypeNominal",
                                 "name": "Status",
                                 "printedName": "TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowO6StatusO"
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO13SinglePaymentO17AuthorizationFlowV6StatusO"
                               },
                               {
                                 "kind": "TypeNominal",
@@ -2176,8 +2254,8 @@
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV12submitSchemey0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSSYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV12submitSchemey0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowO6StatusOSSYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV12submitSchemey0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSSYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV12submitSchemey0aB4Core0K0OADO6ModelsOAJO17AuthorizationFlowV6StatusOSSYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -2942,6 +3020,60 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerNetwork",
+        "printedName": "TrueLayerNetwork",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerNetwork",
+        "printedName": "TrueLayerNetwork",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "TrueLayerUtils",
         "printedName": "TrueLayerUtils",
         "declKind": "Import",
@@ -3003,6 +3135,33 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerNetwork",
+        "printedName": "TrueLayerNetwork",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3053,6 +3212,33 @@
         "kind": "Import",
         "name": "TrueLayerCore",
         "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerCore",
+        "printedName": "TrueLayerCore",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerNetwork",
+        "printedName": "TrueLayerNetwork",
         "declKind": "Import",
         "moduleName": "TrueLayerAPI",
         "declAttributes": [
@@ -4503,6 +4689,80 @@
       },
       {
         "kind": "Import",
+        "name": "TrueLayerMockable",
+        "printedName": "TrueLayerMockable",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerNetwork",
+        "printedName": "TrueLayerNetwork",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerMockable",
+        "printedName": "TrueLayerMockable",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerNetwork",
+        "printedName": "TrueLayerNetwork",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerUtils",
+        "printedName": "TrueLayerUtils",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerAPI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4523,595 +4783,637 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 998,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/SubmitUserAccount+SharedRequestModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/SubmitUserAccount+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 17,
       "value": "\"user_account_id\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2526,
+      "offset": 2628,
       "length": 20,
       "value": "\"provider_selection\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2620,
+      "offset": 2722,
       "length": 24,
       "value": "\"user_account_selection\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3412,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1190,
       "length": 18,
       "value": "\"merchant_account\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 18,
       "value": "\"external_account\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3589,
       "length": 26,
       "value": "\"sort_code_account_number\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1968,
       "length": 15,
       "value": "\"user_selected\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2009,
       "length": 13,
       "value": "\"preselected\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3090,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9192,
       "length": 16,
       "value": "\"account_number\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9640,
       "length": 11,
       "value": "\"sort_code\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 681,
+      "offset": 794,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2768,
+      "offset": 2901,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 2821,
+      "offset": 2954,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 6818,
+      "offset": 6975,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3270,
+      "offset": 3258,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
-      "offset": 3813,
+      "offset": 3801,
       "length": 15,
       "value": "\"bank_transfer\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/SchemeSelection+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/SchemeSelection+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1749,
       "length": 13,
       "value": "\"auto-submit\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3258,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3281,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3329,
       "length": 13,
       "value": "\"example.com\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3557,
       "length": 16,
       "value": "\"someProviderID\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3590,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3613,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3835,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3858,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1409,
       "length": 4,
       "value": "\"gb\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1433,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1670,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1693,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1882,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1905,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1481,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1545,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/AISLegalCopy+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 1402,
+      "length": 4,
+      "value": "\"de\""
+    },
+    {
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/AISLegalCopy+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 11,
+      "value": "\"someToken\""
+    },
+    {
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2233,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2256,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2335,
       "length": 16,
       "value": "\"https:\/\/tl.com\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "BooleanLiteral",
       "offset": 2640,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/PISLegalCopy+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 1402,
+      "length": 4,
+      "value": "\"de\""
+    },
+    {
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/PISLegalCopy+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 11,
+      "value": "\"someToken\""
+    },
+    {
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2044,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2067,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3083,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3112,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3135,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 323,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 9,
       "value": "\"mandate\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2345,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2565,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2606,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2676,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2824,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2865,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2929,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3384,
+      "offset": 4376,
       "length": 4,
       "value": "\"es\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3408,
+      "offset": 4400,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3643,
+      "offset": 4635,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3704,
+      "offset": 4696,
       "length": 4,
       "value": "\"DE\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3892,
+      "offset": 4884,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3915,
+      "offset": 4907,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "Dictionary",
-      "offset": 3971,
+      "offset": 4963,
       "length": 27,
       "value": "[(\"someIBANKey\", \"someIBAN\")]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "kind": "Array",
+      "offset": 5326,
+      "length": 12,
+      "value": "[\"accounts\"]"
+    },
+    {
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "kind": "Array",
+      "offset": 5368,
+      "length": 12,
+      "value": "[\"accounts\"]"
+    },
+    {
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3473,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3496,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3544,
       "length": 13,
       "value": "\"example.com\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3784,
       "length": 16,
       "value": "\"someProviderID\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3817,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3840,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4074,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4097,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1440,
       "length": 4,
       "value": "\"gb\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1464,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1234,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1261,
       "length": 5,
       "value": "\"GBP\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "Array",
       "offset": 1281,
       "length": 56,
       "value": "[\"faster_payments_service\", \"instant\"]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1370,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1397,
       "length": 14,
       "value": "\"someSchemeID\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1431,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1505,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1545,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1569,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 25,
       "value": "\"payments-experience-api\""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 39,
       "value": "\"Unsupported date value: \""
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
+      "filePath": "\/Users\/yura.kolesnikov\/Documents\/Projects\/iOS-SDK\/SDK\/Sources\/API\/Utils\/JSONDecoder+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 1393,
       "length": 2,
