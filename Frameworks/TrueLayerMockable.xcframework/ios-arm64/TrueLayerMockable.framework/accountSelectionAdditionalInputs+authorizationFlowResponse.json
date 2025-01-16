@@ -1,0 +1,128 @@
+{
+  "status": "authorizing",
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "form",
+        "inputs": [
+          {
+            "type": "select",
+            "id": "account_selection",
+            "mandatory": true,
+            "display_text": {
+              "key": "account_selection.display-text",
+              "default": "Account selection"
+            },
+            "options": [
+              {
+                "id": "DE45499999600000005100",
+                "display_text": {
+                  "key": "account_selection.DE45499999600000005100",
+                  "default": "DE45499999600000005100"
+                }
+              },
+              {
+                "id": "DE18499999600000005101",
+                "display_text": {
+                  "key": "account_selection.DE18499999600000005101",
+                  "default": "DE18499999600000005101"
+                }
+              },
+              {
+                "id": "DE88499999600000005102",
+                "display_text": {
+                  "key": "account_selection.DE88499999600000005102",
+                  "default": "DE88499999600000005102"
+                }
+              },
+              {
+                "id": "DE61499999600000005103",
+                "display_text": {
+                  "key": "account_selection.DE61499999600000005103",
+                  "default": "DE61499999600000005103"
+                }
+              },
+              {
+                "id": "DE34499999600000005104",
+                "display_text": {
+                  "key": "account_selection.DE34499999600000005104",
+                  "default": "DE34499999600000005104"
+                }
+              },
+              {
+                "id": "DE07499999600000005105",
+                "display_text": {
+                  "key": "account_selection.DE07499999600000005105",
+                  "default": "DE07499999600000005105"
+                }
+              },
+              {
+                "id": "DE77499999600000005106",
+                "display_text": {
+                  "key": "account_selection.DE77499999600000005106",
+                  "default": "DE77499999600000005106"
+                }
+              },
+              {
+                "id": "DE23499999600000005108",
+                "display_text": {
+                  "key": "account_selection.DE23499999600000005108",
+                  "default": "DE23499999600000005108"
+                }
+              },
+              {
+                "id": "DE93499999600000005109",
+                "display_text": {
+                  "key": "account_selection.DE93499999600000005109",
+                  "default": "DE93499999600000005109"
+                }
+              },
+              {
+                "id": "DE55499999600000005114",
+                "display_text": {
+                  "key": "account_selection.DE55499999600000005114",
+                  "default": "DE55499999600000005114"
+                }
+              },
+              {
+                "id": "DE28499999600000005115",
+                "display_text": {
+                  "key": "account_selection.DE28499999600000005115",
+                  "default": "DE28499999600000005115"
+                }
+              },
+              {
+                "id": "DE98499999600000005116",
+                "display_text": {
+                  "key": "account_selection.DE98499999600000005116",
+                  "default": "DE98499999600000005116"
+                }
+              },
+              {
+                "id": "DE71499999600000005117",
+                "display_text": {
+                  "key": "account_selection.DE71499999600000005117",
+                  "default": "DE71499999600000005117"
+                }
+              },
+              {
+                "id": "DE60499999600000005121",
+                "display_text": {
+                  "key": "account_selection.DE60499999600000005121",
+                  "default": "DE60499999600000005121"
+                }
+              },
+              {
+                "id": "DE39499999600000005111",
+                "display_text": {
+                  "key": "account_selection.DE39499999600000005111",
+                  "default": "DE39499999600000005111"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

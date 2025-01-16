@@ -1,0 +1,30 @@
+{
+  "modal": {
+    "title": "What data will be used?",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "TrueLayer will access the following information to initiate a payment from your account"
+      },
+      {
+        "type": "list",
+        "list": [
+          "Your IBAN"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "TrueLayer won’t share or use your personal data for anything else."
+      },
+      {
+        "type": "paragraph",
+        "text": "TrueLayer is an EU regulated payment services provider and connects to your account using bank-grade encryption."
+      }
+    ]
+  },
+  "small_print": {
+    "text": "By continuing you are permitting TrueLayer to use your personalised security credentials to access your account data and use it in order to initiate a payment on your behalf from your bank account. You also agree to our <tosLink>End User Terms of Service</tosLink> and <privacyLink>Privacy Policy</privacyLink>.",
+    "tos_link": "https://truelayer.com/legal/enduser_tos/",
+    "privacy_link": "https://truelayer.com/legal/privacy/"
+  }
+}

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUI
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreGraphics
@@ -246,6 +246,8 @@ public enum Analytics {
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
   @_spi(TrueLayer) public struct SinglePayment {
     @_spi(TrueLayer) public var currentStep: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step?
+    @_spi(TrueLayer) public var aisLegals: TrueLayerCore.Core.Payments.Models.Shared.AISLegals?
+    @_spi(TrueLayer) public var pisLegals: TrueLayerCore.Core.Payments.Models.Shared.PISLegals?
     @_spi(TrueLayer) public var selectedSchemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier?
     @_spi(TrueLayer) public var schemeSelectionType: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType?
     @_spi(TrueLayer) public var additionalInputs: TrueLayerUI.SDKState.SinglePayment.AdditionalInputs
@@ -394,6 +396,7 @@ public enum Analytics {
     @_spi(TrueLayer) case resultScreen
     @_spi(TrueLayer) case webView
     @_spi(TrueLayer) case awaitRedirectResponse
+    @_spi(TrueLayer) case additionalInputsConfirmAccountSelection
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
