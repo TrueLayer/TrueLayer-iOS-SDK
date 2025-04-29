@@ -1,0 +1,64 @@
+{
+  "status": "authorizing",
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "form",
+        "inputs": [
+          {
+            "type": "text",
+            "id": "psu-id",
+            "mandatory": true,
+            "display_text": {
+              "key": "-",
+              "default": "VR-Netkey oder Alias"
+            },
+            "format": "any",
+            "sensitive": false,
+            "min_length": 1,
+            "max_length": 100,
+            "regexes": [
+              {
+                "regex": "^.*$",
+                "message": {
+                  "key": "psu-id.regex",
+                  "default": "Value is invalid."
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "psu-password",
+            "mandatory": true,
+            "display_text": {
+              "key": "-",
+              "default": "PIN"
+            },
+            "format": "any",
+            "sensitive": true,
+            "min_length": 1,
+            "max_length": 100,
+            "regexes": [
+              {
+                "regex": "^.*$",
+                "message": {
+                  "key": "psu-password.regex",
+                  "default": "Value is invalid."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "adjacent": {
+        "consent": {
+          "type": "consent",
+          "requirements": {
+            "pis": {}
+          }
+        }
+      }
+    }
+  }
+}

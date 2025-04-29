@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [3.9.1] - AIS+PIS QoL and Patches
+
+### Fixed
+- A crash where an attempt to fill the provider selection list with duplicate providers was made, which is now handled gracefully as unexpected behavior.
+- Some cases where the user would get stuck on a Wait screen, especially when prompted by the bank to confirm the TrueLayer transaction in their banking app.
+- Routing logic for certain providers requesting a PIS-only flow.
+- An issue with the Scheme Selection screen when the Continue button would not get disabled while processing, which has previously manifested for a very small percentage of users on slower network connections.
+
 ## [3.9.0] - AIS+PIS Flow
 
 ### Added
