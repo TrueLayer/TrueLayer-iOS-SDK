@@ -2,9 +2,12 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUI
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
 import CoreGraphics
+import CoreText
 import DeveloperToolsSupport
 import Foundation
+import SpriteKit
 import Swift
 import SwiftUI
 @_spi(TrueLayer) import TrueLayerAPI
@@ -13,9 +16,11 @@ import SwiftUI
 @_spi(TrueLayer) import TrueLayerLogger
 @_spi(TrueLayer) import TrueLayerNetwork
 @_spi(TrueLayer) import TrueLayerUtils
+import UIKit.UIFont
 import UIKit
 import WebKit
 import _Concurrency
+import _SpriteKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class TrueLayerUIResources : ObjectiveC.NSObject {
@@ -24,6 +29,40 @@ import _SwiftConcurrencyShims
   }
   @objc override dynamic public init()
   @objc deinit
+}
+public enum TrueLayerUIFontFamily : Swift.Sendable {
+  public enum ProximaNova : Swift.Sendable {
+    public static let black: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let blackItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let bold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let boldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let extrabold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let extraboldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let light: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let lightItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let regular: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let regularItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let semibold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let semiboldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let thinItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let thin: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let all: [TrueLayerUI.TrueLayerUIFontConvertible]
+  }
+  public static let allCustomFonts: [TrueLayerUI.TrueLayerUIFontConvertible]
+  public static func registerAllCustomFonts()
+}
+public struct TrueLayerUIFontConvertible : Swift.Sendable {
+  public let name: Swift.String
+  public let family: Swift.String
+  public let path: Swift.String
+  public typealias Font = UIKit.UIFont
+  public func font(size: CoreFoundation.CGFloat) -> TrueLayerUI.TrueLayerUIFontConvertible.Font
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public func swiftUIFont(size: CoreFoundation.CGFloat) -> SwiftUICore.Font
+  public func register()
+}
+extension UIKit.UIFont {
+  convenience public init?(font: TrueLayerUI.TrueLayerUIFontConvertible, size: CoreFoundation.CGFloat)
 }
 @_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
 extension TrueLayerUI.Analytics {
@@ -84,6 +123,42 @@ extension TrueLayerUI.Analytics {
     @_spi(TrueLayer) case userAccountSelectedNewAccount
     @_spi(TrueLayer) case userAccountDeleteAccount(_: TrueLayerCore.Core.Payments.Models.Shared.UserAccount)
     @_spi(TrueLayer) case fallbackWebViewLoaded
+    @_spi(TrueLayer) case wtf
+    @_spi(TrueLayer) case hp2ResultScreenRetryClicked
+    @_spi(TrueLayer) case hp2LearnMoreClicked(page: TrueLayerUI.Analytics.Event.HP2Page)
+    @_spi(TrueLayer) case hp2LearnMoreCloseClicked
+    @_spi(TrueLayer) case hp2CloseClicked(page: TrueLayerUI.Analytics.Event.HP2Page)
+    @_spi(TrueLayer) case hp2BackClicked(page: TrueLayerUI.Analytics.Event.HP2Page)
+    @_spi(TrueLayer) case hp2SearchCancelled(page: TrueLayerUI.Analytics.Event.HP2Page)
+    @_spi(TrueLayer) case hp2SearchClicked(page: TrueLayerUI.Analytics.Event.HP2Page)
+    @_spi(TrueLayer) case hp2ChangeBankClicked(page: TrueLayerUI.Analytics.Event.HP2Page)
+    @_spi(TrueLayer) case hp2ReturnFromBankLoaded
+    @_spi(TrueLayer) case hp2WaitAuthLoaded
+    @_spi(TrueLayer) case hp2WaitAuthGoToBankClicked(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case hp2CancelFormLoaded(providerID: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier?)
+    @_spi(TrueLayer) case hp2GoBackClicked(providerID: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier?, reason: Swift.String?, comment: Swift.String?)
+    @_spi(TrueLayer) case hp2PaymentAbandoned(providerID: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier?, reason: Swift.String?, comment: Swift.String?)
+    @_spi(TrueLayer) case hp2SavedAccountsLoaded(savedAccountsCount: Swift.Int, savedAccountsProviders: [Swift.String])
+    @_spi(TrueLayer) case hp2EditAccountsClicked
+    @_spi(TrueLayer) case hp2EditDone
+    @_spi(TrueLayer) case hp2SavedAccountDeleted(provider: TrueLayerCore.Core.Payments.Models.Shared.Provider)
+    @_spi(TrueLayer) case hp2SelectAnotherBankClicked
+    @_spi(TrueLayer) public enum HP2Page : Swift.String {
+      @_spi(TrueLayer) case cancel
+      @_spi(TrueLayer) case providerSelection
+      @_spi(TrueLayer) case consent
+      @_spi(TrueLayer) case waitingForRedirectToBank
+      @_spi(TrueLayer) case sendToBank
+      @_spi(TrueLayer) case returnFromBank
+      @_spi(TrueLayer) case accountSelection
+      @_spi(TrueLayer) case learnMore
+      @_spi(TrueLayer) case paymentResultFailure
+      @_spi(TrueLayer) public init?(rawValue: Swift.String)
+      @_spi(TrueLayer) public typealias RawValue = Swift.String
+      @_spi(TrueLayer) public var rawValue: Swift.String {
+        @_spi(TrueLayer) get
+      }
+    }
   }
 }
 extension TrueLayerUI.Analytics {
@@ -157,6 +232,9 @@ public enum Analytics {
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState.AuthorizationFlowInformation {
   @_spi(TrueLayer) public func shouldShowBranchSelection(paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) -> Swift.Bool
+  @_spi(TrueLayer) public var providersConfigurationDictionary: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier : Swift.Double] {
+    @_spi(TrueLayer) get
+  }
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
   @_spi(TrueLayer) public struct HandleRedirectURLState {
@@ -181,6 +259,7 @@ public enum Analytics {
   @_spi(TrueLayer) public struct LocalisationState {
     @_spi(TrueLayer) public var additionalInputsLocalizations: [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization]
     @_spi(TrueLayer) public var legalCopy: TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy?
+    @_spi(TrueLayer) public var cancellationFormInformation: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
@@ -221,6 +300,22 @@ public enum Analytics {
 @_spi(TrueLayer) extension TrueLayerUI.SDKState.PaymentInformation {
   @_spi(TrueLayer) public func initialiseSelectedCountry(preferredCountryCode: TrueLayerCore.Core.Payments.Models.Shared.Country.ID?, eligibleProviders: [TrueLayerCore.Core.Payments.Models.Shared.Provider], lastUsedCountryCode: TrueLayerCore.Core.Payments.Models.Shared.Country.ID?) -> TrueLayerCore.Core.Payments.Models.Shared.Country?
 }
+@_spi(TrueLayer) extension TrueLayerUI.SDKState {
+  @_spi(TrueLayer) public struct RoutingState {
+    @_spi(TrueLayer) public var isHP2Displayed: Swift.Bool
+    @_spi(TrueLayer) public var isLoading: Swift.Bool
+    @_spi(TrueLayer) public var wantsResultScreen: Swift.Bool
+    @_spi(TrueLayer) public var providerSelectionState: TrueLayerUI.SDKState.RoutingState.ProviderSelectionState?
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.SDKState.RoutingState {
+  @_spi(TrueLayer) public struct ProviderSelectionState {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerUI.SDKState.RoutingState.ProviderSelectionState {
+  @_spi(TrueLayer) public func getRecentlyUsedProviders(selectedCountry: TrueLayerCore.Core.Payments.Models.Shared.Country?, providersConfigurationDictionary: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier : Swift.Double]) -> [TrueLayerCore.Core.Payments.Models.Shared.Provider]
+  @_spi(TrueLayer) public func getProvidersSortedByWeight(providersConfigurationDictionary: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier : Swift.Double]) -> [TrueLayerCore.Core.Payments.Models.Shared.Provider]
+}
 @_spi(TrueLayer) public struct SDKState : TrueLayerArchitecture.State {
   @_spi(TrueLayer) public static var visualSettings: TrueLayerUI.UI.VisualSettings!
   @_spi(TrueLayer) public var sdkInformation: TrueLayerUI.SDKState.SDKInformation
@@ -231,6 +326,7 @@ public enum Analytics {
   @_spi(TrueLayer) public var mandateInformation: TrueLayerUI.SDKState.Mandate
   @_spi(TrueLayer) public var localisation: TrueLayerUI.SDKState.LocalisationState
   @_spi(TrueLayer) public var handleRedirectState: TrueLayerUI.SDKState.HandleRedirectURLState
+  @_spi(TrueLayer) public var routingState: TrueLayerUI.SDKState.RoutingState
   @_spi(TrueLayer) public init()
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
@@ -240,7 +336,9 @@ public enum Analytics {
     @_spi(TrueLayer) public var urlSession: Foundation.URLSession
     @_spi(TrueLayer) public var sdkVersion: Swift.String
     @_spi(TrueLayer) public var integrationType: TrueLayerUI.Analytics.IntegrationType
-    @_spi(TrueLayer) public init(apiEnvironment: TrueLayerAPI.API.Environment, analyticsEnvironment: TrueLayerUI.Analytics.Environment, urlSession: Foundation.URLSession, sdkVersion: Swift.String, integrationType: TrueLayerUI.Analytics.IntegrationType)
+    @_spi(TrueLayer) public var hp2OptOut: Swift.Bool
+    @_spi(TrueLayer) public var hp2ManualSelectionOnly: Swift.Bool
+    @_spi(TrueLayer) public init(apiEnvironment: TrueLayerAPI.API.Environment, analyticsEnvironment: TrueLayerUI.Analytics.Environment, urlSession: Foundation.URLSession, sdkVersion: Swift.String, integrationType: TrueLayerUI.Analytics.IntegrationType, hp2OptOut: Swift.Bool = false, hp2ManualSelectionOnly: Swift.Bool = false)
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
@@ -251,6 +349,7 @@ public enum Analytics {
     @_spi(TrueLayer) public var selectedSchemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier?
     @_spi(TrueLayer) public var schemeSelectionType: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType?
     @_spi(TrueLayer) public var additionalInputs: TrueLayerUI.SDKState.SinglePayment.AdditionalInputs
+    @_spi(TrueLayer) public var providersInfo: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo?
     @_spi(TrueLayer) public var didUserSelectScheme: Swift.Bool {
       @_spi(TrueLayer) get
     }
@@ -316,6 +415,48 @@ public enum Analytics {
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_spi(TrueLayer) @objc deinit
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @_spi(TrueLayer) public enum UI {
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
@@ -351,6 +492,7 @@ public enum Analytics {
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func trackLoadedAnalytics() async
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func handleSDKNavigationInterference() async
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func restartPayment()
+    @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func prepareForPresentation() async throws
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>, localState: TrueLayerUI.UI.SDKRoot.ViewModel.LocalState)
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder __argument1: Foundation.NSCoder)
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>)
@@ -435,6 +577,8 @@ public enum Analytics {
 @_spi(TrueLayer) extension TrueLayerUI.UI.TrueLayerError {
   @_spi(TrueLayer) public enum Mandate : Swift.Error, Swift.Equatable, Swift.CustomStringConvertible, Swift.CaseIterable {
     @_spi(TrueLayer) case revoked
+    @_spi(TrueLayer) case constraintViolation
+    @_spi(TrueLayer) case invalidMandateState
     @_spi(TrueLayer) public var description: Swift.String {
       @_spi(TrueLayer) get
     }
@@ -456,11 +600,15 @@ public enum Analytics {
     @_spi(TrueLayer) case invalidAccountHolderName
     @_spi(TrueLayer) case invalidCredentials
     @_spi(TrueLayer) case invalidRemitterAccount
+    @_spi(TrueLayer) case invalidOtp
+    @_spi(TrueLayer) case invalidBeneficiaryAccount
     @_spi(TrueLayer) case insufficientFunds
     @_spi(TrueLayer) case notAuthorized
     @_spi(TrueLayer) case paymentLimitExceeded
     @_spi(TrueLayer) case providerExpired
+    @_spi(TrueLayer) case schemeUnavailable
     @_spi(TrueLayer) case userCanceledAtProvider
+    @_spi(TrueLayer) case verificationDeclined
     @_spi(TrueLayer) public var description: Swift.String {
       @_spi(TrueLayer) get
     }
@@ -522,6 +670,9 @@ public enum Analytics {
 }
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
 extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerUI.Analytics.Event.HP2Page : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerUI.Analytics.Event.HP2Page : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerUI.Analytics.Event.HP2Page : Swift.RawRepresentable {}
 @_spi(TrueLayer) extension TrueLayerUI.SDKState.HandleRedirectURLState.State : Swift.Equatable {}
 @_spi(TrueLayer) extension TrueLayerUI.SDKState.HandleRedirectURLState.State : Swift.Hashable {}
 @_spi(TrueLayer) extension TrueLayerUI.UI.Route : Swift.Equatable {}

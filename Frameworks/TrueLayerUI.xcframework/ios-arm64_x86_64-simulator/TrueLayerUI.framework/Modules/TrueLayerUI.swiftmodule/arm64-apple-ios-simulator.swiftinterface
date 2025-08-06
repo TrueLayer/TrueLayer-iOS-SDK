@@ -2,9 +2,12 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUI
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
 import CoreGraphics
+import CoreText
 import DeveloperToolsSupport
 import Foundation
+import SpriteKit
 import Swift
 import SwiftUI
 import TrueLayerAPI
@@ -13,9 +16,11 @@ import TrueLayerCore
 import TrueLayerLogger
 import TrueLayerNetwork
 import TrueLayerUtils
+import UIKit.UIFont
 import UIKit
 import WebKit
 import _Concurrency
+import _SpriteKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class TrueLayerUIResources : ObjectiveC.NSObject {
@@ -24,6 +29,40 @@ import _SwiftConcurrencyShims
   }
   @objc override dynamic public init()
   @objc deinit
+}
+public enum TrueLayerUIFontFamily : Swift.Sendable {
+  public enum ProximaNova : Swift.Sendable {
+    public static let black: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let blackItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let bold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let boldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let extrabold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let extraboldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let light: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let lightItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let regular: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let regularItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let semibold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let semiboldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let thinItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let thin: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let all: [TrueLayerUI.TrueLayerUIFontConvertible]
+  }
+  public static let allCustomFonts: [TrueLayerUI.TrueLayerUIFontConvertible]
+  public static func registerAllCustomFonts()
+}
+public struct TrueLayerUIFontConvertible : Swift.Sendable {
+  public let name: Swift.String
+  public let family: Swift.String
+  public let path: Swift.String
+  public typealias Font = UIKit.UIFont
+  public func font(size: CoreFoundation.CGFloat) -> TrueLayerUI.TrueLayerUIFontConvertible.Font
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public func swiftUIFont(size: CoreFoundation.CGFloat) -> SwiftUICore.Font
+  public func register()
+}
+extension UIKit.UIFont {
+  convenience public init?(font: TrueLayerUI.TrueLayerUIFontConvertible, size: CoreFoundation.CGFloat)
 }
 extension TrueLayerUI.Analytics {
   public enum Environment {
@@ -53,5 +92,47 @@ extension TrueLayerUI.Analytics {
 }
 public enum Analytics {
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
 extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}

@@ -1263,6 +1263,86 @@
                   },
                   {
                     "kind": "Var",
+                    "name": "providerSelectionIrelandOnly",
+                    "printedName": "providerSelectionIrelandOnly",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type) -> TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationFlowResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AuthorizationFlowResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO28providerSelectionIrelandOnlyyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO28providerSelectionIrelandOnlyyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "providerSelectionInfoIrelandOnly",
+                    "printedName": "providerSelectionInfoIrelandOnly",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type) -> TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationFlowResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AuthorizationFlowResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO32providerSelectionInfoIrelandOnlyyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO32providerSelectionInfoIrelandOnlyyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
                     "name": "accountSelectionAdditionalInputs",
                     "printedName": "accountSelectionAdditionalInputs",
                     "children": [
@@ -5152,7 +5232,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
       "kind": "Dictionary",
       "offset": 984,
       "length": 36,

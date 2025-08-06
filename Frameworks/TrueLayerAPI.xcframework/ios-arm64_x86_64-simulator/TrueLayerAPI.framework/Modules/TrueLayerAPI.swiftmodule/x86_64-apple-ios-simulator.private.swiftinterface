@@ -85,7 +85,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
     @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
     @_spi(TrueLayer) public func submitConsent() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
-    @_spi(TrueLayer) public func cancelMandate() async throws
+    @_spi(TrueLayer) public func cancelMandate(providerID: Swift.String?, reason: Swift.String?, comment: Swift.String?) async throws
     @_spi(TrueLayer) public func submitUserAccountSelection(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
     @_spi(TrueLayer) public func submitNewUserAccountSelection() async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
     @_spi(TrueLayer) public func deleteUserAccount(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Mandate.AuthorizationFlow.Status
@@ -118,19 +118,19 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func getPISLegalCopy(providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.PISLegals
     @_spi(TrueLayer) public func getUserPriming(providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming.Status
     @_spi(TrueLayer) public func getProvider(with providerID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Provider
+    @_spi(TrueLayer) public func getCancellationFormInformation(providerId: Swift.String?) async throws -> TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation
   }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
   @_spi(TrueLayer) public struct SinglePayment : TrueLayerAPI.RequestsManager {
     @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
     @_spi(TrueLayer) public func getPaymentInformation() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Information
-    @_spi(TrueLayer) public func pollPaymentStatus(shouldEndPollingPrematurely: @escaping (TrueLayerCore.Core.Payments.Models.SinglePayment.Status) -> Swift.Bool) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
+    @_spi(TrueLayer) public func pollPaymentStatus(pollingInterval: Foundation.TimeInterval, shouldEndPollingPrematurely: @escaping (TrueLayerCore.Core.Payments.Models.SinglePayment.Status) -> Swift.Bool) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
     @_spi(TrueLayer) public func startAuthorization() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func submitProviderSelection(_ providerIdentifier: TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func submitConsent() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
-    #warning("Moved to shared")
     @_spi(TrueLayer) public func getLegalCopy(for providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
-    @_spi(TrueLayer) public func cancelPayment() async throws
+    @_spi(TrueLayer) public func cancelPayment(providerID: Swift.String?, reason: Swift.String?, comment: Swift.String?) async throws
     @_spi(TrueLayer) public func getAdditionalInputsHelpText(with providerCountryCode: Swift.String) async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.HelpText]
     @_spi(TrueLayer) public func getAdditionalInputsLocalizations(countryCode: Swift.String) async throws -> [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Localization]
     @_spi(TrueLayer) public func submitForm(inputs: [Swift.String : Swift.String], adjacent: TrueLayerCore.Core.Payments.Models.Shared.Adjacent?) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
@@ -139,6 +139,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func deleteUserAccount(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func getSchemeSelectionType(currency: Swift.String, schemes: [Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType
     @_spi(TrueLayer) public func submitScheme(_ schemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    @_spi(TrueLayer) public func getProvidersInfo(paymentID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo
+    @_spi(TrueLayer) public func retryPayment() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
   }
 }
 @_spi(TrueLayer) extension TrueLayerAPI.API {

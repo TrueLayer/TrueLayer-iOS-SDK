@@ -258,14 +258,6 @@ import _SwiftConcurrencyShims
   @_spi(TrueLayer) var maximumNumberOfTries: Swift.Int { get }
   @_spi(TrueLayer) var pollingInterval: Swift.Double { get }
 }
-@_spi(TrueLayer) extension TrueLayerNetwork.PollableDecodableRequest {
-  @_spi(TrueLayer) public var maximumNumberOfTries: Swift.Int {
-    @_spi(TrueLayer) get
-  }
-  @_spi(TrueLayer) public var pollingInterval: Swift.Double {
-    @_spi(TrueLayer) get
-  }
-}
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.URL {
   @_spi(TrueLayer) public enum Scheme : Swift.String {
     @_spi(TrueLayer) case http

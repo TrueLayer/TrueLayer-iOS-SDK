@@ -26,6 +26,8 @@ import _SwiftConcurrencyShims
   case serverError
   case unexpectedBehavior
   case userCanceled
+  case invalidMandateState
+  case constraintViolation
   case providerError
   case providerRejected
   case invalidRequest
@@ -56,8 +58,6 @@ import _SwiftConcurrencyShims
 }
 @objc public enum TrueLayerMandateState : Swift.Int {
   case authorized
-  @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
-  case redirect
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -98,6 +98,8 @@ import _SwiftConcurrencyShims
   case invalidRemitterAccount
   case invalidRequest
   case invalidSortCode
+  case invalidBeneficiaryAccount
+  case invalidOtp
   case insufficientFunds
   case notAuthorized
   case paymentLimitExceeded
@@ -112,8 +114,10 @@ import _SwiftConcurrencyShims
   case paymentRejected
   case providerOffline
   case sdkNotConfigured
+  case schemeUnavailable
   case serverError
   case unexpectedBehavior
+  case verificationDeclined
   case userCanceled
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -155,8 +159,6 @@ import _SwiftConcurrencyShims
 @objc public enum TrueLayerSinglePaymentState : Swift.Int {
   case authorized
   case executed
-  @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
-  case redirect
   case settled
   case wait
   public init?(rawValue: Swift.Int)

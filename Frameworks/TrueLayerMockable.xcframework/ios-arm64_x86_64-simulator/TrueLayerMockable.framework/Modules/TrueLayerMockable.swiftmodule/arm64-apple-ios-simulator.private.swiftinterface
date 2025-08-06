@@ -141,6 +141,8 @@ extension TrueLayerMockable.File.SinglePayment {
     case wait
     case providerHasInternalServerError
     case schemeSelection
+    case providerSelectionIrelandOnly
+    case providerSelectionInfoIrelandOnly
     case accountSelectionAdditionalInputs
     case usernamePasswordAdditionalInputs
     public var rawValue: Swift.String {

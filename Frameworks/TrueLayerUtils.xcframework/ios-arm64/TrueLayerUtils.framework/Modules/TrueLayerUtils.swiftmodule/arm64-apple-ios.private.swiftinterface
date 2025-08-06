@@ -127,6 +127,9 @@ public struct IsoCountryInfo {
   @_spi(TrueLayer) public func distanceCaseDiacriticInsensitiveFromStart(to: Swift.String) -> Swift.Int?
 }
 @_spi(TrueLayer) extension Swift.String {
+  @_spi(TrueLayer) public func softHyphenatedByWord(minimumWordLength: Swift.Int = 0, locale: Foundation.Locale = .autoupdatingCurrent) -> Swift.String
+}
+@_spi(TrueLayer) extension Swift.String {
   @_spi(TrueLayer) public func isValidIBAN() -> Swift.Bool
   @_spi(TrueLayer) public var formattedAsIBAN: Swift.String {
     @_spi(TrueLayer) get
