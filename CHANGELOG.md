@@ -1,13 +1,33 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.0.0] - New UI
+
+### Added
+- A new, gorgeous, conversion-driven UI in parity with the 2025 TrueLayer Web Hosted Payments Page, with the following new features available automatically for all devices running iOS 15 and up on GBP and EUR+Ireland single payments:
+  - A single-screen, modern, declarative UI system under the hood, allowing for smooth transitions and overall snappier look-and-feel.
+  - Retries: change bank / payment providers on the fly, or retry failed payments without restarting the SDK.
+  - Cancellation screen streamlining: more insight on why users are abandoning their payments.
+  - Provider pre-selection: automatically select the last used provider, allowing for faster one-click payments and more engaged, better converting users.
+
+Heads-up: the following requests do not support the New UI and will fallback onto the legacy UI, as seen in versions 3.9.1 and below:
+ - Devices running iOS 14.x
+ - Mandates / recurring payments
+ - EUR payments for countries other than Ireland-only
+
+### Changed
+- Several quality-of-life and performance improvements under the hood, allowing for improved reliability, faster performance, and better troubleshooting of the SDK overall.
+
+### Removed
+- The previously deprecated `.redirect` case has now been removed.
+
 ## [3.9.1] - AIS+PIS QoL and Patches
 
 ### Fixed
 - A crash where an attempt to fill the provider selection list with duplicate providers was made, which is now handled gracefully as unexpected behavior.
 - Some cases where the user would get stuck on a Wait screen, especially when prompted by the bank to confirm the TrueLayer transaction in their banking app.
 - Routing logic for certain providers requesting a PIS-only flow.
-- An issue with the Scheme Selection screen when the Continue button would not get disabled while processing, which has previously manifested for a very small percentage of users on slower network connections.
+- An issue with the Scheme Selection screen when the Continue button would not get disabled while processing, which previously manifested for a very small percentage of users on slower network connections.
 
 ## [3.9.0] - AIS+PIS Flow
 
