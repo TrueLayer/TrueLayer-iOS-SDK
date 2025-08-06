@@ -110,9 +110,12 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case authorizationFailed
     @_spi(TrueLayer) case providerRejected
     @_spi(TrueLayer) case internalServerError
+    @_spi(TrueLayer) case invalidMandateState
     @_spi(TrueLayer) case expired
     @_spi(TrueLayer) case userCanceledAtProvider
     @_spi(TrueLayer) case invalidAccountDetails
+    @_spi(TrueLayer) case constraintViolation
+    @_spi(TrueLayer) case mandateRevoked
     @_spi(TrueLayer) case other(reason: Swift.String)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Mandate.FailureReason, b: TrueLayerCore.Core.Payments.Models.Mandate.FailureReason) -> Swift.Bool
   }
@@ -306,6 +309,27 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public let accountNumber: Swift.String
     @_spi(TrueLayer) public init(sortCode: Swift.String, accountNumber: Swift.String)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.Beneficiary.AccountIdentifier.AccountNumber, b: TrueLayerCore.Core.Payments.Models.Shared.Beneficiary.AccountIdentifier.AccountNumber) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared {
+  @_spi(TrueLayer) public struct CancellationFormInformation : Swift.Equatable {
+    @_spi(TrueLayer) public let title: Swift.String?
+    @_spi(TrueLayer) public let smallPrint: Swift.String?
+    @_spi(TrueLayer) public let buttonText: Swift.String?
+    @_spi(TrueLayer) public let options: [TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation.CancellationFormOption]
+    @_spi(TrueLayer) public init(title: Swift.String?, smallPrint: Swift.String?, buttonText: Swift.String?, options: [TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation.CancellationFormOption])
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation, b: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation {
+  @_spi(TrueLayer) public struct CancellationFormOption : Swift.Equatable, Swift.Identifiable {
+    @_spi(TrueLayer) public let id: Swift.String?
+    @_spi(TrueLayer) public let text: Swift.String?
+    @_spi(TrueLayer) public let comments: Swift.Bool?
+    @_spi(TrueLayer) public let writtenResponsePlaceholder: Swift.String?
+    @_spi(TrueLayer) public init(id: Swift.String?, text: Swift.String?, comments: Swift.Bool?, writtenResponsePlaceholder: Swift.String?)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation.CancellationFormOption, b: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation.CancellationFormOption) -> Swift.Bool
+    @_spi(TrueLayer) public typealias ID = Swift.String?
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared {
@@ -676,6 +700,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case consentRedirectRetry(url: Foundation.URL)
     @_spi(TrueLayer) case wait(displayMessage: Swift.String?)
     @_spi(TrueLayer) case schemeSelection
+    @_spi(TrueLayer) case retry(retryOptions: [TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.RetryOption])
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step, b: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Step) -> Swift.Bool
   }
   @_spi(TrueLayer) public enum SubsequentActionHint : Swift.Decodable {
@@ -688,6 +713,14 @@ import _SwiftConcurrencyShims
       @_spi(TrueLayer) get
     }
     @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(TrueLayer) public enum RetryOption : Swift.String {
+    @_spi(TrueLayer) case restart
+    @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    @_spi(TrueLayer) public typealias RawValue = Swift.String
+    @_spi(TrueLayer) public var rawValue: Swift.String {
+      @_spi(TrueLayer) get
+    }
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
@@ -709,18 +742,40 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public var providerSelection: TrueLayerCore.Core.Payments.Models.Shared.ProviderSelection {
       @_spi(TrueLayer) get
     }
+    @_spi(TrueLayer) public var canChangeBank: Swift.Bool {
+      @_spi(TrueLayer) get
+    }
+    @_spi(TrueLayer) public var canRetry: Swift.Bool {
+      @_spi(TrueLayer) get
+    }
     @_spi(TrueLayer) public init(identifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Identifier, amount: Swift.Double, currency: TrueLayerCore.Core.Payments.Models.Shared.Currency, status: TrueLayerCore.Core.Payments.Models.SinglePayment.Status, method: TrueLayerCore.Core.Payments.Models.SinglePayment.Method, userIdentifier: Swift.String?, creditableAt: Swift.String?, isSignupPlus: Swift.Bool)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.Information, b: TrueLayerCore.Core.Payments.Models.SinglePayment.Information) -> Swift.Bool
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
   @_spi(TrueLayer) public enum Method : Swift.Equatable {
-    @_spi(TrueLayer) case bankTransfer(beneficiary: TrueLayerCore.Core.Payments.Models.Shared.Beneficiary, providerSelection: TrueLayerCore.Core.Payments.Models.Shared.ProviderSelection)
+    @_spi(TrueLayer) case bankTransfer(beneficiary: TrueLayerCore.Core.Payments.Models.Shared.Beneficiary, providerSelection: TrueLayerCore.Core.Payments.Models.Shared.ProviderSelection, retry: TrueLayerCore.Core.Payments.Models.SinglePayment.Retry?)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.Method, b: TrueLayerCore.Core.Payments.Models.SinglePayment.Method) -> Swift.Bool
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.Method {
   @_spi(TrueLayer) public enum BankTransfer {
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
+  @_spi(TrueLayer) public struct ProvidersInfo : Swift.Decodable, Swift.Equatable {
+    @_spi(TrueLayer) public let filters: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters?
+    @_spi(TrueLayer) public init(filters: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters?)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo) -> Swift.Bool
+    @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo {
+  @_spi(TrueLayer) public struct Filters : Swift.Decodable, Swift.Equatable {
+    @_spi(TrueLayer) public let countries: [Swift.String]?
+    @_spi(TrueLayer) public init(countries: [Swift.String]?)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters) -> Swift.Bool
+    @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
@@ -732,6 +787,12 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case error(reason: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason?)
     @_spi(TrueLayer) public init(singlePaymentInformation: TrueLayerCore.Core.Payments.Models.SinglePayment.Information)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ResultShown, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ResultShown) -> Swift.Bool
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
+  @_spi(TrueLayer) public struct Retry : Swift.Equatable {
+    @_spi(TrueLayer) public init()
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.Retry, b: TrueLayerCore.Core.Payments.Models.SinglePayment.Retry) -> Swift.Bool
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
@@ -770,6 +831,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case executed
     @_spi(TrueLayer) case settled
     @_spi(TrueLayer) case failed(reason: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason)
+    @_spi(TrueLayer) case attemptFailed(reason: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason, authorizationFlow: TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.Status, b: TrueLayerCore.Core.Payments.Models.SinglePayment.Status) -> Swift.Bool
   }
   @_spi(TrueLayer) public enum FailureReason : Swift.Equatable, Swift.Error {
@@ -777,21 +839,26 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case blocked
     @_spi(TrueLayer) case canceled
     @_spi(TrueLayer) case expired
+    @_spi(TrueLayer) case insufficientFunds
+    @_spi(TrueLayer) case internalServerError
     @_spi(TrueLayer) case invalidAccountDetails
     @_spi(TrueLayer) case invalidAccountHolderName
+    @_spi(TrueLayer) case invalidBeneficiaryAccount
     @_spi(TrueLayer) case invalidCredentials
+    @_spi(TrueLayer) case invalidOtp
     @_spi(TrueLayer) case invalidRemitterAccount
     @_spi(TrueLayer) case invalidRequest
     @_spi(TrueLayer) case invalidSortCode
-    @_spi(TrueLayer) case insufficientFunds
     @_spi(TrueLayer) case notAuthorized
     @_spi(TrueLayer) case paymentLimitExceeded
     @_spi(TrueLayer) case providerError
     @_spi(TrueLayer) case providerExpired
     @_spi(TrueLayer) case providerRejected
     @_spi(TrueLayer) case rejected
+    @_spi(TrueLayer) case schemeUnavailable
     @_spi(TrueLayer) case unknownError
     @_spi(TrueLayer) case userCanceledAtProvider
+    @_spi(TrueLayer) case verificationDeclined
     @_spi(TrueLayer) case other(reason: Swift.String)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason, b: TrueLayerCore.Core.Payments.Models.SinglePayment.FailureReason) -> Swift.Bool
   }
@@ -892,6 +959,9 @@ public typealias UUIDProvider = () -> Foundation.UUID
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.AdditionalInputs.Text.Format : Swift.Hashable {}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.SubsequentActionHint : Swift.Equatable {}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.SubsequentActionHint : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.RetryOption : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.RetryOption : Swift.Hashable {}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.RetryOption : Swift.RawRepresentable {}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.State : Swift.Equatable {}
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.State : Swift.Hashable {}
 @_spi(TrueLayer) extension TrueLayerCore.UserDefaultsKey : Swift.Equatable {}

@@ -440,16 +440,20 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateError, open) {
   TrueLayerMandateErrorUnexpectedBehavior = 12,
 /// The user canceled the mandate.
   TrueLayerMandateErrorUserCanceled = 13,
+/// The mandate was not in a valid <a href="https://docs.truelayer.com/docs/mandate-statuses">status</a> to create a recurring payment.
+  TrueLayerMandateErrorInvalidMandateState = 14,
+/// The constraints set up for the mandate were breached by this recurring payment.
+  TrueLayerMandateErrorConstraintViolation = 15,
 /// The provider has unexpectedly failed when creating the mandate.
-  TrueLayerMandateErrorProviderError = 14,
+  TrueLayerMandateErrorProviderError = 16,
 /// The provider rejected the mandate.
-  TrueLayerMandateErrorProviderRejected = 15,
+  TrueLayerMandateErrorProviderRejected = 17,
 /// The mandate failed due to invalid data in the request.
-  TrueLayerMandateErrorInvalidRequest = 16,
+  TrueLayerMandateErrorInvalidRequest = 18,
 /// The mandate failed due to an invalid sort code being provided.
-  TrueLayerMandateErrorInvalidSortCode = 17,
+  TrueLayerMandateErrorInvalidSortCode = 19,
 /// The mandate failed for an unknown reason.
-  TrueLayerMandateErrorUnknownError = 18,
+  TrueLayerMandateErrorUnknownError = 20,
 };
 static NSString * _Nonnull const TrueLayerMandateErrorDomain = @"TrueLayerObjectiveC.TrueLayerMandateError";
 
@@ -486,9 +490,6 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateResultShown, open) {
 typedef SWIFT_ENUM(NSInteger, TrueLayerMandateState, open) {
 /// The user authorized the mandate with the bank.
   TrueLayerMandateStateAuthorized = 0,
-/// Then user has been redirected to the bank to authorize the mandate.
-/// We do not know what happens from there on since we do not have any control over it.
-  TrueLayerMandateStateRedirect = 1,
 };
 
 typedef SWIFT_ENUM(NSInteger, TrueLayerMandateStatus, open) {
@@ -706,42 +707,50 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentError, open) {
   TrueLayerSinglePaymentErrorInvalidRequest = 9,
 /// The payment failed due to an invalid sort code being provided.
   TrueLayerSinglePaymentErrorInvalidSortCode = 10,
+/// The payment failed because an invalid beneficiary account reference was provided.
+  TrueLayerSinglePaymentErrorInvalidBeneficiaryAccount = 11,
+/// The PSU submitted an incorrect one-time password during the authorisation of the payment.
+  TrueLayerSinglePaymentErrorInvalidOtp = 12,
 /// The PSU did not have the required balance in their account to complete this payment.
-  TrueLayerSinglePaymentErrorInsufficientFunds = 11,
+  TrueLayerSinglePaymentErrorInsufficientFunds = 13,
 /// The PSU cancelled the payment or wasn’t able to successfully authenticate on the provider’s UI.
-  TrueLayerSinglePaymentErrorNotAuthorized = 12,
+  TrueLayerSinglePaymentErrorNotAuthorized = 14,
 /// The PSU’s payment limit amount with their bank was breached.
-  TrueLayerSinglePaymentErrorPaymentLimitExceeded = 13,
+  TrueLayerSinglePaymentErrorPaymentLimitExceeded = 15,
 /// The provider has unexpectedly failed when creating the payment.
-  TrueLayerSinglePaymentErrorProviderError = 14,
+  TrueLayerSinglePaymentErrorProviderError = 16,
 /// The payment failed because the token or exchange code used to communicate with the bank expired.
-  TrueLayerSinglePaymentErrorProviderExpired = 15,
+  TrueLayerSinglePaymentErrorProviderExpired = 17,
 /// The provider rejected the payment.
-  TrueLayerSinglePaymentErrorProviderRejected = 16,
+  TrueLayerSinglePaymentErrorProviderRejected = 18,
 /// The payment failed for an unknown reason on the server side.
-  TrueLayerSinglePaymentErrorUnknownError = 17,
+  TrueLayerSinglePaymentErrorUnknownError = 19,
 /// The payment failed because the user cancelled the authorisation during the payment flow.
-  TrueLayerSinglePaymentErrorUserCanceledAtProvider = 18,
+  TrueLayerSinglePaymentErrorUserCanceledAtProvider = 20,
 /// The redirect URI passed to the TrueLayer SDK is invalid.
-  TrueLayerSinglePaymentErrorInvalidRedirectURI = 19,
+  TrueLayerSinglePaymentErrorInvalidRedirectURI = 21,
 /// The user took too long to complete the payment, and therefore it expired.
-  TrueLayerSinglePaymentErrorPaymentExpired = 20,
+  TrueLayerSinglePaymentErrorPaymentExpired = 22,
 /// The requested payment was not found.
 /// This is probably due to it not being created on the backend side.
-  TrueLayerSinglePaymentErrorPaymentNotFound = 21,
+  TrueLayerSinglePaymentErrorPaymentNotFound = 23,
 /// The payment was rejected by the bank.
-  TrueLayerSinglePaymentErrorPaymentRejected = 22,
+  TrueLayerSinglePaymentErrorPaymentRejected = 24,
 /// The pre-selected provider was offline.
-  TrueLayerSinglePaymentErrorProviderOffline = 23,
+  TrueLayerSinglePaymentErrorProviderOffline = 25,
 /// The <code>SDK</code> <code>configure</code> method has not been called before using it.
-  TrueLayerSinglePaymentErrorSdkNotConfigured = 24,
+  TrueLayerSinglePaymentErrorSdkNotConfigured = 26,
+/// There is no scheme available given the provider selection configuration.
+  TrueLayerSinglePaymentErrorSchemeUnavailable = 27,
 /// The server encountered an error while processing the answer.
-  TrueLayerSinglePaymentErrorServerError = 25,
+  TrueLayerSinglePaymentErrorServerError = 28,
 /// The <code>SDK</code> encountered an unexpected behavior.
 /// This error should never occur.
-  TrueLayerSinglePaymentErrorUnexpectedBehavior = 26,
+  TrueLayerSinglePaymentErrorUnexpectedBehavior = 29,
+/// The payment didn’t pass an <a href="https://docs.truelayer.com/docs/name-and-age-verification-before-payment">age- or name-based verification check</a>.
+  TrueLayerSinglePaymentErrorVerificationDeclined = 30,
 /// The user canceled the payment.
-  TrueLayerSinglePaymentErrorUserCanceled = 27,
+  TrueLayerSinglePaymentErrorUserCanceled = 31,
 };
 static NSString * _Nonnull const TrueLayerSinglePaymentErrorDomain = @"TrueLayerObjectiveC.TrueLayerSinglePaymentError";
 
@@ -784,13 +793,10 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentState, open) {
   TrueLayerSinglePaymentStateAuthorized = 0,
 /// The bank confirmed the payment.
   TrueLayerSinglePaymentStateExecuted = 1,
-/// Then user has been redirected to the bank to authorize the payment.
-/// We do not know what happens from there on since we do not have any control over it.
-  TrueLayerSinglePaymentStateRedirect = 2,
 /// The funds have reached the destination.
-  TrueLayerSinglePaymentStateSettled = 3,
+  TrueLayerSinglePaymentStateSettled = 2,
 /// The user did everything needed to do, but the merchant has to wait for the output.
-  TrueLayerSinglePaymentStateWait = 4,
+  TrueLayerSinglePaymentStateWait = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {
@@ -1291,16 +1297,20 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateError, open) {
   TrueLayerMandateErrorUnexpectedBehavior = 12,
 /// The user canceled the mandate.
   TrueLayerMandateErrorUserCanceled = 13,
+/// The mandate was not in a valid <a href="https://docs.truelayer.com/docs/mandate-statuses">status</a> to create a recurring payment.
+  TrueLayerMandateErrorInvalidMandateState = 14,
+/// The constraints set up for the mandate were breached by this recurring payment.
+  TrueLayerMandateErrorConstraintViolation = 15,
 /// The provider has unexpectedly failed when creating the mandate.
-  TrueLayerMandateErrorProviderError = 14,
+  TrueLayerMandateErrorProviderError = 16,
 /// The provider rejected the mandate.
-  TrueLayerMandateErrorProviderRejected = 15,
+  TrueLayerMandateErrorProviderRejected = 17,
 /// The mandate failed due to invalid data in the request.
-  TrueLayerMandateErrorInvalidRequest = 16,
+  TrueLayerMandateErrorInvalidRequest = 18,
 /// The mandate failed due to an invalid sort code being provided.
-  TrueLayerMandateErrorInvalidSortCode = 17,
+  TrueLayerMandateErrorInvalidSortCode = 19,
 /// The mandate failed for an unknown reason.
-  TrueLayerMandateErrorUnknownError = 18,
+  TrueLayerMandateErrorUnknownError = 20,
 };
 static NSString * _Nonnull const TrueLayerMandateErrorDomain = @"TrueLayerObjectiveC.TrueLayerMandateError";
 
@@ -1337,9 +1347,6 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerMandateResultShown, open) {
 typedef SWIFT_ENUM(NSInteger, TrueLayerMandateState, open) {
 /// The user authorized the mandate with the bank.
   TrueLayerMandateStateAuthorized = 0,
-/// Then user has been redirected to the bank to authorize the mandate.
-/// We do not know what happens from there on since we do not have any control over it.
-  TrueLayerMandateStateRedirect = 1,
 };
 
 typedef SWIFT_ENUM(NSInteger, TrueLayerMandateStatus, open) {
@@ -1557,42 +1564,50 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentError, open) {
   TrueLayerSinglePaymentErrorInvalidRequest = 9,
 /// The payment failed due to an invalid sort code being provided.
   TrueLayerSinglePaymentErrorInvalidSortCode = 10,
+/// The payment failed because an invalid beneficiary account reference was provided.
+  TrueLayerSinglePaymentErrorInvalidBeneficiaryAccount = 11,
+/// The PSU submitted an incorrect one-time password during the authorisation of the payment.
+  TrueLayerSinglePaymentErrorInvalidOtp = 12,
 /// The PSU did not have the required balance in their account to complete this payment.
-  TrueLayerSinglePaymentErrorInsufficientFunds = 11,
+  TrueLayerSinglePaymentErrorInsufficientFunds = 13,
 /// The PSU cancelled the payment or wasn’t able to successfully authenticate on the provider’s UI.
-  TrueLayerSinglePaymentErrorNotAuthorized = 12,
+  TrueLayerSinglePaymentErrorNotAuthorized = 14,
 /// The PSU’s payment limit amount with their bank was breached.
-  TrueLayerSinglePaymentErrorPaymentLimitExceeded = 13,
+  TrueLayerSinglePaymentErrorPaymentLimitExceeded = 15,
 /// The provider has unexpectedly failed when creating the payment.
-  TrueLayerSinglePaymentErrorProviderError = 14,
+  TrueLayerSinglePaymentErrorProviderError = 16,
 /// The payment failed because the token or exchange code used to communicate with the bank expired.
-  TrueLayerSinglePaymentErrorProviderExpired = 15,
+  TrueLayerSinglePaymentErrorProviderExpired = 17,
 /// The provider rejected the payment.
-  TrueLayerSinglePaymentErrorProviderRejected = 16,
+  TrueLayerSinglePaymentErrorProviderRejected = 18,
 /// The payment failed for an unknown reason on the server side.
-  TrueLayerSinglePaymentErrorUnknownError = 17,
+  TrueLayerSinglePaymentErrorUnknownError = 19,
 /// The payment failed because the user cancelled the authorisation during the payment flow.
-  TrueLayerSinglePaymentErrorUserCanceledAtProvider = 18,
+  TrueLayerSinglePaymentErrorUserCanceledAtProvider = 20,
 /// The redirect URI passed to the TrueLayer SDK is invalid.
-  TrueLayerSinglePaymentErrorInvalidRedirectURI = 19,
+  TrueLayerSinglePaymentErrorInvalidRedirectURI = 21,
 /// The user took too long to complete the payment, and therefore it expired.
-  TrueLayerSinglePaymentErrorPaymentExpired = 20,
+  TrueLayerSinglePaymentErrorPaymentExpired = 22,
 /// The requested payment was not found.
 /// This is probably due to it not being created on the backend side.
-  TrueLayerSinglePaymentErrorPaymentNotFound = 21,
+  TrueLayerSinglePaymentErrorPaymentNotFound = 23,
 /// The payment was rejected by the bank.
-  TrueLayerSinglePaymentErrorPaymentRejected = 22,
+  TrueLayerSinglePaymentErrorPaymentRejected = 24,
 /// The pre-selected provider was offline.
-  TrueLayerSinglePaymentErrorProviderOffline = 23,
+  TrueLayerSinglePaymentErrorProviderOffline = 25,
 /// The <code>SDK</code> <code>configure</code> method has not been called before using it.
-  TrueLayerSinglePaymentErrorSdkNotConfigured = 24,
+  TrueLayerSinglePaymentErrorSdkNotConfigured = 26,
+/// There is no scheme available given the provider selection configuration.
+  TrueLayerSinglePaymentErrorSchemeUnavailable = 27,
 /// The server encountered an error while processing the answer.
-  TrueLayerSinglePaymentErrorServerError = 25,
+  TrueLayerSinglePaymentErrorServerError = 28,
 /// The <code>SDK</code> encountered an unexpected behavior.
 /// This error should never occur.
-  TrueLayerSinglePaymentErrorUnexpectedBehavior = 26,
+  TrueLayerSinglePaymentErrorUnexpectedBehavior = 29,
+/// The payment didn’t pass an <a href="https://docs.truelayer.com/docs/name-and-age-verification-before-payment">age- or name-based verification check</a>.
+  TrueLayerSinglePaymentErrorVerificationDeclined = 30,
 /// The user canceled the payment.
-  TrueLayerSinglePaymentErrorUserCanceled = 27,
+  TrueLayerSinglePaymentErrorUserCanceled = 31,
 };
 static NSString * _Nonnull const TrueLayerSinglePaymentErrorDomain = @"TrueLayerObjectiveC.TrueLayerSinglePaymentError";
 
@@ -1635,13 +1650,10 @@ typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentState, open) {
   TrueLayerSinglePaymentStateAuthorized = 0,
 /// The bank confirmed the payment.
   TrueLayerSinglePaymentStateExecuted = 1,
-/// Then user has been redirected to the bank to authorize the payment.
-/// We do not know what happens from there on since we do not have any control over it.
-  TrueLayerSinglePaymentStateRedirect = 2,
 /// The funds have reached the destination.
-  TrueLayerSinglePaymentStateSettled = 3,
+  TrueLayerSinglePaymentStateSettled = 2,
 /// The user did everything needed to do, but the merchant has to wait for the output.
-  TrueLayerSinglePaymentStateWait = 4,
+  TrueLayerSinglePaymentStateWait = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, TrueLayerSinglePaymentStatus, open) {

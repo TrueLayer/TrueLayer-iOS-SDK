@@ -1,27 +1,23 @@
 {
-  "id": "60c0a60ed8d7-4e5b-ac79-401b1d8a8633",
-  "amount_in_minor": 1,
-  "currency": "GBP",
-  "user": {
-    "id": "f9b48c9d-176b-46dd-b2da-fe1a2b77350c",
-    "name": "Remi Terr",
-    "email": "remi.terr@aol.com",
-    "phone": "+44777777777"
-  },
-  "payment_method": {
-    "type": "bank_transfer",
-    "provider_selection": {
-      "type": "user_selected",
-      "scheme_selection": {
-        "type": "user_selected"
-      }
+  "amount_in_minor" : 1,
+  "currency" : "EUR",
+  "id" : "1dc4c795-343f-4e41-b9e1-6377f7971502",
+  "payment_method" : {
+    "beneficiary" : {
+      "account_holder_name" : "Test",
+      "reference" : "Test",
+      "type" : "external_account"
     },
-    "beneficiary": {
-      "type": "merchant_account",
-      "merchant_account_id": "string",
-      "account_holder_name": "someMerchantName"
-    }
+    "provider_selection" : {
+      "scheme_selection" : {
+        "type" : "user_selected"
+      },
+      "type" : "user_selected"
+    },
+    "type" : "bank_transfer"
   },
-  "created_at": "string",
-  "status": "authorization_required"
+  "status" : "authorization_required",
+  "user" : {
+    "id" : "a364134f-cc07-4cfb-9e50-cc2bb018b496"
+  }
 }

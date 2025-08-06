@@ -1630,6 +1630,46 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "invalidBeneficiaryAccount",
+                            "printedName": "invalidBeneficiaryAccount",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO25invalidBeneficiaryAccountyA2KmF",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO25invalidBeneficiaryAccountyA2KmF",
+                            "moduleName": "TrueLayerSDK",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
                             "name": "invalidRequest",
                             "printedName": "invalidRequest",
                             "children": [
@@ -1950,6 +1990,86 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "schemeUnavailable",
+                            "printedName": "schemeUnavailable",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO17schemeUnavailableyA2KmF",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO17schemeUnavailableyA2KmF",
+                            "moduleName": "TrueLayerSDK",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "invalidOtp",
+                            "printedName": "invalidOtp",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO10invalidOtpyA2KmF",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO10invalidOtpyA2KmF",
+                            "moduleName": "TrueLayerSDK",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
                             "name": "unknownError",
                             "printedName": "unknownError",
                             "children": [
@@ -2023,6 +2143,46 @@
                             "declKind": "EnumElement",
                             "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO22userCanceledAtProvideryA2KmF",
                             "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO22userCanceledAtProvideryA2KmF",
+                            "moduleName": "TrueLayerSDK",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "verificationDeclined",
+                            "printedName": "verificationDeclined",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error",
+                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO20verificationDeclinedyA2KmF",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5ErrorO20verificationDeclinedyA2KmF",
                             "moduleName": "TrueLayerSDK",
                             "declAttributes": [
                               "RawDocComment"
@@ -3232,48 +3392,6 @@
                             "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO8executedyA2KmF",
                             "moduleName": "TrueLayerSDK",
                             "declAttributes": [
-                              "RawDocComment"
-                            ]
-                          },
-                          {
-                            "kind": "Var",
-                            "name": "redirect",
-                            "printedName": "redirect",
-                            "children": [
-                              {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "State",
-                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State",
-                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Metatype",
-                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State.Type",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "State",
-                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State",
-                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            "declKind": "EnumElement",
-                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO8redirectyA2KmF",
-                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO13SinglePaymentO5StateO8redirectyA2KmF",
-                            "moduleName": "TrueLayerSDK",
-                            "deprecated": true,
-                            "declAttributes": [
-                              "Available",
                               "RawDocComment"
                             ]
                           },
@@ -4613,6 +4731,46 @@
                           },
                           {
                             "kind": "Var",
+                            "name": "constraintViolation",
+                            "printedName": "constraintViolation",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error",
+                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO19constraintViolationyA2KmF",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO19constraintViolationyA2KmF",
+                            "moduleName": "TrueLayerSDK",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
                             "name": "sdkNotConfigured",
                             "printedName": "sdkNotConfigured",
                             "children": [
@@ -4846,6 +5004,46 @@
                             "declKind": "EnumElement",
                             "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO15invalidSortCodeyA2KmF",
                             "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO15invalidSortCodeyA2KmF",
+                            "moduleName": "TrueLayerSDK",
+                            "declAttributes": [
+                              "RawDocComment"
+                            ]
+                          },
+                          {
+                            "kind": "Var",
+                            "name": "invalidMandateState",
+                            "printedName": "invalidMandateState",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Error",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Metatype",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error.Type",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error",
+                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "declKind": "EnumElement",
+                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO07invalidF5StateyA2KmF",
+                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5ErrorO07invalidF5StateyA2KmF",
                             "moduleName": "TrueLayerSDK",
                             "declAttributes": [
                               "RawDocComment"
@@ -5896,48 +6094,6 @@
                             ]
                           },
                           {
-                            "kind": "Var",
-                            "name": "redirect",
-                            "printedName": "redirect",
-                            "children": [
-                              {
-                                "kind": "TypeFunc",
-                                "name": "Function",
-                                "printedName": "(TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State.Type) -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "State",
-                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State",
-                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5StateO"
-                                  },
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Metatype",
-                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State.Type",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "State",
-                                        "printedName": "TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State",
-                                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5StateO"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            "declKind": "EnumElement",
-                            "usr": "s:12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5StateO8redirectyA2KmF",
-                            "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO6ModelsO7MandateO5StateO8redirectyA2KmF",
-                            "moduleName": "TrueLayerSDK",
-                            "deprecated": true,
-                            "declAttributes": [
-                              "Available",
-                              "RawDocComment"
-                            ]
-                          },
-                          {
                             "kind": "Function",
                             "name": "==",
                             "printedName": "==(_:_:)",
@@ -6555,6 +6711,86 @@
                         "declKind": "EnumElement",
                         "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO24customIntegrationVersionyA2ImF",
                         "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO24customIntegrationVersionyA2ImF",
+                        "moduleName": "TrueLayerSDK",
+                        "declAttributes": [
+                          "RawDocComment"
+                        ]
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hp2OptOut",
+                        "printedName": "hp2OptOut",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type) -> TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Key",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Key",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO9hp2OptOutyA2ImF",
+                        "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO9hp2OptOutyA2ImF",
+                        "moduleName": "TrueLayerSDK",
+                        "declAttributes": [
+                          "RawDocComment"
+                        ]
+                      },
+                      {
+                        "kind": "Var",
+                        "name": "hp2ManualSelectionOnly",
+                        "printedName": "hp2ManualSelectionOnly",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type) -> TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Key",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Key",
+                                    "printedName": "TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key",
+                                    "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO22hp2ManualSelectionOnlyyA2ImF",
+                        "mangledName": "$s12TrueLayerSDK0aB0O8PaymentsO23AdditionalConfigurationO3KeyO22hp2ManualSelectionOnlyyA2ImF",
                         "moduleName": "TrueLayerSDK",
                         "declAttributes": [
                           "RawDocComment"
@@ -9186,77 +9422,77 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Models\/Mandate\/Preferences+MandateFacadeModels.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Models\/Mandate\/Preferences+MandateFacadeModels.swift",
       "kind": "BooleanLiteral",
       "offset": 1051,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Models\/SinglePayment\/Preferences+SinglePaymentFacadeModels.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Models\/SinglePayment\/Preferences+SinglePaymentFacadeModels.swift",
       "kind": "BooleanLiteral",
       "offset": 1432,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
       "offset": 511,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 2046,
+      "offset": 2044,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 9601,
+      "offset": 9599,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
-      "offset": 9626,
+      "offset": 9624,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "Dictionary",
-      "offset": 10343,
+      "offset": 10341,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Manager+TrueLayerPayments.swift",
       "kind": "BooleanLiteral",
-      "offset": 10368,
+      "offset": 10366,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",
       "kind": "Dictionary",
       "offset": 370,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",
       "kind": "Dictionary",
       "offset": 587,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Facade\/Payments\/Storage+PaymentsManager.swift",
       "kind": "Array",
       "offset": 700,
       "length": 2,

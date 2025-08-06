@@ -613,6 +613,90 @@
           },
           {
             "kind": "Var",
+            "name": "invalidMandateState",
+            "printedName": "invalidMandateState",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorInvalidMandateState",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO07invalidD5StateyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "constraintViolation",
+            "printedName": "constraintViolation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateError.Type) -> TrueLayerObjectiveC.TrueLayerMandateError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerMandateError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerMandateError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateError@TrueLayerMandateErrorConstraintViolation",
+            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateErrorO19constraintViolationyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
             "name": "providerError",
             "printedName": "providerError",
             "children": [
@@ -651,7 +735,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -693,7 +777,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -735,7 +819,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -777,7 +861,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -819,7 +903,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Constructor",
@@ -1528,50 +1612,6 @@
               "ObjC"
             ],
             "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "redirect",
-            "printedName": "redirect",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TrueLayerObjectiveC.TrueLayerMandateState.Type) -> TrueLayerObjectiveC.TrueLayerMandateState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerMandateState",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerMandateState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrueLayerMandateState",
-                        "printedName": "TrueLayerObjectiveC.TrueLayerMandateState",
-                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerMandateState@TrueLayerMandateStateRedirect",
-            "mangledName": "$s19TrueLayerObjectiveC0aB12MandateStateO8redirectyA2CmF",
-            "moduleName": "TrueLayerObjectiveC",
-            "deprecated": true,
-            "declAttributes": [
-              "Available",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
           },
           {
             "kind": "Constructor",
@@ -3008,6 +3048,90 @@
           },
           {
             "kind": "Var",
+            "name": "invalidBeneficiaryAccount",
+            "printedName": "invalidBeneficiaryAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidBeneficiaryAccount",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO25invalidBeneficiaryAccountyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "invalidOtp",
+            "printedName": "invalidOtp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorInvalidOtp",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO10invalidOtpyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
             "name": "insufficientFunds",
             "printedName": "insufficientFunds",
             "children": [
@@ -3046,7 +3170,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -3088,7 +3212,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -3130,7 +3254,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -3172,7 +3296,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -3214,7 +3338,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -3256,7 +3380,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -3298,7 +3422,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -3340,7 +3464,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -3382,7 +3506,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -3424,7 +3548,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -3466,7 +3590,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -3508,7 +3632,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -3550,7 +3674,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -3592,7 +3716,49 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 24
+            "fixedbinaryorder": 26
+          },
+          {
+            "kind": "Var",
+            "name": "schemeUnavailable",
+            "printedName": "schemeUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorSchemeUnavailable",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO17schemeUnavailableyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 27
           },
           {
             "kind": "Var",
@@ -3634,7 +3800,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 25
+            "fixedbinaryorder": 28
           },
           {
             "kind": "Var",
@@ -3676,7 +3842,49 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 26
+            "fixedbinaryorder": 29
+          },
+          {
+            "kind": "Var",
+            "name": "verificationDeclined",
+            "printedName": "verificationDeclined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrueLayerSinglePaymentError",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrueLayerSinglePaymentError",
+                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentError",
+                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentError@TrueLayerSinglePaymentErrorVerificationDeclined",
+            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentErrorO20verificationDeclinedyA2CmF",
+            "moduleName": "TrueLayerObjectiveC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 30
           },
           {
             "kind": "Var",
@@ -3718,7 +3926,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 27
+            "fixedbinaryorder": 31
           },
           {
             "kind": "Constructor",
@@ -5088,50 +5296,6 @@
           },
           {
             "kind": "Var",
-            "name": "redirect",
-            "printedName": "redirect",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type) -> TrueLayerObjectiveC.TrueLayerSinglePaymentState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TrueLayerSinglePaymentState",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
-                    "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TrueLayerSinglePaymentState",
-                        "printedName": "TrueLayerObjectiveC.TrueLayerSinglePaymentState",
-                        "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@TrueLayerObjectiveC@E@TrueLayerSinglePaymentState@TrueLayerSinglePaymentStateRedirect",
-            "mangledName": "$s19TrueLayerObjectiveC0aB18SinglePaymentStateO8redirectyA2CmF",
-            "moduleName": "TrueLayerObjectiveC",
-            "deprecated": true,
-            "declAttributes": [
-              "Available",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
             "name": "settled",
             "printedName": "settled",
             "children": [
@@ -5170,7 +5334,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -5212,7 +5376,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Constructor",
@@ -10924,553 +11088,581 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 619,
       "length": 12,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 703,
       "length": 18,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 895,
       "length": 15,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 963,
       "length": 15,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 1032,
       "length": 15,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 1115,
       "length": 7,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 1201,
       "length": 16,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 1293,
       "length": 11,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 1407,
       "length": 18,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
       "offset": 1471,
       "length": 12,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1562,
-      "length": 13,
+      "offset": 1619,
+      "length": 19,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1625,
-      "length": 16,
+      "offset": 1733,
+      "length": 19,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1711,
-      "length": 14,
+      "offset": 1831,
+      "length": 13,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1803,
-      "length": 15,
+      "offset": 1894,
+      "length": 16,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1875,
-      "length": 12,
+      "offset": 1980,
+      "length": 14,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2072,
+      "length": 15,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Error\/TrueLayerMandateError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2144,
+      "length": 12,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 157,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 181,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 196,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 213,
       "length": 19,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 255,
       "length": 13,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/State\/TrueLayerMandateState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 552,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 419,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 532,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 652,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/Mandate\/Status\/TrueLayerMandateStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 772,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 395,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 496,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 632,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 745,
       "length": 21,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 24,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 975,
       "length": 12,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 1085,
       "length": 18,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 1216,
       "length": 22,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 1308,
       "length": 14,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
       "offset": 1400,
       "length": 15,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1515,
-      "length": 17,
+      "offset": 1512,
+      "length": 25,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1643,
-      "length": 13,
+      "offset": 1642,
+      "length": 10,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1732,
-      "length": 20,
+      "offset": 1752,
+      "length": 17,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1831,
+      "offset": 1880,
       "length": 13,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 1956,
-      "length": 15,
+      "offset": 1969,
+      "length": 20,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2021,
-      "length": 16,
+      "offset": 2068,
+      "length": 13,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2113,
-      "length": 12,
+      "offset": 2193,
+      "length": 15,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2229,
-      "length": 22,
+      "offset": 2258,
+      "length": 16,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2323,
-      "length": 18,
+      "offset": 2350,
+      "length": 12,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2430,
-      "length": 14,
+      "offset": 2466,
+      "length": 22,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2568,
-      "length": 15,
+      "offset": 2560,
+      "length": 18,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2636,
-      "length": 15,
+      "offset": 2667,
+      "length": 14,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2705,
+      "offset": 2805,
       "length": 15,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2801,
-      "length": 16,
+      "offset": 2873,
+      "length": 15,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2893,
-      "length": 11,
+      "offset": 2942,
+      "length": 15,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 3008,
-      "length": 18,
+      "offset": 3038,
+      "length": 16,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
       "kind": "IntegerLiteral",
-      "offset": 3072,
-      "length": 12,
+      "offset": 3142,
+      "length": 17,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3235,
+      "length": 11,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3350,
+      "length": 18,
+      "value": "29"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3525,
+      "length": 20,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Error\/TrueLayerSinglePaymentError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3591,
+      "length": 12,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 163,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 187,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 202,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 219,
       "length": 17,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 244,
       "length": 20,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 272,
       "length": 22,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 302,
       "length": 19,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 21,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentResultShown.swift",
       "kind": "IntegerLiteral",
       "offset": 373,
       "length": 13,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
       "kind": "IntegerLiteral",
       "offset": 283,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
       "kind": "IntegerLiteral",
-      "offset": 613,
-      "length": 8,
+      "offset": 346,
+      "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
       "kind": "IntegerLiteral",
-      "offset": 676,
-      "length": 7,
+      "offset": 451,
+      "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/State\/TrueLayerSinglePaymentState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 781,
-      "length": 4,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 425,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 538,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 636,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 744,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/SinglePayment\/Status\/TrueLayerSinglePaymentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 864,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/Enums\/TrueLayerEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 230,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerMandatePreferences.swift",
       "kind": "BooleanLiteral",
       "offset": 965,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerSinglePaymentsPreferences.swift",
       "kind": "BooleanLiteral",
       "offset": 1347,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yury.vaschylau\/Documents\/TrueLayer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerVisualSettings.swift",
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/ObjectiveC\/TrueLayerVisualSettings.swift",
       "kind": "StringLiteral",
       "offset": 1024,
       "length": 2,

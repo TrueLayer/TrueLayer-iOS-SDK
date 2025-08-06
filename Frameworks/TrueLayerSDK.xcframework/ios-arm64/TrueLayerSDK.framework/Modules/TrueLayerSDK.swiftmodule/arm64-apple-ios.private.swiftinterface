@@ -37,6 +37,8 @@ extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration {
   public enum Key : Swift.String {
     case customIntegrationType
     case customIntegrationVersion
+    case hp2OptOut
+    case hp2ManualSelectionOnly
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -65,12 +67,14 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
     case mandateRejected
     case providerOffline
     case revoked
+    case constraintViolation
     case sdkNotConfigured
     case serverError
     case providerError
     case providerRejected
     case invalidRequest
     case invalidSortCode
+    case invalidMandateState
     case unknownError
     case unexpectedBehavior
     case userCanceled
@@ -113,8 +117,6 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public enum State {
     case authorized
-    @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
-    case redirect
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -163,6 +165,7 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
     case invalidAccountHolderName
     case invalidCredentials
     case invalidRemitterAccount
+    case invalidBeneficiaryAccount
     case invalidRequest
     case invalidSortCode
     case insufficientFunds
@@ -171,8 +174,11 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
     case providerError
     case providerExpired
     case providerRejected
+    case schemeUnavailable
+    case invalidOtp
     case unknownError
     case userCanceledAtProvider
+    case verificationDeclined
     case unexpectedBehavior
     case userCanceled
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error) -> Swift.Bool
@@ -219,8 +225,6 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public enum State {
     case authorized
     case executed
-    @available(*, deprecated, message: ".redirect is no longer a valid case sent by the SDK. This case will be removed in the future.")
-    case redirect
     case settled
     case wait
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State) -> Swift.Bool

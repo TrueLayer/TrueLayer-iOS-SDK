@@ -1,0 +1,28 @@
+{
+  "authorization_flow": {
+    "actions": {
+      "next": {
+        "type": "provider_selection",
+        "providers": [
+          {
+            "id": "ob-bank-name-ie",
+            "display_name": "Mock Bank IE",
+            "icon_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/icon/generic.svg",
+            "logo_uri": "https://truelayer-provider-assets.s3.amazonaws.com/global/logos/generic.svg",
+            "bg_color": "#000000",
+            "country_code": "IE",
+            "availability": {
+              "recommended_status": "healthy"
+            },
+            "schemes": [
+              {
+                "id": "sepa_credit_transfer"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "status": "authorizing"
+}
