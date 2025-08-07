@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.0.1] - New UI Patch
+
+### Fixed
+- We've resolved an issue where the "Go to Bank" button sometimes failed to open your selected bank app.
+
 ## [4.0.0] - New UI
 
 ### Added
