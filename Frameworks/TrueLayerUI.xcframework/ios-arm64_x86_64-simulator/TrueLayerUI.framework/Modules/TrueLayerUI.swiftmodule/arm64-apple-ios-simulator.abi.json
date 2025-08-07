@@ -35097,42 +35097,42 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14131,
+      "offset": 14183,
       "length": 15,
       "value": "\"paymentAmount\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14180,
+      "offset": 14232,
       "length": 28,
       "value": "\"paymentInfoBeneficiaryName\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14239,
+      "offset": 14291,
       "length": 25,
       "value": "\"merchantInformationName\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14284,
+      "offset": 14336,
       "length": 14,
       "value": "\"providerName\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14319,
+      "offset": 14371,
       "length": 21,
       "value": "\"maskedAccountNumber\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14436,
+      "offset": 14488,
       "length": 4,
       "value": "true"
     },
