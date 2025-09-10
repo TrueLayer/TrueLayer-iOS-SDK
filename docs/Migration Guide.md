@@ -1,9 +1,16 @@
 # TrueLayer iOS SDK Migration Guide
 
+- [Migrating from 3.x.x to 4.x.x](#migrating-from-3xx-to-4xx)
 - [Migrating from 3.0.x to 3.1.0](#migrating-from-30x-to-301)
 - [Migrating from 2.x to 3.x](#migrating-from-2x-to-3x)
 - [Migrating from 1.x to 2.x](#migrating-from-1x-to-2x)
 - [Migrating from beta to 2.x](#migrating-from-beta-to-2x)
+
+## Migrating from 3.x.x to 4.x.x
+
+For the New UI, SDK now uses a single-screen, declarative state-driven navigation system under the hood. If you previously relied on imperative navigation APIs like `push`, `pop`, and `present` to handle navigating to and from the TrueLayer SDK, please re-test your implementation.
+
+The previously deprecated `.redirect` success case has been removed. Check that there are no compiler errors and update your implementation if needed.
 
 ## Migrating from 3.0.x to 3.1.0
 
