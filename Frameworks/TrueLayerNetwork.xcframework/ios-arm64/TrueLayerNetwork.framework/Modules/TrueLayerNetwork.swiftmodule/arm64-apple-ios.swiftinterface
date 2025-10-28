@@ -9,6 +9,12 @@ import TrueLayerUtils
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension Foundation.JSONDecoder.DateDecodingStrategy {
+  public static let iso8601Extended: Foundation.JSONDecoder.DateDecodingStrategy
+}
+extension Foundation.JSONEncoder.DateEncodingStrategy {
+  public static let iso8601Extended: Foundation.JSONEncoder.DateEncodingStrategy
+}
 public enum Network {
 }
 public protocol RetryableRequest {

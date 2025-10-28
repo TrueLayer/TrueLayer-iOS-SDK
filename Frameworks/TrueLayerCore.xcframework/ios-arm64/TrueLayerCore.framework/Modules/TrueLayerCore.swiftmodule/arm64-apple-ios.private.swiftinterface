@@ -326,8 +326,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public let id: Swift.String?
     @_spi(TrueLayer) public let text: Swift.String?
     @_spi(TrueLayer) public let comments: Swift.Bool?
-    @_spi(TrueLayer) public let writtenResponsePlaceholder: Swift.String?
-    @_spi(TrueLayer) public init(id: Swift.String?, text: Swift.String?, comments: Swift.Bool?, writtenResponsePlaceholder: Swift.String?)
+    @_spi(TrueLayer) public let commentsPlaceholder: Swift.String?
+    @_spi(TrueLayer) public init(id: Swift.String?, text: Swift.String?, comments: Swift.Bool?, commentsPlaceholder: Swift.String?)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation.CancellationFormOption, b: TrueLayerCore.Core.Payments.Models.Shared.CancellationFormInformation.CancellationFormOption) -> Swift.Bool
     @_spi(TrueLayer) public typealias ID = Swift.String?
   }
@@ -763,11 +763,12 @@ import _SwiftConcurrencyShims
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {
-  @_spi(TrueLayer) public struct ProvidersInfo : Swift.Decodable, Swift.Equatable {
+  @_spi(TrueLayer) public struct ProvidersInfo : Swift.Equatable {
+    @_spi(TrueLayer) public let currency: Swift.String?
     @_spi(TrueLayer) public let filters: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters?
-    @_spi(TrueLayer) public init(filters: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters?)
+    @_spi(TrueLayer) public let accountSaveOption: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.AccountSaveOption?
+    @_spi(TrueLayer) public init(currency: Swift.String?, filters: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters?, accountSaveOption: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.AccountSaveOption?)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo) -> Swift.Bool
-    @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo {
@@ -776,6 +777,13 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public init(countries: [Swift.String]?)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.Filters) -> Swift.Bool
     @_spi(TrueLayer) public init(from decoder: any Swift.Decoder) throws
+  }
+}
+@_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo {
+  @_spi(TrueLayer) public enum AccountSaveOption : Swift.Equatable {
+    @_spi(TrueLayer) case automatic
+    @_spi(TrueLayer) case checkbox(preselected: Swift.Bool)
+    @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.AccountSaveOption, b: TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo.AccountSaveOption) -> Swift.Bool
   }
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.SinglePayment {

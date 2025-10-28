@@ -3,11 +3,11 @@
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUI
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
+import QuartzCore.CoreAnimation
 import CoreGraphics
-import CoreText
 import DeveloperToolsSupport
 import Foundation
-import SpriteKit
+import QuartzCore
 import Swift
 import SwiftUI
 import TrueLayerAPI
@@ -20,7 +20,6 @@ import UIKit.UIFont
 import UIKit
 import WebKit
 import _Concurrency
-import _SpriteKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class TrueLayerUIResources : ObjectiveC.NSObject {
@@ -31,21 +30,14 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 public enum TrueLayerUIFontFamily : Swift.Sendable {
-  public enum ProximaNova : Swift.Sendable {
-    public static let black: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let blackItalic: TrueLayerUI.TrueLayerUIFontConvertible
+  public enum Manrope : Swift.Sendable {
     public static let bold: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let boldItalic: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let extrabold: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let extraboldItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let extraBold: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let extraLight: TrueLayerUI.TrueLayerUIFontConvertible
     public static let light: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let lightItalic: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let medium: TrueLayerUI.TrueLayerUIFontConvertible
     public static let regular: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let regularItalic: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let semibold: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let semiboldItalic: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let thinItalic: TrueLayerUI.TrueLayerUIFontConvertible
-    public static let thin: TrueLayerUI.TrueLayerUIFontConvertible
+    public static let semiBold: TrueLayerUI.TrueLayerUIFontConvertible
     public static let all: [TrueLayerUI.TrueLayerUIFontConvertible]
   }
   public static let allCustomFonts: [TrueLayerUI.TrueLayerUIFontConvertible]
@@ -134,5 +126,10 @@ public enum Analytics {
 
 
 
+@available(iOS 15.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func cornerRadius(cornerRadius: CoreFoundation.CGFloat, strokeStyle: some ShapeStyle, strokeLineWidth: CoreFoundation.CGFloat) -> some SwiftUICore.View
+  
+}
 extension TrueLayerUI.Analytics.Environment : Swift.Equatable {}
 extension TrueLayerUI.Analytics.Environment : Swift.Hashable {}
