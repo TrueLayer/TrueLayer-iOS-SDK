@@ -289,6 +289,12 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case unexpectedEmptyResponse
   }
 }
+extension Foundation.JSONDecoder.DateDecodingStrategy {
+  public static let iso8601Extended: Foundation.JSONDecoder.DateDecodingStrategy
+}
+extension Foundation.JSONEncoder.DateEncodingStrategy {
+  public static let iso8601Extended: Foundation.JSONEncoder.DateEncodingStrategy
+}
 extension Foundation.URLSession {
   @_spi(TrueLayer) public static var mock: Foundation.URLSession {
     get

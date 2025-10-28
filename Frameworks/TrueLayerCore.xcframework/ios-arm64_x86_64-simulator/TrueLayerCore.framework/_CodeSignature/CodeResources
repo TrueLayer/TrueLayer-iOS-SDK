@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cEUxAXknQ6qOul1GDEcynu+u1Io=
+		UJV64+SyBHhv6Xs9eJKm8pTN37g=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		YYdf9NnST990SGbSJnL2wC1aTVk=
+		XOYXbur4BoMVPp28rXM49Qs+POc=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vfHpnc42Vt4RmzQRg5BJ3z1YMHw=
+		efHMIzJYd4MMV9dsH/mExmvqKzs=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TLB/k38C3yDedP4T0hwyW9bNE3g=
+		nArpBqOr3aqXy8aWNQ3gLs/SmlE=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		YYdf9NnST990SGbSJnL2wC1aTVk=
+		XOYXbur4BoMVPp28rXM49Qs+POc=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aCrHX1EUXUFHKyE7TsZE1gJ9d7o=
+		7rsTcHArG7RgWSh1+nyGfy8EfNE=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FMP/OQp6k18JCBxNnb3H+axtOW4=
+		IET8Ndkxuz7f9v06UaydhDksKFU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZjyTc7lH9A7cOjWtXavjenE3IiHUSiTlWDRMLA2Lz48=
+			SKw8j8UjUc879mmmE/ikuwtoq2kH94Nbgy9m5K38xd8=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SIj6gjUzjJ60fFash/4oM65FVX6Qi60E6MR2hw6WvCs=
+			xDwlbjTxNGKQd29WINc2VbYEUhNV/vFsfVQ/CrZ4A1o=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -98,21 +98,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EWoyDMaIXOKi3+lBf7JFPuKVm2MIoSYKJLw9uFaC93s=
+			QwP6s1S+KF1IcBLUs2DGUVmkb73UhJwLh6EZDJOJy80=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZjyTc7lH9A7cOjWtXavjenE3IiHUSiTlWDRMLA2Lz48=
+			SKw8j8UjUc879mmmE/ikuwtoq2kH94Nbgy9m5K38xd8=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rvNeo7cTliZ77tNPxERMCt0glWrSjaUO5FUeZd4Qpjc=
+			3IWQEC0J0288iX11JOvpfnoj6RteC61VHI0fIsCB6kE=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W2YdH+QrtsyPJVpGYaitiEf3gpnEmBAzGLlLh0cs17Y=
+			tGgLe9c2BAdTgeAOfTLNAsDwcHXcp15/DBquPY1vxko=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

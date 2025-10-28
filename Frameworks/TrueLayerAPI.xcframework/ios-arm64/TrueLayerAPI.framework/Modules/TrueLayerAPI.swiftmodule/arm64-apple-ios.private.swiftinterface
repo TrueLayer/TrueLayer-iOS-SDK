@@ -136,6 +136,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func submitForm(inputs: [Swift.String : Swift.String], adjacent: TrueLayerCore.Core.Payments.Models.Shared.Adjacent?) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func submitUserAccountSelection(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func submitNewUserAccountSelection() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
+    @_spi(TrueLayer) public func submitSaveUserAccount() async throws
     @_spi(TrueLayer) public func deleteUserAccount(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func getSchemeSelectionType(currency: Swift.String, schemes: [Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType
     @_spi(TrueLayer) public func submitScheme(_ schemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status

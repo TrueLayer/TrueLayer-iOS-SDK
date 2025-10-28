@@ -2008,6 +2008,20 @@
         "moduleName": "TrueLayerNetwork"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerNetwork"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TrueLayerNetwork"
+      },
+      {
         "kind": "TypeDecl",
         "name": "HTTPRequest",
         "printedName": "HTTPRequest",
@@ -11433,6 +11447,176 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DateDecodingStrategy",
+        "printedName": "DateDecodingStrategy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "iso8601Extended",
+            "printedName": "iso8601Extended",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateDecodingStrategy",
+                "printedName": "Foundation.JSONDecoder.DateDecodingStrategy",
+                "usr": "s:10Foundation11JSONDecoderC20DateDecodingStrategyO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation11JSONDecoderC20DateDecodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvpZ",
+            "mangledName": "$s10Foundation11JSONDecoderC20DateDecodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvpZ",
+            "moduleName": "TrueLayerNetwork",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateDecodingStrategy",
+                    "printedName": "Foundation.JSONDecoder.DateDecodingStrategy",
+                    "usr": "s:10Foundation11JSONDecoderC20DateDecodingStrategyO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation11JSONDecoderC20DateDecodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvgZ",
+                "mangledName": "$s10Foundation11JSONDecoderC20DateDecodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvgZ",
+                "moduleName": "TrueLayerNetwork",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10Foundation11JSONDecoderC20DateDecodingStrategyO",
+        "mangledName": "$s10Foundation11JSONDecoderC20DateDecodingStrategyO",
+        "moduleName": "Foundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DateEncodingStrategy",
+        "printedName": "DateEncodingStrategy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "iso8601Extended",
+            "printedName": "iso8601Extended",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateEncodingStrategy",
+                "printedName": "Foundation.JSONEncoder.DateEncodingStrategy",
+                "usr": "s:10Foundation11JSONEncoderC20DateEncodingStrategyO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation11JSONEncoderC20DateEncodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvpZ",
+            "mangledName": "$s10Foundation11JSONEncoderC20DateEncodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvpZ",
+            "moduleName": "TrueLayerNetwork",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateEncodingStrategy",
+                    "printedName": "Foundation.JSONEncoder.DateEncodingStrategy",
+                    "usr": "s:10Foundation11JSONEncoderC20DateEncodingStrategyO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation11JSONEncoderC20DateEncodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvgZ",
+                "mangledName": "$s10Foundation11JSONEncoderC20DateEncodingStrategyO16TrueLayerNetworkE15iso8601ExtendedAEvgZ",
+                "moduleName": "TrueLayerNetwork",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10Foundation11JSONEncoderC20DateEncodingStrategyO",
+        "mangledName": "$s10Foundation11JSONEncoderC20DateEncodingStrategyO",
+        "moduleName": "Foundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "URLSession",
         "printedName": "URLSession",
         "children": [
@@ -11838,6 +12022,20 @@
       "offset": 131,
       "length": 9,
       "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/JSONDecoder+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1321,
+      "length": 39,
+      "value": "\"Unsupported date value: \""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Network\/Extensions\/JSONDecoder+Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1359,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Network\/Manager\/Manager+Network.swift",
