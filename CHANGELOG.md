@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.0] - Intersection Theme
+
+### Added
+- SDK now supports new intersection theme design across all screens in the new UI. The new theme is available for all payments using the new UI (GBP and EUR+Ireland single payments).
+
+### Changed
+- General improvements resulting in smoother user experience and better overall performance
+
 ## [4.0.1] - New UI Patch
 
 ### Fixed
