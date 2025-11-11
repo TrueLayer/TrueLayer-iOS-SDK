@@ -373,9 +373,8 @@ import _SwiftConcurrencyShims
 }
 @_spi(TrueLayer) extension TrueLayerCore.Core.Payments.Models.Shared {
   @_spi(TrueLayer) public struct PISLegals : Swift.Equatable {
-    @_spi(TrueLayer) public let text: Swift.String
-    @_spi(TrueLayer) public let howItWorks: Swift.String?
-    @_spi(TrueLayer) public init(text: Swift.String, howItWorks: Swift.String?)
+    @_spi(TrueLayer) public let smallText: TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy
+    @_spi(TrueLayer) public init(smallText: TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy)
     @_spi(TrueLayer) public static func == (a: TrueLayerCore.Core.Payments.Models.Shared.PISLegals, b: TrueLayerCore.Core.Payments.Models.Shared.PISLegals) -> Swift.Bool
   }
 }
