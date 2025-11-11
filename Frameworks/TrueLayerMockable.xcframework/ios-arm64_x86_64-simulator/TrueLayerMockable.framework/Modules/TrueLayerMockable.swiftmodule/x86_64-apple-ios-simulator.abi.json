@@ -1303,8 +1303,8 @@
                   },
                   {
                     "kind": "Var",
-                    "name": "providerSelectionInfoIrelandOnly",
-                    "printedName": "providerSelectionInfoIrelandOnly",
+                    "name": "providersInfoGbpUk",
+                    "printedName": "providersInfoGbpUk",
                     "children": [
                       {
                         "kind": "TypeFunc",
@@ -1334,8 +1334,48 @@
                       }
                     ],
                     "declKind": "EnumElement",
-                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO32providerSelectionInfoIrelandOnlyyA2GmF",
-                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO32providerSelectionInfoIrelandOnlyyA2GmF",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO18providersInfoGbpUkyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO18providersInfoGbpUkyA2GmF",
+                    "moduleName": "TrueLayerMockable",
+                    "declAttributes": [
+                      "RawDocComment"
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "providersInfoEurIreland",
+                    "printedName": "providersInfoEurIreland",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type) -> TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthorizationFlowResponse",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                            "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "AuthorizationFlowResponse",
+                                "printedName": "TrueLayerMockable.File.SinglePayment.AuthorizationFlowResponse",
+                                "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO23providersInfoEurIrelandyA2GmF",
+                    "mangledName": "$s17TrueLayerMockable4FileO13SinglePaymentO25AuthorizationFlowResponseO23providersInfoEurIrelandyA2GmF",
                     "moduleName": "TrueLayerMockable",
                     "declAttributes": [
                       "RawDocComment"
@@ -4951,8 +4991,8 @@
                     "children": [
                       {
                         "kind": "Var",
-                        "name": "textWithHowItWorks",
-                        "printedName": "textWithHowItWorks",
+                        "name": "smallPrint",
+                        "printedName": "smallPrint",
                         "children": [
                           {
                             "kind": "TypeFunc",
@@ -4982,8 +5022,8 @@
                           }
                         ],
                         "declKind": "EnumElement",
-                        "usr": "s:17TrueLayerMockable4FileO6SharedO3PISO6LegalsO18textWithHowItWorksyA2ImF",
-                        "mangledName": "$s17TrueLayerMockable4FileO6SharedO3PISO6LegalsO18textWithHowItWorksyA2ImF",
+                        "usr": "s:17TrueLayerMockable4FileO6SharedO3PISO6LegalsO10smallPrintyA2ImF",
+                        "mangledName": "$s17TrueLayerMockable4FileO6SharedO3PISO6LegalsO10smallPrintyA2ImF",
                         "moduleName": "TrueLayerMockable",
                         "declAttributes": [
                           "RawDocComment"

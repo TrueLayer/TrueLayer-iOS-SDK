@@ -22263,19 +22263,19 @@
                         "children": [
                           {
                             "kind": "Var",
-                            "name": "text",
-                            "printedName": "text",
+                            "name": "smallText",
+                            "printedName": "smallText",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
+                                "name": "ActionableCopy",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO14ActionableCopyV"
                               }
                             ],
                             "declKind": "Var",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV4textSSvp",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV4textSSvp",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV9smallTextAI14ActionableCopyVvp",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV9smallTextAI14ActionableCopyVvp",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "HasStorage",
@@ -22294,80 +22294,14 @@
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
-                                    "name": "String",
-                                    "printedName": "Swift.String",
-                                    "usr": "s:SS"
+                                    "name": "ActionableCopy",
+                                    "printedName": "TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy",
+                                    "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO14ActionableCopyV"
                                   }
                                 ],
                                 "declKind": "Accessor",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV4textSSvg",
-                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV4textSSvg",
-                                "moduleName": "TrueLayerCore",
-                                "implicit": true,
-                                "spi_group_names": [
-                                  "TrueLayer"
-                                ],
-                                "accessorKind": "get"
-                              }
-                            ]
-                          },
-                          {
-                            "kind": "Var",
-                            "name": "howItWorks",
-                            "printedName": "howItWorks",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "Swift.String?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "String",
-                                    "printedName": "Swift.String",
-                                    "usr": "s:SS"
-                                  }
-                                ],
-                                "usr": "s:Sq"
-                              }
-                            ],
-                            "declKind": "Var",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV10howItWorksSSSgvp",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV10howItWorksSSSgvp",
-                            "moduleName": "TrueLayerCore",
-                            "declAttributes": [
-                              "HasStorage",
-                              "AccessControl"
-                            ],
-                            "spi_group_names": [
-                              "TrueLayer"
-                            ],
-                            "isLet": true,
-                            "hasStorage": true,
-                            "accessors": [
-                              {
-                                "kind": "Accessor",
-                                "name": "Get",
-                                "printedName": "Get()",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "Optional",
-                                    "printedName": "Swift.String?",
-                                    "children": [
-                                      {
-                                        "kind": "TypeNominal",
-                                        "name": "String",
-                                        "printedName": "Swift.String",
-                                        "usr": "s:SS"
-                                      }
-                                    ],
-                                    "usr": "s:Sq"
-                                  }
-                                ],
-                                "declKind": "Accessor",
-                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV10howItWorksSSSgvg",
-                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV10howItWorksSSSgvg",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV9smallTextAI14ActionableCopyVvg",
+                                "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV9smallTextAI14ActionableCopyVvg",
                                 "moduleName": "TrueLayerCore",
                                 "implicit": true,
                                 "spi_group_names": [
@@ -22380,7 +22314,7 @@
                           {
                             "kind": "Constructor",
                             "name": "init",
-                            "printedName": "init(text:howItWorks:)",
+                            "printedName": "init(smallText:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -22390,28 +22324,14 @@
                               },
                               {
                                 "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "Swift.String?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "String",
-                                    "printedName": "Swift.String",
-                                    "usr": "s:SS"
-                                  }
-                                ],
-                                "usr": "s:Sq"
+                                "name": "ActionableCopy",
+                                "printedName": "TrueLayerCore.Core.Payments.Models.Shared.ActionableCopy",
+                                "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO14ActionableCopyV"
                               }
                             ],
                             "declKind": "Constructor",
-                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV4text10howItWorksAKSS_SSSgtcfc",
-                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV4text10howItWorksAKSS_SSSgtcfc",
+                            "usr": "s:13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV9smallTextAkI14ActionableCopyV_tcfc",
+                            "mangledName": "$s13TrueLayerCore0C0O8PaymentsO6ModelsO6SharedO9PISLegalsV9smallTextAkI14ActionableCopyV_tcfc",
                             "moduleName": "TrueLayerCore",
                             "declAttributes": [
                               "AccessControl"

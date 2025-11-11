@@ -74,7 +74,7 @@ extension TrueLayerMockable.File {
 }
 extension TrueLayerMockable.File.Shared.PIS {
   public enum Legals : Swift.String {
-    case textWithHowItWorks
+    case smallPrint
     public var rawValue: Swift.String {
       get
     }
@@ -136,7 +136,8 @@ extension TrueLayerMockable.File.SinglePayment {
     case providerHasInternalServerError
     case schemeSelection
     case providerSelectionIrelandOnly
-    case providerSelectionInfoIrelandOnly
+    case providersInfoGbpUk
+    case providersInfoEurIreland
     case accountSelectionAdditionalInputs
     case usernamePasswordAdditionalInputs
     public var rawValue: Swift.String {
