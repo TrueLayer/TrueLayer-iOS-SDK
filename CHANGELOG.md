@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.1] - Intersection Theme Patch
+
+### Fixed
+- Disabled password save prompt that would incorrectly appear when entering bank login credentials.
+- Resolved an issue where some Terms of Service and Privacy Policy links in legal texts were not displayed correctly.
+
 ## [4.1.0] - Intersection Theme
 
 ### Added
