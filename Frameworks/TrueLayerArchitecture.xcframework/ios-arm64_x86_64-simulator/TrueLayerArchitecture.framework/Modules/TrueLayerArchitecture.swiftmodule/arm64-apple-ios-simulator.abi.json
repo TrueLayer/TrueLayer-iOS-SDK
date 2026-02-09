@@ -2469,13 +2469,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TrueLayerArchitecture6RouterC23showProxyViewControlleryySo06UIViewH0CF",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC23showProxyViewControlleryySo06UIViewH0CF",
+            "usr": "s:21TrueLayerArchitecture6RouterC23showProxyViewControlleryySo06UIViewH0CKF",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC23showProxyViewControlleryySo06UIViewH0CKF",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "Custom",
               "AccessControl"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2542,8 +2543,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TrueLayerArchitecture6RouterC4show15routeIdentifier7context8animated10completionyx_ypSgSbyycSgtSYRzSS8RawValueRtzlF",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC4show15routeIdentifier7context8animated10completionyx_ypSgSbyycSgtSYRzSS8RawValueRtzlF",
+            "usr": "s:21TrueLayerArchitecture6RouterC4show15routeIdentifier7context8animated10completionyx_ypSgSbyycSgtKSYRzSS8RawValueRtzlF",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC4show15routeIdentifier7context8animated10completionyx_ypSgSbyycSgtKSYRzSS8RawValueRtzlF",
             "moduleName": "TrueLayerArchitecture",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0.RawValue == Swift.String>",
             "sugared_genericSig": "<Route where Route : Swift.RawRepresentable, Route.RawValue == Swift.String>",
@@ -2552,6 +2553,7 @@
               "AccessControl",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2604,8 +2606,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TrueLayerArchitecture6RouterC4hide15routeIdentifier8animated10completionyx_SbyycSgtSYRzSS8RawValueRtzlF",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC4hide15routeIdentifier8animated10completionyx_SbyycSgtSYRzSS8RawValueRtzlF",
+            "usr": "s:21TrueLayerArchitecture6RouterC4hide15routeIdentifier8animated10completionyx_SbyycSgtKSYRzSS8RawValueRtzlF",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC4hide15routeIdentifier8animated10completionyx_SbyycSgtKSYRzSS8RawValueRtzlF",
             "moduleName": "TrueLayerArchitecture",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0.RawValue == Swift.String>",
             "sugared_genericSig": "<Route where Route : Swift.RawRepresentable, Route.RawValue == Swift.String>",
@@ -2614,6 +2616,7 @@
               "AccessControl",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2641,14 +2644,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TrueLayerArchitecture6RouterC5popTo14viewController8animatedySo06UIViewH0C_SbtF",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC5popTo14viewController8animatedySo06UIViewH0C_SbtF",
+            "usr": "s:21TrueLayerArchitecture6RouterC5popTo14viewController8animatedySo06UIViewH0C_SbtKF",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC5popTo14viewController8animatedySo06UIViewH0C_SbtKF",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "Custom",
               "AccessControl",
               "RawDocComment"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2670,14 +2674,120 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:21TrueLayerArchitecture6RouterC20popTopViewController8animatedySb_tF",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC20popTopViewController8animatedySb_tF",
+            "usr": "s:21TrueLayerArchitecture6RouterC20popTopViewController8animatedySb_tKF",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC20popTopViewController8animatedySb_tKF",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "Custom",
               "AccessControl"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Error",
+            "printedName": "Error",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "navigationError",
+                "printedName": "navigationError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TrueLayerArchitecture.Router.Error.Type) -> (Swift.String) -> TrueLayerArchitecture.Router.Error",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> TrueLayerArchitecture.Router.Error",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "TrueLayerArchitecture.Router.Error",
+                            "usr": "s:21TrueLayerArchitecture6RouterC5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(reason: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TrueLayerArchitecture.Router.Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "TrueLayerArchitecture.Router.Error",
+                            "usr": "s:21TrueLayerArchitecture6RouterC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:21TrueLayerArchitecture6RouterC5ErrorO010navigationE0yAESS_tcAEmF",
+                "mangledName": "$s21TrueLayerArchitecture6RouterC5ErrorO010navigationE0yAESS_tcAEmF",
+                "moduleName": "TrueLayerArchitecture",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:21TrueLayerArchitecture6RouterC5ErrorO",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC5ErrorO",
+            "moduleName": "TrueLayerArchitecture",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -6226,28 +6336,28 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 3726,
+      "offset": 3802,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 4971,
+      "offset": 5149,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6412,
+      "offset": 6715,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6991,
+      "offset": 7321,
       "length": 4,
       "value": "true"
     }
