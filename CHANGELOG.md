@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.2] - QoL and Patches
+
+### Fixed
+- Some cases where a navigation error would lead to a system crash.
+- Improved the overall SDK start-up.
+
 ## [4.1.1] - Intersection Theme Patch
 
 ### Fixed

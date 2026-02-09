@@ -295,6 +295,9 @@ extension Foundation.JSONDecoder.DateDecodingStrategy {
 extension Foundation.JSONEncoder.DateEncodingStrategy {
   public static let iso8601Extended: Foundation.JSONEncoder.DateEncodingStrategy
 }
+extension Foundation.URLRequest {
+  public func cURL() -> Swift.String
+}
 extension Foundation.URLSession {
   @_spi(TrueLayer) public static var mock: Foundation.URLSession {
     get

@@ -22643,33 +22643,6 @@
                     "funcSelfKind": "NonMutating"
                   },
                   {
-                    "kind": "Function",
-                    "name": "prepareForPresentation",
-                    "printedName": "prepareForPresentation()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Func",
-                    "usr": "s:11TrueLayerUI0C0O7SDKRootO14ViewControllerC22prepareForPresentationyyYaKF",
-                    "mangledName": "$s11TrueLayerUI0C0O7SDKRootO14ViewControllerC22prepareForPresentationyyYaKF",
-                    "moduleName": "TrueLayerUI",
-                    "declAttributes": [
-                      "Preconcurrency",
-                      "Custom",
-                      "Final",
-                      "AccessControl"
-                    ],
-                    "spi_group_names": [
-                      "TrueLayer"
-                    ],
-                    "throwing": true,
-                    "funcSelfKind": "NonMutating"
-                  },
-                  {
                     "kind": "Constructor",
                     "name": "init",
                     "printedName": "init(store:localState:)",
@@ -28889,6 +28862,16 @@
         "kind": "Import",
         "name": "TrueLayerAPI",
         "printedName": "TrueLayerAPI",
+        "declKind": "Import",
+        "moduleName": "TrueLayerUI",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrueLayerArchitecture",
+        "printedName": "TrueLayerArchitecture",
         "declKind": "Import",
         "moduleName": "TrueLayerUI",
         "declAttributes": [
@@ -36937,44 +36920,44 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10593,
-      "length": 46,
-      "value": "\"intersection\/color\/text\/button\/ghost\/enabled\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 11001,
+      "offset": 10596,
       "length": 47,
       "value": "\"intersection\/color\/text\/button\/filled\/enabled\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11412,
+      "offset": 11002,
+      "length": 46,
+      "value": "\"intersection\/color\/text\/button\/ghost\/enabled\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11409,
+      "length": 45,
+      "value": "\"intersection\/color\/text\/accent\/highContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11795,
       "length": 46,
       "value": "\"intersection\/color\/text\/neutral\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11654,
+      "offset": 12037,
       "length": 45,
       "value": "\"intersection\/color\/text\/neutral\/lowContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11883,
+      "offset": 12266,
       "length": 39,
       "value": "\"intersection\/color\/text\/neutral\/white\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 12260,
-      "length": 45,
-      "value": "\"intersection\/color\/text\/accent\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
@@ -37072,14 +37055,14 @@
       "kind": "StringLiteral",
       "offset": 17060,
       "length": 45,
-      "value": "\"intersection\/color\/icon\/danger\/highContrast\""
+      "value": "\"intersection\/color\/icon\/accent\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 17443,
       "length": 45,
-      "value": "\"intersection\/color\/icon\/accent\/highContrast\""
+      "value": "\"intersection\/color\/icon\/danger\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
@@ -37462,16 +37445,16 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29135,
-      "length": 57,
-      "value": "\"common\/images\/icon\/descriptive\/times-circle\/sharp\/solid\""
+      "offset": 29108,
+      "length": 50,
+      "value": "\"common\/images\/icon\/descriptive\/check\/sharp\/solid\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29737,
-      "length": 50,
-      "value": "\"common\/images\/icon\/descriptive\/check\/sharp\/solid\""
+      "offset": 29730,
+      "length": 57,
+      "value": "\"common\/images\/icon\/descriptive\/times-circle\/sharp\/solid\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphonesimulator\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",

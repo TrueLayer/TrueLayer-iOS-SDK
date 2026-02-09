@@ -1417,7 +1417,7 @@
                           {
                             "kind": "Function",
                             "name": "getProvidersConfiguration",
-                            "printedName": "getProvidersConfiguration()",
+                            "printedName": "getProvidersConfiguration(countries:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1432,11 +1432,25 @@
                                   }
                                 ],
                                 "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV25getProvidersConfigurationSay0aB4Core0K0OADO6ModelsOAJO8ProviderV0J0VGyYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV25getProvidersConfigurationSay0aB4Core0K0OADO6ModelsOAJO8ProviderV0J0VGyYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV25getProvidersConfiguration9countriesSay0aB4Core0L0OADO6ModelsOAJO8ProviderV0J0VGSaySSG_tYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO6SharedV25getProvidersConfiguration9countriesSay0aB4Core0L0OADO6ModelsOAJO8ProviderV0J0VGSaySSG_tYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -2346,7 +2360,7 @@
                           {
                             "kind": "Function",
                             "name": "getSchemeSelectionType",
-                            "printedName": "getSchemeSelectionType(currency:schemes:)",
+                            "printedName": "getSchemeSelectionType(currency:schemes:paymentId:providerId:)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -2373,11 +2387,23 @@
                                   }
                                 ],
                                 "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
                               }
                             ],
                             "declKind": "Func",
-                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV22getSchemeSelectionType8currency7schemes0aB4Core0O0OADO6ModelsOAJO0J0V0kL0OSS_SaySSGtYaKF",
-                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV22getSchemeSelectionType8currency7schemes0aB4Core0O0OADO6ModelsOAJO0J0V0kL0OSS_SaySSGtYaKF",
+                            "usr": "s:12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV22getSchemeSelectionType8currency7schemes9paymentId08providerP00aB4Core0R0OADO6ModelsOAJO0J0V0kL0OSS_SaySSGS2StYaKF",
+                            "mangledName": "$s12TrueLayerAPI0C0O8PaymentsO8RequestsO7ManagerO13SinglePaymentV22getSchemeSelectionType8currency7schemes9paymentId08providerP00aB4Core0R0OADO6ModelsOAJO0J0V0kL0OSS_SaySSGS2StYaKF",
                             "moduleName": "TrueLayerAPI",
                             "declAttributes": [
                               "AccessControl",
@@ -5580,49 +5606,56 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2345,
+      "offset": 2567,
+      "length": 11,
+      "value": "\"someToken\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "Array",
+      "offset": 2626,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2806,
+      "length": 16,
+      "value": "\"someIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2847,
+      "length": 16,
+      "value": "\"someIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 2917,
       "length": 11,
       "value": "\"someToken\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 3065,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2606,
+      "offset": 3106,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2676,
-      "length": 11,
-      "value": "\"someToken\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
-      "kind": "StringLiteral",
-      "offset": 2824,
-      "length": 16,
-      "value": "\"someIdentifier\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
-      "kind": "StringLiteral",
-      "offset": 2865,
-      "length": 16,
-      "value": "\"someIdentifier\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
-      "kind": "StringLiteral",
-      "offset": 2929,
+      "offset": 3170,
       "length": 11,
       "value": "\"someToken\""
     },
@@ -5776,23 +5809,37 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 1234,
+      "offset": 1371,
       "length": 11,
       "value": "\"someToken\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
-      "offset": 1261,
+      "offset": 1398,
       "length": 5,
       "value": "\"GBP\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "Array",
-      "offset": 1281,
+      "offset": 1418,
       "length": 56,
       "value": "[\"faster_payments_service\", \"instant\"]"
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 1491,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 1511,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SinglePayment+APIRequests.swift",

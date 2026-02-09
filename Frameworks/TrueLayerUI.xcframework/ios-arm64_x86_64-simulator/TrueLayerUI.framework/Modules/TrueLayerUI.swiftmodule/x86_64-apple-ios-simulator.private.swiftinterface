@@ -496,7 +496,6 @@ public enum Analytics {
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func trackLoadedAnalytics() async
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func handleSDKNavigationInterference() async
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func restartPayment()
-    @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func prepareForPresentation() async throws
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>, localState: TrueLayerUI.UI.SDKRoot.ViewModel.LocalState)
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder __argument1: Foundation.NSCoder)
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>)

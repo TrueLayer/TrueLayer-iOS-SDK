@@ -109,12 +109,17 @@ public protocol Routable : AnyObject {
   }
   nonisolated public init(rootViewController: UIKit.UIViewController)
   @_Concurrency.MainActor public func start(on viewController: UIKit.UIViewController, animated: Swift.Bool = false, onRestart: @escaping @_Concurrency.MainActor (UIKit.UIViewController) -> Swift.Void = { _ in })
-  @_Concurrency.MainActor public func showProxyViewController(_ proxyViewController: UIKit.UIViewController)
-  @_Concurrency.MainActor public func show<Route>(routeIdentifier: Route, context: Any? = nil, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
-  @_Concurrency.MainActor public func hide<Route>(routeIdentifier: Route, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
-  @_Concurrency.MainActor public func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true)
-  @_Concurrency.MainActor public func popTopViewController(animated: Swift.Bool = true)
+  @_Concurrency.MainActor public func showProxyViewController(_ proxyViewController: UIKit.UIViewController) throws
+  @_Concurrency.MainActor public func show<Route>(routeIdentifier: Route, context: Any? = nil, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) throws where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
+  @_Concurrency.MainActor public func hide<Route>(routeIdentifier: Route, animated: Swift.Bool = true, completion: TrueLayerArchitecture.RoutingCompletion? = nil) throws where Route : Swift.RawRepresentable, Route.RawValue == Swift.String
+  @_Concurrency.MainActor public func popTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true) throws
+  @_Concurrency.MainActor public func popTopViewController(animated: Swift.Bool = true) throws
   @objc deinit
+}
+extension TrueLayerArchitecture.Router {
+  public enum Error : Swift.Error {
+    case navigationError(reason: Swift.String)
+  }
 }
 public typealias RoutingCompletion = () -> Swift.Void
 public typealias ViewControllerProvider = (_ context: Any?) -> UIKit.UIViewController

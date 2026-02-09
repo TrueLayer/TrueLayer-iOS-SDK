@@ -111,7 +111,7 @@ import _SwiftConcurrencyShims
 @_spi(TrueLayer) extension TrueLayerAPI.API.Payments.Requests.Manager {
   @_spi(TrueLayer) public struct Shared : TrueLayerAPI.RequestsManager {
     @_spi(TrueLayer) public init(using configuration: any TrueLayerAPI.RequestsManagerConfigurationProvider)
-    @_spi(TrueLayer) public func getProvidersConfiguration() async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
+    @_spi(TrueLayer) public func getProvidersConfiguration(countries: [Swift.String]) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration]
     @_spi(TrueLayer) public func getMerchantConfiguration(redirectURI: Foundation.URL, deviceInformationProvider: any TrueLayerUtils.DeviceInformationProvider, screenInformationProvider: any TrueLayerUtils.ScreenInformationProvider, bundleInformationProvider: any TrueLayerUtils.BundleInformationProvider, localeInformationProvider: any TrueLayerUtils.LocaleInformationProvider, resourceType: Swift.String, integrationType: Swift.String, integrationVersion: Swift.String, sdkVersion: Swift.String, isResultScreenEnabled: Swift.Bool?) async throws -> TrueLayerCore.Core.Payments.Models.Shared.Merchant
     @_spi(TrueLayer) public func getLastUsedProviders(userIdentifier: Swift.String, paymentType: TrueLayerCore.Core.Payments.Models.Shared.PaymentType) async throws -> [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier]
     @_spi(TrueLayer) public func getAISLegalCopy(providerCountryCode: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.Shared.AISLegals
@@ -138,7 +138,7 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public func submitNewUserAccountSelection() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func submitSaveUserAccount() async throws
     @_spi(TrueLayer) public func deleteUserAccount(userAccountID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
-    @_spi(TrueLayer) public func getSchemeSelectionType(currency: Swift.String, schemes: [Swift.String]) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType
+    @_spi(TrueLayer) public func getSchemeSelectionType(currency: Swift.String, schemes: [Swift.String], paymentId: Swift.String, providerId: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.SelectionType
     @_spi(TrueLayer) public func submitScheme(_ schemeIdentifier: TrueLayerCore.Core.Payments.Models.SinglePayment.Scheme.Identifier) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.AuthorizationFlow.Status
     @_spi(TrueLayer) public func getProvidersInfo(paymentID: Swift.String) async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.ProvidersInfo
     @_spi(TrueLayer) public func retryPayment() async throws -> TrueLayerCore.Core.Payments.Models.SinglePayment.Status
