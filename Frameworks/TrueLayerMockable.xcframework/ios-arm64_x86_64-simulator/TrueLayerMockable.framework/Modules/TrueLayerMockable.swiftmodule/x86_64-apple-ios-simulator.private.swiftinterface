@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerMockable
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerMockable
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Swift
 @_spi(TrueLayer) import TrueLayerNetwork
@@ -21,7 +21,9 @@ extension TrueLayerMockable.File.Shared.AIS {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
 }
@@ -31,7 +33,9 @@ extension TrueLayerMockable.File.Mandate {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum AuthorizationFlowResponse : Swift.String {
@@ -41,7 +45,9 @@ extension TrueLayerMockable.File.Mandate {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum Legals : Swift.String {
@@ -50,7 +56,9 @@ extension TrueLayerMockable.File.Mandate {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum Cancel : Swift.String {
@@ -58,15 +66,21 @@ extension TrueLayerMockable.File.Mandate {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
 }
 @_spi(TrueLayer) public protocol Mockable : TrueLayerNetwork.DecodableRequest {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) static func mocked<File>(url: Foundation.URL, method: TrueLayerNetwork.Network.HTTP.Method, statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode, headers: [Swift.String : Swift.String], file: File?) -> TrueLayerNetwork.Network.Mock.Exchange where File : Swift.RawRepresentable, File.RawValue == Swift.String
+  #endif
 }
 @_spi(TrueLayer) extension TrueLayerMockable.Mockable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public static func mocked<F>(url: Foundation.URL, method: TrueLayerNetwork.Network.HTTP.Method, statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode = .code200, headers: [Swift.String : Swift.String] = ["Content-Type": "application/json"], file: F?) -> TrueLayerNetwork.Network.Mock.Exchange where F : Swift.RawRepresentable, F.RawValue == Swift.String
+  #endif
 }
 public enum File {
 }
@@ -84,7 +98,9 @@ extension TrueLayerMockable.File.Shared.PIS {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
 }
@@ -97,7 +113,9 @@ extension TrueLayerMockable.File.Shared {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum Fallback : Swift.String {
@@ -109,7 +127,9 @@ extension TrueLayerMockable.File.Shared {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
 }
@@ -149,7 +169,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum GetPaymentResponse : Swift.String {
@@ -162,7 +184,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum PaymentProviderResponse : Swift.String {
@@ -173,7 +197,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum PaymentProvidersResponse : Swift.String {
@@ -181,7 +207,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum Legals : Swift.String {
@@ -190,7 +218,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum AdditionalInputs : Swift.String {
@@ -201,7 +231,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
   public enum SchemeSelection : Swift.String {
@@ -210,7 +242,9 @@ extension TrueLayerMockable.File.SinglePayment {
     public var rawValue: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
   }
 }

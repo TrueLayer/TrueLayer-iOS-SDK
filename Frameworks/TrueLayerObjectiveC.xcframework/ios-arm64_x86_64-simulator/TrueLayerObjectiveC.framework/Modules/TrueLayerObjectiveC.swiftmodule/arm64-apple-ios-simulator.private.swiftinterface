@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerObjectiveC
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerObjectiveC
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Swift
 import TrueLayerSDK
@@ -33,7 +33,9 @@ import _SwiftConcurrencyShims
   case invalidRequest
   case invalidSortCode
   case unknownError
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -50,7 +52,9 @@ import _SwiftConcurrencyShims
   case authorizationFailed
   case expired
   case genericFailed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -58,7 +62,9 @@ import _SwiftConcurrencyShims
 }
 @objc public enum TrueLayerMandateState : Swift.Int {
   case authorized
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -80,7 +86,9 @@ import _SwiftConcurrencyShims
   case authorized
   case revoked
   case failed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -119,7 +127,9 @@ import _SwiftConcurrencyShims
   case unexpectedBehavior
   case verificationDeclined
   case userCanceled
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -150,7 +160,9 @@ import _SwiftConcurrencyShims
   case expired
   case invalidAccountDetails
   case genericFailed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -161,7 +173,9 @@ import _SwiftConcurrencyShims
   case executed
   case settled
   case wait
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -174,7 +188,9 @@ import _SwiftConcurrencyShims
   case executed
   case settled
   case failed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -183,7 +199,9 @@ import _SwiftConcurrencyShims
 @objc public enum TrueLayerEnvironment : Swift.Int {
   case sandbox
   case production
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -201,8 +219,12 @@ import _SwiftConcurrencyShims
   @objc public var backgroundSecondary: UIKit.UIColor
   @objc public var backgroundActionPrimary: UIKit.UIColor
   @objc public var backgroundCell: UIKit.UIColor
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(backgroundPrimaryLight: UIKit.UIColor? = nil, backgroundSecondaryLight: UIKit.UIColor? = nil, backgroundActionPrimaryLight: UIKit.UIColor? = nil, backgroundCellLight: UIKit.UIColor? = nil, backgroundPrimaryDark: UIKit.UIColor? = nil, backgroundSecondaryDark: UIKit.UIColor? = nil, backgroundActionPrimaryDark: UIKit.UIColor? = nil, backgroundCellDark: UIKit.UIColor? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(backgroundPrimaryLightHex: Swift.String?, backgroundSecondaryLightHex: Swift.String?, backgroundActionPrimaryLightHex: Swift.String?, backgroundCellLightHex: Swift.String?, backgroundPrimaryDarkHex: Swift.String?, backgroundSecondaryDarkHex: Swift.String?, backgroundActionPrimaryDarkHex: Swift.String?, backgroundCellDarkHex: Swift.String?) throws
+  #endif
   @objc deinit
 }
 @objc public class TrueLayerContentColors : ObjectiveC.NSObject {
@@ -211,15 +233,23 @@ import _SwiftConcurrencyShims
   @objc public var contentPrimaryInverted: UIKit.UIColor
   @objc public var contentAction: UIKit.UIColor
   @objc public var contentError: UIKit.UIColor
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(contentPrimaryLight: UIKit.UIColor? = nil, contentSecondaryLight: UIKit.UIColor? = nil, contentPrimaryInvertedLight: UIKit.UIColor? = nil, contentActionLight: UIKit.UIColor? = nil, contentErrorLight: UIKit.UIColor? = nil, contentPrimaryDark: UIKit.UIColor? = nil, contentSecondaryDark: UIKit.UIColor? = nil, contentPrimaryInvertedDark: UIKit.UIColor? = nil, contentActionDark: UIKit.UIColor? = nil, contentErrorDark: UIKit.UIColor? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(contentPrimaryLightHex: Swift.String?, contentSecondaryLightHex: Swift.String?, contentPrimaryInvertedLightHex: Swift.String?, contentActionLightHex: Swift.String?, contentErrorLightHex: Swift.String?, contentPrimaryDarkHex: Swift.String?, contentSecondaryDarkHex: Swift.String?, contentPrimaryInvertedDarkHex: Swift.String?, contentActionDarkHex: Swift.String?, contentErrorDarkHex: Swift.String?) throws
+  #endif
   @objc deinit
 }
 @objc public class TrueLayerAccessoryColors : ObjectiveC.NSObject {
   @objc public var separator: UIKit.UIColor
   @objc public var uiElementBorder: UIKit.UIColor
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(separatorLight: UIKit.UIColor? = nil, uiElementBorderLight: UIKit.UIColor? = nil, separatorDark: UIKit.UIColor? = nil, uiElementBorderDark: UIKit.UIColor? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(separatorLightHex: Swift.String?, uiElementBorderLightHex: Swift.String?, separatorDarkHex: Swift.String?, uiElementBorderDarkHex: Swift.String?) throws
+  #endif
   @objc deinit
 }
 @objc final public class TrueLayerMandateContext : ObjectiveC.NSObject {
@@ -231,11 +261,15 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc final public class TrueLayerMandatePreferences : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, shouldShowResultScreen: Swift.Bool = true, maximumResultScreenTimeout: Foundation.NSNumber?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class TrueLayerPaymentsManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func configure(environment: TrueLayerObjectiveC.TrueLayerEnvironment, visualSettings: TrueLayerObjectiveC.TrueLayerVisualSettings?, additionalConfiguration: [Swift.String : Swift.String]) async
+  #endif
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, onSuccess: @escaping (TrueLayerObjectiveC.TrueLayerProcessSinglePaymentSuccess) -> Swift.Void, onFailure: @escaping (TrueLayerObjectiveC.TrueLayerProcessSinglePaymentFailure) -> Swift.Void)
   @objc public static func processSinglePayment(context: TrueLayerObjectiveC.TrueLayerSinglePaymentContext, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentState) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
   @objc public static func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String, success: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentStatus) -> Swift.Void, failure: @escaping (TrueLayerObjectiveC.TrueLayerSinglePaymentError) -> Swift.Void)
@@ -258,7 +292,9 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc final public class TrueLayerSinglePaymentPreferences : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(presentationStyle: TrueLayerObjectiveC.TrueLayerPresentationStyle, preferredCountryCode: Swift.String? = nil, shouldShowResultScreen: Swift.Bool = true, maximumResultScreenTimeout: Foundation.NSNumber?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class TrueLayerVisualSettings : ObjectiveC.NSObject {

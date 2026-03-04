@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerNetwork
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerNetwork
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Swift
 @_spi(TrueLayer) import TrueLayerLogger
@@ -131,11 +131,15 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) public mutating func remove(name: TrueLayerNetwork.Network.HTTP.Header.Key)
     @_spi(TrueLayer) public mutating func sort()
     @_spi(TrueLayer) public func sorted() -> TrueLayerNetwork.Network.HTTP.Headers
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public func value(for key: TrueLayerNetwork.Network.HTTP.Header.Key) -> Swift.String?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public subscript(name: TrueLayerNetwork.Network.HTTP.Header.Key) -> Swift.String? {
       @_spi(TrueLayer) get
       @_spi(TrueLayer) set
     }
+    #endif
   }
 }
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.HTTP.Headers : Swift.CustomStringConvertible {
@@ -208,8 +212,8 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case via
     @_spi(TrueLayer) case warning
     @_spi(TrueLayer) case custom(key: Swift.String)
-    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.HTTP.Header.Key, b: TrueLayerNetwork.Network.HTTP.Header.Key) -> Swift.Bool
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -236,7 +240,9 @@ import _SwiftConcurrencyShims
     @_spi(TrueLayer) case textCSV
     @_spi(TrueLayer) case textHTML
     @_spi(TrueLayer) case textXML
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
       @_spi(TrueLayer) get
@@ -247,7 +253,9 @@ import _SwiftConcurrencyShims
   @_spi(TrueLayer) public enum Method : Swift.String {
     @_spi(TrueLayer) case get
     @_spi(TrueLayer) case post
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
       @_spi(TrueLayer) get
@@ -262,7 +270,9 @@ import _SwiftConcurrencyShims
   @_spi(TrueLayer) public enum Scheme : Swift.String {
     @_spi(TrueLayer) case http
     @_spi(TrueLayer) case https
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
       @_spi(TrueLayer) get
@@ -300,7 +310,7 @@ extension Foundation.URLRequest {
 }
 extension Foundation.URLSession {
   @_spi(TrueLayer) public static var mock: Foundation.URLSession {
-    get
+    @_spi(TrueLayer) get
   }
 }
 @_spi(TrueLayer) public protocol HTTPRequest : TrueLayerNetwork.RetryableRequest, TrueLayerNetwork.URLRequestConvertible {
@@ -308,7 +318,9 @@ extension Foundation.URLSession {
   @_spi(TrueLayer) var method: TrueLayerNetwork.Network.HTTP.Method { get }
   @_spi(TrueLayer) var scheme: TrueLayerNetwork.Network.URL.Scheme { get }
   @_spi(TrueLayer) var host: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) var port: Swift.Int? { get }
+  #endif
   @_spi(TrueLayer) var path: TrueLayerNetwork.Network.URL.Path { get }
   @_spi(TrueLayer) var timeout: Foundation.TimeInterval { get }
 }
@@ -319,9 +331,11 @@ extension Foundation.URLSession {
   @_spi(TrueLayer) public var scheme: TrueLayerNetwork.Network.URL.Scheme {
     @_spi(TrueLayer) get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public var port: Swift.Int? {
     @_spi(TrueLayer) get
   }
+  #endif
   @_spi(TrueLayer) public var timeout: Foundation.TimeInterval {
     @_spi(TrueLayer) get
   }
@@ -341,8 +355,8 @@ extension TrueLayerNetwork.Network {
     @_spi(TrueLayer) case routeNotFound
     @_spi(TrueLayer) case hostNotFound
     @_spi(TrueLayer) case notURLError
-    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.Mock.Error, b: TrueLayerNetwork.Network.Mock.Error) -> Swift.Bool
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -350,9 +364,11 @@ extension TrueLayerNetwork.Network {
 }
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
   @_spi(TrueLayer) public struct Exchange : Swift.Hashable {
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init(urlRequest: Foundation.URLRequest, response: TrueLayerNetwork.Network.Mock.ServerResponse?, error: TrueLayerNetwork.Network.Mock.Error? = nil)
-    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    #endif
     @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.Mock.Exchange, b: TrueLayerNetwork.Network.Mock.Exchange) -> Swift.Bool
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -367,7 +383,9 @@ extension TrueLayerNetwork.Network {
     @_spi(TrueLayer) case code403
     @_spi(TrueLayer) case code404
     @_spi(TrueLayer) case code500
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.Int)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.Int
     @_spi(TrueLayer) public var rawValue: Swift.Int {
       @_spi(TrueLayer) get
@@ -377,7 +395,9 @@ extension TrueLayerNetwork.Network {
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
   @_spi(TrueLayer) public enum HTTPVersion : Swift.String {
     @_spi(TrueLayer) case onePointOne
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
       @_spi(TrueLayer) get
@@ -386,9 +406,11 @@ extension TrueLayerNetwork.Network {
 }
 @_spi(TrueLayer) extension TrueLayerNetwork.Network.Mock {
   @_spi(TrueLayer) public struct ServerResponse : Swift.Hashable {
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init(statusCode: TrueLayerNetwork.Network.Mock.HTTPStatusCode = .code200, httpVersion: TrueLayerNetwork.Network.Mock.HTTPVersion = .onePointOne, data: Foundation.Data? = nil, headers: [Swift.String : Swift.String] = [:])
-    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+    #endif
     @_spi(TrueLayer) public static func == (a: TrueLayerNetwork.Network.Mock.ServerResponse, b: TrueLayerNetwork.Network.Mock.ServerResponse) -> Swift.Bool
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -403,7 +425,9 @@ extension TrueLayerNetwork.Network {
     @_spi(TrueLayer) @objc override final public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
     @_spi(TrueLayer) @objc override final public func startLoading()
     @_spi(TrueLayer) @objc override final public func stopLoading()
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) @objc override dynamic public init(request: Foundation.URLRequest, cachedResponse: Foundation.CachedURLResponse?, client: (any Foundation.URLProtocolClient)?)
+    #endif
     @_spi(TrueLayer) @objc deinit
   }
 }

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import QuartzCore.CoreAnimation
 import CoreGraphics
@@ -54,7 +54,9 @@ public struct TrueLayerUIFontConvertible : Swift.Sendable {
   public func register()
 }
 extension UIKit.UIFont {
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(font: TrueLayerUI.TrueLayerUIFontConvertible, size: CoreFoundation.CGFloat)
+  #endif
 }
 @_spi(TrueLayer) public typealias RouteIdentifier = Swift.String
 extension TrueLayerUI.Analytics {
@@ -146,7 +148,9 @@ extension TrueLayerUI.Analytics {
       @_spi(TrueLayer) case accountSelection
       @_spi(TrueLayer) case learnMore
       @_spi(TrueLayer) case paymentResultFailure
+      #if compiler(>=5.3) && $NonescapableTypes
       @_spi(TrueLayer) public init?(rawValue: Swift.String)
+      #endif
       @_spi(TrueLayer) public typealias RawValue = Swift.String
       @_spi(TrueLayer) public var rawValue: Swift.String {
         @_spi(TrueLayer) get
@@ -158,7 +162,9 @@ extension TrueLayerUI.Analytics {
   @_spi(TrueLayer) public enum ScrollDirection : Swift.String {
     @_spi(TrueLayer) case up
     @_spi(TrueLayer) case down
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
       @_spi(TrueLayer) get
@@ -182,9 +188,11 @@ extension TrueLayerUI.Analytics {
 public enum Analytics {
 }
 @_spi(TrueLayer) extension UIKit.UIDevice : TrueLayerUtils.DeviceInformationProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public var deviceType: Swift.String? {
     @_spi(TrueLayer) get
   }
+  #endif
 }
 @_spi(TrueLayer) extension UIKit.UIScreen : TrueLayerUtils.ScreenInformationProvider {
 }
@@ -224,12 +232,16 @@ public enum Analytics {
     @_spi(TrueLayer) public var userPrimingInformation: TrueLayerCore.Core.Payments.Models.Shared.Provider.UserPriming?
     @_spi(TrueLayer) public var didPrimeUser: Swift.Bool
     @_spi(TrueLayer) public var userAccounts: [TrueLayerCore.Core.Payments.Models.Shared.UserAccount]
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public var selectedProviderConfiguration: TrueLayerCore.Core.Payments.Models.Shared.Provider.Configuration? {
       @_spi(TrueLayer) get
     }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public var selectedProviderIconURL: Foundation.URL? {
       @_spi(TrueLayer) get
     }
+    #endif
     @_spi(TrueLayer) public var shouldPrimeUser: Swift.Bool {
       @_spi(TrueLayer) get
     }
@@ -281,7 +293,9 @@ public enum Analytics {
     @_spi(TrueLayer) public var maximumResultScreenTimeout: Foundation.TimeInterval?
     @_spi(TrueLayer) public var endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?
     @_spi(TrueLayer) public var information: TrueLayerCore.Core.Payments.Models.Shared.Merchant?
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init(endOfFlowDestinationURL: Foundation.URL, preferredProvidersCountry: Swift.String?, viewController: UIKit.UIViewController?, shouldShowResultScreen: Swift.Bool, maximumResultScreenTimeout: Foundation.TimeInterval?, endOfFlowCompletion: ((TrueLayerUI.AuthorizationFlowResult) -> Swift.Void)?, information: TrueLayerCore.Core.Payments.Models.Shared.Merchant? = nil)
+    #endif
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
@@ -294,16 +308,20 @@ public enum Analytics {
       @_spi(TrueLayer) get
       @_spi(TrueLayer) set
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public var isSignupPlus: Swift.Bool? {
       @_spi(TrueLayer) get
     }
+    #endif
     @_spi(TrueLayer) public var userShouldSelectScheme: Swift.Bool {
       @_spi(TrueLayer) get
     }
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState.PaymentInformation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public func initialiseSelectedCountry(preferredCountryCode: TrueLayerCore.Core.Payments.Models.Shared.Country.ID?, eligibleProviders: [TrueLayerCore.Core.Payments.Models.Shared.Provider], lastUsedCountryCode: TrueLayerCore.Core.Payments.Models.Shared.Country.ID?) -> TrueLayerCore.Core.Payments.Models.Shared.Country?
+  #endif
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState {
   @_spi(TrueLayer) public struct RoutingState {
@@ -318,7 +336,9 @@ public enum Analytics {
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.SDKState.RoutingState.ProviderSelectionState {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public func getRecentlyUsedProviders(selectedCountry: TrueLayerCore.Core.Payments.Models.Shared.Country?, providersConfigurationDictionary: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier : Swift.Double]) -> [TrueLayerCore.Core.Payments.Models.Shared.Provider]
+  #endif
   @_spi(TrueLayer) public func getProvidersSortedByWeight(providersConfigurationDictionary: [TrueLayerCore.Core.Payments.Models.Shared.Provider.Identifier : Swift.Double]) -> [TrueLayerCore.Core.Payments.Models.Shared.Provider]
 }
 @_spi(TrueLayer) public struct SDKState : TrueLayerArchitecture.State {
@@ -383,7 +403,9 @@ public enum Analytics {
   @_spi(TrueLayer) public struct VisualSettings {
     @_spi(TrueLayer) public let colors: any TrueLayerUI.Makeup
     @_spi(TrueLayer) public let customFontFamilyName: Swift.String?
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init(color: any TrueLayerUI.Makeup = UI.MakeupColors(), customFontFamilyName: Swift.String? = nil)
+    #endif
   }
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI {
@@ -408,16 +430,24 @@ public enum Analytics {
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func accessibilityPerformEscape() -> Swift.Bool
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency public func addBackButton()
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<V.VM.TypedState>, localState: V.VM.TypedLocalState)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder __argument1: Foundation.NSCoder)
+  #endif
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<V.VM.TypedState>)
   @_spi(TrueLayer) @objc deinit
 }
 @_spi(TrueLayer) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TLNavigationController : UIKit.UINavigationController, TrueLayerArchitecture.Presentable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) @available(iOS 5.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  #endif
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_spi(TrueLayer) @objc deinit
 }
 
@@ -483,9 +513,13 @@ public enum Analytics {
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func setup()
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func style()
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func layout()
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func update(oldViewModel: TrueLayerUI.UI.SDKRoot.ViewModel?)
+    #endif
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+    #endif
     @_spi(TrueLayer) public typealias VM = TrueLayerUI.UI.SDKRoot.ViewModel
     @_spi(TrueLayer) @objc deinit
   }
@@ -497,7 +531,9 @@ public enum Analytics {
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override final public func handleSDKNavigationInterference() async
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency final public func restartPayment()
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>, localState: TrueLayerUI.UI.SDKRoot.ViewModel.LocalState)
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder __argument1: Foundation.NSCoder)
+    #endif
     @_spi(TrueLayer) @_Concurrency.MainActor @preconcurrency override public init(store: TrueLayerArchitecture.ActionlessStore<TrueLayerUI.SDKState>)
     @_spi(TrueLayer) @objc deinit
   }
@@ -512,7 +548,9 @@ public enum Analytics {
 }
 @_spi(TrueLayer) extension TrueLayerUI.UI.SDKRoot {
   @_spi(TrueLayer) public struct ViewModel : TrueLayerArchitecture.TLStatefulViewModelWithLocalState {
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(state: TrueLayerUI.SDKState?, localState: TrueLayerUI.UI.SDKRoot.ViewModel.LocalState)
+    #endif
     @_spi(TrueLayer) public typealias S = TrueLayerUI.SDKState
     @_spi(TrueLayer) public typealias TypedLocalState = TrueLayerUI.UI.SDKRoot.ViewModel.LocalState
     @_spi(TrueLayer) public typealias TypedState = TrueLayerUI.SDKState
@@ -542,7 +580,9 @@ public enum Analytics {
     @_spi(TrueLayer) case webView
     @_spi(TrueLayer) case awaitRedirectResponse
     @_spi(TrueLayer) case additionalInputsConfirmAccountSelection
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init?(rawValue: Swift.String)
+    #endif
     @_spi(TrueLayer) public typealias RawValue = Swift.String
     @_spi(TrueLayer) public var rawValue: Swift.String {
       @_spi(TrueLayer) get
@@ -571,7 +611,9 @@ public enum Analytics {
     @_spi(TrueLayer) public typealias TypedState = TrueLayerUI.SDKState
   }
   @_spi(TrueLayer) public struct HideLoader : TrueLayerUI.SDKSideEffect {
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public init(completion: (() -> Swift.Void)? = nil)
+    #endif
     @_spi(TrueLayer) public func execute(context: TrueLayerArchitecture.Context<TrueLayerUI.SDKState, TrueLayerUI.SDKDependencies>) async throws
     @_spi(TrueLayer) public typealias TypedDependencies = TrueLayerUI.SDKDependencies
     @_spi(TrueLayer) public typealias TypedState = TrueLayerUI.SDKState
@@ -585,12 +627,12 @@ public enum Analytics {
     @_spi(TrueLayer) public var description: Swift.String {
       @_spi(TrueLayer) get
     }
-    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public static func == (a: TrueLayerUI.UI.TrueLayerError.Mandate, b: TrueLayerUI.UI.TrueLayerError.Mandate) -> Swift.Bool
     @_spi(TrueLayer) public typealias AllCases = [TrueLayerUI.UI.TrueLayerError.Mandate]
     @_spi(TrueLayer) nonisolated public static var allCases: [TrueLayerUI.UI.TrueLayerError.Mandate] {
       @_spi(TrueLayer) get
     }
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -615,12 +657,12 @@ public enum Analytics {
     @_spi(TrueLayer) public var description: Swift.String {
       @_spi(TrueLayer) get
     }
-    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public static func == (a: TrueLayerUI.UI.TrueLayerError.SinglePayment, b: TrueLayerUI.UI.TrueLayerError.SinglePayment) -> Swift.Bool
     @_spi(TrueLayer) public typealias AllCases = [TrueLayerUI.UI.TrueLayerError.SinglePayment]
     @_spi(TrueLayer) nonisolated public static var allCases: [TrueLayerUI.UI.TrueLayerError.SinglePayment] {
       @_spi(TrueLayer) get
     }
+    @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
     @_spi(TrueLayer) public var hashValue: Swift.Int {
       @_spi(TrueLayer) get
     }
@@ -652,9 +694,11 @@ public enum Analytics {
     @_spi(TrueLayer) public var description: Swift.String {
       @_spi(TrueLayer) get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     @_spi(TrueLayer) public var extraInfo: Swift.String? {
       @_spi(TrueLayer) get
     }
+    #endif
     @_spi(TrueLayer) public init(_ error: any Swift.Error)
     @_spi(TrueLayer) public static func == (a: TrueLayerUI.UI.TrueLayerError, b: TrueLayerUI.UI.TrueLayerError) -> Swift.Bool
   }
