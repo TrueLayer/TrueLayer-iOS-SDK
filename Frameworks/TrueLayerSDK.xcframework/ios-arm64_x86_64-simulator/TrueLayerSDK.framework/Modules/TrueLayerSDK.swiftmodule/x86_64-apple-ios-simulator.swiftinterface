@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Swift
 import TrueLayerAPI
@@ -39,7 +39,9 @@ extension TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration {
     case customIntegrationVersion
     case hp2OptOut
     case hp2ManualSelectionOnly
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -83,7 +85,9 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
   public struct Preferences {
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, shouldShowResultScreen: Swift.Bool = true, maximumResultScreenTimeout: Foundation.TimeInterval? = nil)
+    #endif
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
@@ -131,8 +135,8 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.Mandate {
     case authorized
     case revoked
     case failed
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -186,7 +190,9 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
   public struct Preferences {
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(presentationStyle: TrueLayerSDK.TrueLayer.PresentationStyle, preferredCountryCode: Swift.String? = nil, shouldShowResultScreen: Swift.Bool = true, maximumResultScreenTimeout: Foundation.TimeInterval? = nil)
+    #endif
   }
 }
 extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
@@ -242,8 +248,8 @@ extension TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment {
     case executed
     case settled
     case failed
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status, b: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -282,13 +288,21 @@ extension TrueLayerSDK.TrueLayer.Payments {
   @_hasMissingDesignatedInitializers public class Manager {
     @objc deinit
     public func configure(environment: TrueLayerSDK.TrueLayer.Environment, visualSettings: any TrueLayerSDK.VisualSettingsProvider = DefaultVisualSettings(), additionalConfiguration: [TrueLayerSDK.TrueLayer.Payments.AdditionalConfiguration.Key : Swift.String] = [:]) async
+    #if compiler(>=5.3) && $NonescapableTypes
     public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.ProcessResult) -> Swift.Void)?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @available(*, deprecated, message: "Use `processSinglePayment` with `TrueLayer.Payments.Models.SinglePayment.ProcessResult` in the completion handler.")
     public func processSinglePayment(context: TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.State, TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Error>) -> Swift.Void)?)
+    #endif
     public func singlePaymentStatus(paymentIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.SinglePayment.Status
+    #if compiler(>=5.3) && $NonescapableTypes
     public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((TrueLayerSDK.TrueLayer.Payments.Models.Mandate.ProcessResult) -> Swift.Void)?)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     @available(*, deprecated, message: "Use `processMandate` with `TrueLayer.Payments.Models.Mandate.ProcessResult` in the completion handler.")
     public func processMandate(context: TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Context, then completion: ((Swift.Result<TrueLayerSDK.TrueLayer.Payments.Models.Mandate.State, TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Error>) -> Swift.Void)?)
+    #endif
     public func mandateStatus(mandateIdentifier: Swift.String, resourceToken: Swift.String) async throws -> TrueLayerSDK.TrueLayer.Payments.Models.Mandate.Status
   }
 }
@@ -305,15 +319,19 @@ public protocol VisualSettingsProvider {
   var colors: any TrueLayerSDK.ColorProvider { get }
   @available(*, deprecated, renamed: "customFontFamilyName", message: "Use customFontFamilyName instead.")
   var fontFamilyName: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var customFontFamilyName: Swift.String? { get }
+  #endif
 }
 extension TrueLayerSDK.VisualSettingsProvider {
   public var fontFamilyName: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var customFontFamilyName: Swift.String? {
     get
   }
+  #endif
 }
 public protocol ColorProvider : TrueLayerSDK.AccessoryColor, TrueLayerSDK.BackgroundColor, TrueLayerSDK.ContentColor {
 }

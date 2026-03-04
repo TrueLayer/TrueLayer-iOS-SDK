@@ -624,6 +624,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -741,6 +748,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -993,6 +1007,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -17698,6 +17719,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -18024,6 +18052,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -22517,6 +22552,13 @@
                   },
                   {
                     "kind": "Conformance",
+                    "name": "SendableMetatype",
+                    "printedName": "SendableMetatype",
+                    "usr": "s:s16SendableMetatypeP",
+                    "mangledName": "$ss16SendableMetatypeP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "TLSimpleView",
                     "printedName": "TLSimpleView",
                     "usr": "s:21TrueLayerArchitecture12TLSimpleViewP",
@@ -23015,6 +23057,13 @@
                     "printedName": "Sendable",
                     "usr": "s:s8SendableP",
                     "mangledName": "$ss8SendableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "SendableMetatype",
+                    "printedName": "SendableMetatype",
+                    "usr": "s:s16SendableMetatypeP",
+                    "mangledName": "$ss16SendableMetatypeP"
                   },
                   {
                     "kind": "Conformance",
@@ -26654,6 +26703,13 @@
                     "printedName": "Sendable",
                     "usr": "s:s8SendableP",
                     "mangledName": "$ss8SendableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "SendableMetatype",
+                    "printedName": "SendableMetatype",
+                    "usr": "s:s16SendableMetatypeP",
+                    "mangledName": "$ss16SendableMetatypeP"
                   }
                 ]
               },
@@ -27577,6 +27633,13 @@
                     "printedName": "Sendable",
                     "usr": "s:s8SendableP",
                     "mangledName": "$ss8SendableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "SendableMetatype",
+                    "printedName": "SendableMetatype",
+                    "usr": "s:s16SendableMetatypeP",
+                    "mangledName": "$ss16SendableMetatypeP"
                   }
                 ]
               }
@@ -27635,6 +27698,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           }
@@ -30173,6 +30243,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -30508,6 +30585,7 @@
         "declAttributes": [
           "Preconcurrency",
           "TypeEraser",
+          "TypeEraser",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
@@ -30573,6 +30651,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -30621,6 +30706,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -30737,6 +30829,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -30840,6 +30939,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -30948,6 +31054,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -30982,6 +31095,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -31128,6 +31248,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -35590,56 +35717,56 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14302,
+      "offset": 14832,
       "length": 79,
       "value": "\"https:\/\/providers-assets.truelayer.com\/ob-barclays\/icon-extended-432x432.jpeg\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14418,
+      "offset": 14948,
       "length": 82,
       "value": "\"https:\/\/truelayer-client-logos.s3-eu-west-1.amazonaws.com\/638173151249407274.png\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14522,
+      "offset": 15052,
       "length": 15,
       "value": "\"paymentAmount\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14562,
+      "offset": 15092,
       "length": 19,
       "value": "\"accountHolderName\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14601,
+      "offset": 15131,
       "length": 14,
       "value": "\"merchantName\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14635,
+      "offset": 15165,
       "length": 14,
       "value": "\"providerName\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "StringLiteral",
-      "offset": 14670,
+      "offset": 15200,
       "length": 21,
       "value": "\"maskedAccountNumber\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/UI\/HP2\/Confirmation\/Confirmation+ConfirmationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14787,
+      "offset": 15317,
       "length": 4,
       "value": "true"
     },
@@ -36822,254 +36949,254 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5305,
-      "length": 52,
-      "value": "\"intersection\/color\/background\/illustration\/branded\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5556,
-      "length": 52,
-      "value": "\"intersection\/color\/background\/illustration\/neutral\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5936,
-      "length": 41,
-      "value": "\"intersection\/color\/background\/page\/dark\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6328,
-      "length": 51,
-      "value": "\"intersection\/color\/background\/neutral\/darkOverlay\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6583,
-      "length": 52,
-      "value": "\"intersection\/color\/background\/neutral\/highContrast\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 6829,
-      "length": 47,
-      "value": "\"intersection\/color\/background\/neutral\/inverse\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 7379,
-      "length": 54,
-      "value": "\"intersection\/color\/background\/button\/dynamic\/default\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 7807,
-      "length": 53,
-      "value": "\"intersection\/color\/background\/button\/filled\/enabled\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 8234,
+      "offset": 5445,
       "length": 53,
       "value": "\"intersection\/color\/background\/button\/danger\/enabled\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8675,
+      "offset": 5877,
+      "length": 54,
+      "value": "\"intersection\/color\/background\/button\/dynamic\/default\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6305,
+      "length": 53,
+      "value": "\"intersection\/color\/background\/button\/filled\/enabled\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6739,
+      "length": 52,
+      "value": "\"intersection\/color\/background\/illustration\/branded\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6990,
+      "length": 52,
+      "value": "\"intersection\/color\/background\/illustration\/neutral\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7407,
       "length": 56,
       "value": "\"intersection\/color\/background\/informative\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8937,
+      "offset": 7669,
       "length": 55,
       "value": "\"intersection\/color\/background\/informative\/lowContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9331,
+      "offset": 8063,
       "length": 46,
       "value": "\"intersection\/color\/background\/input\/selected\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9686,
-      "length": 32,
-      "value": "\"intersection\/color\/text\/danger\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 10179,
-      "length": 47,
-      "value": "\"intersection\/color\/text\/button\/filled\/enabled\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 10585,
-      "length": 46,
-      "value": "\"intersection\/color\/text\/button\/ghost\/enabled\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 10999,
-      "length": 49,
-      "value": "\"intersection\/color\/text\/button\/outlined\/enabled\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 11412,
-      "length": 46,
-      "value": "\"intersection\/color\/text\/neutral\/highContrast\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 11654,
-      "length": 45,
-      "value": "\"intersection\/color\/text\/neutral\/lowContrast\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 11883,
-      "length": 39,
-      "value": "\"intersection\/color\/text\/neutral\/white\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 12260,
-      "length": 45,
-      "value": "\"intersection\/color\/text\/accent\/highContrast\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 12504,
-      "length": 37,
-      "value": "\"intersection\/color\/text\/informative\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 12713,
-      "length": 33,
-      "value": "\"intersection\/color\/text\/warning\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 13343,
+      "offset": 8460,
       "length": 51,
-      "value": "\"intersection\/color\/border\/button\/outlined\/enabled\""
+      "value": "\"intersection\/color\/background\/neutral\/darkOverlay\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13770,
+      "offset": 8715,
       "length": 52,
-      "value": "\"intersection\/color\/border\/neutral\/extraLowContrast\""
+      "value": "\"intersection\/color\/background\/neutral\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14022,
-      "length": 48,
-      "value": "\"intersection\/color\/border\/neutral\/highContrast\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 14268,
+      "offset": 8961,
       "length": 47,
-      "value": "\"intersection\/color\/border\/neutral\/lowContrast\""
+      "value": "\"intersection\/color\/background\/neutral\/inverse\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14504,
-      "length": 33,
-      "value": "\"intersection\/color\/border\/focus\""
+      "offset": 9336,
+      "length": 41,
+      "value": "\"intersection\/color\/background\/page\/dark\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14860,
+      "offset": 9843,
       "length": 47,
       "value": "\"intersection\/color\/border\/accent\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15396,
+      "offset": 10382,
+      "length": 51,
+      "value": "\"intersection\/color\/border\/button\/outlined\/enabled\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10645,
+      "length": 33,
+      "value": "\"intersection\/color\/border\/focus\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 11148,
       "length": 50,
       "value": "\"intersection\/color\/border\/loader\/default\/spinner\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15647,
+      "offset": 11399,
       "length": 48,
       "value": "\"intersection\/color\/border\/loader\/default\/track\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16187,
-      "length": 50,
-      "value": "\"intersection\/color\/icon\/neutral\/extraLowContrast\""
+      "offset": 11823,
+      "length": 52,
+      "value": "\"intersection\/color\/border\/neutral\/extraLowContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16435,
-      "length": 46,
-      "value": "\"intersection\/color\/icon\/neutral\/highContrast\""
+      "offset": 12075,
+      "length": 48,
+      "value": "\"intersection\/color\/border\/neutral\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16677,
-      "length": 45,
-      "value": "\"intersection\/color\/icon\/neutral\/lowContrast\""
+      "offset": 12321,
+      "length": 47,
+      "value": "\"intersection\/color\/border\/neutral\/lowContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17060,
+      "offset": 12826,
       "length": 45,
       "value": "\"intersection\/color\/icon\/accent\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17443,
+      "offset": 13209,
       "length": 45,
       "value": "\"intersection\/color\/icon\/danger\/highContrast\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17675,
+      "offset": 13441,
       "length": 31,
       "value": "\"intersection\/color\/icon\/input\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13802,
+      "length": 50,
+      "value": "\"intersection\/color\/icon\/neutral\/extraLowContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14050,
+      "length": 46,
+      "value": "\"intersection\/color\/icon\/neutral\/highContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14292,
+      "length": 45,
+      "value": "\"intersection\/color\/icon\/neutral\/lowContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14795,
+      "length": 45,
+      "value": "\"intersection\/color\/text\/accent\/highContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15320,
+      "length": 47,
+      "value": "\"intersection\/color\/text\/button\/filled\/enabled\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 15726,
+      "length": 46,
+      "value": "\"intersection\/color\/text\/button\/ghost\/enabled\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16140,
+      "length": 49,
+      "value": "\"intersection\/color\/text\/button\/outlined\/enabled\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16401,
+      "length": 32,
+      "value": "\"intersection\/color\/text\/danger\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16613,
+      "length": 37,
+      "value": "\"intersection\/color\/text\/informative\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 16972,
+      "length": 46,
+      "value": "\"intersection\/color\/text\/neutral\/highContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17214,
+      "length": 45,
+      "value": "\"intersection\/color\/text\/neutral\/lowContrast\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17443,
+      "length": 39,
+      "value": "\"intersection\/color\/text\/neutral\/white\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 17673,
+      "length": 33,
+      "value": "\"intersection\/color\/text\/warning\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
@@ -37235,240 +37362,240 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22355,
-      "length": 17,
-      "value": "\"flags\/square\/at\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 22515,
-      "length": 17,
-      "value": "\"flags\/square\/au\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 22675,
-      "length": 17,
-      "value": "\"flags\/square\/be\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 22835,
-      "length": 17,
-      "value": "\"flags\/square\/de\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 22995,
-      "length": 17,
-      "value": "\"flags\/square\/dk\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 23155,
-      "length": 17,
-      "value": "\"flags\/square\/es\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 23315,
-      "length": 17,
-      "value": "\"flags\/square\/fi\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 23475,
-      "length": 17,
-      "value": "\"flags\/square\/fr\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 23635,
-      "length": 17,
-      "value": "\"flags\/square\/gb\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 23795,
-      "length": 17,
-      "value": "\"flags\/square\/ie\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 23955,
-      "length": 17,
-      "value": "\"flags\/square\/it\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 24115,
-      "length": 17,
-      "value": "\"flags\/square\/lt\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 24275,
-      "length": 17,
-      "value": "\"flags\/square\/nl\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 24435,
-      "length": 17,
-      "value": "\"flags\/square\/no\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 24595,
-      "length": 17,
-      "value": "\"flags\/square\/pl\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 24755,
-      "length": 17,
-      "value": "\"flags\/square\/pt\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 24915,
-      "length": 17,
-      "value": "\"flags\/square\/ro\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 25075,
-      "length": 17,
-      "value": "\"flags\/square\/se\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 25235,
-      "length": 17,
-      "value": "\"flags\/square\/us\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 25751,
-      "length": 40,
-      "value": "\"intersection\/images\/illustrations\/back\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 25969,
-      "length": 41,
-      "value": "\"intersection\/images\/illustrations\/error\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 26192,
-      "length": 43,
-      "value": "\"intersection\/images\/illustrations\/offline\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 26415,
-      "length": 42,
-      "value": "\"intersection\/images\/illustrations\/search\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 26639,
-      "length": 43,
-      "value": "\"intersection\/images\/illustrations\/warning\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 26844,
+      "offset": 22181,
       "length": 12,
       "value": "\"back_arrow\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26997,
+      "offset": 22334,
       "length": 18,
       "value": "\"bank_placeholder\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27162,
-      "length": 21,
-      "value": "\"generic_placeholder\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 27332,
-      "length": 22,
-      "value": "\"merchant_placeholder\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 28247,
-      "length": 53,
-      "value": "\"common\/images\/icon\/descriptive\/search\/sharp\/regular\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 28512,
-      "length": 51,
-      "value": "\"common\/images\/icon\/descriptive\/search\/sharp\/solid\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 29108,
-      "length": 50,
-      "value": "\"common\/images\/icon\/descriptive\/check\/sharp\/solid\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 29730,
-      "length": 57,
-      "value": "\"common\/images\/icon\/descriptive\/times-circle\/sharp\/solid\""
-    },
-    {
-      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 30457,
+      "offset": 23216,
       "length": 47,
       "value": "\"common\/images\/icon\/action\/close\/sharp\/regular\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31034,
+      "offset": 23793,
       "length": 45,
       "value": "\"common\/images\/icon\/action\/trash\/sharp\/solid\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 24529,
+      "length": 50,
+      "value": "\"common\/images\/icon\/descriptive\/check\/sharp\/solid\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 25132,
+      "length": 53,
+      "value": "\"common\/images\/icon\/descriptive\/search\/sharp\/regular\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 25397,
+      "length": 51,
+      "value": "\"common\/images\/icon\/descriptive\/search\/sharp\/solid\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 26020,
+      "length": 57,
+      "value": "\"common\/images\/icon\/descriptive\/times-circle\/sharp\/solid\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 26482,
+      "length": 17,
+      "value": "\"flags\/square\/at\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 26642,
+      "length": 17,
+      "value": "\"flags\/square\/au\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 26802,
+      "length": 17,
+      "value": "\"flags\/square\/be\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 26962,
+      "length": 17,
+      "value": "\"flags\/square\/de\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 27122,
+      "length": 17,
+      "value": "\"flags\/square\/dk\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 27282,
+      "length": 17,
+      "value": "\"flags\/square\/es\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 27442,
+      "length": 17,
+      "value": "\"flags\/square\/fi\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 27602,
+      "length": 17,
+      "value": "\"flags\/square\/fr\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 27762,
+      "length": 17,
+      "value": "\"flags\/square\/gb\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 27922,
+      "length": 17,
+      "value": "\"flags\/square\/ie\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28082,
+      "length": 17,
+      "value": "\"flags\/square\/it\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28242,
+      "length": 17,
+      "value": "\"flags\/square\/lt\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28402,
+      "length": 17,
+      "value": "\"flags\/square\/nl\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28562,
+      "length": 17,
+      "value": "\"flags\/square\/no\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28722,
+      "length": 17,
+      "value": "\"flags\/square\/pl\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 28882,
+      "length": 17,
+      "value": "\"flags\/square\/pt\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 29042,
+      "length": 17,
+      "value": "\"flags\/square\/ro\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 29202,
+      "length": 17,
+      "value": "\"flags\/square\/se\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 29362,
+      "length": 17,
+      "value": "\"flags\/square\/us\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 29544,
+      "length": 21,
+      "value": "\"generic_placeholder\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 30046,
+      "length": 40,
+      "value": "\"intersection\/images\/illustrations\/back\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 30264,
+      "length": 41,
+      "value": "\"intersection\/images\/illustrations\/error\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 30487,
+      "length": 43,
+      "value": "\"intersection\/images\/illustrations\/offline\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 30710,
+      "length": 42,
+      "value": "\"intersection\/images\/illustrations\/search\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 30934,
+      "length": 43,
+      "value": "\"intersection\/images\/illustrations\/warning\""
+    },
+    {
+      "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 31159,
+      "length": 22,
+      "value": "\"merchant_placeholder\""
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Library\/Developer\/Xcode\/DerivedData\/SDK-gmgqgoblqgrduvblcngelkvtuoco\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TrueLayerObjectiveC\/IntermediateBuildFilesPath\/SDK.build\/Release-iphoneos\/TrueLayerUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",

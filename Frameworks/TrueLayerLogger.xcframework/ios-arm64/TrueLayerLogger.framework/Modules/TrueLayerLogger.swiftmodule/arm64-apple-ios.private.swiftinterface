@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerLogger
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerLogger
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Swift
 import _Concurrency
@@ -10,7 +10,9 @@ import _SwiftConcurrencyShims
 @_spi(TrueLayer) public enum LogType : Swift.String {
   @_spi(TrueLayer) case debug
   @_spi(TrueLayer) case error
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public init?(rawValue: Swift.String)
+  #endif
   @_spi(TrueLayer) public typealias RawValue = Swift.String
   @_spi(TrueLayer) public var rawValue: Swift.String {
     @_spi(TrueLayer) get
@@ -19,7 +21,9 @@ import _SwiftConcurrencyShims
 @_spi(TrueLayer) public enum Logger {
 }
 @_spi(TrueLayer) extension TrueLayerLogger.Logger {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public static func log(type: TrueLayerLogger.LogType = .debug, message: Any?, file: Swift.StaticString = #file, line: Swift.UInt = #line)
+  #endif
   @_spi(TrueLayer) public static func prepareLog(type: TrueLayerLogger.LogType = .debug, message: Any, file: Swift.StaticString, line: Swift.UInt, dateProvider: () -> Foundation.Date = { Date() }) -> Swift.String
   @_spi(TrueLayer) public static func readableDateTime(from date: Foundation.Date) -> Swift.String
 }

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TrueLayerUtils
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TrueLayerUtils
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Swift
 import UIKit
@@ -24,14 +24,22 @@ extension Foundation.Bundle : TrueLayerUtils.BundleInformationProvider {
 @_spi(TrueLayer) public protocol DeviceInformationProvider {
   @_spi(TrueLayer) var model: Swift.String { get }
   @_spi(TrueLayer) var systemVersion: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) var deviceType: Swift.String? { get }
+  #endif
 }
 public protocol LocaleInformationProvider {
   static var preferredLanguages: [Swift.String] { get }
   var preferredLanguages: [Swift.String] { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var languageCode: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var deviceRegion: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var deviceLanguage: Swift.String? { get }
+  #endif
 }
 extension TrueLayerUtils.LocaleInformationProvider {
   public var preferredLanguages: [Swift.String] {
@@ -39,12 +47,16 @@ extension TrueLayerUtils.LocaleInformationProvider {
   }
 }
 extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var deviceRegion: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var deviceLanguage: Swift.String? {
     get
   }
+  #endif
 }
 @_spi(TrueLayer) public protocol ScreenInformationProvider {
   @_spi(TrueLayer) var bounds: CoreFoundation.CGRect { get }
@@ -58,9 +70,11 @@ extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
   }
 }
 @_spi(TrueLayer) extension Swift.Collection {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public subscript(safe offset: Swift.Int) -> Self.Iterator.Element? {
     @_spi(TrueLayer) get
   }
+  #endif
   @_spi(TrueLayer) public var isNotEmpty: Swift.Bool {
     @_spi(TrueLayer) get
   }
@@ -73,9 +87,15 @@ extension Foundation.Locale : TrueLayerUtils.LocaleInformationProvider {
 @_spi(TrueLayer) public typealias Interaction = () -> Swift.Void
 @_spi(TrueLayer) public typealias AsyncInteraction = () async -> Swift.Void
 @_hasMissingDesignatedInitializers public class IsoCountryCodes {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func find(key: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func searchByName(_ name: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func searchByNumeric(_ numeric: Swift.String) -> TrueLayerUtils.IsoCountryInfo?
+  #endif
   public class func searchByCurrency(_ currency: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
   public class func searchByCallingCode(_ calllingCode: Swift.String) -> [TrueLayerUtils.IsoCountryInfo]
   @objc deinit
@@ -88,13 +108,17 @@ public struct IsoCountryInfo {
   public let calling: Swift.String
   public let currency: Swift.String
   public let continent: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public var flag: Swift.String? {
     get
   }
+  #endif
   public var fractionDigits: Swift.Int
 }
 @_hasMissingDesignatedInitializers public class IsoCountries {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func flag(countryCode: Swift.String) -> Swift.String?
+  #endif
   public static let allCountries: [TrueLayerUtils.IsoCountryInfo]
   @objc deinit
 }
@@ -103,7 +127,9 @@ public struct IsoCountryInfo {
   @_spi(TrueLayer) public func addingAttributes(_ attributes: [Foundation.NSAttributedString.Key : Any], to substrings: [Swift.String]) -> Foundation.NSAttributedString
 }
 @_spi(TrueLayer) extension Foundation.NSString {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) convenience public init?(jsonData: Foundation.Data)
+  #endif
 }
 @_spi(TrueLayer) public enum Utils {
 }
@@ -124,7 +150,9 @@ public struct IsoCountryInfo {
   @_spi(TrueLayer) public func matches(_ regex: Swift.String) -> Swift.Bool
   @_spi(TrueLayer) public func containsCaseDiacriticInsensitive(_ other: Swift.String) -> Swift.Bool
   @_spi(TrueLayer) public func startsCaseDiacriticInsensitive(with: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public func distanceCaseDiacriticInsensitiveFromStart(to: Swift.String) -> Swift.Int?
+  #endif
 }
 @_spi(TrueLayer) extension Swift.String {
   @_spi(TrueLayer) public func softHyphenatedByWord(minimumWordLength: Swift.Int = 0, locale: Foundation.Locale = .autoupdatingCurrent) -> Swift.String
@@ -136,7 +164,9 @@ public struct IsoCountryInfo {
   }
 }
 @_spi(TrueLayer) extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(TrueLayer) public func attributedStringWithDynamicFontAndHTML(baseFont: UIKit.UIFont, boldFont: UIKit.UIFont, overrideColor: UIKit.UIColor? = nil) -> Foundation.NSAttributedString?
+  #endif
 }
 @_spi(TrueLayer) public func mainThread(_ closure: () -> Swift.Void)
 public protocol TimezoneInformationProvider {
