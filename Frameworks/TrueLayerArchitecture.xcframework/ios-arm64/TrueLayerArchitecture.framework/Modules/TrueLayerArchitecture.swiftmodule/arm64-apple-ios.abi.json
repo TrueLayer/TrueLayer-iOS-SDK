@@ -2334,14 +2334,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0Cvp",
-            "mangledName": "$s21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0Cvp",
+            "usr": "s:21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0CSgvp",
+            "mangledName": "$s21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0CSgvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
               "Custom",
@@ -2356,14 +2364,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0Cvg",
-                "mangledName": "$s21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0Cvg",
+                "usr": "s:21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0CSgvg",
+                "mangledName": "$s21TrueLayerArchitecture6RouterC18_topViewControllerSo06UIViewG0CSgvg",
                 "moduleName": "TrueLayerArchitecture",
                 "accessorKind": "get"
               }
@@ -6343,35 +6359,35 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 1971,
+      "offset": 2046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 3802,
+      "offset": 4125,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 5149,
+      "offset": 5651,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 6715,
+      "offset": 7393,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
-      "offset": 7321,
+      "offset": 8173,
       "length": 4,
       "value": "true"
     }

@@ -18,9 +18,11 @@ public protocol Routable : AnyObject {
 }
 @_Concurrency.MainActor public class Router {
   @_Concurrency.MainActor final public let merchantRootViewController: UIKit.UIViewController
-  @_Concurrency.MainActor public var _topViewController: UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var _topViewController: UIKit.UIViewController? {
     get
   }
+  #endif
   nonisolated public init(rootViewController: UIKit.UIViewController)
   @_Concurrency.MainActor public func start(on viewController: UIKit.UIViewController, animated: Swift.Bool = false, onRestart: @escaping @_Concurrency.MainActor (UIKit.UIViewController) -> Swift.Void = { _ in })
   @_Concurrency.MainActor public func showProxyViewController(_ proxyViewController: UIKit.UIViewController) throws
