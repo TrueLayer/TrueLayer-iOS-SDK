@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.6] - General improvements and bug fixes
+
+### Fixed
+- An issue where the SDK state was not properly reset after being force-dismissed.
+
 ## [4.1.5] - General improvements and bug fixes
 
 ### Fixed
