@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.7] - General improvements and bug fixes
+
+### Fixed
+- General stability and bug fixes.
+
 ## [4.1.6] - General improvements and bug fixes
 
 ### Fixed
