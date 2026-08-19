@@ -1343,6 +1343,226 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "StoreError",
+        "printedName": "StoreError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "storeDeallocated",
+            "printedName": "storeDeallocated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TrueLayerArchitecture.StoreError.Type) -> TrueLayerArchitecture.StoreError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StoreError",
+                    "printedName": "TrueLayerArchitecture.StoreError",
+                    "usr": "s:21TrueLayerArchitecture10StoreErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TrueLayerArchitecture.StoreError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StoreError",
+                        "printedName": "TrueLayerArchitecture.StoreError",
+                        "usr": "s:21TrueLayerArchitecture10StoreErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21TrueLayerArchitecture10StoreErrorO16storeDeallocatedyA2CmF",
+            "mangledName": "$s21TrueLayerArchitecture10StoreErrorO16storeDeallocatedyA2CmF",
+            "moduleName": "TrueLayerArchitecture",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "TrueLayer"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StoreError",
+                "printedName": "TrueLayerArchitecture.StoreError",
+                "usr": "s:21TrueLayerArchitecture10StoreErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StoreError",
+                "printedName": "TrueLayerArchitecture.StoreError",
+                "usr": "s:21TrueLayerArchitecture10StoreErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TrueLayerArchitecture10StoreErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21TrueLayerArchitecture10StoreErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "TrueLayerArchitecture",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21TrueLayerArchitecture10StoreErrorO9hashValueSivp",
+            "mangledName": "$s21TrueLayerArchitecture10StoreErrorO9hashValueSivp",
+            "moduleName": "TrueLayerArchitecture",
+            "implicit": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21TrueLayerArchitecture10StoreErrorO9hashValueSivg",
+                "mangledName": "$s21TrueLayerArchitecture10StoreErrorO9hashValueSivg",
+                "moduleName": "TrueLayerArchitecture",
+                "implicit": true,
+                "spi_group_names": [
+                  "TrueLayer"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21TrueLayerArchitecture10StoreErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s21TrueLayerArchitecture10StoreErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "TrueLayerArchitecture",
+            "implicit": true,
+            "spi_group_names": [
+              "TrueLayer"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21TrueLayerArchitecture10StoreErrorO",
+        "mangledName": "$s21TrueLayerArchitecture10StoreErrorO",
+        "moduleName": "TrueLayerArchitecture",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "TrueLayer"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ActionlessStore",
         "printedName": "ActionlessStore",
         "children": [
@@ -1568,8 +1788,7 @@
         "sugared_genericSig": "<TypedState where TypedState : TrueLayerArchitecture.State>",
         "declAttributes": [
           "AccessControl",
-          "SPIAccessControl",
-          "RawDocComment"
+          "SPIAccessControl"
         ],
         "spi_group_names": [
           "TrueLayer"
@@ -6345,7 +6564,7 @@
     {
       "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
       "kind": "Dictionary",
-      "offset": 1959,
+      "offset": 2302,
       "length": 3,
       "value": "[]"
     },

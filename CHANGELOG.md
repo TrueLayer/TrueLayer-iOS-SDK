@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file. To know better on how to write and maintain a changelog, refer to [this link](https://keepachangelog.com/en/1.0.0/).
 
+## [4.1.9] - General improvements and bug fixes
+
+### Fixed
+- An issue where the payment result screen kept refreshing after being dismissed.
+- General stability and bug fixes.
+
 ## [4.1.8] - General improvements and bug fixes
 
 ### Fixed

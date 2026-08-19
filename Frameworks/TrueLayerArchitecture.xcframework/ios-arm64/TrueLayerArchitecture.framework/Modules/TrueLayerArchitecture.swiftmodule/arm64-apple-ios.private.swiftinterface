@@ -65,6 +65,14 @@ public protocol Action {
   associatedtype TypedState : TrueLayerArchitecture.State
   @_spi(TrueLayer) func updateState(_ state: inout Self.TypedState)
 }
+@_spi(TrueLayer) public enum StoreError : Swift.Error {
+  @_spi(TrueLayer) case storeDeallocated
+  @_spi(TrueLayer) public static func == (a: TrueLayerArchitecture.StoreError, b: TrueLayerArchitecture.StoreError) -> Swift.Bool
+  @_spi(TrueLayer) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(TrueLayer) public var hashValue: Swift.Int {
+    @_spi(TrueLayer) get
+  }
+}
 @_spi(TrueLayer) @_hasMissingDesignatedInitializers public class ActionlessStore<TypedState> where TypedState : TrueLayerArchitecture.State {
   @_spi(TrueLayer) public var state: TypedState {
     get
@@ -273,6 +281,8 @@ public protocol TLSimpleView : AnyObject {
 }
 public protocol TLViewModel {
 }
+@_spi(TrueLayer) extension TrueLayerArchitecture.StoreError : Swift.Equatable {}
+@_spi(TrueLayer) extension TrueLayerArchitecture.StoreError : Swift.Hashable {}
 extension TrueLayerArchitecture.Router : Swift.Sendable {}
 extension TrueLayerArchitecture.BackwardRoutingInstruction : Swift.Equatable {}
 extension TrueLayerArchitecture.BackwardRoutingInstruction : Swift.Hashable {}
