@@ -1582,15 +1582,12 @@
             "mangledName": "$s21TrueLayerArchitecture15ActionlessStoreC5statexvp",
             "moduleName": "TrueLayerArchitecture",
             "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
             "spi_group_names": [
               "TrueLayer"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1609,7 +1606,6 @@
                 "moduleName": "TrueLayerArchitecture",
                 "genericSig": "<τ_0_0 where τ_0_0 : TrueLayerArchitecture.State>",
                 "sugared_genericSig": "<TypedState where TypedState : TrueLayerArchitecture.State>",
-                "implicit": true,
                 "spi_group_names": [
                   "TrueLayer"
                 ],
@@ -1642,7 +1638,8 @@
             "sugared_genericSig": "<TypedState where TypedState : TrueLayerArchitecture.State>",
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "RawDocComment"
             ],
             "spi_group_names": [
               "TrueLayer"
@@ -6562,49 +6559,49 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Logic\/Store.swift",
       "kind": "Dictionary",
-      "offset": 2302,
+      "offset": 3556,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 637,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 2046,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 4397,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 5923,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 7665,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Architecture\/Navigation\/Router.swift",
       "kind": "BooleanLiteral",
       "offset": 8445,
       "length": 4,

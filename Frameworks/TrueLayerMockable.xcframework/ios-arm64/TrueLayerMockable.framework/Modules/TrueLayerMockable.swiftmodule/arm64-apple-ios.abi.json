@@ -9,10 +9,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "TrueLayerMockable",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "TrueLayerMockable"
       },
       {
         "kind": "TypeDecl",
@@ -37,6 +34,8 @@
             "moduleName": "TrueLayerMockable",
             "static": true,
             "declAttributes": [
+              "Final",
+              "Nonisolated",
               "AccessControl",
               "ObjC"
             ],
@@ -59,6 +58,7 @@
                 "moduleName": "TrueLayerMockable",
                 "static": true,
                 "declAttributes": [
+                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
@@ -97,6 +97,7 @@
         "mangledName": "$s17TrueLayerMockable0abC9ResourcesC",
         "moduleName": "TrueLayerMockable",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjC",
           "RawDocComment"
@@ -5272,7 +5273,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/Mockable\/Mockable.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/Mockable\/Mockable.swift",
       "kind": "Dictionary",
       "offset": 984,
       "length": 36,

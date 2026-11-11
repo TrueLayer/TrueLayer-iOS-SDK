@@ -75,7 +75,7 @@ public protocol Action {
 }
 @_spi(TrueLayer) @_hasMissingDesignatedInitializers public class ActionlessStore<TypedState> where TypedState : TrueLayerArchitecture.State {
   @_spi(TrueLayer) public var state: TypedState {
-    get
+    @_spi(TrueLayer) get
   }
   @_spi(TrueLayer) @discardableResult
   public func genericExecutor(_ action: any TrueLayerArchitecture.Action) async throws -> Any
