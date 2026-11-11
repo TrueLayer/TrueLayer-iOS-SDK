@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rY67OCc7H7YMJlwXO5DO+uphLbQ=
+		JYfjqpb3f8mdr0SOL6mKYFqm4tg=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Acq/0P/RxXFBkIThzdNkJylEzUY=
+		7g4BQQeuBmgoPN/rDWm5S4qm4Lw=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O09vTFbY9XSjWWqVF8eDXqFsKJk=
+		aM9/0A3+DBvs0pM4fSkaABA0+40=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Acq/0P/RxXFBkIThzdNkJylEzUY=
+		7g4BQQeuBmgoPN/rDWm5S4qm4Lw=
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+xMVQmQzYGnEK0y/lkNbrx4ZBcc=
+		ZuZXxYNGSu56VJV5dezdDn4P8wQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t09OamV4gfmgMrKZVeysIgWBWyyXYfAoz9ayTuxIJfQ=
+			K1MX/YgQydeoI1qXxD8BdAKLlEgVStTn2n3D5hIWnNA=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2ahlgHOH0/Xc/ZLh+pbIUhJ4THIQH1M7FuFD/v99Qc4=
+			lvXwcaE22pJiHdx97MJudrR4dVgCDj6johVuUlJuWY0=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t09OamV4gfmgMrKZVeysIgWBWyyXYfAoz9ayTuxIJfQ=
+			K1MX/YgQydeoI1qXxD8BdAKLlEgVStTn2n3D5hIWnNA=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BF1g2wo97435DxqOnE3ASZHtdsy/Kaqk+mYmCIpFKgg=
+			+0+rXjl7BUeriXCUCBgozKkD3lRB8ltFMpS4irEegNU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

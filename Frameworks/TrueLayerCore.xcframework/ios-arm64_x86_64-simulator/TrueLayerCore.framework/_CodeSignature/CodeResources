@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yGeHcVYRuQnQR0qyDg5w4AAvlpc=
+		UBsDy/RDIoPR/5TwhStGQmw57O4=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		TdJB2CIYRLyECpK3uy4Y8DZ74lw=
+		GWYE1tT9Ws8VoxST8tHgPm+y9kc=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9qqWwKykXhLbR1NDkYYf0NrVABU=
+		oGiC/LIZQ9NR2mn/fA9xJOBa2zI=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		TdJB2CIYRLyECpK3uy4Y8DZ74lw=
+		GWYE1tT9Ws8VoxST8tHgPm+y9kc=
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		f7IRxivJAG34XM2ir/4dFBMAGec=
+		dWTf5uUKskU/CvGzZPk1VyxydFk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tT0iQNgwAo7qAK1pgkhhr4FGkz1+Gwb5o/CgTH4YbdI=
+			sL3wG1j1f51U5I/uj+yiisVgZzxAcxZ8RWbNy/ZTZEo=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			drz2e1YBpTu9Nv2gvOoXn3/fvNLH1r9xMjIEZsfkV0s=
+			nDqkiu6UL9KIQtXOzb06cIikHmtae/hR2lxpP3fidnk=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tT0iQNgwAo7qAK1pgkhhr4FGkz1+Gwb5o/CgTH4YbdI=
+			sL3wG1j1f51U5I/uj+yiisVgZzxAcxZ8RWbNy/ZTZEo=
 			</data>
 		</dict>
 		<key>Modules/TrueLayerCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bFjsqLEQCVTgZxCvlC6XCZTngOCm/6JLownAZoUSUZw=
+			I1QBgi4gc0dTuPRT9MmGk3ub1zdm16Ta45rv1KirQBQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

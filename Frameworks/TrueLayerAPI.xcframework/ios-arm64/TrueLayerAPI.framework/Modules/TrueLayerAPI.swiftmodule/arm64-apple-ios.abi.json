@@ -5205,700 +5205,700 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/Capabilities+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 998,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/SubmitUserAccount+SharedRequestModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Request\/Shared\/SubmitUserAccount+SharedRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 17,
       "value": "\"user_account_id\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Request\/SinglePayment\/AuthorizationFlow+SinglePaymentRequestModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Request\/SinglePayment\/AuthorizationFlow+SinglePaymentRequestModels.swift",
       "kind": "StringLiteral",
       "offset": 2850,
       "length": 9,
       "value": "\"restart\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2628,
       "length": 20,
       "value": "\"provider_selection\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/AuthorizationFlow+MandateResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2722,
       "length": 24,
       "value": "\"user_account_selection\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Mandate\/Information+MandateResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3412,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1190,
       "length": 18,
       "value": "\"merchant_account\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 18,
       "value": "\"external_account\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/Beneficiary+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3589,
       "length": 26,
       "value": "\"sort_code_account_number\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1968,
       "length": 15,
       "value": "\"user_selected\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/Shared\/ProviderSelection+SharedResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 2009,
       "length": 13,
       "value": "\"preselected\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3090,
       "length": 17,
       "value": "\"text_with_image\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9192,
       "length": 16,
       "value": "\"account_number\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AdditionalInputs\/AdditionalInputs+ResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 9640,
       "length": 11,
       "value": "\"sort_code\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 794,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3106,
       "length": 6,
       "value": "\"next\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3159,
       "length": 5,
       "value": "\"uri\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/AuthorizationFlow+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 7344,
       "length": 24,
       "value": "\"authorization_required\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 3675,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/Information+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 6055,
       "length": 15,
       "value": "\"bank_transfer\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/SchemeSelection+SinglePaymentResponseModels.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Models\/Response\/SinglePayment\/SchemeSelection+SinglePaymentResponseModels.swift",
       "kind": "StringLiteral",
       "offset": 1701,
       "length": 13,
       "value": "\"auto-submit\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3258,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3281,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3329,
       "length": 13,
       "value": "\"example.com\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3557,
       "length": 16,
       "value": "\"someProviderID\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3590,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3613,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3835,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/AuthorizationFlow+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3858,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1409,
       "length": 4,
       "value": "\"gb\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/LegalCopy+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1433,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1917,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1940,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2129,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2150,
       "length": 12,
       "value": "\"providerID\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2176,
       "length": 7,
       "value": "\"other\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 9,
       "value": "\"comment\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/Mandate+APIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2227,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1481,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Mandate\/SubmitUserAccount+MandateAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1545,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/AISLegalCopy+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/AISLegalCopy+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1402,
       "length": 4,
       "value": "\"de\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/AISLegalCopy+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/AISLegalCopy+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2233,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2256,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2335,
       "length": 16,
       "value": "\"https:\/\/tl.com\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/MerchantConfiguration+SharedAPIRequests.swift",
       "kind": "BooleanLiteral",
       "offset": 2640,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/PISLegalCopy+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/PISLegalCopy+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1402,
       "length": 4,
       "value": "\"de\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/PISLegalCopy+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/PISLegalCopy+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2050,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2073,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3095,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3124,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Provider+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3147,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 323,
       "length": 9,
       "value": "\"payment\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 9,
       "value": "\"mandate\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2567,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "Array",
       "offset": 2626,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2806,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2847,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 2917,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3065,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3106,
       "length": 16,
       "value": "\"someIdentifier\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/Shared\/Providers+SharedAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3170,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4382,
       "length": 4,
       "value": "\"es\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4406,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4641,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4702,
       "length": 4,
       "value": "\"DE\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4890,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 4913,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "Dictionary",
       "offset": 4969,
       "length": 27,
       "value": "[(\"someIBANKey\", \"someIBAN\")]"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "Array",
       "offset": 5332,
       "length": 12,
       "value": "[\"accounts\"]"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AdditionalInputs+SinglePaymentAPIRequests.swift",
       "kind": "Array",
       "offset": 5374,
       "length": 12,
       "value": "[\"accounts\"]"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3348,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3371,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3419,
       "length": 13,
       "value": "\"example.com\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3659,
       "length": 16,
       "value": "\"someProviderID\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3692,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3715,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3949,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/AuthorizationFlow+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 3972,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1440,
       "length": 4,
       "value": "\"gb\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/LegalCopy+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1464,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/ProvidersInfo+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/ProvidersInfo+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1303,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/ProvidersInfo+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/ProvidersInfo+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1326,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1371,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1398,
       "length": 5,
       "value": "\"GBP\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "Array",
       "offset": 1418,
       "length": 56,
       "value": "[\"faster_payments_service\", \"instant\"]"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1491,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SchemeSelection+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1511,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SinglePayment+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SinglePayment+APIRequests.swift",
       "kind": "IntegerLiteral",
       "offset": 374,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SinglePayment+APIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SinglePayment+APIRequests.swift",
       "kind": "IntegerLiteral",
       "offset": 410,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1376,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1403,
       "length": 14,
       "value": "\"someSchemeID\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitScheme+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1437,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1511,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1551,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/Payments\/Requests\/SinglePayment\/SubmitUserAccount+SinglePaymentAPIRequests.swift",
       "kind": "StringLiteral",
       "offset": 1575,
       "length": 11,
       "value": "\"someToken\""
     },
     {
-      "filePath": "\/Users\/fabrizio.scarano\/Developer\/iOS-SDK\/SDK\/Sources\/API\/URL+API.swift",
+      "filePath": "\/Users\/riccardo.cambiaghi\/iOS-SDK-4.1.10\/SDK\/Sources\/API\/URL+API.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 25,
